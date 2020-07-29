@@ -26,7 +26,6 @@ The Hero block is required of every project and is anchored immediately below th
 
 This section will first consider all the options available within the Hero block before moving onto options for each of the content blocks.
 
-<a name="heroBlock"></a>
 
 ## Hero Block
 
@@ -36,7 +35,6 @@ Controls to adjust the appearance of the Hero block are contained within the Des
 
 ![Hero Block Controls](/docs/assets/projects/layout-hero.png)
 
-<a name="descriptionImages"></a>
 
 ### Description + Images
 
@@ -45,10 +43,9 @@ When opting to edit this section, a drawer from the right will open in which you
 ![Hero Description and Images configutation](/docs/assets/projects/hero-di.png)
 
 :::note
-<strong>Note</strong>. You must click the Save button at the bottom of the drawer for your changes to take effect.
+You must click the Save button at the bottom of the drawer for your changes to take effect.
 :::
 
-<a name="descriptionDark"></a>
 
 #### Dark Mode
 
@@ -56,7 +53,6 @@ This toggle adjusts the background color of the blade. The default is light gray
 
 If a [Background Image](/docs/projects/customizing/layout.html#backImage) is added to this blade, the image will supersede this setting.
 
-<a name="description"></a>
 
 #### Description
 
@@ -65,10 +61,9 @@ This field allows users to add or edit a project description that will render in
 Recommended length is three to five sentences. If your project requires further description, we suggest adding a [Markdown block](/docs/projects/customizing/layout.html#mdBlock) to the project.
 
 :::note
-<strong>Note</strong>. Text entered in this field can be formatted using <a href="https://help.github.com/articles/basic-writing-and-formatting-syntax/">basic Markdown syntax</a>.
+Text entered in this field can be formatted using <a href="https://help.github.com/articles/basic-writing-and-formatting-syntax/">basic Markdown syntax</a>.
 :::
 
-<a name="backImage"></a>
 
 #### Background Image
 
@@ -84,7 +79,6 @@ When a project is shared socially, the hero image is included as part of that tr
 <strong>Warning</strong>. Be sure you have the necessary permissions to upload your hero image to the system. You can include any required credit lines in the <a href="/docs/projects/customizing/layout.html#imageCredits">Image Credits field</a>
 :::
 
-<a name="coverImage"></a>
 
 #### Cover Image
 
@@ -95,10 +89,9 @@ The system will automatically resize your image to fit the available space, but 
 Acceptable formats for upload are GIF, JPEG, JPG, and PNG.
 
 :::note
-<strong>Note</strong>. If no cover is loaded, as is the case with new projects, the system will automatically display the <a href="/docs/projects/customizing/general.html#thumbnail">project thumbnail</a> in the space where the cover would be.
+If no cover is loaded, as is the case with new projects, the system will automatically display the <a href="/docs/projects/customizing/general.html#thumbnail">project thumbnail</a> in the space where the cover would be.
 :::
 
-<a name="imageCredits"></a>
 
 #### Image Credits
 
@@ -113,7 +106,6 @@ To add a manual line break, leave two spaces at the end of the line you are brea
 If you need to add a blank space, use two consecutive <a href="https://www.w3schools.com/tags/tag_br.asp">break tags</a> between the lines you are separating.
 :::
 
-<a name="callActions"></a>
 
 ### Calls-to-Action
 
@@ -138,7 +130,6 @@ Calls-to-action are contextual relative to whether or not a project is configure
 <p><code>Link</code> and <code>Download</code> calls-to-action have visibility settings that allow a publisher to choose whether or not they always appear or appear to either authorized or unauthorized users. Thus it is possible to configure a project to showcase one set of calls to actions for authorized users and a different set for unauthorized users.</p>
 :::
 
-<a name="actionsLink"></a>
 
 #### Link
 
@@ -148,7 +139,6 @@ The `Visibility` field in the Link configuration drawer allows a publisher to de
 
 For example, a subscription link would be useful for unauthorized users to gain access to the project, while for authorized users that would not be of interest. Likewise, links to specific materials may only be of use after a user has gained access to a project. See the [Access section](/docs/projects/customizing/access.html#entitlements) for more on how a project's accessibility settings can pair with how and when links appear in the Hero block.
 
-<a name="actionsRead"></a>
 
 #### Start Reading
 
@@ -184,7 +174,6 @@ Manifold will use the metadata within the selected text to determine the opening
 </ul>
 :::
 
-<a name="actionsTOC"></a>
 
 #### Table of Contents
 
@@ -207,10 +196,9 @@ A Table of Contents link/button opens a specific text to the section that the fi
 - Selecting the Table of Contents action for [Manifest ingests](/docs/projects/preparing/index.html#manifest) and texts loaded as standalone documents will be no different than selecting the Start Reading action. This is because these formats do not inherently contain a text section (not to be confused with navigation intended for a reading system) made specifically as a table of contents that you would expect in a print book.
 
 :::note
-<strong>Note</strong>. The Table of Contents call-to-action does not have any visibility settings. TOC actions will always display in the header. If a project is set for restricted access, only those with the appropriate credentials will be able to follow the link to their intended text.
+The Table of Contents call-to-action does not have any visibility settings. TOC actions will always display in the header. If a project is set for restricted access, only those with the appropriate credentials will be able to follow the link to their intended text.
 :::
 
-<a name="actionsDown"></a>
 
 #### Download
 
@@ -221,10 +209,9 @@ The `Visibility` field in the Download configuration drawer allows a publisher t
 For example, a download may be useful to supply unauthorized users with some preview content. Conversely it may be a perk of full access to supply readers with bonus content. See the [Access section](/docs/projects/customizing/access.html#entitlements) for more on how a project's accessibility settings can pair with how and when downloads appear in the Hero block.
 
 :::note
-<strong>Note</strong>. There are no restrictions on the kind of file uploaded into this field.
+There are no restrictions on the kind of file uploaded into this field.
 :::
 
-<a name="actionsSocial"></a>
 
 ### Social Links
 
@@ -243,10 +230,9 @@ The different social networks require their handles to be formatted as follows:
 - Instagram usernames are not case sensitive but should *not* include an ampersand. Thus `uminnpress` and `UMinnPress` will work but `@uminnpress` and `@UMinnPress` will not.
 
 :::note
-<strong>Note</strong>. Adding a hashtag to this section is only a suggestion to your readers to include it in their Tweets about the project; it will not automatically begin pulling Tweets into the project's [Recent Activity block](/docs/projects/customizing/activity). Those configurations live in the <a href="/docs/projects/customizing/social.html">Social Integrations menu.</a>
+Adding a hashtag to this section is only a suggestion to your readers to include it in their Tweets about the project; it will not automatically begin pulling Tweets into the project's [Recent Activity block](/docs/projects/customizing/activity). Those configurations live in the <a href="/docs/projects/customizing/social.html">Social Integrations menu.</a>
 :::
 
-<a name="contentBlocks"></a>
 
 ## Content Blocks
 
@@ -276,7 +262,6 @@ Edit an existing block by clicking on the pencil icon to the right of the block'
 <p><strong>Note</strong>. All content blocks are contextual relative to whether or not a project is configured for <a href="/docs/projects/customizing/access.html#entitlements">restricted access</a>.</p>
 :::
 
-<a name="mdBlock"></a>
 
 ### Markdown
 
@@ -317,10 +302,9 @@ The width and height components allow the image to scale responsively, so it ren
 In the Style section, users can select how the block should appear, with a white or gray background. The Normal and Shaded radio buttons correspond to white and gray, respectively.
 
 :::note
-<strong>Note</strong>. A project can have multiple Markdown blocks if the material warrants.
+A project can have multiple Markdown blocks if the material warrants.
 :::
 
-<a name="metaBlock"></a>
 
 ### Metadata
 
@@ -342,7 +326,6 @@ Conversely, if `Visible Only When Unauthorized` is selected, the block will disp
 
 The default setting for this field is `Always Visible`.
 
-<a name="activityBlock"></a>
 
 ### Recent Activity
 
@@ -364,7 +347,6 @@ Conversely, if `Visible Only When Unauthorized` is selected, the block will disp
 
 The default setting for this field is `Always Visible`.
 
-<a name="resourceBlock"></a>
 
 ### Resources
 
@@ -390,7 +372,6 @@ If the `Show All Collections` switch is enabled, this block will also list each 
 
 This block will also render a link to the “all collections” view for the project. Resource collections are managed in the [Resource Collection menu](/docs/projects/customizing/collections).
 
-<a name="tocBlock"></a>
 ### Table of Contents
 
 The Table of Contents Block renders the table of contents for a specific text in the project. This block is especially useful for projects that only have one text, in which case it’s generally more appropriate to render a TOC than to render a list of project texts in a [Texts Block](/docs/projects/customizing/layout.html#textsBlock).
@@ -444,10 +425,9 @@ For tables of content that have nested entries, editors can decide to which dept
 Toggling this field on will add the title of the selected text beneath the title of the block.
 
 :::note
-<strong>Note</strong>. A project can have multiple Table of Contents blocks, each pointing to different texts loaded to the project.
+A project can have multiple Table of Contents blocks, each pointing to different texts loaded to the project.
 :::
 
-<a name="textsBlock"></a>
 ### Texts
 
 The Text Block lists some or all texts associated with the project. The texts that are included in the list can be filtered to only include texts from one or more categories. The block can be configured to include or exclude author names, subtitles, dates, descriptions, and cover images in the output. The list can also be configured to group texts by category.
@@ -535,5 +515,5 @@ If no categories are selected and “Show Uncategorized Texts” is toggled on, 
 ![Text Block Backend Menu](/docs/assets/projects/text-menu.png)
 
 :::note
-<strong>Note</strong>. A project can have multiple Texts blocks, allowing a publisher the means to showcase a project's textual materials in contextually appropriate ways.
+A project can have multiple Texts blocks, allowing a publisher the means to showcase a project's textual materials in contextually appropriate ways.
 :::

@@ -1,10 +1,6 @@
 ---
-layout: page
 title: Creating User Accounts and Maker Records
-menus:
-  accounts:
-    title: Creating
-    weight: 3
+sidebar_label: Creating
 ---
 
 ## Creating a User Account
@@ -34,7 +30,7 @@ Maker accounts can be associated with a project generally and also with specific
 Project-level Makers are displayed on a project's landing banner. Text-level Makers aren't displayed on the system but are incorporated into a text's metadata and are required to [create citations](/docs/reading/sharing).
 
 :::note
-<strong>Note</strong>. There is only one Maker record database. While you can create a Maker record on either the project or text levels, the record will be available in both places. That is, if you create a record for H. G. Wells on the Project level, you will also be able to call upon that same record on the text level and vice-versa.
+There is only one Maker record database. While you can create a Maker record on either the project or text levels, the record will be available in both places. That is, if you create a record for H. G. Wells on the Project level, you will also be able to call upon that same record on the text level and vice-versa.
 :::
 
 ### New General Maker Record

@@ -31,7 +31,6 @@ In this space, devoted to the `Resource` sidebar of the backend project page, we
 
 Details on how to place already loaded resources (or collections of resources) in a text is discussed in the [Interface](/docs/reading/placing) section.
 
-<a name="credentials"></a>
 ## Required User Credentials
 
 To access the Resource sidebar a user who has a `Reader` or `Project Creator` role will require either `Can Modify Metadata` or `Can Modify Project` permissions. Note that the former only allows the user to update the metadata for existing resources, not load new resources into the system.
@@ -42,7 +41,6 @@ For more information about credentials, see the [user accounts](/docs/projects/a
 
 ![Resource Sidebar](/docs/assets/projects/resource-sidebar.png)
 
-<a name="adding-resources-single"></a>
 ## Adding Resources Individually
 
 To add Resources to a project one at a time, click the `Add a New Resource` button below the resource search bar. The `New Resource` page will appear and provide you the option to choose which of the eight kinds of resource you'd like to add.
@@ -81,7 +79,6 @@ Instead of loading a file to the system, Manifold instead prompts the user to pr
 
 If you are unsure of the minimum width or height, leave those fields blank, and Manifold well calibrate the view based on the size of the reader's screen size.
 
-<a name="adding-resources-bulk"></a>
 ## Adding Resources in Bulk
 
 To add resources in bulk you'll first need a CSV or Google Sheet describing the files you are uploading. A template for that purpose is [provided here as the Manifold Resource Log](/docs/assets/projects/manifold-resource-log.xlsx). Add or adjust columns to suit your needs. Manifold's upload process can be adapted to map data in different ways.
@@ -98,19 +95,16 @@ Pressing the `Automatically Map Attributes` button will attempt to automatically
 
 When you click continue your resources will be uploaded into the system with the information from your sheet populating the appropriate fields for each. This process may take a few moment to complete. As it is working you will see regular updates to the status of your uploads.
 
-<a name="editing-resources"></a>
 ## Managing Resources
 
 To adjust the metadata for a resource that has been loaded into the system, click on the resources name in the list of those in the system. That will take you to that resource's detail page, where information is spread across three sidebar headings: `General`, `Variants`, and `Metadata`. The `Variants` sidebar will only appear for `Image`, `Video`, `Audio`, and `Interactive` resources.
 
 The [Preparing Resources](/docs/projects/resources.html#resource-fields) section describes all the available fields you can adjust and where they can be found in the system in detail.
 
-<a name="searching-resources"></a>
 ## Searching through Existing Resources
 
 From the Resource page you can search through all resources that have been added to the project you are viewing. When you click `Show Search Options` you'll have the ability to refine your search by Tags as well as the Kind of resource you are looking for.
 
-<a name="resource-import"></a>
 # Resource Import Matrix
 
 | Manifold Resource Log    | Resource Metadata        | Resource Attributes               |

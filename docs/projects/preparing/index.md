@@ -11,7 +11,6 @@ menus:
 This section speaks broadly to preparing different document types for ingestion into Manifold. For best practices on authoring in the various formats with attention paid to individual elements common to scholarly writing, consults the <a href="/docs/writing/writing.html">Writing for the Web section</a>. For a walk-through on ingesting material into Manifold as a text, see the <a href="/docs/projects/customizing/texts.html">Customizing section</a>.
 :::
 
-<a name="formats"></a>
 
 Once you have [created a project](/docs/projects/creating), you may add any number of prepared texts into it. Manifold supports all of the following file types for text ingestion. Click on a type below for preparation suggestions specific to that format.
 
@@ -57,14 +56,12 @@ Instructions on how to encode embeds available to EPUBs as well as Markdown and 
 Thoughts on how embedded media in [Google](/docs/projects/preparing/gdoc) and [Word](/docs/projects/preparing/docx) docs will be treated in their respective sections.
 
 :::note
-<strong>Note</strong>. In the table above, <code>Images</code> refers to static renderings as well as animated GIFs.
+In the table above, <code>Images</code> refers to static renderings as well as animated GIFs.
 :::
 
-<a name="strategies"></a>
 
 There are two means to add a new text into Manifold: where a text is created from a single document and where a single text is created from a collection of different documents. These are, respectively, the [Document](/docs/projects/preparing/index.html#document) and [Manifest](/docs/projects/preparing/index.html#manifest) ingestion strategies described in this section.
 
-<a name="document"></a>
 ## Document
 
 The document ingestion strategy allows a user to create a new text in Manifold from a single document source.
@@ -91,7 +88,6 @@ The following table scopes out the source of the text title for each of the avai
 
 <sup>a</sup>EPUBs can only be ingested using the Document strategy but are themselves self-contained structured documents. As such the system will be able to ascertain the title of the individual text sections based off the metadata provided within the EPUB.
 
-<a name="manifest"></a>
 ## Manifest
 
 A Manifest upload can be composed of a collection of one file type or a mixture of them—excepting EPUBs. Thus, it is possible to create a single Manifold text from one or more Google Docs, Word files (saved in the DOCX format), Markdown files, or HTML files: different file types and sources combined to form one whole.
@@ -101,10 +97,9 @@ A Manifest upload can be composed of a collection of one file type or a mixture 
 When the various source documents have been prepared [according to the requirements of their format](/docs/projects/preparing/index.html#formats), users should compress (or zip) all of the documents—**along with the required YAML file described below**—into a single archive, which can then be uploaded into Manifold. The structure of YAML file will be represented on the reader's [contents dropdown](/docs/reading/interface.html#contents), and its content will inform what is displayed on the [title bar](/docs/reading/interface.html#title-bar). See the YAML section following for details.
 
 :::note
-<strong>Note</strong>. When creating a zip archive to upload into Manifold, it is better to individually select all of the files and then compress them than to simply select an entire folder on which to run the compression. The latter method can result in corrupted pathways that may cause ingestion errors.
+When creating a zip archive to upload into Manifold, it is better to individually select all of the files and then compress them than to simply select an entire folder on which to run the compression. The latter method can result in corrupted pathways that may cause ingestion errors.
 :::
 
-<a name="yml"></a>
 ## YAML File
 
 In order for Manifold to properly ingest multiple source documents at once, the system requires a YAML file (extension `.yml`) to be included along with them in the compressed archive that will be loaded into the system.
@@ -151,7 +146,6 @@ toc:
     source_path: chapt_3.md
 ```
 
-<a name="yml-meta"></a>
 ### Meta Block
 
 - The meta block allows users to describe the text that is being created as a whole.
@@ -161,7 +155,6 @@ include all authors and contributors in the meta block.
 - Other than creators and contributors, fields can only have one input, as shown here.
 - The language abbreviation comes from the [ISO 639-1 standard](https://www.w3schools.com/tags/ref_language_codes.asp).
 
-<a name="yml-toc"></a>
 ### TOC Block
 
 - The TOC block allows users to name, order, and locate the source files for the system.
@@ -170,16 +163,14 @@ include all authors and contributors in the meta block.
 - The `start_section` describes what part of the text the Manifold reader will open to. The field can only be used once and can be associated with any section. Thus a user can have the reader open to chapter 1 instead of, say, a preface.
 - The `children` tag allows users to nest content. This nesting will also be rendered as expected on the Contents dropdown. It is important that nested content be spaced as is shown in the sample above, with each level of nesting described by an indent of two spaces). Manifold can render nesting up to three levels in the contents dropdown. See the Nested Text Sections following to learn how advanced users can make text headings navigable in the Contents dropdown.
 
-<a name="yml-nesting"></a>
 ### Nested Text Sections
 
 Advanced users who want to include headings as navigable items in the Contents dropdown can do so for any HTML or Markdown texts in the Manifest. This will require that each heading designated to appear in the Contents dropdown include an `id` attribute that matches a hashed source pathway in the YAML file. See the [preparing HTML section](/docs/projects/preparing/html.html#html-headings) for details. The instructions and coding in that section are appropriate for both HTML and Markdown texts.
 
 :::note
-<strong>Note</strong>. It is not presently possible to map specific headings from individual Word or Google docs into the reader's Contents dropdown.
+It is not presently possible to map specific headings from individual Word or Google docs into the reader's Contents dropdown.
 :::
 
-<a name="meta"></a>
 ## Document Metadata
 
 Each source document being uploaded to Manifold can include the following metadata. When ingesting single documents all of the metadata can be included in the upload. When ingesting through the Manifest strategy, the source document should only include title metadata, with the rest included in the YAML file.
@@ -194,7 +185,6 @@ Each source document being uploaded to Manifold can include the following metada
 
 There can be multiple creators (authors) and contributors for each upload. The system will automatically attempt to match existing records of the same name. If none is found, then the system will create a new record.
 
-<a name="related"></a>
 ## Related Themes
 
 Following are related themes that link to other pertinent sections concerning how you work with texts in the system:

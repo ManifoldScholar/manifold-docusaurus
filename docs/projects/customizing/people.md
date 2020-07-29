@@ -15,7 +15,7 @@ When a Maker is associated with a project as an Author, their name and avatar (i
 Makers associated as Contributors will have their name show up only on the project landing page beneath the author's name. Their avatar will not be included.
 
 :::note
-<strong>Note</strong>. Associating a Maker record as an Author in this space is not the same as giving a user account “Is a Project Author” permissions. For more on the distinction, see the <a href="/docs/projects/accounts/users.html">Users section</a>.
+Associating a Maker record as an Author in this space is not the same as giving a user account “Is a Project Author” permissions. For more on the distinction, see the <a href="/docs/projects/accounts/users.html">Users section</a>.
 :::
 
 ## Associating Maker Records with Projects

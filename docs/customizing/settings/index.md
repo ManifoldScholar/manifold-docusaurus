@@ -15,5 +15,5 @@ Documentation for this section follows the structure of the application interfac
 - [Email](/docs/customizing/settings/email)
 
 :::note
-<strong>Note</strong>. Only those with Administrator credentials are able to access this menu in the backend. For more on the roles available in Manifold, see the <a href="/docs/projects/accounts/index.html">Accounts section</a>.
+Only those with Administrator credentials are able to access this menu in the backend. For more on the roles available in Manifold, see the <a href="/docs/projects/accounts/index.html">Accounts section</a>.
 :::

@@ -20,7 +20,6 @@ Manifold was created to fulfill specific functions for academic readers. This se
 
 To begin taking advantage of all the tools described in this section you must first create an account and sign in from the homepage.
 
-<a name="login"></a>
 ## Signing Up and Logging In
 
 To create a new account or sign in to an existing one, click the user icon in the top right corner. The system will prompt you for your account's email and password. If you don't have an account, click the `Need to sign up?` link, and you can then enter your name, email, and password. Alternatively you can create an account using your existing Facebook, Twitter, or Google credentials if the publisher has enabled those connections.

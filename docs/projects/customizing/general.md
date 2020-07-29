@@ -1,9 +1,5 @@
 ---
-layout: page
 title: General
-menus:
-  projects_customizing:
-    weight: 1
 ---
 
 The General sidebar provides controls for the most top-level elements for how a project is registered and displayed across the system.
@@ -33,10 +29,9 @@ https://manifold.umn.edu/project/the-lab-book
 ```
 
 :::note
-<strong>Note</strong>. Adjusting the project slug will affect the URLs for resources that are a part of the project. Manifold will automatically resolve these for links within the system, but if you have shared a URL to a resource outside of Manifold it will need to be updated; otherwise, readers clicking the old link will be directed to a 404 Error Page.
+Adjusting the project slug will affect the URLs for resources that are a part of the project. Manifold will automatically resolve these for links within the system, but if you have shared a URL to a resource outside of Manifold it will need to be updated; otherwise, readers clicking the old link will be directed to a 404 Error Page.
 :::
 
-<a name="thumbnail"></a>
 
 ### Project Thumbnail
 
@@ -50,7 +45,6 @@ Note that even if you add a book cover to display in the project's [hero block](
 
 ## Taxonomy
 
-<a name="subjects"></a>
 
 ### Subjects
 
@@ -60,7 +54,6 @@ Subjects can only be created by users with Administrator roles. All other roles 
 
 To learn more about how to create Subjects as an Administrator, see the [Subjects section](/docs/customizing/settings/subjects). And to see how Subjects can be used to curate Smart Collections, visit the [Project Collections](/docs/projects/collections.html#smart-collections) page.
 
-<a name="tags"></a>
 
 ### Tags
 
@@ -70,7 +63,6 @@ To see how Tags can be used to curate Smart Collections, visit the [Project Coll
 
 ## Presentation
 
-<a name="draft-mode"></a>
 
 ### Draft Mode
 
@@ -80,17 +72,15 @@ When a project is in Draft Mode, users who have permissions to view the project 
 
 Determining when drafts are made public falls to the discretion of publishers.
 
-<a name="featured"></a>
 
 ### Featured
 
 Featured projects take pride of place on the home page in a section of the library all of their own. Only four projects display in this section at a time. If more than four projects are toggled to be featured, only the four most recent will show. By default, new projects are *not* set to be featured.
 
 :::note
-<strong>Note</strong>. If <a href="/docs/projects/collections.html">Project Collections</a> are being employed, the Featured Projects blade will not appear. But projects marked as being Featured can be sorted into a Smart Collection. See the <a href="/docs/projects/collections.html#smart-collections">Collections</a> section for more.
+If [Project Collections](/docs/projects/collections.html) are being employed, the Featured Projects blade will not appear. But projects marked as being Featured can be sorted into a Smart Collection. See the [Collections](/docs/projects/collections.html#smart-collections) section for more.
 :::
 
-<a name="finished"></a>
 
 ### Finished
 
@@ -99,10 +89,9 @@ The Finished toggle is a means to indicate that a project is no longer actively 
 ![Finished](/docs/assets/projects/finished.png)
 
 :::note
-<strong>Note</strong>. If a project is toggled to Finished and no publication date is set, in list views no date of any kind will appear.
+If a project is toggled to Finished and no publication date is set, in list views no date of any kind will appear.
 :::
 
-<a name="standalone"></a>
 
 ### Standalone Mode
 
@@ -119,13 +108,13 @@ Any Manifold project can be rendered in standalone mode or in library mode. Usin
 When a project is offered in standalone mode, the header is replaced with a more minimal standalone header that persists down the page as a reader scrolls. The project's title and subtitle are integral to this standalone header and serve as clickable links, returning users to the project landing page as they explore subpages within the project.
 
 <figure>
-  <img src="/docs/assets/projects/library.png" alt="Header" style="margin-bottom: 1em;" />
+  <img src="/docs/assets/projects/library.png" alt="Header"/>
   <img src="/docs/assets/projects/standalone.png" alt="Standalone and Top Bar" />
   <figcaption><em>Above</em>, the standard Manifold header; <em>below</em>, the standalone header along with the optional top bar enabled, which serve as branding and navigation elements.</figcaption>
 </figure>
 
 :::note
-<strong>Note</strong>. For those with <a href="/docs/projects/accounts/users.html">Administrator credentials</a>, see the Top Bar options on the <a href="/docs/customizing/settings/theme.html#instance-header">Theming Settings page</a> to enable and customize the text, link, and color of the optional top bar),
+For those with <a href="/docs/projects/accounts/users.html">Administrator credentials</a>, see the Top Bar options on the <a href="/docs/customizing/settings/theme.html#instance-header">Theming Settings page</a> to enable and customize the text, link, and color of the optional top bar),
 :::
 
 Additionally, when a project is in standalone mode, the following behaviors can also be expected:
@@ -135,8 +124,8 @@ Additionally, when a project is in standalone mode, the following behaviors can 
 - the reader menu only includes a link to the project, and
 
 <figure>
-  <img src="/docs/assets/projects/reader-menu.png" alt="Default Reader Menu" style="max-height:5vw; margin-right:.5em;" />
-  <img src="/docs/assets/projects/standalone-menu.png" alt="Standalone Reader Menu" style="max-height:2.5vw;" />
+  <img src="/docs/assets/projects/reader-menu.png" alt="Default Reader Menu"/>
+  <img src="/docs/assets/projects/standalone-menu.png" alt="Standalone Reader Menu"/>
   <figcaption><em>Left</em>, the standard Manifold library navigation; <em>right</em>, the navigation in standalone mode, which is scoped down to only include project-level navigation.</figcaption>
 </figure>
 
@@ -149,10 +138,9 @@ See the [Top Bar section](/docs/projects/customizing/general.html#top-bar) below
 If you enable or enforce standalone mode on a project but don’t see a top bar on your project, check that the `Top Bar Text` and `Top Bar URL` fields (described below) are filled in. Or, if the project is intended to follow the default instance top bar theme, check the <a href="/docs/customizing/settings/theme.html#instance-header">Theme Settings page</a> to see that Top Bar Display Mode is not set to <code>Disabled</code>.
 
 :::note
-<strong>Note</strong>. Regardless of how many projects are set for Standalone Mode, the standard Manifold library page will still exist. Further, if a reader navigates to an instance’s library page (by happenstance or by entering it into the URL bar) they will be able to see all the projects on the instance—excepting those in <a href="/docs/projects/customizing/general.html#draft-mode">Draft Mode</a> or those where Standalone Mode is enforced (so long as they aren’t also part of a project collection). To Disable Library Views entirely, see the <a href="/docs/customizing/settings/general.html#disable-library">General instance settings</a>.
+Regardless of how many projects are set for Standalone Mode, the standard Manifold library page will still exist. Further, if a reader navigates to an instance’s library page (by happenstance or by entering it into the URL bar) they will be able to see all the projects on the instance—excepting those in <a href="/docs/projects/customizing/general.html#draft-mode">Draft Mode</a> or those where Standalone Mode is enforced (so long as they aren’t also part of a project collection). To Disable Library Views entirely, see the <a href="/docs/customizing/settings/general.html#disable-library">General instance settings</a>.
 :::
 
-<a name="top-bar"></a>
 
 ### Top Bar Text
 
@@ -161,12 +149,10 @@ The top bar is a thin, customizable band that serves as a means to contextualize
 Text entered in this field appears in the top bar for the specific project, superseding the top bar text entered by those with [Administrator credentials](/docs/projects/accounts/users) on the [Theme Settings page](/docs/customizing/settings/theme.html#instance-header).
 
 :::note
-<ul>
-<li>The top bar color and display parameters are only configurable for users with Administrator credentials from the Theme Settings page.</li>
-<li>If this field is left blank, the top bar settings for the project  will default to the instance-wide settings</li>
-<li>The top bar is <em>not</em> required for standalone projects; it is highly configurable and can used on a project-by-project basis or it can be used in conjunction with standalone projects settings or generally across the entire instance.</li>
-<li>This field is <em>not</em> Markdown enabled and only accepts one line of text.</li>
-</ul>
+- The top bar color and display parameters are only configurable for users with Administrator credentials from the Theme Settings page.
+- If this field is left blank, the top bar settings for the project  will default to the instance-wide settings
+- The top bar is *not* required for standalone projects; it is highly configurable and can used on a project-by-project basis or it can be used in conjunction with standalone projects settings or generally across the entire instance.
+- This field is *not* Markdown enabled and only accepts one line of text.
 :::
 
 ### Top Bar URL

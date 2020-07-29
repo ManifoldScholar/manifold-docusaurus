@@ -103,7 +103,6 @@ Interactive Resources allow readers a means to access and directly engage with w
 
 At this point you have all you need to be able to [load your resource into Manifold](/docs/projects/customizing/resources). Once loaded, however, more options to describe your resource will become available. If you prefer to have all such metadata ready at the start, the following table describes all the resource fields and metadata associated with each resource kind, grouped according to the sidebar headings in `Resource` section of the backend project page.
 
-<a name="resource-fields"></a>
 ### Resource Fields and Metadata
 
 For detailed descriptions of these fields, please refer to the [Metadata](/docs/reference/metadata.html#descriptions) section.

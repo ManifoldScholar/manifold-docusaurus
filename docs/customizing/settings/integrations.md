@@ -8,13 +8,12 @@ The `Integrations` menu is where Manifold administrators can leverage external s
 
 Before a publisher can input values into each of these fields, they will first need to set up accounts with Google, Facebook, and Twitter as described here:
 
-<a name="google_services"></a>
 ## Google Services
 
 By configuring Google Services, a publisher will unlock the ability to import texts from Google Docs into the Manifold reader, import resources in bulk into existing projects (using Google Drive), and leverage Google Analytics to get detailed statistics about reader use and interaction with the Manifold instance.
 
 :::note
-<strong>Note</strong>. To make it possible for your readers to log into your Manifold instance using their Google credentials, see the <a href="/docs/customizing/settings/integrations.html#oauth">OAuth section</a> below.
+To make it possible for your readers to log into your Manifold instance using their Google credentials, see the <a href="/docs/customizing/settings/integrations.html#oauth">OAuth section</a> below.
 :::
 
 To begin using these features, you must first complete some configuration through the Google Developer Console.
@@ -64,7 +63,6 @@ With Google Services now configured, you can enable Google Analytics and Drive i
 - [Analytics](/docs/customizing/settings/analytics)
 - [Drive](/docs/customizing/settings/drive)
 
-<a name="oauth"></a>
 ## OAuth
 
 By configuring OAuth, your readers can login to Manifold using their Facebook, Twitter, or Google login. Configuring each OAuth Provider involves generating access tokens and storing them in Manifold. Follow the specific instructions for each provider to set this up.
