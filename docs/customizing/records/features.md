@@ -75,7 +75,6 @@ This field controls the color of the feature's body text. If a value is entered 
 
 This field controls the color of the feature's header text. If a value is entered here, it will override the predefined color associated with the value selected in the `Style` dropdown. For details on the color values available to this field, see the [Formatting section](/docs/customizing/records/features.html#formatting) below.
 
-<a name="formatting"></a>
 #### Formatting Color Values
 
 The `Background Color`, `Foreground Color`, and `Header Color` fields accept standard HTML color names, as well as values in RGB, HEX, HSL, RGBA, and HSLA. For more on the names and values, see the [HTML Color page on the w3schools.com website](https://www.w3schools.com/html/html_colors.asp).
@@ -118,7 +117,6 @@ By default the foreground image is aligned horizontally just to the right of the
 
 See the [Positioning Foreground Image Values](/docs/customizing/records/features.html#positioning) section below for the kinds of input this field allows.
 
-<a name="positioning"></a>
 #### Positioning Foreground Image Values
 
 Values can be entered into the Foreground Image Top and Left Position fields as CSS units, in both absolute or relative lengths. All units are accepted, save for the % unit. For more on CSS Units, see the [w3schools.com website](https://www.w3schools.com/html/html_colors.asp).

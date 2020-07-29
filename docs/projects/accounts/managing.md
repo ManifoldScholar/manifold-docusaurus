@@ -1,16 +1,12 @@
 ---
-layout: page
 title: Managing User Accounts and Maker Records
-menus:
-  accounts:
-    title: Managing
-    weight: 4
+sidebar_label: Managing
 ---
 
 This section describes how to modify and manage Manifold accounts in the backend and assumes you are in the User (or Maker) account drawer, accessed by clicking on a name from the list of Users (or Makers) under the Records menu.
 
 :::note
-<strong>Note</strong>. Everything described here referring to User accounts requires Administrator credentials. To modify specific Maker accounts you need only have permission to modify a project with which that Maker record is associated.
+Everything described here referring to User accounts requires Administrator credentials. To modify specific Maker accounts you need only have permission to modify a project with which that Maker record is associated.
 :::
 
 ![User Drawer](/docs/assets/projects/user-drawer.png)

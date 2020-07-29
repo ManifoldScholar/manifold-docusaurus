@@ -62,7 +62,7 @@ Color values can be supplied in one of the following formats: CSS color keyword,
 If left blank, Manifold will reset to its default accent color.
 
 :::note
-<strong>Note</strong>. Manifold will still calculate values for secondary system colors in line with accessibility standards even if a custom value has been input.
+Manifold will still calculate values for secondary system colors in line with accessibility standards even if a custom value has been input.
 :::
 
 ### Header Foreground Color
@@ -152,7 +152,6 @@ In Typekit, you have the option under the `Character Set` heading to choose `All
 
 If you do not have a Typekit account, Manifold will defer to two sets of open-license alternatives that are included at installation: `Trueno` and `Aleo`.
 
-<a name="instance-header"></a>
 
 ## Top Bar
 
@@ -161,7 +160,7 @@ If you do not have a Typekit account, Manifold will defer to two sets of open-li
 The top bar is a thin, customizable branding element that serves as a means to contextualize a Manifold page for readers in relation to a larger mission. It can be configured to appear atop all Manifold pages outside of the reader, set to specifically target only those projects that are enabled for [standalone mode](/docs/projects/customizing/general.html#standalone), or configured on a project-by-project basis.
 
 :::note
-<strong>Note</strong>. The top bar can be deployed in addition to the standard header; it does not <em>only</em> need to be used in conjunction with projects in standalone mode.
+The top bar can be deployed in addition to the standard header; it does not <em>only</em> need to be used in conjunction with projects in standalone mode.
 :::
 
 ### Text
@@ -171,7 +170,7 @@ Text entered here appears in the top bar globally across the instance, but it ca
 ![Top Bar Text](/docs/assets/projects/top-bar-text.png)
 
 :::note
-<strong>Note</strong>. This field is <em>not</em> Markdown enabled and only accepts one line of text.
+This field is <em>not</em> Markdown enabled and only accepts one line of text.
 :::
 
 ### Color
@@ -179,7 +178,7 @@ Text entered here appears in the top bar globally across the instance, but it ca
 The color of the top bar is customizable. To define the color of the top bar for your Manifold instance, enter an HTML color hex value—including the hash symbol (#)—in this field (e.g., `#2980B9`).
 
 :::note
-<strong>Note</strong>. The color of the top bar is a global setting and cannot be adjusted for individual projects.
+The color of the top bar is a global setting and cannot be adjusted for individual projects.
 :::
 
 ### URL

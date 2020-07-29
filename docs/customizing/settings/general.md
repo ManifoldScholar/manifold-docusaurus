@@ -76,7 +76,6 @@ When a reader clicks on the email icon link they will be directed to an editable
 
 ![Email Form](/docs/assets/customizing/email-form.png)
 
-<a name="behaviors"></a>
 
 ## Behaviors
 
@@ -87,7 +86,7 @@ By default all Manifold projects are openly accessible. This toggle allows publi
 Such entitlements are bestowed to specific users or reading groups within the settings of individual projects. To learn more about that process and how restricted projects behave differently from open ones, see the [Access section](/docs/projects/customizing/access.html#entitlements).
 
 :::note
-<strong>Note</strong>. When this setting is toggled on, publishers will still have the ability to make certain projects openly accessible for general readers.
+When this setting is toggled on, publishers will still have the ability to make certain projects openly accessible for general readers.
 :::
 
 ### Restricted Access Notice Header *(Contextual)*
@@ -104,7 +103,6 @@ When `Project Access is Restricted` is toggled on, the text in this field will d
 
 This field is customizable and Markdown enabled. If left blank, the default message will display: “Only users granted permission may view this project's texts, resources, and other content.”
 
-<a name="disable-library"></a>
 
 ### Disable Library Views
 
@@ -126,7 +124,7 @@ If this slider is toggled on, all projects will render in [standalone mode](/doc
 When projects are in standalone mode, the standard library header that displays a custom logo and color scheme will be supplanted by standalone header with fewer branding options.
 
 :::note
-<strong>Note</strong>. To learn more about adjusting the branding of the standard library header, see the <a href="/docs/customizing/settings/theme.html">Theming page</a>, under ther <code>Branding</code> heading.
+To learn more about adjusting the branding of the standard library header, see the <a href="/docs/customizing/settings/theme.html">Theming page</a>, under ther <code>Branding</code> heading.
 :::
 
 ### Library Page Redirect URL *(Contextual)*

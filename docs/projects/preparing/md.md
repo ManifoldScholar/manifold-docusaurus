@@ -12,12 +12,10 @@ Markdown files for Manifold are made up of a header (containing metadata element
 
 When uploading only a single Markdown document, the header can contain all of the metadata elements noted in the [Document Metadata section](/docs/projects/preparing/index.html#meta). When part of a manifest upload, users need only supply the title element in the document header, relying on the rest to come from the manifest [YAML file](/docs/projects/preparing/index.html#yml). However, if it is appropriate to include all of the metadata elements in an individual Markdown text, the system will scope those elements to the individual text as expected.
 
-<a name="md-header"></a>
 ## Header
 
 A Markdown header is created by enclosing the document's [metadata elements](index.html#meta) with three dashes (or hyphens) on the lines above and below the data:
 
-<a name="md-sdu"></a>
 ### Single Document Upload
 
 ``` yml
@@ -33,7 +31,6 @@ contributor: Ida Davis
 ---
 ```
 
-<a name="md-mu"></a>
 ### Manifest Upload
 
 ``` yml
@@ -42,7 +39,6 @@ title: title
 ---
 ```
 
-<a name="md-style"></a>
 ## Style
 
 If you would like to associate a stylesheet with your Markdown file, you can include a link to it after the header, as shown in the example here.
@@ -62,7 +58,6 @@ The stylesheet should be formatted and saved as a .css and compressed (or zipped
 
 You can also add a stylesheet after upload, in lieu of or in addition to any stylesheet you include here. See the [Texts section](/docs/projects/customizing/texts.html#mod-styles) for details on how to add stylesheets to already ingested texts.
 
-<a name="md-headings"></a>
 ## Text Headings
 
 When only uploading an individual Markdown text, headings should be formatted in accordance with the standard:
@@ -86,12 +81,10 @@ Thus, if a project requires individual headings within the text sections to appe
 
 See the [preparing HTML section](/docs/projects/preparing/html.html#html-headings) for detailed instructions on how to format headings and adjust the YAML file so the coded headings can appear in the Contents dropdown.
 
-<a name="md-ext"></a>
 ## External Resources
 
 Authors can embed media assets, such as images, audio, and video into their content, referencing them in keeping with standard practice:
 
-<a name="md-img"></a>
 ### Images
 
 Call-outs to images in the code can be formatted like this:
@@ -109,10 +102,9 @@ The directory that would be compressed for upload would include the Markdown fil
 ![Markdown Image Asset](/docs/assets/projects/md-image.png)
 
 :::note
-<strong>Note</strong>. When creating a zip archive to upload into Manifold, it is better to individually select all of the files and then compress them than to simply select an entire folder on which to run the compression. The latter method can result in corrupted pathways that may cause ingestion errors.
+When creating a zip archive to upload into Manifold, it is better to individually select all of the files and then compress them than to simply select an entire folder on which to run the compression. The latter method can result in corrupted pathways that may cause ingestion errors.
 :::
 
-<a name="md-av"></a>
 ### Audio, Video, and iFrames
 
 Markdown does not have specific syntax to embed audio, video, or iFrame content, but given it's relationship to HTML, author's can inject HTML code into a Markdown document and get the expected results. As such, by using the same coding as described in the HTML section below, authors can include in their Markdown files [audio](/docs/projects/preparing/html.html#html-audio), [video](/docs/projects/preparing/html.html#html-video), and [iFrames](/docs/projects/preparing/html.html#html-iframe), respectively.

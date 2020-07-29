@@ -35,7 +35,7 @@ When individual Google Docs are ingested into the Manifold Reader, the system wi
 ![Google Doc Headings](/docs/assets/projects/gdoc-headings.png)
 
 :::note
-<strong>Note</strong>. It is not presently possible to map specific headings from individual Google docs into the reader's Contents dropdown when loading them as part of a <a href="/docs/projects/preparing/index.html#manifest">Manifest</a>.
+It is not presently possible to map specific headings from individual Google docs into the reader's Contents dropdown when loading them as part of a <a href="/docs/projects/preparing/index.html#manifest">Manifest</a>.
 :::
 
 See the [Writing for the Web section](/docs/writing/writing.html#gdocs) for instructions on how to appropriately designate headings as elements Manifold can recognize.

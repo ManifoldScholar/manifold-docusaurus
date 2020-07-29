@@ -49,7 +49,6 @@ The following metadata fields are made available through Manifold. The three col
 
 <sup>a</sup>The Resources DOI applies to project's entire library of resources, not sub-collections created and curated by users.
 
-<a name="descriptions"></a>
 ## Metadata Field Descriptions
 
 This section groups all the metadata fields available in Manifold by general category with descriptions on how to approach them, depending on the kinds of materials they are referring.

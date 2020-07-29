@@ -11,7 +11,7 @@ Using the Notifications settings, Manifold readers can have the system send eith
 Additionally, readers can opt to have Manifold send an email in real time when a reply has been made to one of their annotations or comments.
 
 <figure>
-<img src="/docs/assets/reading/notifications-reader.png" alt="Notification Options" style="max-height:30em; display: block; margin-left:auto; margin-right:auto;" />
+<img src="/docs/assets/reading/notifications-reader.png" alt="Notification Options"/>
 <figcap>When logged in as an Administrator the option to be notified when comments are flagged becomes available.</figcap>
 </figure>
 
@@ -35,6 +35,6 @@ When enabled, notifications will be triggered by the following events:
 Administrators, alone, also have the option to be notified of flagged comments in realtime.
 
 <figure>
-<img src="/docs/assets/reading/notification-options.png" alt="Flagged Comment Options" style="max-height:30em; display: block; margin-left:auto; margin-right:auto;" />
+<img src="/docs/assets/reading/notification-options.png" alt="Flagged Comment Options"/>
 <figcap>When logged in as an Administrator the option to be notified when comments are flagged becomes available.</figcap>
 </figure>

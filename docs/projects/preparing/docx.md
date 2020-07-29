@@ -9,10 +9,9 @@ menus:
 Word documents saved in the DOCX format can be ingested directly into Manifold and support the following paragraph and character styles.
 
 :::note
-<strong>Note</strong>. Simply changing the file extension from <code>.doc</code> to <code>.docx</code> is not a valid way to get a DOCX file. Word files originally saved in the DOC format need to be resaved as DOCX to work on Manifold.
+Simply changing the file extension from <code>.doc</code> to <code>.docx</code> is not a valid way to get a DOCX file. Word files originally saved in the DOC format need to be resaved as DOCX to work on Manifold.
 :::
 
-<a name="docx-para"></a>
 ## Supported Paragraph Styles
 
 Apply paragraph styles in Word by using the [Style pane in the Ribbon](https://support.office.com/en-us/article/Apply-a-style-to-text-in-Word-F8B96097-4D25-4FAC-8200-6139C8093109) or shortcuts on the Ribbon itself. The following links redirect to the appropriate instruction page on Microsoft's Word support site.
@@ -51,7 +50,6 @@ There is also support for **basic** tables where the first row will be counted a
 
 For more on how to insert a table into Word, [see the Microsoft Word support site](https://support.office.com/en-us/article/Insert-a-table-A138F745-73EF-4879-B99A-2F3D38BE612A).
 
-<a name="docx-char"></a>
 ## Supported Character Styles
 
 Apply the following character styles by selecting text and clicking on the corresponding button in the Ribbon. Each of the links below redirect to the appropriate instruction page on Microsoft's Word support site.
@@ -70,7 +68,6 @@ Apply the following character styles by selecting text and clicking on the corre
 - [Footnote Reference](https://support.office.com/en-us/article/Insert-footnotes-and-endnotes-61f3fb1a-4717-414c-9a8f-015a5f3ff4cb)
 - [Endnote Reference](https://support.office.com/en-us/article/Insert-footnotes-and-endnotes-61f3fb1a-4717-414c-9a8f-015a5f3ff4cb)
 
-<a name="docx-un"></a>
 ## Unsupported Stylings and Features
 
 - Font
@@ -84,7 +81,6 @@ Apply the following character styles by selecting text and clicking on the corre
 - Inline images (which appear within the flow of a sentence)
 - Linked data relying on field codes
 
-<a name="docx-embed"></a>
 ## Embedding Images (Pictures)
 
 Manifold will accept into its reader what Word refers to as “Pictures.” These can be static images or animated GIFs that are included in source Word files. While Word supports many different arrangement options for the placement of such art, we suggest the most minimal of styling, setting your image on its own line with text flowing above and below it.

@@ -1,6 +1,6 @@
 ---
 id: overview
-title: Customizing
+title: Customization
 sidebar_label: Overview
 ---
 

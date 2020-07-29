@@ -22,7 +22,7 @@ The most common permission-granting scenario will be in providing those with [Re
 By default this section will be empty for new projects, except for those created by users with the `Project Creator` role, who will automatically be listed in this space with `Can Modify Project` permissions for those projects they create.
 
 :::note
-<strong>Note</strong>. Users who are granted these project-specific permissions cannot themselves extend such permissions forward to other users, with the exception of those who have <code>Can Modify Project</code> toggled on—the “Project Editor” permission.
+Users who are granted these project-specific permissions cannot themselves extend such permissions forward to other users, with the exception of those who have <code>Can Modify Project</code> toggled on—the “Project Editor” permission.
 :::
 
 To assign a user project-specific permissions, click `Grant editor permission`. This will open a drawer from the right side of the screen with a dropdown menu and three sliders.
@@ -46,7 +46,7 @@ Grants users the ability to update resource metadata. This permission will be mo
 When this option is selected the title `Metadata Author` will be appended next to the user's name.
 
 :::note
-<strong>Note</strong>. It would be redundant to grant a user both “Can Modify Project” and “Can Modify Metadata,” as someone who can modify a project can also inherently modify its metadata.
+It would be redundant to grant a user both “Can Modify Project” and “Can Modify Metadata,” as someone who can modify a project can also inherently modify its metadata.
 :::
 
 ### Is a Project Author
@@ -55,7 +55,6 @@ Grants users the ability to access draft projects, modify metadata and place res
 
 When this option is selected the title `Author` will be appended next to the user's name.
 
-<a name="entitlements"></a>
 
 ## Project Entitlements
 
@@ -68,7 +67,7 @@ Beyond restricting access, the settings here can be used to customize the messag
 Publishers can also search through existing entitlements to revoke access or learn when a user's access to a project will expire.
 
 :::note
-<strong>Note</strong>. The settings here are for an individual project. By default all Manifold projects are openly accessible. To change the default so that all publications are restricted, see the <a href="/docs/customizing/settings/general.html#behaviors">Settings section</a>.
+The settings here are for an individual project. By default all Manifold projects are openly accessible. To change the default so that all publications are restricted, see the <a href="/docs/customizing/settings/general.html#behaviors">Settings section</a>.
 :::
 
 ### Configure Access Restrictions

@@ -20,7 +20,6 @@ This section is portioned along the following themes:
 * [Grouping Texts by Category](/docs/projects/customizing/texts.html#grouping-texts)
 * [Modifying Text Records](/docs/projects/customizing/texts.html#managing-texts)
 
-<a name="adding-texts"></a>
 ## Adding Texts to Projects
 
 :::note
@@ -54,13 +53,12 @@ Log: Connecting to Manifold websocket...
 
 Once the `Connecting to Manifold websocket` appears in the Log section, the `Ingest` button at the bottom right will turn green and the text can be ingested. When clicked Manifold will process your file. The `Current State` field will read `Processing`, and the log will stream details of what the system is doing. If everything goes correctly, when the process is finished the `Current State` should say `Finished`, a hexadecimal value should be listed under the `Text ID`, and the last line of the log should read `Ingestion Complete`.
 
-If you get anything different from the log, [reach out for support](/docs/index).
+If you get anything different from the log, [reach out for support](/docs/).
 
 Otherwise, you can click on the green `Complete` button, and you will now see the text you ingested in the `Uncategorized` section of the panel.
 
 Congratulations! Your text is now in Manifold!
 
-<a name="grouping-texts"></a>
 ## Grouping Texts by Category
 
 Categories are a means to group and label texts in the system. By default there is one fixed category—`Uncategorized`—into which all texts will initially flow until a user moves them to a created category.
@@ -91,7 +89,6 @@ Texts that are in a custom category that is being deleted will return to `Uncate
 
 To change the order in which the custom categories appear, click on the horizontal grab bars to the right of the category name, which you can use to drag and drop the category to the desired placement.
 
-<a name="managing-texts"></a>
 ## Modifying Text Records
 
 After a text has been ingested, you can modify its metadata, adjust associated Maker records, update how its constituent elements render in the reader, and also re-ingest its source file to accommodate any minor changes that may have been required after the initial ingest.
@@ -104,7 +101,6 @@ From there you will be taken to the text landing page with its own unique sideba
 
 ![Text Landing](/docs/assets/projects/text-landing.png)
 
-<a name="menuBar"></a>
 ### Text Menu Bar Options
 
 The menu bar on the text landing page mirrors the functionality of the menu bar at the project level, along with contextual and added functionality.
@@ -119,7 +115,6 @@ When activated here, the Preview button opens a new tab with the text showing in
 
 This button allows editors the means to delete the specific text that is presently being edited—versus deleting the entire project.
 
-<a name="enableEPUB"></a>
 #### Enable/Disable EPUB
 
 This option provides a means for a publisher to export from Manifold an EPUB of a specific text, regardless of the format it was ingested. If a publisher is creating texts using Word files or Google Docs, this provides the means to secure that same content in the EPUB format.
@@ -129,7 +124,7 @@ Every five minutes Manifold looks for texts that have this setting enabled. If a
 Once generated, Manifold makes the EPUB available for download through the backend (see the next section). Looking ahead, we anticipate tying this to content blocks, so that publishers can provide readers the option to download specific texts as EPUBs to their own devices.
 
 :::note
-<strong>Note</strong>. Presently there is no warning if the system cannot generate an EPUB from the text. The only indication that something has gone amiss is that the <code>Download EPUB</code> button does not appear on the menu after having been toggled on for at least five minutes.
+Presently there is no warning if the system cannot generate an EPUB from the text. The only indication that something has gone amiss is that the <code>Download EPUB</code> button does not appear on the menu after having been toggled on for at least five minutes.
 :::
 
 #### Download EPUB *(Conditional)*
@@ -139,7 +134,7 @@ For texts that have `Enable EPUB` toggled on, this button provides the means for
 Presently this is the only means to secure the generated EPUB, but in the future we expect to make it possible to provide a way for readers to access the file through content blocks on the project landing page.
 
 :::note
-<strong>Note</strong>. The EPUB offered here is one that Manifold has generated. If a publisher loads an EPUB to initially create the text and then toggles <code>Enable EPUB</code> on, Manifold will create its own EPUB. Those two files would be very similar but potentially not exact matches. The original source EPUB is still retained, however, and would be available through the <code>Download Source</code> button (see below).
+The EPUB offered here is one that Manifold has generated. If a publisher loads an EPUB to initially create the text and then toggles <code>Enable EPUB</code> on, Manifold will create its own EPUB. Those two files would be very similar but potentially not exact matches. The original source EPUB is still retained, however, and would be available through the <code>Download Source</code> button (see below).
 :::
 
 #### Download Source *(Conditional)*
@@ -149,17 +144,16 @@ Manifold retains the source files that were uploaded to create each text. This b
 In situations where multiple backend users are uploading and editing files, this provides the means to access source materials directly without having to go through an intermediary. Likewise, in situations where source files have been misplaced, this serves as a handy fallback.
 
 :::note
-<strong>Note</strong>. Manifold does <em>not</em> provide source files for texts that have been ingested via URL (e.g., Google Docs). In such situations this button would not appear.
+Manifold does <em>not</em> provide source files for texts that have been ingested via URL (e.g., Google Docs). In such situations this button would not appear.
 :::
 
-<a name="managing-texts-general"></a>
 
 ### General
 
 When you access a text record in the backend, you'll arrive first in the `General` menu where you can adjust number of the text's fundamental attributes:
 
 :::note
-<strong>Note</strong>. Of the following fields, <code>Title</code>, <code>Subtitle</code>, and <code>Description</code> have display options available in the text content block. To learn more about those options, see the <a href="/docs/projects/customizing/layout.html">Layout</a> section.
+Of the following fields, <code>Title</code>, <code>Subtitle</code>, and <code>Description</code> have display options available in the text content block. To learn more about those options, see the <a href="/docs/projects/customizing/layout.html">Layout</a> section.
 :::
 
 #### Title
@@ -180,7 +174,7 @@ If Manifold cannot find title information it will automatically assign a random 
 The value entered here, whether coming from a source file's metadata or from manual entry, will be properly encoded as the title in any EPUB that Manifold may make of the text for export or download.
 
 :::note
-<strong>Note</strong>. The content of this field will be included when when a URL from the text is shared with another platform capable of conveying that information to its readers (e.g., Twitter, Facebook).
+The content of this field will be included when when a URL from the text is shared with another platform capable of conveying that information to its readers (e.g., Twitter, Facebook).
 :::
 
 #### Subtitle
@@ -202,7 +196,7 @@ https://manifold.umn.edu/read/furious-feminisms/section/412115a1-5dce-4436-b550-
 ```
 
 :::note
-<strong>Note</strong>. It is best to adjust a text slug in the initial setup. If adjusted after the original URL, with an auto-genenerated slug, has been shared, readers may encounter broken links.
+It is best to adjust a text slug in the initial setup. If adjusted after the original URL, with an auto-genenerated slug, has been shared, readers may encounter broken links.
 :::
 
 #### Description
@@ -210,7 +204,7 @@ https://manifold.umn.edu/read/furious-feminisms/section/412115a1-5dce-4436-b550-
 This is a Markdown-enabled field where publishers can describe individual texts. The copy entered here can also appear in a text content block. See the [Layout section](/docs/projects/customizing/layout) for more details on how and where the content of this field can be displayed for readers.
 
 :::note
-<strong>Note</strong>. The content of this field will be included when when a URL from the text is shared with another platform capable of conveying that information to its readers (e.g., Twitter, Facebook).
+The content of this field will be included when when a URL from the text is shared with another platform capable of conveying that information to its readers (e.g., Twitter, Facebook).
 :::
 
 #### Cover
@@ -220,7 +214,7 @@ This field allows publishers to associate a cover image with a text, which can t
 Previously, only texts loaded in the EPUB format would render a cover in this space. With this field, customizable text covers are available for all texts, regardless of their ingestion file type.
 
 :::note
-<strong>Note</strong>. In situations where Manifold is creating an EPUB of a text, for download or export, it will use the cover file stored in this field as the cover for the Manifold-generated EPUB.
+In situations where Manifold is creating an EPUB of a text, for download or export, it will use the cover file stored in this field as the cover for the Manifold-generated EPUB.
 :::
 
 #### Published?
@@ -241,17 +235,14 @@ The content entered in the `Title` and `Description` fields are included when a 
 
 Likewise, the text's title and subtile, its makers (authors, contributors), and description can be toggled to be shown on the project landing page in a text content block. To learn more about all the customizations possible for display elements in a text block, see the [Layout](/docs/projects/customizing/layout) section.
 
-<a name="textsPeople"></a>
 ### People
 
 Through the `People` sidebar element you can add, remove, and modify Maker records associated with the text just as you could for the project generally. For details on that process, which is the same here, see the [People section](/docs/projects/customizing/people).
 
-<a name="textsMeta"></a>
 ### Metadata
 
 In addition to the basic metadata available through `General` sidebar element, there is also a separate menu (`Metadata`) that allows users to modify a robust set of metadata elements associated with a particular text. See the [Reference](/docs/reference/metadata) section for a list and description of all the fields available for texts.
 
-<a name="mod-styles"></a>
 ### Styles
 
 The Styles sidebar menu allows users who are versed in CSS (cascading stylesheets) to modify how certain elements in their text render in the reader by adjusting an existing—or associating a new—CSS file with the text.
@@ -308,5 +299,5 @@ It is important to note that the following fields associated with the specific t
 If you have manually adjusted these fields after your text was initially loaded, the reingest will reset them to their initial state.
 
 :::note
-<strong>Note</strong>. In cases where author or contributor records have been added to a text after it was first ingested, those records will remain through the reingest process. However, if an author or contributor was removed from the record, they will reappear after the reingest.
+In cases where author or contributor records have been added to a text after it was first ingested, those records will remain through the reingest process. However, if an author or contributor was removed from the record, they will reappear after the reingest.
 :::

@@ -1,10 +1,6 @@
 ---
-layout: page
 title: Working with Resource Collections
-menus:
-  projects_customizing:
-    title: Collections
-    weight: 7
+sidebar_label: Collections
 ---
 
 Collections are groupings of resources that can be used to orient a reader around certain themes or as a means to place a series of resources onto a text with one insertion.

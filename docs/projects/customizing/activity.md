@@ -1,10 +1,6 @@
 ---
-layout: page
 title: Editing Activity Items
-menus:
-  projects_customizing:
-    title: Activity
-    weight: 8
+sidebar_label: Activity
 ---
 
 The Activity section of the project page allows users to selectively review and remove events that are displayed as tiles on the Recent Activity blade on the project's frontend homepage. Events are created when new texts and resources are added and when Manifold pulls in Tweets.

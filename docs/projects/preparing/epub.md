@@ -9,7 +9,7 @@ menus:
 Both EPUB2 and EPUB3 formats are viable on Manifold. For best results, make sure your EPUB file [validates](http://validator.idpf.org/) with no errors before loading it to the system.
 
 :::note
-<strong>Note</strong>. There are no file size limitations for EPUB uploads.
+There are no file size limitations for EPUB uploads.
 :::
 
 If you are creating your EPUB file from a program like InDesign, avoid exporting it as a fixed-layout document (FXL): fixed-layout EPUBs are structured very specifically to mimic the look of a printed work, and the format of the underlying coding will prevent your file from ingesting correctly into Manifold.
@@ -21,5 +21,5 @@ The [title bar](/docs/reading/interface.html#title-bar) in the Manifold reader s
 For more about the EPUB spec, please refer to the standard as defined on the [IDPF website](http://idpf.org/epub/31). Suggestions included in the [HTML section](/docs/projects/preparing/html) of this documentation will also generally work when modifying EPUBs. 
 
 :::note
-<strong>Note</strong>. It is not possible to include an EPUB document as part of a <a href="/docs/projects/preparing/index.html#manifest">Manifest upload</a>.
+It is not possible to include an EPUB document as part of a <a href="/docs/projects/preparing/index.html#manifest">Manifest upload</a>.
 :::

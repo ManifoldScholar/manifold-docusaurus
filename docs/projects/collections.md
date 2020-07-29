@@ -26,7 +26,6 @@ This section is broken up along the following themes:
     - [Ordering Projects within Collections](/docs/projects/collections.html#ordering)
     - [Adding and Removing Projects from an Existing Collection](/docs/projects/collections.html#adding-projects)
 
-<a name="new-collections"></a>
 ## Creating a New Project Collection
 
 To create new or modify existing project collections, a user will need to log into the Manifold backend with Administrator, Editor, or Marketeer credentials. From the backend dashboard, navigate to the `Projects` menu and then select `Project Collections` from the submenu:
@@ -37,7 +36,6 @@ Below the sidebar of existing collections there will be a button to create a new
 
 ![Manual Collections](/docs/assets/projects/manual-collection.png)
 
-<a name="manual-collections"></a>
 ### Manual Collections
 
 Manual Collections allow a user to cherry-pick any project in the project library and add it to the collection.
@@ -50,13 +48,12 @@ The collection title appears at the top of the collection blade beside the colle
 
 The description field allows a user to orient the reader to the contents of the collection. This field accepts Markdown input, so limited text formatting is possible with bold, italic, and hyperlinks. The text from this field is rendered below the project title and above the first row of project thumbnails on the frontend.
 
-<a name="visible"></a>
 #### Visible
 
 The visible slider enables the user to create a collection and toggle whether or not readers can access it from the frontend. If toggled off, the collection won't appear on the homepage or on the Project Collections page. If toggled on the collection will appear only on the Project Collections page. See below for how to make a collection appear on the homepage.
 
 :::note
-<strong>Note</strong>. On the Project Collections page, only one row of projects will display before a link to view the full collection is provided. Each row can contain up to four projects.
+On the Project Collections page, only one row of projects will display before a link to view the full collection is provided. Each row can contain up to four projects.
 :::
 
 #### Show on Homepage
@@ -64,7 +61,7 @@ The visible slider enables the user to create a collection and toggle whether or
 This toggle allows users to showcase their collection on the instance's homepage, so long as it is also toggled to be visible. It is not possible to have a project collection appear only on the homepage and not on the Project Collection page.
 
 :::note
-<strong>Note</strong>. On the homepage, only two rows of projects will display before a link to view the full collection is provided. Each row can contain up to four projects.
+On the homepage, only two rows of projects will display before a link to view the full collection is provided. Each row can contain up to four projects.
 :::
 
 #### Collection Icons
@@ -75,22 +72,20 @@ When a new collection is created a user must select one of the available icons t
 
 Once saved, this new manual collection will be empty. To populate it with titles see the section on [Adding and Removing Projects from an Existing Collection](/docs/projects/collections.html#adding-projects).
 
-<a name="smart-collections"></a>
 ### Smart Collections
 
 Smart collections allow users to set certain filters that, when they are satisfied by a project, allow Manifold to automatically include them in a collection. Presently the available filters are a project's status as being [Featured](/docs/projects/customizing/general.html#featured), as well as what [Subjects](/docs/projects/customizing/general.html#subjects) and [Tags](/docs/projects/customizing/general.html#tags) are associated with it.
 
 :::note
-<strong>Note</strong>. Manifold will update the list of projects in smart collections every fifteen minutes. Saving a smart project collection will also refresh the cache of projects in that collection.
+Manifold will update the list of projects in smart collections every fifteen minutes. Saving a smart project collection will also refresh the cache of projects in that collection.
 :::
 
 <p>
-  <img src="/docs/assets/projects/smart-collection.png" alt="Smart Collection" style="float:right; margin-left: .5em; margin-right: 0; max-height:35vmax;" />
+  <img src="/docs/assets/projects/smart-collection.png" alt="Smart Collection"/>
 </p>
 
 The fields required for a Manual Collection—Title, Description, Visible, Show on Homepage, and Collection Icon—are likewise required for Smart Collections. However to properly calibrate a smart collection, the following fields are also required:
 
-<a name="projects-visible"></a>
 #### Projects Visible
 
 This field expects numerical input and controls how many projects that meet the collection's filter criteria are displayed in the Smart Collection.
@@ -123,7 +118,6 @@ More than one Tab can be included in the collection criteria, and they can be pa
 
 To remove a tag from the criteria, simply click the `x` beside its name below the `Add a Tag` button.
 
-<a name="modifying-collections"></a>
 ## Modifying Existing Project Collections
 
 The Project Collections page will display a list of existing collections on the left sidebar. The sidebar displays the collection's title, number of projects in the collection, a toggle to quickly change its homepage [visibility status](/docs/projects/collections.html#visible), and a handle to manually adjust the order of their appearance on both the home and collection pages by dragging and dropping.
@@ -134,7 +128,6 @@ To adjust the collections further, or to delete a collection outright, click on 
 
 ![Collection Settings](/docs/assets/projects/collection-settings.png)
 
-<a name="adjusting-settings"></a>
 ### Adjusting a Collection's Settings
 
 When you click on a collection's `Settings` button, a drawer will open from the right allowing you to modify all of the fields that were set when the collection was originally created. Additionally there are options to delete the collection or adjust its slug as it appears on the collection page (e.g., `https://{instance-name}/projects/project-collection/read-next`).  
@@ -142,10 +135,9 @@ When you click on a collection's `Settings` button, a drawer will open from the 
 ![Collection Settings Drawer](/docs/assets/projects/collection-settings-drawer.png)
 
 :::note
-<strong>Note</strong>. If you have shared the URL to a collection and then change its slug, the original link to the collection page will no longer work.
+If you have shared the URL to a collection and then change its slug, the original link to the collection page will no longer work.
 :::
 
-<a name="ordering"></a>
 ### Ordering Projects within Collections
 
 When a collection is selected, a user can adjust how the projects within the collection are sorted and displayed for readers through two means: a dropdown that offers four sorting options (Newest, Recently Updated, as well as forward and backward alphabetization) and the `Order Manually` slider.
@@ -163,7 +155,6 @@ This dropdown works in conjunction with the [`Projects Visible`](/docs/projects/
 
 For Manual Collections an `Order Manual` slider is available. If activated the `Order Collection By` dropdown will disappear and a user can reorder the projects within the collection manually by dragging and dropping them with their mouse.
 
-<a name="adding-projects"></a>
 ### Adding and Removing Projects from an Existing Collection
 
 To add projects to a Manual collection, select the collection from the sidebar and then click the `Manage Projects` button beneath its name. A drawer will slide open from the right, showing a paginated view of all the projects on the instance.

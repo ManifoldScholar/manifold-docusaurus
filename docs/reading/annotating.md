@@ -41,10 +41,9 @@ Readers can comment on any user's annotations left to their My Public Annotation
 Comments can also be applied to project resources. See the [resource section](/docs/reading/placing) to learn more about how comments function in the resource space.
 
 :::note
-<strong>Note</strong>. Comments are not collected in the <a href="/docs/reading/interface.html#visibility-menu">Visibility Menu</a>.
+Comments are not collected in the <a href="/docs/reading/interface.html#visibility-menu">Visibility Menu</a>.
 :::
 
-<a name="reading-groups"></a>
 
 ## Reading Groups
 
@@ -59,7 +58,6 @@ Readers who create a group are considered the group's moderator. Those who join 
 - [Deleting a Reading Group](/docs/reading/annotating.html#delete-group)
 - [Managing Your Reading Groups](/docs/reading/annotating.html#manage-groups)
 
-<a name="accessing-groups"></a>
 
 ### Accessing Reading Groups
 
@@ -84,7 +82,7 @@ When the current group name is clicked the modal will display all the reading gr
 ![Current Group Modal](/docs/assets/reading/current-group.png)
 
 :::note
-<strong>Note</strong>. You need to have an account on the Manifold instance in question and be logged in, in order to see the Manage Groups option.
+You need to have an account on the Manifold instance in question and be logged in, in order to see the Manage Groups option.
 :::
 
 On this Manage Reading Groups page you can create new reading groups, join a group, and see a listing of those groups you moderate or are a member.
@@ -95,7 +93,6 @@ Each group in the list includes a tag beside its name indicating whether the gro
 
 Clicking on a group entry in this listing will direct you to a specific group's dashboard, where you can see and sort through various engagements the group members have made across texts.
 
-<a name="create-groups"></a>
 
 ### Creating a Reading Group
 
@@ -109,7 +106,6 @@ A drawer will open from the right with fields prompting you define the dynamics 
 
 A group name is required to create a new reading group; however, the name can be modified at any time.
 
-<a name="group-privacy"></a>
 
 #### Privacy
 
@@ -146,7 +142,6 @@ Comment threads are disabled in Anonymous groups. However, readers annotating an
   </figure>
 :::
 
-<a name="invite-code"></a>
 
 #### Invitation Code
 
@@ -157,14 +152,13 @@ The code can be shared with those intended to be part of the group—via email, 
 ![Enter Code](/docs/assets/reading/enter-code.png)
 
 :::note
-<strong>Note</strong>. Any manual alterations made to the code on this page will be reflected in the corresponding <a href="/docs/reading/annotating.html#invite-url">Invitation URL</a>, described below.
+Any manual alterations made to the code on this page will be reflected in the corresponding <a href="/docs/reading/annotating.html#invite-url">Invitation URL</a>, described below.
 :::
 
 Clicking the `Regenerate` button on the right will create a new invitation code for the group, rendering the previous access code inactive, though users who joined the group previously with an old code will still be members of the group.
 
 To remove a reader from a group see the [Removing a Member](/docs/reading/annotating.html#remove-member) section.
 
-<a name="invite-url"></a>
 
 #### Invitation URL
 
@@ -186,7 +180,6 @@ When the Notifications field is checked, Manifold will alert the group moderator
 
 To remove a reader from a group see the [Removing a Member](/docs/reading/annotating.html#remove-member) section.
 
-<a name="join-group"></a>
 
 ### Join a Reading Group
 
@@ -199,7 +192,7 @@ Readers who have been provided an invite code can join a group by selecting “M
 Alternatively, if the group moderator has encoded the invite URL on a class homepage or in an email, readers need only click the link to be taken to the instance to confirm their interest in joining the group.
 
 :::note
-<strong>Note</strong>. See the <a href="/docs/reading/annotating.html#invite-url">Invite URL</a> section for concerns that may arise for readers click on an invite link and who aren't presently logged in or don't have accounts on the instance.
+See the <a href="/docs/reading/annotating.html#invite-url">Invite URL</a> section for concerns that may arise for readers click on an invite link and who aren't presently logged in or don't have accounts on the instance.
 :::
 
 Pro tip: the phrase that follows `join=` in the invite URL is the group's invite code and can be input by readers on the Manage Groups page. In the following example, the invite code would be `I05TAPB9`.
@@ -208,7 +201,6 @@ Pro tip: the phrase that follows `join=` in the invite URL is the group's invite
 https://instance-name.domain/my/groups?join=I05TAPB9
 ```
 
-<a name="leave-group"></a>
 
 ### Leave a Reading Group
 
@@ -225,10 +217,9 @@ On the group's member list there is a “Leave Group” button that will allow y
 ![Leave Group](/docs/assets/reading/leave-group.png)
 
 :::note
-<strong>Note</strong>. Any annotations or highlights a reader commits to the group prior to their leaving will still be accessible to remaining group members.
+Any annotations or highlights a reader commits to the group prior to their leaving will still be accessible to remaining group members.
 :::
 
-<a name="delete-group"></a>
 
 ### Deleting a Reading Group
 
@@ -236,7 +227,6 @@ When deleting a public reading group, all annotations and highlights a user made
 
 For details about the process of deleting a group, see the [Edit Group section](/docs/reading/annotating.html#edit-groups) below.
 
-<a name="remove-member"></a>
 
 ### Remove a Reading Group Member
 
@@ -244,7 +234,6 @@ Reading group moderators can selectively remove individual members from their gr
 
 See the [See All Members section](/docs/reading/annotating.html#see-all) below for the process of removing a reading group member.
 
-<a name="manage-groups"></a>
 
 ### Managing Your Reading Groups
 
@@ -256,7 +245,6 @@ The first element of the dashboard is the group's name. If you're the moderator 
 
 ![Dashboard Edit Options](/docs/assets/reading/dashboard-edit.png)
 
-<a name="edit-groups"></a>
 
 #### Edit Group
 
@@ -270,7 +258,6 @@ Additionally, above the Group Name field, there is an option to delete the group
 <strong>Location</strong>. Navigate to the Edit Group button from the Manage Groups Page and then clicking on the group name in question from the list available, below the Join a Group field. On the resulting group dashboard, the green Edit Group button will be on the right of the group name. This option only appears when you're the moderator of the group you're viewing.
 :::
 
-<a name="see-all"></a>
 
 #### See All Members
 

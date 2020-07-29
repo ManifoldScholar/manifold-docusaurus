@@ -15,7 +15,7 @@ From this view, publishers can export an individual Manifold project to a preser
 Before a project can be exported, the pathway between Manifold and the target archive first needs to be configured. Instructions on how to establish this connection are described in the [Records section](/docs/customizing/records/export).
 
 :::note
-<strong>Note</strong>. Only users with Administrator or Editor credentials are able to export projects. When Project Creators or Marketeers access the backend, the <code>Export</code> menu will not be visible to them.
+Only users with Administrator or Editor credentials are able to export projects. When Project Creators or Marketeers access the backend, the <code>Export</code> menu will not be visible to them.
 :::
 
 When first landing on this page, if no targets have been preconfigured on your instance, Manifold will prompt you to create one. If there are export targets already saved, Manifold will direct you to select one from the dropdown field labeled `New Project Export`.
@@ -25,7 +25,7 @@ Once the export target has been selected, click `Export Project` to begin the pr
 A project can be exported multiple times. This page will list each time it has been exported with information on where it was directed along with the size of the package. Publishers can download directly from this view the most recent export package to review its form and content.
 
 :::note
-<strong>Note</strong>. Because a copy of the most recent export package is retained on your instance, that package counts against your server space.
+Because a copy of the most recent export package is retained on your instance, that package counts against your server space.
 :::
 
 ## Export Details
@@ -52,7 +52,7 @@ It is not possible to export distinct components of a project. The feature as it
 - Associations with reading groups or project collections
 
 :::note
-<strong>Note</strong>. The export will function as described regardless of whether or not the publisher has chosen to Enable EPUB files to be produced for individual texts. That feature has no bearing on this one.
+The export will function as described regardless of whether or not the publisher has chosen to Enable EPUB files to be produced for individual texts. That feature has no bearing on this one.
 :::
 
 ## Troubleshooting
