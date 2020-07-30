@@ -11,14 +11,13 @@ Manifold projects begin with authors and their willingness to think beyond the n
 
 This section of documentation is intended to be used by Manifold authors who are looking to better understand
 
-- what kinds of [rights concerns](/docs/guides/writing/rights) they are likely going to need to negotiate for their publisher,
-- how to [approach a publisher](/docs/guides/writing/proposals) with a Manifold edition in mind, and
-- best practices for [authoring](/docs/guides/writing/writing) their material for this and all modern publishing systems.
+- what kinds of [rights concerns](rights.md) they are likely going to need to negotiate for their publisher,
+- how to [approach a publisher](proposals.md) with a Manifold edition in mind, and
+- best practices for [authoring](writing.md) their material for this and all modern publishing systems.
 
 Also of interest will be considerations in other sections for how the platform can serve and showcase supporting [resources](/docs/projects/resources) and how best to format materials for the Manifold reader in the following file types:
 
-- [EPUB](/docs/projects/preparing/epub)
-- [Google Docs](/docs/projects/preparing/gdoc)
-- [Markdown](/docs/projects/preparing/md)
-- [HTML](/docs/projects/preparing/html)
-- [Word](/docs/projects/preparing/docx)
+- [EPUB](/projects/preparing/epub.md)
+- [Google Docs](/projects/preparing/gdoc.md)
+- [Markdown](/projects/preparing/md.md)
+- [Word](/projects/preparing/docx.md)
