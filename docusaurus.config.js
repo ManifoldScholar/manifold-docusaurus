@@ -18,9 +18,8 @@ module.exports = {
         },
         {to: 'docs/walkthroughs', label: 'Walkthroughs', position: 'left'},
         {
-          to: 'guides',
-          activeBasePath: 'guides',
-          activeBaseRegex: 'guides/(full)',
+          to: 'docs/guides/landing',
+          activeBasePath: 'docs/guides',
           label: 'Guides',
           position: 'left',
         },
@@ -34,14 +33,6 @@ module.exports = {
         docs: {
           // It is recommended to set document id as docs home page (`docs/` path).
           homePageId: 'overview',
-          sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
-        },
-        guides: {
-          // It is recommended to set document id as docs home page (`docs/` path).
-          homePageId: 'landing',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:

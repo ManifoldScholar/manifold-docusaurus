@@ -105,25 +105,25 @@ module.exports = {
           'reference/downloads',
         ]
       }
-  ]
-}
-{
+  ],
   guides: [
+    'guides/landing',
     {
       Writing: [
-        'writing/index',
-        'writing/proposals',
-        'writing/rights',
-        'writing/writing',
+        'guides/writing/index',
+        'guides/writing/proposals',
+        'guides/writing/rights',
+        'guides/writing/writing',
       ]
     },
     {
       Publishing: [
-        'publishing/index',
-        'publishing/proposals',
-        'publishing/project_types',
-        'publishing/workflow',
+        'guides/publishing/index',
+        'guides/publishing/proposals',
+        'guides/publishing/project_types',
+        'guides/publishing/workflow',
       ]
     },
   ]
+
 }
