@@ -1,5 +1,7 @@
 ---
-title: For Developers
+id: apis
+title: Manifold APIs
+sidebar_label: Manifold APIs
 ---
 
 Manifold is open-source software, and we welcome community contributions. To get started, follow the instructions on [how to set up a Manifold development environment](/docs/development/environment).

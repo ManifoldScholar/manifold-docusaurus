@@ -2,10 +2,39 @@ module.exports = {
   docs: [
       'overview',
       {
-        Installation: [
-          'installation/centos',
-          'installation/ubuntu',
-          'installation/docker'
+        Managing: [
+          {
+            Installation: [
+              'managing/installation/packages',
+              'managing/installation/source',
+              'managing/installation/docker',
+            ]
+          },
+          {
+            Administration: [
+              'managing/administration/backup',
+              'managing/administration/security',
+              'managing/administration/migrating',
+              'managing/administration/upgrading',
+              'managing/administration/troubleshooting',
+            ]
+          },
+          {
+            Developers: [
+              'managing/developers/environment',
+              'managing/developers/reporting',
+              'managing/developers/apis',
+              'managing/developers/contributing',
+            ]
+          },
+        ]
+      },
+      {
+        Admins: [
+          'admins/branding',
+          'admins/integrations',
+          'admins/accounts',
+          'admins/configurations',
         ]
       },
       {
@@ -90,12 +119,6 @@ module.exports = {
         ]
       },
       {
-        Developers: [
-          'development/index',
-          'development/environment'
-        ]
-      },
-      {
         Reference: [
           'reference/index',
           'reference/glossary',
@@ -105,6 +128,9 @@ module.exports = {
           'reference/downloads',
         ]
       }
+  ],
+  walkthroughs: [
+    'walkthroughs/landing',
   ],
   guides: [
     'guides/landing',

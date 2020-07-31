@@ -1,12 +1,14 @@
 ---
+id: environment
 title: Development Environment
+sidebar_label: Development Environment
 ---
 
 Your first step toward contributing to Manifold should be to setup a development environment. Manifold requires a number of services for it to run correctly, so getting setup will require a little bit of work.
 
-<div class="notice">
-<strong>Note:</strong> The following steps were followed on a fresh install of MacOS 10.15 (Catalina). Your mileage may vary on other operating systems.
-</div>
+:::note
+The following steps were followed on a fresh install of MacOS 10.15 (Catalina). Your mileage may vary on other operating systems.
+:::
 
 ## Step 1: Install dependencies
 
