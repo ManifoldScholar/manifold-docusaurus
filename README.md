@@ -1,4 +1,4 @@
-# Manifold Doucmentation
+# Manifold Documentation
 
 ### Background
 
