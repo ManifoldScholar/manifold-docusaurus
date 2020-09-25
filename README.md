@@ -1,14 +1,22 @@
-# Website
+# Manifold Doucmentation
 
-This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
+### Background
+
+Prior to 2020, the Manifold team used Jekyll to publish platform documentation. In late 2020, the team decided to transition all documentation to Docusaurus.
 
 ### Installation
 
+To work with the documentation, you'll need to get [a recent version of Node](https://nodejs.org/en/download/) installed. You'll also need to [install the Yarn package manager](https://classic.yarnpkg.com/en/docs/install#mac-stable).
+
+Make sure node dependencies are present by running the following command from the root of the repository.
+
 ```
-$ yarn
+$ yarn install
 ```
 
 ### Local Development
+
+#### Starting Docusaurus
 
 ```
 $ yarn start
@@ -24,10 +32,3 @@ $ yarn build
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
-### Deployment
-
-```
-$ GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
