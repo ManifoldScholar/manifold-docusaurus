@@ -2,154 +2,73 @@ module.exports = {
   docs: [
       'overview',
       {
-        Managing: [
+        'Administering Manifold': [
+            'administering/hosting',
+            'administering/installation',
+            'administering/managing_services',
+            'administering/storage',
           {
-            Installation: [
-              'managing/installation/packages',
-              'managing/installation/source',
-              'managing/installation/docker',
+            Updating: [
+              'administering/updating/updating_instructions',
+              'administering/updating/release_notes',
+            ]
+          },
+            'administering/backup_restore',
+            'administering/troubleshooting',
+            'administering/securing_manifold',
+          {
+            'Configuring Manifold': [
+              'administering/configuring/managing_settings',
+              'administering/configuring/general_settings',
+              'administering/configuring/theme_settings',
+              'administering/configuring/integration_settings',
+              'administering/configuring/project_subjects',
+              'administering/configuring/email_settings',
             ]
           },
           {
-            Administration: [
-              'managing/administration/backup',
-              'managing/administration/security',
-              'managing/administration/migrating',
-              'managing/administration/upgrading',
-              'managing/administration/troubleshooting',
-            ]
-          },
-          {
-            Developers: [
-              'managing/developers/environment',
-              'managing/developers/reporting',
-              'managing/developers/apis',
-              'managing/developers/contributing',
-            ]
-          },
-        ]
-      },
-      {
-        Admins: [
-          'admins/branding',
-          'admins/integrations',
-          'admins/accounts',
-          'admins/configurations',
-        ]
-      },
-      {
-        Customization: [
-          'customizing/overview',
-          {
-            Records: [
-              'customizing/records/index',
-              'customizing/records/export',
-              'customizing/records/features',
-              'customizing/records/pages'
-            ],
-            Settings: [
-              'customizing/settings/index',
-              'customizing/settings/general',
-              'customizing/settings/analytics',
-              'customizing/settings/drive',
-              'customizing/settings/email',
-              'customizing/settings/facebook',
-              'customizing/settings/google',
-              'customizing/settings/integrations',
-              'customizing/settings/subjects',
-              'customizing/settings/theme',
-              'customizing/settings/twitter',
-            ]
-          }
-        ]
-      },
-      {
-        Projects: [
-          'projects/creating',
-          {
-            'Customizing Projects': [
-              'projects/customizing/index',
-              'projects/customizing/general',
-              'projects/customizing/layout',
-              'projects/customizing/access',
-              'projects/customizing/people',
-              'projects/customizing/texts',
-              'projects/customizing/resources',
-              'projects/customizing/collections',
-              'projects/customizing/activity',
-              'projects/customizing/metadata',
-              'projects/customizing/social',
-              'projects/customizing/exports',
-              'projects/customizing/log',
-            ]
-          },
-          'projects/collections',
-          {
-            'Preparing Texts': [
-              'projects/preparing/index',
-              'projects/preparing/epub',
-              'projects/preparing/gdoc',
-              'projects/preparing/md',
-              'projects/preparing/docx',
-            ]
-          },
-          'projects/resources',
-          {
-            'Accounts and Roles': [
-              'projects/accounts/index',
-              'projects/accounts/users',
-              'projects/accounts/makers',
-              'projects/accounts/creating',
-              'projects/accounts/managing',
+            Reference: [
+              'administering/reference/environment_variables',
+              'administering/reference/api_rake_tasks',
+              'administering/reference/omnibus_reference',
             ]
           },
         ]
       },
       {
-        'Reading Interface': [
-          'reading/index',
-          'reading/library',
-          'reading/projects',
-          'reading/interface',
-          'reading/sharing',
-          'reading/placing',
-          'reading/annotating',
-          'reading/highlighting',
-          'reading/notifications',
+        'Using Manifold': [
+            'using/manifold_library',
+            'using/your_account',
+            'using/manifold_projects',
+            'using/reading_manifold',
+            'using/reading_groups',
         ]
       },
       {
-        Reference: [
-          'reference/index',
-          'reference/glossary',
-          'reference/search',
-          'reference/interface',
-          'reference/metadata',
-          'reference/downloads',
+        'Manifold Backend': [
+            'backend/projects',
+            'backend/project_collections',
+            'backend/text',
+            'backend/resource',
+            'backend/resource_collections',
+            'backend/users',
+            'backend/makers',
         ]
-      }
+      },
+      {
+        Developers: [
+            'developers/development_environment',
+            'developers/contributing',
+            'developers/tests',
+            'developers/api',
+        ]
+      },
   ],
   walkthroughs: [
     'walkthroughs/landing',
   ],
   guides: [
     'guides/landing',
-    {
-      Writing: [
-        'guides/writing/index',
-        'guides/writing/proposals',
-        'guides/writing/rights',
-        'guides/writing/writing',
-      ]
-    },
-    {
-      Publishing: [
-        'guides/publishing/index',
-        'guides/publishing/proposals',
-        'guides/publishing/project_types',
-        'guides/publishing/workflow',
-      ]
-    },
   ]
 
 }
