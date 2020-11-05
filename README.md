@@ -1,9 +1,5 @@
 # Manifold Documentation
 
-
-This is a change.
-
-
 ### Background
 
 Prior to 2020, the Manifold team used Jekyll to publish platform documentation. In late 2020, the team decided to transition all documentation to Docusaurus.
