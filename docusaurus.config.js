@@ -9,15 +9,15 @@ module.exports = {
   themeConfig: {
     footer: {
       logo: {
-        alt: 'Manifold DOcumentation',
-        src: 'https://v2.docusaurus.io/img/docusaurus.svg',
+        alt: 'Manifold Docs',
+        src: '/img/logo.svg',
         href: '/',
       },
     },
     navbar: {
       logo: {
-        alt: 'Manifold DOcumentation',
-        src: 'https://v2.docusaurus.io/img/docusaurus.svg',
+        alt: 'Manifold Docs',
+        src: '/img/logo.svg',
         href: '/',
       },
       items: [
