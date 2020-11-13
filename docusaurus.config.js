@@ -7,8 +7,20 @@ module.exports = {
   organizationName: 'facebook', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
   themeConfig: {
+    footer: {
+      logo: {
+        alt: 'Manifold DOcumentation',
+        src: 'https://v2.docusaurus.io/img/docusaurus.svg',
+        href: '/',
+      },
+    },
     navbar: {
-      links: [
+      logo: {
+        alt: 'Manifold DOcumentation',
+        src: 'https://v2.docusaurus.io/img/docusaurus.svg',
+        href: '/',
+      },
+      items: [
         {
           to: 'docs',
           activeBasePath: 'docs',
@@ -36,8 +48,6 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         docs: {
-          // It is recommended to set document id as docs home page (`docs/` path).
-          homePageId: 'overview',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
