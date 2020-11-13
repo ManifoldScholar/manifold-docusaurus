@@ -9,4 +9,4 @@ sidebar_label: API
 ## Authorizing API Requests
 
 
-[This is a broken link. It should break the build.](./foo.md).
+[This is a working link. It should correct the build.](./contributing.md).
