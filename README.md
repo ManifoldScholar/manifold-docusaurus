@@ -32,6 +32,18 @@ $ yarn build
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
+### Deploy
+
+All commits to the master branch will trigger a deployment to Github
+Pages via a Github Action. It is possible to manually deploy with this
+command:
+
+```
+GIT_USER=your-git-user yarn deploy
+```
+
+The current state of the master branch is always visible at [https://manifoldscholar.github.io/manifold-docusaurus/](https://manifoldscholar.github.io/manifold-docusaurus/)
+
 ### Basic CLI Workflow
 
 1. Check your status relative to master: `$ git status`.
