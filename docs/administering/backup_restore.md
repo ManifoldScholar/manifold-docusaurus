@@ -6,24 +6,28 @@ sidebar_label: Backup and Restore
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-:::caution
 The steps involved with backing up your instance and restoring from backup will vary depending on how you installed Manifold and what operating system you installed it on. The content on this page is meant to get you started. It is not exhaustive, nor have the scripts below been thoroughly tested in different environments.
 
-Manifold is open source software, and you are ultimately responsible for your data. Proceed with caution and make sure you understand what the following scripts do before you run them.
+:::caution
+Manifold is open-source software, and you are ultimately responsible for your data. Proceed with caution and make sure you understand what the following scripts do before you run them.
 :::
-
 
 ## Backup Manifold
 
-Manifold stores user data in two places: 1) the PostgreSQL data base, and 2) the file system. It is also possible for Manifold to store files in cloud storage (AWS or GCS). Backing up cloud storage buckets is outside the scope of these instructions.
+Manifold stores user data in two places: (1) the PostgreSQL database and (2) the file system.
 
-Backing up a Manifold instance involves backing up files and creating a database dump. The specific commands required to backup a Manifold installation depend on how Manifold was installed. Select your installation type to see sample commands used for backing up your Manifold instance.
+:::note
+It is also possible for Manifold to store files in cloud storage (AWS or GCS); however, backing up cloud storage buckets is outside the scope of these instructions.
+:::
 
-Each of the backup scripts below will create a tar archive that contains a `dump.sql` file and an `uploads` directory. These outputs can be used as inputs for the restore scripts below.
+Backing up a Manifold instance involves backing up files and creating a database dump. The specific commands required to backup a Manifold installation depend on how Manifold was installed. Select your installation type from the options below to see sample commands you can use for backing up your instance.
+
+Each of the backup scripts below will create a tar archive that contains a `dump.sql` file and an `uploads` directory. These outputs can be used as inputs for the restore scripts that are described further below.
 
 :::info
-If you downloaded one of our operating system packages for Centos or Ubuntu, follow the "Package Install" instructions. The "Source Install" instructions assumes that services are managed by systemd in an Ubuntu environment.
+If you downloaded one of our operating system packages for Centos or Ubuntu, follow the “Package Install” instructions. The “Source Install” instructions assumes that services are managed by systemd in an Ubuntu environment.
 :::
+
 <Tabs
   groupId="install-type"
   defaultValue="package"
@@ -33,7 +37,7 @@ If you downloaded one of our operating system packages for Centos or Ubuntu, fol
   ]}>
   <TabItem value="package">
 
-Use this Bash script can as a starting point for automating your instance backups. This script will need to be run as root.
+Use this Bash script as a starting point for automating your instance backups. This script will need to be run as root.
 
 ```bash
 #!/bin/bash
@@ -75,7 +79,7 @@ echo "Backup has been created at $BACKUP_FILE"
   </TabItem>
   <TabItem value="source">
 
-Use this Bash script as a starting point for automating your instance backups. This example assumes that your instance is installed at `/home/manifold/deploy/current`, and that the files are owned by a `manifold` user.
+Use this Bash script as a starting point for automating your instance backups. This example assumes that your instance is installed at `/home/manifold/deploy/current` and that the files are owned by a `manifold` user.
 
 ```bash
 #!/bin/bash
