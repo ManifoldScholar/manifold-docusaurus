@@ -4,7 +4,6 @@ title: Theme Settings
 sidebar_label: Theme Settings
 ---
 
-import CodeBlock from "@theme/CodeBlock";
 import Spec from "@theme/Spec";
 const defaultImageFormats = "GIF, JPEG, JPG, PNG";
 
