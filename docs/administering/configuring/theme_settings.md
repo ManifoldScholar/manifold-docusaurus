@@ -18,7 +18,7 @@ The options described in this section globally affect your instance. More locali
 
 This field works in concert with the Footer Logo described below. When a URL is entered here, the Footer Logo opens a new browser tab to that location. If this field is left blank, the Footer Logo will render as a static graphic.
 
-:::info
+:::note
 When there is no Footer Logo present, the URL described here will have no effect.
 :::
 
@@ -136,7 +136,7 @@ The colors of the links and icons in the Header display the color assigned here.
 
 The text of the page name (Home, Projects, Following) a reader is currently viewing *or* hovering over displays with the color assigned here. The default is dark gray with the value `#363636`.
 
-:::info
+:::note
 If no value is entered here, the hover color for links in the Header defaults to the Accent Color value.
 :::
 
@@ -186,7 +186,7 @@ The Top Bar is an optional navigation element that sits atop the Header. The Bar
 
 You can use the Top Bar to point readers to a policy page, a Project Collection, a class syllabus, a sale on your website, your Manifold homepage, site news—wherever you want to call special attention.
 
-:::info
+:::note
 The Top Bar won't display unless both the text and URL are provided.
 :::
 
@@ -194,7 +194,7 @@ The Top Bar won't display unless both the text and URL are provided.
 
 What text you enter here will serve as the default Top Bar message for your instance. This text can be altered on a Project-by-Project basis in cases where this general notice may not suit. See the [Project settings](../../backend/projects.md) page for more.
 
-:::info
+:::note
 This field is ***not*** Markdown/HTML enabled and only accepts one line of text.
 :::
 
@@ -202,7 +202,7 @@ This field is ***not*** Markdown/HTML enabled and only accepts one line of tex
 
 You can customize the color of the Top Bar using the same syntax described above for the `Accent Color`: CSS color keyword, Hexadecimal, RGB, RGBA, HSL, HSLA, or HWB. When left blank the color will revert to the default, Manifold green: `#H2E3AC`.
 
-:::info
+:::note
 Unlike the text, the Top Bar's color value ***cannot*** be adjusted for individual projects.
 :::
 
