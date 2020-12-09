@@ -20,7 +20,7 @@ When there is no Footer Logo present, the URL described here will have no effect
 
 ### Header Logo
 
-This field is intended to capture you primary logo or brand mark. The image saved here replaces the default Manifold icon that appears on the left side of the Manifold Header.
+This field is intended to capture your primary logo or brand mark. The image saved here replaces the default Manifold icon that appears on the left side of the Manifold Header.
 
 #### Specs
 **Width**: flexible  
@@ -73,7 +73,6 @@ The instruction should be surrounded by braces, with the parameters enclosed in 
 
 For example, `{"left": 100, "top": 100}` would push the logo 100 pixels to the right and 100 pixels down from its default location in the header.
 
-
 ### Header Navigation Offset
 
 The Manifold header comprises the Header Logo and a series of navigational elements, beginning with the home link and continuing toward the right through the user avatar.
@@ -96,15 +95,15 @@ You can override that here and use a color that matches your existing visual ide
 
 Color values can be supplied in one of the following formats: 
 
-| Format                                                                 | Example Input             |
-|------------------------------------------------------------------------|---------------------------|
-| [CSS Color Keyword](https://www.w3schools.com/colors/colors_names.asp) | `Red`, `Green`, `Blue`    |
-| [Hexadecimal](https://www.w3schools.com/Css/css_colors_hex.asp)        | `#00FF00`                 |
-| [RGB](https://www.w3schools.com/Css/css_colors_rgb.asp)                | `rgb(0,0,255)`            |
-| [RGBA](https://www.w3schools.com/Css/css_colors_rgb.asp)               | `rgba(255, 99, 71, 0.8)`  |
-| [HSL](https://www.w3schools.com/Css/css_colors_hsl.asp)                | `hsl(0, 100%, 25%)`      |
-| [HSLA](https://www.w3schools.com/Css/css_colors_hsl.asp)               | `hsla(9, 100%, 64%, 0.6)` |
-| [HWB](https://www.w3schools.com/colors/colors_hwb.asp)                 | `hwb(50, 35%, 2%)`        |
+| Format            | Example Input             |
+|-------------------|---------------------------|
+| CSS Color Keyword | `Red`, `Green`, `Blue`    |
+| Hexadecimal       | `#00FF00`                 |
+| RGB               | `rgb(0,0,255)`            |
+| RGBA              | `rgba(255, 99, 71, 0.8)`  |
+| HSL               | `hsl(0, 100%, 25%)`       |
+| HSLA              | `hsla(9, 100%, 64%, 0.6)` |
+| HWB               | `hwb(50, 35%, 2%)`        |
 
 ### Header Colors
 
@@ -199,5 +198,5 @@ Like the Top Bar text, the URL entered here can be adjusted on a per-Project bas
 This dropdown is where you configure if and where the Top Bar will display on your instance: 
 
 - `Disabled`. In this state the Top Bar will not display. However you can override this setting and set the Top Bar to appear for individual projects.
-- `Always Visible`. So long as ***both *** the text and URL have been provided, the Top Bar will display throughout your instance. Project-level Top Bar settings will override the settings entered here.
+- `Always Visible`. So long as ***both*** the text and URL have been provided, the Top Bar will display throughout your instance. Project-level Top Bar settings will override the settings entered here.
 - `Only Visible in Standalone Mode`. The Top Bar will appear on just those projects that are enabled for [Standalone Mode](../../backend/projects.md). Project-level overrides are still possible with this setting selected.
