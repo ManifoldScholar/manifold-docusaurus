@@ -4,6 +4,11 @@ title: Theme Settings
 sidebar_label: Theme Settings
 ---
 
+import CodeBlock from "@theme/CodeBlock";
+import Spec from "@theme/Spec";
+const defaultImageFormats = "GIF, JPEG, JPG, PNG";
+
+
 ## Branding
 
 Manifold allows you to adjust the logos and colors of your instance as a means to match your existing visual identity on the web.
@@ -22,10 +27,14 @@ When there is no Footer Logo present, the URL described here will have no effect
 
 This field is intended to capture your primary logo or brand mark. The image saved here replaces the default Manifold icon that appears on the left side of the Manifold Header.
 
-#### Specs
-**Width**: flexible  
-**Max-Height**: 60 px  
-**Format**: GIF, JPEG, JPG, PNG
+<Spec
+    title="Header Logo Specs"
+    items={[
+        { key: "Width", value: "flexible" },
+        { key: "Max-Height", value: "60px" },
+        { key: "Format", value: defaultImageFormats },
+    ]}
+/>
 
 ### Mobile Header Logo
 
@@ -33,10 +42,15 @@ The logo saved to this space serves the same function as the Header Logo; in thi
 
 When a reader’s viewport is less than 760 px wide, the image saved here will replace the Header Logo in the Manifold Header.
 
-#### Specs
-**Max-Width**: 175 px  
-**Max-Height**: 26 px  
-**Format**: GIF, JPEG, JPG, PNG
+<Spec
+    title="Header Logo Specs"
+    items={[
+        { key: "Max-Width", value: "175px" },
+        { key: "Max-Height", value: "26px" },
+        { key: "Format", value: defaultImageFormats },
+    ]}
+/>
+
 
 :::tip
 Mobile Logos are best prepared as graphic-only elements, without text, in a 1:1 ratio, though Manifold does not restrict files to those recommendations.
@@ -46,17 +60,22 @@ Mobile Logos are best prepared as graphic-only elements, without text, in a 1:1 
 
 The Footer Logo appears on the right side of the Manifold Footer. This logo can replicate the Header Logo or serve as a distinct branding element.
 
-#### Specs
-**Max-Width**: 325 px  
-**Max-Height**: 200 px  
-**Format**: GIF, JPEG, JPG, PNG
+<Spec
+    title="Header Logo Specs"
+    items={[
+        { key: "Max-Width", value: "325px" },
+        { key: "Max-Height", value: "200px" },
+        { key: "Format", value: defaultImageFormats },
+    ]}
+/>
+
 
 ### Favicon
 
 The favicon is the square icon that appears in your browser’s title bar or the page’s tab. This icon can mimic that of the Mobile Header Logo or be of its own distinct design.
 
 #### Specs
-**Dimensions**: 1:1  
+**Dimensions**: 1:1
 **Format**: GIF, JPEG, JPG, PNG
 
 :::tip
@@ -91,9 +110,8 @@ The Accent Color is your instance’s primary color and the base upon which seco
 
 You can override that here and use a color that matches your existing visual identity. When you do so, links, icons, and buttons throughout the instance will change to either match the accent color you input exactly or, for the sake of contrast, be selected by the system to pair well with your choice.
 
-#### Syntax
 
-Color values can be supplied in one of the following formats: 
+<Spec title="Color Formats" subtitle="Color values can be supplied in one of the following formats.">
 
 | Format            | Example Input             |
 |-------------------|---------------------------|
@@ -104,6 +122,8 @@ Color values can be supplied in one of the following formats:
 | HSL               | `hsl(0, 100%, 25%)`       |
 | HSLA              | `hsla(9, 100%, 64%, 0.6)` |
 | HWB               | `hwb(50, 35%, 2%)`        |
+
+</Spec>
 
 ### Header Colors
 
@@ -165,7 +185,7 @@ There are currently no means to load custom fonts into the application.
 
 The Top Bar is an optional navigation element that sits atop the Header. The Bar is made up of a ribbon that spans the width of the screen and one line of text, all of which functions as a hyperlink. You can configure the Bar to display generally throughout your instance, for only select Projects, or for those Projects configured for Standalone Mode.
 
-You can use the Top Bar to point readers to a policy page, a Project Collection, a class syllabus, a sale on your website, your Manifold homepage, site news—wherever you want to call special attention. 
+You can use the Top Bar to point readers to a policy page, a Project Collection, a class syllabus, a sale on your website, your Manifold homepage, site news—wherever you want to call special attention.
 
 :::info
 The Top Bar won't display unless both the text and URL are provided.
@@ -195,7 +215,7 @@ Like the Top Bar text, the URL entered here can be adjusted on a per-Project bas
 
 ### Top Bar Display Mode
 
-This dropdown is where you configure if and where the Top Bar will display on your instance: 
+This dropdown is where you configure if and where the Top Bar will display on your instance:
 
 - `Disabled`. In this state the Top Bar will not display. However you can override this setting and set the Top Bar to appear for individual projects.
 - `Always Visible`. So long as ***both*** the text and URL have been provided, the Top Bar will display throughout your instance. Project-level Top Bar settings will override the settings entered here.
