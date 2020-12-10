@@ -42,7 +42,7 @@ The logo saved to this space serves the same function as the Header Logo; in thi
 When a reader’s viewport is less than 760 px wide, the image saved here will replace the Header Logo in the Manifold Header.
 
 <Spec
-    title="Header Logo Specs"
+    title="Mobile Header Logo Specs"
     items={[
         { key: "Max-Width", value: "175px" },
         { key: "Max-Height", value: "26px" },
@@ -60,7 +60,7 @@ Mobile Logos are best prepared as graphic-only elements, without text, in a 1:1 
 The Footer Logo appears on the right side of the Manifold Footer. This logo can replicate the Header Logo or serve as a distinct branding element.
 
 <Spec
-    title="Header Logo Specs"
+    title="Footer Logo Specs"
     items={[
         { key: "Max-Width", value: "325px" },
         { key: "Max-Height", value: "200px" },
@@ -73,9 +73,13 @@ The Footer Logo appears on the right side of the Manifold Footer. This logo can 
 
 The favicon is the square icon that appears in your browser’s title bar or the page’s tab. This icon can mimic that of the Mobile Header Logo or be of its own distinct design.
 
-#### Specs
-**Dimensions**: 1:1
-**Format**: GIF, JPEG, JPG, PNG
+<Spec
+	title="Favicon Specs"
+	items={[
+		{ key: "Dimensions", value: "1:1" },
+		{ key: "Format", value: defaultImageFormats },
+	]}
+/>
 
 :::tip
 We suggest designing your favicon at either 16 × 16 px or 32 × 32 px and seeing which works best. It is important to note that **Manifold will crop the favicon to a square.**
@@ -85,11 +89,13 @@ We suggest designing your favicon at either 16 × 16 px or 32 × 32 px and seein
 
 You can adjust the placement of the Header Logo by entering a JSON style object in this field. This gives you the ability to visually balance the logo with the navigation elements of the Manifold Header.
 
-#### Syntax
+<Spec title="Logo Styles Syntax">
 
-The instruction should be surrounded by braces, with the parameters enclosed in quote marks and separated by a comma. Units are in pixels, and both positive and negative values are accepted.
+The instruction should be surrounded by braces, with the parameters enclosed in quote marks and separated by a comma. Units are in pixels, with both positive and negative values accepted.
 
 For example, `{"left": 100, "top": 100}` would push the logo 100 pixels to the right and 100 pixels down from its default location in the header.
+
+</Spec>
 
 ### Header Navigation Offset
 
@@ -99,9 +105,11 @@ Those nav elements all maintain the same vertical position. By entering a numeri
 
 This control is meant to provide you with another means to adjust the visual balance of the items contained in the Header.
 
-#### Syntax
+<Spec title="Header Navigation Offset Syntax">
 
 An entry of `5` will move the nav elements down five pixels. Entering `-5` will move them them up five pixels from their default position.
+
+</Spec>
 
 ### Accent Color
 
@@ -109,8 +117,7 @@ The Accent Color is your instance’s primary color and the base upon which seco
 
 You can override that here and use a color that matches your existing visual identity. When you do so, links, icons, and buttons throughout the instance will change to either match the accent color you input exactly or, for the sake of contrast, be selected by the system to pair well with your choice.
 
-
-<Spec title="Color Formats" subtitle="Color values can be supplied in one of the following formats.">
+<Spec title="Accepted Color Formats" subtitle="Color values can be supplied in one of the following formats.">
 
 | Format            | Example Input             |
 |-------------------|---------------------------|
@@ -152,29 +159,19 @@ Manifold was designed to employ two specific TypeKit fonts throughout the applic
 
 If you have a valid Typekit account, select the following options from your Typekit dashboard and then save your Typekit ID to this field.
 
+<Spec title="Typekit Account Settings">
+
+| Font             | Font Selection                                    | Character Set                   |
+|------------------|---------------------------------------------------|---------------------------------|
+| Freight Text Pro | `Light`, `Book`, `Book Italic`                    | `Default`, `OpenType Features`  |
+| Sofia Pro        | `Light`, `Regular`, `Medium`, `Semi Bold`, `Bold` | `Default`, `OpentType Features` |
+
+**Diacritics**. Selecting `All Characters` instead of `Default` will make available to Manifold the full range of diacritical characters included in each font. This will cause pages to load slower, but in most cases the effect will be negligible.
+</Spec>
+
+:::note
 When this field is left blank, Manifold will default to the open SIL fonts Trueno and Aleo.
-
-#### Freight Text Pro
-
-| Font Selection | Character Set     |
-| -------------- | ----------------- |
-| Light          | Default           |
-| Book           | OpenType Features |
-| Book Italic    |                   |
-
-#### Sofia Pro
-
-| Font Selection | Character Set     |
-| -------------- | ----------------- |
-| Light          | Default           |
-| Regular        | OpenType Features |
-| Medium         |                   |
-| Semi Bold      |                   |
-| Bold           |                   |
-
-#### Diacritics
-
-In Typekit, you have the option under the `Character Set` heading to choose `All Characters` instead of `Default`. Selecting `All Characters` will make available to Manifold the full range of diacritical characters included in each font. This will cause pages to load slower, but in most cases the effect will be negligible.
+:::
 
 ### Custom Fonts
 
