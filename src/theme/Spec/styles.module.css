@@ -45,7 +45,7 @@
 .specContainer table th, .specContainer table td {
     border: 0;
     text-align: left;
-    white-space: nowrap;
+    white-space: pre-wrap;
     border-left: 0;
     border-right: 0;
     padding: .25rem .5rem .25rem .75rem;
