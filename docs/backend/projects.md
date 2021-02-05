@@ -8,9 +8,9 @@ import Spec from "@theme/Spec";
 
 <Spec title="How do I get here?">
 
-| Backend Location                                                                                                                                                   | User Access                                                                                                                                                                                              |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| The Project Details Page is accessed by clicking on the name of a Project in the Backend, most commonly performed from the the `Dashboard` or `Projects` menus. | Admins, Editors, and Marketeers can modify any Project on an instance. Project Creators can only modify Projects they’ve created. Readers with permission to modify specific Projects can only modify those Projects. |
+| Backend Location                                                                                                                                                   | User Access                                                                                                                                                                                                           |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| The Project Details Page is accessed by clicking on the name of a Project in the Backend, most commonly performed from the the `Dashboard` or `Projects` menus.    | Admins, Editors, and Marketeers can modify any Project on an instance. Project Creators can only modify Projects they’ve created. Readers with permission to modify specific Projects can only modify those Projects. |
 
 </Spec>
 
