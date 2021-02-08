@@ -5,6 +5,7 @@ sidebar_label: Project Collections
 ---
 
 import Spec from "@theme/Spec";
+const defaultImageFormats = "GIF, JPEG, JPG, PNG";
 
 ## About
 
@@ -38,145 +39,145 @@ The title, visibility button, and drag bars are all selectable by mouse or keybo
 
 - **Title**. Selecting the title of a collection will open its contents and settings in the main body of this page.
 - **Visibility**. Activating the eye icon will hide the collection from *all* frontend views. When hidden, the eye icon will be shown with a diagonal slash across it. This button *does not* affect whether or not a Collection appears on the homepage—that is configured separately in the Collection’s settings.  
-- **Drag Bars**. Appearing as two parallel, horizontal lines, you can use these to adjust the display order of the Collections, either by clicking and dragging an entry with your mouse or by pressing the space bar and then either the up or down arrow keys on your keyboard.
+- **Drag Bars**. Appearing as two parallel, horizontal lines, you can use these to adjust the display order of the Collections (for both the home and Collections pages), either by clicking and dragging an entry with your mouse or by pressing the space bar and then either the up or down arrow keys on your keyboard.
 
 Beneath the list of Collections is the `+ Create New Collection` button that opens a drawer from the right of the screen will a number of fields you can use to define the parameters of your new Project Collection.
 
 ### Body
 
-The main body of the page displays a header with the Collection’s title and buttons to adjust its settings. For Manual Collections, the header also includes a button to manage which projects are included in the Collection.
+The main body of the page displays a header with the Collection’s title and buttons to adjust its settings. For Manual Collections, the header also includes a button to manage which projects are part of the Collection.
 
-Below the header is a dropdown to determine how the projects in the collection are ordered followed by a listing of all the projects in the collection.
+- **Settings**. When you click `Settings`, a drawer will open from the right of the screen with a number of fields that allow you to configure the Collection. These function of these fields are described in the following sections.
+- **Manage Projects**. This button only appears in the header of Manual Collections. Selecting this button opens a drawer from the right where you can search or page through all the projects contained in the instance and manually add them to the collection with your mouse or keyboard.
 
-## Collection Settings
+Below the header, the `Order Collection By` dropdown determines how the projects in the Collection are ordered (e.g., by creation date, title). Manual Collections include a switch that makes its possible for you to bypass the pre-defined sorting categories and order the collection manually with your mouse or keyboard.
+
+A view of all the Projects in the Collection follows below the ordering options. Manual Collections will show as a vertical list that you can scroll from top to bottom in a single view. Smart collections will show Projects in a paginated grid. Selecting a project from this view takes you to that Project detail page.
+
+## General Collection Settings
+
+The settings in this section are common to both Manual and Smart Collections.
 
 ### Collection Title
 
-The `Collection Title` appears in library views at the top of the Collection beside the (optional) Collection Icon. This field is presently limited to plain text.
+This title appears in library views at the top of the Collection beside the (optional) Collection Icon. This field is presently limited to plain text and does not accept Markdown or HTML syntax. A title is required to save a new Collection.
 
 ### Manual or Smart Collection
 
-Manual Collections allow a user to cherry-pick any project in the project library and add it to the collection.
+Manual Collections allow you to directly pick and choose projects to add to a Collection using your mouse or keyboard. Smart Collections rely on you to set parameters the system will use to automatically populate and update the Collection.
 
-Smart collections allow users to set certain filters that, when they are satisfied by a project, allow Manifold to automatically include them in a collection. Presently the available filters are a project's status as being Featured, as well as what Subjects and Tags are associated with it.
+Most Collection settings are shared by both Manual 
 
-:::note
-Manifold will update the list of projects in smart collections every fifteen minutes. Saving a smart project collection will also refresh the cache of projects in that collection.
-:::
+Manifold updates the list of Projects in Smart Collections every fifteen minutes. Adjusting and saving new settings to a Smart Collection will immediately refresh the cache of Projects in that collection.
 
 ### Slug
 
-TKTKTK
+The slug appears as the last component of the URL for the Collection’s homepage:
+
+``` bash
+https://{domain-name}/projects/project-collection/{collection-slug}
+```
+
+If left blank, Manifold will adapt the Collection’s title to suit as the slug.
 
 ### Description
 
-The description field allows a user to orient the reader to the contents of the collection. This field accepts Markdown input, so limited text formatting is possible with bold, italic, and hyperlinks. The text from this field is rendered below the project title and above the first row of project thumbnails on the frontend.
+The description is rendered below the Collection title in library views and can be styled with Markdown syntax. 
 
-### Hero Image
+### Hero Image and Layout
 
-TKTKTK
+The Collection Hero is an image that provides a visual identity to Collections in library views. Image files can be dropped onto the `Hero Image` field or selected using your device’s file system by clicking the `Upload a File` link.
 
-### Hero Layout
+The Hero will render according to your selection under `Hero Layout` as follows:
 
-TKTKTK
+- **Square Inset**. Rendered as a square, the Hero will appear to the left of both the Collection Title and Description.
+- **Wide Inset**. Matching the width of the library container, the Hero will appear between the Collection Title and Description.
+- **Full Bleed**. The width of the hero will adapt to match the size of browser or viewport.
+
+<Spec
+    title="Collection Hero Specs"
+    items={[
+        { key: "Square Inset Width", value: "340 px" },
+        { key: "Wide Inset Width", value: "1135 px" },
+        { key: "Full Bleed Width", value: "Responsive" },
+        { key: "Height (for all layouts)", value: "340 px" },
+        { key: "Format", value: defaultImageFormats },
+    ]}
+/>
 
 ### Visible
 
-The visible slider enables the user to create a collection and toggle whether or not readers can access it from the frontend. If toggled off, the collection won't appear on the homepage or on the object Collections page. If toggled on the collection will appear only on the Project Collections page. See below for how to make a collection appear on the homepage.
-
-:::note
-On the Project Collections page, only one row of projects will display before a link to view the full collection is provided. Each row can contain up to four projects.
-:::
+This toggle controls whether or not the Collection appears on the Manifold frontend. In the off position, the Collection will not appear on either the home or Collection pages. When toggled on, the Collection will appear ***only*** on the Project Collections page.
 
 ### Show on Homepage
 
-This toggle allows users to showcase their collection on the instance's homepage, so long as it is also toggled to be visible. It is not possible to have a project collection appear only on the homepage and not on the Project Collection page.
+This toggle promotes Collections that are visible (see above) to the instance’s homepage. It is not possible to have a Collection appear only on the homepage and not on the Collection page.
 
-:::note
-There is no artificial limit to the number of Collections that can appear on the homepage, but the more Collections that appear, the longer a reader will need to scroll and the slower the page will be to load. Conversely, if only one Collection is marked to show on the homepage, only that Collection will appear on the homepage, regardless of how many Projects your instance contains.
-:::
+There is no artificial limit to the number of Collections that can appear on the homepage, but the more Collections that appear, the slower the page will be to load.
 
 ### Collection Icon
 
-When a new collection is created a user must select one of the available icons to associate with it. It is not possible to customize or add new icons to the system at present. The collection icon will sit beside the collection title on the fronted.
+Manifold includes seven system icons you can choose from to associate with the Collection’s title in library views: a stack of books laying flat, a lamp, a “New” badge, three books standing with spines out, a globe, a pointing finger, and a mug.
 
-Once saved, this new manual collection will be empty. To populate it with titles see the section on Adding and Removing Projects from an Existing Collection.
+The Collection Icon is optional and can be selected (or deselected) using your mouse or keyboard.
+
+The Collection Icon is overridden by the Custom Icon when present.
 
 ### Custom Icon
 
-TKTKTK
+Functionally the same as the Collection Icon, a Custom Icon gives you the option to upload your own icon image file instead of using a system one.
 
-### Social Card Image
+Icon files can be dropped onto the `Custom Icon` field or selected using your device’s file system by clicking the `Upload a File` link.
 
-TKTKTK
+<Spec
+    title="Custom Icon Specs"
+    items={[
+        { key: "Width", value: "60 px" },
+        { key: "Height", value: "60 px" },
+        { key: "Format", value: defaultImageFormats },
+    ]}
+/>
 
-### Social Card Title
+### Social Card Image, Title, and Description
 
-### Social Card Description
+When sharing the URL for a Collection’s homepage, Manifold includes Open Graph metadata that social media platforms display in posts as ”cards”. Cards are made up of the following elements.
 
-<!-- ONLY FOR SMART COLLECTIONS -->
+- **Image**. Images should be prepared in an 8:5 ratio. When this field is left blank, Manifold will supply the Collection Hero image in its place, or, if there is no Collection Hero, the instance’s [Header Logo](../administering/configuring/theme_settings.md). Image files can be dropped onto the `Social Card Image` field or selected using your device’s file system by clicking the `Upload a File` link.
+
+	<Spec
+	    title="Social Card Image Specs"
+	    items={[
+	        { key: "Width", value: "640 px" },
+	        { key: "Height", value: "400 px" },
+	        { key: "Format", value: defaultImageFormats },
+	    ]}
+	/>
+
+- **Title**. The `Collection Title` text is the default value.
+- **Description**. Manifold will supply text from the collection’s `Description` when this field is left blank. If the Collection has no description, the system will use the [`Default Page Description`](../administering/configuring/general_settings.md).
+
+	Markdown formatting ***is not*** honored in Open Graph metadata. Coding syntax will render as plain text in social media cards.
+
+## Settings Specific to Smart Collections
+
+The following settings are only available to Smart Collections. Each serves as a filter the system uses to create and maintain the roster of Projects in the Collection. Only those Projects that match ***all*** the set criteria are included in the Collection.
+
 ### Number of Projects
+
+By default, Manifold caps the number of Projects the system will ***display*** in a Collection to eight. Projects that meet the Collection’s inclusion criteria beyond that limit are still indexed as part of the Collection; however only those eight that match the `Order Collection By` sorting filter (see [Body](../backend/project_collections.md#body) above) will render in library views.
+
+You can adjust the default limit higher or lower here—we recommend by fours, since the library view spans four Projects—***or*** you can remove the limit entirely by clearing the number from this field and saving it blank.
 
 ### Featured Projects
 
-The Featured Projects slider is a filter that allows a user to limit a collection to only those projects that have been marked as being Featured. Enabling this slider does not prohibit other filters from also shaping the contents of the collection. Thus it is possible to have a collection made up of only featured projects that also have a specific Subject or Tag associated with them.
+This toggle limits the Collection to accepting just those Projects that have been marked as [`Featured`](../backend/projects.md#featured).
 
-### Show Projects with These Subjects
+### Show Projects with These Subjects or Tags
 
-The Subjects field allows a user to type and then select from the list of established Subjects in the instance to use as filters to determine which projects are included in the collection. For example, if there is a `History` subject in the instance, and it is selected here, only those projects that have been associated with `History` will appear in the collection.
+These two dropdowns surface existing Subjects and Tags to limit which projects are accepted into the Collection. You can nominate multiple Subjects or Tags as filters.
 
-More than one subject can be included in the collection criteria, and they can be paired further with the Featured Projects field, and project Tags, also described in this section.
-
-To remove a subject from the criteria, simply click the `x` beside its name below the `Add a Subject` button.
-
-#### Show Projects with These Tags
-
-The Tags field allows a user to type and then select from the list of Tags being used in the instance to use as filters to determine which projects are included in the collection. For example, if there is a tag for `australia` in the instance, and it is selected here, only those projects that have been associated with `australia` will appear in the collection.
-
-More than one Tab can be included in the collection criteria, and they can be paired further with the Featured Projects field, and project Subjects, also described in this section.
-
-To remove a tag from the criteria, simply click the `x` beside its name below the `Add a Tag` button.
+Existing filters appear below the respective dropdown and can be removed as Collection criteria from that space with your mouse or keyboard.
 
 
-<!-- OLD / SCRATCHPAD 
 
-## Modifying Existing Project Collections
 
-The Project Collections page will display a list of existing collections on the left sidebar. The sidebar displays the collection's title, number of projects in the collection, a toggle to quickly change its homepage visibility status, and a handle to manually adjust the order of their appearance on both the home and collection pages by dragging and dropping.
-
-To adjust the collections further, or to delete a collection outright, click on a collection title. Doing so will display a grid of those projects in the collection with a header to adjust its settings.
-
-### Adjusting a Collection's Settings
-
-When you click on a collection's `Settings` button, a drawer will open from the right allowing you to modify all of the fields that were set when the collection was originally created. Additionally there are options to delete the collection or adjust its slug as it appears on the collection page (e.g., `https://{instance-name}/projects/project-collection/read-next`).  
-
-:::note
-If you have shared the URL to a collection and then change its slug, the original link to the collection page will no longer work.
-:::
-
-### Ordering Projects within Collections
-
-When a collection is selected, a user can adjust how the projects within the collection are sorted and displayed for readers through two means: a dropdown that offers four sorting options (Newest, Recently Updated, as well as forward and backward alphabetization) and the `Order Manually` slider.
-
-The `Order Collection By` dropdown is available for both Manual and Smart Collections. From this dropdown a user can choose to order projects in the collection by four different criteria:
-
-- **Newest**. Newest titles are those that have been most recently added to the instance and not the collection, specifically.
-- **Recently Updated**. This speaks to the date a project has been modified with the addition or a new text, resource, or added/updated metadata.
-- **Title A–Z**. Ordering the projects alphabetically by title.
-- **Title Z–A**. Reverse alphabetical order of the projects by title.
-
-This dropdown works in conjunction with the `Projects Visible` field, allowing users to, say, create a collection of eight most recently updated projects in a certain subject area.
-
-For Manual Collections an `Order Manual` slider is available. If activated the `Order Collection By` dropdown will disappear and a user can reorder the projects within the collection manually by dragging and dropping them with their mouse.
-
-### Adding and Removing Projects from an Existing Collection
-
-To add projects to a Manual collection, select the collection from the sidebar and then click the `Manage Projects` button beneath its name. A drawer will slide open from the right, showing a paginated view of all the projects on the instance.
-
-From this view projects can be added to the collection by clicking on the green plus sign beside their thumbnail. The green plus sign will then turn to a blue checkmark. Conversely, projects that have been added can be removed by clicking on the blue checkmark.
-
-Users can scroll through this paginated view to review which projects to add or use the search bar to find those of interest more directly.
-
-To add or remove projects from a Smart Collection, a user needs to adjust the filters by which the system is evaluating projects for inclusion in the collection.
-
- -->
