@@ -6,9 +6,9 @@ sidebar_label: Integration Settings
 
 ## Facebook
 
-If this feature is enabled, Manifold will include a "Log in with Facebook" button on the login page. Clicking the button will open a popup that allows users to authenticate using their Facebook account. On successful authentication, Manifold will create a user record \(if it is the user's first time logging in\) and an associated identity record.
+If the Facebook OAuth Configuration feature is enabled, Manifold will include a "Log in with Facebook" button on the login page. Clicking the button will open a popup that allows users to authenticate using their Facebook account. On successful authentication, Manifold will create a user record \(if it is the user's first time logging in\) and an associated identity record.
 
-These instructions document the process for acquiring OAuth keys from Facebook. It's possible that their process has changed since this was written. If that's the case, please [open a pull request](https://github.com/ManifoldScholar/manifold-docs/pulls) against our documentation with a correction.
+These instructions document the process for acquiring OAuth keys from Facebook. It's possible that their process has changed since this was written. If that's the case, please [open a pull request](https://github.com/ManifoldScholar/manifold-docusaurus/pulls) against our documentation with a correction.
 
 ## Requirements
 
@@ -24,7 +24,8 @@ The Manifold API handles OAuth callbacks. For Facebook, the callback route is lo
 
 1. Log into your account and app at [Facebook Developers](https://developers.facebook.com).
 2. Under the "Products" header in the sidebar, add a new product.
-3. Click "Get Started" on the "Facebook Login" item.
+3. Click "Set Up" on the "Facebook Login" item.
+4. In "Facebook Login", select "Settings".
 4. In the "Valid OAuth redirect URIs" field, enter the callback URL, described above.
 
 ![Facebook Redirect Settings](/docs/assets/customizing/facebook-redirect.png)
@@ -32,13 +33,14 @@ The Manifold API handles OAuth callbacks. For Facebook, the callback route is lo
 ## Get App ID and Secret ID
 
 1. Navigate back to the dashboard from the sidebar.
-2. Copy the values under "App ID" and "App Secret".
+2. Under "Settings" select "Basic".
+3. Copy the values under "App ID" and "App Secret".
 
 ![Facebook Dashboard](/docs/assets/customizing/developer-dashboard.png)
 
 ## Update Manifold Settings
 
-Back in Manifold, under the "Facebook" header, enter the App ID into the field labeled `Facebook App ID`. Enter the App Secret value into the field labeled `Facebook App Secret`.
+Back in Manifold, navigate in "Settings" to "Integrations", and under the "Facebook" header, enter the App ID into the field labeled `Facebook App ID`. Enter the App Secret value into the field labeled `Facebook App Secret`.
 
 Alternatively, if you manage settings in the environment \(`MANAGE_SETTINGS_FROM_ENV=1` in your `.env` file\), you should set the corresponding settings in `.env`:
 
@@ -67,7 +69,8 @@ The Manifold API handles OAuth callbacks. For Twitter, the callback route is loc
 ## Setup Required URLs
 
 1. Log into your account and app at [Twitter Apps](https://apps.twitter.com).
-2. Navigate to the "Settings" tab.
+2. Navigate to the Developer Portal and select your app from Projects & Apps in the lefthand menu.
+3. In the "Settings" tab update your app settings.
 3. In the "Callback URL" field, enter the callback URL, defined above.
 4. In the Privacy Policy field, add a link to your privacy policy. This is a required field.
 5. In the Terms of Service field, add a link to your terms of service. This is a required field.
@@ -142,8 +145,9 @@ Before adding Google Services support to Manifold, you will need a Google develo
 3. Click to create credentials set for a "Service account key."
 4. Select "New service account" from the dropdown.
 5. Give your service account a name. You do not need to add a role.
-6. Create the credential set.
-7. Select "JSON" for the key type and download the `.json` file as `google_service.json`.<sup>[1](#note-1)</sup>
+6. Once you have created your Service Account, you will navigate to "Service Accounts" in the "IAM & Admin" left menu.
+7. From the three dots under the "Actions" column farthest right in your Service Accounts table, select "Create key"
+8. Select "JSON" for the key type and download the `.json` file as `google_service.json`.<sup>[1](#note-1)</sup>
 
 ### Update Manifold Settings
 
@@ -189,5 +193,49 @@ By configuring OAuth, your readers can login to Manifold using their Facebook, T
 </small>
 
 ## Google Oauth
+Google OAuth Configuration
+If this feature is enabled, Manifold will include a “Log in with Google” button on the login page. Clicking the button will open a popup that allows users to authenticate using their Google account. On successful authentication, Manifold will create a user record (if it is the user’s first time logging in) and an associated identity record.
+
+These instructions document the process for acquiring OAuth keys from Google. It’s possible that their process has changed since this was written. If that’s the case, please open a pull request against our documentation with a correction.
+
+### Requirements
+Before adding OAuth support for Google to Manifold, you will need to configure Google Services for Manifold.
+
+### Callback URL
+The Manifold API handles OAuth callbacks. For Google, the callback route is located at /auth/google/callback. For your installation of Manifold, the callback URL will be the fully qualified domain name (FQDN) of the API server followed by that path. For example, my Manifold API is on the same domain as the client application, and that domain is manifoldapp.org, the callback URL would be http://manifoldapp.org/auth/google/callback.
+
+### Setup Consent Screen
+1. Log into your account and app at Google Developer Console.
+2. From your Manifold project’s API Manager, navigate to “OAuth consent screen” in the sidebar.
+3. Add a name to "App name".
+4. Select an email address in the "User support email" dropdown.
+5. Add a name to the “Application home page” field.
+6. Add your "Authorized domain", for instance "manifoldapp.org".
+7. Save the settings.
+
+### Create OAuth Credentials
+1. Click on the “Credentials” tab.
+2. Click the button to “Create credentials” and select “OAuth client ID”.
+3. Select “Web application” for the “Application type”.
+4. Name the credential set.
+5. In the “Authorized redirect URIs” field, enter the callback url, defined above.
+6. Click create.
+
+## Google Credentials
+
+### Get App ID and Secret ID
+1. Click on your new credential set under the “OAuth 2.0 client IDs” header.
+2. Copy the values under “Client ID” and “Client Secret”.
+
+
+### Update Manifold Settings
+Back in Manifold, under the “Google OAuth” header, enter the Client ID into the field labeled Google Client ID. Enter the Client Secret value into the field labeled Google Client Secret.
+
+Alternatively, if you manage settings in the environment (MANAGE_SETTINGS_FROM_ENV=1 in your .env file), you should set the corresponding settings in .env:
+
+# Google OAuth Integration
+MANIFOLD_SETTING_INTEGRATIONS_GOOGLE_OAUTH_CLIENT_ID=
+MANIFOLD_SETTING_SECRETS_GOOGLE_OAUTH_CLIENT_SECRET=
+
 
 ## Google Analytics
