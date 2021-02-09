@@ -3,8 +3,13 @@ id: integration_settings
 title: Integration Settings
 sidebar_label: Integration Settings
 ---
+The `Integrations` menu is where Manifold administrators can leverage external services, including Google, Twitter, and Facebook, for third party authentication, social sharing functionality, and to enable text ingestion from Google Docs.
 
-## Facebook
+By configuring OAuth, your readers can login to Manifold using their Facebook, Twitter, or Google login. Configuring each OAuth Provider involves generating access tokens and storing them in Manifold. Follow the specific instructions for each provider to set this up.
+
+Before a publisher can input values into each of these fields, they will first need to set up accounts with Facebook, Twitter, and Google as described here.
+
+# Facebook Oauth
 
 If the Facebook OAuth Configuration feature is enabled, Manifold will include a "Log in with Facebook" button on the login page. Clicking the button will open a popup that allows users to authenticate using their Facebook account. On successful authentication, Manifold will create a user record \(if it is the user's first time logging in\) and an associated identity record.
 
@@ -28,15 +33,11 @@ The Manifold API handles OAuth callbacks. For Facebook, the callback route is lo
 4. In "Facebook Login", select "Settings".
 4. In the "Valid OAuth redirect URIs" field, enter the callback URL, described above.
 
-![Facebook Redirect Settings](/docs/assets/customizing/facebook-redirect.png)
-
 ## Get App ID and Secret ID
 
 1. Navigate back to the dashboard from the sidebar.
 2. Under "Settings" select "Basic".
 3. Copy the values under "App ID" and "App Secret".
-
-![Facebook Dashboard](/docs/assets/customizing/developer-dashboard.png)
 
 ## Update Manifold Settings
 
@@ -50,7 +51,7 @@ MANIFOLD_SETTING_INTEGRATIONS_FACEBOOK_APP_ID=
 MANIFOLD_SETTING_SECRETS_FACEBOOK_APP_SECRET=
 ```
 
-## Twitter
+# Twitter Oauth
 
 If this feature is enabled, Manifold will include a "Log in with Twitter" button on the login page. Clicking the button will open a popup that allows users to authenticate using their Twitter account. On successful authentication, Manifold will create a user record \(if it is the user's first time logging in\) and an associated identity record.
 
@@ -76,22 +77,16 @@ The Manifold API handles OAuth callbacks. For Twitter, the callback route is loc
 5. In the Terms of Service field, add a link to your terms of service. This is a required field.
 6. Save the settings.
 
-![Twitter URLs](/docs/assets/customizing/twitter-urls.png)
-
 ## Add Permission Settings
 
 1. Navigate to the "Permissions" tab.
 2. Change your app's Access Level to "Read Only".
 3. Check the box to "Request email addresses from users".
 
-![Twitter Permissions](/docs/assets/customizing/twitter-access.png)
-
 ## Get App ID and Secret ID
 
 1. Navigate to the "Keys and Access Tokens" tab.
 2. Copy the values under "Consumer Key \(API Key\)" and "Consumer Secret \(API Secret\)".
-
-![Twitter Settings](/docs/assets/customizing/twitter-settings.png)
 
 ## Update Manifold Settings
 
@@ -105,23 +100,7 @@ MANIFOLD_SETTING_INTEGRATIONS_TWITTER_APP_ID=
 MANIFOLD_SETTING_SECRETS_TWITTER_APP_SECRET=
 ```
 
-## Google Services
----
-layout: page
-title: Integrations
-menus:
-  settings:
-    weight: 3
----
-
-The `Integrations` menu is where Manifold administrators can leverage external services, including Google, Twitter, and Facebook, for third party authentication, social sharing functionality, and to enable text ingestion from Google Docs.
-
-![Integrations](/docs/assets/customizing/integrations.png)
-
-Before a publisher can input values into each of these fields, they will first need to set up accounts with Google, Facebook, and Twitter as described here:
-
-<a name="google_services"></a>
-## Google Services
+# Google Services
 
 By configuring Google Services, a publisher will unlock the ability to import texts from Google Docs into the Manifold reader, import resources in bulk into existing projects (using Google Drive), and leverage Google Analytics to get detailed statistics about reader use and interaction with the Manifold instance.
 
@@ -153,8 +132,6 @@ Before adding Google Services support to Manifold, you will need a Google develo
 
 Under the "Google Services Integration" header, upload the `google_service.json` file. Doing so will automatically populate the rest of the fields in the section.
 
-![Google Services](/docs/assets/customizing/gservices.png)
-
 Alternatively, if you manage settings in the environment \(`MANAGE_SETTINGS_FROM_ENV=1` in your `.env` file\), you should set the corresponding settings in `.env`:
 
 ``` conf
@@ -172,34 +149,14 @@ If a file path is present at the path set in `MANIFOLD_SETTING_CONFIG_GOOGLE_SER
 
 ### Next Steps
 
-With Google Services now configured, you can enable Google Analytics and Drive integrations with your instance, as described in these two sections:
+With Google Services now configured, you can enable Google Analytics and Drive integrations with your instance, as described in Analytics and Drive sections below.
 
-- [Analytics](/docs/customizing/settings/analytics.html)
-- [Drive](/docs/customizing/settings/drive.html)
 
-<a name="oauth"></a>
-## OAuth
+## Google Oauth Configuration
 
-By configuring OAuth, your readers can login to Manifold using their Facebook, Twitter, or Google login. Configuring each OAuth Provider involves generating access tokens and storing them in Manifold. Follow the specific instructions for each provider to set this up.
-
-- [Facebook OAuth](/docs/customizing/settings/facebook.html)
-- [Twitter OAuth](/docs/customizing/settings/twitter.html)
-- [Google OAuth](/docs/customizing/settings/google.html)
-
-## Notes
-
-<small>
-<a name="note-1"></a><sup>1</sup> If managing settings in the environment (through `.env`), add the "google_service.json" file into your app at "/var/opt/manifold/api/keys".
-</small>
-
-## Google Oauth
-Google OAuth Configuration
 If this feature is enabled, Manifold will include a “Log in with Google” button on the login page. Clicking the button will open a popup that allows users to authenticate using their Google account. On successful authentication, Manifold will create a user record (if it is the user’s first time logging in) and an associated identity record.
 
 These instructions document the process for acquiring OAuth keys from Google. It’s possible that their process has changed since this was written. If that’s the case, please open a pull request against our documentation with a correction.
-
-### Requirements
-Before adding OAuth support for Google to Manifold, you will need to configure Google Services for Manifold.
 
 ### Callback URL
 The Manifold API handles OAuth callbacks. For Google, the callback route is located at /auth/google/callback. For your installation of Manifold, the callback URL will be the fully qualified domain name (FQDN) of the API server followed by that path. For example, my Manifold API is on the same domain as the client application, and that domain is manifoldapp.org, the callback URL would be http://manifoldapp.org/auth/google/callback.
@@ -227,7 +184,6 @@ The Manifold API handles OAuth callbacks. For Google, the callback route is loca
 1. Click on your new credential set under the “OAuth 2.0 client IDs” header.
 2. Copy the values under “Client ID” and “Client Secret”.
 
-
 ### Update Manifold Settings
 Back in Manifold, under the “Google OAuth” header, enter the Client ID into the field labeled Google Client ID. Enter the Client Secret value into the field labeled Google Client Secret.
 
@@ -237,5 +193,33 @@ Alternatively, if you manage settings in the environment (MANAGE_SETTINGS_FROM_E
 MANIFOLD_SETTING_INTEGRATIONS_GOOGLE_OAUTH_CLIENT_ID=
 MANIFOLD_SETTING_SECRETS_GOOGLE_OAUTH_CLIENT_SECRET=
 
-
 ## Google Analytics
+
+Configure this feature to enable analytics reporting to your Google account, and to display analytics data in the Manifold backend.
+
+Before using this feature, you must configure Google services, see above.
+
+### Enable Analytics
+
+1. Go to the APIs overview by clicking on the "API" card on your project dashboard.
+2. Click on the "Library" tab in the sidebar.
+3. Click on "Google Analytics API" under the "Other" header. (You may need to search for "Analytics API" if you don't see it.
+4. Click "Enable".
+
+### Configure Analytics
+
+1. Log into your property at [Google Analytics](https://analytics.google.com).
+2. Create a new property for your Manifold installation. If you need help, instructions can be found at [Analytics Help](https://support.google.com/analytics/answer/1008015?hl=en). You need to create a Universal Analytics Property, which requires that you open Advanced Options when you create your property, see this article [setting up analytics for a website](https://support.google.com/analytics/answer/10269537#zippy=%2Cadd-the-global-site-tag-directly-to-your-web-pages%2Cadd-the-global-site-tag-to-a-website-builder-or-cms-hosted-website-for-example-wordpress-shopify-etc).
+3. Find your Tracking Id and copy it, including the "UA-" prefix.
+
+
+### Update Manifold Settings
+
+Back in Manifold, in Settings>Integrations, under the "Google Analytics" header, enter the value from your Google Analytics property into the corresponding field: `Google Analytics Tracking ID`.
+
+Alternatively, if you manage settings in the environment \(`MANAGE_SETTINGS_FROM_ENV=1` in your `.env` file\), you should set the corresponding settings in `.env`:
+
+``` conf
+# Google Analytics Integration
+MANIFOLD_SETTING_INTEGRATIONS_GA_TRACKING_ID=
+```
