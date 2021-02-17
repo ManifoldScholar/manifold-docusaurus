@@ -1,0 +1,36 @@
+:root {
+  --ifm-toc-border-color: var(--ifm-color-content-secondary);
+  --ifm-toc-padding-vertical: 0;
+  --ifm-toc-padding-left: 16.5px;
+  --ifm-toc-link-color: var(--ifm-color-content-secondary);
+}
+
+.table-of-contents {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  padding-bottom: 0.5em;
+  font-weight: var(--font-weight-medium);
+
+  &__link {
+    display: inline-block;
+    margin: 0.25em 0;
+    padding: 0.25em 0;
+    border-bottom: 2px solid transparent;
+
+    &:hover {
+      color: var(--ifm-color-content);
+      border-bottom: 2px solid var(--ifm-color-content);
+    }
+
+    &--active {
+      color: var(--ifm-color-content);
+    }
+  }
+
+  > li:first-child {
+    .table-of-contents__link {
+      padding-top: 0;
+      margin-top: 0;
+    }
+  }
+}

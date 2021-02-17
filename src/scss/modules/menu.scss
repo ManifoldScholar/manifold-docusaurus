@@ -1,0 +1,20 @@
+:root {
+  --ifm-menu-color: var(--ifm-color-content-secondary);
+  --ifm-menu-color-hover: var(--ifm-color-content);
+  --ifm-menu-color-active: var(--ifm-menu-color-hover);
+  --ifm-menu-color-background-hover: var(--white);
+  --ifm-menu-color-background-active: var(--ifm-menu-color-background-hover);
+  --menu-background-color: var(--neutral10);
+}
+
+html[data-theme="dark"] {
+  --menu-background-color: var(--neutral90);
+  --ifm-menu-color-background-hover: var(--black);
+}
+
+.menu {
+  background-color: var(--menu-background-color);
+  padding: calc(
+    var(--ifm-spacing-horizontal) - var(--ifm-menu-link-padding-horizontal)
+  );
+}

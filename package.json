@@ -8,13 +8,6 @@
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy"
   },
-  "dependencies": {
-    "@docusaurus/core": "^2.0.0-alpha.66",
-    "@docusaurus/preset-classic": "^2.0.0-alpha.66",
-    "clsx": "^1.1.1",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4"
-  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -26,5 +19,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "dependencies": {
+    "@docusaurus/core": "^2.0.0-alpha.70",
+    "@docusaurus/preset-classic": "^2.0.0-alpha.70",
+    "@docusaurus/theme-common": "^2.0.0-alpha.70",
+    "clsx": "^1.1.1",
+    "docusaurus-plugin-sass": "^0.1.11",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
   }
 }

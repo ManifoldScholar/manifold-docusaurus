@@ -1,0 +1,28 @@
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+:root {
+  --ifm-footer-background-color: var(--black);
+  --ifm-footer-title-color: var(--neutral70);
+  --ifm-footer-link-color: var(--white);
+}
+
+.footerLogoLink {
+  opacity: 0.5;
+  transition: opacity 0.15s ease-in-out;
+}
+
+.footerLogoLink:hover {
+  opacity: 1;
+}
+
+.footerHeader {
+  text-transform: uppercase;
+  letter-spacing: 1.75px;
+  margin-bottom: 18px;
+  line-height: 1.714;
+}
