@@ -1,0 +1,71 @@
+:root {
+  /* Manifold colors */
+  --white: #ffffff;
+  --black: #222222;
+  --dark-gray: #2e2e2e;
+  --green: #52e3ac;
+  --green-light: #c8f7e5;
+  --green-lightest: #e3fcf6;
+  --blue: #7ad3ff;
+  --blue-light: #61caff;
+  --blue-lighter: #d4edfa;
+  --orange: #fab048;
+  --orange-light: #ffebce;
+  --orange-lighter: #f7d29b;
+  --purple: #ce9af5;
+  --salmon: #ff8a9e;
+  --salmon-light: #ff8ab1;
+  --teal: #38d6c9;
+  --yellow: #f5f56c;
+  --yellow-light: #fff799;
+
+  --neutral05: #f7f7f7;
+  --neutral10: #ececec;
+  --neutral30: #d6d6d6;
+  --neutral40: #c3c3c3;
+  --neutral45: #b3b3b3;
+  --neutral50: #9a9a9a;
+  --neutral70: #828282;
+  --neutral75: #696969;
+  --neutral80: #555555;
+  --neutral90: #363636;
+  --neutral96: #222222;
+
+  /* layout */
+  --l-container-full: 100vw;
+  --l-container-max: 1200px;
+
+  /* Do not use MaisonMono for code snippets, it is decorative only */
+  --font-family-monospace: "MaisonMono", SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+
+  /* ifm overrides */
+  --ifm-background-color: var(--white);
+  --ifm-color-primary: var(--green);
+  --ifm-color-primary-dark: #17996e;
+  --ifm-color-primary-darker: #077a57;
+  --ifm-color-primary-darkest: #005e40;
+  --ifm-color-primary-light: rgb(70, 203, 174);
+  --ifm-color-primary-lighter: rgb(102, 212, 189);
+  --ifm-color-primary-lightest: rgb(146, 224, 208);
+
+  --ifm-color-secondary: var(--neutral10);
+
+  /* ifm containers */
+  --ifm-container-width: calc(var(--l-container-max) + var(--ifm-col-width));
+  --ifm-spacing-horizontal: 36px;
+  --doc-sidebar-width: 270px;
+}
+
+html[data-theme="dark"] {
+  --ifm-background-color: var(--black);
+  --ifm-color-secondary: var(--neutral40);
+
+  --ifm-color-content: var(--neutral05);
+  --ifm-color-content-inverse: var(--neutral90);
+  --ifm-color-content-secondary: var(--neutral30);
+}

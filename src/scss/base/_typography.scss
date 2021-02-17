@@ -1,0 +1,19 @@
+:root {
+  --ifm-color-content: var(--neutral90);
+  --ifm-color-content-inverse: var(--neutral05);
+  --ifm-color-content-secondary: var(--neutral75);
+
+  --ifm-font-family-base: sofia-pro, system-ui, sans-serif;
+  --ifm-code-font-size: 95%;
+  --ifm-h1-font-size: 2.125rem;
+  --ifm-link-color: var(--ifm-color-primary-darker);
+}
+
+html[data-theme="dark"] {
+  --ifm-link-color: var(--green);
+}
+
+h1 {
+  /* Needs to override theme-classic */
+  font-size: var(--ifm-h1-font-size) !important;
+}

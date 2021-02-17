@@ -1,0 +1,15 @@
+:root {
+  --ifm-alert-padding-vertial: 22px;
+  --ifm-alert-padding-horizontal: 22px;
+  --ifm-color-info: var(--blue);
+  --ifm-color-warning: var(--orange);
+  --ifm-color-success: var(--green);
+  --ifm-color-danger: var(--salmon);
+  --ifm-alert-color: var(--ifm-color-content);
+}
+
+html[data-theme="dark"] {
+  --ifm-color-info: var(--blue);
+  --ifm-color-warning: var(--orange);
+  --ifm-alert-color: var(--ifm-color-content-inverse);
+}
