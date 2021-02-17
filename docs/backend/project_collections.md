@@ -37,15 +37,15 @@ Each entry on the sidebar list includes the title of the collection, the number 
 
 The title, visibility button, and drag bars are all selectable by mouse or keyboard from this list with a click or by pressing the space bar, respectively.
 
-- **Title**. Selecting the title of a collection will open its contents and settings in the main body of this page.
+- **Title**. Selecting the title of a collection will open its contents and settings in the editing pane in the main body of this page.
 - **Visibility**. Activating the eye icon will hide the collection from *all* frontend views. When hidden, the eye icon will be shown with a diagonal slash across it. This button *does not* affect whether or not a Collection appears on the homepage—that is configured separately in the Collection’s settings.  
 - **Drag Bars**. Appearing as two parallel, horizontal lines, you can use these to adjust the display order of the Collections (for both the home and Collections pages), either by clicking and dragging an entry with your mouse or by pressing the space bar and then either the up or down arrow keys on your keyboard.
 
 Beneath the list of Collections is the `+ Create New Collection` button that opens a drawer from the right of the screen will a number of fields you can use to define the parameters of your new Project Collection.
 
-### Body
+### Editing Pane
 
-The main body of the page displays a header with the Collection’s title and buttons to adjust its settings. For Manual Collections, the header also includes a button to manage which projects are part of the Collection.
+The editing pane displays a header with the Collection’s title and buttons to adjust its settings. For Manual Collections, the header also includes a button to manage which projects are part of the Collection.
 
 - **Settings**. When you click `Settings`, a drawer will open from the right of the screen with a number of fields that allow you to configure the Collection. These function of these fields are described in the following sections.
 - **Manage Projects**. This button only appears in the header of Manual Collections. Selecting this button opens a drawer from the right where you can search or page through all the projects contained in the instance and manually add them to the collection with your mouse or keyboard.
@@ -164,7 +164,7 @@ The following settings are only available to Smart Collections. Each serves as a
 
 ### Number of Projects
 
-By default, Manifold caps the number of Projects the system will ***display*** in a Collection to eight. Projects that meet the Collection’s inclusion criteria beyond that limit are still indexed as part of the Collection; however only those eight that match the `Order Collection By` sorting filter (see [Body](../backend/project_collections.md#body) above) will render in library views.
+By default, Manifold caps the number of Projects the system will ***display*** in a Collection to eight. Projects that meet the Collection’s inclusion criteria beyond that limit are still indexed as part of the Collection; however only those eight that match the `Order Collection By` sorting filter (see [Editing Pane](../backend/project_collections.md#editing-pane) above) will render in library views.
 
 You can adjust the default limit higher or lower here—we recommend by fours, since the library view spans four Projects—***or*** you can remove the limit entirely by clearing the number from this field and saving it blank.
 
