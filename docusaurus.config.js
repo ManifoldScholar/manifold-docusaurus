@@ -1,12 +1,17 @@
+const path = require("path");
+
 module.exports = {
   title: "Manifold Docs",
   tagline: "The tagline of my site",
   url: "https://manifoldscholar.github.io",
-  baseUrl: "/manifold-docusaurus/",
+  baseUrl: "/",
   favicon: "img/manifold-favicon.ico",
   organizationName: "ManifoldScholar", // Usually your GitHub org/user name.
   projectName: "manifold-docusaurus", // Usually your repo name.
-  plugins: ["docusaurus-plugin-sass"],
+  plugins: [
+    "docusaurus-plugin-sass",
+    path.resolve(__dirname, 'src/plugin/styled-components')
+  ],
   themeConfig: {
     footer: {
       links: [
