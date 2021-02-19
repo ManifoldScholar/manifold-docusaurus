@@ -1,0 +1,11 @@
+.main-wrapper {
+  background-color: var(--menu-background-color);
+
+  > div {
+    background-color: var(--ifm-background-color);
+    max-width: calc(
+      var(--l-container-max) + (var(--ifm-spacing-horizontal) * 2)
+    );
+    margin: 0 auto;
+  }
+}

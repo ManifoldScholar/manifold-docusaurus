@@ -1,11 +1,28 @@
 :root {
+  --text-dark: #555555;
+  --text-light: var(--neutral50);
+  --header-dark: var(--neutral90);
+  --header-light: var(--white);
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+
+  --font-size-sm: 17px;
+  --font-size-xs: 16px;
+  --font-size-xxs: 15px;
+
   --ifm-color-content: var(--neutral90);
   --ifm-color-content-inverse: var(--neutral05);
   --ifm-color-content-secondary: var(--neutral75);
 
   --ifm-font-family-base: sofia-pro, system-ui, sans-serif;
+
   --ifm-code-font-size: 95%;
   --ifm-h1-font-size: 2.125rem;
+
+  --ifm-line-height-base: 1.5;
+
   --ifm-link-color: var(--ifm-color-primary-darker);
 }
 

@@ -8,7 +8,7 @@ import React from "react";
 import clsx from "clsx";
 import { useThemeConfig } from "@docusaurus/theme-common";
 import useBaseUrl from "@docusaurus/useBaseUrl";
-import styles from "./styles.module.css";
+import styles from "./styles.module.scss";
 
 import FooterLink from "./FooterLink";
 import FooterLogo from "./FooterLogo";
