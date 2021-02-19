@@ -4,7 +4,7 @@ module.exports = {
   title: "Manifold Docs",
   tagline: "The tagline of my site",
   url: "https://manifoldscholar.github.io",
-  baseUrl: "/",
+  baseUrl: "/manifold-docusaurus/",
   favicon: "img/manifold-favicon.ico",
   organizationName: "ManifoldScholar", // Usually your GitHub org/user name.
   projectName: "manifold-docusaurus", // Usually your repo name.
