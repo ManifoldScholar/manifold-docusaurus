@@ -6,7 +6,7 @@ import HomeLink from "../HomeLink";
 import NavList from "./NavList";
 import NavMenuButton from "./NavMenuButton";
 
-const Nav = ({ className, routes }) => {
+const Nav = ({ className, routes, isDarkTheme }) => {
   const [showMobileNav, setShowMobileNav] = useState(false);
 
   useEffect(() => {
@@ -15,7 +15,11 @@ const Nav = ({ className, routes }) => {
   }, [showMobileNav]);
 
   return (
-    <nav className={`${className} a-bg-neutral10`}>
+    <nav
+      className={`${className} ${
+        isDarkTheme ? "a-bg-black" : "a-bg-neutral10"
+      }`}
+    >
       <div className={`${className}__inner l-container-max`}>
         <HomeLink />
         <NavList routes={routes} />
@@ -48,7 +52,9 @@ const Nav = ({ className, routes }) => {
 Nav.displayName = "Global.Nav";
 
 Nav.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
+  routes: PropTypes.array,
+  isDarkTheme: PropTypes.bool
 };
 
 const StyledNav = styled(Nav)`

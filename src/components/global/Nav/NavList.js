@@ -1,15 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
-// import { useRouter } from "next/router";
 import { Button } from "../../primitives";
 import { Link } from "../../typography";
 import { respond, fluidScale } from "../../styles/mixins";
 
 const NavList = ({ className, isMobile, routes }) => {
-  // const router = useRouter();
-  // const path = router.asPath;
-
   return (
     <ul className={className}>
       {routes.map(({ href, label, isButton, isSelected }, i) => (
