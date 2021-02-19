@@ -11,6 +11,11 @@
 // Base styles
 @import "base/base";
 @import "base/typography";
+@import "base/appearance";
+
+// Utility classes
+@import "utility/appearance";
+@import "utility/layout";
 
 // Modules
 @import "modules/menu";
@@ -20,6 +25,7 @@
 @import "modules/table-of-contents";
 @import "modules/alert";
 @import "modules/tabs";
+@import "modules/main-wrapper";
 
 .docusaurus-highlight-code-line {
   background-color: rgb(72, 77, 91);

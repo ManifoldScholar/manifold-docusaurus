@@ -1,0 +1,24 @@
+.a-bg-black {
+  --color-secondary: var(--green);
+  --background-color: var(--black);
+  --header-color: var(--header-light);
+  --text-color: var(--text-light);
+  --button-background: var(--dark-gray);
+  --button-hover-color: var(--green);
+  --border-color: var(--text-light);
+  --input-background: "transparent";
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.a-bg-neutral10 {
+  --background-color: var(--neutral10);
+  --color-secondary: var(--green);
+  --header-color: var(--header-dark);
+  --text-color: var(--header-dark);
+  --button-background: var(--white);
+  --button-hover-color: var(--dark-gray);
+  --input-background: var(--white);
+  background-color: var(--background-color);
+  color: var(--text-color);
+}

@@ -1,0 +1,14 @@
+.navWrapper {
+  --ifm-link-decoration: none;
+  --ifm-link-hover-decoration: none;
+  --ifm-link-color: var(--header-dark);
+  --ifm-link-hover-color: var(--header-dark);
+  --ifm-list-margin: 0;
+  --ifm-list-left-padding: 0;
+  font-weight: var(--font-weight-medium);
+
+  ul,
+  ol {
+    list-style: none;
+  }
+}

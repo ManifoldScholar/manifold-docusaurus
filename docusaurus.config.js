@@ -1,5 +1,34 @@
 const path = require("path");
 
+const NAV_ROUTES = [
+  {
+    url: "/features",
+    label: "Features",
+    isButton: false
+  },
+  {
+    url: "/community",
+    label: "Community",
+    isButton: false
+  },
+  {
+    url: "/services",
+    label: "Services",
+    isButton: false
+  },
+  {
+    url: "https://manifoldapp.org/docs/index",
+    label: "Docs",
+    isButton: false,
+    isSelected: true
+  },
+  {
+    url: "/get-started",
+    label: "Getting Started",
+    isButton: true
+  }
+];
+
 module.exports = {
   title: "Manifold Docs",
   tagline: "The tagline of my site",
@@ -10,9 +39,38 @@ module.exports = {
   projectName: "manifold-docusaurus", // Usually your repo name.
   plugins: [
     "docusaurus-plugin-sass",
-    path.resolve(__dirname, 'src/plugin/styled-components')
+    path.resolve(__dirname, "src/plugin/styled-components")
   ],
   themeConfig: {
+    mainNav: {
+      items: [
+        {
+          label: "Features",
+          href: "https://manifoldapp.org/features",
+          isButton: false
+        },
+        {
+          label: "Community",
+          href: "https://manifoldapp.org/community",
+          isButton: false
+        },
+        {
+          label: "Services",
+          href: "https://manifoldapp.org/services",
+          isButton: false
+        },
+        {
+          label: "Docs",
+          href: "./docs",
+          isButton: false
+        },
+        {
+          label: "Getting Started",
+          href: "https://manifoldapp.org/get-started",
+          isButton: true
+        }
+      ]
+    },
     footer: {
       links: [
         {
