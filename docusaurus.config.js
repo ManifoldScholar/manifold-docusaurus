@@ -1,34 +1,5 @@
 const path = require("path");
 
-const NAV_ROUTES = [
-  {
-    url: "/features",
-    label: "Features",
-    isButton: false
-  },
-  {
-    url: "/community",
-    label: "Community",
-    isButton: false
-  },
-  {
-    url: "/services",
-    label: "Services",
-    isButton: false
-  },
-  {
-    url: "https://manifoldapp.org/docs/index",
-    label: "Docs",
-    isButton: false,
-    isSelected: true
-  },
-  {
-    url: "/get-started",
-    label: "Getting Started",
-    isButton: true
-  }
-];
-
 module.exports = {
   title: "Manifold Docs",
   tagline: "The tagline of my site",
@@ -62,7 +33,8 @@ module.exports = {
         {
           label: "Docs",
           href: "./docs",
-          isButton: false
+          isButton: false,
+          isSelected: true
         },
         {
           label: "Getting Started",
