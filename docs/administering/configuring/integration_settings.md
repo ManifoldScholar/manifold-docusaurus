@@ -102,11 +102,7 @@ MANIFOLD_SETTING_SECRETS_TWITTER_APP_SECRET=
 
 ## Google Services
 
-By configuring Google Services, a publisher will unlock the ability to import texts from Google Docs into the Manifold reader, import resources in bulk into existing projects (using Google Drive), and leverage Google Analytics to get detailed statistics about reader use and interaction with the Manifold instance.
-
-<div style="background: #d4f2ff; margin: 20px 0; padding: 15px;">
-<strong>Note</strong>. To make it possible for your readers to log into your Manifold instance using their Google credentials, see the OAuth section after you configure Google Services.
-</div>
+By configuring Google Services, a publisher will unlock the ability to import texts from Google Docs into the Manifold reader, import resources in bulk into existing projects (using Google Drive), and leverage Google Analytics to get detailed statistics about reader use and interaction with the Manifold instance. To make it possible for your readers to log into your Manifold instance using their Google credentials, you will need to configure OAuth after you configure Google Services.
 
 To begin using these features, you must first complete some configuration through the Google Developer Console.
 
