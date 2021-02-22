@@ -9,23 +9,23 @@ By configuring OAuth, your readers can login to Manifold using their Facebook, T
 
 Before a publisher can input values into each of these fields, they will first need to set up accounts with Facebook, Twitter, and Google as described here.
 
-# Facebook OAuth
+## Facebook OAuth
 
-If the Facebook OAuth Configuration feature is enabled, Manifold will include a "Log in with Facebook" button on the login page. Clicking the button will open a popup that allows users to authenticate using their Facebook account. On successful authentication, Manifold will create a user record \(if it is the user's first time logging in\) and an associated identity record.
+If the Facebook OAuth Configuration feature is enabled, Manifold will include a "Log in with Facebook" button on the login page. Clicking the button will open a popup that allows users to authenticate using their Facebook account. On successful authentication, Manifold will create a user record (if it is the user's first time logging in) and an associated identity record.
 
 These instructions document the process for acquiring OAuth keys from Facebook. It's possible that their process has changed since this was written. If that's the case, please [open a pull request](https://github.com/ManifoldScholar/manifold-docusaurus/pulls) against our documentation with a correction.
 
-## Requirements
+### Requirements
 
 Before adding OAuth support for Facebook to Manifold, you will need a Facebook account, which will allow you to create a Manifold Facebook app.
 
 * If you do not have one, create a Facebook app by following the steps in the [Facebook Developer Docs](https://developers.facebook.com/docs/apps/register#developer-account).
 
-## Callback URL
+### Callback URL
 
 The Manifold API handles OAuth callbacks. For Facebook, the callback route is located at `/auth/facebook/callback`. For your installation of Manifold, the callback URL will be the fully qualified domain name \(FQDN\) of the API server followed by that path. For example, my Manifold API is on the same domain as the client application, and that domain is `manifoldapp.org`, the callback URL would be `http://manifoldapp.org/auth/facebook/callback`.
 
-## Setup Redirect URL
+### Setup Redirect URL
 
 1. Log into your account and app at [Facebook Developers](https://developers.facebook.com).
 2. Under the "Products" header in the sidebar, add a new product.
@@ -33,17 +33,17 @@ The Manifold API handles OAuth callbacks. For Facebook, the callback route is lo
 4. In "Facebook Login", select "Settings".
 4. In the "Valid OAuth redirect URIs" field, enter the callback URL, described above.
 
-## Get App ID and Secret ID
+### Get App ID and Secret ID
 
 1. Navigate back to the dashboard from the sidebar.
 2. Under "Settings" select "Basic".
 3. Copy the values under "App ID" and "App Secret".
 
-## Update Manifold Settings
+### Update Manifold Settings
 
 Back in Manifold, navigate in "Settings" to "Integrations", and under the "Facebook" header, enter the App ID into the field labeled `Facebook App ID`. Enter the App Secret value into the field labeled `Facebook App Secret`.
 
-Alternatively, if you manage settings in the environment \(`MANAGE_SETTINGS_FROM_ENV=1` in your `.env` file\), you should set the corresponding settings in `.env`:
+Alternatively, if you manage settings in the environment (`MANAGE_SETTINGS_FROM_ENV=1` in your `.env` file), you should set the corresponding settings in `.env`:
 
 ``` conf
 # Facebook OAuth Integration
@@ -51,23 +51,23 @@ MANIFOLD_SETTING_INTEGRATIONS_FACEBOOK_APP_ID=
 MANIFOLD_SETTING_SECRETS_FACEBOOK_APP_SECRET=
 ```
 
-# Twitter OAuth
+## Twitter OAuth
 
-If this feature is enabled, Manifold will include a "Log in with Twitter" button on the login page. Clicking the button will open a popup that allows users to authenticate using their Twitter account. On successful authentication, Manifold will create a user record \(if it is the user's first time logging in\) and an associated identity record.
+If this feature is enabled, Manifold will include a "Log in with Twitter" button on the login page. Clicking the button will open a popup that allows users to authenticate using their Twitter account. On successful authentication, Manifold will create a user record (if it is the user's first time logging in) and an associated identity record.
 
 These instructions document the process for acquiring OAuth keys from Twitter. It's possible that their process has changed since this was written. If that's the case, please [open a pull request](https://github.com/ManifoldScholar/manifold-docs/pulls) against our documentation with a correction.
 
-## Requirements
+### Requirements
 
 Before adding OAuth support for Twitter to Manifold, you will need a Manifold Twitter app.
 
 * If you do not have one, create a Twitter app through the [Twitter App Interface](https://apps.twitter.com).
 
-## Callback URL
+### Callback URL
 
 The Manifold API handles OAuth callbacks. For Twitter, the callback route is located at `/auth/twitter/callback`. For your installation of Manifold, the callback URL will be the fully qualified domain name \(FQDN\) of the API server followed by that path. For example, my Manifold API is on the same domain as the client application, and that domain is `manifoldapp.org`, the callback URL would be `http://manifoldapp.org/auth/twitter/callback`.
 
-## Setup Required URLs
+### Setup Required URLs
 
 1. Log into your account and app at [Twitter Apps](https://apps.twitter.com).
 2. Navigate to the Developer Portal and select your app from Projects & Apps in the lefthand menu.
@@ -77,22 +77,22 @@ The Manifold API handles OAuth callbacks. For Twitter, the callback route is loc
 5. In the Terms of Service field, add a link to your terms of service. This is a required field.
 6. Save the settings.
 
-## Add Permission Settings
+### Add Permission Settings
 
 1. Navigate to the "Permissions" tab.
 2. Change your app's Access Level to "Read Only".
 3. Check the box to "Request email addresses from users".
 
-## Get App ID and Secret ID
+### Get App ID and Secret ID
 
 1. Navigate to the "Keys and Access Tokens" tab.
-2. Copy the values under "Consumer Key \(API Key\)" and "Consumer Secret \(API Secret\)".
+2. Copy the values under "Consumer Key/(API Key)" and "Consumer Secret/(API Secret)".
 
-## Update Manifold Settings
+### Update Manifold Settings
 
 Back in Manifold, under the "Twitter" header, enter the Consumer Key into the field labeled `Twitter Consumer Key`. Enter the Consumer secret into the field labeled `Twitter Consumer Secret`.
 
-Alternatively, if you manage settings in the environment \(`MANAGE_SETTINGS_FROM_ENV=1` in your `.env` file\), you should set the corresponding settings in `.env`:
+Alternatively, if you manage settings in the environment (`MANAGE_SETTINGS_FROM_ENV=1` in your `.env` file), you should set the corresponding settings in `.env`:
 
 ``` conf
 # Google OAuth Integration
@@ -100,12 +100,12 @@ MANIFOLD_SETTING_INTEGRATIONS_TWITTER_APP_ID=
 MANIFOLD_SETTING_SECRETS_TWITTER_APP_SECRET=
 ```
 
-# Google Services
+## Google Services
 
 By configuring Google Services, a publisher will unlock the ability to import texts from Google Docs into the Manifold reader, import resources in bulk into existing projects (using Google Drive), and leverage Google Analytics to get detailed statistics about reader use and interaction with the Manifold instance.
 
 <div style="background: #d4f2ff; margin: 20px 0; padding: 15px;">
-<strong>Note</strong>. To make it possible for your readers to log into your Manifold instance using their Google credentials, see the <a href="/docs/customizing/settings/integrations.html#oauth">OAuth section</a> below.
+<strong>Note</strong>. To make it possible for your readers to log into your Manifold instance using their Google credentials, see the OAuth section after you configure Google Services.
 </div>
 
 To begin using these features, you must first complete some configuration through the Google Developer Console.
@@ -160,7 +160,7 @@ If this feature is enabled, Manifold will include a “Log in with Google” but
 These instructions document the process for acquiring OAuth keys from Google. It’s possible that their process has changed since this was written. If that’s the case, please open a pull request against our documentation with a correction.
 
 ### Callback URL
-The Manifold API handles OAuth callbacks. For Google, the callback route is located at /auth/google/callback. For your installation of Manifold, the callback URL will be the fully qualified domain name (FQDN) of the API server followed by that path. For example, my Manifold API is on the same domain as the client application, and that domain is manifoldapp.org, the callback URL would be http://manifoldapp.org/auth/google/callback.
+The Manifold API handles OAuth callbacks. For Google, the callback route is located at `/auth/google/callback`. For your installation of Manifold, the callback URL will be the fully qualified domain name (FQDN) of the API server followed by that path. For example, my Manifold API is on the same domain as the client application, and that domain is manifoldapp.org, the callback URL would be `http://manifoldapp.org/auth/google/callback`.
 
 ### Setup Consent Screen
 1. Log into your account and app at Google Developer Console.
@@ -179,7 +179,7 @@ The Manifold API handles OAuth callbacks. For Google, the callback route is loca
 5. In the “Authorized redirect URIs” field, enter the callback url, defined above.
 6. Click create.
 
-## Google Credentials
+## Google Settings
 
 ### Get App ID and Secret ID
 1. Click on your new credential set under the “OAuth 2.0 client IDs” header.
@@ -218,7 +218,7 @@ Before using this feature, you must configure Google services, see above.
 
 Back in Manifold, in Settings>Integrations, under the "Google Analytics" header, enter the value from your Google Analytics property into the corresponding field: `Google Analytics Tracking ID`.
 
-Alternatively, if you manage settings in the environment \(`MANAGE_SETTINGS_FROM_ENV=1` in your `.env` file\), you should set the corresponding settings in `.env`:
+Alternatively, if you manage settings in the environment (`MANAGE_SETTINGS_FROM_ENV=1` in your `.env` file), you should set the corresponding settings in `.env`:
 
 ``` conf
 # Google Analytics Integration
