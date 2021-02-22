@@ -121,7 +121,7 @@ Before adding Google Services support to Manifold, you will need a Google develo
 5. Give your service account a name. You do not need to add a role.
 6. Once you have created your Service Account, you will navigate to "Service Accounts" in the "IAM & Admin" left menu.
 7. From the three dots under the "Actions" column farthest right in your Service Accounts table, select "Create key"
-8. Select "JSON" for the key type and download the `.json` file as `google_service.json`.<sup>[1](#note-1)</sup>
+8. Select "JSON" for the key type and download the `.json` file as `google_service.json`.
 9. To enable Google Drive ingestion, you will need to select Google Drive API from Library and click "Enable API".
 
 ### Update Manifold Settings
@@ -143,9 +143,7 @@ MANIFOLD_SETTING_INTEGRATIONS_GOOGLE_CLIENT_ID=
 
 If a file path is present at the path set in `MANIFOLD_SETTING_CONFIG_GOOGLE_SERVICE`, values will first be set from this file, then overwritten by any subsequent matching keys.
 
-### Next Steps
-
-With Google Services now configured, you can enable Google OAuth, Google Analytics, and Google Drive on your instance.
+With Google Services configured, you can enable Google OAuth, Google Analytics, and Google Drive on your instance.
 
 
 ## Google OAuth Configuration
@@ -173,8 +171,6 @@ The Manifold API handles OAuth callbacks. For Google, the callback route is loca
 4. Name the credential set.
 5. In the “Authorized redirect URIs” field, enter the callback url, defined above.
 6. Click create.
-
-## Google Settings
 
 ### Get App ID and Secret ID
 1. Click on your new credential set under the “OAuth 2.0 client IDs” header.
