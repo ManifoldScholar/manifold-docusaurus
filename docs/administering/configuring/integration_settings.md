@@ -9,7 +9,7 @@ By configuring OAuth, your readers can login to Manifold using their Facebook, T
 
 Before a publisher can input values into each of these fields, they will first need to set up accounts with Facebook, Twitter, and Google as described here.
 
-# Facebook Oauth
+# Facebook OAuth
 
 If the Facebook OAuth Configuration feature is enabled, Manifold will include a "Log in with Facebook" button on the login page. Clicking the button will open a popup that allows users to authenticate using their Facebook account. On successful authentication, Manifold will create a user record \(if it is the user's first time logging in\) and an associated identity record.
 
@@ -51,7 +51,7 @@ MANIFOLD_SETTING_INTEGRATIONS_FACEBOOK_APP_ID=
 MANIFOLD_SETTING_SECRETS_FACEBOOK_APP_SECRET=
 ```
 
-# Twitter Oauth
+# Twitter OAuth
 
 If this feature is enabled, Manifold will include a "Log in with Twitter" button on the login page. Clicking the button will open a popup that allows users to authenticate using their Twitter account. On successful authentication, Manifold will create a user record \(if it is the user's first time logging in\) and an associated identity record.
 
@@ -127,6 +127,7 @@ Before adding Google Services support to Manifold, you will need a Google develo
 6. Once you have created your Service Account, you will navigate to "Service Accounts" in the "IAM & Admin" left menu.
 7. From the three dots under the "Actions" column farthest right in your Service Accounts table, select "Create key"
 8. Select "JSON" for the key type and download the `.json` file as `google_service.json`.<sup>[1](#note-1)</sup>
+9. To enable Google Drive ingestion, you will need to select Google Drive API from Library and click "Enable API".
 
 ### Update Manifold Settings
 
@@ -152,7 +153,7 @@ If a file path is present at the path set in `MANIFOLD_SETTING_CONFIG_GOOGLE_SER
 With Google Services now configured, you can enable Google Analytics and Drive integrations with your instance, as described in Analytics and Drive sections below.
 
 
-## Google Oauth Configuration
+## Google OAuth Configuration
 
 If this feature is enabled, Manifold will include a “Log in with Google” button on the login page. Clicking the button will open a popup that allows users to authenticate using their Google account. On successful authentication, Manifold will create a user record (if it is the user’s first time logging in) and an associated identity record.
 
@@ -203,7 +204,7 @@ Before using this feature, you must configure Google services, see above.
 
 1. Go to the APIs overview by clicking on the "API" card on your project dashboard.
 2. Click on the "Library" tab in the sidebar.
-3. Click on "Google Analytics API" under the "Other" header. (You may need to search for "Analytics API" if you don't see it.
+3. Click on "Google Analytics API" under the "Other" header. (You may need to search for "Analytics API" if you don't see it.)
 4. Click "Enable".
 
 ### Configure Analytics
