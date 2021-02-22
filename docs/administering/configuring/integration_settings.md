@@ -65,7 +65,7 @@ Before adding OAuth support for Twitter to Manifold, you will need a Manifold Tw
 
 ### Callback URL
 
-The Manifold API handles OAuth callbacks. For Twitter, the callback route is located at `/auth/twitter/callback`. For your installation of Manifold, the callback URL will be the fully qualified domain name \(FQDN\) of the API server followed by that path. For example, my Manifold API is on the same domain as the client application, and that domain is `manifoldapp.org`, the callback URL would be `http://manifoldapp.org/auth/twitter/callback`.
+The Manifold API handles OAuth callbacks. For Twitter, the callback route is located at `/auth/twitter/callback`. For your installation of Manifold, the callback URL will be the fully qualified domain name (FQDN) of the API server followed by that path. For example, my Manifold API is on the same domain as the client application, and that domain is `manifoldapp.org`, the callback URL would be `http://manifoldapp.org/auth/twitter/callback`.
 
 ### Setup Required URLs
 
@@ -94,8 +94,7 @@ Back in Manifold, under the "Twitter" header, enter the Consumer Key into the fi
 
 Alternatively, if you manage settings in the environment (`MANAGE_SETTINGS_FROM_ENV=1` in your `.env` file), you should set the corresponding settings in `.env`:
 
-``` conf
-# Google OAuth Integration
+```
 MANIFOLD_SETTING_INTEGRATIONS_TWITTER_APP_ID=
 MANIFOLD_SETTING_SECRETS_TWITTER_APP_SECRET=
 ```
@@ -146,20 +145,20 @@ If a file path is present at the path set in `MANIFOLD_SETTING_CONFIG_GOOGLE_SER
 
 ### Next Steps
 
-With Google Services now configured, you can enable Google Analytics and Drive integrations with your instance, as described in Analytics and Drive sections below.
+With Google Services now configured, you can enable Google OAuth, Google Analytics, and Google Drive on your instance.
 
 
 ## Google OAuth Configuration
 
 If this feature is enabled, Manifold will include a “Log in with Google” button on the login page. Clicking the button will open a popup that allows users to authenticate using their Google account. On successful authentication, Manifold will create a user record (if it is the user’s first time logging in) and an associated identity record.
 
-These instructions document the process for acquiring OAuth keys from Google. It’s possible that their process has changed since this was written. If that’s the case, please open a pull request against our documentation with a correction.
+These instructions document the process for acquiring [OAuth keys from Google](https://developers.google.com/identity/protocols/oauth2). It’s possible that their process has changed since this was written. If that’s the case, please [open a pull request](https://github.com/ManifoldScholar/manifold-docusaurus/pulls) against our documentation with a correction.
 
 ### Callback URL
 The Manifold API handles OAuth callbacks. For Google, the callback route is located at `/auth/google/callback`. For your installation of Manifold, the callback URL will be the fully qualified domain name (FQDN) of the API server followed by that path. For example, my Manifold API is on the same domain as the client application, and that domain is manifoldapp.org, the callback URL would be `http://manifoldapp.org/auth/google/callback`.
 
 ### Setup Consent Screen
-1. Log into your account and app at Google Developer Console.
+1. Log into your account and app at [Google Developer Console](https://console.developers.google.com/).
 2. From your Manifold project’s API Manager, navigate to “OAuth consent screen” in the sidebar.
 3. Add a name to "App name".
 4. Select an email address in the "User support email" dropdown.
@@ -184,17 +183,16 @@ The Manifold API handles OAuth callbacks. For Google, the callback route is loca
 ### Update Manifold Settings
 Back in Manifold, under the “Google OAuth” header, enter the Client ID into the field labeled Google Client ID. Enter the Client Secret value into the field labeled Google Client Secret.
 
-Alternatively, if you manage settings in the environment (MANAGE_SETTINGS_FROM_ENV=1 in your .env file), you should set the corresponding settings in .env:
+Alternatively, if you manage settings in the environment (`MANAGE_SETTINGS_FROM_ENV=1` in your `.env file`), you should set the corresponding settings in `.env`:
 
+```
 # Google OAuth Integration
 MANIFOLD_SETTING_INTEGRATIONS_GOOGLE_OAUTH_CLIENT_ID=
 MANIFOLD_SETTING_SECRETS_GOOGLE_OAUTH_CLIENT_SECRET=
-
+```
 ## Google Analytics
 
-Configure this feature to enable analytics reporting to your Google account, and to display analytics data in the Manifold backend.
-
-Before using this feature, you must configure Google services, see above.
+Configure this feature to enable analytics reporting to your Google account, and to display analytics data in the Manifold backend. Before using this feature, you must configure Google services.
 
 ### Enable Analytics
 
@@ -216,7 +214,7 @@ Back in Manifold, in Settings>Integrations, under the "Google Analytics" header,
 
 Alternatively, if you manage settings in the environment (`MANAGE_SETTINGS_FROM_ENV=1` in your `.env` file), you should set the corresponding settings in `.env`:
 
-``` conf
+```
 # Google Analytics Integration
 MANIFOLD_SETTING_INTEGRATIONS_GA_TRACKING_ID=
 ```
