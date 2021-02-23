@@ -86,17 +86,25 @@ In Manifold all Project landing pages follow the same URL pattern: `domain/path/
 
 To better illustrate this concept, let's consider these URLs for Projects on the Minnesota and CUNY instances, as they would appear in your browser:
 
+<Spec title="Project Slugs">
+
 | Instance  | Project URL                                                 |
 |-----------|-------------------------------------------------------------|
 | Minnesota | `https://manifold.umn.edu/project/the-lab-book`             |
 | CUNY      | `https://cuny.manifoldapp.org/projects/benito-perez-galdos` |
 
+</Spec>
+
 When broken down into their constituent parts, we can see more clearly their domain, path, and slug:
+
+<Spec title="Project Slug Components">
 
 | Domain                  | Path        | Slug                  |
 |-------------------------|-------------|-----------------------|
 | `manifold.umn.edu/`     | `projects/` | `the-lab-book`        |
 | `cuny.manifoldapp.org/` | `projects/` | `benito-perez-galdos` |
+
+</Spec>
 
 When you create a new Project, the system will automatically populate this field with a Slug based on the Project's title. If that's not in keeping with your naming conventions, you can adjust it.
 
@@ -141,7 +149,7 @@ Because subjects take a high-level view of the body of work on your instance, th
 
 #### Tags
 
-Tags function much like Subjects but No means to edit or delete tags
+Tags function much like Subjects, but there are no means to edit or delete tags in the system.
 
 Unlike Subjects, Tags can be created by any user who has permission to modify a Project and can be used to add further richness to the existing subject classification. Like Subjects, the Tag field provides a helper so that as you begin typing any similar tags that have already been created on your instance will be revealed.
 
