@@ -142,16 +142,20 @@ The settings in this view represent those that most affect how a Text is indexed
 
 - **Title**. A Text’s title can be configured to appear in `Table of Contents` and `Texts` Content Blocks on the Project’s landing page. It is also baked into the metadata that Manifold shares with other systems, crawlers, and social media platforms.
 	
-	Manifold automatically populates this field when the source file describes a title attribute in its structure:
+	Manifold automatically populates this field when the source file describes a title attribute in its structure.
 
-	| Source File Type | Location Notes                                                                                                                                                                                                                                                                                          |
-	|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-	| EPUB             | In the `content.opf` file the title attribute will appear as: `<dc:title id="title">Furious Feminisms</dc:title>`                                                                                                                                                                                       |
+	<Spec title="Title Source">
+
+	| Source           | Location Notes                                                                                                                                                                                                                                                                                         |
+	|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+	| EPUB             | In the `content.opf` file the title attribute will appear as: `<dc:title id="title">Furious Feminisms</dc:title>`                                                                                                                                                                                      |
 	| HTML             | For individual HTML Text ingests, the title attribute appears between the `<head>` tags, formatted as `<meta name="dc.title" content="Social Theory for Nonhumans">`. If that element is not present, Manifold will look next at content between the `<title>` tags and then at the first `<h1>` tags. |
 	| Markdown         | When loading individual Markdown files, the title attribute appears in the document’s header as `title: Metagaming`.                                                                                                                                                                                   |
-	| Google Doc       | The title of the document that appears in the upper left of the Google Doc screen is what Manifold sweeps into the `Title` field                                                                                                                                                                        |
-	| MS Word (DOCX)   | The text of the paragraph that has the Word Style `Title` applied to it will be captured as the Text’s `Title` in Manifold.                                                                                                                                                                             |
-	| Manifest Ingests | In the `meta` section of the YAML file, the title attribute appears as `title: The End of Man`.                                                                                                                                                                                                         |
+	| Google Doc       | The title of the document that appears in the upper left of the Google Doc screen is what Manifold sweeps into the `Title` field                                                                                                                                                                       |
+	| MS Word (DOCX)   | The text of the paragraph that has the Word Style `Title` applied to it will be captured as the Text’s `Title` in Manifold.                                                                                                                                                                            |
+	| Manifest Ingests | In the `meta` section of the YAML file, the title attribute appears as `title: The End of Man`.                                                                                                                                                                                                        |
+
+	</Spec>
 
 	Manifold will auto-populate this field with a UUID if it cannot detect the Text’s title.
 
@@ -165,15 +169,19 @@ The settings in this view represent those that most affect how a Text is indexed
 
 - **Publication Date**. The Text’s publication date can be entered here manually in the month, date, year format (MM/DD/YYYY) or selected from the datepicker that appears when your cursor lands in this field.
 
-	Manifold will populate this field when the publication date is included in the source file:
+	Manifold will populate this field when the publication date is included in the source file.
 
-	| Source File Type              | Location Notes                                                                                                                                        |
+	<Spec title="Publication Date Source">
+
+	| Source                        | Location Notes                                                                                                                                        |
 	|-------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
 	| EPUB                          | In the `content.opf` file, Manifold will look for the `<dc:date>2021-02-16</dc:date>` attribute.                                                      |
 	| HTML                          | For individual HTML Text ingests, the publication date appears between the `<head>` tags, formatted as `<meta name="dc.date" content="1997-08-29">`. |
 	| Markdown                      | When loading individual Markdown files, the publication date is defined as `date: "2063-04-05"` in the document’s header.                            |
 	| Google Doc and MS Word (DOCX) | There is no current way to describe the publication date in Google or Word documents.                                                                 |
 	| Manifest Ingests              | In the `meta` section of the YAML file, the publication date is described in this format: `date: "1999-09-09"`                                        |
+
+	</Spec>
 
 	The date stored in this field does not presently render on the site or function for any sorting purposes. We store it for likely future use along those lines. 
 
@@ -187,9 +195,11 @@ The settings in this view represent those that most affect how a Text is indexed
 
 - **Description**. This is a Markdown-enabled field meant to capture a Text’s abstract. Copy saved here can be configured to display in a `Texts` Content Block on the Project landing page; it is also baked into the metadata that Manifold shares with other systems, crawlers, and social media platforms. Those other systems will likely ***not*** honor Markdown formatting and render the syntax as is.
 
-	Manifold will populate this field when this field when a description is included in the source file:
+	Manifold will populate this field when this field when a description is included in the source file.
 
-	| Source File Type              | Location Notes                                                                                                                                                     |
+	<Spec title="Description Source">
+
+	| Source                        | Location Notes                                                                                                                                                     |
 	|-------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 	| EPUB                          | In the `content.opf` file, Manifold will look for the `<dc:description>This is the description.</dc:description>` attribute.                                       |
 	| HTML                          | For individual HTML Text ingests, the publication date appears between the `<head>` tags, formatted as `<meta name="dc.description" content="Description copy.">`. |
@@ -197,6 +207,7 @@ The settings in this view represent those that most affect how a Text is indexed
 	| Google Doc and MS Word (DOCX) | There is no current way to assign copy as a Text’s description in Google or Word documents.                                                                        |
 	| Manifest Ingests              | In the `meta` section of the YAML file, the description attribute is formatted as   `description: 'A sample description.'`                                         |
 
+	</Spec>
 
 - **Cover**. The Cover image serves as a thumbnail for a specific text and can be configured to appear in the `Texts` Content Block on the Project landing page, in lieu of the default thumbnail depicting loose pages.
 
@@ -256,15 +267,19 @@ The `People` sidebar in this view lists the Maker Records associated with a indi
 
 	The drag bars respond to clicking and dragging with your mouse or by pressing the space bar on your keyboard and then using the up or down arrow keys.
 
-Manifold will automatically populate this space when the Text’s source file provides authorship information in its metadata:
+Manifold will automatically populate this space when the Text’s source file provides authorship information in its metadata
 
-| Source File Type              | Location Notes                                                                                                                                                                                                                                   |
+<Spec title="Author and Contributor Source">
+
+| Source                        | Location Notes                                                                                                                                                                                                                                   |
 |-------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | EPUB                          | In the `content.opf` file, Manifold will look for `<dc:creator id="creator1">John Watson</dc:creator>` and `<dc:contributor id="creator2">Ivy Winters</dc:contributor>` attributes to add listings as `Authors` and `Contributors` respectively. |
 | HTML                          | For individual HTML Text ingests, the author attributions appear between the `<head>` tags, formatted as: `<meta name="dc.creator" content="Rowan Ono">` and `<meta name="dc.contributor" content="Louise Dash">`.                               |
 | Markdown                      | When loading individual Markdown files, authorship is defined as: `creator: Indrid Cold` and `contributor: Ida Davis` in the document’s header.                                                                                                  |
 | Google Doc and MS Word (DOCX) | There is no current way to define authorship in Google or Word documents.                                                                                                                                                                        |
 | Manifest Ingests              | In the `meta` section of the YAML file, authorship is nested under the `creators` or `contributors` headings as : `- name: Ivy Winters`                                                                                                          |
+
+</Spec>
 
 When the system cannot recognize authorship from the source file, ***already existing*** Maker Records can be manually associated with a Text by typing names in the `Authors` or `Contributors` dropdown fields. New Maker Records cannot be created from this view (see [Maker Records](../backend/makers.md)). 
 
@@ -276,15 +291,19 @@ This Author/Contributor scheme is based off the EPUB specification. At present, 
 
 This view groups into different categories the available metadata fields that describe a Manifold Text. Values displayed here appear in the Manifold Reader in the `About this Text` section, accessible from the `Contents` dropdown, and are also included in the BagIt archive when a Project is exported (see [Exporting and Preserving](../backend/projects.md#exporting-and-preserving)).
 
-Metadata can be entered here manually; however, when a Text is ingested, Manifold will search the source files for information it can use to populate the `Rights` and `Language` fields along these lines:
+Metadata can be entered here manually; however, when a Text is ingested, Manifold will search the source files for information it can use to populate the `Rights` and `Language` fields.
 
-| Source File Type              | Location Notes                                                                                                                                                                                                             |
+<Spec title="Rights and Language Source">
+
+| Source                        | Location Notes                                                                                                                                                                                                             |
 |-------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | EPUB                          | In the `content.opf` file, Manifold will look for the `<dc:rights>Rights information</dc:rights>` and `<dc:language id="lang1">en</dc:language>` attributes.                                                               |
 | HTML                          | For individual HTML Text ingests, the rights and language information appears between the `<head>` tags, formatted as `<meta name="dc.rights" content="Rights information">` and `<meta name="dc.language" content="en">`. |
 | Markdown                      | When loading individual Markdown files, the rights and language data is defined as `rights: "Rights information"` and `language: "en-US"` in the document’s header.                                                        |
 | Google Doc and MS Word (DOCX) | There is no current way to assign the Text's rights and language information in Google or Word documents.                                                                                                                  |
 | Manifest Ingests              | In the `meta` section of the YAML file, the rights and language attributes are formatted as `rights: "Rights information"` and `language: "en-US"`                                                                         |
+
+</Spec>
 
 The `Unique Identifer` is the only field Manifold will automatically populate with a UUID when a value is not provided in the source file. At present the only source file that can impart a `Unique Identifier` is an EPUB, where the `content.opf` file includes this attribute: `<dc:identifier id="pub-id">{string-value}</dc:identifier>`. While often used to denote an ISBN, it is not required; thus Manifold does not assume the value into the `ISBN` field.
 
@@ -310,11 +329,15 @@ The title of each stylesheet is categorized by the system as “Ingested” or �
 
 When a new Text is ingested, Manifold will create a stylesheet record here that includes any rendering instructions that were defined in the source file.
 
-| Source File Type              | Source Style Location                                                                                                |
+<Spec title="Stylesheet Source">
+
+| Source                        | Source Style Location                                                                                                |
 |-------------------------------|----------------------------------------------------------------------------------------------------------------------|
 | EPUB                          | CSS file in EPUB package                                                                                             |
-| HTML / Markdown / Manifest    | Inline style between `<style>` tags, CSS file in ZIP archive, or no supplied style.                                  |
-| Google Doc and MS Word (DOCX) | Each application exports its core paragraph and character styles that are captured here in two or more style records |
+| HTML, Markdown, Manifest      | Inline style between `<style>` tags, CSS file in ZIP archive, or no supplied style.                                  |
+| Google Doc and MS Word (DOCX)    | Each application exports its core paragraph and character styles that are captured here in two or more style records |
+
+</Spec>
 
 If Manifold cannot find and source style information, it will create an empty stylesheet record listed in this view.
 
