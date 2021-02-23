@@ -8,13 +8,15 @@ import styles from "./styles.module.scss";
 function NavBar(props) {
   const { mainNav, ...otherProps } = useThemeConfig();
   const { isDarkTheme } = useThemeContext();
-  const { items } = mainNav;
+  const { links } = mainNav;
 
   return (
     <>
-      <div className={styles.navWrapper}>
-        <Nav routes={items} isDarkTheme={isDarkTheme} />
-      </div>
+      <Nav
+        wrapperClassName={styles.navWrapper}
+        routes={links}
+        isDarkTheme={isDarkTheme}
+      />
       <OriginalNavBar {...props} />
     </>
   );

@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
-import { respond } from "../../styles/mixins";
+import { respond } from "../../../styles/mixins";
 import IconFactory from "../../factories/IconFactory";
 
 const NavMenuButton = ({ type, ...buttonProps }) => {

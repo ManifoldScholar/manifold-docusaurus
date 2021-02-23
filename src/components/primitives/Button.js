@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
-import { aFocus, reducedMotion } from "../styles/mixins";
+import { aFocus, reducedMotion } from "../../styles/mixins";
 
 const Button = styled.button`
   color: var(--header-color);

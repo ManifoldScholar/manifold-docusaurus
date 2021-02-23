@@ -1,21 +1,27 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
+import { default as DocLink } from "@docusaurus/Link";
 import { Button } from "../../primitives";
 import { Link } from "../../typography";
-import { respond, fluidScale } from "../../styles/mixins";
+import { respond, fluidScale } from "../../../styles/mixins";
 
 const NavList = ({ className, isMobile, routes }) => {
   return (
     <ul className={className}>
-      {routes.map(({ href, label, isButton, isSelected }, i) => (
+      {routes.map(({ label, isButton, isSelected, ...linkProps }, i) => (
         <li key={i} className={`${className}__item`}>
           {isButton ? (
-            <Button as="a" href={href}>
-              Getting Started
+            <Button as="a" {...linkProps}>
+              Get Started
             </Button>
           ) : (
-            <Link href={href} data-selected={isSelected} size="xs">
+            <Link
+              as={DocLink}
+              data-selected={isSelected}
+              size="xs"
+              {...linkProps}
+            >
               {label}
             </Link>
           )}

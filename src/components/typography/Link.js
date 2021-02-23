@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { aBackgroundUnderline, reducedMotion } from "../styles/mixins";
+import { aBackgroundUnderline, reducedMotion } from "../../styles/mixins";
 
 const Link = styled.a`
   display: inline-flex;
@@ -20,7 +20,7 @@ const Link = styled.a`
   ${({ size }) =>
     size &&
     css`
-      font-size: var(--font-size- ${size});
+      font-size: var(${`--font-size-${size}`});
     `};
 
   > * + * {
