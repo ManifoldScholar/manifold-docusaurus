@@ -25,16 +25,14 @@ export default function BlogPostItem(props) {
 
   return (
     <>
-      {isBlogPostPage && (
-        <Head>
-          {keywords && keywords.length && (
-            <meta name="keywords" content={keywords.join(",")} />
-          )}
-          {image && <meta property="og:image" content={imageUrl} />}
-          {image && <meta name="twitter:image" content={imageUrl} />}
-          {image && <meta name="twitter:image:alt" content={image_alt} />}
-        </Head>
-      )}
+      <Head>
+        {keywords && keywords.length && (
+          <meta name="keywords" content={keywords.join(",")} />
+        )}
+        {image && <meta property="og:image" content={imageUrl} />}
+        {image && <meta name="twitter:image" content={imageUrl} />}
+        {image && <meta name="twitter:image:alt" content={image_alt} />}
+      </Head>
       <BlogPost
         imageUrl={imageUrl}
         imageAlt={image_alt}

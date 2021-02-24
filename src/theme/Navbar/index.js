@@ -3,6 +3,7 @@ import OriginalNavBar from "@theme-original/Navbar";
 import { useThemeConfig } from "@docusaurus/theme-common";
 import useThemeContext from "@theme/hooks/useThemeContext";
 import Nav from "../../components/global/Nav";
+import HtmlHead from "../HtmlHead";
 import styles from "./styles.module.scss";
 
 function NavBar(props) {
@@ -13,6 +14,7 @@ function NavBar(props) {
   // NavBar is in beta, so we wrap it instead of overwriting it
   return (
     <>
+      <HtmlHead />
       <Nav
         wrapperClassName={styles.navWrapper}
         routes={links}
