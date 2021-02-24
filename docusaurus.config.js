@@ -5,7 +5,7 @@ module.exports = {
   tagline: "The tagline of my site",
   url: "https://manifoldscholar.github.io",
   baseUrl: "/manifold-docusaurus/",
-  favicon: "img/manifold-favicon.ico",
+  favicon: "favicon/favicon.svg",
   organizationName: "ManifoldScholar", // Usually your GitHub org/user name.
   projectName: "manifold-docusaurus", // Usually your repo name.
   plugins: [
@@ -13,6 +13,11 @@ module.exports = {
     path.resolve(__dirname, "src/plugin/styled-components")
   ],
   themeConfig: {
+    metaData: {
+      ogImage: "img/Manifold-Marketing-Opengraph-3.png",
+      ogImageAlt:
+        "People building a wooden Manifold logo. Text below the logo says 'Manifold is what we make it'"
+    },
     mainNav: {
       links: [
         {

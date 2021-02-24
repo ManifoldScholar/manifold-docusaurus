@@ -1,0 +1,13 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .logo-fill {
+            fill: #363636;
+        }
+        @media (prefers-color-scheme: dark) {
+            .logo-fill {
+                fill: #52E3AC;
+            }
+        }
+    </style>
+    <path class="logo-fill" d="M.041 12.847L15.006 8.31v2.516L.041 15.363v2l14.965-4.538v2.517L.041 19.88v2l14.965-4.539v2.517L.041 24.395v1.998l14.965-4.537v2.517L.041 28.91v2l15.946-4.837L32 32l-.005-21.809-2.45.743-3.739-1.384 6.19-1.876V5.675l-9.158 2.777L19.1 7.068l12.896-3.91V1.16L16.13 5.97 0 0z" fill-rule="evenodd"/>
+</svg>
