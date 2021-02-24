@@ -172,11 +172,11 @@ Interactive Resources use iFrames to bring remotely hosted content like interact
 
 The header for the Resources view is the same as for all other Project-level Sidebar items, denoting the title and subtitle of the Project along with buttons to `Preview` or `Delete` it.
 
-When individual Resource records are accessed, the header adjusts to the context changing the functionality of those buttons: `Preview` opens the to the Resource’s detail page, instead of the Project homepage, and `Delete` removes the specific Resource from the system, versus deleting the entire Project.
+When individual Resource records are accessed, the header adjusts to the context, changing the functionality of those buttons: `Preview` opens the to the Resource’s detail page, instead of the Project homepage, and `Delete` removes the specific Resource from the system, versus deleting the entire Project.
 
 ### Sidebar
 
-The Sidebar’s `Resource` menu opens a view where new Resources can be added individually or in bulk and existing Resources can be searched through and filtered in a paginated list. When an individual Resource record is selected, the Sidebar will display new options specific that Resource, described fully in [Settings and Fields](../backend/resource.md#settings-and-fields) below.
+The Sidebar’s `Resource` menu opens a view where new Resources can be added individually or in bulk and existing Resources can be searched through and filtered in a paginated list. When an individual Resource record is selected, the Sidebar will display new options specific to that Resource, described fully in [Settings and Fields](../backend/resource.md#settings-and-fields) below.
 
 ### Editing Pane
 
@@ -184,7 +184,7 @@ To the right of the sidebar, the Editing Page displays a search bar with filteri
 
 ## Search
 
-The search bar accepts keyword searches only and no search operators. Within the search bar are two buttons: `Reset` and `Options`. The `Reset` button clears the search bar and resets all of the filters. The `Options` button brings up two search filters and a sorting field to order the results.
+The search bar accepts keyword searches only and no search operators. Search results display beneath in the Resource list. Within the search bar are two buttons: `Reset` and `Options`. The `Reset` button clears the search bar and resets all of the filters. The `Options` button brings up two search filters and a sorting field to order the results.
 
 The search filters, `Select a tag` and `Select a type`, are dropdown fields that surface lists of tags or Resource types (e.g., Image, Video) that are associated with existing Resources in the Project. Only one listing from each dropdown filter can be selected at a time. These filters can be used in conjunction with a keyword search or without, thereby filtering all Project Resources by tag and/or type.
 
@@ -254,14 +254,14 @@ The `← Back to Resources` button returns to the view to the main Resources vie
 
 ## Settings and Fields
 
-Each Resource loaded to Manifold has its own discrete settings that are configurable and which can be accessed when you select a Resource from the Editing Pane. Doing so transforms the view, alters the functionality in the header (see [Interface](../backend/resource.md#interface)), makes available a Resource-specific sidebar with the following options.
+Each Resource loaded to Manifold has its own discrete settings that are configurable and which can be accessed when you select a Resource from the Editing Pane. Doing so transforms the view, alters the functionality in the header (see [Interface](../backend/resource.md#interface)), and makes available a Resource-specific sidebar with the following options.
 
 ### General
 
 These attributes are common to all Resource kinds:
 
 - **Kind**. The values in this dropdown correspond to the ten different Manifold Resource types and instruct the system how to understand the Resource. If this field is changed for an existing Resource, the system will retain values for attributes shared between the two kinds.
-- **Title**. This is the display name of the Resource. It appears under the Resource thumbnail in the left margin of the Reader when the Resource is placed as a Text annotation, in the Resource modal window in the Reader, in the Resource library and detail page, and in the Resource Content Block and Resource Collection views.
+- **Title**. This is the display name of the Resource. It appears under the Resource thumbnail in the left margin of the Reader when the Resource is placed as a Text annotation, in the Resource modal window in the Reader, in the Resource library and detail page, and in the `Resources` Content Block and Resource Collection views.
 
 	The value in this field is also baked into the metadata that Manifold shares with other systems, crawlers, and social media platforms.
 	
