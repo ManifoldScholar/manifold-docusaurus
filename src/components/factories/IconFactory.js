@@ -4,7 +4,9 @@ import defaultProps from "../svgs/defaultProps";
 import svgShape from "../shapes/svgShape";
 
 const ICON_MAP = {
+  arrow: Icons.Arrow,
   chevronArrow: Icons.ChevronArrow,
+  prevNextArrow: Icons.PrevNextArrow,
   twitter: Icons.Twitter,
   email: Icons.Email,
   slack: Icons.Slack,
