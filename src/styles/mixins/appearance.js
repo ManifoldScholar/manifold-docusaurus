@@ -9,43 +9,43 @@ function aBgLight(color) {
     --background-color: ${color === "transparent"
       ? "transparent"
       : `var(--${color})`};
-    --color-secondary: var(--green);
+    --color-secondary: var(--green50);
     --header-color: var(--header-dark);
     --text-color: var(--text-dark);
     --button-background: var(--white);
     --button-hover-color: var(--dark-gray);
     --input-background: var(--white);
+    --placeholder-color: var(--text-color);
     background-color: var(--background-color);
-    color: var(--text-color);
   `;
 }
 
 function aBgDark(color) {
   return css`
-    --color-secondary: var(--green);
-    --background-color: var(--${color});
+    --color-secondary: var(--green50);
+    --background-color: var(${`--${color}`});
     --header-color: var(--header-light);
     --text-color: var(--text-light);
     --button-background: var(--dark-gray);
-    --button-hover-color: var(--green);
+    --button-hover-color: var(--green50);
     --border-color: var(--text-light);
     --input-background: "transparent";
+    --placeholder-color: var(--header-color);
     background-color: var(--background-color);
-    color: var(--text-color);
   `;
 }
 
 function aBgColored(color) {
   return css`
-    --color-secondary: var(--green);
-    --background-color: var(--${color});
+    --color-secondary: var(--green50);
+    --background-color: var(${`--${color}`});
     --header-color: var(--header-dark);
     --text-color: var(--header-dark);
     --button-background: var(--white);
     --button-hover-color: var(--dark-gray);
     --input-background: var(--white);
+    --placeholder-color: var(--text-color);
     background-color: var(--background-color);
-    color: var(--text-color);
   `;
 }
 
@@ -95,10 +95,13 @@ export function aFocus(color) {
 
 export function aBackgroundUnderline(color = "text-color", forwards = true) {
   return css`
-    border-bottom: 2px solid var(--${color});
+    border-bottom: 2px solid var(${`--${color}`});
 
     @supports (background-image: linear-gradient(#fff, #fff)) {
-      background-image: linear-gradient(var(--${color}), var(--${color}));
+      background-image: linear-gradient(
+        var(${`--${color}`}),
+        var(${`--${color}`})
+      );
       background-repeat: no-repeat;
       background-position: center bottom;
       border-bottom: none;

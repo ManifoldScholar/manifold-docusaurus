@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
-import { fluidScale, reducedMotion } from "../../styles/mixins";
+import { fluidScale, reducedMotion } from "../../../styles/mixins";
 import HomeLink from "../HomeLink";
 import NavList from "./NavList";
 import NavMenuButton from "./NavMenuButton";
 
-const Nav = ({ className, routes, isDarkTheme }) => {
+const Nav = ({ className, wrapperClassName, routes, isDarkTheme }) => {
   const [showMobileNav, setShowMobileNav] = useState(false);
 
   useEffect(() => {
@@ -16,7 +16,7 @@ const Nav = ({ className, routes, isDarkTheme }) => {
 
   return (
     <nav
-      className={`${className} ${
+      className={`${className} ${wrapperClassName} ${
         isDarkTheme ? "a-bg-black" : "a-bg-neutral10"
       }`}
     >
@@ -53,6 +53,7 @@ Nav.displayName = "Global.Nav";
 
 Nav.propTypes = {
   className: PropTypes.string,
+  wrapperClassName: PropTypes.string,
   routes: PropTypes.array,
   isDarkTheme: PropTypes.bool
 };

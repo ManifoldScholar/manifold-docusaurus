@@ -25,17 +25,26 @@ const Heading = styled.div`
       padding-bottom: 0.25em;
     `};
 
+  ${({ uppercase }) =>
+    uppercase &&
+    css`
+      text-transform: uppercase;
+      letter-spacing: 1.75px;
+      line-height: 1.714;
+      font-size: var(--font-size-uppercase);
+    `}
+
   /* Always use the proper header tag - size should be used sparingly */
   ${({ size }) =>
     size &&
     css`
-      font-size: var(--font-size-${size});
+      font-size: var(${`--font-size-${size}`});
     `};
 
   ${({ weight }) =>
     weight &&
     css`
-      font-weight: var(--font-weight-${weight});
+      font-weight: var(--font-weight- ${weight});
     `};
 `;
 
@@ -45,6 +54,7 @@ Heading.propTypes = {
   color: PropTypes.string,
   underline: PropTypes.bool,
   weight: PropTypes.oneOf(["regular", "medium", "semi-bold"]),
+  uppercase: PropTypes.bool
 };
 
 export default Heading;

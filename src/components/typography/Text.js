@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
-import { tMonoface } from "../styles/mixins";
+import { tMonoface } from "../../styles/mixins";
 
 /*
 Styled component for paragraphs, spans, and div text
@@ -25,7 +25,7 @@ const Text = styled.span`
   ${({ size }) =>
     size &&
     css`
-      font-size: var(--font-size- ${size});
+      font-size: var(${`--font-size-${size}`});
     `};
 
   ${({ weight }) =>

@@ -14,31 +14,31 @@ module.exports = {
   ],
   themeConfig: {
     mainNav: {
-      items: [
+      links: [
         {
           label: "Features",
-          href: "https://manifoldapp.org/features",
+          href: "http://staging.manifoldapp.org/features",
           isButton: false
         },
         {
           label: "Community",
-          href: "https://manifoldapp.org/community",
+          href: "http://staging.manifoldapp.org/community",
           isButton: false
         },
         {
           label: "Services",
-          href: "https://manifoldapp.org/services",
+          href: "http://staging.manifoldapp.org/services",
           isButton: false
         },
         {
           label: "Docs",
-          href: "./docs",
+          to: "docs",
           isButton: false,
           isSelected: true
         },
         {
-          label: "Getting Started",
-          href: "https://manifoldapp.org/get-started",
+          label: "Get Started",
+          href: "http://staging.manifoldapp.org/get-started",
           isButton: true
         }
       ]
@@ -50,15 +50,19 @@ module.exports = {
           items: [
             {
               label: "Get Started",
-              href: "https://manifoldapp.org/get-started"
+              href: "http://staging.manifoldapp.org/get-started"
             },
             {
               label: "Features",
-              href: "https://manifoldapp.org/features"
+              href: "http://staging.manifoldapp.org/features"
             },
             {
               label: "Services",
-              href: "https://manifoldapp.org/services"
+              href: "http://staging.manifoldapp.org/services"
+            },
+            {
+              label: "Docs",
+              to: "docs"
             }
           ]
         },
@@ -67,7 +71,7 @@ module.exports = {
           items: [
             {
               label: "Community",
-              href: "https://manifoldapp.org/community"
+              href: "http://staging.manifoldapp.org/community"
             },
             {
               label: "Blog",
@@ -75,11 +79,11 @@ module.exports = {
             },
             {
               label: "About",
-              href: "https://manifoldapp.org/history"
+              href: "http://staging.manifoldapp.org/history"
             },
             {
               label: "Development",
-              href: "https://manifoldapp.org/development"
+              href: "http://staging.manifoldapp.org/development"
             }
           ]
         },
@@ -88,19 +92,23 @@ module.exports = {
           items: [
             {
               label: "Email",
-              href: "mailto:office@castironcoding.com"
+              href: "mailto:office@castironcoding.com",
+              icon: "email"
             },
             {
               label: "Github",
-              to: "https://github.com/ManifoldScholar"
+              to: "https://github.com/ManifoldScholar",
+              icon: "github"
             },
             {
               label: "Slack",
-              href: "https://slack.com/"
+              href: "https://slack.com/",
+              icon: "slack"
             },
             {
               label: "Twitter",
-              href: "https://twitter.com/manifoldscholar"
+              href: "https://twitter.com/manifoldscholar",
+              icon: "twitter"
             }
           ]
         }
