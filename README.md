@@ -24,6 +24,8 @@ $ yarn start
 
 This command starts a local development server and open up a browser window. Most changes are reflected live without having to restart the server.
 
+If your local enviroment does not start as expected and your Terminal reports that it cannot find a module, rerun the installation command from the top directory of your documentation repository: `$ yarn install`.
+
 ### Build
 
 ```
