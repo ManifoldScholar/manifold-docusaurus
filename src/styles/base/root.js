@@ -34,6 +34,7 @@ export default css`
     --neutral05: #f7f7f7;
     --neutral10: #ececec;
     --neutral30: #d6d6d6;
+    --neutral40: #c3c3c3;
     --neutral50: #9a9a9a;
     --neutral75: #696969;
     --neutral80: #828282;
@@ -75,10 +76,14 @@ export default css`
     /* common responsive widths */
     --base-column-gap: ${fluidScale("70px", "40px")};
 
+    /* common fluid padding */
+    --padding-sm: ${fluidScale("30px", "20px")};
+
     /* layout */
     --l-container-full: 100vw;
     --l-container-max: 1200px;
     --l-container-wide: 1020px;
+    --l-container-sm: 620px;
     --l-container-padding: ${fluidScale("40px", "33px")};
     --l-container-padding-lg: ${fluidScale("80px", "33px")};
     --l-container-padding-xlg: ${fluidScale("120px", "33px")};
@@ -89,5 +94,7 @@ export default css`
 
     --main-nav-padding-x: ${fluidScale("28px", "18px")};
     --main-nav-padding-y: 28px;
+
+    --blog-item-margin: ${fluidScale("80px", "60px")};
   }
 `;

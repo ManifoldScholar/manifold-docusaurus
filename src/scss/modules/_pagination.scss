@@ -13,7 +13,7 @@ html[data-theme="dark"] {
 }
 
 .pagination-nav {
-  --ifm-link-hover-color: var(--ifm-color-content);
+  --ifm-link-hover-color: var(--ifm-link-color);
   border-top: 2px solid var(--ifm-color-content);
   padding-top: 30px;
 

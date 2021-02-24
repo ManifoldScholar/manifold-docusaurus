@@ -134,6 +134,11 @@ module.exports = {
           activeBasePath: "docs/guides",
           label: "Guides",
           position: "left"
+        },
+        {
+          to: "blog",
+          label: "Blog",
+          position: "left"
         }
       ]
     }
@@ -149,10 +154,12 @@ module.exports = {
             "https://github.com/ManifoldScholar/manifold-docusaurus/edit/master"
         },
         blog: {
-          showReadingTime: true,
+          blogTitle: "Blog",
+          // blogDescription: "A docusaurus powered blog!",
+          showReadingTime: false
           // Please change this to your repo.
-          editUrl:
-            "https://github.com/facebook/docusaurus/edit/master/website/blog/"
+          // editUrl:
+          //   "https://github.com/facebook/docusaurus/edit/master/website/blog/"
         },
         theme: {
           customCss: require.resolve("./src/scss/styles.scss")

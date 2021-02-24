@@ -7,4 +7,6 @@ export { default as Github } from "./Github";
 export { default as Slack } from "./Slack";
 export { default as Twitter } from "./Twitter";
 // Other icons
+export { default as Arrow } from "./Arrow";
 export { default as ChevronArrow } from "./ChevronArrow";
+export { default as PrevNextArrow } from "./PrevNextArrow";

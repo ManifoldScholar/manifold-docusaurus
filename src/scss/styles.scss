@@ -14,14 +14,15 @@
 @import "base/appearance";
 
 // Modules
-@import "modules/menu";
-@import "modules/pagination";
-@import "modules/navbar";
-@import "modules/markdown";
-@import "modules/table-of-contents";
 @import "modules/alert";
-@import "modules/tabs";
+@import "modules/blog-wrapper";
 @import "modules/main-wrapper";
+@import "modules/markdown";
+@import "modules/menu";
+@import "modules/navbar";
+@import "modules/pagination";
+@import "modules/table-of-contents";
+@import "modules/tabs";
 
 .docusaurus-highlight-code-line {
   background-color: rgb(72, 77, 91);

@@ -10,6 +10,7 @@ function NavBar(props) {
   const { isDarkTheme } = useThemeContext();
   const { links } = mainNav;
 
+  // NavBar is in beta, so we wrap it instead of overwriting it
   return (
     <>
       <Nav
