@@ -2,30 +2,93 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://manifoldscholar.github.io/blog</id>
     <title>Manifold Docs Blog</title>
-    <updated>2019-05-30T00:00:00.000Z</updated>
+    <updated>2020-10-28T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://manifoldscholar.github.io/blog"/>
     <subtitle>Manifold Docs Blog</subtitle>
     <icon>https://manifoldscholar.github.io/img/manifold-favicon.ico</icon>
     <entry>
-        <title type="html"><![CDATA[Welcome]]></title>
-        <id>welcome</id>
-        <link href="https://manifoldscholar.github.io/manifold-docusaurus/blog/welcome"/>
-        <updated>2019-05-30T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Blog features are powered by the blog plugin. Simply add files to the blog directory. It supports tags as well!]]></summary>
+        <title type="html"><![CDATA[Manifold Next Steps]]></title>
+        <id>manifold-next-steps</id>
+        <link href="https://manifoldscholar.github.io/manifold-docusaurus/blog/manifold-next-steps"/>
+        <updated>2020-10-28T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Manifold Moves Toward Sustainability, Promotes Learning and Equity with Two Major Grants]]></summary>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Hello]]></title>
-        <id>hello-world</id>
-        <link href="https://manifoldscholar.github.io/manifold-docusaurus/blog/hello-world"/>
-        <updated>2019-05-29T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Welcome to this blog. This blog is created with Docusaurus 2 alpha.]]></summary>
+        <title type="html"><![CDATA[Access Granted]]></title>
+        <id>access-granted</id>
+        <link href="https://manifoldscholar.github.io/manifold-docusaurus/blog/access-granted"/>
+        <updated>2020-05-05T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Manifold 5.0 Is Here!]]></summary>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Hola]]></title>
-        <id>hola</id>
-        <link href="https://manifoldscholar.github.io/manifold-docusaurus/blog/hola"/>
-        <updated>2019-05-28T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet]]></summary>
+        <title type="html"><![CDATA[Happy holidays from Manifold!]]></title>
+        <id>happy-holidays-from-manifold</id>
+        <link href="https://manifoldscholar.github.io/manifold-docusaurus/blog/happy-holidays-from-manifold"/>
+        <updated>2019-12-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Here’s to 2019! The Manifold Team sends good wishes to all as we head into the shortest day of the year and turn toward 2020. I’ve asked each team member to share a good memory from the year, a Manifold gift (be it moment with someone in the community, a favorite feature, a resolution). We’re happy to be working together and with all of you.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Manifold Digital Services Spotlight: Affordable Learning Georgia]]></title>
+        <id>manifold-digital-services-spotlight-affordable-learning-georgia</id>
+        <link href="https://manifoldscholar.github.io/manifold-docusaurus/blog/manifold-digital-services-spotlight-affordable-learning-georgia"/>
+        <updated>2019-11-21T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[In the last training of the season, Terence met with Jeff Gallant, Program Manager of Affordable Learning Georgia; Joy Woodson, Assistant Director for Marketing Communications; and Lucy Harrison, Assistant Vice Chancellor for Library Services and Executive Director of GALILEO.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Manifold Digital Services Spotlight: University of Georgia Press]]></title>
+        <id>manifold-digital-services-spotlight-university-of-georgia-press</id>
+        <link href="https://manifoldscholar.github.io/manifold-docusaurus/blog/manifold-digital-services-spotlight-university-of-georgia-press"/>
+        <updated>2019-11-18T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Last week, Manifold Digital Projects Editor Terence was at the University of Georgia Press—the oldest and largest publisher in Georgia—exploring new digital initiatives and publishing models with Director Lisa Bayer and Executive Editor of Scholarly and Digital Publishing Mick Gusinde-Duffy.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Manifold Digital Services Spotlight: Black Women and Religious Cultures]]></title>
+        <id>manifold-digital-services-spotlight-black-women-and-religious-cultures</id>
+        <link href="https://manifoldscholar.github.io/manifold-docusaurus/blog/manifold-digital-services-spotlight-black-women-and-religious-cultures"/>
+        <updated>2019-10-25T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[This week we find Manifold Digital Projects Editor Terence in Atlanta meeting with Dr. Rosetta E. Ross. Dr. Ross, along with members of Spelman College’s Department of Philosophy and Religious Studies and the Daughters of the African Atlantic community, is creating a new journal entitled Black Women and Religious Cultures. The journal seeks to examine the roles of religions, positively and negatively, in the lives of Black women, transnationally. In addition to publishing meeting proceedings from the Consultation of African and African Diasporan Women in Religion and Theology, the journal will include articles from participants in their growing community, facilitating an exchange of knowledge.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Manifold Digital Services Spotlight: Arte Publico Press]]></title>
+        <id>manifold-digital-services-spotlight-arte-publico-press</id>
+        <link href="https://manifoldscholar.github.io/manifold-docusaurus/blog/manifold-digital-services-spotlight-arte-publico-press"/>
+        <updated>2019-10-23T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[In this post, we find our digital projects editor, Terence, traveling to Houston, Texas, to meet with the Arte Público Press digital team: Executive Editor Gabriela Baeza Ventura, Carolina Villarroel of the Recovering the US Hispanic Literary Heritage Project, and Digital Programs Manager Lorena Gauthereau. The conversation revolved primarily around their recovery mission, the presses digital initiatives, as well as intro publications aimed at younger members of the Latino community. And, of course, all the amazing cuisine that Houston has to offer.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Manifold Digital Services Spotlight: Lapham’s Quarterly]]></title>
+        <id>hmanifold-digital-services-spotlight-laphams-quarterly/</id>
+        <link href="https://manifoldscholar.github.io/manifold-docusaurus/blog/hmanifold-digital-services-spotlight-laphams-quarterly/"/>
+        <updated>2019-10-11T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[This week brought Terence from one Manifold hub to another, New York City, to meet with Elizabeth Della Zazzera, Digital Producer, and Jaime Fuller, Web Editor, at Lapham’s Quarterly.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Manifold Digital Services Spotlight: Intermezzo]]></title>
+        <id>manifold-digital-services-spotlight-intermezzo</id>
+        <link href="https://manifoldscholar.github.io/manifold-docusaurus/blog/manifold-digital-services-spotlight-intermezzo"/>
+        <updated>2019-10-08T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[In this post, we find our digital projects editor, Terence, traveling to the University of Kentucky to meet with Intermezzo editors Jeff Rice, Eric Detweiler, and Sergio C. Figueiredo. The conversation revolved around integrating Manifold with their series, which encourages writers to experiment with form, style, content, and approach to break down the barrier between the scholarly and the creative.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Manifold Version 4.0 Overview]]></title>
+        <id>manifold-version-4-0-overview</id>
+        <link href="https://manifoldscholar.github.io/manifold-docusaurus/blog/manifold-version-4-0-overview"/>
+        <updated>2019-09-26T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The Manifold team is delighted to announce the release of Manifold version 4.0. The hallmark features for this release are the addition of reading groups, which allow readers to annotate texts publicly, privately, or anonymously, and standalone mode, which allows creators to set up projects that appear without the library. We’ve also made notable strides in improving Manifold’s accessibility and are now publishing docker images to Docker Hub.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Manifold Digital Services Spotlight: MESH at Michigan State University]]></title>
+        <id>manifold-digital-services-spotlight-mesh-at-michigan-state-university</id>
+        <link href="https://manifoldscholar.github.io/manifold-docusaurus/blog/manifold-digital-services-spotlight-mesh-at-michigan-state-university"/>
+        <updated>2019-09-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[This week we find our trusty digital projects editor on the road in East Lansing with Kathleen Fitzpatrick, Scott Schopieray, Kelly Sattler, and members of MESH at Michigan State University.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Manifold Digital Services Spotlight: Fembot Collective]]></title>
+        <id>manifold-digital-services-spotlight-fembot-collective</id>
+        <link href="https://manifoldscholar.github.io/manifold-docusaurus/blog/manifold-digital-services-spotlight-fembot-collective"/>
+        <updated>2019-09-17T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[This week we find our digital projects editor with the managing members of the Fembot Collective, led by Radhika Gajjala at Bowling Green State University in Bowling Green, Ohio.]]></summary>
     </entry>
 </feed>
