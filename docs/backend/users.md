@@ -6,7 +6,7 @@ sidebar_label: Users
 
 `Users` are created by those first signing up for an account with a particular instance of Manifold—or by an existing Administrator on behalf of one who doesn't yet have an account. User accounts provide credentials along the following lines:
 
-In Manifold speak, user accounts are “global roles,” in that the permissions these roles bestow function as described here generally across a Manifold instance. It is also possible to extend similar permissions at an individual project level. Those are “scoped roles” that are fully described in the `Access` section.
+In Manifold speak, user accounts are “global roles,” in that the permissions these roles bestow function as described here generally across a Manifold instance. It is also possible to extend similar permissions at an individual project level. Those are “scoped roles” that are fully described in the [`Access`](/projects#managing-access) section.
 
 `Users` can be managed in the backend in `Records`. The main page `Search` bar allows typed input to search for users. There are two buttons at the far right of the Search bar: `Reset` and `Option.` Clicking `Reset` clears the search. Clicking `Options`reveals options to `Filter results` by roles outlined below, and to `Order Results` alphabetically by last or first name.
 
@@ -18,21 +18,21 @@ When you delete a User, you receive a warning you must approve, and then a brief
 
 ## Administrator
 
-All menus, settings, and actions available in the backend can be attended by an Administrator. Only those who have installed the instance and can access it through a command line interface (CLI) can exercise more control over an instance.
+All menus, settings, and actions available in the backend can be attended by an Administrator. Only those who have installed the instance and can access it through a command line interface (CLI) can exercise more control over an instance. Administrators can configure and manage global settings.
 
 ## Editor
 
-Editors can create, modify, or delete Projects, [Maker records](backend/makers.html) and an installation's [Pages](/docs/customizing/records/pages.html), regardless of who originally created them. Editors *do not* have access to an installation's [global settings](/docs/customizing/settings/index.html), cannot manage [Features](/docs/customizing/records/features.html), nor can they create, modify, or delete user accounts. Editors, however, can grant other users [permissions to modify specific projects](/docs/projects/customizing/access.html).
+Editors can create, modify, or delete Projects, [Maker records](/docs/backend/makers.md) and an installation's [Pages](/docs/backend/records/pages.md), regardless of who originally created them. Editors *do not* have access to an installation's global settings, cannot manage `Features`, nor can they create, modify, or delete user accounts. Editors, however, can grant other users [`Access`](/docs/backend/projects.md/#managing-access) to modify specific projects.
 
 ## Project Creator
 
-Can access the backend and modify all elements of those projects they've created or those for which they have been scoped `Can Modify Project` [permissions](/docs/administering/configuring/). Project Creators likewise have the authority to extend permissions to other users over those projects they manage. Additionally, Project Creators can create new and modify existing Maker records; however, they cannot delete *any* Maker record, even those they created.
+Can access the backend and modify all elements of those projects they've created or those for which they have been scoped `Can Modify Project` editor permissions in a Project's [Access settings](/docs/backend/projects.md#managing-access). Project Creators likewise have the authority to extend permissions to other users over those projects they manage. Additionally, Project Creators can create new and modify existing Maker records; however, they cannot delete *any* Maker record, even those they created.
 This role allows members of distinct units to control their own projects without affecting the instance as a whole or the publishing work of other units on the same instance.
 
 ## Marketeer
 
-Marketeers can modify *all* existing Projects and Maker records, as well as create, modify, or delete an installation's [Pages](/docs/administering/configuring/records/pages.md) and [Features](/docs/administering/configuring/records/features.md). However, they *cannot* extend permissions to other users on a project-by-project basis, nor can they create new or delete existing Maker records.
+Marketeers can modify *all* existing Projects and Maker records, as well as create, modify, or delete an installation's `Pages` and `Features`. However, they *cannot* extend permissions to other users on a project-by-project basis, nor can they create new or delete existing Maker records.
 
 ## Reader
 
-The default user role. When logged in a Reader can highlight, annotate, comment, make use of sharing functionalities, and customize email notifications, all of which are described in detail in the [Reading section](/docs/reading/index.html). Readers don't have native access to the backend in any capacity, but they can be scoped permissions to perform certain actions in the backend (e.g., adding resources to a project or modifying metadata). Readers can also be classified as project authors, which distinguishes their interactions with their text from other readers. For more about what permissions can be scoped to the Reader role on a project-by-project basis, see the [Access section](/docs/projects/customizing/projects.md#managing).
+The default user role. When logged in a Reader can highlight, annotate, comment, make use of sharing functionalities, and customize email notifications, all of which are described in detail in the [Reading section](/docs/reading/index.html). Readers don't have native access to the backend in any capacity, but they can be scoped permissions to perform certain actions in the backend (e.g., adding resources to a project or modifying metadata). Readers can also be classified as project authors, which distinguishes their interactions with their text from other readers. For more about what permissions can be scoped to the Reader role on a project-by-project basis, see the [`Access` section](/docs/projects/customizing/projects.md#managing).
