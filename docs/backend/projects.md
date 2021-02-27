@@ -40,21 +40,43 @@ If you are equipped to engage with the application using a command line interfac
 
 ## Analytics
 
-TKTKTK
+This view displays Project-specific engagement, aggregating user activity with it into five reports, which can be configured to return information for specific periods of time.
 
-<!-- Notes from ZD:
+### Configuring Constraints
 
-First, when we track events, there is no connection in our stored data between the tracked event and a specific user account. So the system is designed so that it’s impossible to say “who viewed project X”.
+At the top of the view, the system provides options to configure custom or pre-set date ranges for which the subsequent reports will return values.
 
-We also mask IP addresses so that you can’t actually see the IP of the user who accessed the content.
+- **Start and End Date**. These two fields are a means to manually set a specific range of time the system will report engagement.
 
-We do store the user’s browser, operating system, device type, and user agent so that we can at some point report on what devices people are using
+	Dates can be entered here manually in the month, date, year format (MM/DD/YYYY) or selected from the date picker that appears when your cursor lands in this field.
 
-In other words, we’re trying to be GDPR compliant out the gate. We should talk about this in the docs so people don’t freak out that we’re “tracking” readers
+- **Choose a Range Preset**. This field comprises four button options that will adjust the reports to pre-defined date ranges: `Last week`, which corresponds to the Sunday through Saturday before the current span of days; `Last month`; `Last 7 days`, which includes the current day as the seventh; and `Last 30 days`, which does likewise—day 30 is the current day.
 
-We do store a token to identify the visitor and the visit in a cookie. We need to store these tokens so that we’re not relying on their authenticated session to identify them.
+### Reports
 
- -->
+Following the date constraint options, the system displays five usage reports, some with multiple data points, reflecting user activity with the Project during the defined time span.
+
+At present there is no mechanism to export this data or mask from tracking the activity of specific users.
+
+- **Visitors**. Rendered in a line chart, the `Visitors` report shows the number of unique visitors accessing any page on the instance during the set time span.
+
+	Visits are tied to a user’s browser. A user with multiple tabs open to the site in the same browser will be counted only once. But if the same user accesses an instance from two different browsers, they will be recorded as two different visitors.
+
+- **Annotations**. This report is broken into four categories: Annotations, Public, Private, and Reading Groups.
+
+	The first displays the tally of all annotations added to Texts contained within the Project during the selected time period.
+
+	The next two categories show the number of annotations made under the banner of `My Public Annotations` and `My Private Annotations` in the Reader’s pop-up menu.
+
+	The last category shows the number all annotations to a Project Text’s made within the context of a Reading Group, regardless of the Reading Group’s privacy settings.
+
+	The value displays in the first category, Annotations, should equal the sum of the other three.
+
+- **Highlights**. The value shown here corresponds to the total number of passages that have been highlighted during the selected time period. The system aggregates highlights from all of the Project’s Texts during that span, regardless of privacy setting or affiliation with Reading Groups.
+
+- **New Followers**. Each time a user follows a Project, the system creates a record of it. When a user un-follows a Project, that record is destroyed. The value from this report is the total number of follower records that were newly created for the Project and still existing during the date range selected.
+
+- **All Followers**. This report returns the total number of currently existing follower records associated with the Project. The figure here is ***not*** affected by time constraints.
 
 ## General
 

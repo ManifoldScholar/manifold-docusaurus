@@ -134,7 +134,47 @@ Even when pre-populated by the system, all of the fields in this view can be mod
 
 ### Analytics
 
-<!-- tk -->
+This view displays Text-specific engagement, aggregating user activity with it into six reports, which can be configured to return information for specific periods of time.
+
+- **Configuring Constraints**. At the top of the view, the system provides options to configure custom or pre-set date ranges for which the subsequent reports will return values.
+
+	- **Start and End Date**. These two fields are a means to manually set a specific range of time the system will report enagement.
+
+	Dates can be entered here manually in the month, date, year format (MM/DD/YYYY) or selected from the datepicker that appears when your cursor lands in this field.
+
+	- **Choose a Range Preset**. This field comprises four button options that will adjust the reports to pre-defined date ranges: `Last week`, which corresponds to the Sunday through Saturday before the current span of days; `Last month`; `Last 7 days`, which includes the current day as the seventh; and `Last 30 days`, which does likewise—day 30 is the current day.
+
+- **Reports**. Following the date contstaint options, the system displays six usage reports, some with multiple data points, reflecting user activity across the instance during the defined time span.
+
+	At present there is no mechanism to export this data or mask from traking the activity of specific users.
+
+	- **Visitors**. Rendered in a line chart, the `Visitors` report shows the number of unique visitors accessing the Text during the set time span.
+
+		Visits are tied to a user’s browser. A user with multiple tabs open to the Text in the same browser will be counted only once. But if the same user accesses the Text from two different browsers, they will be recorded as two different visitors.
+
+	- **Annotations**. This report is broken into four categories: Annotations, Public, Private, and Reading Groups.
+
+	The first displays the tally of all annotations added to the Text during the selected time period.
+
+	The next two categories show the number of annotations made under the banner of `My Public Annotations` and `My Private Annotations` in the Reader’s pop-up menu.
+
+	The last category shows the number all annotations to the Text made within the context of a Reading Group, regardless of the Reading Group’s privacy settings.
+
+	The value displays in the first category, Annotations, should equal the sum of the other three.
+
+	- **Highlights**. The value shown here corresponds to the total number of passages in the Text that have been highlighted during the selected time period. The system aggregates all of the highlights made to the Text in the value it reports, regardless of privacy setting or affiliation with Reading Groups.
+
+	- **Shares**. The `Shares` report displays the current total for the number of times visitors have used the Manifold Share feature the Reader’s pop-up menu to share the Text section to Twitter or Facebook.
+
+		The figure here is ***not*** affected by time constraints.
+
+	- **Citations**. Each time a visitor uses the Reader’s Share feature to create an citation for the Text section, a record is created. The figure in this report represents the total number of citation records currently associated with the text section. It is ***not*** affected by time constraints.
+
+	- **Text Section Views**. Rendered as a list, the `Text Section Views` report aggregates the total number of times a specfic section within a Text has been viewed during the set timespan.
+
+		Each time a visitor opens a Text section, the system gives their browser a token associated with the the section. The system calculates the values it displays here by adding together the total number of tokens associated with the section from all the visitors who have accessed it.
+
+		Data in this report are accurate to within a few moments, and section titles in the list open the Manifold Reader to the selected section.
 
 ### General
 
