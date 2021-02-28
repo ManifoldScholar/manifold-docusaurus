@@ -31,6 +31,7 @@ module.exports = {
               'administering/reference/environment_variables',
               'administering/reference/api_rake_tasks',
               'administering/reference/omnibus_reference',
+              'administering/reference/downloads',
             ]
           },
         ]

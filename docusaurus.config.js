@@ -1,4 +1,13 @@
 const path = require("path");
+const fs = require('fs')
+
+let data = {};
+try {
+  data.manifoldVersion = fs.readFileSync(path.resolve(__dirname, "MANIFOLD_VERSION"), 'utf8').trim();
+  data.releases = JSON.parse(fs.readFileSync(path.resolve(__dirname, "releases.json"), 'utf8'));
+} catch (err) {
+  console.error(err)
+}
 
 const DARK_ICON = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'%3E%3Cpath d='M9.8.7c2 1.1 3.4 3.3 3.4 5.8 0 3.7-3 6.7-6.7 6.7-2.5 0-4.7-1.4-5.8-3.4 1 .5 2.1.8 3.3.8 3.7 0 6.7-3 6.7-6.7 0-1.1-.3-2.2-.9-3.2zm-4.2.5c.2-.2.6 0 .5.3l-.4 2.1 1.8 1.1c.3.2.2.6-.1.6l-2.1.2-.5 2c0 .3-.5.4-.6.1l-.8-1.9-2.1.2c-.3 0-.5-.4-.3-.6l1.6-1.4L1.7 2c-.1-.3.2-.6.5-.4l1.8 1 1.6-1.4z' fill-rule='evenodd' clip-rule='evenodd' fill='%237ad3ff'/%3E%3C/svg%3E")`;
 
@@ -172,6 +181,9 @@ module.exports = {
         }
       }
     }
+  },
+  customFields: {
+    data
   },
   presets: [
     [

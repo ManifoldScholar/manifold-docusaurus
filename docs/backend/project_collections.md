@@ -38,7 +38,7 @@ Each entry on the sidebar list includes the title of the collection, the number 
 The title, visibility button, and drag bars are all selectable by mouse or keyboard from this list with a click or by pressing the space bar, respectively.
 
 - **Title**. Selecting the title of a collection will open its contents and settings in the editing pane in the main body of this page.
-- **Visibility**. Activating the eye icon will hide the collection from *all* frontend views. When hidden, the eye icon will be shown with a diagonal slash across it. This button *does not* affect whether or not a Collection appears on the homepage—that is configured separately in the Collection’s settings.  
+- **Visibility**. Activating the eye icon will hide the collection from *all* frontend views. When hidden, the eye icon will be shown with a diagonal slash across it. This button *does not* affect whether or not a Collection appears on the homepage—that is configured separately in the Collection’s settings.
 - **Drag Bars**. Appearing as two parallel, horizontal lines, you can use these to adjust the display order of the Collections (for both the home and Collections pages), either by clicking and dragging an entry with your mouse or by pressing the space bar and then either the up or down arrow keys on your keyboard.
 
 Beneath the list of Collections is the `+ Create New Collection` button that opens a drawer from the right of the screen will a number of fields you can use to define the parameters of your new Project Collection.
@@ -66,7 +66,7 @@ This title appears in library views at the top of the Collection beside the (opt
 
 Manual Collections allow you to directly pick and choose projects to add to a Collection using your mouse or keyboard. Smart Collections rely on you to set parameters the system will use to automatically populate and update the Collection.
 
-Most Collection settings are shared by both Manual 
+Most Collection settings are shared by both Manual
 
 Manifold updates the list of Projects in Smart Collections every fifteen minutes. Adjusting and saving new settings to a Smart Collection will immediately refresh the cache of Projects in that collection.
 
@@ -82,7 +82,7 @@ If left blank, Manifold will adapt the Collection’s title to suit as the slug.
 
 ### Description
 
-The description is rendered below the Collection title in library views and can be styled with Markdown syntax. 
+The description is rendered below the Collection title in library views and can be styled with Markdown syntax.
 
 ### Hero Image and Layout
 

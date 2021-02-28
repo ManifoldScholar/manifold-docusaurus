@@ -35,6 +35,7 @@
     "docusaurus-plugin-sass": "^0.1.11",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
+    "semver": "^7.3.4",
     "styled-components": "^5.2.1"
   }
 }
