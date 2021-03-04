@@ -1,5 +1,5 @@
 ---
-id: text
+id: texts
 title: Texts
 sidebar_label: Texts
 ---
@@ -7,29 +7,89 @@ sidebar_label: Texts
 import Spec from "@theme/Spec";
 const defaultImageFormats = "GIF, JPEG, JPG, PNG";
 
-## About
+:::info Managing Texts
+To edit a text, locate its parent project in the backend, select the "texts" editing pane from the sidebar. Texts can be edited by any user who can edit the parent project.
+:::
 
-Texts refer to content that is displayed in the Manifold Reader and can be revealed in various ways in a Project’s [Layout](../backend/projects.md#project-layout).
+## What is a Text?
 
-Texts can contain one or more sections (i.e., chapters, articles, etc.) that generally correspond to discrete source files. In an EPUB, each XHTML file represents a Text section. As a whole, when ingested into Manifold, they are a single Text.
+Texts refer to content that is displayed in the Manifold Reader and can be revealed in various ways in a Project’s [Layout](../backend/projects.md#project-layout). Each text belongs to a specific project and projects can contain many texts.
+
+Texts can contain one or more sections (i.e., chapters, articles, etc.) that generally correspond to discrete source files. In Manifold, we call these "Text Sections." In an EPUB, each XHTML file represents a Text section. As a whole, when ingested into Manifold, they are a single Text.
 
 Within the Manifold Reader, Texts serve as a base, onto which Resource annotations and reader engagements can be layered.
 
 Manifold ***is not*** an authoring platform. As such Texts are meant to be prepared outside of the system and then “ingested” into the Manifold reader for display and engagement.
 
-When a Text URL is shared on social platforms, Manifold will supply the Text’s `Title`, `Description`, and the ***Project’s*** `Background Image` in the Open Graph standard.
+## Managing Project Texts
 
-## Interface
+Because texts belong to projects, they are managed from the parent project's "texts" editor pane in the backend. From this view, you may ingest a new text, create text categories, assign texts to categories, change the order of texts, edit texts, and delete texts.
 
-<Spec
-    title="Accessing this view"
-    items={[
-        { key: "Backend Location", value: "Projects → {Project} Thumbnail → Texts Sidebar" },
-        { key: "Required User Role", value: "Admin, Editor, Marketeer, Project Creator, or Reader with Editor Permissions" },
-    ]}
-/>
+### Ingesting Texts
 
-### Header
+When we add a text to Manifold, we refer to it as "ingesting" a text. The text ingestion process utilizes one of the available ingestion "strategies."
+
+#### What is Ingestion?
+
+*Ingestion* is the Manifold term for loading content into the Manifold Reader. When material is ingested, Manifold runs a series of transformations (e.g., converting documents to HTML, adding text nodes, managing styles) that make possible the various features and functionalities on the frontend.
+
+#### Ingestion Strategies
+
+Manifold supports ingestion strategies for these five file types:
+
+- EPUB (reflowable)
+- HTML
+- Markdown
+- Microsoft Word Documents (DOCX)
+- Google Docs
+
+The system also accepts “Manifest Ingests,” whereby Manifold will synthesize into one Text an array of acceptable of files, which have been packaged into a ZIP archive.
+
+Files in formats other than those named above (e.g., PDF, XML, TEI, TEX) cannot be processed into the Manifold Reader.
+
+#### How to Ingest a Text
+
+The `+ Add a new text` button opens a drawer from the right where Texts can be added to the system in two ways: by directly loading a file from your system or by referring to one that is remotely hosted.
+
+- **Upload a File**. Text files can be dropped onto this field or selected using your device’s file system by clicking the `Upload a File` link.
+- **URL**. This field expects a complete URL that directs Manifold to a specific file or archive that Manifold can Ingest.
+
+This URL to the Standard Ebooks Project’s copy of Edwin A. Abbott's *Flatland* orients Manifold directly at the EPUB file: `https://standardebooks.org/ebooks/edwin-a-abbott/flatland/downloads/edwin-a-abbott_flatland.epub`
+
+Below the upload fields are two buttons that provide options for next steps:
+
+- The `× Cancel` button clears any staged upload and returns you to the Editing Pane.
+- Available only after your upload file has cached to the system or a path has been provided in the `URL` field, the `✓ Continue` button converts the drawer to a new view with display logs and final options:
+
+At the top of the new drawer, a header displays the title of your upload file or of the remote URL Manifold will fetch to create the text. Following that, the system provides information about the state of the ingest:
+
+- **Current State**. The system will move from `Sleeping` to `Processing` to `Finished` as a Text is ingested.
+- **Strategy**. This field identifies the Strategy the system is using to Ingest the Text: EPUB, HTML, Markdown, Microsoft Word, Google Docs, or Manifest.
+- **Text ID**. Before Ingestion this will read “This ingestion will create a new text.” After the Ingest concludes this field displays the UUID Manifold assigned to the Text.
+
+Below the header are two buttons :`↓ Start Ingestion` and `× Change Source`. The first kicks off the actual process of converting and bringing the source file into the Manifold Reader. The system must first connect to the Manifold websocket before this option is actionable (noted in the `Log`). When completed this button will change to read `✓ Complete` and direct you back to the Texts views. The second option returns you to the previous drawer view, where a new file or path can be exchanged for the current one in the queue.
+
+The `Log` sits below these buttons and documents the ingest process, line by line.
+
+Following the `Log`, there is a `Restart Ingesetion` button. This is for use by Manifold developers when tweaking ingestion code.
+
+### Text Categories
+
+Text Categories are a grouping mechanism for Texts and can be configured to display in a variety of ways, or used as filters, in `Texts` Content Blocks on Project landing pages (see [Layout](../backend/projects.md#texts)).
+
+Within the Manifold Reader, Category titles appear in a yellow ribbon at the bottom of the page for member Texts. Category ribbons do not appear for uncategorized Texts or Texts with the `Published?` field toggled on (see [Settings and Styles](../backend/text.md#general)).
+
+The `+ Create a new category` button opens a drawer from the right where you can add and name a new category. Once created, the Category container will appear in the editing pane, ready for Texts to be deposited into it.
+
+## Editing a Text
+
+To edit a text, click on the title or the pencil icon from within the list of project's texts. Each Text loaded to Manifold has its own discrete settings that are configurable. When you select a Text from the Editing Pane the view will transform with more options available in the header (see [Interface](../backend/text.md#header)). Managing a text involves viewing and changing its properties through the following editing panes: 1) Analytics, 2) General, 3) People, 4) Metadata, 5) Styles, and 6) Reingest. Even when pre-populated by the system, all of the fields in these panes can be modified.
+
+### Interface Overview
+
+Like many backend views, the Text editing interface is composed of three parts: 1) the header, 2) the sidebar, and 3) the editing pane. While Manifold does not provide interfaces for modifying the content of a text, it is possible to
+
+#### Header
 
 The header for the Texts view is the same as for all other Project-level Sidebar items, denoting the title and subtitle of the Project along with buttons to `Preview` or `Delete` it.
 
@@ -50,11 +110,11 @@ When individual Text records are accessed, the header adjusts to the context and
 
 	Manifold does *not* provide source files for Texts that have been ingested via URL (e.g., Google Docs). In such situations this button is labeled as `Visit Source` and functions as a link that directs your browser to the page from which the remotely hosted source file lives.
 
-### Sidebar
+#### Sidebar
 
 The Sidebar’s `Text` menu opens a view where new Texts and Categories can be added and reordered and where Text records can be accessed. When an individual Text record is selected, the Sidebar will display new options specific that Text, described fully in [Settings and Styles](../backend/text.md#settings-and-styles) below.
 
-### Editing Pane
+#### Editing Pane
 
 To the right of the sidebar, the Editing Pane displays two buttons to add new Texts and Categories to the Project labeled `+ Add a new text` and `+ Create a new category`, respectively. Below those, the system lists all the Texts and Categories that have already been added to the Project.
 
@@ -62,77 +122,15 @@ Categories appear as containers into which Texts can be moved. Each Category has
 
 All Projects include the `Uncategorized` Category that cannot be renamed, removed, or reordered.
 
-Newly loaded Texts appear in the `Uncategorized` container by default and render as a horizontal block that includes a thumbnail, title, date stamp, and, the same delete, edit, and reorder buttons that Categories display: 
+Newly loaded Texts appear in the `Uncategorized` container by default and render as a horizontal block that includes a thumbnail, title, date stamp, and, the same delete, edit, and reorder buttons that Categories display:
 
-- **Delete**. Designated by a trashcan icon, clicking this button will delete the associated content, either the Category container or the individual Text. Deleting a Category will not delete Texts nested within it; instead they will be transitioned to the `Uncategorized` container. 
+- **Delete**. Designated by a trashcan icon, clicking this button will delete the associated content, either the Category container or the individual Text. Deleting a Category will not delete Texts nested within it; instead they will be transitioned to the `Uncategorized` container.
 - **Edit**. The edit button displays as a pencil icon. When selected for a Category, the button will open a drawer from the right where you can rename the Category. For Texts, the edit button opens a new view onto the [Text’s settings](../backend/text.md#settings-and-styles).
-- **Reorder**. The horizontal drag bars can be used to reorder Categories or Texts. When moving Categories, the Texts nested within them will maintain their existing order. Texts can be reordered within Categories or moved from one Category to another. A single Text cannot appear in more than one Category. 
+- **Reorder**. The horizontal drag bars can be used to reorder Categories or Texts. When moving Categories, the Texts nested within them will maintain their existing order. Texts can be reordered within Categories or moved from one Category to another. A single Text cannot appear in more than one Category.
 
 	The drag bars respond to clicking and dragging with your mouse or by pressing the space bar on your keyboard and then using the up or down arrow keys.
 
-## Categories
-
-Categories are a grouping mechanism for Texts and can be configured to display in a variety of ways, or used as filters, in `Texts` Content Blocks on Project landing pages (see [Layout](../backend/projects.md#texts)).
-
-Within the Manifold Reader, Category titles appear in a yellow ribbon at the bottom of the page for member Texts. Category ribbons do not appear for uncategorized Texts or Texts with the `Published?` field toggled on (see [Settings and Styles](../backend/text.md#general)).
-
-The `+ Create a new category` button opens a drawer from the right where you can add and name a new category. Once created, the Category container will appear in the editing pane, ready for Texts to be deposited into it.
-
-## Ingestion
-
-*Ingestion* is the Manifold term for loading content into the Manifold Reader. When material is ingested, Manifold runs a series of transformations (e.g., converting documents to HTML, adding text nodes, managing styles) that make possible the various features and functionalities on the frontend.
-
-### Strategies
-
-Manifold supports ingestion strategies for these five file types:
-
-- EPUB (reflowable)
-- HTML
-- Markdown
-- Microsoft Word Documents (DOCX)
-- Google Docs
-
-The system also accepts “Manifest Ingests,” whereby Manifold will synthesize into one Text an array of acceptable of files, which have been packaged into a ZIP archive.
-
-Files in formats other than those named above (e.g., PDF, XML, TEI, TEX) cannot be processed into the Manifold Reader.
-
-### Adding Texts
-
-The `+ Add a new text` button opens a drawer from the right where Texts can be added to the system in two ways: by directly loading a file from your system or by referring to one that is remotely hosted.
-
-- **Upload a File**. Text files can be dropped onto this field or selected using your device’s file system by clicking the `Upload a File` link.
-- **URL**. This field expects a complete URL that directs Manifold to a specific file or archive that Manifold can Ingest.
-	
-This URL to the Standard Ebooks Project’s copy of Edwin A. Abbott's *Flatland* orients Manifold directly at the EPUB file:
-
-``` shell
-https://standardebooks.org/ebooks/edwin-a-abbott/flatland/downloads/edwin-a-abbott_flatland.epub
-```
-
-Below the upload fields are two buttons that provide options for next steps:
-
-- The `× Cancel` button clears any staged upload and returns you to the Editing Pane.
-- Available only after your upload file has cached to the system or a path has been provided in the `URL` field, the `✓ Continue` button converts the drawer to a new view with display logs and final options:
-
-At the top of the new drawer, a header displays the title of your upload file or of the remote URL Manifold will fetch to create the text. Following that, the system provides information about the state of the ingest:
-
-- **Current State**. The system will move from `Sleeping` to `Processing` to `Finished` as a Text is ingested.
-- **Strategy**. This field identifies the Strategy the system is using to Ingest the Text: EPUB, HTML, Markdown, Microsoft Word, Google Docs, or Manifest.
-- **Text ID**. Before Ingestion this will read “This ingestion will create a new text.” After the Ingest concludes this field displays the UUID Manifold assigned to the Text. 
-
-Below the header are two buttons :`↓ Start Ingestion` and `× Change Source`. The first kicks off the actual process of converting and bringing the source file into the Manifold Reader. The system must first connect to the Manifold websocket before this option is actionable (noted in the `Log`). When completed this button will change to read `✓ Complete` and direct you back to the Texts views. The second option returns you to the previous drawer view, where a new file or path can be exchanged for the current one in the queue.
-
-The `Log` sits below these buttons and documents the ingest process, line by line.
-
-Following the `Log`, there is a `Restart Ingesetion` button. This is for use by Manifold developers when tweaking ingestion code.
-
-## Settings and Styles
-
-Each Text loaded to Manifold has its own discrete settings that are configurable. When you select a Text from the Editing Pane the view will transform with more options available in the header (see [Interface](../backend/text.md#header)) and the following Text-specific options in the sidebar.
-
-Even when pre-populated by the system, all of the fields in this view can be modified.
-
-### Analytics
+### Analytics Pane
 
 This view displays Text-specific engagement, aggregating user activity with it into six reports, which can be configured to return information for specific periods of time.
 
@@ -176,12 +174,12 @@ This view displays Text-specific engagement, aggregating user activity with it i
 
 		Data in this report are accurate to within a few moments, and section titles in the list open the Manifold Reader to the selected section.
 
-### General
+### General Pane
 
-The settings in this view represent those that most affect how a Text is indexed in Manifold and with external systems. 
+The settings in this view represent those that most affect how a Text is indexed in Manifold and with external systems.
 
 - **Title**. A Text’s title can be configured to appear in `Table of Contents` and `Texts` Content Blocks on the Project’s landing page. It is also baked into the metadata that Manifold shares with other systems, crawlers, and social media platforms.
-	
+
 	Manifold automatically populates this field when the source file describes a title attribute in its structure.
 
 	<Spec title="Title Source">
@@ -223,9 +221,9 @@ The settings in this view represent those that most affect how a Text is indexed
 
 	</Spec>
 
-	The date stored in this field does not presently render on the site or function for any sorting purposes. We store it for likely future use along those lines. 
+	The date stored in this field does not presently render on the site or function for any sorting purposes. We store it for likely future use along those lines.
 
-- **Slug**. A Text slug appears between the `read` and `section` components of its URL. 
+- **Slug**. A Text slug appears between the `read` and `section` components of its URL.
 
 	```html
 	https://{domain-name}/read/{text-slug}/section/{section-UUID}
@@ -279,7 +277,7 @@ The settings in this view represent those that most affect how a Text is indexed
 
 	Enabling this toggle overrides that requirement so readers (with or without an entitlement) can access the Text when it appears on the Project landing page, in a Call-to-Action in the `Hero` or in a `Texts` or `Table of Contents` Content Block.
 
-### People
+### People Pane
 
 The `People` sidebar in this view lists the Maker Records associated with a individual Text. The listings are broken into two categories: `Authors` and `Contributors`, where author listings suggest primary authorship and contributor listings denote secondary attributions. Individual listings begin with an profile image, the Maker’s name, and then options to delete, edit, or reorder the entry.
 
@@ -321,13 +319,13 @@ Manifold will automatically populate this space when the Text’s source file pr
 
 </Spec>
 
-When the system cannot recognize authorship from the source file, ***already existing*** Maker Records can be manually associated with a Text by typing names in the `Authors` or `Contributors` dropdown fields. New Maker Records cannot be created from this view (see [Maker Records](../backend/makers.md)). 
+When the system cannot recognize authorship from the source file, ***already existing*** Maker Records can be manually associated with a Text by typing names in the `Authors` or `Contributors` dropdown fields. New Maker Records cannot be created from this view (see [Maker Records](../backend/makers.md)).
 
 `Author` listings can be configured to appear in `Texts` Content Blocks and will appear in auto-generated bibliographic cites the system creates. Those listed as `Contributors` do not appear in either of those spaces.
 
 This Author/Contributor scheme is based off the EPUB specification. At present, you cannot assign more nuanced roles for Makers (e.g., Editors, Translators, Introducers, etc.).
 
-### Metadata
+### Metadata Pane
 
 This view groups into different categories the available metadata fields that describe a Manifold Text. Values displayed here appear in the Manifold Reader in the `About this Text` section, accessible from the `Contents` dropdown, and are also included in the BagIt archive when a Project is exported (see [Exporting and Preserving](../backend/projects.md#exporting-and-preserving)).
 
@@ -351,7 +349,7 @@ All of the fields on this page support Markdown formatting with the exception of
 
 The [Metadata section](../backend/metadata.md) provides definitions for each metadata element shown in this view.
 
-### Styles
+#### Styles
 
 The Styles pane lists, in the order they are applied from top to bottom, all the stylesheets (CSS) that govern the visual appearance of a Text in the Manifold Reader. Each sheet listing sits in a horizontal container than can be reordered. Each listing begins with a thumbnail of a sheet of paper followed by the title of the stylesheet, the date it was added to the Text record, and then buttons to delete, edit, or reorder the listings.
 
@@ -381,7 +379,7 @@ When a new Text is ingested, Manifold will create a stylesheet record here that 
 
 If Manifold cannot find and source style information, it will create an empty stylesheet record listed in this view.
 
-### Reingest
+#### Reingest
 
 The Reingest process is a means to update a Text with new additions or edits without losing any existing author engagements or Resource placements that are part of the Text currently in the system. However, this is not versioning control; when a Text is Reingested, the orignal Text is supplanted by the new and is no longer available in the system.
 
