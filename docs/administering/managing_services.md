@@ -12,7 +12,7 @@ The API relies on number of services. It stores data in a PostgreSQL database. I
 
 Services are managed differently depending on how Manifold was installed. Be sure to consult the appropriate section for your installation.
 
-## For Package Installations
+## For Package Installs
 
 In the context of a [package install](./installation#package-install), services are managed using the `manifold-ctl` command line tool. This tool must be executed as root or usng `sudo`.
 
@@ -32,7 +32,7 @@ run: redis: (pid 990) 415s; run: log: (pid 872) 415s
 run: sidekiq: (pid 1083) 415s; run: log: (pid 873) 415s
 ```
 
-### Starting and Stopping Services
+### Restarting Services
 
 To restart a service, enter a command in the format of `manifold-ctl restart service_name`.
 
@@ -68,7 +68,7 @@ user@host:/# sudo manifold-ctl tail client
 2021-03-01_13:56:51.71858 ✊  SSR server is listening on a socket at /var/opt/manifold/client/sockets/client.sock.
 ```
 
-### Service management commands
+### Commands
 
 Running `manifold-ctl help` will return the full list of available server management commands:
 
@@ -104,7 +104,7 @@ Service Management Commands:
     Send the services a USR2.
 ```
 
-## For Docker Installations
+## For Docker Installs
 
 When Manifold is run as Docker containers, each container represents a single service. Our docker-compose file includes the following containers:
 
@@ -126,9 +126,9 @@ To troubleshoot services, start by monitoring the services's output using docker
 docker-compose logs -f
 ```
 
-## Using SystemD
+## For Source Installs
 
 :::note
-This section is still a work in progress. Check back soon for instructions on configuring Manifold services with SystemD.
+This section is still a work in progress. Check back soon for instructions on configuring Manifold services with installation from source.
 :::
 
