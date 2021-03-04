@@ -115,7 +115,7 @@ Once this process is complete, visit the fully qualified domain name in your bro
 
 All content stored in Manifold—texts, projects, authors, resources, users, etc—is managed through Manifold’s backend interface. The backend is available at the `/backend` path. For example, if your domain name was your-manifold-domain.tld, you’d access the backend at `http://your-manifold-domain.tld/backend`.
 
-Before you can login to the backend, you will need to make an administrative user. Manifold exposes Rake commands provided by the API Rails application by way of a `manifold-api` executable located at ``/usr/local/bin/manifold-api`. This executable includes a command for creating an admin user. Call this command as follows:
+Before you can login to the backend, you will need to make an administrative user. Manifold exposes Rake commands provided by the API Rails application by way of a `manifold-api` executable located at `/usr/local/bin/manifold-api`. This executable includes a command for creating an admin user. Call this command as follows:
 
 ```shell
 sudo manifold-api manifold:user:create:admin["you@email.com","password","firstName","lastName"]
