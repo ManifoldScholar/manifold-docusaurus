@@ -48,7 +48,7 @@ module.exports = {
         'Manifold Backend': [
             'backend/projects',
             'backend/project_collections',
-            'backend/text',
+            'backend/texts',
             'backend/resource',
             'backend/resource_collections',
             'backend/users',
