@@ -5,6 +5,9 @@
   --ifm-menu-color-background-hover: var(--white);
   --ifm-menu-color-background-active: var(--ifm-menu-color-background-hover);
   --menu-background-color: var(--neutral10);
+  --menu-padding: calc(
+    var(--ifm-spacing-horizontal) - var(--ifm-menu-link-padding-horizontal)
+  );
 }
 
 html[data-theme="dark"] {
@@ -14,7 +17,9 @@ html[data-theme="dark"] {
 
 .menu {
   background-color: var(--menu-background-color);
-  padding: calc(
-    var(--ifm-spacing-horizontal) - var(--ifm-menu-link-padding-horizontal)
-  );
+  padding: var(--menu-padding);
+
+  @media (max-width: 997px) {
+    --menu-padding: 0;
+  }
 }

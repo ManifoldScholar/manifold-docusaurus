@@ -12,7 +12,10 @@
   --ifm-color-secondary: var(--neutral10);
 
   /* ifm containers */
-  --ifm-container-width: calc(var(--l-container-max) + var(--ifm-col-width));
+  --ifm-container-width: calc(
+    (var(--l-container-max) - var(--doc-sidebar-width)) +
+      (var(--ifm-spacing-horizontal) * 2)
+  );
   --ifm-spacing-horizontal: 36px;
   --doc-sidebar-width: 270px;
 
