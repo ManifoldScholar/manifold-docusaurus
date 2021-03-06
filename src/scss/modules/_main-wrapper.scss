@@ -1,5 +1,21 @@
 .main-wrapper {
   background-color: var(--menu-background-color);
+  position: relative;
+
+  // Fake extending the content background
+  @media (min-width: 997px) {
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      left: 50%;
+      background: var(--ifm-background-color);
+      z-index: 0;
+    }
+  }
 
   > div {
     background-color: var(--ifm-background-color);
@@ -7,6 +23,8 @@
       var(--l-container-max) + (var(--ifm-spacing-horizontal) * 2)
     );
     margin: 0 auto;
+    z-index: 1;
+    position: relative;
   }
 
   .container {
