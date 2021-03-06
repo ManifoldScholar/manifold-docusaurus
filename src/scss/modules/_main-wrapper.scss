@@ -8,4 +8,11 @@
     );
     margin: 0 auto;
   }
+
+  .container {
+    @media (min-width: 997px) and (max-width: 1320px) {
+      max-width: calc(100vw - var(--doc-sidebar-width));
+      margin: 0;
+    }
+  }
 }
