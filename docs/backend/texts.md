@@ -8,14 +8,14 @@ import Spec from "@theme/Spec";
 const defaultImageFormats = "GIF, JPEG, JPG, PNG";
 
 :::info Managing Texts
-To edit a text, locate its parent project in the backend, select the "texts" editing pane from the sidebar. Texts can be edited by any user who can edit the parent project.
+To edit a Text, locate its parent project in the backend, select the “Texts” editing pane from the sidebar. Texts can be edited by any user who can edit the parent project.
 :::
 
 ## What is a Text?
 
-Texts refer to content that is displayed in the Manifold Reader and can be revealed in various ways in a Project’s [Layout](../backend/projects.md#project-layout). Each text belongs to a specific project and projects can contain many texts.
+Texts refer to content that is displayed in the Manifold Reader and can be revealed in various ways in a Project’s [Layout](../backend/projects.md#project-layout). Each Text belongs to a specific project and projects can contain many Texts.
 
-Texts can contain one or more sections (i.e., chapters, articles, etc.) that generally correspond to discrete source files. In Manifold, we call these "Text Sections." In an EPUB, each XHTML file represents a Text section. As a whole, when ingested into Manifold, they are a single Text.
+Texts can contain one or more sections (i.e., chapters, articles, etc.) that generally correspond to discrete source files. In Manifold, we call these “Text Sections.” In an EPUB, each XHTML file represents a Text section. As a whole, when ingested into Manifold, they are a single Text.
 
 Within the Manifold Reader, Texts serve as a base, onto which Resource annotations and reader engagements can be layered.
 
@@ -23,11 +23,11 @@ Manifold ***is not*** an authoring platform. As such Texts are meant to be prepa
 
 ## Managing Project Texts
 
-Because texts belong to projects, they are managed from the parent project's "texts" editor pane in the backend. From this view, you may ingest a new text, create text categories, assign texts to categories, change the order of texts, edit texts, and delete texts.
+Because Texts belong to projects, they are managed from the parent project’s “Texts” editor pane in the backend. From this view, you may ingest a new Text, create Text categories, assign texts to categories, change the order of texts, edit texts, and delete texts.
 
 ### Ingesting Texts
 
-When we add a text to Manifold, we refer to it as "ingesting" a text. The text ingestion process utilizes one of the available ingestion "strategies."
+When we add a Text to Manifold, we refer to it as “ingesting” a Text. The Text ingestion process utilizes one of the available ingestion “strategies.”
 
 #### What is Ingestion?
 
@@ -43,7 +43,7 @@ Manifold supports ingestion strategies for these five file types:
 - Microsoft Word Documents (DOCX)
 - Google Docs
 
-The system also accepts “Manifest Ingests,” whereby Manifold will synthesize into one Text an array of acceptable of files, which have been packaged into a ZIP archive.
+The system also accepts “Manifest Ingests,” whereby Manifold will synthesize into one Text an array of acceptable files that have been packaged into a ZIP archive.
 
 Files in formats other than those named above (e.g., PDF, XML, TEI, TEX) cannot be processed into the Manifold Reader.
 
@@ -61,7 +61,7 @@ Below the upload fields are two buttons that provide options for next steps:
 - The `× Cancel` button clears any staged upload and returns you to the Editing Pane.
 - Available only after your upload file has cached to the system or a path has been provided in the `URL` field, the `✓ Continue` button converts the drawer to a new view with display logs and final options:
 
-At the top of the new drawer, a header displays the title of your upload file or of the remote URL Manifold will fetch to create the text. Following that, the system provides information about the state of the ingest:
+At the top of the new drawer, a header displays the title of your upload file or of the remote URL Manifold will fetch to create the Text. Following that, the system provides information about the state of the ingest:
 
 - **Current State**. The system will move from `Sleeping` to `Processing` to `Finished` as a Text is ingested.
 - **Strategy**. This field identifies the Strategy the system is using to Ingest the Text: EPUB, HTML, Markdown, Microsoft Word, Google Docs, or Manifest.
@@ -83,11 +83,11 @@ The `+ Create a new category` button opens a drawer from the right where you can
 
 ## Editing a Text
 
-To edit a text, click on the title or the pencil icon from within the list of project's texts. Each Text loaded to Manifold has its own discrete settings that are configurable. When you select a Text from the Editing Pane the view will transform with more options available in the header (see [Interface](../backend/text.md#header)). Managing a text involves viewing and changing its properties through the following editing panes: 1) Analytics, 2) General, 3) People, 4) Metadata, 5) Styles, and 6) Reingest. Even when pre-populated by the system, all of the fields in these panes can be modified.
+To edit a Text, click on the title or the pencil icon from within the list of project’s texts. Each Text loaded to Manifold has its own discrete settings that are configurable. When you select a Text from the Editing Pane the view will transform with more options available in the header (see [Interface](../backend/text.md#header)). Managing a Text involves viewing and changing its properties through the following editing panes: (1) Analytics, (2) General, (3) People, (4) Metadata, (5) Styles, and (6) Reingest. Even when pre-populated by the system, all of the fields in these panes can be modified.
 
 ### Interface Overview
 
-Like many backend views, the Text editing interface is composed of three parts: 1) the header, 2) the sidebar, and 3) the editing pane. While Manifold does not provide interfaces for modifying the content of a text, it is possible to
+Like many backend views, the Text editing interface is composed of three parts: (1) the header, (2) the sidebar, and (3) the editing pane.
 
 #### Header
 
@@ -96,11 +96,11 @@ The header for the Texts view is the same as for all other Project-level Sidebar
 When individual Text records are accessed, the header adjusts to the context and makes available the following options:
 
 - **Preview and Delete**. From this view these buttons function differently than from the main Texts view: `Preview` opens the Text in the Manifold Reader, instead of the Project homepage, and `Delete` removes the specific Text from the system, versus deleting the entire Project.
-- **Enable and Download EPUB**. The `Enable EPUB` button functions as a toggle. When activated the text of the button will change to `Disable EPUB` and Manifold will create an EPUB of the Text regardless of the format in which it was ingested (e.g., Word or Google Documents).
+- **Enable and Download EPUB**. The `Enable EPUB` button functions as a toggle. When activated, the text of the button will change to `Disable EPUB` and Manifold will create an EPUB of the Text regardless of the format in which it was ingested (e.g., Word or Google Documents).
 
 	Every five minutes Manifold looks for Texts that have this setting enabled. If a Text is newly enabled, Manifold will generate an EPUB of the Text. If the Text has been updated, Manifold will re-create the EPUB so that accurately reflects any changes.
 
-	When the EPUB for the text has been generated, a `Download EPUB` button will appear, from which the Manifold-generated EPUB can be secured.
+	When the EPUB for the Text has been generated, a `Download EPUB` button will appear, from which the Manifold-generated EPUB can be secured.
 
 	If a publisher used an EPUB to initially create the Text and then toggles this setting on, Manifold will create its own EPUB. Those two files would be very similar but potentially not exact matches. The original source EPUB is still retained, and available through the `Download Source` button.
 
@@ -130,7 +130,7 @@ Newly loaded Texts appear in the `Uncategorized` container by default and render
 
 	The drag bars respond to clicking and dragging with your mouse or by pressing the space bar on your keyboard and then using the up or down arrow keys.
 
-### Analytics Pane
+### Analytics
 
 This view displays Text-specific engagement, aggregating user activity with it into six reports, which can be configured to return information for specific periods of time.
 
@@ -166,7 +166,7 @@ This view displays Text-specific engagement, aggregating user activity with it i
 
 		The figure here is ***not*** affected by time constraints.
 
-	- **Citations**. Each time a visitor uses the Reader’s Share feature to create an citation for the Text section, a record is created. The figure in this report represents the total number of citation records currently associated with the text section. It is ***not*** affected by time constraints.
+	- **Citations**. Each time a visitor uses the Reader’s Share feature to create an citation for the Text section, a record is created. The figure in this report represents the total number of citation records currently associated with the Text section. It is ***not*** affected by time constraints.
 
 	- **Text Section Views**. Rendered as a list, the `Text Section Views` report aggregates the total number of times a specfic section within a Text has been viewed during the set timespan.
 
@@ -174,7 +174,7 @@ This view displays Text-specific engagement, aggregating user activity with it i
 
 		Data in this report are accurate to within a few moments, and section titles in the list open the Manifold Reader to the selected section.
 
-### General Pane
+### General
 
 The settings in this view represent those that most affect how a Text is indexed in Manifold and with external systems.
 
@@ -247,7 +247,7 @@ The settings in this view represent those that most affect how a Text is indexed
 
 	</Spec>
 
-- **Cover**. The Cover image serves as a thumbnail for a specific text and can be configured to appear in the `Texts` Content Block on the Project landing page, in lieu of the default thumbnail depicting loose pages.
+- **Cover**. The Cover image serves as a thumbnail for a specific Text and can be configured to appear in the `Texts` Content Block on the Project landing page, in lieu of the default thumbnail depicting loose pages.
 
 	Image files can be dropped onto the `Cover` field or selected using your device’s file system by clicking the `Upload a File` link.
 
@@ -277,7 +277,7 @@ The settings in this view represent those that most affect how a Text is indexed
 
 	Enabling this toggle overrides that requirement so readers (with or without an entitlement) can access the Text when it appears on the Project landing page, in a Call-to-Action in the `Hero` or in a `Texts` or `Table of Contents` Content Block.
 
-### People Pane
+### People
 
 The `People` sidebar in this view lists the Maker Records associated with a individual Text. The listings are broken into two categories: `Authors` and `Contributors`, where author listings suggest primary authorship and contributor listings denote secondary attributions. Individual listings begin with an profile image, the Maker’s name, and then options to delete, edit, or reorder the entry.
 
@@ -325,7 +325,7 @@ When the system cannot recognize authorship from the source file, ***already exi
 
 This Author/Contributor scheme is based off the EPUB specification. At present, you cannot assign more nuanced roles for Makers (e.g., Editors, Translators, Introducers, etc.).
 
-### Metadata Pane
+### Metadata
 
 This view groups into different categories the available metadata fields that describe a Manifold Text. Values displayed here appear in the Manifold Reader in the `About this Text` section, accessible from the `Contents` dropdown, and are also included in the BagIt archive when a Project is exported (see [Exporting and Preserving](../backend/projects.md#exporting-and-preserving)).
 
@@ -349,7 +349,7 @@ All of the fields on this page support Markdown formatting with the exception of
 
 The [Metadata section](../backend/metadata.md) provides definitions for each metadata element shown in this view.
 
-#### Styles
+### Styles
 
 The Styles pane lists, in the order they are applied from top to bottom, all the stylesheets (CSS) that govern the visual appearance of a Text in the Manifold Reader. Each sheet listing sits in a horizontal container than can be reordered. Each listing begins with a thumbnail of a sheet of paper followed by the title of the stylesheet, the date it was added to the Text record, and then buttons to delete, edit, or reorder the listings.
 
@@ -361,7 +361,7 @@ The title of each stylesheet is categorized by the system as “Ingested” or �
 	- *Source Styles*. This field displays all the CSS attributes of the stylesheet in an editable text box. Syntax should follow the CSS standard.
 	- *Validated Styles*. This text box is not editable and reveals Manifold’s interpretation of the style attributes from `Source Styles` above. Only styles that show up in this space will affect styling in the Reader. Manifold generally does not allow any attributes that hinder responsiveness or interfere with the Reader’s functionality.
 	- *Apply to These Text Sections*. The options in this space determine which Text sections the stylesheet will be applied against. The dropdown lists all of the discrete sections of the Text and registers keyboard and mouse input. When a Text section is chosen, it is added to the entity list below the dropdown, indicating that the stylesheet’s rules will be applied to that section. The `Add All` and `Remove All` buttons below the dropdown add or remove all of the Text sections from the entity list in bulk. Each Text section in the entity list includes a `×` button that removes it from the list.
-- **Redorder**. The horizontal drag bars can be used to adjust the order the stylesheets are applied to the text. The rules of the topmost sheet are applied first and then the one following after, and so on. Individual attributes in a first sheet can be overridden or adjusted by sheets that appear further down the list.
+- **Redorder**. The horizontal drag bars can be used to adjust the order the stylesheets are applied to the Text. The rules of the topmost sheet are applied first and then the one following after, and so on. Individual attributes in a first sheet can be overridden or adjusted by sheets that appear further down the list.
 
 	The drag bars respond to clicking and dragging with your mouse or by pressing the space bar on your keyboard and then using the up or down arrow keys.
 
@@ -379,11 +379,11 @@ When a new Text is ingested, Manifold will create a stylesheet record here that 
 
 If Manifold cannot find and source style information, it will create an empty stylesheet record listed in this view.
 
-#### Reingest
+### Reingest
 
 The Reingest process is a means to update a Text with new additions or edits without losing any existing author engagements or Resource placements that are part of the Text currently in the system. However, this is not versioning control; when a Text is Reingested, the orignal Text is supplanted by the new and is no longer available in the system.
 
-Since there is no authoring component in the Manifold interface, edits to already ingested Texts need to be made to the source files that were originally ingested. The updated source files can then be loaded to the system from this view, which mimics the interface for adding a new text (see [Adding Texts](../backend/text.md#adding-texts)).
+Since there is no authoring component in the Manifold interface, edits to already ingested Texts need to be made to the source files that were originally ingested. The updated source files can then be loaded to the system from this view, which mimics the interface for adding a new Text (see [Adding Texts](../backend/text.md#adding-texts)).
 
 When a Text is Reingested, all the annotations, highlights, and Resource placements that have been made will persist, unless such drastic changes were performed that the system can no longer identify their original anchors. In this unlikely case, annotations and highlights will be orphaned and no longer accessible. More likely, small edits will force the system to guess where annotations and Resources were orignially placed with results not always being exact. The Reingest process is among the most technically complex in the system and is routinely tinkered with to better dial in the expected results.
 
