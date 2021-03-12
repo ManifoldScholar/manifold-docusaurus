@@ -26,12 +26,6 @@ The system maintains three different analytics views: one for Instance-wide enga
     ]}
 />
 
-:::location Accessing this view
-**Backend Location:** Main Menu → Analytics
-
-**Required User Role:** Admin, Editor, or Marketeer
-:::
-
 This view displays global engagement, aggregating user activity from across the instance into eight reports, which can be configured to return information for specific periods of time.
 
 ## Configuring Constraints
