@@ -1,0 +1,5 @@
+@import "variables";
+
+@function getIcon($iconName) {
+  @return map-get($icons, $iconName);
+}

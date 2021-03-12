@@ -1,5 +1,5 @@
 :root {
-  --ifm-alert-padding-vertial: 22px;
+  --ifm-alert-padding-vertical: 18px;
   --ifm-alert-padding-horizontal: 22px;
   --ifm-alert-color: var(--ifm-color-content);
 
@@ -10,10 +10,6 @@
   --ifm-color-important: var(--light-teal);
 }
 
-html[data-theme="dark"] {
-  // --ifm-alert-color: var(--ifm-color-content-inverse);
-}
-
 .admonition {
   --ifm-alert-color: var(--ifm-color-content);
   --ra-admonition-icon-color: var(--ifm-alert-color);
@@ -21,6 +17,7 @@ html[data-theme="dark"] {
   --ifm-color-tip: var(--light-yellow);
   --ifm-color-location: #affadd;
   --ifm-color-note: var(--neutral10);
+  margin-bottom: var(--padding-sm);
 
   html[data-theme="dark"] & {
     background-color: transparent;
@@ -30,6 +27,16 @@ html[data-theme="dark"] {
     --ifm-color-warning: #ffbd61;
     --ifm-color-danger: #ffb3b3;
     --ifm-color-location: var(--green);
+  }
+
+  h5 {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing-uppercase);
+    line-height: var(--line-height-uppercase);
+    font-size: var(--font-size-uppercase);
+    padding-bottom: 2px;
   }
 }
 
@@ -46,6 +53,15 @@ html[data-theme="dark"] {
       --ra-admonition-icon-color: var(--ifm-color-#{$color});
       color: var(--ra-admonition-color);
     }
+
+    .admonition-icon {
+      // Use mask to change color of data svg
+      mask: url("data:image/svg+xml,#{getIcon($name)}");
+      mask-size: contain;
+      mask-repeat: no-repeat;
+      mask-position: center;
+      background-color: var(--ra-admonition-color);
+    }
   }
 }
 
@@ -56,3 +72,19 @@ html[data-theme="dark"] {
 @include setAdmonition("tip", "tip");
 @include setAdmonition("caution", "warning");
 @include setAdmonition("danger", "danger");
+
+.admonition-icon {
+  display: inline-block;
+  margin-right: 12px;
+  height: 24px;
+  width: 24px;
+
+  > svg {
+    // overwrite their SVG
+    display: none;
+  }
+}
+
+.admonition-content {
+  margin-bottom: 5px;
+}
