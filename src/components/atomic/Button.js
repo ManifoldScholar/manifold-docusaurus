@@ -65,6 +65,6 @@ Button.propTypes = {
   block: PropTypes.bool
 };
 
-Button.displayName = "Button";
+Button.displayName = "Atomic.Button";
 
 export default Button;
