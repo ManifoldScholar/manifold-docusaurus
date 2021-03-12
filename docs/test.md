@@ -5,6 +5,12 @@ title: Test
 sidebar_label: Test
 ---
 
+:::location
+
+The content and title _can_ include markdown.
+
+:::
+
 :::note
 
 The content and title _can_ include markdown.
