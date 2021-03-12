@@ -4,15 +4,14 @@ title: Project Subjects
 sidebar_label: Project Subjects
 ---
 
-import Spec from "@theme/Spec";
 
-<Spec title="How do I get here?">
+:::location How do I get here?
 
-| Backend Location    | User Access                      |
-|---------------------|----------------------------------|
-| Settings → Subjects | [Admins](../../backend/users.md) |
+**Backend Location:** Settings → Subjects
 
-</Spec>
+**User Access:** [Admins](../../backend/users.md)
+
+:::
 
 Subjects are the primary means of cataloging the scope of the Projects in your Manifold library. They serve as filtering options for readers browsing your instance and as a means for Admins and Editors to curate Project Collections.
 
