@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
 import { default as DocLink } from "@docusaurus/Link";
-import { Button } from "../../primitives";
+import { Button } from "../../atomic";
 import { Link } from "../../typography";
 import { respond, fluidScale } from "../../../styles/mixins";
 
