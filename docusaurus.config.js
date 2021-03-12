@@ -156,7 +156,14 @@ module.exports = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           editUrl:
-            "https://github.com/ManifoldScholar/manifold-docusaurus/edit/master"
+            "https://github.com/ManifoldScholar/manifold-docusaurus/edit/master",
+          admonitions: {
+            customTypes: {
+              location: {
+                keyword: "location"
+              }
+            }
+          }
         },
         blog: {
           blogTitle: "Blog",

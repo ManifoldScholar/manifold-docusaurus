@@ -1,0 +1,58 @@
+:root {
+  --ifm-alert-padding-vertial: 22px;
+  --ifm-alert-padding-horizontal: 22px;
+  --ifm-alert-color: var(--ifm-color-content);
+
+  --ifm-color-info: var(--light-blue);
+  --ifm-color-success: var(--light-green);
+  --ifm-color-warning: #ffddab;
+  --ifm-color-danger: var(--light-salmon);
+  --ifm-color-important: var(--light-teal);
+}
+
+html[data-theme="dark"] {
+  // --ifm-alert-color: var(--ifm-color-content-inverse);
+}
+
+.admonition {
+  --ifm-alert-color: var(--ifm-color-content);
+  --ra-admonition-icon-color: var(--ifm-alert-color);
+  // Set different colors for admonitions
+  --ifm-color-tip: var(--light-yellow);
+  --ifm-color-location: #affadd;
+  --ifm-color-note: var(--neutral10);
+
+  html[data-theme="dark"] & {
+    background-color: transparent;
+    --ifm-color-note: var(--neutral40);
+    --ifm-color-tip: #f5f57f;
+    --ifm-color-info: #96dcff;
+    --ifm-color-warning: #ffbd61;
+    --ifm-color-danger: #ffb3b3;
+    --ifm-color-location: var(--green);
+  }
+}
+
+@mixin setAdmonition($name, $color) {
+  .admonition-#{$name} {
+    --ra-admonition-background-color: var(--ifm-color-#{$color}) !important;
+    --ra-admonition-border-width: 1px;
+    --ra-admonition-border-color: var(--ifm-color-#{$color}) !important;
+    background-color: var(--ra-admonition-background-color);
+    border-color: var(--ra-admonition-border-color);
+
+    html[data-theme="dark"] & {
+      --ra-admonition-color: var(--ifm-color-#{$color});
+      --ra-admonition-icon-color: var(--ifm-color-#{$color});
+      color: var(--ra-admonition-color);
+    }
+  }
+}
+
+@include setAdmonition("location", "location");
+@include setAdmonition("note", "note");
+@include setAdmonition("info", "info");
+@include setAdmonition("important", "important");
+@include setAdmonition("tip", "tip");
+@include setAdmonition("caution", "warning");
+@include setAdmonition("danger", "danger");
