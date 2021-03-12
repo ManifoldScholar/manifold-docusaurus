@@ -2,21 +2,6 @@
   background-color: var(--menu-background-color);
   position: relative;
 
-  // Fake extending the content background
-  @media (min-width: 997px) {
-    &:after {
-      content: "";
-      display: block;
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      top: 0;
-      left: 50%;
-      background: var(--ifm-background-color);
-      z-index: 0;
-    }
-  }
-
   > div {
     background-color: var(--ifm-background-color);
     max-width: calc(
@@ -24,10 +9,29 @@
     );
     margin: 0 auto;
     z-index: 1;
-    position: relative;
+  }
+
+  // Fake extending the content background
+  [class*="docMainContainer"] {
+    @media (min-width: 997px) {
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        left: 75%;
+        background: var(--ifm-background-color);
+        z-index: 0;
+      }
+    }
   }
 
   .container {
+    z-index: 1;
+    position: relative;
+
     @media (min-width: 997px) and (max-width: 1320px) {
       max-width: calc(100vw - var(--doc-sidebar-width));
       margin: 0;
