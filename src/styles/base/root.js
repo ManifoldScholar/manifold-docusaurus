@@ -35,6 +35,7 @@ export default css`
     --neutral10: #ececec;
     --neutral30: #d6d6d6;
     --neutral40: #c3c3c3;
+    --neutral45: #b3b3b3;
     --neutral50: #9a9a9a;
     --neutral75: #696969;
     --neutral80: #828282;

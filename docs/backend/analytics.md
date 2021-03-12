@@ -18,6 +18,14 @@ The system maintains three different analytics views: one for Instance-wide enga
 
 ## Interface
 
+<Spec
+    title="Accessing this view"
+    items={[
+        { key: "Backend Location", value: "Main Menu → Analytics" },
+        { key: "Required User Role", value: "Admin, Editor, or Marketeer" },
+    ]}
+/>
+
 :::location Accessing this view
 **Backend Location:** Main Menu → Analytics
 
