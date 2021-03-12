@@ -60,6 +60,11 @@ export default css`
     --font-size-h5: ${fluidScale("28px", "20px")};
     --font-size-h6: ${fluidScale("24px", "18px")};
 
+    --line-height-uppercase: 1.714;
+
+    --letter-spacing-uppercase: 1.75px;
+    --letter-spacing-uppercase-narrow: 1.5px;
+
     --font-weight-regular: 400;
     --font-weight-medium: 500;
     --font-weight-semi-bold: 600;

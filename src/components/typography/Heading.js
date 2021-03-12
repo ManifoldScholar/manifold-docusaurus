@@ -29,8 +29,8 @@ const Heading = styled.div`
     uppercase &&
     css`
       text-transform: uppercase;
-      letter-spacing: 1.75px;
-      line-height: 1.714;
+      letter-spacing: var(--letter-spacing-uppercase-narrow);
+      line-height: var(--line-height-uppercase);
       font-size: var(--font-size-uppercase);
     `}
 
