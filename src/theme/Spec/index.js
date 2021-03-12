@@ -1,39 +1,33 @@
-import React from 'react';
-import clsx from 'clsx';
-import styles from './styles.module.css';
-import useThemeContext from '@theme/hooks/useThemeContext';
+import React from "react";
+import clsx from "clsx";
+import styles from "./styles.module.scss";
+import useThemeContext from "@theme/hooks/useThemeContext";
 
 export default ({ title, subtitle, items, children } = props) => {
-  const {isDarkTheme, setLightTheme, setDarkTheme} = useThemeContext();
+  const { isDarkTheme, setLightTheme, setDarkTheme } = useThemeContext();
   return (
     <div className={clsx(styles.specContainer)}>
-      <div className={clsx(styles.specTitle)}>
-        {title}
-        {subtitle && <span className={clsx(styles.specSubtitle)}>{subtitle}</span>}
-      </div>
       {items && (
-      <div className={clsx(styles.specTable)}>
+        <div className={clsx(styles.specTable)}>
           <table width="100%">
+            <caption className={clsx(styles.specTitleWrapper)}>
+              <span className={clsx(styles.specTitle)}>{title}</span>
+              {subtitle && (
+                <span className={clsx(styles.specSubtitle)}>{subtitle}</span>
+              )}
+            </caption>
             <tbody>
-            {items.map((item, index) => (
-              <tr key={item.key}>
-                <th className={clsx(styles.specKey)} >
-                  {item.key}
-                </th>
-                <td className={clsx(styles.specValue)}>
-                  {item.value}
-                </td>
-              </tr>
-            ))}
+              {items.map((item, index) => (
+                <tr key={item.key}>
+                  <th className={clsx(styles.specKey)}>{item.key}</th>
+                  <td className={clsx(styles.specValue)}>{item.value}</td>
+                </tr>
+              ))}
             </tbody>
           </table>
-      </div>
+        </div>
       )}
-      {children ? (
-        children
-      ): null}
-
+      {children ? children : null}
     </div>
-  )
-
-}
+  );
+};
