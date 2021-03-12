@@ -3,11 +3,43 @@
   --table-cell-padding: 15px 24px 20px;
   --table-border-color: var(--neutral45);
   --table-border-radius: var(--border-radius-sm);
+  --ifm-table-stripe-background: var(--table-title-background);
+}
+
+html[data-theme="dark"] {
+  --table-title-background: var(--dark-gray);
+  --table-border-color: #979797;
 }
 
 .specContainer {
-  width: 100%;
   margin-bottom: var(--padding-sm);
+  border: 1px solid var(--table-border-color);
+  border-radius: var(--table-border-radius);
+  overflow: hidden;
+
+  // Reset tables
+  table {
+    display: table;
+    width: 100%;
+    border: none;
+    border-collapse: collapse;
+    margin: 0;
+  }
+
+  tr {
+    border: none;
+  }
+
+  thead th,
+  th,
+  td {
+    background-color: inherit;
+    border: none;
+    text-align: left;
+    white-space: pre-wrap;
+    padding: var(--table-cell-padding);
+    vertical-align: top;
+  }
 }
 
 .specTitleWrapper {
@@ -33,51 +65,51 @@
   font-style: italic;
 }
 
-.specContainer p {
-  padding: 0.5rem 0.75rem;
-  margin-bottom: 0;
+.specContent {
+  thead th {
+    background-color: var(--table-title-background);
+  }
+
+  tr {
+    border-bottom: 1px solid var(--table-border-color);
+  }
+
+  tbody tr:last-child {
+    border-bottom: none;
+  }
+
+  p {
+    padding: var(--table-cell-padding);
+    margin-bottom: 0;
+
+    &:not(:last-child) {
+      padding-bottom: 0;
+    }
+  }
 }
 
 .specTable {
   table {
-    width: 100%;
-    margin: 0;
-    border: 1px solid var(--table-border-color);
-    border-radius: var(--table-border-radius);
-    border-collapse: collapse;
-
     tr {
       border: none;
-
-      &:nth-child(2n) {
-        background-color: inherit;
-      }
 
       &:not(:first-child) th,
       &:not(:first-child) td {
         padding-top: 0;
       }
-    }
 
-    th,
-    td {
-      border: none;
-      text-align: left;
-      white-space: pre-wrap;
-      padding: var(--table-cell-padding);
-      vertical-align: top;
+      &:nth-child(2n) {
+        background-color: inherit;
+      }
     }
 
     th {
-      background: var(--ifm-color-emphasis-100);
-      background-color: inherit;
       font-weight: var(--ifm-heading-font-weight);
       text-align: right;
       white-space: nowrap;
     }
 
     td {
-      background-color: inherit;
       width: 100%;
       padding-left: 0;
     }

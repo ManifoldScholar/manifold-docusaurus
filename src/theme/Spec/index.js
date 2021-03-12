@@ -7,15 +7,17 @@ export default ({ title, subtitle, items, children } = props) => {
   const { isDarkTheme, setLightTheme, setDarkTheme } = useThemeContext();
   return (
     <div className={clsx(styles.specContainer)}>
+      {title && (
+        <div className={clsx(styles.specTitleWrapper)}>
+          <span className={clsx(styles.specTitle)}>{title}</span>
+          {subtitle && (
+            <span className={clsx(styles.specSubtitle)}>{subtitle}</span>
+          )}
+        </div>
+      )}
       {items && (
         <div className={clsx(styles.specTable)}>
           <table width="100%">
-            <caption className={clsx(styles.specTitleWrapper)}>
-              <span className={clsx(styles.specTitle)}>{title}</span>
-              {subtitle && (
-                <span className={clsx(styles.specSubtitle)}>{subtitle}</span>
-              )}
-            </caption>
             <tbody>
               {items.map((item, index) => (
                 <tr key={item.key}>
@@ -27,7 +29,9 @@ export default ({ title, subtitle, items, children } = props) => {
           </table>
         </div>
       )}
-      {children ? children : null}
+      {children ? (
+        <div className={clsx(styles.specContent)}>{children}</div>
+      ) : null}
     </div>
   );
 };
