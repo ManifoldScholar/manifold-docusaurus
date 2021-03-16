@@ -5,7 +5,7 @@ title: Overview
 sidebar_label: Overview
 ---
 
-Manifold is an open-source publishing platform built by scholars and publishers. It's responsive, accessible, intuitive, customizable, and opinionated. With Manifold, you can publish to the web materials you already produce.
+Manifold is an open-source publishing platform built by scholars and publishers. It's responsive, accessible, intuitive, customizable, and opinionated. With Manifold, you can publish materials you already produce or use it to build something new together with your colleagues and students. Manifold is used widely by university presses to publish digital monographs and collected editions, by faculty to publish work-in-progress and open course materials, by students to publish course-related writing and creative projects, and by scholarly collectives to publish journals and archival materials. 
 
 ## Getting Support
 
