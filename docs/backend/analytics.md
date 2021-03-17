@@ -14,7 +14,7 @@ When Manifold tracks events, there is no connection in stored data between those
 
 Manifold ***does*** store a user’s browser, operating system, device type, and user agent so that we can, in a later iteration of this feature, report on what devices people are using.
 
-The system maintains three different analytics views: one for Instance-wide engagement, detailed in this section; another for engagement with specific Projects (see [Project Analytics](../backend/projects.md#analytics)); and a final view for individual Texts and Text sections (see [Text Analytics](../backend/text.md#analytics)) .
+The system maintains three different analytics views: one for Instance-wide engagement, detailed in this section; another for engagement with specific Projects (see [Project Analytics](../backend/projects.md#analytics)); and a final view for individual Texts and Text sections (see [Text Analytics](../backend/texts.md#analytics)) .
 
 ## Interface
 

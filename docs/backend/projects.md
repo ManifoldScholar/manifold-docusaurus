@@ -22,7 +22,7 @@ The Project Details page is made up of three parts: a Project Menu centered near
 
 The Project Menu displays the title and subtitle of the Project. When you drill down into the records for individual Texts or Resources within the Project, the Header will provide a link to return you to the main Project Details page.
 
-Options to Preview or Delete the Project, Text, or Resource you are currently editing are also found within this menu. When viewing the details for a Text, additional controls become available and are considered in the [Text section of this documentation](../backend/text.md).
+Options to Preview or Delete the Project, Text, or Resource you are currently editing are also found within this menu. When viewing the details for a Text, additional controls become available and are considered in the [Text section of this documentation](../backend/texts.md).
 
 ### Sidebar Menu
 
