@@ -1,7 +1,7 @@
 ---
 id: manifold_library
-title: The Manifold Libray
-sidebar_label: The Manifold Libray
+title: The Manifold Library
+sidebar_label: The Manifold Library
 ---
 
 ## Projects
