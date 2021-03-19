@@ -1,7 +1,8 @@
+import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
 import { aBackgroundUnderline, reducedMotion } from "../../styles/mixins";
 
-const Link = styled.a`
+const UnderlinedLink = styled.a`
   display: inline-flex;
   align-items: center;
   line-height: 2rem;
@@ -20,7 +21,7 @@ const Link = styled.a`
   ${({ size }) =>
     size &&
     css`
-      font-size: var(${`--font-size-${size}`});
+      font-size: var(--font-size- ${size});
     `};
 
   > * + * {
@@ -28,8 +29,10 @@ const Link = styled.a`
   }
 `;
 
-Link.displayName = "Typography.Link";
+UnderlinedLink.displayName = "Typography.UnderlinedLink";
 
-Link.propTypes = {};
+UnderlinedLink.propTypes = {
+  size: PropTypes.string
+};
 
-export default Link;
+export default UnderlinedLink;
