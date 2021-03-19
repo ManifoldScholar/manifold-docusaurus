@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
 import { default as DocLink } from "@docusaurus/Link";
 import { Button } from "../../atomic";
-import { Link, Text } from "../../typography";
+import { UnderlinedLink, Text } from "../../typography";
 import { respond, fluidScale } from "../../../styles/mixins";
 
 const NavList = ({ className, isMobile, routes }) => {
@@ -16,14 +16,14 @@ const NavList = ({ className, isMobile, routes }) => {
               Get Started
             </Button>
           ) : (
-            <Link
+            <UnderlinedLink
               as={DocLink}
               data-selected={isSelected}
               size="nav"
               {...linkProps}
             >
               {label}
-            </Link>
+            </UnderlinedLink>
           )}
         </li>
       ))}
