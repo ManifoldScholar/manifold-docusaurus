@@ -74,7 +74,7 @@ const StyledNav = styled(Nav)`
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--neutral10);
+    background-color: var(--background-color);
     transition: max-height 0.5s cubic-bezier(0.33, 1, 0.68, 1);
     display: block;
     max-height: 0;

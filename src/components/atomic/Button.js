@@ -1,12 +1,13 @@
 import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
 import { aFocus, reducedMotion } from "../../styles/mixins";
+import Nav from "../global/Nav";
 
 const Button = styled.button`
   color: var(--header-color);
   border: 2px solid var(--button-hover-color);
   background-color: var(--button-background);
-  padding: 7px 20px;
+  padding: 9px 20px 11px;
   display: inline-block;
   text-align: center;
   position: relative;
@@ -14,16 +15,28 @@ const Button = styled.button`
     border-color ease-in 0.2s, transform ease-in 0.2s;
   cursor: pointer;
   font-size: var(--font-size-xs);
-  white-space: nowrap;
+  line-height: 1.187;
   ${aFocus()}
 
   ${({ block }) =>
     block &&
     css`
-      display: block;
-      width: 100%;
-      max-width: 200px;
+      display: inline-block;
+      min-width: 200px;
+
+      ${respond(
+        css`
+          min-width: 100%;
+        `,
+        30
+      )}
     `}
+
+  /* stylelint-disable */
+  ${Nav} & {
+    padding: 7px 16px 8px;
+  }
+  /* stylelint-enable */
 
   &::after {
     content: "";
