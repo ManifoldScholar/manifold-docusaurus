@@ -36,11 +36,16 @@ html[data-theme="dark"] {
     margin-top: 0.25rem;
   }
 
+  &__sublabel + &__label {
+    margin-top: 0.85rem;
+  }
+
   &__sublabel {
     text-transform: uppercase;
     letter-spacing: var(--letter-spacing-uppercase);
     line-height: var(--line-height-uppercase);
     font-size: 13px;
     font-weight: var(--font-weight-semi-bold);
+    margin-bottom: 0;
   }
 }
