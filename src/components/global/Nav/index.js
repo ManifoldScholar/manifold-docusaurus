@@ -20,7 +20,7 @@ const Nav = ({ className, wrapperClassName, routes, isDarkTheme }) => {
         isDarkTheme ? "a-bg-neutral92" : "a-bg-neutral10"
       }`}
     >
-      <div className={`${className}__inner l-container-max`}>
+      <div className={`${className}__inner`}>
         <HomeLink />
         <NavList routes={routes} />
         <NavMenuButton
@@ -59,13 +59,15 @@ Nav.propTypes = {
 };
 
 const StyledNav = styled(Nav)`
-  --menu-padding-x: ${fluidScale("28px", "18px")};
-  --menu-padding-y: 28px;
-  padding: var(--menu-padding-x) var(--menu-padding-y);
+  padding: var(--main-nav-padding-x) var(--main-nav-padding-y);
 
   &__inner {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: var(--main-nav-width);
+    margin: 0 auto;
   }
 
   &__mobile-menu {
