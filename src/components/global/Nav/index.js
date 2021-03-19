@@ -17,7 +17,7 @@ const Nav = ({ className, wrapperClassName, routes, isDarkTheme }) => {
   return (
     <nav
       className={`${className} ${wrapperClassName} ${
-        isDarkTheme ? "a-bg-black" : "a-bg-neutral10"
+        isDarkTheme ? "a-bg-neutral92" : "a-bg-neutral10"
       }`}
     >
       <div className={`${className}__inner l-container-max`}>

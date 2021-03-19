@@ -55,6 +55,8 @@ export function aBgColor(color) {
       return aBgDark("black");
     case "dark-gray":
       return aBgDark("dark-gray");
+    case "neutral92":
+      return aBgDark("neutral92");
     case "neutral10":
       return aBgColored("neutral10");
     case "neutral05":

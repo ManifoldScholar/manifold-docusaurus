@@ -12,6 +12,7 @@ const colors = [
   "white",
   "neutral10",
   "neutral05",
+  "neutral92",
   "dark-gray",
   "black",
   "blue",
