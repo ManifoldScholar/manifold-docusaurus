@@ -110,6 +110,7 @@ export default css`
 
     --main-nav-padding-x: ${fluidScale("28px", "18px")};
     --main-nav-padding-y: 28px;
+    --main-nav-width: 1230px;
 
     --blog-item-margin: ${fluidScale("80px", "60px")};
   }
