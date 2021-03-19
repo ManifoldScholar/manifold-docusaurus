@@ -1,0 +1,35 @@
+.react-toggle-track {
+  background-color: var(--neutral75);
+  height: 26px;
+  width: 48px;
+
+  html[data-theme="dark"] & {
+    background-color: var(--neutral96);
+  }
+}
+
+.react-toggle-thumb {
+  background-color: var(--white);
+  width: 18px;
+  height: 18px;
+  margin: 3px 0;
+  left: 3px;
+
+  html[data-theme="dark"] & {
+    background-color: var(--neutral50);
+  }
+}
+
+.react-toggle-track-check,
+.react-toggle-track-x {
+  width: 16px;
+  height: 16px;
+}
+
+.react-toggle-track-check {
+  left: 7px;
+}
+
+.react-toggle-track-x {
+  right: 6px;
+}
