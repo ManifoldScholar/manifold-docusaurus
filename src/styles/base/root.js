@@ -40,6 +40,7 @@ export default css`
     --neutral75: #696969;
     --neutral80: #828282;
     --neutral90: #363636;
+    --neutral92: #2e2e2e;
     --neutral96: #222222;
 
     /* typography */

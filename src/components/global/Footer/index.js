@@ -63,6 +63,10 @@ const StyledFooter = styled(Footer)`
   padding: ${fluidScale("90px", "80px")} var(--l-container-padding)
     ${fluidScale("42px", "52px")};
 
+  html[data-theme="dark"] & {
+    --background-color: #1a1a1a;
+  }
+
   &__inner {
     --header-color: var(--neutral80);
     --text-color: var(--neutral80);
