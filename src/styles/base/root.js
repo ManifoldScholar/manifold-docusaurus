@@ -1,5 +1,5 @@
 import { css } from "styled-components";
-import { fluidScale } from "../mixins";
+import { fluidScale, respond } from "../mixins";
 
 export default css`
   :root {
@@ -61,6 +61,15 @@ export default css`
     --font-size-h4: ${fluidScale("30px", "26px")};
     --font-size-h5: ${fluidScale("28px", "20px")};
     --font-size-h6: ${fluidScale("24px", "18px")};
+
+    --font-size-nav: 16px;
+
+    ${respond(
+      css`
+        --font-size-nav: 17px;
+      `,
+      80
+    )}
 
     --line-height-uppercase: 1.714;
 

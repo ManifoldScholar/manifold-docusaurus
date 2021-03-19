@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
 import { default as DocLink } from "@docusaurus/Link";
 import { Button } from "../../atomic";
-import { Link } from "../../typography";
+import { Link, Text } from "../../typography";
 import { respond, fluidScale } from "../../../styles/mixins";
 
 const NavList = ({ className, isMobile, routes }) => {
@@ -19,7 +19,7 @@ const NavList = ({ className, isMobile, routes }) => {
             <Link
               as={DocLink}
               data-selected={isSelected}
-              size="xs"
+              size="nav"
               {...linkProps}
             >
               {label}
@@ -27,7 +27,9 @@ const NavList = ({ className, isMobile, routes }) => {
           )}
         </li>
       ))}
-      <li className={`${className}__item`}>v 5.0.0</li>
+      <li className={`${className}__item`}>
+        <Text size="nav">v 5.0.0</Text>
+      </li>
     </ul>
   );
 };

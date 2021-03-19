@@ -29,6 +29,8 @@ const StyledNavMenuButton = styled(NavMenuButton)`
   height: 35px;
   /* resets for Docusaurus */
   border: none;
+  background: transparent;
+  color: inherit;
 
   ${({ type }) =>
     type === "open"
