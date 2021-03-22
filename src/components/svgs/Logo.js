@@ -16,6 +16,7 @@ const Logo = ({ size, ...otherProps }) => {
 
   return (
     <svg {...props}>
+      <title>Manifold logo</title>
       <path
         fillRule="evenodd"
         clipRule="evenodd"

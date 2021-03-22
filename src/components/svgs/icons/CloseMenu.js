@@ -11,6 +11,7 @@ const CloseMenu = ({ size, ...otherProps }) => {
 
   return (
     <svg {...props}>
+      <title>x</title>
       <path d="M17.4 2L16 .6l-7 7-7-7L.6 2l7 7-7 7L2 17.4l7-7 6.9 6.9 1.4-1.4L10.4 9z" />
     </svg>
   );

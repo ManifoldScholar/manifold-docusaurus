@@ -11,6 +11,7 @@ const HamburgerMenu = ({ size, ...otherProps }) => {
 
   return (
     <svg {...props}>
+      <title>Menu icon</title>
       <path d="M22 15H0v-2h22v2zm0-10H0V3h22v2z" />
     </svg>
   );

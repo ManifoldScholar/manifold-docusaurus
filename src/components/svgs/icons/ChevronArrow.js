@@ -21,6 +21,7 @@ const ChevronArrow = ({ size, ...otherProps }) => {
 
   return (
     <StyledChevronArrow {...props}>
+      <title>Arrow</title>
       <path d="M14.3 12.1L8 6.6l-6.3 5.5-1.4-1.6L8 3.9l7.7 6.6z" />
     </StyledChevronArrow>
   );
