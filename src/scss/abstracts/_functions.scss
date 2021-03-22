@@ -1,5 +1,22 @@
 @import "variables";
 
-@function getIcon($iconName) {
+@function icon($iconName) {
   @return map-get($icons, $iconName);
+}
+
+@function icon-url($iconName: "chevron") {
+  @return url("data:image/svg+xml,#{icon($iconName)}");
+}
+
+@function palette($colorName) {
+  @return map-get($palette, $colorName);
+}
+
+@function encode-color($string) {
+  @if type-of($string) == "color" {
+    $hex: str-slice(ie-hex-str($string), 4);
+    $string: unquote("#{$hex}");
+  }
+  $string: "%23" + $string;
+  @return $string;
 }

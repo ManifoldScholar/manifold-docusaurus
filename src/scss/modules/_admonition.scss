@@ -56,7 +56,7 @@
 
     .admonition-icon {
       // Use mask to change color of data svg
-      mask: url("data:image/svg+xml,#{getIcon($name)}");
+      mask: icon-url($name);
       mask-size: contain;
       mask-repeat: no-repeat;
       mask-position: center;

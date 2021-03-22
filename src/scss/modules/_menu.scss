@@ -5,9 +5,15 @@
   --ifm-menu-color-background-hover: var(--white);
   --ifm-menu-color-background-active: var(--ifm-menu-color-background-hover);
   --menu-background-color: var(--neutral10);
+
+  // These values are used by @docusaurus to calculate the menu width
+  --ifm-menu-link-padding-horizontal: 1.25rem;
   --menu-padding: calc(
     var(--ifm-spacing-horizontal) - var(--ifm-menu-link-padding-horizontal)
   );
+
+  // Menu link padding
+  --ifm-menu-link-padding: 0.312rem 0.75rem 0.437rem;
 }
 
 html[data-theme="dark"] {
@@ -21,5 +27,33 @@ html[data-theme="dark"] {
 
   @media (max-width: 997px) {
     --menu-padding: 0;
+  }
+
+  &__link {
+    line-height: 1.5;
+    padding: var(--ifm-menu-link-padding);
+    border-radius: var(--border-radius-sm);
+    align-items: center;
+
+    &:hover {
+    }
+  }
+
+  &__list-item {
+    margin: 0 0 3px 0;
+  }
+
+  &__link--sublist:after {
+    background-image: none;
+    // Use mask to change color of data svg
+    mask: icon-url("chevron");
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: var(--ifm-menu-color);
+  }
+
+  &__link--active:after {
+    background-color: var(--ifm-menu-color-active);
   }
 }
