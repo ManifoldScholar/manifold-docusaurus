@@ -11,7 +11,7 @@ const Arrow = ({ size, ...otherProps }) => {
 
   return (
     <svg {...props}>
-      <title>Open eye</title>
+      <title>Arrow</title>
       <path d="M9.7 19.7l-1.4-1.4 6.5-7.3H0V9h14.8L8.3 1.7 9.7.3l8.6 9.7z" />
     </svg>
   );
