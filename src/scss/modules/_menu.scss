@@ -7,9 +7,9 @@
   --menu-background-color: var(--neutral10);
 
   // These values are used by @docusaurus to calculate the menu width
-  --ifm-menu-link-padding-horizontal: 1.25rem;
   --menu-padding: calc(
-    var(--ifm-spacing-horizontal) - var(--ifm-menu-link-padding-horizontal)
+    var(--ifm-navbar-padding-horizontal) -
+      var(--ifm-menu-link-padding-horizontal)
   );
 
   // Menu link padding
@@ -24,9 +24,17 @@ html[data-theme="dark"] {
 .menu {
   background-color: var(--menu-background-color);
   padding: var(--menu-padding);
+  margin-left: 2px;
 
-  @media (max-width: 997px) {
-    --menu-padding: 0;
+  // Fix padding for responsive menu
+  @media (max-width: 995px) {
+    &--responsive {
+      padding: 0;
+    }
+
+    &--show {
+      padding: var(--menu-padding);
+    }
   }
 
   &__link {
@@ -34,9 +42,6 @@ html[data-theme="dark"] {
     padding: var(--ifm-menu-link-padding);
     border-radius: var(--border-radius-sm);
     align-items: center;
-
-    &:hover {
-    }
   }
 
   &__list-item {
