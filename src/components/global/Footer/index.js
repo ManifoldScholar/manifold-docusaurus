@@ -68,8 +68,8 @@ const StyledFooter = styled(Footer)`
   }
 
   &__inner {
-    --header-color: var(--neutral80);
-    --text-color: var(--neutral80);
+    --header-color: var(--neutral60);
+    --text-color: var(--neutral70);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
