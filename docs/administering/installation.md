@@ -201,7 +201,7 @@ docker exec -it  manifold-docker-compose_api_rails_1 rails console
 
 Replace `console` in the above command with other Manifold rake commands. These
 commands are the same commands that are available in the Omnibus packages, and
-are [documented here](/docs/installing/package_configuration#rake-interface)
+are [documented here](/docs/administering/reference/api_rake_tasks)
 
 Create an admin user
 ```
