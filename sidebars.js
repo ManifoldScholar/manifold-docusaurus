@@ -22,6 +22,7 @@ module.exports = {
               'administering/configuring/general_settings',
               'administering/configuring/theme_settings',
               'administering/configuring/integration_settings',
+              'administering/configuring/export_targets',
               'administering/configuring/project_subjects',
               'administering/configuring/email_settings',
             ]
