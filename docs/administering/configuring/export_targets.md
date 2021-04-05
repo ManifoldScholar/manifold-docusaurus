@@ -7,7 +7,7 @@ sidebar_label: Export Targets
 Publishers entrusting their scholarly content to Manifold can be assured their materials can easily be exported for long-term preservation. This page describes how to establish pathways (what we call “export targets”) from a Manifold instance to a preservation archive like Portico, CLOCKKS, or a university's institutional repository.
 
 :::note
-Instructions on how to export specific projects from Manifold to export targets that are configured here can be found in the Project Customizing section on the <a href="/docs/projects/customizing/exports.html">Exports page</a>.
+Instructions on how to export specific projects from Manifold to export targets that are configured here can be found in the Project Customizing section on the Exports page.
 :::
 
 The current implantation of this feature exports individual Manifold projects on a case-by-case basis according to the [BagIt specification](https://github.com/jkunze/bagitspec). In this scheme all Manifold texts are converted first to the EPUB format and then included with the rest of the project's resources and metadata in a ZIP archive.
@@ -21,7 +21,7 @@ If there are components to this feature that could be improved upon for your sit
 To create or edit existing export targets, navigate from the `Records` menu in the backend to `Export Targets`.
 
 :::note
-You will need to login with Administrator credentials in order to use this menu in the backend. For more on the roles available in Manifold, see the <a href="/docs/projects/accounts/index.html">Accounts section</a>.
+You will need to login with Administrator credentials in order to use this menu in the backend. For more on the roles available in Manifold, see the Accounts section.
 :::
 
 Any existing export targets will be listed on this view. New targets can be created by clicking `Add a new export target`, which will open a drawer from the right where the pathway's name and technical details are input.
@@ -69,7 +69,7 @@ Variables are letters combined with the percent character (`%`); the rest of the
 | `%i`     | Project ID            | `059a4e9d-2152-4ae5-816d-41891d4dccd1` | This is a Manifold-generated globally unique ID that is visible only in the URL (appearing after `projects/`) when viewing the project in the backend.                                                                   |
 | `%I`     | Export ID             | `071be7e7-f8a3-4bb3-845a-affb0f9e4c77` | A globally unique ID that Manifold generates for each export at the time of export.                                                                                                                                      |
 | `%n`     | Project Name          | `Metagaming`                           | The name of the Manifold project being exported. We would caution against using this variable as part of the export name. Project names often contain spaces that will likely cause problems downstream from the export. |
-| `%s`     | Project Slug          | `metagaming`                           | A project's slug is the customizable URL suffix that publishers can set in project's [General sidebar](/docs/projects/customizing/general.html#slug) view.                                                               |
+| `%s`     | Project Slug          | `metagaming`                           | A project's slug is the customizable URL suffix that publishers can set in project's General sidebar view.                                                               |
 | `%t`     | Time (including date) | `2020-03-06T220927`                    | The date and time the export was created in ([RFC 3339 format](https://tools.ietf.org/html/rfc3339)). The numbers following the `T` represent the time according to the UTC standard.                                    |
 | `%u`     | UNIX Timestamp        | `1583532567`                           | The UNIX timestamp, which measures (in seconds) from January 1, 1970 UTC.                                                                                                                                                |
 
