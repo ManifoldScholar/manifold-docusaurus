@@ -53,7 +53,7 @@ When you select Share from the menu that appears, you have options for Cite, Twi
 When you select Cite, Manifold prepares a reference for the Text you are viewing in accordance with APA, MLA, or Chicago styles that you can use in your own writing. Selecting the `Copy` button will save the citation to your device’s memory so you can paste it into whichever app you are using for that purpose. If certain metadata is missing from a Text, the Cite option will not appear.
 
 :::info
-For the Cite option to appear, the publisher must include in the Text's metadata the [Title](../backend/metadata.md#general), [Author](../backend/metadata.md#copyright), [Publisher](..backend/metadata.md#publisher), and [Publication Date](..backend/metadata.md#general). If any one of those fields is left blank, readers will not see **Cite** as an option when trying to **Share** a Text. It is also important to note that the more metadata the publisher provides, the better the citation will be.
+For the Cite option to appear, the publisher must include in the Text's metadata the [Title](../backend/metadata.md), [Author](../backend/metadata.md), [Publisher](../backend/metadata.md), and [Publication Date](..backend/metadata.md). If any one of those fields is left blank, readers will not see **Cite** as an option when trying to **Share** a Text. It is also important to note that the more metadata the publisher provides, the better the citation will be.
 
 Backend users, to see which metadata fields are available for Texts, see the [Metadata](../backend/metadata.md) section, and to enter/adjust metadata for a Text, see [Texts](../backend/texts.md#metadata).
 :::
@@ -65,7 +65,7 @@ Selecting Twitter opens a pop-up window where you can compose a new Tweet. If yo
 Included with your Tweet will be a card with a description of the Project with a thumbnail based off the Project’s hero image.
 
 :::note
-For the Twitter option to appear, the publisher needs to configure their instance to integrate with Twitter, as described in the [Integration Settings](../configuring/integration-settings.md#twitter) section.
+For the Twitter option to appear, the publisher needs to configure their instance to integrate with Twitter, as described in the [Integration Settings](../configuring/integration_settings.md#twitter) section.
 :::
 
 #### Facebook
@@ -73,7 +73,7 @@ For the Twitter option to appear, the publisher needs to configure their instanc
 Selecting Facebook opens a pop-up window where you can compose a new Facebook post. If you are already logged in to your Facebook account, it will automatically populate your post with a card describing the project alongside a thumbnail based off the Project’s hero image.
 
 :::note
-For the Facebook option to appear, the publisher needs to configure their instance to integrate with Facebook, as described in the [Integration Settings](../configuring/integration-settings.md#facebook) section.
+For the Facebook option to appear, the publisher needs to configure their instance to integrate with Facebook, as described in the [Integration Settings](../configuring/integration_settings.md#facebook) section.
 :::
 
 ### Resources
@@ -83,12 +83,12 @@ If you are logged in with an account that has backend access and permissions to 
 When you click Resource, a drawer will open from the right allowing you to select from any Resource file that has already been uploaded to that Project. When you select your Resource (or Resource Collection) a gray cube will be placed at the end of your cursor selection and a thumbnail of the Resource will appear in the left margin. When you hover over either they will turn a shade of green, and when selected a modal will overlay the text previewing the Resource or allowing you to interact with it, if it is of a kind playable in the browser.
 
 :::note
-Backend users interested in loading Resources into a Project, see the [Resource](/backend/resource.md) section.
+Backend users interested in loading Resources into a Project, see the [Resource](../backend/resource.md) section.
 :::
 
 ### Annotations and Highlights
 
-Annotations are a means for readers to engage with the Texts they read on Manifold. Annotations can be private and serve as one’s own marginalia, left publicly to foster conversation among other readers, or they can be associated with [Reading Groups](/reading-groups.md).
+Annotations are a means for readers to engage with the Texts they read on Manifold. Annotations can be private and serve as one’s own marginalia, left publicly to foster conversation among other readers, or they can be associated with [Reading Groups](/reading_groups.md).
 
 If you are logged into Manifold, when you Highlight text with your cursor a pop-up menu will appear providing you various options to interact with the text, along with the current Reading Group to which you will commit your interactions—i.e., Annotations or Highlights.
 
