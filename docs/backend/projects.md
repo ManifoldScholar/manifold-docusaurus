@@ -395,7 +395,7 @@ This block has a number of different configuration options: The **Title** field 
 <Spec title="Where Manifold Sources a Text’s Navigational Contents">
 
 | Text Ingest Format                         | Navigational File |
-| ------------------------------------------ | ----------------- | 
+| ------------------------------------------ | ----------------- |
 | EPUB3                                      | `tox.xhtml`       |
 | EPUB2                                      | `tox.ncx`         |
 | Manifest Ingest                            | `contents.yml`    |
@@ -535,7 +535,7 @@ From this view, individual Manifold Projects are exported to a preservation agen
 
 The **New Project Export** lists all the pre-configured locations to which a Project can be exported. When one has been selected, the **Export Project** button will begin the process of packaging and transferring the Project to the repository.
 
-During the export process, all of a Project’s Texts are transformed into individual EPUB files and collected with the Project’s Resources and metadata. Those materials are then gathered into a ZIP archive that is structured according to the BagIt specification. This process will function regardless of whether or not individual Texts within the Project have been toggled to **Enable EPUB** (see [Texts](../backend/texts#header)).
+During the export process, all of a Project’s Texts are transformed into individual EPUB files and collected with the Project’s Resources and metadata. Those materials are then gathered into a ZIP archive that is structured according to the [BagIt specification](https://github.com/jkunze/bagitspec). This process will function regardless of whether or not individual Texts within the Project have been toggled to **Enable EPUB** (see [Texts](../backend/texts#header)).
 
 It is not possible to export distinct components of a Project. The feature, as it is presently crafted, only allows the export of all a Project’s components as an interrelated whole.
 
@@ -573,6 +573,12 @@ However, Projects can be exported multiple times, to the same or different locat
 #### Troubleshooting
 
 Once an export has triggered, the screen *will not* automatically update. To determine if a export has been successful or not, manually refresh the window. The export speed depends on many factors; the larger the Project, the longer the time to complete the process.
+
+You can get a general sense of the running background processes from the Sidekiq interface available at `/api/sidekiq`, off of the instance’s landing page, e.g.,
+
+```
+https://edge.manifoldapp.org/api/sidekiq
+```
 
 If an export fails, contact your local IT agents to authenticate against the target FTP host. Performing standard network debugging protocols to ensure Manifold can access the server will be the best first steps to take in such a case.
 
