@@ -1,11 +1,11 @@
 ---
-id: general_settings
-title: General Settings
-sidebar_label: General Settings
+id: properties
+title: Properties
+sidebar_label: Properties
 ---
 
 :::location
-The fields discussed in this section can be accessed from the Manifold backend by selecting **Settings** from the main menu and then **General** in the submenu.
+The fields discussed in this section can be accessed from the Manifold backend by selecting **Settings** from the main menu and then **Properties** in the submenu.
 
 Only users logged in with **Admin** credentials can access this view.
 :::

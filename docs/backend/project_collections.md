@@ -154,7 +154,7 @@ When sharing the URL for a Collection’s homepage, Manifold includes Open Graph
 	/>
 
 - **Title**. The `Collection Title` text is the default value.
-- **Description**. Manifold will supply text from the collection’s `Description` when this field is left blank. If the Collection has no description, the system will use the [`Default Page Description`](../administering/configuring/general_settings.md).
+- **Description**. Manifold will supply text from the collection’s `Description` when this field is left blank. If the Collection has no description, the system will use the [`Default Page Description`](../administering/configuring/properties.md).
 
 	Markdown formatting ***is not*** honored in Open Graph metadata. Coding syntax will render as plain text in social media cards.
 

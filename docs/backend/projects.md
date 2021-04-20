@@ -161,7 +161,7 @@ The Finished toggle is a means to indicate that a Project is no longer actively 
 
 #### Standalone Mode
 
-By default, Manifold presents Projects within the context of a library of titles. Standalone Mode provides an alternative, so that you can selectively remove specific Projects from library and search views and allow the Projects to function instead as microsites that can be linked to directly from an existing web presence (c.f., [Disable Library Views](../administering/configuring/general_settings.md#disable-library-views)).
+By default, Manifold presents Projects within the context of a library of titles. Standalone Mode provides an alternative, so that you can selectively remove specific Projects from library and search views and allow the Projects to function instead as microsites that can be linked to directly from an existing web presence (c.f., [Disable Library Views](../administering/configuring/properties.md#disable-library-views)).
 
 When a Project is offered in Standalone Mode, the Project header is replaced with a more minimal standalone header that persists down the page on scroll. The Project’s title and subtitle are integrated into the standalone header and serve as clickable links that redirect to the Project landing page.
 
@@ -201,7 +201,7 @@ Because of that, someone who doesn't have an account, or someone who is logged i
 
 While this setting is engaged, it will not possible to convert a private annotation into a public one, and public reading groups will function as if they were private ones.
 
-To learn how to disable public annotations globally across an entire Manifold instance, instead of locally for specific Projects, see the [General Settings](../administering/configuring/general_settings.md).
+To learn how to disable public annotations globally across an entire Manifold instance, instead of locally for specific Projects, see the [General Settings](../administering/configuring/properties.md).
 
 Likewise, that section describes how to further limit the annotation functionality by disabling reading groups across an entire instance. When publishers disable both public annotation and reading groups globally, users will only be able to leave private annotations they alone can see.
 
@@ -443,7 +443,7 @@ For users who have also authored Project content, the **Is a Project Author** to
 
 ### Project Entitlements
 
-The controls in this section provide a means to restrict access to a specific Project on the frontend to individual Users or particular Reading Groups. By default all Manifold Projects are openly accessible. To change the default so that all publications are restricted, see the [General Settings](../administering/configuring/general_settings.md#restrict-access-to-all-projects) section.
+The controls in this section provide a means to restrict access to a specific Project on the frontend to individual Users or particular Reading Groups. By default all Manifold Projects are openly accessible. To change the default so that all publications are restricted, see the [General Settings](../administering/configuring/properties.md#restrict-access-to-all-projects) section.
 
 On landing pages, restricted-access Projects display an alert indicating the Project is only available to those Users who have an entitlement to it. Attempts to access Project content will redirect Users without the necessary entitlements back to the top of the Project’s landing page with a notice that reads “Only authorized users may access this project.”
 
