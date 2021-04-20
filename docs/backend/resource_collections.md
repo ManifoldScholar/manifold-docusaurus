@@ -67,7 +67,7 @@ The `General` sidebar allows you to modify the Collection’s `Title`, `Descript
 
 - **Description**. This is a Markdown-enabled field meant to capture an account of the Resource Collection. The description is rendered on the Resource Collection’s library page and in a Manifold Reader modal when the Collection is placed as annotation on a Text.
 
-	The value in this field is also baked into the metadata that Manifold shares with other systems, crawlers, and social media platforms. If no description is entered, Manifold will instead share the copy from the `Default Page Description` (see [General Settings](../administering/configuring/general_settings.md#)).
+	The value in this field is also baked into the metadata that Manifold shares with other systems, crawlers, and social media platforms. If no description is entered, Manifold will instead share the copy from the `Default Page Description` (see [General Settings](../administering/configuring/properties.md#)).
 
 - **Slug**. A Resource Collection slug appears as the final component of the the URL for its library page: 
 

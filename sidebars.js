@@ -17,14 +17,15 @@ module.exports = {
             'administering/troubleshooting',
             'administering/securing_manifold',
           {
-            'Configuring Manifold': [
+            'Configuring Settings': [
               'administering/configuring/managing_settings',
-              'administering/configuring/general_settings',
+              'administering/configuring/properties',
               'administering/configuring/theme_settings',
               'administering/configuring/integration_settings',
-              'administering/configuring/export_targets',
+              'administering/configuring/ingestion_settings',
               'administering/configuring/project_subjects',
               'administering/configuring/email_settings',
+              'administering/configuring/export_targets',
             ]
           },
           {
