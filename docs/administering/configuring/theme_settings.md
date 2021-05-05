@@ -7,6 +7,11 @@ sidebar_label: Theme Settings
 import Spec from "@theme/Spec";
 const defaultImageFormats = "GIF, JPEG, JPG, PNG";
 
+:::location
+The fields discussed in this section can be accessed from the Manifold backend by selecting **Settings** from the main menu and then **Theme** in the submenu.
+
+Only users logged in with **Admin** credentials can access this view.
+:::
 
 ## Branding
 
@@ -192,7 +197,7 @@ The Top Bar won't display unless both the text and URL are provided.
 What text you enter here will serve as the default Top Bar message for your instance. This text can be altered on a Project-by-Project basis in cases where this general notice may not suit. See the [Project settings](../../backend/projects.md) page for more.
 
 :::note
-This field is ***not*** Markdown/HTML enabled and only accepts one line of text.
+This field is *not* Markdown/HTML enabled and only accepts one line of text.
 :::
 
 ### Color
@@ -200,7 +205,7 @@ This field is ***not*** Markdown/HTML enabled and only accepts one line of tex
 You can customize the color of the Top Bar using the same syntax described above for the `Accent Color`: CSS color keyword, Hexadecimal, RGB, RGBA, HSL, HSLA, or HWB. When left blank the color will revert to the default, Manifold green: `#H2E3AC`.
 
 :::note
-Unlike the text, the Top Bar's color value ***cannot*** be adjusted for individual projects.
+Unlike the text, the Top Bar's color value *cannot* be adjusted for individual projects.
 :::
 
 ### URL
@@ -211,8 +216,10 @@ Like the Top Bar text, the URL entered here can be adjusted on a per-Project bas
 
 ### Top Bar Display Mode
 
-This dropdown is where you configure if and where the Top Bar will display on your instance:
+This dropdown is where you configure if and where the Top Bar will display on your instance.
 
-- `Disabled`. In this state the Top Bar will not display. However you can override this setting and set the Top Bar to appear for individual projects.
-- `Always Visible`. So long as ***both*** the text and URL have been provided, the Top Bar will display throughout your instance. Project-level Top Bar settings will override the settings entered here.
-- `Only Visible in Standalone Mode`. The Top Bar will appear on just those projects that are enabled for [Standalone Mode](../../backend/projects.md). Project-level overrides are still possible with this setting selected.
+In the **Disabled** state the Top Bar will not display. However you can override this setting and set the Top Bar to appear for individual projects.
+
+When **Always Visible** is selected, so long as *both* the text and URL have been provided, the Top Bar will display throughout your instance. Project-level Top Bar settings will override the settings entered here.
+
+The Top Bar will appear on just those projects that are enabled for [Standalone Mode](../../backend/projects.md) when **Only Visible in Standalone Mode** is chosen. Project-level overrides are still possible with this setting selected.

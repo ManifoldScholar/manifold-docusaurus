@@ -5,7 +5,9 @@ sidebar_label: Ingestion Settings
 ---
 
 :::location
-Manifold’s **Ingestion Settings** live in the backend, nested as a submenu of **Settings**. Only users logged in with **Admin** credentials can access this view.
+The fields discussed in this section can be accessed from the Manifold backend by selecting **Settings** from the main menu and then **Ingestion Settings** in the submenu.
+
+Only users logged in with **Admin** credentials can access this view.
 :::
 
 ## Global Ingestion Styles

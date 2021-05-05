@@ -70,7 +70,7 @@ Following the date constraint options, the system displays five usage reports, s
 At present there is no mechanism to export Analytics data or mask from tracking the activity of specific users.
 :::
 
-## General
+## Properties
 
 #### Title and Subtitle
 
@@ -201,7 +201,7 @@ Because of that, someone who doesn't have an account, or someone who is logged i
 
 While this setting is engaged, it will not possible to convert a private annotation into a public one, and public reading groups will function as if they were private ones.
 
-To learn how to disable public annotations globally across an entire Manifold instance, instead of locally for specific Projects, see the [General Settings](../administering/configuring/properties.md).
+To learn how to disable public annotations globally across an entire Manifold instance, instead of locally for specific Projects, see the [Properties Settings](../administering/configuring/properties.md#disable-public-annotations-and-comments).
 
 Likewise, that section describes how to further limit the annotation functionality by disabling reading groups across an entire instance. When publishers disable both public annotation and reading groups globally, users will only be able to leave private annotations they alone can see.
 
@@ -417,9 +417,9 @@ When the block is configured to **Show Dates**, the system displays the date whe
 
 In the Text block, uncategorized Texts are treated differently from those that are categorized. When **Show Uncategorized Texts** is toggled on, uncategorized Texts will appear beneath a header reading “Uncategorized,” regardless of whether you have the “Show Category Labels” toggle active.
 
-In the active state, the **Show Descriptions** toggle displays Text descriptions as abstracts for each listing in the block (see [General settings](../backend/texts.md#general)).
+In the active state, the **Show Descriptions** toggle displays Text descriptions as abstracts for each listing in the block (see [Properties](../backend/texts.md#description)).
 
-Each Text listing in the block appears beside a default thumbnail image of stacked paper. That thumbnail is replaced by the image stored in the Text record’s [Cover image field](../backend/texts.md#general) when **Show Cover Images** is toggled on.
+Each Text listing in the block appears beside a default thumbnail image of stacked paper. That thumbnail is replaced by the image stored in the Text record’s [Cover image field](../backend/texts.md#cover) when **Show Cover Images** is toggled on.
 
 The **Show Category Labels** field works in conjunction with the way Texts are grouped in the [Texts menu](../backend/texts.md#text-categories). When this setting is active active, Texts that are grouped within a category (except those grouped as “Uncategorized”) will be listed beneath a header displaying the category name.
 
@@ -443,7 +443,7 @@ For users who have also authored Project content, the **Is a Project Author** to
 
 ### Project Entitlements
 
-The controls in this section provide a means to restrict access to a specific Project on the frontend to individual Users or particular Reading Groups. By default all Manifold Projects are openly accessible. To change the default so that all publications are restricted, see the [General Settings](../administering/configuring/properties.md#restrict-access-to-all-projects) section.
+The controls in this section provide a means to restrict access to a specific Project on the frontend to individual Users or particular Reading Groups. By default all Manifold Projects are openly accessible. To change the default so that all publications are restricted, see the [Properties Settings](../administering/configuring/properties.md#restrict-access-to-all-projects) section.
 
 On landing pages, restricted-access Projects display an alert indicating the Project is only available to those Users who have an entitlement to it. Attempts to access Project content will redirect Users without the necessary entitlements back to the top of the Project’s landing page with a notice that reads “Only authorized users may access this project.”
 

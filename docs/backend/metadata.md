@@ -6,7 +6,7 @@ sidebar_label: Metadata
 
 Manifold Metadata fields are informed by the Dublin Core Metadata Initiative. Many definitions below have been adapted from the [DCMI Metadata Terms page](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/description).
 
-## General
+## Properties
 
 - **Title**. The primary name assigned to the entity.
 - **Subtitle**. A secondary name assigned to the entity.

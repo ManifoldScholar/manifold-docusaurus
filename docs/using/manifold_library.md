@@ -15,7 +15,7 @@ Projects appear in the library with their thumbnail or cover image, title, autho
 The first category of Projects you will see on a Manifold landing page are the Featured Projects, suggested titles that give your readers a curated sample of what’s new and available.
 
 :::note
-If you are a backend user, Projects can be added or removed individually from the Featured section through the [General](../backend/projects.md#general) sidebar.
+If you are a backend user, Projects can be added or removed individually from the Featured section through the [Properties](../backend/projects.md#properties) sidebar.
 :::
 
 ### Our Projects
