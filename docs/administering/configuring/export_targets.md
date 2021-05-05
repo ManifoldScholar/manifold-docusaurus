@@ -7,7 +7,9 @@ sidebar_label: Export Targets
 import Spec from "@theme/Spec";
 
 :::location
-Export Targets are managed in the Manifold backend, situated as a submenu of **Settings**. Only users logged in with **Admin** role can access this view.
+The fields discussed in this section can be accessed from the Manifold backend by selecting **Settings** from the main menu and then **Export Targets** in the submenu.
+
+Only users logged in with **Admin** role can access this view.
 :::
 
 ## What are Export Targets?
@@ -45,7 +47,7 @@ Variables are letters combined with the percent character (%); the rest of the *
 | `%i`     | Project ID            | `059a4e9d-2152-4ae5-816d-41891d4dccd1` | This is a Manifold-generated globally unique ID that is visible only in the URL (appearing after `projects/`) when viewing the project in the backend.                                                                   |
 | `%I`     | Export ID             | `071be7e7-f8a3-4bb3-845a-affb0f9e4c77` | A globally unique ID that Manifold generates for each export at the time of export.                                                                                                                                      |
 | `%n`     | Project Name          | `Metagaming`                           | The name of the Manifold project being exported. We would caution against using this variable as part of the export name. Project names often contain spaces that will likely cause problems downstream from the export. |
-| `%s`     | Project Slug          | `metagaming`                           | A project's slug is the customizable URL suffix that publishers can set in project's General sidebar view.                                                                                                               |
+| `%s`     | Project Slug          | `metagaming`                           | A project's slug is the customizable URL suffix that publishers can set in project's Properties sidebar view.                                                                                                               |
 | `%t`     | Time (including date) | `2020-03-06T220927`                    | The date and time the export was created in ([RFC 3339 format](https://tools.ietf.org/html/rfc3339)). The numbers following the `T` represent the time according to the UTC standard.                                    |
 | `%u`     | UNIX Timestamp        | `1583532567`                           | The UNIX timestamp, which measures (in seconds) from January 1, 1970 UTC.                                                                                                                                                |
 

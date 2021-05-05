@@ -7,7 +7,7 @@ sidebar_label: Texts
 import Spec from "@theme/Spec";
 const defaultImageFormats = "GIF, JPEG, JPG, PNG";
 
-:::location How Do I Get Here
+:::location
 To edit a Text, select its parent project in the backend and choose **Texts** from the sidebar. Texts can be edited by any user who can edit the parent Project.
 :::
 
@@ -17,7 +17,7 @@ Texts refer to content that is displayed in the Manifold Reader. Each Text belon
 
 Within the Manifold Reader, Texts serve as a base, onto which Resource annotations and reader engagements can be layered.
 
-Manifold ***is not*** an authoring platform. Thus, Texts are meant to be prepared outside the system and then added to Projects for display and engagement in the Manifold Reader.
+Manifold *is not* an authoring platform. Thus, Texts are meant to be prepared outside the system and then added to Projects for display and engagement in the Manifold Reader.
 
 ## Managing Project Texts
 
@@ -85,13 +85,13 @@ Files in formats other than those named above (e.g., PDF, XML, TEI, TEX) cannot 
 
 #### How to Add a Text
 
-The **+ Add a new text** button opens a drawer from the right where Texts can be added to the system in two ways: by directly loading a file from your system using **Upload a File** or by referring to one that is remotely hosted with the **URL** option.
+The **Add a new text** button opens a drawer from the right where Texts can be added to the system in two ways: by directly loading a file from your system using **Upload a File** or by referring to one that is remotely hosted with the **URL** option.
 
 This URL field expects a complete URL that directs Manifold to a specific file or archive that Manifold can Ingest.
 
-After your upload file has cached to the system or a path has been provided in the URL field, the **✓ Continue** button converts the drawer to a new view with display logs and final options.
+After your upload file has cached to the system or a path has been provided in the URL field, the **Continue** button converts the drawer to a new view with display logs and final options.
 
-The **↓ Start Ingestion** button kicks off the actual process of converting and bringing the source file into the Manifold Reader. The system must first connect to the Manifold websocket (noted in the Log) before this option is actionable. When completed this button will change to read **✓ Complete** and direct you back to the Texts views.
+The **Start Ingestion** button kicks off the actual process of converting and bringing the source file into the Manifold Reader. The system must first connect to the Manifold websocket (noted in the Log) before this option is actionable. When completed this button will change to read **Complete** and direct you back to the Texts views.
 
 The Log sits below these buttons and documents the ingest process, line by line.
 
@@ -101,15 +101,15 @@ The **Restart Ingestion** option is used by Manifold developers when tweaking co
 
 Text Categories are a grouping mechanism for Texts. Categories can be configured to display in a variety of ways or used as filters in Texts Content Blocks on Project landing pages (see [Layout](../backend/projects.md#texts)).
 
-Within the Manifold Reader, Category titles appear in a yellow ribbon at the bottom of the page for member Texts. Category ribbons do not appear for uncategorized Texts or Texts with the **Published?** field toggled on (see [Editing a Text](../backend/texts.md#general)).
+Within the Manifold Reader, Category titles appear in a yellow ribbon at the bottom of the page for member Texts. Category ribbons do not appear for uncategorized Texts or Texts with the **Published?** field toggled on (see [Editing a Text](../backend/texts.md#published)).
 
-The **+ Create a new category** button opens a drawer from the right where you can add and name a new category. Once created, the Category container will appear in the editing pane, ready for Texts to be deposited into it.
+The **Create a new category** button opens a drawer from the right where you can add and name a new category. Once created, the Category container will appear in the editing pane, ready for Texts to be deposited into it.
 
 ## Editing a Text
 
 To edit a Text, click on the title or the pencil icon from within the list of the project’s Texts. Each Text loaded to Manifold has its own configurable settings. When you select a Text from the Editing Pane, the view will transform, providing new options in the header (see [Interface Overview](../backend/texts.md#header)).
 
-Managing a Text involves viewing and changing its properties through the following editing panes: **Analytics**, **General**, **People**, **Metadata**, **Styles**, and **Reingest**. Even when pre-populated by the system, all of the fields in these panes can be modified.
+Managing a Text involves viewing and changing its properties through the following editing panes: **Analytics**, **Properties**, **People**, **Metadata**, **Styles**, and **Reingest**. Even when pre-populated by the system, all of the fields in these panes can be modified.
 
 ### Analytics
 
@@ -133,9 +133,9 @@ Following the date constraint options, the system displays six usage reports, so
 
 3. Values shown in the **Highlights** report corresponds to the total number of passages in the Text that have been highlighted during the selected time period. The system aggregates all of the highlights made to the Text in the value it reports, regardless of privacy setting or affiliation with Reading Groups.
 
-4. The **Shares** report displays the current total for the number of times visitors have used the Manifold Share feature in the Reader’s pop-up menu to share the Text section to Twitter or Facebook. The number displayed in the report is ***not*** affected by time constraints.
+4. The **Shares** report displays the current total for the number of times visitors have used the Manifold Share feature in the Reader’s pop-up menu to share the Text section to Twitter or Facebook. The number displayed in the report is *not* affected by time constraints.
 
-5. Each time a visitor uses the Reader’s Share feature to create an citation for the Text section, a record is created. The figure in the **Citations** report represents the total number of citation records currently associated with the Text section. It is ***not*** affected by time constraints.
+5. Each time a visitor uses the Reader’s Share feature to create an citation for the Text section, a record is created. The figure in the **Citations** report represents the total number of citation records currently associated with the Text section. It is *not* affected by time constraints.
 
 6. Displayed as a list, the **Text Section Views** report aggregates the total number of times a specific section within a Text has been viewed during the set timespan. Each time a visitor opens a Text section, the system gives their browser a token associated with the the section. The system calculates the values it displays here by adding together the total number of tokens associated with the section from all the visitors who have accessed it. Data in this report are accurate to within a few moments, and section titles in the list open the Manifold Reader to the selected section.
 
@@ -143,7 +143,7 @@ Following the date constraint options, the system displays six usage reports, so
 At present there is no mechanism to export analytics data or mask from tracking the activity of specific users.
 :::
 
-### General
+### Properties
 
 The settings in this view represent those that most affect how a Text is indexed in Manifold and with external systems.
 
@@ -210,7 +210,7 @@ If left blank, the system will automatically create a slug for each new Text bas
 
 #### Description
 
-This is a Markdown-enabled field meant to capture a Text’s abstract. Copy saved here can be configured to display in a **Texts** Content Block on the Project landing page; it is also baked into the metadata that Manifold shares with other systems, crawlers, and social media platforms. Those other systems will likely ***not*** honor Markdown formatting and render the syntax as is.
+This is a Markdown-enabled field meant to capture a Text’s abstract. Copy saved here can be configured to display in a **Texts** Content Block on the Project landing page; it is also baked into the metadata that Manifold shares with other systems, crawlers, and social media platforms. Those other systems will likely *not* honor Markdown formatting and render the syntax as is.
 
 Manifold will populate this field when this field when a description is included in the source file.
 
@@ -240,7 +240,7 @@ Manifold will automatically sweep EPUBs at ingest for their cover file when they
 
 When Manifold creates an EPUB of a Text, for download or export, it will use the image file stored in this field as the cover for the Manifold-generated EPUB.
 
-Manifold does ***not*** supply this image with the	metadata it shares about the Text with other systems, crawlers, or social media platforms; it sends instead the Project’s **Background Image**.
+Manifold does *not* supply this image with the	metadata it shares about the Text with other systems, crawlers, or social media platforms; it sends instead the Project’s **Background Image**.
 
 <Spec
     title="Cover Specs"
@@ -260,7 +260,7 @@ This toggle affects the appearance of a Text in a **Texts** Content Block on the
 
 Manifold includes navigation controls at the bottom of each Text section in the Reader. These controls give readers the means to move forward or backward through a Text. By default these navigation elements are introduced with a heading that reads “Next Chapter.” This field allows you to adjust that language to better reflect the content: e.g., Next Article, Next Essay, Next Section, etc.
 
-It is ***not possible*** to remove or adjust the word *Next* from that heading.
+It is *not possible* to remove or adjust the word *Next* from that heading.
 
 #### Ignore Access Restrictions?
 
@@ -292,7 +292,7 @@ Manifold automatically populates the **People** pane when the Text’s source fi
 
 </Spec>
 
-When the system cannot recognize authorship from the source file, ***already existing*** Maker Records can be manually associated with a Text by typing names in the **Authors** or **Contributors** dropdown fields. New Maker Records cannot be created from this view.
+When the system cannot recognize authorship from the source file, *already existing* Maker Records can be manually associated with a Text by typing names in the **Authors** or **Contributors** dropdown fields. New Maker Records cannot be created from this view.
 
 **Author** listings can be configured to appear in **Texts** Content Blocks and will appear in auto-generated bibliographic cites the system creates. Those listed as **Contributors** do not appear in either of those spaces.
 
@@ -376,7 +376,7 @@ Some Text-record fields are overridden by the Reingest process, with values from
 <Spec
     title="Text Record Fields Affected by Reingesting"
     items={[
-        { key: "General", value: "Title, Subtitle, Publication Date, Description, Cover" },
+        { key: "Properties", value: "Title, Subtitle, Publication Date, Description, Cover" },
         { key: "People", value: "Authors, Contributors" },
         { key: "Metadata", value: "Rights, Unique Identifier" },
     ]}
