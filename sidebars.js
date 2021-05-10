@@ -56,6 +56,7 @@ module.exports = {
             'backend/resource_collections',
             'backend/users',
             'backend/makers',
+            'backend/features',
             'backend/pages',
             'backend/analytics',
             'backend/metadata',

@@ -1,63 +1,55 @@
 ---
 id: manifold_library
-title: The Manifold Library
-sidebar_label: The Manifold Library
+title: Manifold Library
+sidebar_label: Manifold Library
 ---
 
-## Projects
+### What Are Library Views?
 
-The Manifold homepage acts as the library of titles you are offering on the platform. This library is divided into three main categories by default: Featured Projects, Our Projects, and Following. However, if you are employing Project Collections as means to showcase your materials, those preferences will supersede the default views discussed here in the [Featured Projects](manifold_library#featured-projects) and [Our Projects](manifold_library#our-projects) sections. See the [Project Collections](manifold_library#project-collections) section for more.
+By default each Manifold homepage showcases Projects as an array of selectable thumbnails with basic title and author information. This gives readers the ability to browse an entire catalog of work at a glance.
 
-Projects appear in the library with their thumbnail or cover image, title, author, and date of most recent update.
+The homepage library view is configurable by those who manage the instance and can be set to display Projects in curated collections. Other library views are more fixed and display Projects in pre-configured paradigms.
 
-### Featured Projects
-
-The first category of Projects you will see on a Manifold landing page are the Featured Projects, suggested titles that give your readers a curated sample of what’s new and available.
-
-:::note
-If you are a backend user, Projects can be added or removed individually from the Featured section through the [Properties](../backend/projects.md#properties) sidebar.
+:::note Projects Outside the Library
+Alternatively, library views can be disabled throughout an instance to cultivate a different experience where readers are instead directed to specific Projects from an existing web presence. It is also possible to selectively remove individual Projects from the library experience. See [Properties](../administering/configuring/properties.md#disable-library-views) to learn more about those options.
 :::
 
-### Our Projects
+## Manifold Menu
 
-Below Featured Projects is the Our Projects section, which displays all your Projects. From a dropdown menu, you can select filters to view titles by subject category assigned by you.
+The main Manifold menu appears at the head of all frontend library views. The menu can be configured to display a custom logo and render in different color schemes (see [Theme Settings](../administering/configuring/theme_settings)).
 
-Sorting Projects by these categories creates a stable URL that can be shared so others can land on the page with the same results.
+Functionally, the menu serves as a means for readers to navigate between different library views (**Home**, **Projects**, **Following**) and search for content across the entire instance. These uses are discussed in the following sections on this page.
 
-:::note
-To learn more about how to create and curate subject categories as an Administrator, see the [Subjects](../administering/configuring/project_subjects.md) section.
-:::
+The Manifold menu is also where readers manage their profiles, notification settings, and access their Reading Group engagements. See [Your Account](../using/your_account.md) and [Reading Groups](../using/reading_groups.md) for more about those uses.
 
-### Following
+## Home
 
-Following Projects allows you to group those titles of interest to you in one place for easy access. To start following a Project, click the green circle with a white plus sign on the top left of a Project’s thumbnail. When you hover over the plus sign you are given the option to follow that Project. When you do so the green circle will change to a blue one with a white check mark. Likewise, you unfollow a Project by hovering over the blue circle and selecting “unfollow.”
+As the default landing page for an instance, the Home page is prime real estate, and thus highly configurable. The page is made up of the Manifold menu, an optional Feature section, a library view of Projects, followed by the instance Footer. The Feature and Footer sections are beyond the scope of this page and are considered, respectively, in the [Features](../docs/backend/features.md) and [Footer](../docs/administering/configuring/properties.md#footer) documentation.
 
-Followed Projects can be accessed by selecting Following from the top menu bar, or by clicking the **Projects You're Following** button below Featured Projects and Our Projects.
+Out of the box, the library view on the Home page displays a maximum of sixteen Projects, ordered alphabetically by title under a heading that reads “Our Projects.” When an instance exceeds sixteen total Projects, the section will conclude with a link to **See All Projects**, directing readers to the All Projects view, also accessible by selecting **Projects** from the Manifold menu.
 
-## Project Collections
+Alternatively, those users who are maintaining an instance can employ [Project Collections](../backend/project_collections.md) to control which Projects are displayed on the homepage and how they are ordered and grouped. Thus it is possible to portion out the Manifold landing page by theme, around specific events or conferences, current events, or as a means to suggest titles to readers they may not have otherwise considered to be of interest.
 
-Project Collections are a way to customize and control the way Projects are displayed on the Manifold homepage. Collections displace your library of Projects on the landing page in favor of “blades” or “blocks” of Projects curated manually or algorithmically around specific subjects and tags. Thus, instead of showcasing a library of Projects, ordered only by title, it is possible to portion out the Manifold landing page by theme, around specific events or conferences, current events, or as a means to suggest titles to readers they may not have otherwise considered to be of interest.
+Regardless of how the Home library view is configured, alphabetically or by Project Collections, it is followed by two buttons: **See All Projects** and **Projects You're Following** that direct readers the All Projects and Following views.
 
-Only those Collections denoted in the backend to "Show on homepage" will appear on the Manifold landing page. There is no artificial limit to the number of Collections that can appear on the homepage, but the more Collections that appear, the longer a reader will need to scroll to review those Projects to which you wish to draw attention. Conversely, if only one Collection is marked to show on the homepage, only that Collection will appear, followed by links to see Projects on the instance or, for those who are logged in, a link to those Projects that are being followed.
+## All Projects
 
-All Collections marked as "Visible" in the backend, regardless of whether they are set to appear on the homepage, will appear on an instance’s Project Collection page, accessible by clicking **See Project Collections** button at the bottom of the Projects page. Collections that are not set to be visible will not appear on either the homepage or Project Collection page.
+The **All Projects** pages displays, as the name suggests, all of the Projects in an instance in a paginated view. Using the three fields beside the page heading, readers can search for specific Projects, sort the listings alphabetically by title, or filter Projects by [Subject](../administering/configuring/project_subjects.md) or [Featured Status](../backend/projects.md#featured). Sorting Projects by these categories creates a stable URL that can be shared so others can land on the page with the same results.
+
+## Following
+
+Readers who have created an account on an instance will find a link in the Manifold menu to the **Following** view. Every Manifold Project thumbnail includes a plus-sign badge that can be toggled on and off. When toggled on the badge will become a check mark, indicating that the Project is now being followed. Followed Projects are collected in the **Following** view as a shortcut for readers to quickly navigate to those Projects they are most interested.
+
+Included in the Following view, in a separate container, are Projects that have been denoted as [Featured](../backend/projects.md#featured). Only the four most recently published or updated Featured Projects will appear in this space, with a link to **See All Featured** available in cases where an instance has more then four total Featured Projects.
 
 ## Search
 
-The magnifying glass icon opens a search bar that allows you to enter a word or phrase to search across all content and Projects. Every search bar in the Manifold application supports phrasal searches and negations.
+The magnifying glass icon in the Manifold menu opens a search bar that allows readers to look for specific content across an entire instance. Manifold searches support phrasal and keyword inputs as well as negations:
 
-:::important
-Projects in Draft status are not indexed by Manifold's search engine, Elasticsearch. As such any searches performed on a Draft Project will not return any results.
-:::
+Users can search for specific phrases enclosed in quotation marks to look for exact matches in runs of text (e.g., `"fear is the mind killer"`). It is also possible to combine the quotation-mark operators with negations by appending a minus sign before elements and phrases to be omitted from the results (e.g., `-negate -this keep that` or `-"no to all of this"`). In practice this means it’s possible to search for `"fear is" -"fear itself"` to get results from Frank Herbert’s *Dune* (“fear is the mind killer”) but not Roosevelt’s speech.
 
-Users can search for specific phrases enclosed in quotation marks to look for exact matches in runs of text (e.g., "fear is the mind killer").
+Quoting a phrase will still apply stemming, thus Manifold takes into account misspellings, ignores cases, etc. When negations are employed, they follow the NOR paradigm instead of NAND. If a search includes `-apples -bananas`, Manifold will exclude results that mention apples or bananas instead of excluding results that only include both apples and bananas.
 
-It is also possible to combine the quotation-mark operators with negations: users can append a minus sign before elements and phrases they wish to omit from search results (e.g., -negate -this keep that or -"no to all of this").
-
-In practice this means it’s possible to search for "fear is" -"fear itself" to get results from Frank Herbert’s Dune (“fear is the mind-killer”) but not Roosevelt’s speech.
-
-:::note
-Quoting a phrase will still apply stemming, thus Manifold takes into account misspellings, ignores cases, etc.
-
-When negations are employed, they follow the NOR paradigm instead of NAND. If a search includes -apples -bananas Manifold will exclude results that mention apples or bananas instead of excluding results that only include both apples and bananas.
+:::tip Search Not Working?
+Are you searching for something you know is in the system but you’re not getting any results? That’s likely because Projects in Draft status are *not* indexed by Manifold’s search engine, Elasticsearch. Once the Project is toggled out of Draft, the system will index its content and make it available to search (see [Project Properties](../backend/projects.md#draft-mode)).
 :::

@@ -149,11 +149,9 @@ Determining when drafts are made public falls to the discretion of publishers.
 
 #### Featured
 
-Featured Projects take pride of place on the home page in a section of the library all of their own. Only four Projects display in this section at a time. If more than four Projects are toggled to be featured, only the four most recent will show. By default, new Projects are *not* set to be featured.
+Featured Projects are included in the [Following](../using/manifold_library.md#following) view as a means to showcase new Projects to readers who may not otherwise see them.  Only four Projects display in this section at a time. If more than four Projects are toggled to be featured, only the four most recent will show. By default, new Projects are *not* set to be featured.
 
-:::note
-If Project Collections are being employed, the Featured Projects blade will not appear. But Projects marked as being Featured can be sorted into a Smart Collection. See the [Project Collections](../backend/project_collections.md) section for more.
-:::
+The Featured Project toggle also serves as as filter for [Project Collections](../backend/project_collections.md).
 
 #### Finished
 
