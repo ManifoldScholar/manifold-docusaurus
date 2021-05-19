@@ -14,7 +14,7 @@ Manifold stores four primary kinds of content: 1) database content, 2) file atta
 
 Most content that is entered into Manifold is stored in the database. Each Manifold instance is backed by a PostgreSQL database. Manifold fully manages the state of its database. When you upgrade to a new version of Manifold, any new database migrations are run as part of that upgrade process and those migrations are responsible for updating the state of the database. Interfacing directly with a PostgreSQL database is outside of the scope of this documentation.
 
-:::warning
+:::caution
 There are very few reasons, besides backup, to directly access Manifold's database. Doing so can easily lead to data in an unstable state. Instead, read and write Manifold data using its REST API, it's command line interface, or the API's Rails console.
 :::
 

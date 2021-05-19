@@ -1,0 +1,87 @@
+---
+slug: "manifoldv020released"
+title: "Manifold v0.2.0 Released"
+image: ""
+image_alt: ""
+---
+
+On behalf of the entire Manifold team, I'm super excited to announce the release of Manifold v0.2.0! The release is up on Github now, and we'll be rolling it out to our staging site later today. This release contains a number of new features and bugfixes, listed below. For the full list of revisions and pull requests, please consult&nbsp;the changelog.
+
+
+
+<!--truncate-->
+
+[Star](https://github.com/ManifoldScholar/manifold)[Watch](https://github.com/ManifoldScholar/manifold/subscription)<script async="" defer src="https://buttons.github.io/buttons.js"></script> On behalf of the entire Manifold team, I'm super excited to announce the release of Manifold v0.2.0! The release is up on [Github](https://github.com/ManifoldScholar/manifold/tree/v0.2.0) now, and we'll be rolling it out to our [staging site](http://staging.manifoldapp.org) later today. This release contains a number of new features and bugfixes, listed below. For the full list of revisions and pull requests, please consult&nbsp;the [changelog](https://github.com/ManifoldScholar/manifold/blob/v0.2.0/CHANGELOG.md). Remember, Manifold is open source and freely available to all who are interested. While we have plans to build docker containers and OS packages, we've also written up [installation instructions](https://github.com/ManifoldScholar/manifold-docs/blob/master/developers/installation/development.md) for all you early adopters out there. Take it for a spin and let us know how it goes. As always, we appreciate any feedback. To support our effort and motivate our development team, please take a moment to watch or star our repository on Github! **Features**
+- All ingestion strategies can support a .zip or a directory [#398](https://github.com/ManifoldScholar/manifold/issues/398)
+- Backend users can edit text stylesheets [#367](https://github.com/ManifoldScholar/manifold/issues/367)
+- Manifold can ingest a single HTML file as a text [#360](https://github.com/ManifoldScholar/manifold/issues/360)
+- Manifold supports Node 6.10.x [#343](https://github.com/ManifoldScholar/manifold/issues/343)
+- Render a consistently styled confirmation box when leaving unsaved forms [#309](https://github.com/ManifoldScholar/manifold/issues/309)
+- Add keyboard inputs to all modal dialogs [#302](https://github.com/ManifoldScholar/manifold/issues/302)
+- Backend users can create, update, edit, and delete resource collections [#281](https://github.com/ManifoldScholar/manifold/issues/281)
+- Youtube and Vimeo resources import thumbnails from providers [#278](https://github.com/ManifoldScholar/manifold/issues/278)
+- React-router updated from 2.x to 4.x [#276](https://github.com/ManifoldScholar/manifold/issues/276)
+- Manifold renders sensible fallback fonts when Typekit is not enabled [#274](https://github.com/ManifoldScholar/manifold/issues/274)
+- Backend text ingestion user interface is more user friendly [#273](https://github.com/ManifoldScholar/manifold/issues/273)
+- Texts can be re-ingested [#272](https://github.com/ManifoldScholar/manifold/issues/272)
+- Readers can comment on resources [#271](https://github.com/ManifoldScholar/manifold/issues/271)
+- Backend users can configure a generic project avatar or upload a thumbnail [#270](https://github.com/ManifoldScholar/manifold/issues/270)
+- Readers can generate a citation (MLA, APA, Chicago, etc.) for the selected passage [#269](https://github.com/ManifoldScholar/manifold/issues/269)
+- Manifold utilizes Postgres JSONB field for storing text section content [#258](https://github.com/ManifoldScholar/manifold/issues/258)
+- Installation instructions are included in manifold/manifold-docs [#245](https://github.com/ManifoldScholar/manifold/issues/245)
+**Bugs**
+- Markdown ingestion fails if there's no stylesheet [#399](https://github.com/ManifoldScholar/manifold/issues/399)
+- HTML ingestion fails if there is no \<style\> tag in the document head. [#397](https://github.com/ManifoldScholar/manifold/issues/397)
+- If an API request triggers a fatal error (500 or 404), client app should return the correct status code. [#396](https://github.com/ManifoldScholar/manifold/issues/396)
+- Following page crashes when not logged in [#391](https://github.com/ManifoldScholar/manifold/issues/391)
+- Link to resource detail from activity feed is incorrect and 404s [#380](https://github.com/ManifoldScholar/manifold/issues/380)
+- Deleting a resource should trigger deletion of associated resource annotations [#379](https://github.com/ManifoldScholar/manifold/issues/379)
+- Project thumbnail is stretched on frontend [#378](https://github.com/ManifoldScholar/manifold/issues/378)
+- Removing text should destroy "TEXT\_CREATED" event [#374](https://github.com/ManifoldScholar/manifold/issues/374)
+- Removing a resource annotation doesn't remove it from margin until page reload. [#373](https://github.com/ManifoldScholar/manifold/issues/373)
+- Missing margin in backend project detail form [#370](https://github.com/ManifoldScholar/manifold/issues/370)
+- Project avatar thumbnail field is missing margin [#369](https://github.com/ManifoldScholar/manifold/issues/369)
+- Text in google doc ingestion is too small and not responsive [#368](https://github.com/ManifoldScholar/manifold/issues/368)
+- Manifold reader appears to apply default paragraph margin of 0 [#366](https://github.com/ManifoldScholar/manifold/issues/366)
+- Press logo doesn't show in backend after its set. [#365](https://github.com/ManifoldScholar/manifold/issues/365)
+- Metadata header on project page should not appear if a project has no metadata. [#364](https://github.com/ManifoldScholar/manifold/issues/364)
+- Unable to update text title in backend [#362](https://github.com/ManifoldScholar/manifold/issues/362)
+- SSR mismatch when enabling download link in Slide.Caption [#354](https://github.com/ManifoldScholar/manifold/issues/354)
+- Empty collections slideshow should be adjusted or hidden [#353](https://github.com/ManifoldScholar/manifold/issues/353)
+- Inconsistent scale of social icons on project hero [#341](https://github.com/ManifoldScholar/manifold/issues/341)
+- Ingestion builder does not remove text sections during reingestion [#338](https://github.com/ManifoldScholar/manifold/issues/338)
+- ProjectDetail.Texts reordering isn't working [#336](https://github.com/ManifoldScholar/manifold/issues/336)
+- Project images are converted to jpegs, don't allow transparent backgrounds [#335](https://github.com/ManifoldScholar/manifold/issues/335)
+- Move annotation and resource fetching to refactored Section container [#331](https://github.com/ManifoldScholar/manifold/issues/331)
+- Improve responsive behavior of backend header delete/preview buttons [#327](https://github.com/ManifoldScholar/manifold/issues/327)
+- Improve responsive behavior of backend date field [#326](https://github.com/ManifoldScholar/manifold/issues/326)
+- Entering an invalid project or text URL should 404 [#319](https://github.com/ManifoldScholar/manifold/issues/319)
+- Updating metadata on texts (in backend) doesn't save [#317](https://github.com/ManifoldScholar/manifold/issues/317)
+- Managing contributors on texts seems not to work. [#316](https://github.com/ManifoldScholar/manifold/issues/316)
+- Style issues on users list [#313](https://github.com/ManifoldScholar/manifold/issues/313)
+- Investigate why Manifold can't ingest this google doc [#311](https://github.com/ManifoldScholar/manifold/issues/311)
+- Typekit fonts should load (if configured) when SSR is absent [#310](https://github.com/ManifoldScholar/manifold/issues/310)
+- Footer text nav has incorrect top margin [#308](https://github.com/ManifoldScholar/manifold/issues/308)
+- Tags in dropdowns should be sorted alphabetically [#307](https://github.com/ManifoldScholar/manifold/issues/307)
+- Component FetchData methods should not be triggered by URL hash changes [#304](https://github.com/ManifoldScholar/manifold/issues/304)
+- Vertical alignment of mobile backend secondary nav is off by a few pixels [#303](https://github.com/ManifoldScholar/manifold/issues/303)
+- Model filter loses scope after validating paginated results [#299](https://github.com/ManifoldScholar/manifold/issues/299)
+- Variance in backend resource icon size [#294](https://github.com/ManifoldScholar/manifold/issues/294)
+- Backend project nav clips on smaller screens [#293](https://github.com/ManifoldScholar/manifold/issues/293)
+- Modal dialog buttons are missing a hover state [#291](https://github.com/ManifoldScholar/manifold/issues/291)
+- Changing pages in resources list breaks filters [#288](https://github.com/ManifoldScholar/manifold/issues/288)
+- Collection resource count shows all resources in project [#287](https://github.com/ManifoldScholar/manifold/issues/287)
+- Visibility nav overlaps TOC in reader (on mobile screen) [#284](https://github.com/ManifoldScholar/manifold/issues/284)
+- Form upload component does not remove attachment [#266](https://github.com/ManifoldScholar/manifold/issues/266)
+- Improve scroll behavior on route change [#264](https://github.com/ManifoldScholar/manifold/issues/264)
+- Filtering resource collections doesn't update URL params [#257](https://github.com/ManifoldScholar/manifold/issues/257)
+- Resource preview doesn't update when resource cube is highlighted in Firefox [#256](https://github.com/ManifoldScholar/manifold/issues/256)
+- Remove excess left margin in backend entity header [#254](https://github.com/ManifoldScholar/manifold/issues/254)
+- Add &rel=0 to Youtube video URLs to prevent related videos from displaying [#253](https://github.com/ManifoldScholar/manifold/issues/253)
+- Marginal resource thumbnails aren't displaying until hovering over the icon [#252](https://github.com/ManifoldScholar/manifold/issues/252)
+- Backend resource search input submit does not preventDefault [#251](https://github.com/ManifoldScholar/manifold/issues/251)
+- Issues parsing Manifold-Docs TOC [#248](https://github.com/ManifoldScholar/manifold/issues/248)
+- Ingesting Markdown Files fails if the sources include a zero k file. [#247](https://github.com/ManifoldScholar/manifold/issues/247)
+- CSS Validator throws an exception with invalid CSS [#246](https://github.com/ManifoldScholar/manifold/issues/246)
+
+
