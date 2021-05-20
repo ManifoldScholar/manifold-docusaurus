@@ -1,0 +1,10 @@
+.markdown {
+  /* These are overwritten, so they have to be overwritten again... */
+  > h2 {
+    --ifm-h2-font-size: 1.625rem;
+  }
+
+  > h3 {
+    --ifm-h3-font-size: 1.375rem;
+  }
+}

@@ -24,6 +24,8 @@ $ yarn start
 
 This command starts a local development server and open up a browser window. Most changes are reflected live without having to restart the server.
 
+If your local enviroment does not start as expected and your Terminal reports that it cannot find a module, rerun the installation command from the top directory of your documentation repository: `$ yarn install`.
+
 ### Build
 
 ```
@@ -53,10 +55,10 @@ The current state of the master branch is always visible at [https://manifoldsch
 5. Push your commit from your local the remote repo using the name of the branch you created: `git push origin xx/99`.
 6. Navigate your browser to the repo and create a pull request for the branch you just pushed: https://github.com/ManifoldScholar/manifold-docusaurus.
 7. Update your local environment with these commands:
-	- `git checkout master`
-	- *If* you made changes to other files you didn’t include with your commit, next run `git stash`. This will stash your changes in a safe space, which you can apply in a moment.
-	- `git fetch && git rebase origin/master`
-	- *If* you stashed files, you can now reapply those adjustments by running `git stash apply`.
+   - `git checkout master`
+   - _If_ you made changes to other files you didn’t include with your commit, next run `git stash`. This will stash your changes in a safe space, which you can apply in a moment.
+   - `git fetch && git rebase origin/master`
+   - _If_ you stashed files, you can now reapply those adjustments by running `git stash apply`.
 8. Return to step 1 and begin work on another section.
 
 ### Other Common CLI Commands
@@ -79,7 +81,7 @@ When linking from one section of documentation to another, use relative links th
 
 ### Style
 
-- Capitalize Manifold-specific terms like *Projects,* *Texts*, *Resources,* *Resource Collections*, *Manifold Reader* when used in the context of the application.
+- Capitalize Manifold-specific terms like _Projects,_ _Texts_, _Resources,_ _Resource Collections_, _Manifold Reader_ when used in the context of the application.
 - Use quotation marks around terms and phrases when used to describe input or values for fields in the backend.
 - Format field names as code.
 

@@ -1,0 +1,13 @@
+html {
+  -webkit-font-smoothing: auto;
+}
+
+html[data-theme="dark"] {
+  --ifm-link-color: var(--green);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  /* Needs to override theme-classic */
+  font-size: var(--ifm-h1-font-size) !important;
+}

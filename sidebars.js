@@ -17,13 +17,15 @@ module.exports = {
             'administering/troubleshooting',
             'administering/securing_manifold',
           {
-            'Configuring Manifold': [
+            'Configuring Settings': [
               'administering/configuring/managing_settings',
-              'administering/configuring/general_settings',
+              'administering/configuring/properties',
               'administering/configuring/theme_settings',
               'administering/configuring/integration_settings',
+              'administering/configuring/ingestion_settings',
               'administering/configuring/project_subjects',
               'administering/configuring/email_settings',
+              'administering/configuring/export_targets',
             ]
           },
           {
@@ -31,6 +33,7 @@ module.exports = {
               'administering/reference/environment_variables',
               'administering/reference/api_rake_tasks',
               'administering/reference/omnibus_reference',
+              'administering/reference/downloads',
             ]
           },
         ]
@@ -48,11 +51,15 @@ module.exports = {
         'Manifold Backend': [
             'backend/projects',
             'backend/project_collections',
-            'backend/text',
+            'backend/texts',
             'backend/resource',
             'backend/resource_collections',
             'backend/users',
             'backend/makers',
+            'backend/features',
+            'backend/pages',
+            'backend/analytics',
+            'backend/metadata',
         ]
       },
       {
