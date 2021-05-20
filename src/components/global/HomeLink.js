@@ -1,11 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
+import { useThemeConfig } from "@docusaurus/theme-common";
 import Logo from "../svgs/Logo";
 
 const HomeLink = ({ className }) => {
+  const { manifoldLogoLink } = useThemeConfig();
+
   return (
-    <a className={className} href="./">
+    <a className={className} href={manifoldLogoLink}>
       <Logo size={38} className={`${className}__logo`} />
       <span>Manifold</span>
     </a>

@@ -18,6 +18,8 @@ const ICON_STYLE = {
   height: "16px"
 };
 
+const MARKETING_URL = "http://staging.manifoldapp.org/";
+
 module.exports = {
   title: "Manifold Docs",
   tagline: "The tagline of my site",
@@ -36,23 +38,24 @@ module.exports = {
       ogImageAlt:
         "People building a wooden Manifold logo. Text below the logo says 'Manifold is what we make it'"
     },
+    manifoldLogoLink: MARKETING_URL,
     mainNav: {
       links: [
         {
           label: "Features",
-          href: "http://staging.manifoldapp.org/features",
+          href: `${MARKETING_URL}/features`,
           isButton: false,
           target: '_self'
         },
         {
           label: "Community",
-          href: "http://staging.manifoldapp.org/community",
+          href: `${MARKETING_URL}/community`,
           isButton: false,
           target: '_self'
         },
         {
           label: "Services",
-          href: "http://staging.manifoldapp.org/services",
+          href: `${MARKETING_URL}/services`,
           isButton: false,
           target: '_self'
         },
@@ -65,7 +68,7 @@ module.exports = {
         },
         {
           label: "Get Started",
-          href: "http://staging.manifoldapp.org/get-started",
+          href: `${MARKETING_URL}/get-started`,
           isButton: true,
           target: '_self'
         }
@@ -78,17 +81,17 @@ module.exports = {
           items: [
             {
               label: "Get Started",
-              href: "http://staging.manifoldapp.org/get-started",
+              href: `${MARKETING_URL}/get-started`,
               target: '_self'
             },
             {
               label: "Features",
-              href: "http://staging.manifoldapp.org/features",
+              href: `${MARKETING_URL}/features`,
               target: '_self'
             },
             {
               label: "Services",
-              href: "http://staging.manifoldapp.org/services",
+              href: `${MARKETING_URL}/services`,
               target: '_self'
             },
             {
@@ -102,7 +105,7 @@ module.exports = {
           items: [
             {
               label: "Community",
-              href: "http://staging.manifoldapp.org/community",
+              href: `${MARKETING_URL}/community`,
               target: '_self'
             },
             {
@@ -111,12 +114,12 @@ module.exports = {
             },
             {
               label: "About",
-              href: "http://staging.manifoldapp.org/history",
+              href: `${MARKETING_URL}/history`,
               target: '_self'
             },
             {
               label: "Development",
-              href: "http://staging.manifoldapp.org/development",
+              href: `${MARKETING_URL}/development`,
               target: '_self'
             }
           ]
