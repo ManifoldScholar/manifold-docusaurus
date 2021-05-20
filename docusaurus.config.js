@@ -41,28 +41,33 @@ module.exports = {
         {
           label: "Features",
           href: "http://staging.manifoldapp.org/features",
-          isButton: false
+          isButton: false,
+          target: '_self'
         },
         {
           label: "Community",
           href: "http://staging.manifoldapp.org/community",
-          isButton: false
+          isButton: false,
+          target: '_self'
         },
         {
           label: "Services",
           href: "http://staging.manifoldapp.org/services",
-          isButton: false
+          isButton: false,
+          target: '_self'
         },
         {
           label: "Docs",
           to: "docs",
           isButton: false,
-          isSelected: true
+          isSelected: true,
+          target: '_self'
         },
         {
           label: "Get Started",
           href: "http://staging.manifoldapp.org/get-started",
-          isButton: true
+          isButton: true,
+          target: '_self'
         }
       ]
     },
@@ -73,15 +78,18 @@ module.exports = {
           items: [
             {
               label: "Get Started",
-              href: "http://staging.manifoldapp.org/get-started"
+              href: "http://staging.manifoldapp.org/get-started",
+              target: '_self'
             },
             {
               label: "Features",
-              href: "http://staging.manifoldapp.org/features"
+              href: "http://staging.manifoldapp.org/features",
+              target: '_self'
             },
             {
               label: "Services",
-              href: "http://staging.manifoldapp.org/services"
+              href: "http://staging.manifoldapp.org/services",
+              target: '_self'
             },
             {
               label: "Docs",
@@ -94,7 +102,8 @@ module.exports = {
           items: [
             {
               label: "Community",
-              href: "http://staging.manifoldapp.org/community"
+              href: "http://staging.manifoldapp.org/community",
+              target: '_self'
             },
             {
               label: "Blog",
@@ -102,11 +111,13 @@ module.exports = {
             },
             {
               label: "About",
-              href: "http://staging.manifoldapp.org/history"
+              href: "http://staging.manifoldapp.org/history",
+              target: '_self'
             },
             {
               label: "Development",
-              href: "http://staging.manifoldapp.org/development"
+              href: "http://staging.manifoldapp.org/development",
+              target: '_self'
             }
           ]
         },
