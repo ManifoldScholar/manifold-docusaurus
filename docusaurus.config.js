@@ -30,7 +30,13 @@ module.exports = {
   projectName: "manifold-docusaurus", // Usually your repo name.
   plugins: [
     "docusaurus-plugin-sass",
-    path.resolve(__dirname, "src/plugin/styled-components")
+    path.resolve(__dirname, "src/plugin/styled-components"),
+    [
+      'docusaurus2-dotenv',
+      {
+        defaults: true
+      }
+    ]
   ],
   themeConfig: {
     metaData: {
