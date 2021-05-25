@@ -5,14 +5,14 @@ module.exports = {
         'Administering Manifold': [
             'administering/hosting',
             'administering/installation',
+            'administering/upgrading',
+            { 'Release Notes': [
+                { type: 'link', href: '/manifold-docusaurus/docs/administering/release_notes/v6x', label: "Latest" },
+                'administering/release_notes/v6x',
+              ]
+            },
             'administering/managing_services',
             'administering/storage',
-          {
-            Upgrading: [
-              'administering/upgrading/upgrading',
-              'administering/upgrading/release_notes',
-            ]
-          },
             'administering/backup_restore',
             'administering/troubleshooting',
             'administering/securing_manifold',
@@ -29,7 +29,7 @@ module.exports = {
             ]
           },
           {
-            Reference: [
+            'Reference': [
               'administering/reference/environment_variables',
               'administering/reference/api_rake_tasks',
               'administering/reference/omnibus_reference',
@@ -63,7 +63,7 @@ module.exports = {
         ]
       },
       {
-        Developers: [
+        'Developers': [
             'developers/development_environment',
             'developers/contributing',
             'developers/tests',
