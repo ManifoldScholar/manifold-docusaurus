@@ -1,8 +1,6 @@
 ---
 slug: "manifolddigitalservicesspotlightathabascauniversitypress"
 title: "Manifold Digital Services Spotlight: Athabasca University Press"
-image: ""
-image_alt: ""
 ---
 
 

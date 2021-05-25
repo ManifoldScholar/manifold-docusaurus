@@ -1,8 +1,6 @@
 ---
 slug: "manifoldv011released"
 title: "Manifold v0.1.1 Released"
-image: ""
-image_alt: ""
 ---
 
 

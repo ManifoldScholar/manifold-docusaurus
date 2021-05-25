@@ -1,8 +1,6 @@
 ---
 slug: "manifoldondigitalocean"
 title: "Manifold on DigitalOcean"
-image: ""
-image_alt: ""
 ---
 
 

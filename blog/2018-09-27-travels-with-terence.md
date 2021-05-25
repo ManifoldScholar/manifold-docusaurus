@@ -1,8 +1,6 @@
 ---
 slug: "travelswithterence"
 title: "Travels with Terence"
-image: ""
-image_alt: ""
 ---
 
 

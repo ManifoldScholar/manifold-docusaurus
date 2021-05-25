@@ -1,8 +1,6 @@
 ---
 slug: "manifolddigitalservicespilotspotlightconcordiauniversitypress"
 title: "Manifold Digital Services Pilot Spotlight: Concordia University Press"
-image: ""
-image_alt: ""
 ---
 
 

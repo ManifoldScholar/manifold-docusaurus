@@ -1,8 +1,6 @@
 ---
 slug: "manifolddigitalservicesspotlightintermezzo"
 title: "Manifold Digital Services Spotlight: Intermezzo"
-image: ""
-image_alt: ""
 ---
 
 

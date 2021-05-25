@@ -1,8 +1,6 @@
 ---
 slug: "manifolddigitalservicesspotlighttheuniversityofwestindiespress"
 title: "Manifold Digital Services Spotlight: The University of the West Indies Press"
-image: ""
-image_alt: ""
 ---
 
 

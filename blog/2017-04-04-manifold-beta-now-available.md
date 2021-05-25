@@ -1,8 +1,6 @@
 ---
 slug: "manifoldbetanowavailable"
 title: "Manifold Beta Now Available"
-image: ""
-image_alt: ""
 ---
 
 

@@ -1,8 +1,6 @@
 ---
 slug: "announcingmanifoldscholarshipphasetwo"
 title: "Announcing Manifold Scholarship Phase Two"
-image: ""
-image_alt: ""
 ---
 
 

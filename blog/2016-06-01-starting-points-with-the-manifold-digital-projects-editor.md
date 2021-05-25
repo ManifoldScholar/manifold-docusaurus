@@ -1,8 +1,6 @@
 ---
 slug: "startingpointswiththemanifolddigitalprojectseditor"
 title: "Starting Points with the Manifold Digital Projects Editor"
-image: ""
-image_alt: ""
 ---
 
 

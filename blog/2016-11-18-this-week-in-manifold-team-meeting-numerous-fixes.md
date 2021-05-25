@@ -1,8 +1,6 @@
 ---
 slug: "thisweekinmanifoldteammeetingnumerousfixes"
 title: "This Week in Manifold: Team meeting, Numerous Fixes"
-image: ""
-image_alt: ""
 ---
 
 

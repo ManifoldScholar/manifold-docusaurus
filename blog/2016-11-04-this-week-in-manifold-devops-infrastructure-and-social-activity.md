@@ -1,8 +1,6 @@
 ---
 slug: "thisweekinmanifolddevopsinfrastructureandsocialactivity"
 title: "This Week in Manifold: DevOps, Infrastructure, and Social Activity"
-image: ""
-image_alt: ""
 ---
 
 

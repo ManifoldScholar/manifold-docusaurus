@@ -1,8 +1,6 @@
 ---
 slug: "openingaccessthereinventionoftheacademicbook"
 title: "Opening Access: The Reinvention of the Academic Book"
-image: ""
-image_alt: ""
 ---
 
 

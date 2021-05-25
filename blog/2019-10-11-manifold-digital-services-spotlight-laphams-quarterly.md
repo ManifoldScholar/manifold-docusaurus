@@ -1,8 +1,6 @@
 ---
 slug: "manifolddigitalservicesspotlightlaphamsquarterly"
 title: "Manifold Digital Services Spotlight: Lapham's Quarterly"
-image: ""
-image_alt: ""
 ---
 
 

@@ -1,8 +1,6 @@
 ---
 slug: "manifolddigitalservicesspotlightemorycenterfordigitalscholarship"
 title: "Manifold Digital Services Spotlight: Emory Center for Digital Scholarship"
-image: ""
-image_alt: ""
 ---
 
 

@@ -1,8 +1,6 @@
 ---
 slug: "manifolddigitalservicesspotlightmeshatmichiganstateuniversity"
 title: "Manifold Digital Services Spotlight: MESH at Michigan State University"
-image: ""
-image_alt: ""
 ---
 
 

@@ -1,8 +1,6 @@
 ---
 slug: "readingwithmatthewkgold"
 title: "Reading with Matthew K. Gold"
-image: ""
-image_alt: ""
 ---
 
 

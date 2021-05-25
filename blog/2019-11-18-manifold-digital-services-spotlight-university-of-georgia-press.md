@@ -1,8 +1,6 @@
 ---
 slug: "manifolddigitalservicesspotlightuniversityofgeorgiapress"
 title: "Manifold Digital Services Spotlight: University of Georgia Press"
-image: ""
-image_alt: ""
 ---
 
 

@@ -1,8 +1,6 @@
 ---
 slug: "manifoldv013releasedtostagingmanifoldapporg"
 title: "Manifold v0.1.3 released to staging.manifoldapp.org"
-image: ""
-image_alt: ""
 ---
 
 

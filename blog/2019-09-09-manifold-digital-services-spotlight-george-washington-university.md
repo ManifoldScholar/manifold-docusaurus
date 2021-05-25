@@ -1,8 +1,6 @@
 ---
 slug: "manifolddigitalservicesspotlightgeorgewashingtonuniversity"
 title: "Manifold Digital Services Spotlight: George Washington University"
-image: ""
-image_alt: ""
 ---
 
 

@@ -1,8 +1,6 @@
 ---
 slug: "manifoldv020released"
 title: "Manifold v0.2.0 Released"
-image: ""
-image_alt: ""
 ---
 
 On behalf of the entire Manifold team, I'm super excited to announce the release of Manifold v0.2.0! The release is up on Github now, and we'll be rolling it out to our staging site later today. This release contains a number of new features and bugfixes, listed below. For the full list of revisions and pull requests, please consult&nbsp;the changelog.

@@ -1,8 +1,6 @@
 ---
 slug: "introducingprojectcollections"
 title: "Introducing Project Collections"
-image: ""
-image_alt: ""
 ---
 
 

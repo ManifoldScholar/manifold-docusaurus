@@ -1,8 +1,6 @@
 ---
 slug: "manifolddigitalservicesspotlightliverpooluniversitypress"
 title: "Manifold Digital Services Spotlight: Liverpool University Press"
-image: ""
-image_alt: ""
 ---
 
 

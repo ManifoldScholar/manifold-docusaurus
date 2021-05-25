@@ -1,8 +1,6 @@
 ---
 slug: "buildingmanifold"
 title: "Building Manifold"
-image: ""
-image_alt: ""
 ---
 
 

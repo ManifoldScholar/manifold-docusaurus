@@ -1,8 +1,6 @@
 ---
 slug: "announcingmanifold10"
 title: "Announcing the Release of Manifold 1.0"
-image: ""
-image_alt: ""
 ---
 
 

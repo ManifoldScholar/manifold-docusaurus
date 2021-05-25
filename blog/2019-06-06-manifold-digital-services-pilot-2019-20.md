@@ -1,8 +1,6 @@
 ---
 slug: "manifolddigitalservicespilot201920"
 title: "Manifold Digital Services Pilot 2019–20"
-image: ""
-image_alt: ""
 ---
 
 
