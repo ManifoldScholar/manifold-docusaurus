@@ -22,7 +22,7 @@ Follow the upgrade instructions that correspond to the type of Manifold installa
 
 :::caution
 * Before upgrading, be sure to backup your installation by following our [backup instructions](/manifold-docusaurus/docs/administering/backup_restore).
-* Please also consult the [release notes](/manifold-docusaurus/docs/administering/upgrading/release_notes) for the version you're installing, in case there are manual upgrade steps that must be taken.
+* Please also consult the [release notes](/manifold-docusaurus/docs/administering/release_notes/v6x) for the version you're installing, in case there are manual upgrade steps that must be taken.
 * When a new version of Manifold is published, we test the upgrade process from the previous version. We cannot guarantee that upgrading across multiple major versions will work correctly, so always upgrade to the next major version.
 :::
 
@@ -36,7 +36,6 @@ To determine what version is installed, run this command on the host:
 cat /opt/manifold/embedded/src/MANIFOLD_VERSION
 ```
 :::
-
 
 After you've installed the package, you should stop all services and reconfigure. Stop all Manifold services with `manifold-ctl stop`. Then run `manifold-ctl reconfigure` to ensure that all configuration is current. Once that’s complete, you can restart the services with `manifold-ctl start`.
 
