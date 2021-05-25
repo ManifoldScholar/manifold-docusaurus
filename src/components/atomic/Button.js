@@ -1,7 +1,6 @@
 import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
 import { aFocus, reducedMotion } from "../../styles/mixins";
-import Nav from "../global/Nav";
 
 const Button = styled.button`
   color: var(--header-color);
@@ -31,12 +30,6 @@ const Button = styled.button`
         30
       )}
     `}
-
-  /* stylelint-disable */
-  ${Nav} & {
-    padding: 7px 16px 8px;
-  }
-  /* stylelint-enable */
 
   &::after {
     content: "";

@@ -12,7 +12,7 @@
   background-color: var(--white);
   width: 18px;
   height: 18px;
-  margin: 3px 0;
+  margin: 0;
   left: 3px;
 
   html[data-theme="dark"] & {
@@ -27,9 +27,11 @@
 }
 
 .react-toggle-track-check {
-  left: 7px;
+  top: -6px !important;
+  left: 5px !important;
 }
 
 .react-toggle-track-x {
-  right: 6px;
+  top: -6px !important;
+  right: 11px !important;
 }
