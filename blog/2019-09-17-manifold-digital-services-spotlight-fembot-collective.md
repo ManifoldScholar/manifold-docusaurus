@@ -1,8 +1,6 @@
 ---
 slug: "manifolddigitalservicesspotlightfembotcollective"
 title: "Manifold Digital Services Spotlight: Fembot Collective"
-image: ""
-image_alt: ""
 ---
 
 

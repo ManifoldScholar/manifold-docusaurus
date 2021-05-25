@@ -1,8 +1,6 @@
 ---
 slug: "manifolddigitalservicesspotlightreanimatepublishing"
 title: "Manifold Digital Services Spotlight: Reanimate Publishing"
-image: ""
-image_alt: ""
 ---
 
 

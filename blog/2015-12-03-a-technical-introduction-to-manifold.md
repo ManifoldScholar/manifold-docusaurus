@@ -1,8 +1,6 @@
 ---
 slug: "atechnicalintroductiontomanifold"
 title: "A Technical Introduction to Manifold"
-image: ""
-image_alt: ""
 ---
 
 

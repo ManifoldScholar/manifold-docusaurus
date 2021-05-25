@@ -1,8 +1,6 @@
 ---
 slug: "manifoldinportlandthegratefulfed"
 title: "Manifold in Portland: The Grateful Fed"
-image: ""
-image_alt: ""
 ---
 
 

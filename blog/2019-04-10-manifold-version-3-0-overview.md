@@ -1,8 +1,6 @@
 ---
 slug: "manifoldversion30overview"
 title: "Manifold Version 3.0 Overview"
-image: ""
-image_alt: ""
 ---
 
 

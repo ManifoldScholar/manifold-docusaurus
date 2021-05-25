@@ -1,8 +1,6 @@
 ---
 slug: "manifolddigitalservicesspotlightgallaudetuniversitypress"
 title: "Manifold Digital Services Spotlight: Gallaudet University Press"
-image: ""
-image_alt: ""
 ---
 
 

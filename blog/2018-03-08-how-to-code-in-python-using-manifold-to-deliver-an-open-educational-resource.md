@@ -1,8 +1,6 @@
 ---
 slug: "howtocodeinpythonusingmanifoldtodeliveranopeneducationalresource"
 title: "How To Code in Python: Using Manifold to Deliver an Open Educational Resource"
-image: ""
-image_alt: ""
 ---
 
 

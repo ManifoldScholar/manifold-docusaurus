@@ -1,8 +1,6 @@
 ---
 slug: "joiningmanifold"
 title: "Joining Manifold"
-image: ""
-image_alt: ""
 ---
 
 

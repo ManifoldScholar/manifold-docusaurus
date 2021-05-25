@@ -1,8 +1,6 @@
 ---
 slug: "manifolddigitalservicesspotlighttempleuniversitypress"
 title: "Manifold Digital Services Spotlight: Temple University Press"
-image: ""
-image_alt: ""
 ---
 
 

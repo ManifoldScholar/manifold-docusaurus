@@ -1,8 +1,6 @@
 ---
 slug: "manifolddigitalservicesspotlightartepublicopress"
 title: "Manifold Digital Services Spotlight: Arte Publico Press"
-image: ""
-image_alt: ""
 ---
 
 

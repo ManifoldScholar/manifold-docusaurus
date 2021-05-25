@@ -1,8 +1,6 @@
 ---
 slug: "thisweekinmanifoldprojectdetailimprovements"
 title: "This Week in Manifold: Project Detail Improvements"
-image: ""
-image_alt: ""
 ---
 
 

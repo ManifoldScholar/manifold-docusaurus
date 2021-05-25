@@ -1,8 +1,6 @@
 ---
 slug: "manifolddigitalservicesspotlightuniversityofcincinnatipress"
 title: "Manifold Digital Services Spotlight: University of Cincinnati Press"
-image: ""
-image_alt: ""
 ---
 
 

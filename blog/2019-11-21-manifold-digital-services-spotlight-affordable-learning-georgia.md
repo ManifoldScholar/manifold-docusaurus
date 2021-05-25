@@ -1,8 +1,6 @@
 ---
 slug: "manifolddigitalservicesspotlightaffordablelearninggeorgia"
 title: "Manifold Digital Services Spotlight: Affordable Learning Georgia"
-image: ""
-image_alt: ""
 ---
 
 <!--truncate-->

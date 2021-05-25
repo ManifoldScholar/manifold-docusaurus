@@ -1,8 +1,6 @@
 ---
 slug: "manifolddigitalservicesspotlightindianauniversitypress"
 title: "Manifold Digital Services Spotlight: Indiana University Press"
-image: ""
-image_alt: ""
 ---
 
 

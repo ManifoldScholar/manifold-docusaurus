@@ -1,8 +1,6 @@
 ---
 slug: "manifolddigitalservicesspotlightuniversityofwashingtonpress"
 title: "Manifold Digital Services Spotlight: University of Washington Press"
-image: ""
-image_alt: ""
 ---
 
 

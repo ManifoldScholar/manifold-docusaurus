@@ -1,8 +1,6 @@
 ---
 slug: "manifolddigitalservicesspotlightblackwomenandreligiouscultures"
 title: "Manifold Digital Services Spotlight: Black Women and Religious Cultures"
-image: ""
-image_alt: ""
 ---
 
 

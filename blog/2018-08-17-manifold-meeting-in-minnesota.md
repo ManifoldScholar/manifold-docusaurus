@@ -1,8 +1,6 @@
 ---
 slug: "manifoldmeetinginminnesota"
 title: "Manifold Meeting in Minnesota"
-image: ""
-image_alt: ""
 ---
 
 

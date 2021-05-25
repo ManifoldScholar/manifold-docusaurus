@@ -1,8 +1,6 @@
 ---
 slug: "tenpublisherstobeginusingmanifold"
 title: "Ten publishers to begin using Manifold platform to publish scholarly work"
-image: ""
-image_alt: ""
 ---
 
 

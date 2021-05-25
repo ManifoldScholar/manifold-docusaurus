@@ -1,8 +1,6 @@
 ---
 slug: "thisweekinmanifoldbackend"
 title: "This Week in Manifold: Markdown and Backend Development"
-image: ""
-image_alt: ""
 ---
 
 
