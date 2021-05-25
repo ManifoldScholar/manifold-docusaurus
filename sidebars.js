@@ -8,9 +8,9 @@ module.exports = {
             'administering/managing_services',
             'administering/storage',
           {
-            Updating: [
-              'administering/updating/updating_instructions',
-              'administering/updating/release_notes',
+            Upgrading: [
+              'administering/upgrading/upgrading',
+              'administering/upgrading/release_notes',
             ]
           },
             'administering/backup_restore',

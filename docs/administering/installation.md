@@ -16,9 +16,11 @@ We offer three installation strategies for Manifold:
 1. Install with **Docker** images
 1. Install from **source**
 
-For package installations, we distribute packages for Ubuntu and Redhat/CentOS. The package will install and configure every service needed to run Manifold. You will need root access to the host in order to install Manifold from these packages. This is the fastest, easiest way to install Manifold, but it also is the most intrusive and gives you the least control over the installation. That said, for users who are not familiar with the Manifold technology stack (Rails, Node, ElasticSearch, PostgreSQL, Redis, and Nginx), package installation will be the fastest and simplest approach.
+For package installations, we distribute packages for Ubuntu (18.x and 20.x) and Redhat/CentOS (el7 and el8). The package will install and configure every service needed to run Manifold. You will need root access to the host in order to install Manifold from these packages. This is the fastest, easiest way to install Manifold, but it also is the most intrusive and gives you the least control over the installation. That said, for users who are not familiar with the Manifold technology stack (Rails, Node, ElasticSearch, PostgreSQL, Redis, and Nginx), package installation will be the fastest and simplest approach.
 
 When Manifold is installed using Docker, each service runs in its own Docker container and the services are coordinated using Docker compose.
+
+We're still working on documentation for installing Manifold from source. For now, this is not an officially supported installation method, but we hope to provide guidance soon.
 
 :::note
 Manifold is a new piece of software, and we're working hard to refine and improve the installation process. If you run into problems, please don't get frustrated. Let us know in Slack ([join here](https://manifold-slackin.herokuapp.com/)) or [report an issue](../developers/contributing#reporting-issues). It's very important to us that Manifold be easy to install, and we appreciate your help as we improve this process.
@@ -34,9 +36,10 @@ The current recommended Manifold version is <strong><Data path="manifoldVersion"
 
 ### Package Install
 
-The most recent version of Manifold for Ubuntu18 is <Data highestVersionFor="ubuntu18" />.
+The most recent version of Manifold is <Data highestVersionFor="ubuntu18" />.
 
-The following instructions have only been tested on Ubuntu 16 and Ubuntu 18 hosts. We recommend installing Manifold on Ubuntu 18. Your mileage will almost certainly vary if you attempt to install Manifold on a different Debian based distribution.
+As of Manifold v6, we have discontinued support for Ubuntu 16, which is now end of life. 
+
 
 #### 1. Download the Package
 
