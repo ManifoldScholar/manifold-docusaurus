@@ -31,6 +31,17 @@ const Button = styled.button`
       )}
     `}
 
+  ${({ size }) =>
+    size === "small"
+      ? css`
+          padding: 7px 16px 8px;
+        `
+      : size === "wide" &&
+        css`
+          padding-left: ${fluidScale("30px", "20px")};
+          padding-right: ${fluidScale("30px", "20px")};
+        `}
+
   &::after {
     content: "";
     display: block;
@@ -68,7 +79,8 @@ const Button = styled.button`
 `;
 
 Button.propTypes = {
-  block: PropTypes.bool
+  block: PropTypes.bool,
+  size: PropTypes.oneOf(["default", "small", "wide"]),
 };
 
 Button.displayName = "Atomic.Button";

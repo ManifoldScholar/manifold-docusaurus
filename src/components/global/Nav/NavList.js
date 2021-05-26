@@ -12,7 +12,7 @@ const NavList = ({ className, isMobile, routes }) => {
       {routes.map(({ label, isButton, isSelected, ...linkProps }, i) => (
         <li key={i} className={`${className}__item`}>
           {isButton ? (
-            <Button as="a" {...linkProps}>
+            <Button as="a" {...linkProps} size="small">
               Get Started
             </Button>
           ) : (
@@ -38,7 +38,7 @@ NavList.displayName = "Global.Nav.List";
 
 NavList.propTypes = {
   className: PropTypes.string,
-  isMobile: PropTypes.bool
+  isMobile: PropTypes.bool,
 };
 
 const StyledNavList = styled(NavList)`
