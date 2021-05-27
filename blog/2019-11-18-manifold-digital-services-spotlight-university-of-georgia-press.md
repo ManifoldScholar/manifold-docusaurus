@@ -1,13 +1,15 @@
 ---
 slug: "manifolddigitalservicesspotlightuniversityofgeorgiapress"
 title: "Manifold Digital Services Spotlight: University of Georgia Press"
+image: "/img/blog/legacy_wp/2019/11/ugapress-gopher.jpg"
+image_alt: "watercolor illustration of UGA Press logo and UMinn gopher holding Manifold logo"
 ---
 
+Last week, Manifold Digital Projects Editor Terence was at the University of Georgia Press—the oldest and largest publisher in Georgia—exploring new digital initiatives and publishing models with Director Lisa Bayer and Executive Editor of Scholarly and Digital Publishing Mick Gusinde-Duffy.
 
 
 <!--truncate-->
 
-[![watercolor illustration of UGA Press logo and UMinn gopher holding Manifold logo](/img/blog/legacy_wp/2019/11/ugapress-gopher.jpg)](/img/blog/legacy_wp/2019/11/ugapress-gopher.jpg)Last week, Manifold Digital Projects Editor Terence was at the University of Georgia Press—the oldest and largest publisher in Georgia—exploring new digital initiatives and publishing models with Director Lisa Bayer and Executive Editor of Scholarly and Digital Publishing Mick Gusinde-Duffy.
 
 > Brisk morning here in Athens, GA. After an enlivening run in the hotel fitness center, I'm now getting ready to head over to [@UGAPress](https://twitter.com/UGAPress?ref_src=twsrc%5Etfw) for two great days of [@ManifoldScholar](https://twitter.com/ManifoldScholar?ref_src=twsrc%5Etfw) training. All that thanks to [@Mickodopolous](https://twitter.com/Mickodopolous?ref_src=twsrc%5Etfw) for setting a fantastic schedule!
 >
@@ -34,7 +36,15 @@ Manifold was built to extend off of existing publisher workflows, to take materi
 - how to best engage with authors about expectations for those editions;
 - how to make projects discoverable to libraries and readers; and
 - who, how, and when to prepare those elements that won't be part of the print edition were prominent themes.
-Enhancing these conversations was Emily McGinn, who oversees the Willson Center Digital Humanities Lab, adjacent to the press offices. Emily will be playing a role in shaping and enabling the new content appearing on the UGA Press instance. Emily was fundamental to the conversation exploring the nitty gritty of the internal dynamics of how we produce Manifold editions at Minnesota and in what ways those can be adapted at Georgia. Terence commented, "For me, this was just exciting. I so utterly love the open and collaborative and giving spirit of the UP community." Keep your eye on the Georgia instance: in the coming months they'll be reviving and making openly available a backlist series as well as creating projects for new titles.For more information visit the [University of Georgia Press website](https://ugapress.org/), or follow [UGA Press on Twitter](https://twitter.com/UGAPress), [UGA Press on Instagram](https://www.instagram.com/ugapress), or [UGA Press on Facebook](https://www.facebook.com/UGAPress/).[![](/img/blog/legacy_wp/2019/11/UGAblock14bold-Jason-Bennett.jpg)](/img/blog/legacy_wp/2019/11/UGAblock14bold-Jason-Bennett.jpg) **Miles traveled:** 1,968 **Food Featured:** Southern food is second to none. Terence called the dinner at [The National](https://www.thenationalrestaurant.com/) on Wednesday "breathtaking."
+Enhancing these conversations was Emily McGinn, who oversees the Willson Center Digital Humanities Lab, adjacent to the press offices. Emily will be playing a role in shaping and enabling the new content appearing on the UGA Press instance. Emily was fundamental to the conversation exploring the nitty gritty of the internal dynamics of how we produce Manifold editions at Minnesota and in what ways those can be adapted at Georgia. Terence commented, "For me, this was just exciting. I so utterly love the open and collaborative and giving spirit of the UP community." Keep your eye on the Georgia instance: in the coming months they'll be reviving and making openly available a backlist series as well as creating projects for new titles.
+
+For more information visit the [University of Georgia Press website](https://ugapress.org/), or follow [UGA Press on Twitter](https://twitter.com/UGAPress), [UGA Press on Instagram](https://www.instagram.com/ugapress), or [UGA Press on Facebook](https://www.facebook.com/UGAPress/).
+
+[![](/img/blog/legacy_wp/2019/11/UGAblock14bold-Jason-Bennett.jpg)](/img/blog/legacy_wp/2019/11/UGAblock14bold-Jason-Bennett.jpg)
+
+**Miles traveled:** 1,968
+
+**Food Featured:** Southern food is second to none. Terence called the dinner at [The National](https://www.thenationalrestaurant.com/) on Wednesday "breathtaking."
 
 > From the chicken to the sweet potato pancake to the flourless [Condor](https://www.condorchocolates.com/) chocolate cake with gelato—it was pure joy distilled into an edible form. What a spectacle of utter deliciousness. And somehow we managed to kick it up a notch the following day with morning rolls from the [Independent Bakery](http://independentbaking.com/). I’m glad I’m going back next week—I’m making a special trip to the Independent to return with more rolls for family back home.
 

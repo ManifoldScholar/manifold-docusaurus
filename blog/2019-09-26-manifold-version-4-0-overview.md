@@ -1,15 +1,14 @@
 ---
 slug: "manifoldversion40overview"
 title: "Manifold Version 4.0 Overview"
+image: "/img/blog/legacy_wp/2019/09/TriceratopsGopherRacoon-1024x774.jpg"
+image_alt: "illustration of a Manifold rainbow triceratops with a gopher and a racoon"
 ---
-
-
-
-<!--truncate-->
 
 The Manifold team is delighted to announce the release of Manifold version 4.0. The hallmark features for this release are the addition of reading groups, which allow readers to annotate texts publicly, privately, or anonymously, and standalone mode, which allows creators to set up projects that appear without the library. We've also made notable strides in improving Manifold's accessibility and are now publishing docker images to Docker Hub.
 
-  <img src="/img/blog/legacy_wp/2019/09/TriceratopsGopherRacoon-1024x774.jpg" alt="illustration of a Manifold rainbow triceratops with a gopher and a racoon" class="wp-image-601" />
+
+<!--truncate-->
 
 ## Major Features
 

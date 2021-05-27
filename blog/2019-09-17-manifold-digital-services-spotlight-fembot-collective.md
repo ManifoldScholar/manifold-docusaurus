@@ -1,13 +1,14 @@
 ---
 slug: "manifolddigitalservicesspotlightfembotcollective"
 title: "Manifold Digital Services Spotlight: Fembot Collective"
+image: "/img/blog/legacy_wp/2019/09/Ada.jpg"
+image_alt: "watercolor illustration of Ada Lovelace holding Manifold logo"
 ---
 
+This week we find our digital projects editor with the managing members of the [Fembot Collective](https://fembot.adanewmedia.org/), led by Radhika Gajjala at [Bowling Green State University](https://www.bgsu.edu/) in Bowling Green, Ohio.
 
 
 <!--truncate-->
-
-[![illustration of Ada Lovelace holding Manifold logo](/img/blog/legacy_wp/2019/09/Ada.jpg)](/img/blog/legacy_wp/2019/09/Ada.jpg)This week we find our digital projects editor with the managing members of the [Fembot Collective](https://fembot.adanewmedia.org/), led by Radhika Gajjala at [Bowling Green State University](https://www.bgsu.edu/) in Bowling Green, Ohio.
 
 > Getting ready to start the [@ManifoldScholar](https://twitter.com/ManifoldScholar?ref_src=twsrc%5Etfw) day here at Bowling Green with [@FembotColl](https://twitter.com/FembotColl?ref_src=twsrc%5Etfw). The School of Media Communications building is amazing! [pic.twitter.com/iUDNWUkiUy](https://t.co/iUDNWUkiUy)
 >
@@ -21,5 +22,11 @@ title: "Manifold Digital Services Spotlight: Fembot Collective"
 >
 > — cyberdiva (@cyberdivalivesl) [September 9, 2019](https://twitter.com/cyberdivalivesl/status/1171120007520014336?ref_src=twsrc%5Etfw)
 
-<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>The **Fembot Collective** mobilizes and supports feminist media activists, artists, producers, and scholars internationally. The collective publishes the academic journal [_Ada: A Journal of Gender, New Media, and Technology_](https://adanewmedia.org/), hosts the podcast series [Books Aren't Dead](https://fembot.adanewmedia.org/about/books-arent-dead/), and supports feminist digital projects through the digital and social infrastructure for [FemTechNet](https://femtechnet.org/). Follow [Fembot on Twitter](https://twitter.com/FembotColl), [Fembot on Facebook](https://www.facebook.com/FembotCollective/), and [Fembot on Instagram](https://www.instagram.com/fembotcollective/), or visit [the Fembot website](https://fembot.adanewmedia.org/) for more information. **Miles Traveled:** 1194 **Culinary Highlights:** The [Naslada Bistro](http://nasladabistro.com/) just off campus was an amazing place to close out the first full day of work. Terence had never had Bulgarian food before, and said it was sumptuous! “It was tough to choose, but I don’t know how I could have done better than with the Chicken Kavarma.” His response to the cayenne wine sauce with San Marzano tomatoes: “Wow. Just wow!” **Cheese** : None! Terence gets no end of grief for not liking cheese. He can eat it; he just doesn’t like it. (_Loathe_ it may be closer to the mark, actually.) And that comes up very often. But on Monday night he sat down to break bread with a table of folks for whom there was a majority that also didn’t like cheese. That’s never happened before. It may never happen again. He says he’ll savor that experience till the end of his days.Thanks for reading! Feel free to reach out on the [Manifold Community Slack channel](https://manifold-slackin.herokuapp.com/), tweet us at [@manifoldscholar](https://twitter.com/ManifoldScholar), and follow along with [Manifold Scholar on Github](https://github.com/ManifoldScholar/manifold) for more details and to request features.
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>The **Fembot Collective** mobilizes and supports feminist media activists, artists, producers, and scholars internationally. The collective publishes the academic journal [_Ada: A Journal of Gender, New Media, and Technology_](https://adanewmedia.org/), hosts the podcast series [Books Aren't Dead](https://fembot.adanewmedia.org/about/books-arent-dead/), and supports feminist digital projects through the digital and social infrastructure for [FemTechNet](https://femtechnet.org/). Follow [Fembot on Twitter](https://twitter.com/FembotColl), [Fembot on Facebook](https://www.facebook.com/FembotCollective/), and [Fembot on Instagram](https://www.instagram.com/fembotcollective/), or visit [the Fembot website](https://fembot.adanewmedia.org/) for more information.
+
+**Miles Traveled:** 1194
+
+**Culinary Highlights:** The [Naslada Bistro](http://nasladabistro.com/) just off campus was an amazing place to close out the first full day of work. Terence had never had Bulgarian food before, and said it was sumptuous! “It was tough to choose, but I don’t know how I could have done better than with the Chicken Kavarma.” His response to the cayenne wine sauce with San Marzano tomatoes: “Wow. Just wow!”
+
+**Cheese** : None! Terence gets no end of grief for not liking cheese. He can eat it; he just doesn’t like it. (_Loathe_ it may be closer to the mark, actually.) And that comes up very often. But on Monday night he sat down to break bread with a table of folks for whom there was a majority that also didn’t like cheese. That’s never happened before. It may never happen again. He says he’ll savor that experience till the end of his days.Thanks for reading! Feel free to reach out on the [Manifold Community Slack channel](https://manifold-slackin.herokuapp.com/), tweet us at [@manifoldscholar](https://twitter.com/ManifoldScholar), and follow along with [Manifold Scholar on Github](https://github.com/ManifoldScholar/manifold) for more details and to request features.
 

@@ -1,13 +1,14 @@
 ---
 slug: "manifolddigitalservicesspotlightlaphamsquarterly"
 title: "Manifold Digital Services Spotlight: Lapham's Quarterly"
+image: "/img/blog/legacy_wp/2019/10/JanusGopher.jpg"
+image_alt: "Watercolor illustration of raccoon and gopher imitating Lapham's logo Janus"
 ---
 
+This week brought Terence from one Manifold hub to another, New York City, to meet with Elizabeth Della Zazzera, Digital Producer, and Jaime Fuller, Web Editor, at *Lapham’s Quarterly*.
 
 
 <!--truncate-->
-
-[![Watercolor illustration of raccoon and gopher imitating Lapham's logo Janus](/img/blog/legacy_wp/2019/10/JanusGopher.jpg)](/img/blog/legacy_wp/2019/10/JanusGopher.jpg)This week brought Terence from one Manifold hub to another, New York City, to meet with Elizabeth Della Zazzera, Digital Producer, and Jaime Fuller, Web Editor, at Lapham’s Quarterly.
 
 > Not only did I have an awesome birthday last weekend, I'm now in NYC getting ready to meet with [@ElizabethDZ](https://twitter.com/ElizabethDZ?ref_src=twsrc%5Etfw) and [@laphamsquart](https://twitter.com/laphamsquart?ref_src=twsrc%5Etfw) to talk all things [@ManifoldScholar](https://twitter.com/ManifoldScholar?ref_src=twsrc%5Etfw). YES! And that's to say nothing of the impromptu team mtg. [@jojokarlin](https://twitter.com/jojokarlin?ref_src=twsrc%5Etfw) and I had over dinner last night!
 >
@@ -21,7 +22,14 @@ title: "Manifold Digital Services Spotlight: Lapham's Quarterly"
 >
 > — Terence Smyre (@tremayning) [October 10, 2019](https://twitter.com/tremayning/status/1182279374864883720?ref_src=twsrc%5Etfw)
 
-<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>After two days, Terence concluded, "The work Lapham’s is about to embark on with the platform is going to push us in exciting ways."&nbsp;As a sampling, they closed out the sessions talking about inline iFrames, CSS Grid, and API integrations.[Lapham’s Quarterly](https://www.laphamsquarterly.org/), a magazine of history and ideas, has been bringing history to bear on contemporary issues since its founding in 2007 by former Harper's Magazine editor Lewis H. Lapham. Follow Lapham’s Quarterly on [Twitter](https://twitter.com/laphamsquart), [Instagram](https://www.instagram.com/laphamsquart/), and [Facebook](https://www.facebook.com/LaphamsQuarterly/). **Miles traveled:** 2,036 **Meal highlights:** Although much of Manifold’s New York team was out for the holidays, Jojo and Terence convened over Sabai Thai. Beyond discussing the successes of the trainings, they came to the conclusion that Manifold needs an extracurricular book club. What will they read?? **Wild Forays:** Terence ended up indoors more than he expected due to the rain and cold, but he did get out on Thursday morning for a true New York run.
+After two days, Terence concluded, "The work Lapham’s is about to embark on with the platform is going to push us in exciting ways."&nbsp;As a sampling, they closed out the sessions talking about inline iFrames, CSS Grid, and API integrations. [Lapham’s Quarterly](https://www.laphamsquarterly.org/), a magazine of history and ideas, has been bringing history to bear on contemporary issues since its founding in 2007 by former Harper's Magazine editor Lewis H. Lapham. Follow *Lapham’s Quarterly* on [Twitter](https://twitter.com/laphamsquart), [Instagram](https://www.instagram.com/laphamsquart/), and [Facebook](https://www.facebook.com/LaphamsQuarterly/).
+
+
+**Miles traveled:** 2,036
+
+**Meal highlights:** Although much of Manifold’s New York team was out for the holidays, Jojo and Terence convened over Sabai Thai. Beyond discussing the successes of the trainings, they came to the conclusion that Manifold needs an extracurricular book club. What will they read??
+
+**Wild Forays:** Terence ended up indoors more than he expected due to the rain and cold, but he did get out on Thursday morning for a true New York run.
 
 > Jojo put together a great map for me, and I was able to head up 5th Ave. from my hotel and do the seven mile park circuit before coming back through Times Square. That was my first time in the park, and it was all I expected it to be. What a great running and biking community they have here. And it was exciting to see the RaCUNY. It was much more fleet of foot, considering its size, than I anticipated. Great run!
 

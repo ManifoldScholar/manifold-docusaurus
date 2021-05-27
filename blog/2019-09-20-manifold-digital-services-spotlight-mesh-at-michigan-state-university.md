@@ -1,15 +1,13 @@
 ---
 slug: "manifolddigitalservicesspotlightmeshatmichiganstateuniversity"
 title: "Manifold Digital Services Spotlight: MESH at Michigan State University"
+image: "/img/blog/legacy_wp/2019/09/meshGopher-1.jpg"
+image_alt: "watercolor illustration of a Michigan State University Spartan helmet logo suspended in midair, facing a gopher holding the Manifold logo"
 ---
 
-
+This week we find our trusty digital projects editor on the road in East Lansing with Kathleen Fitzpatrick, Scott Schopieray, Kelly Sattler, and members of MESH at Michigan State University.
 
 <!--truncate-->
-
-[![](/img/blog/legacy_wp/2019/09/meshGopher-1.jpg)](/img/blog/legacy_wp/2019/09/meshGopher-1.jpg)
-
-This week we find our trusty digital projects editor on the road in East Lansing with Kathleen Fitzpatrick, Scott Schopieray, Kelly Sattler, and members of MESH at Michigan State University.
 
 > &nbsp;
 >
@@ -48,7 +46,9 @@ MESH is a research collective that works in conjunction with the College of Arts
 Visit the [MESH website](http://www.meshresearch.net/) for more information and follow [MESH](https://twitter.com/meshresearch), [College of Arts and Letters](https://twitter.com/CALMSU) and [MSU Libraries on Twitter](https://twitter.com/MSULibraries).
 
 **Miles traveled:** 1,230
+
 **Say What?** Over dinner on Tuesday night with coordinating editor Kurt Milberger, Amaresh Joshi, one of MESH’s informational technologists, shared some of the work he’s doing as a PhD candidate in linguistics. _Stops_, _registers_, various hierarchical structures of languages across the globe—we were awash in strange and mercurial wisdom. It was as bewildering as it was exciting and motivating. Clearly a linguistics text or two is in Terence’s future!
+
 **Terence meet Terence.** On first arriving at the library on Tuesday morning Terence was greeted by librarian Terence O’Neill.
 
 “Good morning, my name is Terence, how can I help you?"

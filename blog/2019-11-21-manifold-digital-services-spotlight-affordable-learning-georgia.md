@@ -1,13 +1,13 @@
 ---
 slug: "manifolddigitalservicesspotlightaffordablelearninggeorgia"
 title: "Manifold Digital Services Spotlight: Affordable Learning Georgia"
+image: "/img/blog/legacy_wp/2019/11/AffordableGAgopher.jpg"
+image_alt: "Illustration of a gopher reading a book in the geometric shape of the Manifold logo with a pointer superimposed on an iPad behind"
 ---
 
-<!--truncate-->
-
-<img src="/img/blog/legacy_wp/2019/11/AffordableGAgopher.jpg" alt="" class="wp-image-670" width="400" height="400" />
-
 In the last training of the season, Terence met with [Jeff Gallant](https://twitter.com/jeffwgallant), Program Manager of Affordable Learning Georgia; Joy Woodson, Assistant Director for Marketing Communications; and Lucy Harrison, Assistant Vice Chancellor for Library Services and Executive Director of [GALILEO](https://twitter.com/galileolibrary).
+
+<!--truncate-->
 
 > Great to be back in Athens this week. Really looking forward to kicking off [@ManifoldScholar](https://twitter.com/ManifoldScholar?ref_src=twsrc%5Etfw) training and talking about open textbooks with [@jeffwgallant](https://twitter.com/jeffwgallant?ref_src=twsrc%5Etfw) and the [@ALearningGA](https://twitter.com/ALearningGA?ref_src=twsrc%5Etfw) team.
 >

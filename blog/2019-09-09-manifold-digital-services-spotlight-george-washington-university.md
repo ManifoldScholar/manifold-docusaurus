@@ -1,15 +1,15 @@
 ---
 slug: "manifolddigitalservicesspotlightgeorgewashingtonuniversity"
 title: "Manifold Digital Services Spotlight: George Washington University"
+image: "/img/blog/legacy_wp/2019/09/GW-MDS-681x1024.jpg"
+image_alt: "Image of George Washington in a colonial military uniform, looking over at a a gopher sitting on his should and Manifold logos floating in the air around them"
 ---
 
+Welcome to a new season of the Travels with Terence series! We pick up following our digital projects editor as he tours the country, conducting in-person training for the Manifold pilot program.
 
 
 <!--truncate-->
 
-  <img src="/img/blog/legacy_wp/2019/09/GW-MDS-681x1024.jpg" alt="" class="wp-image-531" />
-
-Welcome to a new season of the Travels with Terence series! We pick up following our digital projects editor as he tours the country, conducting in-person training for the Manifold pilot program.
 
 Terence kicked off the trainings for the second-round pilots in Washington, DC, at the [M](http://cps.gwu.edu/publishing)[asters of Professional Studies in Publishing, College of Professional Studies, George Washington University](http://cps.gwu.edu/publishing), headed up by John Warren. The program prepares people for careers at the forefront of the profession, training students in hybrid technologies of print and digital publishing. With their ongoing professional training in the midst of the rapid economic and technological changes to production, distribution, and consumption of texts, the GW program brings a different perspective to Manifold.
 
