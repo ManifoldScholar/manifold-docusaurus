@@ -1,15 +1,14 @@
 ---
 slug: "manifoldversion30overview"
 title: "Manifold Version 3.0 Overview"
+image: "/img/blog/legacy_wp/2019/04/triceratops-1024x1024.jpg"
+image_alt: "watercolor illustration of a triceratops dinosaur with a Manifold logo on its side"
 ---
-
-
-
-<!--truncate-->
 
 The Manifold team is delighted to announce the release of Manifold version 3.0. The hallmark feature for this release is the addition of project content blocks, which provides editors the ability to customize the content that appears on project landing pages.
 
-<img src="/img/blog/legacy_wp/2019/04/triceratops-1024x1024.jpg" alt="" class="wp-image-519" />
+<!--truncate-->
+
 
 ## Major Features
 

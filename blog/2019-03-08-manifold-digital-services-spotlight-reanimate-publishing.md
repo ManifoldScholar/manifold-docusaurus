@@ -1,13 +1,14 @@
 ---
 slug: "manifolddigitalservicesspotlightreanimatepublishing"
 title: "Manifold Digital Services Spotlight: Reanimate Publishing"
+image: "/img/blog/legacy_wp/2019/03/reanimate.jpg"
+image_alt: "watercolor illustration of gopher with reanimate and Manifold logos"
 ---
 
+This is part 9 of the Travels with Terence series, following our digital projects editor on his pilot press in-person training program. This March brought Terence to Salem, Massachusetts, to meet with [Reanimate Publishing](http://reanimatepublishing.org/). Reanimate is co-directed by [Roopika Risam](https://twitter.com/roopikarisam), Assistant Professor of English and Faculty Fellow for Digital Library Initiatives, Salem State University and [Carol Stabile](https://twitter.com/castabile), Associate Dean of Strategic Initiatives and Professor of Women and Gender Studies, University of Oregon.
 
 
 <!--truncate-->
-
-This is part 9 of the Travels with Terence series, following our digital projects editor on his pilot press in-person training program.[![watercolor illustration of gopher with reanimate and Manifold logos](/img/blog/legacy_wp/2019/03/reanimate.jpg)](/img/blog/legacy_wp/2019/03/reanimate.jpg)This March brought Terence to Salem, Massachusetts, to meet with [Reanimate Publishing](http://reanimatepublishing.org/). Reanimate is co-directed by [Roopika Risam](https://twitter.com/roopikarisam), Assistant Professor of English and Faculty Fellow for Digital Library Initiatives, Salem State University and [Carol Stabile](https://twitter.com/castabile), Associate Dean of Strategic Initiatives and Professor of Women and Gender Studies, University of Oregon.
 
 > Thrilled to be in Salem talking about [https://t.co/pJz76fAfRU](https://t.co/pJz76fAfRU) & [@ManifoldScholar](https://twitter.com/ManifoldScholar?ref_src=twsrc%5Etfw) w/[@roopikarisam](https://twitter.com/roopikarisam?ref_src=twsrc%5Etfw). Our first session—which we did over coffee at a local shop yesterday—lead to a fruitful discussion among the team on how to better serve those surfacing archival materials.
 >

@@ -1,13 +1,15 @@
 ---
 slug: "manifolddigitalservicesspotlightliverpooluniversitypress"
 title: "Manifold Digital Services Spotlight: Liverpool University Press"
+image: "/img/blog/legacy_wp/2019/02/liverpoolGopher.jpg"
+image_alt: "cartoon of gopher holding Manifold book in front of Liverpool U crest and motto"
 ---
 
-
+This is part 8 of the Travels with Terence series, following our digital projects editor on his pilot press in-person training program. In one of his first dispatches from Liverpool, Terence noted to the team back home:
 
 <!--truncate-->
 
-This is part 8 of the Travels with Terence series, following our digital projects editor on his pilot press in-person training program.[![cartoon of gopher holding Manifold book in front of Liverpool U crest and motto](/img/blog/legacy_wp/2019/02/liverpoolGopher.jpg)](/img/blog/legacy_wp/2019/02/liverpoolGopher.jpg)In one of his first dispatches from Liverpool, Terence noted to the team back home:
+
 
 > the energy at the press is incredible and catching. All the more because so many of the staff have traveled from afar—Oxford, Dublin, and even as far away as Poland!—to be a part of the sessions. The more we delve into what Manifold can do the more everyone is looking to push what we've built in ways we haven't yet considered.
 
@@ -19,5 +21,11 @@ The difference offered will hopefully expand and augment the great work the pres
 
 > I can’t thank Alison enough for setting up the session. We don’t always get the chance to engage with the scholarly community in the UK directly, and this proved to be a wonderful opportunity to make new in-person connections and learn more about the work going on in those spaces. I’m looking forward to continuing the conversations we began in the weeks and months ahead.
 
- &nbsp; [![view across water to large, low brick building](/img/blog/legacy_wp/2019/02/tate.jpg)](/img/blog/legacy_wp/2019/02/tate.jpg) The Tate gallery in the Albert Dock went unvisited by Terence. The lure of fish ’n chips was apparently too great a lure. Miles traveled: 9,004 Near Misses: Had he been fifteen minutes earlier, Terence would have been able to have seen Prince Charles, who was conducting an event just a little ways from his hotel.[Liverpool University Press](https://liverpooluniversitypress.co.uk) is led by Managing Director Anthony Cond, who also serves as a board member for the [Association of University Presses](http://www.aupresses.org/index.php). For more information about all the exciting and innovative work they are doing, check out their [website](https://www.liverpooluniversitypress.co.uk/) and follow them on [Twitter](https://twitter.com/@LivUniPress) and [Facebook](https://www.facebook.com/liverpooluniversitypress).[![Liverpool University Press logo](/img/blog/legacy_wp/2019/02/Liverpool_Press_Hori@4x.png)](/img/blog/legacy_wp/2019/02/Liverpool_Press_Hori@4x.png) &nbsp; Thanks for reading! Feel free to reach out on the community [Slack channel](https://manifold-slackin.herokuapp.com/), tweet us at [@manifoldscholar](https://twitter.com/ManifoldScholar), and follow along with development on&nbsp;[Github](https://github.com/ManifoldScholar/manifold).
+ &nbsp; [![view across water to large, low brick building](/img/blog/legacy_wp/2019/02/tate.jpg)](/img/blog/legacy_wp/2019/02/tate.jpg) The Tate gallery in the Albert Dock went unvisited by Terence. The lure of fish ’n chips was apparently too great a lure.
+
+**Miles traveled:** 9,004
+
+**Near Misses:** Had he been fifteen minutes earlier, Terence would have been able to have seen Prince Charles, who was conducting an event just a little ways from his hotel.
+
+ [Liverpool University Press](https://liverpooluniversitypress.co.uk) is led by Managing Director Anthony Cond, who also serves as a board member for the [Association of University Presses](http://www.aupresses.org/index.php). For more information about all the exciting and innovative work they are doing, check out their [website](https://www.liverpooluniversitypress.co.uk/) and follow them on [Twitter](https://twitter.com/@LivUniPress) and [Facebook](https://www.facebook.com/liverpooluniversitypress).[![Liverpool University Press logo](/img/blog/legacy_wp/2019/02/Liverpool_Press_Hori@4x.png)](/img/blog/legacy_wp/2019/02/Liverpool_Press_Hori@4x.png) &nbsp; Thanks for reading! Feel free to reach out on the community [Slack channel](https://manifold-slackin.herokuapp.com/), tweet us at [@manifoldscholar](https://twitter.com/ManifoldScholar), and follow along with development on&nbsp;[Github](https://github.com/ManifoldScholar/manifold).
 

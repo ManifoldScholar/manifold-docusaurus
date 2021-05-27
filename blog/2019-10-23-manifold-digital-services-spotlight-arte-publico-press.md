@@ -1,13 +1,13 @@
 ---
 slug: "manifolddigitalservicesspotlightartepublicopress"
 title: "Manifold Digital Services Spotlight: Arte Publico Press"
+image: "/img/blog/legacy_wp/2019/10/APPGoph.jpg"
+image_alt: "Arte Público Press logo and watercolor gopher holding Manifold mug"
 ---
 
-
+In this post, we find our digital projects editor, Terence, traveling to Houston, Texas, to meet with the Arte Público Press digital team: Executive Editor Gabriela Baeza Ventura, Carolina Villarroel of the Recovering the US Hispanic Literary Heritage Project, and Digital Programs Manager Lorena Gauthereau. The conversation revolved primarily around their recovery mission, the presses digital initiatives, as well as intro publications aimed at younger members of the Latino community. And, of course, all the amazing cuisine that Houston has to offer.
 
 <!--truncate-->
-
-​[![Arte Público Press logo and watercolor gopher holding Manifold mug](/img/blog/legacy_wp/2019/10/APPGoph.jpg)](/img/blog/legacy_wp/2019/10/APPGoph.jpg)In this post, we find our digital projects editor, Terence, traveling to Houston, Texas, to meet with the Arte Público Press digital team: Executive Editor Gabriela Baeza Ventura, Carolina Villarroel of the Recovering the US Hispanic Literary Heritage Project, and Digital Programs Manager Lorena Gauthereau. The conversation revolved primarily around their recovery mission, the presses digital initiatives, as well as intro publications aimed at younger members of the Latino community. And, of course, all the amazing cuisine that Houston has to offer. ​
 
 > In Houston and thrilled to heading to [@artepublico](https://twitter.com/artepublico?ref_src=twsrc%5Etfw) in a few moments. Can't wait to meet [@gbaezaventura](https://twitter.com/gbaezaventura?ref_src=twsrc%5Etfw), [@rayenchil](https://twitter.com/rayenchil?ref_src=twsrc%5Etfw), and [@LGauth19](https://twitter.com/LGauth19?ref_src=twsrc%5Etfw) and start talking through their ideas for [@ManifoldScholar](https://twitter.com/ManifoldScholar?ref_src=twsrc%5Etfw). Enhanced OA volumes, archival materials, and more—here we come!
 >
@@ -25,5 +25,13 @@ title: "Manifold Digital Services Spotlight: Arte Publico Press"
 >
 > — Gabi Baeza Ventura (@gbaezaventura) [October 16, 2019](https://twitter.com/gbaezaventura/status/1184502075528564737?ref_src=twsrc%5Etfw)
 
-<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>Learn more on the [Arte Publico Press](https://artepublicopress.com/) website, follow them on [Twitter](https://twitter.com/artepublico), [Facebook](https://www.facebook.com/artepublico/), [Tumblr](https://artepublicopress.tumblr.com/), and [Pinterest](http://pinterest.com/artepublico/). ​[![](/img/blog/legacy_wp/2019/10/APP_Logo_2019.png)](/img/blog/legacy_wp/2019/10/APP_Logo_2019.png) **Miles traveled:** 2,122 **Culinary highlights:** The APP team took great care of Terence from start to finish, from the sweet and savory Mexican breads they began their first day with, through the best fish tacos Terence has ever had to the amazing breakfast tacos and Vietnamese lunch the following day. Houston has amazing— amazing!—food. **Fun fact:** “There's a story behind marranitos (Mexican gingerbread pigs), but I have to admit I was too involved in savoring their delicious taste that I kinda missed out on that. If you ever get the opportunity, don't let it pass you by!”
+Learn more on the [Arte Publico Press](https://artepublicopress.com/) website, follow them on [Twitter](https://twitter.com/artepublico), [Facebook](https://www.facebook.com/artepublico/), [Tumblr](https://artepublicopress.tumblr.com/), and [Pinterest](http://pinterest.com/artepublico/).
+
+​[![](/img/blog/legacy_wp/2019/10/APP_Logo_2019.png)](/img/blog/legacy_wp/2019/10/APP_Logo_2019.png)
+
+**Miles traveled:** 2,122
+
+**Culinary highlights:** The APP team took great care of Terence from start to finish, from the sweet and savory Mexican breads they began their first day with, through the best fish tacos Terence has ever had to the amazing breakfast tacos and Vietnamese lunch the following day. Houston has amazing— amazing!—food.
+
+**Fun fact:** “There's a story behind marranitos (Mexican gingerbread pigs), but I have to admit I was too involved in savoring their delicious taste that I kinda missed out on that. If you ever get the opportunity, don't let it pass you by!”
 

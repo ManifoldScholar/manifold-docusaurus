@@ -1,19 +1,15 @@
 ---
 slug: "manifolddigitalservicesspotlightblackwomenandreligiouscultures"
 title: "Manifold Digital Services Spotlight: Black Women and Religious Cultures"
+image: "/img/blog/legacy_wp/2019/10/BWRCgopher-1024x754.jpg"
+image_alt: "watercolor illustration by Jojo Karlin of a leopard holding a Manifold-branded mug, talking to a gopher holding a coffee mug."
 ---
-
-
-
-<!--truncate-->
-
-<img src="/img/blog/legacy_wp/2019/10/BWRCgopher-1024x754.jpg" alt="" class="wp-image-657" />
-
-&nbsp;
 
 This week we find Manifold Digital Projects Editor Terence in Atlanta meeting with Dr. Rosetta E. Ross. Dr. Ross, along with members of Spelman College's Department of Philosophy and Religious Studies and the Daughters of the African Atlantic community, is creating a new journal entitled Black Women and Religious Cultures. The journal seeks to examine the roles of religions, positively and negatively, in the lives of Black women, transnationally. In addition to publishing meeting proceedings from the Consultation of African and African Diasporan Women in Religion and Theology, the journal will include articles from participants in their growing community, facilitating an exchange of knowledge.
 
-> &nbsp;
+<!--truncate-->
+
+
 >
 > Arrived in Atlanta yesterday afternoon and had a lovely dinner with [@drreross](https://twitter.com/drreross?ref_src=twsrc%5Etfw) and her team to talk about [@ManifoldScholar](https://twitter.com/ManifoldScholar?ref_src=twsrc%5Etfw) and the new journal they are cultivating here. Looking forward to heading over to the [@SpelmanCollege](https://twitter.com/SpelmanCollege?ref_src=twsrc%5Etfw) campus this morning to start really digging in!
 >
@@ -36,7 +32,9 @@ During our first day we explored Manifold primarily through the lens of it worki
 Be sure to check out the Black Women and Religious Cultures [website](https://www.blackwomenandreligiouscultures.com/) as it starts to come alive, and learn more about the work of the Daughters of the African Atlantic Fund on [Twitter](https://twitter.com/afatdaughters), [Facebook](https://www.facebook.com/afatdaughters/), or their [website](https://www.africanatlanticdaughters.com/). Based on Dr. Ross's energy and enthusiasm we expect to see a lot more, especially around their interview and podcast initiatives.
 
 **Miles traveled:** 1,812
+
 **Food savored:** The halibut at [Ray’s](https://www.raysrestaurants.com/) in the City on Sunday night was out of this world. Just absolutely exquisite. There’s no better way to kick off two days of meetings than with a nice informal dinner to meet and make company with one another.
+
 **Sights seen:** As in New York, it rained for much of Terence’s visit to Atlanta, so he made use of his time typesetting a Forerunner and finishing off a Clive Barker book he was reading for Halloween.
 
 
