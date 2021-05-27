@@ -1,13 +1,16 @@
 ---
 slug: "manifolddigitalservicesspotlightuniversityofcincinnatipress"
 title: "Manifold Digital Services Spotlight: University of Cincinnati Press"
+image: "/img/blog/legacy_wp/2018/12/bearcatgopher.jpg"
+image_alt: "Jojo illustrates the Cincy Bearcat and UMinn gopher"
 ---
 
+This is part 5 of the Travels with Terence series, following our digital projects editor on his pilot press in-person training program. At the [University of Cincinnati Press](https://ucincinnatipress.uc.edu/), Manifold is in the capable hands of Elizabeth Scarpelli, Press Director. Terence headed to Cincinnati almost immediately on the heels of the team’s Portland face-to-face (recap blog post to follow), so he was well primed to address their hopes and challenges.
 
 
 <!--truncate-->
 
-This is part 5 of the Travels with Terence series, following our digital projects editor on his pilot press in-person training program.[![](/img/blog/legacy_wp/2018/12/bearcatgopher.jpg)](/img/blog/legacy_wp/2018/12/bearcatgopher.jpg) Jojo illustrates the Cincy Bearcat and UMinn gopher. At the [University of Cincinnati Press](https://ucincinnatipress.uc.edu/), Manifold is in the capable hands of Elizabeth Scarpelli, Press Director. Terence headed to Cincinnati almost immediately on the heels of the team’s Portland face-to-face (recap blog post to follow), so he was well primed to address their hopes and challenges.[![University of Cincinnati sign on a bench in front of a building and trees](/img/blog/legacy_wp/2018/12/uc.jpg)](/img/blog/legacy_wp/2018/12/uc.jpg) Following their last training session, Terence and Sean made a final coffee run, which took them past the entrance to the university. When selected for the Manifold Digital Services Pilot, Liz said:
+[![University of Cincinnati sign on a bench in front of a building and trees](/img/blog/legacy_wp/2018/12/uc.jpg)](/img/blog/legacy_wp/2018/12/uc.jpg) Following their last training session, Terence and Sean made a final coffee run, which took them past the entrance to the university. When selected for the Manifold Digital Services Pilot, Liz said:
 
 > Manifold will help us further our mission to publish new modes of scholarship and enhanced publications by providing a professional, agile, and dynamic presentation site for our authors and readers. We anticipate using Manifold for many of our publications from traditional monographs to digitally innovative projects designed to expand the dialogue between scholars and community based experts and practitioners. We see Manifold as a key tool in our discoverability strategy at the University of Cincinnati Press and Cincinnati Library Publishing Services (CLIPS). The mission based approach and affordability and technical support available through the pilot make Manifold an easy choice in partners for us.
 
