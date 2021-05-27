@@ -7,7 +7,13 @@ title: "This Week in Manifold: Team meeting, Numerous Fixes"
 
 <!--truncate-->
 
-This has been an exciting week for Manifold. The UMNP team—Terence, Dan, Susan, and Doug—and Matt all came out to Portland for one of our regular meetings. We met at the Cast Iron Coding office in the old Washington High School building and spent two days talking through issues, thinking about Manifold use cases, sorted through thorny metadata and DOI concerns, and generally reviewed how far we've come, where we're at, and what's left to do. I always find these meetings inspiring and invigorating, and am reminded of what a strong team we have in place for this project. In the two weeks leading up to this meeting, the development and design team at Cast Iron has been working furiously to tighten up existing behavior and progress on the project resources. As a result, we don't have a lot in the way of big new features to report for this sprint. We do, however, have a long list of fixes, small improvements, and tweaks, which I'm including below. Next week is a short week, and I likely won't post an update until the following week. In the next sprint, we'll be finalizing project resources, and then turning our attention back to the annotation user interface, and begin work on comment threads. The release that went out to staging today includes the following revisions. **Backend**
+This has been an exciting week for Manifold. The UMNP team—Terence, Dan, Susan, and Doug—and Matt all came out to Portland for one of our regular meetings. We met at the Cast Iron Coding office in the old Washington High School building and spent two days talking through issues, thinking about Manifold use cases, sorted through thorny metadata and DOI concerns, and generally reviewed how far we've come, where we're at, and what's left to do. I always find these meetings inspiring and invigorating, and am reminded of what a strong team we have in place for this project.
+
+In the two weeks leading up to this meeting, the development and design team at Cast Iron has been working furiously to tighten up existing behavior and progress on the project resources. As a result, we don't have a lot in the way of big new features to report for this sprint. We do, however, have a long list of fixes, small improvements, and tweaks, which I'm including below. Next week is a short week, and I likely won't post an update until the following week. In the next sprint, we'll be finalizing project resources, and then turning our attention back to the annotation user interface, and begin work on comment threads.
+
+The release that went out to staging today includes the following revisions.
+
+## Backend
 
 - Add static markup/styles for backend text selector
 - Wire projects from API to backend views
@@ -22,11 +28,15 @@ This has been an exciting week for Manifold. The UMNP team—Terence, Dan, Susan
 - Add backend icons, secondary header style
 - Add static component for backend projects
 - Add placeholder avatar to makers
-**New Features**
+
+## New features
+
 - Add resource detail view
 - Slideshow loads resources one page at a time (batch loading)
 - Client can reduce one fetch to two locations in global state
-**UI Improvements**
+
+## UI Improvements
+
 - Close panels on click
 - Add graphic and messaging for users not following projects
 - Improve resource-related back links
@@ -43,7 +53,9 @@ This has been an exciting week for Manifold. The UMNP team—Terence, Dan, Susan
 - Convert notification markup to use new styles
 - Add responsive font-styles to reader
 - Update twitter icon position on events
-**Bug fixes**
+
+## Bug fixes
+
 - Remove slide listeners on unmount
 - Correct resource detail link
 - Fix inconsistent text-header spacing
@@ -51,7 +63,7 @@ This has been an exciting week for Manifold. The UMNP team—Terence, Dan, Susan
 - Fix svg grid padding on iOS
 - Prevent resource from showing blank slide
 - Fix resource link instances in card
-- Correct regression&nbsp;to collection detail
+- Correct regression to collection detail
 - Remove underline from text title
 - Refactor resource scss files add dark overlay
 - Correct resource totals language
@@ -72,10 +84,12 @@ This has been an exciting week for Manifold. The UMNP team—Terence, Dan, Susan
 - Correct annotation create
 - Adjust margin/positioning on thumbnails
 - Update primary nav for mobile
-- Fix duplicate project&nbsp;create events
+- Fix duplicate project create events
 - Fix annotation popup position regression
 - Address improperly named project import method
-**API**
+
+## API
+
 - Expose single collectionResource
 - Expose text age
 - Expose created month, day, and year on texts
@@ -95,10 +109,10 @@ This has been an exciting week for Manifold. The UMNP team—Terence, Dan, Susan
 - Expose project association counts
 - Add resource importer; build resource models
 - DRY up attachment validation; organize models
-**Misc**
+
+## Misc
+
 - Refactor authentication; improve API actions
 - Refine frontend resource components
 - Correct resource and collection migrations
 - Clean up initializers
- &nbsp;
-
