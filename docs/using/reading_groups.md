@@ -87,7 +87,7 @@ Readers who have been provided an Invitation Code can join a group by selecting 
 Alternatively, if the group moderator has encoded the Invitation URL on a course webpage or in an email, readers need only click the link to be taken to the instance and join the Reading Group.
 
 :::note Invitation not working?
-See the [Invitation URL](../using_manifold/reading_groups.md#invitation_url) section for concerns that may arise for readers that click on an Invitation link and are not presently logged in or don't have accounts on the instance.
+See the [Invitation URL](../using/reading_groups.md#invitation-url) section for concerns that may arise for readers that click on an Invitation link and are not presently logged in or don't have accounts on the instance.
 :::
 
 ### Leave a Reading Group
@@ -112,7 +112,7 @@ When deleting a public Reading Group, all annotations and highlights a user made
 
 ### See All Members
 
-The **See All Members** button allows members to leave, moderators to remove members, and everyone to see what other members have done in the group. If you are a member of the group and click the **See All Members** button, there will be a **Leave Group** button that will allow you to remove yourself from the group. The [Leave a Reading Group](../using_manifold.reading_groups.md#leave_a_reading_group) section details this process.
+The **See All Members** button allows members to leave, moderators to remove members, and everyone to see what other members have done in the group. If you are a member of the group and click the **See All Members** button, there will be a **Leave Group** button that will allow you to remove yourself from the group. The [Leave a Reading Group](../using/reading_groups.md#leave-a-reading-group) section details this process.
 
 Group moderators and members have the ability to see all annotations and highlights a group member has committed to the group by selecting their name from the list.
 
