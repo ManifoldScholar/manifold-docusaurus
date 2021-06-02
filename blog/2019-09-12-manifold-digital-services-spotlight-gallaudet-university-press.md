@@ -11,7 +11,7 @@ In this installment of Travels with Terence, we find our resident digital projec
 
 > Great [@ManifoldScholar](https://twitter.com/ManifoldScholar?ref_src=twsrc%5Etfw) morning here at [@GallaudetPress](https://twitter.com/GallaudetPress?ref_src=twsrc%5Etfw)! Getting ready to pick up after lunch, diving into project creation and a plate of banana bread. [pic.twitter.com/19NcLYG9ZG](https://t.co/19NcLYG9ZG)
 >
-> — Terence Smyre (@tremayning) [August 29, 2019](https://twitter.com/tremayning/status/1167134067990695943?ref_src=twsrc%5Etfw)
+> — Terence Smyre (@tremayning) August 29, 2019
 
 <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>Normally the training program follows a discrete set of sessions where we consider topics from editorial workflow to branding, but with all the work the team had done before Terence showed up, they were able to transform the training into a hands-on workshop. After he guided them through an introduction to the platform’s history, current functionality, and walkthrough of the backend on the first day, he turned the driver’s seat over to Katie Lee, the resident acquisitions editor, and Angela Leppig, GUP’s interim director, to create and customize new projects of their own over the course of day 2. Terence remarked:
 
@@ -19,7 +19,7 @@ In this installment of Travels with Terence, we find our resident digital projec
 
 > Getting ready to start in on our second day of [@ManifoldScholar](https://twitter.com/ManifoldScholar?ref_src=twsrc%5Etfw) training here at [@GallaudetPress](https://twitter.com/GallaudetPress?ref_src=twsrc%5Etfw)! [pic.twitter.com/QHxrjVGS4b](https://t.co/QHxrjVGS4b)
 >
-> — Terence Smyre (@tremayning) [August 30, 2019](https://twitter.com/tremayning/status/1167430944342585344?ref_src=twsrc%5Etfw)
+> — Terence Smyre (@tremayning) August 30, 2019
 
 Gallaudet University Press commented:&nbsp;
 

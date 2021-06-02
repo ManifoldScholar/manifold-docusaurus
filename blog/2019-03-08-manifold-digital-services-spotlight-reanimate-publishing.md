@@ -12,7 +12,7 @@ This is part 9 of the Travels with Terence series, following our digital project
 
 > Thrilled to be in Salem talking about [https://t.co/pJz76fAfRU](https://t.co/pJz76fAfRU) & [@ManifoldScholar](https://twitter.com/ManifoldScholar?ref_src=twsrc%5Etfw) w/[@roopikarisam](https://twitter.com/roopikarisam?ref_src=twsrc%5Etfw). Our first session—which we did over coffee at a local shop yesterday—lead to a fruitful discussion among the team on how to better serve those surfacing archival materials.
 >
-> — Terence Smyre (@tremayning) [March 7, 2019](https://twitter.com/tremayning/status/1103621543584776192?ref_src=twsrc%5Etfw)
+> — Terence Smyre (@tremayning) March 7, 2019
 
 <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> Reanimate noted their reasons for choosing Manifold:
 

@@ -13,7 +13,7 @@ This week we find our trusty digital projects editor on the road in East Lansing
 >
 > This is the life! I'm at the gate, ready to head out to East Lansing to talk [@ManifoldScholar](https://twitter.com/ManifoldScholar?ref_src=twsrc%5Etfw) with [@meshresearch](https://twitter.com/meshresearch?ref_src=twsrc%5Etfw). Looking forward to some exciting and productive meetings with [@kfitz](https://twitter.com/kfitz?ref_src=twsrc%5Etfw), [@schopie1](https://twitter.com/schopie1?ref_src=twsrc%5Etfw), [@ksattler](https://twitter.com/ksattler?ref_src=twsrc%5Etfw), and the rest of the team over the next few days!
 >
-> — Terence Smyre (@tremayning) [September 16, 2019](https://twitter.com/tremayning/status/1173655408948535297?ref_src=twsrc%5Etfw)
+> — Terence Smyre (@tremayning) September 16, 2019
 
 <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -21,7 +21,7 @@ This week we find our trusty digital projects editor on the road in East Lansing
 >
 > Just arrived on the beautiful Michigan State campus. Can't wait to start [@ManifoldScholar](https://twitter.com/ManifoldScholar?ref_src=twsrc%5Etfw) training here with [@meshresearch](https://twitter.com/meshresearch?ref_src=twsrc%5Etfw) this morning. [pic.twitter.com/SCGuzVhoSI](https://t.co/SCGuzVhoSI)
 >
-> — Terence Smyre (@tremayning) [September 17, 2019](https://twitter.com/tremayning/status/1173939877848780800?ref_src=twsrc%5Etfw)
+> — Terence Smyre (@tremayning) September 17, 2019
 
 <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -37,7 +37,7 @@ They were lucky enough to bring into the conversation two others from the Manifo
 >
 > We had a full day yesterday talking all things [@meshresearch](https://twitter.com/meshresearch?ref_src=twsrc%5Etfw) and [@ManifoldScholar](https://twitter.com/ManifoldScholar?ref_src=twsrc%5Etfw)—from journals to APIs. Can't wait to get back at it this morning in Linton Hall. On tap, digital preservation and a discussion with [@mkgold](https://twitter.com/mkgold?ref_src=twsrc%5Etfw) about using Manifold in the classroom. [pic.twitter.com/nQtYYd0hLu](https://t.co/nQtYYd0hLu)
 >
-> — Terence Smyre (@tremayning) [September 18, 2019](https://twitter.com/tremayning/status/1174301666348130309?ref_src=twsrc%5Etfw)
+> — Terence Smyre (@tremayning) September 18, 2019
 
 <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 

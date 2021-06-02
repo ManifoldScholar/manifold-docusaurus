@@ -13,13 +13,13 @@ Reviewing the work that Jeff and his team had undertaken in preparation for the 
 
 > We had a really productive [@ManifoldScholar](https://twitter.com/ManifoldScholar?ref_src=twsrc%5Etfw) / Intermezzo training day here yesterday in Lexington. Today [@drfabulous](https://twitter.com/drfabulous?ref_src=twsrc%5Etfw), [@EricSDet](https://twitter.com/EricSDet?ref_src=twsrc%5Etfw), [@doubleosergo](https://twitter.com/doubleosergo?ref_src=twsrc%5Etfw), and I are going to be digging into workflow, getting into some CSS and Markdown weeds, and we may even get a book published!
 >
-> — Terence Smyre (@tremayning) [October 4, 2019](https://twitter.com/tremayning/status/1180101759722803200?ref_src=twsrc%5Etfw)
+> — Terence Smyre (@tremayning) October 4, 2019
 
 <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>Intermezzo, a series of [enculturation](http://www.enculturation.net/), is dedicated to the mid-length scholarly work and emphasizes creativity of form, style, content, and approach. Intermezzo publishes essays that are too long to be journal articles but too short to be monographs on a variety of topics, academic or not. Authors are encouraged to experiment with form, style, content, and approach in order to break down the barrier between the scholarly and the creative. With Manifold’s multimedia capability, Intermezzo aims to showcase the creative scholarly possibilities at the interstices of video, sound, and content.Visit the [Intermezzo website](http://www.enculturation.net/intermezzo/) for more information. **Miles Traveled:** 1,645 **Dining Delights:** “Jeff made sure everyone at our meetings was well nourished. From the Greek for lunch on Thursday to the taco spread on Friday—everything was amazing. But the highlight was undoubtedly the evening meal at [Middle Fork Kitchen](http://www.middleforkkb.com/).&nbsp;The chicken I had was so tender and flavorful. I’ve never had anything like it. But right there with it were the cinnamon-roasted sweet potatoes. Holy wow were those good!” Quotes like this remind us all that we should never feel bad for Terence when his flights get delayed.
 
 > We aren't joking around here at Intermezzo for our [@ManifoldScholar](https://twitter.com/ManifoldScholar?ref_src=twsrc%5Etfw) working lunch. Holy wow! Thank you, [@drfabulous](https://twitter.com/drfabulous?ref_src=twsrc%5Etfw)! This is amazing! [pic.twitter.com/cqELWfqR9I](https://t.co/cqELWfqR9I)
 >
-> — Terence Smyre (@tremayning) [October 4, 2019](https://twitter.com/tremayning/status/1180147574633848833?ref_src=twsrc%5Etfw)
+> — Terence Smyre (@tremayning) October 4, 2019
 
  **Travel Trials:** It had to happen eventually: Terence lost his voice during the training. “I don’t know what happened. I didn’t feel poorly, but as Thursday progressed my voice started slipping away from me. I felt terrible that I couldn’t contribute more at dinner. Thankfully after a good rest I regained some of my volume for Friday. Here’s hoping I’m back to normal next week in New York!”
 
