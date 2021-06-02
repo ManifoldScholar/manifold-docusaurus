@@ -51,7 +51,7 @@ For backend users interested in learning how to prepare Resources for Manifold, 
 Resource Collections are groupings of Resources that can be used to orient a reader around certain themes or as a means to place a series of Resources onto a Text with one insertion.
 
 :::note
-For details on how to place a Resource or Resource Collection in a Text, see the [Reading Manifold](../reading_manifold.md#resources) section.
+For details on how to place a Resource or Resource Collection in a Text, see the [Reading Manifold](../using/reading_manifold.md#resources) section.
 :::
 
 Resource Collections appear and take display precedence in the Resources blade of a Project’s landing page, where you are able to access and engage with their individual contents.
