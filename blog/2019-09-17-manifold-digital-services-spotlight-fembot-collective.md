@@ -12,13 +12,13 @@ This week we find our digital projects editor with the managing members of the [
 
 > Getting ready to start the [@ManifoldScholar](https://twitter.com/ManifoldScholar?ref_src=twsrc%5Etfw) day here at Bowling Green with [@FembotColl](https://twitter.com/FembotColl?ref_src=twsrc%5Etfw). The School of Media Communications building is amazing! [pic.twitter.com/iUDNWUkiUy](https://t.co/iUDNWUkiUy)
 >
-> — Terence Smyre (@tremayning) [September 9, 2019](https://twitter.com/tremayning/status/1171039118039453696?ref_src=twsrc%5Etfw)
+> — Terence Smyre (@tremayning) September 9, 2019
 
 <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>One of the first things Radhika mentioned to Terence over opening dinner on Sunday night was the importance she placed on helping people make connections, grow their networks, and provide opportunities for growth and cooperation. That spirit permeated everything they did. Not only did she assemble a team from within her program in the School of Media and Communication, she brought in stakeholders from the library, English, and computer science departments, as well as members of the Fembot collective from Penn State University Library.&nbsp;Terence remarked, “It was amazing and humbling to have such a talented group of people coming together to meet and share their time and wisdom and experience—and good humour.”
 
 > We meshed quickly as a group and made the two days we had together count. Right from the start we launched into the deep end of the pool, surveying more of the advanced components of the platform and reviewing different strategies to align it with the goals and processes the Fembot Collective already employs. From journals to podcast publishing, we covered it all. And because we went right at the heart of it, we had time on the second day to devote to a hands-on workshop with small teams working in the system with the kinds of materials they’ll be publishing in the months ahead.
 
-> Watch this site as we continue our [@ManifoldScholar](https://twitter.com/ManifoldScholar?ref_src=twsrc%5Etfw) workshop - [https://t.co/h4gKhbAIBz](https://t.co/h4gKhbAIBz)Trial move of [#AdaIssue15](https://twitter.com/hashtag/AdaIssue15?src=hash&ref_src=twsrc%5Etfw) ([https://t.co/Pgsu5o6gCq](https://t.co/Pgsu5o6gCq)) from wordpress to [#manifold](https://twitter.com/hashtag/manifold?src=hash&ref_src=twsrc%5Etfw) The worker-bees team is at it with [@tremayning](https://twitter.com/tremayning?ref_src=twsrc%5Etfw)
+> Watch this site as we continue our [@ManifoldScholar](https://twitter.com/ManifoldScholar?ref_src=twsrc%5Etfw) workshop - [https://t.co/h4gKhbAIBz](https://t.co/h4gKhbAIBz)Trial move of [#AdaIssue15](https://twitter.com/hashtag/AdaIssue15?src=hash&ref_src=twsrc%5Etfw) ([https://t.co/Pgsu5o6gCq](https://t.co/Pgsu5o6gCq)) from wordpress to [#manifold](https://twitter.com/hashtag/manifold?src=hash&ref_src=twsrc%5Etfw) The worker-bees team is at it with @tremayning
 >
 > — cyberdiva (@cyberdivalivesl) [September 9, 2019](https://twitter.com/cyberdivalivesl/status/1171120007520014336?ref_src=twsrc%5Etfw)
 

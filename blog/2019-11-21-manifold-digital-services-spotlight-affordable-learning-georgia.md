@@ -9,13 +9,13 @@ In the last training of the season, Terence met with [Jeff Gallant](https://twit
 
 <!--truncate-->
 
-> Great to be back in Athens this week. Really looking forward to kicking off [@ManifoldScholar](https://twitter.com/ManifoldScholar?ref_src=twsrc%5Etfw) training and talking about open textbooks with [@jeffwgallant](https://twitter.com/jeffwgallant?ref_src=twsrc%5Etfw) and the [@ALearningGA](https://twitter.com/ALearningGA?ref_src=twsrc%5Etfw) team.
+> Great to be back in Athens this week. Really looking forward to kicking off [@ManifoldScholar](https://twitter.com/ManifoldScholar) training and talking about open textbooks with [@jeffwgallant](https://twitter.com/jeffwgallant) and the [@ALearningGA](https://twitter.com/ALearningGA) team.
 >
-> — Terence Smyre (@tremayning) [November 19, 2019](https://twitter.com/tremayning/status/1196769198657196034?ref_src=twsrc%5Etfw)
+> — Terence Smyre (@tremayning) November 19, 2019
 
-> You know it's [@ManifoldScholar](https://twitter.com/ManifoldScholar?ref_src=twsrc%5Etfw) training time when... [pic.twitter.com/ZztLpc5RFY](https://t.co/ZztLpc5RFY)
+> You know it's [@ManifoldScholar](https://twitter.com/ManifoldScholar) training time when... pic.twitter.com/ZztLpc5RFY
 >
-> — Terence Smyre (@tremayning) [November 19, 2019](https://twitter.com/tremayning/status/1196785882105352194?ref_src=twsrc%5Etfw)
+> — Terence Smyre (@tremayning) November 19, 2019
 
 Terence commented,
 
@@ -31,12 +31,10 @@ Given all these great conversations, it’s hard not to see this last chapter in
 
 > Manifold will enable Affordable Learning Georgia to take our open textbooks into the future of digital reading. We're very excited about the accessibility and connectedness that Manifold brings to the world of OER!
 >
-> - Jeff Gallant
+> — Jeff Gallant
 
 For more, visit [Affordable Learning Georgia’s website](https://www.affordablelearninggeorgia.org/) and follow [Affordable Learning Georgia on Twitter](https://twitter.com/ALearningGA).
 
-**Miles traveled:** 1,968
-
-**Food Featured:** Tuesday afternoon they made our way downtown for a leisurely and utterly delightful vegetarian lunch at [The Grit](https://www.thegrit.com/). Terence had been having a hankering for tofu, and the Golden Tofu wrap with spicy mayo exceeded his hopes.&nbsp;&nbsp;
-
-**Sights Seen:** In a clandestine early morning operation, Terence set out from the hotel Wednesday and made for [Independent Baking Co.](http://independentbaking.com/) to surprise family back home with the yummy treats he had the fortune to enjoy last week. He figured there are few better gifts to return with than pastries made by absolute masters of their craft.
+- **Miles traveled:** 1,968
+- **Food Featured:** Tuesday afternoon they made our way downtown for a leisurely and utterly delightful vegetarian lunch at [The Grit](https://www.thegrit.com/). Terence had been having a hankering for tofu, and the Golden Tofu wrap with spicy mayo exceeded his hopes.
+- **Sights Seen:** In a clandestine early morning operation, Terence set out from the hotel Wednesday and made for [Independent Baking Co.](http://independentbaking.com/) to surprise family back home with the yummy treats he had the fortune to enjoy last week. He figured there are few better gifts to return with than pastries made by absolute masters of their craft.

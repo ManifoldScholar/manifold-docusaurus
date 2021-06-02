@@ -1,20 +1,15 @@
 ---
 slug: "accessgranted"
-title: "Access Granted"
+title: "Access Granted: Manifold 5.0 Is Here!"
 image: "/img/blog/legacy_wp/2020/05/Hi5Robot-866x1024.png"
 image_alt: "sketch of a friendly cartoon robot holding palm out, which shows a Manifold logo"
 ---
 
 We are delighted to announce the release of Manifold version 5.0, which is available for download [here](https://manifoldapp.org/docs/reference/downloads)! The centerpiece of this release, a new Access Controls feature, will allow users to limit access to selected projects on a Manifold installation.
 
-
 <!--truncate-->
 
-## Manifold 5.0 Is Here!
-
-We are delighted to announce the release of Manifold version 5.0, which is available for download [here](https://manifoldapp.org/docs/reference/downloads)! The centerpiece of this release, a new Access Controls feature, will allow users to limit access to selected projects on a Manifold installation.
-
-With this feature, publishers can switch on restricted access to any existing or new Manifold project, and can grant project access to any number of registered users on a Manifold site. The potential use cases are indeed manifold: Publishers of scholarly journals and conference proceedings can share publications with a base of subscribers or members. Teachers can create educational materials that can be shared only with students in a particular class. Works in progress can be shared with a select group of peer reviewers. Creators of collaborative projects can share drafts with a team for feedback. University presses can use Access Controls to serve exam and review copies or potentially offer paid access to course texts, opening up new revenue streams through the platform.&nbsp;
+With this feature, publishers can switch on restricted access to any existing or new Manifold project, and can grant project access to any number of registered users on a Manifold site. The potential use cases are indeed manifold: Publishers of scholarly journals and conference proceedings can share publications with a base of subscribers or members. Teachers can create educational materials that can be shared only with students in a particular class. Works in progress can be shared with a select group of peer reviewers. Creators of collaborative projects can share drafts with a team for feedback. University presses can use Access Controls to serve exam and review copies or potentially offer paid access to course texts, opening up new revenue streams through the platform.
 
 Our approach to access controls embraces the needs of different organizations, allowing publishers to craft custom messaging around why materials are restricted and how to gain access to them. We have built in scheduling features so publishers can choose the terms of access, whether that be a semester, a year, or otherwise. In the months to come, we plan to add a suite of complementary features to this architecture, including the ability to add large numbers of users simultaneously through ingestion of CSV files. Publishers can integrate shopping carts on their own or contact the Manifold Digital Services team to discuss options for support and assistance.
 
@@ -22,10 +17,7 @@ Manifold is an open-source project, and it is oriented toward open access in con
 
 For a more detailed rundown of this feature, and the other enhancements in version 5.0, please check out this guided video tour by lead developer Zach Davis.
 
-<iframe src="https://vimeo.com/423616600" width="640" height="360" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<iframe src="https://player.vimeo.com/video/423616600" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/423616600">New Features in Manifold v5</a> from <a href="https://vimeo.com/user25947133">Zach Davis</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
-
-For more on the current directions of the Manifold project, check out this recording of our [recent panel discussion](https://umn.zoom.us/rec/play/6MEkI-CuqG03HdOU4QSDCvZ8W9W-e66sgyQcq_IOzhq8WyYHZ1vwY-dDM7H5zMUqFm9x0E4GedPB-mpi?continueMode=true&_x_zm_rtaid=cQd_3pP-QOiaQNudWIjp5g.1590008981683.92cb35426c4a5eaa91c8b70d67ae54b1&_x_zm_rhtaid=919) at Coko’s Open Publishing Fest. We look forward to hearing about how you will use Access Controls on your Manifold installation, and answering your questions on [Slack](https://manifold-slackin.herokuapp.com/) and [Github](https://github.com/ManifoldScholar/manifold).
-
-
-
+We look forward to hearing about how you will use Access Controls on your Manifold installation, and answering your questions on [Slack](https://manifold-slackin.herokuapp.com/) and [Github](https://github.com/ManifoldScholar/manifold).

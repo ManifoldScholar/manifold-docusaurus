@@ -17,7 +17,7 @@ John and Terence began planning for this meeting back in June when they had the 
 
 > Beautiful morning here in DC. It was a treat run around the Capitol and Lincoln Memorial in the first light of the day. Though the spell was broken a bit when a duck almost flew into my face. Never had one fly straight at me before. Too funny!
 >
-> — Terence Smyre (@tremayning) [August 29, 2019](https://twitter.com/tremayning/status/1167036565085929472?ref_src=twsrc%5Etfw)
+> — Terence Smyre (@tremayning) August 29, 2019
 
  <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -31,7 +31,7 @@ Following their last training session, Terence remarked:
 
 > It was an absolute pleasure to spend the last two days with [@john\_w\_warren](https://twitter.com/john_w_warren?ref_src=twsrc%5Etfw) and the [@gwpubs](https://twitter.com/gwpubs?ref_src=twsrc%5Etfw) team. I can't wait to hear what your students think of [@ManifoldScholar](https://twitter.com/ManifoldScholar?ref_src=twsrc%5Etfw) and see the exciting projects they create!
 >
-> — Terence Smyre (@tremayning) [August 29, 2019](https://twitter.com/tremayning/status/1167051394790109184?ref_src=twsrc%5Etfw)
+> — Terence Smyre (@tremayning) August 29, 2019
 
  <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
