@@ -3,11 +3,9 @@ slug: "manifoldv011released"
 title: "Manifold v0.1.1 Released"
 ---
 
-
+Version 0.1.1 of Manifold is a bugfix release. It has been pushed to the [Manifold staging instance](http://staging.manifoldapp.org). This release includes the following fixes and improvements.
 
 <!--truncate-->
-
-Version 0.1.1 of Manifold is a bugfix release. It has been pushed to the [Manifold staging instance](http://staging.manifoldapp.org). This release includes the following fixes and improvements.
 
 - [B] Reset default text color in dark reading mode
 - [B] Only show FE mobile nav when logged in

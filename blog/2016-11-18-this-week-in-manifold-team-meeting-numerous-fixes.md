@@ -3,13 +3,11 @@ slug: "thisweekinmanifoldteammeetingnumerousfixes"
 title: "This Week in Manifold: Team meeting, Numerous Fixes"
 ---
 
-
-
-<!--truncate-->
-
 This has been an exciting week for Manifold. The UMNP team—Terence, Dan, Susan, and Doug—and Matt all came out to Portland for one of our regular meetings. We met at the Cast Iron Coding office in the old Washington High School building and spent two days talking through issues, thinking about Manifold use cases, sorted through thorny metadata and DOI concerns, and generally reviewed how far we've come, where we're at, and what's left to do. I always find these meetings inspiring and invigorating, and am reminded of what a strong team we have in place for this project.
 
 In the two weeks leading up to this meeting, the development and design team at Cast Iron has been working furiously to tighten up existing behavior and progress on the project resources. As a result, we don't have a lot in the way of big new features to report for this sprint. We do, however, have a long list of fixes, small improvements, and tweaks, which I'm including below. Next week is a short week, and I likely won't post an update until the following week. In the next sprint, we'll be finalizing project resources, and then turning our attention back to the annotation user interface, and begin work on comment threads.
+
+<!--truncate-->
 
 The release that went out to staging today includes the following revisions.
 

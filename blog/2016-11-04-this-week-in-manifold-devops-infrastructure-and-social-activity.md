@@ -3,13 +3,11 @@ slug: "thisweekinmanifolddevopsinfrastructureandsocialactivity"
 title: "This Week in Manifold: DevOps, Infrastructure, and Social Activity"
 ---
 
-
-
-<!--truncate-->
-
 Thanks for joining me for another installation of "This Week in Manifold."
 
 First off, please accept my apologies for missing last week's update. When last Friday rolled around, we had a number of updates ready to go out to our staging site. However, when it was time to deploy, we hit a few unexpected problems.
+
+<!--truncate-->
 
 ## DevOps, Hosting Manifold, and Deployment
 
@@ -38,7 +36,9 @@ This release includes a scheduler that runs constantly in the background while M
 
 Editors can use twitter search terms to describe what kind of tweets Manifold should pull in for a given project. This gives editors quite a bit of flexibility. For example, Manifold might watch the author's twitter account for all tweets with a specific hash tag. Or, it might watch twitter in general for all tweets that include a given hashtag. Our tweet fetching service accepts multiple search terms, so it's possible for a project to follow multiple accounts and hashtags.
 
-These tweets show up on the project activity feed. Readers can browse through the historical activity for a project and see the events—texts being added, tweets about the project, new resources uploaded—that took place as the project became a published book (see screenshot, below). Our hope is that showing this activity helps make public the iterative aspects of authorship. [![Project Activity](/img/blog/legacy_wp/2016/11/Screen-Shot-2016-11-04-at-9.58.24-AM.png)](/img/blog/legacy_wp/2016/11/Screen-Shot-2016-11-04-at-9.58.24-AM.png)
+These tweets show up on the project activity feed. Readers can browse through the historical activity for a project and see the events—texts being added, tweets about the project, new resources uploaded—that took place as the project became a published book (see screenshot, below). Our hope is that showing this activity helps make public the iterative aspects of authorship.
+
+[![Project Activity](/img/blog/legacy_wp/2016/11/Screen-Shot-2016-11-04-at-9.58.24-AM.png)](/img/blog/legacy_wp/2016/11/Screen-Shot-2016-11-04-at-9.58.24-AM.png)
 
 Well, that's enough for today. I'll be back next week with another update. Enjoy the weekend!
 
