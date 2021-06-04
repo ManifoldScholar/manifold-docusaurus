@@ -239,7 +239,7 @@
             <description><![CDATA[Digital preservation is a cornerstone issue for the Manifold team to address during our second phase. In creating a platform for publishers to collect and disseminate singular works that contribute to the scholarly record, it is imperative that we provide a means to preserve those works against the rigors of time and technological obsolescence. Publishers, authors, and the communities they serve need to be confident the materials they are publishing on Manifold will not only be discoverable, but also reliably accessible and useable for future engagement.]]></description>
         </item>
         <item>
-            <title><![CDATA[Manifold Meeting in Minnesota]]></title>
+            <title><![CDATA[Manifold Meeting in Minnesota: Rhubarb, Accessibility and Preservation, and American Ninja Warrior]]></title>
             <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/manifoldmeetinginminnesota</link>
             <guid>manifoldmeetinginminnesota</guid>
             <pubDate>Fri, 17 Aug 2018 00:00:00 GMT</pubDate>
@@ -250,7 +250,7 @@
             <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/webaccessibilityroadmapformanifold</link>
             <guid>webaccessibilityroadmapformanifold</guid>
             <pubDate>Wed, 08 Aug 2018 00:00:00 GMT</pubDate>
-            <description><![CDATA[Web accessibility is a broad term used to describe any strategies, user interfaces, or content, specifically designed with assistive technologies (AT) and/or disabled users in mind. In developing the Manifold web app we strive for it to be as accessible as possible. Our particular focus is on the screen reader user experience. In this document we’ll explore the guidelines used in determining an acceptable level of accessibility, the best tools to aid in development, what AT compatibility pitfalls to avoid, and the strategies for continuing development. Hopefully this document will outline what work has been completed thus far, as well as describe some best practices for moving forward.]]></description>
+            <description><![CDATA[Introduction]]></description>
         </item>
         <item>
             <title><![CDATA[Announcing the Release of Manifold 1.0]]></title>
@@ -264,7 +264,7 @@
             <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/announcingmanifoldscholarshipphasetwo</link>
             <guid>announcingmanifoldscholarshipphasetwo</guid>
             <pubDate>Tue, 17 Apr 2018 00:00:00 GMT</pubDate>
-            <description><![CDATA[The University of Minnesota Press with CUNY’s GC Digital Scholarship Lab and Cast Iron Coding to launch]]></description>
+            <description><![CDATA[The University of Minnesota Press with CUNY’s GC Digital Scholarship Lab and Cast Iron Coding to launch MANIFOLD SCHOLARSHIP PHASE TWO with a $789,000 grant from The Andrew W. Mellon Foundation. The Second phase will focus on expanding installations of the platform and developing new features.]]></description>
         </item>
         <item>
             <title><![CDATA[How To Code in Python: Using Manifold to Deliver an Open Educational Resource]]></title>
@@ -299,7 +299,7 @@
             <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/manifoldv013releasedtostagingmanifoldapporg</link>
             <guid>manifoldv013releasedtostagingmanifoldapporg</guid>
             <pubDate>Thu, 13 Apr 2017 00:00:00 GMT</pubDate>
-            <description><![CDATA[Version 0.1.3 of Manifold&nbsp;introduces support for logins&nbsp;using Facebook, Twitter, and Google OAuth services. This version also incorporates a refactored approach to managing application settings, which can now be set via the backend, or managed by way of the dotenv file, which tends to be a more appropriate solution for automated provisioning and deployment. Fixed bugs:]]></description>
+            <description><![CDATA[Version 0.1.3 of Manifold introduces support for logins using Facebook, Twitter, and Google OAuth services. This version also incorporates a refactored approach to managing application settings, which can now be set via the backend, or managed by way of the dotenv file, which tends to be a more appropriate solution for automated provisioning and deployment.]]></description>
         </item>
         <item>
             <title><![CDATA[Manifold v0.1.1 Released]]></title>
@@ -313,7 +313,7 @@
             <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/manifoldbetanowavailable</link>
             <guid>manifoldbetanowavailable</guid>
             <pubDate>Tue, 04 Apr 2017 00:00:00 GMT</pubDate>
-            <description><![CDATA[The Manifold team is delighted to launch a public beta of its new publishing platform for interactive scholarly monographs//staging.manifoldapp.org/.browse-splashmanifold-devices-1]]></description>
+            <description><![CDATA[The Manifold team is delighted to launch a public beta of its new publishing platform for interactive scholarly monographs//staging.manifoldapp.org/.]]></description>
         </item>
         <item>
             <title><![CDATA[Manifold Preview!]]></title>
@@ -327,14 +327,14 @@
             <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/readingwithmatthewkgold</link>
             <guid>readingwithmatthewkgold</guid>
             <pubDate>Mon, 09 Jan 2017 00:00:00 GMT</pubDate>
-            <description><![CDATA[mkgold-gc-15]]></description>
+            <description><![CDATA[Before the holidays, I had the chance to chat with Manifold Co-PI Matthew K. Gold, who is Associate Professor of English and Digital Humanities and Executive Officer of the M.A. Program in Liberal Studies at the Graduate Center, CUNY. I have been lucky to work with Matt for a couple of years now, through seminars on digital humanities praxis and textual studies, on DH tool-building projects like DH Box, on the editorial collective of the Journal of Interactive Technology and Pedagogy, and with the digital fellows of the GC Digital Initiatives. His widespread commitment to textual scholarship and digital innovation, his seemingly tireless support of his students and digital experimentation, and his humility (which he may not even let me mention) never cease to amaze me. I have spent a lot of time discussing Manifold with Matt, but I was glad to get the chance to ask him more specifically about his personal motivations for developing a hybrid publishing platform.]]></description>
         </item>
         <item>
             <title><![CDATA[Reading with Zach Davis]]></title>
             <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/readingwithzachdavis</link>
             <guid>readingwithzachdavis</guid>
             <pubDate>Mon, 05 Dec 2016 00:00:00 GMT</pubDate>
-            <description><![CDATA[Zach Davis]]></description>
+            <description><![CDATA[Last week, calling Portland from the Digital Scholarship Lab at the Graduate Center, I had the pleasure of speaking with Manifold’s lead developer, Zach Davis at Cast Iron Coding. Yet again, my attempts to record the call came to naught, but I will conjure some of the conversation from my notes.]]></description>
         </item>
         <item>
             <title><![CDATA[This Week in Manifold: Markdown and Backend Development]]></title>
