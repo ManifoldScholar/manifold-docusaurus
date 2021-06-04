@@ -3,13 +3,11 @@ slug: "joiningmanifold"
 title: "Joining Manifold"
 ---
 
-
-
-<!--truncate-->
-
 Happy Halloween!
 
 My name is Jojo Karlin and I am an English doctoral student and Digital Fellow at the Graduate Center, CUNY. I’ve joined **Manifold** this fall to help get the word out about what the team has been up to, and I am excited to investigate the generative potential built into this iterative, collaborative platform. I love the ways Manifold seeks to enrich scholarly publication by building communities of researchers engaged in collective annotation and networked reading.
+
+<!--truncate-->
 
 When friends and acquaintances unfamiliar with the field hear I work in “digital humanities,” they often react with anxieties about the death of print. Skeptical bibliophiles lament the impact of screens on humanity as they cite popular science [articles about babies swiping pages of print books](https://www.psychologytoday.com/blog/behind-online-behavior/201604/is-what-screen-time-really-does-kids-brains). &nbsp;Yet I remain a stalwart defender of books in their many forms. I grew up in a house lined with books and have a categorical weakness for library book sales and department book swaps; I also depend on my computer and smartphone as part of my reading practice.
 

@@ -1,19 +1,13 @@
 ---
 slug: "readingwithmatthewkgold"
 title: "Reading with Matthew K. Gold"
-img: img/blog/legacy_wp/2017/01/mkgold-gc-15.jpg
-img_alt: "portrait of Matthew K. Gold"
+img: "/img/blog/legacy_wp/2017/01/mkgold-gc-15.jpg"
+img_alt: "Portrait of Matthew K. Gold"
 ---
-
-
-
-<!--truncate-->
-
-[![mkgold-gc-15](/img/blog/legacy_wp/2017/01/mkgold-gc-15.jpg)](/img/blog/legacy_wp/2017/01/mkgold-gc-15.jpg)
 
 Before the holidays, I had the chance to chat with Manifold Co-PI Matthew K. Gold, who is Associate Professor of English and Digital Humanities and Executive Officer of the M.A. Program in Liberal Studies at the Graduate Center, CUNY. I have been lucky to work with Matt for a couple of years now, through seminars on digital humanities praxis and textual studies, on DH tool-building projects like DH Box, on the editorial collective of the Journal of Interactive Technology and Pedagogy, and with the digital fellows of the GC Digital Initiatives. His widespread commitment to textual scholarship and digital innovation, his seemingly tireless support of his students and digital experimentation, and his humility (which he may not even let me mention) never cease to amaze me. I have spent a lot of time discussing Manifold with Matt, but I was glad to get the chance to ask him more specifically about his personal motivations for developing a hybrid publishing platform.
 
---
+<!--truncate-->
 
 **What matters most to you about Manifold?**  
 
@@ -31,6 +25,6 @@ For me, print is still most important as a reading experience. But I’m never s
 
 I am reading (and loving) [Barbarian Days by William Finnegan](http://www.nytimes.com/2015/07/19/books/review/barbarian-days-a-surfing-life-by-william-finnegan.html?_r=0). Somehow, reading about waves feels like the right thing in this post-election moment—an escape from politics but also a reminder of how to make our way among larger and sometimes brutal forces. **Who inspires your work? ** I tend to be inspired by my academic mentors. My first academic mentor was Robert D. Richardson, Jr., who is a biographer of Thoreau and Emerson (his [biography of Emerson](http://www.robertdrichardson.com/books/emerson-the-mind-on-fire/) remains one of my favorite books). I’m still in awe of his erudition and research and writing skills. I’m also inspired on a daily level by my colleagues at the Graduate Center and across CUNY, especially by the students I work with.
 
---
+***
 
 After Matt answered all the questions, we had the chance to speak more broadly about Manifold and the features that specifically address readers’ needs. The design of the platform—from the icons, to commenting and annotation, to the reading interface—is the result of careful consideration by a team of careful readers. Moving forward, even as I share more about the creators of Manifold and the reading practices that influence its development, I will be adding a features series to outline the thinking that goes into the various components of Manifold.

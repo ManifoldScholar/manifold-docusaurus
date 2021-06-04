@@ -3,13 +3,14 @@ slug: "manifoldv020released"
 title: "Manifold v0.2.0 Released"
 ---
 
-On behalf of the entire Manifold team, I'm super excited to announce the release of Manifold v0.2.0! The release is up on Github now, and we'll be rolling it out to our staging site later today. This release contains a number of new features and bugfixes, listed below. For the full list of revisions and pull requests, please consult&nbsp;the changelog.
-
-
+On behalf of the entire Manifold team, I'm super excited to announce the release of Manifold v0.2.0! The release is up on [Github](https://github.com/ManifoldScholar/manifold/tree/v0.2.0) now, and we'll be rolling it out to our [staging site](http://staging.manifoldapp.org) later today. This release contains a number of new features and bugfixes, listed below. For the full list of revisions and pull requests, please consult&nbsp;the [changelog](https://github.com/ManifoldScholar/manifold/blob/v0.2.0/CHANGELOG.md).
 
 <!--truncate-->
 
-[Star](https://github.com/ManifoldScholar/manifold)[Watch](https://github.com/ManifoldScholar/manifold/subscription)<script async="" defer src="https://buttons.github.io/buttons.js"></script> On behalf of the entire Manifold team, I'm super excited to announce the release of Manifold v0.2.0! The release is up on [Github](https://github.com/ManifoldScholar/manifold/tree/v0.2.0) now, and we'll be rolling it out to our [staging site](http://staging.manifoldapp.org) later today. This release contains a number of new features and bugfixes, listed below. For the full list of revisions and pull requests, please consult&nbsp;the [changelog](https://github.com/ManifoldScholar/manifold/blob/v0.2.0/CHANGELOG.md). Remember, Manifold is open source and freely available to all who are interested. While we have plans to build docker containers and OS packages, we've also written up [installation instructions](https://github.com/ManifoldScholar/manifold-docs/blob/master/developers/installation/development.md) for all you early adopters out there. Take it for a spin and let us know how it goes. As always, we appreciate any feedback. To support our effort and motivate our development team, please take a moment to watch or star our repository on Github! **Features**
+Remember, Manifold is open source and freely available to all who are interested. While we have plans to build docker containers and OS packages, we've also written up [installation instructions](https://github.com/ManifoldScholar/manifold-docs/blob/master/developers/installation/development.md) for all you early adopters out there. Take it for a spin and let us know how it goes. As always, we appreciate any feedback. To support our effort and motivate our development team, please take a moment to watch or star our repository on Github!
+
+**Features**
+
 - All ingestion strategies can support a .zip or a directory [#398](https://github.com/ManifoldScholar/manifold/issues/398)
 - Backend users can edit text stylesheets [#367](https://github.com/ManifoldScholar/manifold/issues/367)
 - Manifold can ingest a single HTML file as a text [#360](https://github.com/ManifoldScholar/manifold/issues/360)
@@ -27,7 +28,9 @@ On behalf of the entire Manifold team, I'm super excited to announce the release
 - Readers can generate a citation (MLA, APA, Chicago, etc.) for the selected passage [#269](https://github.com/ManifoldScholar/manifold/issues/269)
 - Manifold utilizes Postgres JSONB field for storing text section content [#258](https://github.com/ManifoldScholar/manifold/issues/258)
 - Installation instructions are included in manifold/manifold-docs [#245](https://github.com/ManifoldScholar/manifold/issues/245)
+
 **Bugs**
+
 - Markdown ingestion fails if there's no stylesheet [#399](https://github.com/ManifoldScholar/manifold/issues/399)
 - HTML ingestion fails if there is no \<style\> tag in the document head. [#397](https://github.com/ManifoldScholar/manifold/issues/397)
 - If an API request triggers a fatal error (500 or 404), client app should return the correct status code. [#396](https://github.com/ManifoldScholar/manifold/issues/396)
@@ -81,5 +84,3 @@ On behalf of the entire Manifold team, I'm super excited to announce the release
 - Issues parsing Manifold-Docs TOC [#248](https://github.com/ManifoldScholar/manifold/issues/248)
 - Ingesting Markdown Files fails if the sources include a zero k file. [#247](https://github.com/ManifoldScholar/manifold/issues/247)
 - CSS Validator throws an exception with invalid CSS [#246](https://github.com/ManifoldScholar/manifold/issues/246)
-
-

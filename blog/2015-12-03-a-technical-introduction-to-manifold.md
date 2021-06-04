@@ -3,20 +3,20 @@ slug: "atechnicalintroductiontomanifold"
 title: "A Technical Introduction to Manifold"
 ---
 
-
-
-<!--truncate-->
-
 Hello Manifoldians!
 
 I'm Zach Davis, principle at [Cast Iron Coding](http://castironcoding.com), a web development studio in Portland, Oregon. My team and I are responsible for UX design, visual design, and development of Manifold over the course of the grant, and it is my hope that I'll be able to post regular updates here detailing development and design decisions, challenges, and milestones over the course of the project.
 
 For now, however, I'd like to walk through the technology stack we've settled on, and the reasoning behind some of these choices. If anyone has any questions, please don't hesitate to post a comment!
 
+<!--truncate-->
+
 ## Where to find the source code
+
 As you know, one of the requirements of the grant funding this development is that Manifold be released as open source, and our current plan is to release Manifold under the GPLv3. For the time being, Manifold source code is stored in the [ManifoldScholar/manifold Github repository](https://github.com/ManifoldScholar/manifold). If you look at the [ManifoldScholar GitHub organization](https://github.com/ManifoldScholar), you'll see additional repositories for [Manifold-API](https://github.com/ManifoldScholar/manifold-api) and [Manifold-Client](https://github.com/ManifoldScholar/manifold-client). Eventually, we hope to be able to provide the Manifold API as a stand-alone piece of software that can be used to parse, store, and expose ePub and Markdown documents over a RESTful API. In preparation for this, we're using a [git subtree-split strategy](https://medium.com/@porteneuve/mastering-git-subtrees-943d29a798ec#.siwyoulty) to break the Manifold project into separate API and Client packages. These split repositories are updated significantly less frequently than the main Manifold repository. If your goal is to follow our development, for now your best bet will be to just watch the primary repository.
 
 We've already made significant progress on Manifold, although we're still far from an alpha release. We'd love it if you'd show your support for our project by starring our GitHub repo and keeping an eye on development. As we get closer to a stable alpha release in 2016, we'll invite community members to download and install their own instance of Manifold.
+
 ## Server-side architecture
 
 Manifold is split into the client application, and the server-side application. For now, these two applications share a repository to simplify development, but they are very distinct and meant to run independently of each other.
@@ -63,4 +63,5 @@ To run Manifold, you'll need to have the following setup on a server:
 We'll be providing instructions on how to set this up, as well as sample config files. Eventually, I hope to provide apt-get packages for Ubuntu as well. Once things are a bit more stable, we'll regularly release docker containers that you can use to take Manifold for a spin.
 
 ## In Closing
+
 Hopefully this gives you a better sense of what we're using to build Manifold, and why. I'd love to have a conversation about our choices, so please don't hesitate to leave feedback in the comments. In the coming weeks, I'm going to try to share some early artifacts from the UX and visual design process, to give you a better sense of what Manifold will look like and what it will be capable of.

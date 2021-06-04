@@ -3,13 +3,11 @@ slug: "readingwithsusandoerr"
 title: "Reading with Susan Doerr"
 ---
 
-
-
-<!--truncate-->
-
 While the seismic ruptures of the election have unsettled the ground beneath us, it feels necessary to continue working on projects that look beyond the next four years, that address the possibility of connecting people through ideas and through constructive debate. Last week, in the midst of national turmoil, I had the pleasure of interviewing Susan Doerr, University of Minnesota Press Assistant Director, Digital Publishing and Operations. During our phone call, I asked Susan a number of questions about her thoughts on reading and the Manifold platform.
 
 I started by asking Susan what matters most to her about Manifold. She talked about the process of collaborating with the Manifold team on writing the grant proposal, and thinking about publishing books in the browser. Susan believes the real revolution of an epub or pdf ebook is the speed of distribution—instant access for a reader. Susan said, “ebook reading devices are siloed—a reader is stuck in an app or device.” What the Manifold team wanted to do was “break free from that constraint. Ebooks today are replications of print—active media that don't do much more than the print edition of a book. And we wanted to do more.”
+
+<!--truncate-->
 
 Publishing a book in the browser allows it to be dynamic—vs static. The more they thought about it, the more opportunity they saw for readers to follow a project as it evolve because Manifold can publish a project iteratively, that is, in pieces over time.
 
@@ -34,6 +32,6 @@ Ultimately, she finds inspiration in the process of art making.
 
 Throughout our conversation, I heard Susan’s excitement about the work she does and an attention to the ways she works and thinks. Susan gave me some good book recommendations, and we had the chance to discuss our hopes for scholarly communication and monographs. She generously shared her own experience, yet made clear that what matters most to her is serving her audience. A reassuring commitment in an unsteady time.
 
-Thank you, Susan!    
+Thank you, Susan!
 
 Follow Susan [@susanmpls](https://twitter.com/susanmpls).
