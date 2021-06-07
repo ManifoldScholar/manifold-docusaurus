@@ -7,15 +7,11 @@ image_alt: "Illustration of a gopher reading a book in the geometric shape of th
 
 In the last training of the season, Terence met with [Jeff Gallant](https://twitter.com/jeffwgallant), Program Manager of Affordable Learning Georgia; Joy Woodson, Assistant Director for Marketing Communications; and Lucy Harrison, Assistant Vice Chancellor for Library Services and Executive Director of [GALILEO](https://twitter.com/galileolibrary).
 
-<!--truncate-->
-
 > Great to be back in Athens this week. Really looking forward to kicking off [@ManifoldScholar](https://twitter.com/ManifoldScholar) training and talking about open textbooks with [@jeffwgallant](https://twitter.com/jeffwgallant) and the [@ALearningGA](https://twitter.com/ALearningGA) team.
 >
 > — Terence Smyre (@tremayning) November 19, 2019
 
-> You know it's [@ManifoldScholar](https://twitter.com/ManifoldScholar) training time when... pic.twitter.com/ZztLpc5RFY
->
-> — Terence Smyre (@tremayning) November 19, 2019
+<!--truncate-->
 
 Terence commented,
 

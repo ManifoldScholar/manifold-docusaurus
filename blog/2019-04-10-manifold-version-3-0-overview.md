@@ -7,30 +7,36 @@ image_alt: "watercolor illustration of a triceratops dinosaur with a Manifold lo
 
 The Manifold team is delighted to announce the release of Manifold version 3.0. The hallmark feature for this release is the addition of project content blocks, which provides editors the ability to customize the content that appears on project landing pages.
 
-<!--truncate-->
-
-
 ## Major Features
 
-**Project Content Blocks**
+### Project Content Blocks
+
 With version 3.0, editors can now pick which blocks of content—texts, metadata, resources, markdown, metadata, activity—they want to appear on project pages, and the order in which they should appear. These blocks are configurable on a per project basis and expand the range of project types that Manifold can easily support. When users create projects, they are offered a series of choices that will scaffold the project blocks based on their answers.
 
-**Customizable Project Heroes**
+<!--truncate-->
+
+### Customizable Project Heroes
+
 The project page hero area is now fully customizable. Editors can manage all the content in this area and add calls to action below the description or the cover image. These calls to action have been decoupled from the published text.
 
-**Alpha Plugin Interfaces**
+### Alpha Plugin Interfaces
+
 Version 3.0 includes an early stab at making Manifold more extensible and customizable. Documentation for these interfaces is forthcoming (in the next week or so), and the interface is still subject to change as we refine our thinking around this feature. For the time being, it is possible to add a custom Sass file that overrides global color variables. We've also added interfaces for replacing the Manifold header and footer with a custom implementation, which will allow support for institutional branding. More on this to come in the coming weeks and in what will likely be a 3.1 release.
 
-**Responsive Reader iFrames and H5P Embeds**
+### Responsive Reader iFrames and H5P Embeds
+
 The Manifold reader now does a better job of sizing iFrames responsively, and also allows users to add custom data attributes to the ingestion source to embed H5P interactive content. This integration is a first step toward including more dynamic elements in the reader, and we're looking forward to building on it in the future.
 
-**Improvements to Search**
+### Improvements to Search
+
 Prior to version 3.0, every text node in a text being ingested into the Manifold reader was broken out into a separate model in the database to simplify the Elasticsearch indexing process. This was not a scalable or performant approach. We've removed this intermediary model and improved how texts are indexed, which speeds up the indexing process significantly. Full-text search results have been redesigned so it's now possible to see full-text hits in the context of the section the hit appears in. Annotations have been added to global search results.
 
-**Redesigned Backend Lists**
+### Redesigned Backend Lists
+
 We've redesigned backend interfaces for listing records, which includes lists of projects, events, makers, users, features, and pages. We've improved the mobile responsiveness of these interfaces and refined the overall look and feel. List filtering logic has been refactored and simplified. New filters have been added to project lists for listing only projects you've created.
 
-**Project Collections**
+### Project Collections
+
 We released project collections in an intermediary release—version 2.1—between 2.0 and 3.0. Project collections give publishers a way to group projects and highlight those groups on the Manifold home page. We've continued to make small improvements to this feature as we've worked toward 3.0 and learned more about how it's being used.
 
 ## Minor Features
@@ -77,6 +83,3 @@ Improving Manifold's accessibility is an ongoing area of focus. We're thankful f
 - Removed nested skip-to links
 - Adjusted header tags to be more semantic and accessible
 - Improved markup accessibility on dashboard stats table
-
-
-

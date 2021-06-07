@@ -9,13 +9,25 @@ Read on for your first sneak peek!
 
 <!--truncate-->
 
-[![browse-splash_manifold-devices-1](/img/blog/legacy_wp/2017/03/browse-splash_manifold-devices-1-768x596.png)](/img/blog/legacy_wp/2017/03/browse-splash_manifold-devices-1.png)
+<figure>
+  <img 
+    src={require('/img/blog/legacy_wp/2017/03/browse-splash_manifold-devices-1-768x596.png').default}
+    alt="browse-splash_manifold-devices-1"
+  />
+  <figcaption></figcaption>
+</figure>
 
 ## Manifold
 
 The Manifold homepage shows the Press's library—the books and projects that it is offering through Manifold. Featured projects (those you have selected) stand beside the rest of the available titles, which you can browse or sort by category.
 
-[![screen-shot-2017-03-30-at-4-41-00-pm](/img/blog/legacy_wp/2017/03/Screen-Shot-2017-03-30-at-4.41.00-PM-768x732.png)](/img/blog/legacy_wp/2017/03/Screen-Shot-2017-03-30-at-4.41.00-PM-768x732.png)
+<figure>
+  <img 
+    src={require('/img/blog/legacy_wp/2017/03/Screen-Shot-2017-03-30-at-4.41.00-PM-768x732.png').default}
+    alt="screen-shot-2017-03-30-at-4-41-00-pm"
+  />
+  <figcaption></figcaption>
+</figure>
 
 ## Projects
 
@@ -25,11 +37,23 @@ Manifold organizes around the idea of projects—a project includes both the tex
 
 The interface is made for readability and usability. You can change colors for higher-contrast, and adjust the margins of the text:
 
-[![typograhy-view_optimized](/img/blog/legacy_wp/2017/03/typograhy-view_optimized.gif)](/img/blog/legacy_wp/2017/03/typograhy-view_optimized.gif)
+<figure>
+  <img 
+    src={require('/img/blog/legacy_wp/2017/03/typograhy-view_optimized.gif').default}
+    alt="typograhy-view_optimized"
+  />
+  <figcaption></figcaption>
+</figure>
 
 Or adjust the typography.
 
-[![typography-font_optimized](/img/blog/legacy_wp/2017/03/typography-font_optimized-1.gif)](/img/blog/legacy_wp/2017/03/typography-font_optimized-1.gif)   
+<figure>
+  <img 
+    src={require('/img/blog/legacy_wp/2017/03/typography-font_optimized-1.gif').default}
+    alt="typography-font_optimized"
+  />
+  <figcaption></figcaption>
+</figure>   
 
 While reading a text, you also have the option to access supplementary materials and annotate both the text and ancillary materials, as well as add comments to other reader's annotations that haven't been made private. When you select text, a menu pops up with options for highlighting, annotation, citing, and sharing.
 
@@ -37,19 +61,37 @@ While reading a text, you also have the option to access supplementary materials
 
 You have the opportunity to comment on text in the reader interface right in your browser. While designing the platform, the Manifold team considered the expectations scholars have of digital texts. Blending personal reading habits, scholars’ wishlists, and successful aspects of comments in projects like the previous collaboration between the CUNY Graduate Center, Cast Iron Coding, the University of Minnesota Press—_[Debates in the Digital Humanities](http://dhdebates.gc.cuny.edu) —_ the team developed a user-centered annotation system. Moving beyond the sentence-level annotation of _Debates in the Digital Humanities_, Manifold lets you leave comments on any selection of text.
 
-[![annotate02-optimized](/img/blog/legacy_wp/2017/03/annotate02-optimized.gif)](/img/blog/legacy_wp/2017/03/annotate02-optimized.gif)  
+<figure>
+  <img 
+    src={require('/img/blog/legacy_wp/2017/03/annotate02-optimized.gif').default}
+    alt="annotate02-optimized"
+  />
+  <figcaption></figcaption>
+</figure>  
 
 ## Highlighting
 
 As you read, you have the option to highlight passages with your cursor.
 
-[![highlight01-optimized](/img/blog/legacy_wp/2017/03/highlight01-optimized-1.gif)](/img/blog/legacy_wp/2017/03/highlight01-optimized-1.gif)
+<figure>
+  <img 
+    src={require('/img/blog/legacy_wp/2017/03/highlight01-optimized-1.gif').default}
+    alt="highlight01-optimized"
+  />
+  <figcaption></figcaption>
+</figure>
 
 ## Sharing
 
 Manifold also helps you share passages from the text via social media. Choosing "Share" from the dropdown links the passage in a post to your Facebook or Twitter accounts.  
 
-[![share01-edited](/img/blog/legacy_wp/2017/03/share01-edited.gif)](img/blog/legacy_wp/2017/03/share01-edited.gif)
+<figure>
+  <img 
+    src={require('/img/blog/legacy_wp/2017/03/share01-edited.gif').default}
+    alt="share01-edited"
+  />
+  <figcaption></figcaption>
+</figure>
 
 These are only a few of the features of Manifold — get ready for filtering by categories, favorites, search, and more. We look forward to sharing the fruits of collaborative effort, thoughtful design, and hard work.
 

@@ -56,4 +56,10 @@ This week's development sprint will be focused on a few main goals. [Naomi](http
 
 All work and no play makes for dull developers, and so I will leave you with a screenshot of Manifold's new error screen (only visible in development mode), inspired by the first computer Zach ever owned, the illustrious [Commodore 64](https://en.wikipedia.org/wiki/Commodore_64).
 
-[![screen-shot-2016-10-24-at-6-33-08-am](/img/blog/legacy_wp/2016/10/Screen-Shot-2016-10-24-at-6.33.08-AM-1024x766.png)](http://manifold.umn.edu/app/uploads/2016/10/Screen-Shot-2016-10-24-at-6.33.08-AM.png)
+<figure>
+  <img 
+    src={require('/img/blog/legacy_wp/2016/10/Screen-Shot-2016-10-24-at-6.33.08-AM-1024x766.png').default}
+    alt=""
+  />
+  <figcaption></figcaption>
+</figure>
