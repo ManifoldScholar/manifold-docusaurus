@@ -17,7 +17,7 @@ In September 2018, the Manifold team received an inquiry from Dr. Ross—thanks 
 
 During our first day we explored Manifold primarily through the lens of it working in service to the journal. As our conversations developed through the afternoon and into the next day, it was becoming clear that Manifold could not only help Dr. Ross with the journal but also with other publishing initiatives she's been thinking through with her nascent editorial team: Ericka Dunbar and Ebony Johnson. Our earlier demos had shown off the system's primary functionalities, but there's so much lurking under the surface to take advantage that become clear the more you explore. That's when the ideas really start coming out: wait, wait, I can use this for this and this and this too! Manifold not only facilitates a means to enhance materials you're already producing it enables publishing materials in entirely new and meaningful ways.
 
-> Great morning with [@drreross](https://twitter.com/drreross?ref_src=twsrc%5Etfw) leading us in creating a prototype of the forthcoming Black Women and Religious Cultures journal on [@ManifoldScholar](https://twitter.com/ManifoldScholar?ref_src=twsrc%5Etfw). So exciting to be here at the start!
+> Great morning with [@drreross](https://twitter.com/drreross) leading us in creating a prototype of the forthcoming Black Women and Religious Cultures journal on [@ManifoldScholar](https://twitter.com/ManifoldScholar). So exciting to be here at the start!
 >
 > — Terence Smyre (@tremayning) October 22, 2019
 

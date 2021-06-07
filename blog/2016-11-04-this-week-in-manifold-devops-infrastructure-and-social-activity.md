@@ -38,7 +38,13 @@ Editors can use twitter search terms to describe what kind of tweets Manifold sh
 
 These tweets show up on the project activity feed. Readers can browse through the historical activity for a project and see the events—texts being added, tweets about the project, new resources uploaded—that took place as the project became a published book (see screenshot, below). Our hope is that showing this activity helps make public the iterative aspects of authorship.
 
-[![Project Activity](/img/blog/legacy_wp/2016/11/Screen-Shot-2016-11-04-at-9.58.24-AM.png)](/img/blog/legacy_wp/2016/11/Screen-Shot-2016-11-04-at-9.58.24-AM.png)
+<figure>
+  <img 
+    src={require('/img/blog/legacy_wp/2016/11/Screen-Shot-2016-11-04-at-9.58.24-AM.png').default}
+    alt="Project Activity"
+  />
+  <figcaption></figcaption>
+</figure>
 
 Well, that's enough for today. I'll be back next week with another update. Enjoy the weekend!
 

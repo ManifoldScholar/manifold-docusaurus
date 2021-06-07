@@ -5,11 +5,12 @@ title: "Manifold Version 2.0 Overview"
 
 The Manifold team is delighted to announce the release of version 2.0 of the Manifold platform. This release adds new accessibility features, makes multiple improvements to the reading experience of Manifold, and expands the number of types of document formats that can be ingested by the platform. For details, please see below or watch this video overview:
 
-<!--truncate-->
-
 <iframe src="https://player.vimeo.com/video/289698661" width="640" height="360" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
 
+<!--truncate-->
+
 ## Major Features
+
 **Audio Player** Audio resources will now render an audio player with volume control, scrubber, current time, and pause/play controls. A waveform of the audio file renders above the controls, which can also be used for moving the playhead.
 
 **Annotation Resilience** Manifold has a new service that attempts to reposition annotations in a text section after the text section has changed. Generally speaking, annotations are more resistant to changes in the underlying text. Prior to this release, changing and text node in a document could cause all annotations in that node and in child nodes to become orphaned.
@@ -43,9 +44,10 @@ The Manifold team is delighted to announce the release of version 2.0 of the Man
 - **Pickers** are responsible for polling converters, fetchers, and strategies to determine which should be applied to each model. We’ve added a configuration layer that we’ll expose in a future release, which will allow developers to add custom converters, strategies, and fetchers to Manifold.
 
 - We’ve added **pre- and post-processing stages** to ingestion to allow us to extract stylesheets, add IDs to headers for TOC generation, and other small adjustments. We will likely expose these steps for customization in the future.
- With the more modular architecture, we expect to be able to roll out ingestion fixes and improvements more quickly while also adding support for new formats and content sources. As part of this work, we’ve also improved the ingestion user interface. We’ve moved it from a modal to a drawer, added automated detection for ingestion type, and generally improved the usability of the UI.
 
- **CentOS 7 and Ubuntu 18 Support** For this release, we circled back to our Omnibus tooling for generating OS-level Manifold packages and added support for CentOS 7 (as well as RHEL 7) and Ubuntu 18. As always, these packages are available from [our downloads page](https://manifoldapp.org/docs/reference/downloads), and we’ve updated installation instructions to include [CentOS](https://manifoldapp.org/docs/installing/centos/index).
+With the more modular architecture, we expect to be able to roll out ingestion fixes and improvements more quickly while also adding support for new formats and content sources. As part of this work, we’ve also improved the ingestion user interface. We’ve moved it from a modal to a drawer, added automated detection for ingestion type, and generally improved the usability of the UI.
+
+**CentOS 7 and Ubuntu 18 Support** For this release, we circled back to our Omnibus tooling for generating OS-level Manifold packages and added support for CentOS 7 (as well as RHEL 7) and Ubuntu 18. As always, these packages are available from [our downloads page](https://manifoldapp.org/docs/reference/downloads), and we’ve updated installation instructions to include [CentOS](https://manifoldapp.org/docs/installing/centos/index).
 
 **Support for Very Large Ingestions** In version 1.0, we relied on Javascript File APIs for handling the uploaded ingestion file. With time, we found that those interfaces tended to fail when dealing with files over 150 or 200MB. Many of our users are attracted to Manifold as a reading platform because of its support for multimedia, which means we need to be able to support very large ingestion sources. To solve this, we changed the way Manifold handles uploads for ingestions. We followed the TUS specification ([https://tus.io/](https://tus.io/)), which means that Manifold also now can show accurate upload progress and offer resumable uploads for ingestion source files. Version 2.0 should have no problem supporting ingestions that are multiple gigabytes in size.
 
@@ -58,7 +60,9 @@ The Manifold team is delighted to announce the release of version 2.0 of the Man
 **So Many Bug Fixes** For 2.0, we’ve fixed over a hundred bugs and made many, many small improvements to Manifold. Manifold is now tighter, more polished, and more stable!
 
 ## Minor Features
+
  In addition to the features outlined above, Manifold 2.0 ships with the following minor features:
+ 
 - Collection description fields now accept Markdown, which makes it possible to link to external sites and add formatting.
 - All fields that accept Markdown formatting now accept Markdown links.
 - When there are no projects for a Manifold instance, Manifold will now display placeholder content.
@@ -75,5 +79,3 @@ The Manifold team is delighted to announce the release of version 2.0 of the Man
 - We’ve added a “purpose” field to page records so that Manifold can automatically link to terms of service and privacy policies in appropriate places.
 - We now render resource download variants on resource detail view.
 - Improved IE11 and Edge support.
-
-

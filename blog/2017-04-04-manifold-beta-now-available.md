@@ -11,12 +11,12 @@ Funded through the generous support of the [Andrew W. Mellon Foundation](https:/
 
 <!--truncate-->
 
-**Published Books**
+## Published Books
 
 - [The Perversity of Things: Hugo Gernsback on Media, Tinkering, and Scientification](https://manifold.umn.edu/projects/the-perversity-of-things) by Hugo Gernsback. Edited by Grant Wythoff
 - [Metagaming: Playing, Competing, Spectating, Cheating, Trading, Making, and Breaking Videogames](https://manifold.umn.edu/projects/metagaming) by Stephanie Boluk and Patrick LeMieux
 
-**Forerunners**
+## Forerunners
 
 - [The Uberfication of the University](https://manifold.umn.edu/projects/the-uberfication-of-the-university) by Gary Hall
 - [The Anthrobscene](https://manifold.umn.edu/projects/the-anthrobscene) by Jussi Parikka
@@ -27,7 +27,7 @@ Funded through the generous support of the [Andrew W. Mellon Foundation](https:/
 - [Ten Theses for an Aesthetics of Politics](https://manifold.umn.edu/projects/ten-theses-for-an-aesthetics-of-politics) by Davide Panagia
 - [Deep Mapping the Media City](https://manifold.umn.edu/projects/deep-mapping-the-media-city) by Shannon Mattern
 
-**New Projects**
+## New Projects
 
 - [The Lab Book: Situated Practices in Media Studies](https://manifold.umn.edu/projects/the-lab-book) by Lori Emerson, Jussi Parikka, and Darren Wershler
 - [In/visible Archives of the 1980s: Feminist Politics and Queer Platforms](https://manifold.umn.edu/projects/in-visible-archives-of-the-1980s) by Margaret Galvan

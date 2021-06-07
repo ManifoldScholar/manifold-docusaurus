@@ -18,9 +18,7 @@ MINNEAPOLIS, MN (June 6, 2019)—The Manifold team is pleased to announce the se
 - [MESH, Michigan State University](http://www.meshresearch.net/)
 - [University of Georgia Press](https://ugapress.org)
 
-
 <!--truncate-->
-
 
 These programs were chosen from a pool of highly competitive and diverse applicants, and will each receive their own installations of the platform and in-person training to assist them in using Manifold to further their missions of scholarly research, publishing, and pedagogy. Like the [first-year pilot participants](http://blog.manifoldapp.org/2018/08/30/ten-publishers-to-begin-using-manifold/), these groups represent university presses, libraries, periodical and journal publishers, digital humanities centers, professional associations, academic units, and collectives of scholars from around the globe.
 
@@ -35,6 +33,3 @@ Manifold is an open-source, web-based publishing platform that enables publicati
 Manifold is a collaborative project created by the [University of Minnesota Press](https://www.upress.umn.edu/),[the GC Digital Scholarship Lab at the Graduate Center of the City University of New York](https://gcdsl.commons.gc.cuny.edu/home2/), and the digital development agency [Cast Iron Coding](http://castironcoding.com/). The installation and training for these ten publishers is supported by a grant from[The Andrew W. Mellon Foundation](https://mellon.org/).
 
 To learn more about Manifold, please visit [https://manifoldapp.org/](https://manifoldapp.org/).
-
-
-

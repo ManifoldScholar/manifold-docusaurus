@@ -3,13 +3,13 @@ slug: "manifoldv020released"
 title: "Manifold v0.2.0 Released"
 ---
 
-On behalf of the entire Manifold team, I'm super excited to announce the release of Manifold v0.2.0! The release is up on [Github](https://github.com/ManifoldScholar/manifold/tree/v0.2.0) now, and we'll be rolling it out to our [staging site](http://staging.manifoldapp.org) later today. This release contains a number of new features and bugfixes, listed below. For the full list of revisions and pull requests, please consult&nbsp;the [changelog](https://github.com/ManifoldScholar/manifold/blob/v0.2.0/CHANGELOG.md).
+On behalf of the entire Manifold team, I'm super excited to announce the release of Manifold v0.2.0! The release is up on [Github](https://github.com/ManifoldScholar/manifold/tree/v0.2.0) now, and we'll be rolling it out to our [staging site](http://staging.manifoldapp.org) later today. This release contains a number of new features and bugfixes, listed below. For the full list of revisions and pull requests, please consult the [changelog](https://github.com/ManifoldScholar/manifold/blob/v0.2.0/CHANGELOG.md).
 
 <!--truncate-->
 
 Remember, Manifold is open source and freely available to all who are interested. While we have plans to build docker containers and OS packages, we've also written up [installation instructions](https://github.com/ManifoldScholar/manifold-docs/blob/master/developers/installation/development.md) for all you early adopters out there. Take it for a spin and let us know how it goes. As always, we appreciate any feedback. To support our effort and motivate our development team, please take a moment to watch or star our repository on Github!
 
-**Features**
+## Features
 
 - All ingestion strategies can support a .zip or a directory [#398](https://github.com/ManifoldScholar/manifold/issues/398)
 - Backend users can edit text stylesheets [#367](https://github.com/ManifoldScholar/manifold/issues/367)
@@ -29,7 +29,7 @@ Remember, Manifold is open source and freely available to all who are interested
 - Manifold utilizes Postgres JSONB field for storing text section content [#258](https://github.com/ManifoldScholar/manifold/issues/258)
 - Installation instructions are included in manifold/manifold-docs [#245](https://github.com/ManifoldScholar/manifold/issues/245)
 
-**Bugs**
+## Bugs
 
 - Markdown ingestion fails if there's no stylesheet [#399](https://github.com/ManifoldScholar/manifold/issues/399)
 - HTML ingestion fails if there is no \<style\> tag in the document head. [#397](https://github.com/ManifoldScholar/manifold/issues/397)

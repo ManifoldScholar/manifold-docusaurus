@@ -7,9 +7,9 @@ image_alt: "sketch of a friendly cartoon robot holding palm out, which shows a M
 
 We are delighted to announce the release of Manifold version 5.0, which is available for download [here](https://manifoldapp.org/docs/reference/downloads)! The centerpiece of this release, a new Access Controls feature, will allow users to limit access to selected projects on a Manifold installation.
 
-<!--truncate-->
-
 With this feature, publishers can switch on restricted access to any existing or new Manifold project, and can grant project access to any number of registered users on a Manifold site. The potential use cases are indeed manifold: Publishers of scholarly journals and conference proceedings can share publications with a base of subscribers or members. Teachers can create educational materials that can be shared only with students in a particular class. Works in progress can be shared with a select group of peer reviewers. Creators of collaborative projects can share drafts with a team for feedback. University presses can use Access Controls to serve exam and review copies or potentially offer paid access to course texts, opening up new revenue streams through the platform.
+
+<!--truncate-->
 
 Our approach to access controls embraces the needs of different organizations, allowing publishers to craft custom messaging around why materials are restricted and how to gain access to them. We have built in scheduling features so publishers can choose the terms of access, whether that be a semester, a year, or otherwise. In the months to come, we plan to add a suite of complementary features to this architecture, including the ability to add large numbers of users simultaneously through ingestion of CSV files. Publishers can integrate shopping carts on their own or contact the Manifold Digital Services team to discuss options for support and assistance.
 
