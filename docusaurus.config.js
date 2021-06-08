@@ -166,18 +166,18 @@ module.exports = {
           label: "Documentation",
           position: "left"
         },
-        {
-          to: "docs/walkthroughs/landing",
-          activeBasePath: "docs/walkthroughs",
-          label: "Walkthroughs",
-          position: "left"
-        },
-        {
-          to: "docs/guides/landing",
-          activeBasePath: "docs/guides",
-          label: "Guides",
-          position: "left"
-        },
+        // {
+        //   to: "docs/walkthroughs/landing",
+        //   activeBasePath: "docs/walkthroughs",
+        //   label: "Walkthroughs",
+        //   position: "left"
+        // },
+        // {
+        //   to: "docs/guides/landing",
+        //   activeBasePath: "docs/guides",
+        //   label: "Guides",
+        //   position: "left"
+        // },
         {
           to: "blog",
           label: "Blog",
