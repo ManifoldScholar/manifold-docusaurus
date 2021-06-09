@@ -84,7 +84,7 @@ These settings can also be [managed from environment variables](/docs/administer
 
 ## Google Analytics
 
-Manifold ships with its own [built-in analytics reporting tool](../../backend/analytics.md), independent of third party systems. However, if you would like to secure usage data from Google as well, you can set up an analytics property in the Google Console. That property will enable Google ti return usage information about your instance in the Google Analytics interface.
+Manifold ships with its own [built-in analytics reporting tool](../../backend/analytics.md), independent of third party systems. However, if you would like to secure usage data from Google as well, you can set up an analytics property in the Google Console. That property will enable Google to return usage information about your instance in the Google Analytics interface.
 
 To enable this functionality, you will first need to complete the Google Services Integration described above. Once that is complete, [set up a Universal Authorization property](https://support.google.com/analytics/answer/10269537). The Tracking ID that results from that process should be saved to the **Google Analytics Tracking ID** field in Manifold, complete with the the `UA-` prefix.
 
