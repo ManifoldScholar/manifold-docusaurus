@@ -16,7 +16,7 @@ Only users logged in with **Admin** credentials can access this view.
 The **Integrations** menu is where Manifold administrators store application tokens and values from existing Facebook, Twitter, or Google properties so that new and existing readers can log into Manifold, make use of its social sharing functionalities, and Project editors can ingest Texts from Google and integrate their Projects with Twitter.
 
 :::tip
-Manifold does not require that you use a specific Facebook, Twitter, or Google property for these integrations. If you don’t want to use your or your organization’s existing accounts, you can create dummy accounts specific to this purpose.
+Manifold does not require that you use a specific Facebook, Twitter, or Google property for these integrations. If you don’t want to use your or your organization’s existing accounts, you can create dedicated accounts for integrating these services with Manifold.
 :::
 
 ## Facebook and Twitter
@@ -41,13 +41,7 @@ The Facebook callback route is located at `/auth/facebook/callback`. The callbac
 
 Once your Facebook app is created, enter your Facebook App ID and App Secret values in Manifold, using the **Facebook App ID** and **Facebook App Secret** fields respectively.
 
-Alternatively, if you manage settings in the environment (`MANAGE_SETTINGS_FROM_ENV=1` in your `.env` file), you should set the corresponding settings in `.env`:
-
-```
-MANIFOLD_SETTING_INTEGRATIONS_FACEBOOK_APP_ID=
-MANIFOLD_SETTING_SECRETS_FACEBOOK_APP_SECRET=
-```
-
+These settings can also be [managed from environment variables](/docs/administering/configuring/managing_settings#managing-settings-with-environment-variables).
 </TabItem>
 
 <TabItem value="twitter">
@@ -56,12 +50,7 @@ The Twitter callback route is located at `/auth/twitter/callback`. The callback 
 
 After the callback URL has been supplied to the Twitter app, save the Consumer Key (API Key), Consumer Secret (API Secret), Access Token, and Access Token Secret the app generates into Manifold in the **Twitter Consumer Key**, **Twitter Consumer Secret**, **Twitter Access Token**, and **Twitter Access Token Secret** fields, respectively.
 
-Alternatively, if you manage settings in the environment (`MANAGE_SETTINGS_FROM_ENV=1` in your `.env` file), you should set the corresponding settings in `.env`:
-
-```
-MANIFOLD_SETTING_INTEGRATIONS_TWITTER_APP_ID=
-MANIFOLD_SETTING_SECRETS_TWITTER_APP_SECRET=
-```
+These settings can also be [managed from environment variables](/docs/administering/configuring/managing_settings#managing-settings-with-environment-variables).
 
 As you complete your Twitter app, it should be configured to be **Read Only**, **Request email addresses from users**, with **3-legged OAuth enabled**.
 
@@ -79,20 +68,7 @@ The **Console** tab in Google’s step-by-step docs refers to the Google Cloud w
 
 When the Service Account Key has been saved to your system, you can load it into the **Google Service Config File** field in Manifold, which will automatically populate the rest of the required fields to complete the Google integration.
 
-Alternatively, if you manage settings in the environment (`MANAGE_SETTINGS_FROM_ENV=1` in your `.env` file), you should set the corresponding settings in `.env`:
-
-```
-# Config Files
-MANIFOLD_SETTING_CONFIG_GOOGLE_SERVICE="/var/opt/manifold/api/keys/google_service.json"
-
-## Google Integration
-MANIFOLD_SETTING_INTEGRATIONS_GOOGLE_PROJECT_ID=
-MANIFOLD_SETTING_INTEGRATIONS_GOOGLE_PRIVATE_KEY_ID=
-MANIFOLD_SETTING_INTEGRATIONS_GOOGLE_CLIENT_EMAIL=
-MANIFOLD_SETTING_INTEGRATIONS_GOOGLE_CLIENT_ID=
-```
-
-If a file path is present at the path set in `MANIFOLD_SETTING_CONFIG_GOOGLE_SERVICE`, values will first be set from this file, then overwritten by any subsequent matching keys.
+These settings can also be [managed from environment variables](/docs/administering/configuring/managing_settings#managing-settings-with-environment-variables).
 
 ## Google OAuth
 
@@ -104,13 +80,7 @@ The Manifold API handles OAuth callbacks. For Google, the callback route is loca
 
 Manifold Google OAuth requires **Setup Consent** configured with your email, your authorized Manifold domain, and the callback URL entered in the **Authorized redirect URIs** field. The Manifold Integration page has fields to input both **Client ID** and **Client secret**.
 
-Alternatively, if you manage settings in the environment (`MANAGE_SETTINGS_FROM_ENV=1` in your `.env file`), you should set the corresponding settings in `.env`:
-
-```
-# Google OAuth Integration
-MANIFOLD_SETTING_INTEGRATIONS_GOOGLE_OAUTH_CLIENT_ID=
-MANIFOLD_SETTING_SECRETS_GOOGLE_OAUTH_CLIENT_SECRET=
-```
+These settings can also be [managed from environment variables](/docs/administering/configuring/managing_settings#managing-settings-with-environment-variables).
 
 ## Google Analytics
 
@@ -118,9 +88,4 @@ Manifold ships with its own [built-in analytics reporting tool](../../backend/an
 
 To enable this functionality, you will first need to complete the Google Services Integration described above. Once that is complete, [set up a Universal Authorization property](https://support.google.com/analytics/answer/10269537). The Tracking ID that results from that process should be saved to the **Google Analytics Tracking ID** field in Manifold, complete with the the `UA-` prefix.
 
-Alternatively, if you manage settings in the environment (`MANAGE_SETTINGS_FROM_ENV=1` in your `.env` file), you should set the corresponding settings in `.env`:
-
-```
-# Google Analytics Integration
-MANIFOLD_SETTING_INTEGRATIONS_GA_TRACKING_ID=
-```
+These settings can also be [managed from environment variables](/docs/administering/configuring/managing_settings#managing-settings-with-environment-variables).
