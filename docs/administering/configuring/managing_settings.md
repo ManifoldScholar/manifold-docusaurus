@@ -4,6 +4,106 @@ title: Managing Settings
 sidebar_label: Managing Settings
 ---
 
-## Managing Settings in the Backend
+## From the Backend
 
-## Managing Settings with Environment Variables
+The Settings menu in Manifold's backend allows non-technical users to customize their instance. Settings are stored in Manifold's database, and can be viewed from an API console session using `Settings.instance`.
+
+To access settings, you must be logged in as an admin user. Each of the available settings are described in more detail in the subpages of this page.
+
+## From the Environment
+
+:::tip
+To learn how to manage environment variables from a package installation of Manifold, see [this section of our documentation](/docs/administering/reference/environment_variables#package-install).
+:::
+
+When Manifold's API service starts, it is possible to set any of Manifold's setting through an environment variable. This process happens once, when the application starts. To read settings from the environment, the following environment variable must be set:
+```bash
+MANAGE_SETTINGS_FROM_ENV=1
+```
+If that variable is present, Manifold will map environment variables that begin with `MANIFOLD_SETTING_` to the corresponding setting value in the database. On startup, the settings record in the database will be updated with the value from the environment.
+
+
+:::info
+The authoritative settings record in the database is updated from the environment when Manifold starts up. This means that you could load a setting from the environment, then change it in the web interface. The next time Manifold is restarted, the value from the environment will overwrite the updated value. Be aware of this caveat if you manage settings from the environment.
+:::
+
+While most setting environment variables are straight-forward, there is one that is unique:
+
+```bash
+MANIFOLD_SETTING_CONFIG_GOOGLE_SERVICE="/path/to/google/service/key.json"
+```
+
+This variable allows you to refer to a google cloud service account json key. When Manifold boots up, it will parse this key and assign the various values to the correct settings. This is useful if you're deploying Manifold to a Google Cloud environment and need to automatically provision and provide Manifold with a service account as part of that process.
+
+
+As of Manifold v6, the following settings can be set from the environment:
+```bash
+MANIFOLD_SETTING_GENERAL_TWITTER
+MANIFOLD_SETTING_GENERAL_FACEBOOK
+MANIFOLD_SETTING_GENERAL_COPYRIGHT
+MANIFOLD_SETTING_GENERAL_HEAD_TITLE
+MANIFOLD_SETTING_GENERAL_PRESS_SITE
+MANIFOLD_SETTING_GENERAL_CONTACT_EMAIL
+MANIFOLD_SETTING_GENERAL_ALL_STANDALONE
+MANIFOLD_SETTING_GENERAL_HEAD_DESCRIPTION
+MANIFOLD_SETTING_GENERAL_LIBRARY_DISABLED
+MANIFOLD_SETTING_GENERAL_DEFAULT_PUBLISHER
+MANIFOLD_SETTING_GENERAL_HOME_REDIRECT_URL
+MANIFOLD_SETTING_GENERAL_INSTALLATION_NAME
+MANIFOLD_SETTING_GENERAL_RESTRICTED_ACCESS
+MANIFOLD_SETTING_GENERAL_DISABLE_ENGAGEMENT
+MANIFOLD_SETTING_GENERAL_LIBRARY_REDIRECT_URL
+MANIFOLD_SETTING_GENERAL_SOCIAL_SHARE_MESSAGE
+MANIFOLD_SETTING_GENERAL_DISABLE_READING_GROUPS
+MANIFOLD_SETTING_GENERAL_RESTRICTED_ACCESS_BODY
+MANIFOLD_SETTING_GENERAL_DEFAULT_PUBLISHER_PLACE
+MANIFOLD_SETTING_GENERAL_RESTRICTED_ACCESS_HEADING
+MANIFOLD_SETTING_GENERAL_DISABLE_INTERNAL_ANALYTICS
+MANIFOLD_SETTING_THEME_TYPEKIT_ID
+MANIFOLD_SETTING_THEME_LOGO_STYLES
+MANIFOLD_SETTING_THEME_TOP_BAR_URL
+MANIFOLD_SETTING_THEME_ACCENT_COLOR
+MANIFOLD_SETTING_THEME_TOP_BAR_MODE
+MANIFOLD_SETTING_THEME_TOP_BAR_TEXT
+MANIFOLD_SETTING_THEME_HEADER_OFFSET
+MANIFOLD_SETTING_THEME_TOP_BAR_COLOR
+MANIFOLD_SETTING_THEME_HEADER_BACKGROUND_COLOR
+MANIFOLD_SETTING_THEME_HEADER_FOREGROUND_COLOR
+MANIFOLD_SETTING_THEME_HEADER_FOREGROUND_ACTIVE_COLOR
+MANIFOLD_SETTING_INTEGRATIONS_GA_PROFILE_ID
+MANIFOLD_SETTING_INTEGRATIONS_GA_TRACKING_ID
+MANIFOLD_SETTING_INTEGRATIONS_TWITTER_APP_ID
+MANIFOLD_SETTING_INTEGRATIONS_FACEBOOK_APP_ID
+MANIFOLD_SETTING_INTEGRATIONS_GOOGLE_CLIENT_ID
+MANIFOLD_SETTING_INTEGRATIONS_GOOGLE_PROJECT_ID
+MANIFOLD_SETTING_INTEGRATIONS_GOOGLE_CLIENT_EMAIL
+MANIFOLD_SETTING_INTEGRATIONS_TWITTER_ACCESS_TOKEN
+MANIFOLD_SETTING_INTEGRATIONS_GOOGLE_PRIVATE_KEY_ID
+MANIFOLD_SETTING_INTEGRATIONS_GOOGLE_OAUTH_CLIENT_ID
+MANIFOLD_SETTING_SECRETS_GOOGLE_PRIVATE_KEY
+MANIFOLD_SETTING_SECRETS_TWITTER_APP_SECRET
+MANIFOLD_SETTING_SECRETS_FACEBOOK_APP_SECRET
+MANIFOLD_SETTING_SECRETS_SMTP_SETTINGS_PASSWORD
+MANIFOLD_SETTING_SECRETS_GOOGLE_OAUTH_CLIENT_SECRET
+MANIFOLD_SETTING_SECRETS_TWITTER_ACCESS_TOKEN_SECRET
+MANIFOLD_SETTING_EMAIL_CLOSING
+MANIFOLD_SETTING_EMAIL_FROM_NAME
+MANIFOLD_SETTING_EMAIL_FROM_ADDRESS
+MANIFOLD_SETTING_EMAIL_REPLY_TO_NAME
+MANIFOLD_SETTING_EMAIL_DELIVERY_METHOD
+MANIFOLD_SETTING_EMAIL_REPLY_TO_ADDRESS
+MANIFOLD_SETTING_EMAIL_SMTP_SETTINGS_PORT
+MANIFOLD_SETTING_EMAIL_SMTP_SETTINGS_ADDRESS
+MANIFOLD_SETTING_EMAIL_SMTP_SETTINGS_USER_NAME
+MANIFOLD_SETTING_INGESTION_GLOBAL_STYLES
+MANIFOLD_SETTINGS_STORAGE_PRIMARY // can be GCS or FILE
+MANIFOLD_SETTINGS_STORAGE_MIRROR // can be GCS or file
+MANIFOLD_SETTINGS_STORAGE_PRIMARY_BUCKET
+MANIFOLD_SETTINGS_STORAGE_CACHE_BUCKET
+MANIFOLD_SETTINGS_STORAGE_TUS_BUCKET
+MANIFOLD_SETTINGS_STORAGE_MIRROR_BUCKET
+MANIFOLD_SETTINGS_STORAGE_PRIMARY_PATH
+MANIFOLD_SETTINGS_STORAGE_CACHE_PATH
+MANIFOLD_SETTINGS_STORAGE_TUS_PATH
+MANIFOLD_SETTINGS_STORAGE_MIRROR_PATH
+```

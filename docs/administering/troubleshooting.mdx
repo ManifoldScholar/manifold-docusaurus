@@ -1,0 +1,41 @@
+---
+id: troubleshooting
+title: Troubleshooting
+sidebar_label: Troubleshooting
+---
+import Spec from "@theme/Spec";
+
+## Logging
+
+When Manifold isn't working the way it should, the best place to begin troubleshooting is by looking at Manifold's logs.
+
+<Spec
+ title="Log Locations"
+ subtitle="For package installations"
+ items={[
+  { key: "API", value: "/var/log/manifold/api/production.log" },
+  { key: "API app server (Puma)", value: "/var/log/manifold/puma/current" },
+  { key: "Cable", value: "/var/log/manifold/cable/current" },
+  { key: "Client", value: "/var/log/manifold/client/current" },
+  { key: "Clockwork", value: "/var/log/manifold/clockwork/current" },
+  { key: "Elasticsearch", value: "/var/log/manifold/elasticsearch/current" },
+  { key: "Nginx access log", value: "/var/log/manifold/nginx/access.log" },
+  { key: "Nginx error log", value: "/var/log/manifold/nginx/error.log" },
+  { key: "Postgresql", value: "/var/log/manifold/postgresql/current" },
+  { key: "Redis", value: "/var/log/manifold/redis/current" },
+  { key: "Sidekiq", value: "/var/log/manifold/sidekiq/current" }
+ ]}
+/>
+
+See the [troubleshooting services](/docs/administering/managing_services#troubleshooting-services) section in our documentation for more information on managing and checking services. If Manifold isn't working correctly, check and make sure all services are running. If a service isn't starting, check the corresponding log file to figure out why the service won't run correctly.
+
+If you're encountering an application error, start by figuring out if it's a client error or an API error. If you're seeing a 500 error from the API, it could indicate a misconfiguration or a bug. Check the end of the API log to better understand what's causing the error. Errors in the client application will show up in the client log, or in your console in developer tools. If you see errors in these places, please report them to us on Slack. If there's a bug in Manifold, we want to know about it!
+
+## Background Jobs
+
+Manifold runs a number of tasks in the background, including but not limited to image processing, email delivery, collection membership calculations, epub generation, and project packaging. It relies on a piece of open source software called Sidekiq to manage these job queues. If you are logged in to your manifold instance as an admin user, you may view the Sidekiq job queue at http://your-domain/api/sidekiq. If background jobs are failing, you will see a high count of failed or retried jobs on the dashboard. Look at the retry queue for clues about why jobs are failing.
+
+## Memory Consumption
+
+Like many Ruby applications, the Manifold API consumes and can hold onto available memory. With Manifold v6, we've fixed a number of memory issues and upgrades Ruby to v2.7, which has improved garbage collection. That said, you might experience issues if your instance doesn't have adequate memory resources to support Manifold's various underlying services. If Manifold is non-responsive or unstable, monitory the available memory and consider increasing the resources devoted to Manifold.
+
