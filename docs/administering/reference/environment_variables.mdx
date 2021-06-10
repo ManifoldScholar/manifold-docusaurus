@@ -1,0 +1,63 @@
+---
+id: environment_variables
+title: Environment Variables
+sidebar_label: Environment Variables
+---
+import Spec from "@theme/Spec";
+
+Manifold uses Environment variables to orchestrate and configure its various services.
+
+### Package Install
+
+Environment variables for the Manifold API and Client are stored in `/var/opt/manifold/etc/`. Do not edit these files directly, as they are generated anew each time you run `manifold-ctl reconfigure`. Instead, edit the master configuration file at `etc/manifold/manifold.rb`. To inject environment variables for the API, expose your environment variables as a hash at `manifold_api['env']`. Remember, this file is a Ruby file and should be valid Ruby syntax.
+
+```ruby
+#### Add custom environment to Manifold API
+manifold_api['env'] = {
+  "FOO" => "bar"
+}
+```
+
+As always, once you've updated this file, run `sudo manifold-ctl reconfigure` to apply your changes. Look at `/var/opt/manifold/etc/api-env.sh` to confirm that your additons to the environment persisted.
+
+### Other installation types
+
+In a Docker environment, you can pass environment variables to services using the Docker Compose file. When developing locally or deploying from source, it's also possible to set variables in the application's root `.env` file.
+
+### Available Variables
+
+The following environment variables can be used to adjust Manifold's behavior. Variables can be exposed to the Client and/or the API services, [C] and [A] accordingly.
+
+<Spec
+  title="Environment Variables"
+  items={[
+    { key: "DOMAIN", value: "[C, A] The FQDN domain name for the instance "},
+    { key: "SSL_ENABLED", value: "[C, A] True if SSL is enabled"},
+    { key: "NODE_TLS_REJECT_UNAUTHORIZED", value: " [C] True if client should accept self-signed API certificates" },
+    { key: "API_SOCKET", value: "[A] Location for the API service socket file" },
+    { key: "API_CABLE_SOCKET", value: "[A] Location for the cable service socket file" },
+    { key: "CLIENT_SERVER_SOCKET", value: "[C]Location for the client service socket file" },
+    { key: "CLIENT_SERVER_PORT", value: "[C] Expose the client service on a port" },
+    { key: "API_PORT", value: "[A] Expose the API service on a port" },
+    { key: "API_CABLE_PORT", value: "[A] Expose the cable service on a port" },
+    { key: "CLIENT_URL", value: "[C, A] The base URL for the client" },
+    { key: "CLIENT_BROWSER_API_URL", value: "[C] The base URL that the client should use to access the API" },
+    { key: "CLIENT_BROWSER_API_CABLE_URL", value: "[C] The base URL that the client should use to access cable" },
+    { key: "CLIENT_SERVER_PROXIES", value: "[C] Allows the client to proxy requests to the API" },
+    { key: "ELASTICSEARCH_URL", value: "[A] The URL of Elasticsearch" },
+    { key: "NODE_ENV", value: "[C] The client environment (production, development)" },
+    { key: "RAILS_ENV", value: "[A] The API environment (production, development)" },
+    { key: "RAILS_DB_PORT", value: "[A] Postgres port" },
+    { key: "RAILS_DB_HOST", value: "[A] Postgres host" },
+    { key: "RAILS_DB_NAME", value: "[A] Postgres database name" },
+    { key: "RAILS_DB_USER", value: "[A] Postgres user" },
+    { key: "RAILS_DB_USER", value: "[A] Postgres password" },
+    { key: "RAILS_DB_PASS", value: "[A] Redis URL" },
+    { key: "RAILS_SECRET_KEY", value: "[A] A long, secret, string" },
+    { key: "MANAGE_SETTINGS_FROM_ENV", value: "[A] Allow settings to be managed from the environment" }
+  ]}
+/>
+
+:::tip
+It is also possible to manage Manifold settings through the environment. See our documentation on [managing settings](/docs/administering/configuring/managing_settings#from-the-environment) for more information.
+:::

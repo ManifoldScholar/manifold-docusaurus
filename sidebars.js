@@ -32,7 +32,6 @@ module.exports = {
             'Reference': [
               'administering/reference/environment_variables',
               'administering/reference/api_rake_tasks',
-              'administering/reference/omnibus_reference',
               'administering/reference/downloads',
             ]
           },
@@ -64,9 +63,7 @@ module.exports = {
       },
       {
         'Developers': [
-            'developers/development_environment',
-            'developers/contributing',
-            'developers/tests',
+            'developers/local_development',
             'developers/api',
         ]
       },
