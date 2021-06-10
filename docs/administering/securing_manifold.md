@@ -39,7 +39,7 @@ The commands add the certbot project's package repository to your list of reposi
 
 Alternately, consult [current Certbot installation instructions](https://certbot.eff.org/) on the Certbot website.
 
-### Acquire a Certificate from Let's Encrypt
+### Provision a Cerificate
 
 Certbot offers a number of ways to generate and install an SSL certificate. Since Manifold does not use the nginx packages from the distribution's package repository and also comes with its own configuration and installation paths it is best to refrain from letting certbot try to modify the server configuration itself. A successful and easy workflow is to let certbot use its own provisional server in order to only register and download the certificates. References to these certificates as well as server configuration can then be achieved manually by modifying Manifold's configuration file (`/etc/manifold/manifold.rb`).
 
@@ -49,9 +49,9 @@ In case Manifold is already running on your server you have to shut it down via 
 
 In case you use a firewall on your server - and you definitely should use one - you now need to allow connections via the SSL port. Using the standard firewall on Linux `ufw` this can be achieved via `sudo ufw allow https`. Afterwards the firewall needs to be restarted by writing `sudo ufw restart`.
 
-## Notice on the lifecycle of Let's Encrypt Certificates
-
+:::caution
 Please be aware that SSL-certificates aquired via Let's Encrypt are only valid for 3 month. Afterwards you will have to acquire a new certificate. This can be achieved by using certbot again, more precisely by typing `sudo certbot renew`. This process can also be automated with a cronjob that runs the command in defined intervals.
+:::
 
 ## SSL with Docker Images
 
