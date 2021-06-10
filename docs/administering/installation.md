@@ -23,7 +23,7 @@ When Manifold is installed using Docker, each service runs in its own Docker con
 We're still working on documentation for installing Manifold from source. For now, this is not an officially supported installation method, but we hope to provide guidance soon.
 
 :::note
-Manifold is a new piece of software, and we're working hard to refine and improve the installation process. If you run into problems, please don't get frustrated. Let us know in Slack ([join here](https://manifold-slackin.herokuapp.com/)) or [report an issue](../developers/contributing#reporting-issues). It's very important to us that Manifold be easy to install, and we appreciate your help as we improve this process.
+Manifold is a new piece of software, and we're working hard to refine and improve the installation process. If you run into problems, please don't get frustrated. Let us know in Slack ([join here](https://manifold-slackin.herokuapp.com/)) or [report an issue](https://github.com/ManifoldScholar/manifold/issues/new?template=bugs.md). It's very important to us that Manifold be easy to install, and we appreciate your help as we improve this process.
 :::
 
 ## Install Instructions
@@ -38,7 +38,7 @@ The current recommended Manifold version is <strong><Data path="manifoldVersion"
 
 The most recent version of Manifold is <Data highestVersionFor="ubuntu18" />.
 
-As of Manifold v6, we have discontinued support for Ubuntu 16, which is now end of life. 
+As of Manifold v6, we have discontinued support for Ubuntu 16, which is now end of life.
 
 
 #### 1. Download the Package
