@@ -18,7 +18,7 @@ const ICON_STYLE = {
   height: "16px"
 };
 
-const MARKETING_URL = "http://staging.manifoldapp.org";
+const MARKETING_URL = "http://manifoldapp.org";
 
 module.exports = {
   title: "Manifold Docs",
