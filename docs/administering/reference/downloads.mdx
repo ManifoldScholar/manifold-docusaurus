@@ -1,0 +1,31 @@
+---
+id: downloads
+title: Downloads
+sidebar_label: Downloads
+---
+import Downloads from '@theme/Downloads';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs
+  groupId="os"
+  defaultValue="ubuntu18"
+  values={[
+    {label: "Ubuntu 20", value: "ubuntu20"},
+    {label: "Ubuntu 18", value: "ubuntu18"},
+    {label: "CentOS 8", value: "centos8"},
+    {label: "CentOS 7", value: "centos7"},
+  ]}>
+  <TabItem value="ubuntu20">
+    <Downloads os="ubuntu20" />
+  </TabItem>
+  <TabItem value="ubuntu18">
+    <Downloads os="ubuntu18" />
+  </TabItem>
+  <TabItem value="centos8">
+    <Downloads os="centos8" />
+  </TabItem>
+  <TabItem value="centos7">
+    <Downloads os="centos7" />
+  </TabItem>
+</Tabs>
