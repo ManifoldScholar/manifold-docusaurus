@@ -110,7 +110,7 @@ The package installer creates a file at `/etc/manifold/manifold.rb`. Use this fi
 For now, let’s just make sure Manifold is on the right domain. Open `/etc/manifold/manifold.rb` in your preferred text editor (nano, vi, etc.) and look for the external_url setting near the top of the file. Set this to the fully qualified domain name of your Manifold installation, then reconfigure Manifold with the following command. You may be prompted to accept the license. You can scroll through the licenses by pressing space, or “q” to exit the license view. You will need to accept the licenses before proceeding with the installation.
 
 ```shell
-/usr/local/bin/manifold-ctl reconfigure
+/usr/bin/manifold-ctl reconfigure
 ```
 Once this process is complete, visit the fully qualified domain name in your browser. You should see an empty Manifold home page.
 

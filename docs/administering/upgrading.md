@@ -40,9 +40,9 @@ cat /opt/manifold/embedded/src/MANIFOLD_VERSION
 After you've installed the package, you should stop all services and reconfigure. Stop all Manifold services with `manifold-ctl stop`. Then run `manifold-ctl reconfigure` to ensure that all configuration is current. Once that’s complete, you can restart the services with `manifold-ctl start`.
 
 ```
-/usr/local/bin/manifold-ctl stop
-/usr/local/bin/manifold-ctl reconfigure
-/usr/local/bin/manifold-ctl start
+/usr/bin/manifold-ctl stop
+/usr/bin/manifold-ctl reconfigure
+/usr/bin/manifold-ctl start
 ```
 
 Once this process is complete, visit the fully qualified domain name in your browser. Depending on the hosting environment, restarting Manifold can take a minute or two, so please be patient.
