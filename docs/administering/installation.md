@@ -31,15 +31,14 @@ Manifold is a new piece of software, and we're working hard to refine and improv
 Select the strategy that makes sense for your organization to see the corresponding instructions.
 
 :::info
-The current recommended Manifold version is <strong><Data path="manifoldVersion" /></strong>. Previous releases can be downloaded from the [downloads page](./reference/downloads).
+The current stable Manifold version is <strong><Data command="highestStableVersionFor" argument="ubuntu18" /></strong>. <Data command="prereleaseStatement" argument="ubuntu18" />All releases can be downloaded from the [downloads page](./reference/downloads).
 :::
 
 ### Package Install
 
-The most recent version of Manifold is <Data highestVersionFor="ubuntu18" />.
+The most recent version of Manifold is <Data command="highestStableVersionFor" argument="ubuntu18" />.
 
-As of Manifold v6, we have discontinued support for Ubuntu 16, which is now end of life.
-
+As of Manifold v6, we will have discontinued support for Ubuntu 16, which is now end of life.
 
 #### 1. Download the Package
 
