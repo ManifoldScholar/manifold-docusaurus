@@ -111,8 +111,9 @@ For now, let’s just make sure Manifold is on the right domain. Open `/etc/mani
 
 ```shell
 /usr/bin/manifold-ctl reconfigure
+/usr/bin/manifold-ctl restart
 ```
-Once this process is complete, visit the fully qualified domain name in your browser. You should see an empty Manifold home page.
+Once this process is complete and you've restarted Manifold, visit the fully qualified domain name in your browser. You should see an empty Manifold home page.
 
 #### 4. Access the Backend
 
