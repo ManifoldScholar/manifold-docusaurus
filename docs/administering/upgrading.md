@@ -33,7 +33,7 @@ To upgrade to a newer Manifold Omnibus package, begin by downloading and install
 :::tip
 To determine what version is installed, run this command on the host:
 ```
-cat /opt/manifold/embedded/src/MANIFOLD_VERSION
+cat /opt/manifold/embedded/src/MANIFOLD_VERSION ; echo
 ```
 :::
 
