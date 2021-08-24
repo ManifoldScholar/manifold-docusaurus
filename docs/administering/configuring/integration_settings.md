@@ -64,6 +64,13 @@ Configuring Google Services to integrate with Manifold is a prerequisite for all
 
 To configure Google Services for Manifold, you will first need to create a Manifold Google project through the [Google Developer Console](https://cloud.google.com/resource-manager/docs/creating-managing-projects#creating_a_project) and from there secure a [JSON Service Account key](https://cloud.google.com/iam/docs/creating-managing-service-account-keys).
 
+Once the Google project has been created, you will need to enable the following Google APIs in the Google Cloud Console:
+
+1. Google Drive API
+1. Google Sheets API
+
+Manifold uses the Google Drive API when ingesting texts from Google Docs and when importing resources from a Google Drive folder. It uses the Google Sheets API when bulk ingesting resources from a Google sheet. If these APIs are not enabled, these features will not function as expected. For instructions on enabled Google APIs for your Google Cloud Project, please [consult the Google Cloud documentation](https://cloud.google.com/endpoints/docs/openapi/enable-api).
+
 The **Console** tab in Google’s step-by-step docs refers to the Google Cloud web interface, and is what most users will want to follow.
 
 When the Service Account Key has been saved to your system, you can load it into the **Google Service Config File** field in Manifold, which will automatically populate the rest of the required fields to complete the Google integration.
