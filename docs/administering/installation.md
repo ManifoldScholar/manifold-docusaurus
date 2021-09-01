@@ -31,7 +31,7 @@ Manifold is a new piece of software, and we're working hard to refine and improv
 Select the strategy that makes sense for your organization to see the corresponding instructions.
 
 :::info
-The current stable Manifold version is <strong><Data command="highestStableVersionFor" argument="ubuntu18" /></strong>. <Data command="prereleaseStatement" argument="ubuntu18" />All releases can be downloaded from the [downloads page](./reference/downloads).
+The current stable Manifold version is <strong><Data command="highestStableVersionFor" argument="ubuntu18" /></strong>. <Data command="prereleaseStatement" argument="ubuntu18" />All releases can be downloaded from the [downloads page](/docs/administering/reference/downloads).
 :::
 
 ### Package Install
