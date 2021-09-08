@@ -8,9 +8,9 @@ sidebar_label: v6.x
 Prior to v6.0.0, we did not keep detailed release notes for each version. However, we did keep a [changelog](https://github.com/ManifoldScholar/manifold/blob/master/CHANGELOG.md), and you can find a list of features from each major version on [our blog](/blog).
 :::
 
-## Manifold v6.0.0 (coming soon!)
+## Manifold v6.0.0
 
-Manifold v6.0.0 will be released in Spring, 2021. Our two main goals for this version were to pay down technical debt by updating dependencies and building a new analytics feature. Along the way, we addressed approximately 50 bugs, improved our Docker images, and applied some much needed TLC to our packaging approach.
+Our two main goals for this version were to pay down technical debt by updating dependencies and building a new analytics feature. Along the way, we addressed approximately 50 bugs, improved our Docker images, and applied some much needed TLC to our packaging approach.
 
 One reason this release is a little light on features is because we've also been focused on creating and launching a brand new manifoldapp.org site; winding down our Wordpress blog (and migrating the content to this site); and redesigning, rewriting, and migrating our documentation to Docusaurus. We're really excited to release v6, refreshed docs, and new marketing materials at the same time!
 
