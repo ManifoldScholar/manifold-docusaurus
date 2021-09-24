@@ -345,7 +345,17 @@ The title of each stylesheet is categorized by the system as “Ingested” or �
 
 3. The horizontal drag bars beside the edit button can be used to adjust the **Order** the stylesheets are applied to the Text. The rules of the topmost sheet are applied first and then the one following after, and so on. Individual attributes in a first sheet can be overridden or adjusted by sheets that appear further down the list. The drag bars respond to clicking and dragging with your mouse or by pressing the space bar on your keyboard and then using the up or down arrow keys.
 
-When a new Text is ingested, Manifold will create a stylesheet record here that includes any rendering instructions that were defined in the source file.
+When a new Text is ingested, Manifold will create a stylesheet record here that includes most rendering instructions that were defined in the source file. In some cases, Manifold ignores certain selectors and attributes:
+
+- Manifold does not accept universal selectors, with the exception of the asterisk operator.
+- It is not currently possible to bake a new font into the system using an `@font-face` rule.
+- The system generally excludes these attributes: `position`, `font-family`, `overflow`, `overflow-x`, `overflow-y`, `z-index`, `max-width`, `line-height`, and `letter-spacing`.
+- Font sizes cannot be defined using point or pixel values.
+- Font weights cannot be set using numeric keyword values (e.g., `font-weight: 400;`)
+- When using a heading selector (e.g., `h1, h2`), Manifold does not allow a size, weight, line-height, margin, or padding to be set.
+- Paragraph blocks will not retain styles associated with `font-weight`, `size`, `font-size`, or `line-height`.
+- The system ignores width values associated with `div` elements.
+- Attributes that define the color or links is overwritten by the system’s theme settings.
 
 <Spec title="Stylesheet Source">
 
