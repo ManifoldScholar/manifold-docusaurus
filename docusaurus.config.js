@@ -114,7 +114,7 @@ module.exports = {
             },
             {
               label: "Docs",
-              href: "/docs",
+              to: "/docs",
               target: "_self",
             },
             {
