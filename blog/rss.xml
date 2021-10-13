@@ -4,9 +4,16 @@
         <title>Manifold Docs Blog</title>
         <link>https://manifoldscholar.github.io/blog</link>
         <description>Manifold Docs Blog</description>
-        <lastBuildDate>Wed, 28 Oct 2020 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 08 Sep 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[Manifold v6.0 is available now!]]></title>
+            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/manifold-v6</link>
+            <guid>manifold-v6</guid>
+            <pubDate>Wed, 08 Sep 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[The latest version includes a new analytics feature, improved Word ingestion, global stylesheets, and more.]]></description>
+        </item>
         <item>
             <title><![CDATA[Manifold Moves Toward Sustainability, Promotes Learning and Equity with Two Major Grants]]></title>
             <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/manifoldnextsteps</link>
