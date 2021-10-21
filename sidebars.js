@@ -1,6 +1,7 @@
 module.exports = {
   docs: [
       'overview',
+      'accessibility',
       {
         'Administering Manifold': [
             'administering/hosting',
