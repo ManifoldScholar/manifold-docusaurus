@@ -103,6 +103,10 @@ module.exports = {
             {
               label: "Docs",
               to: "docs"
+            },
+            {
+              label: "Accessibility",
+              to: "docs/accessibility"
             }
           ]
         },
