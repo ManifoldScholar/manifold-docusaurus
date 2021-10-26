@@ -1,10 +1,11 @@
 ---
-slug: "oa-week-2021-project-spotlight-1"
-title: "OA Week 2021 Project Spotlight 1"
+slug: "open-access-week-2021-project-spotlight-1"
+title: "Open Access Week 2021 Project Spotlight 1"
 ---
-# Race &/ in America
 
-As part of [Open Access Week](http://www.openaccessweek.org/), Manifold is featuring interviews with the creators of exemplary projects that use Manifold's capabilities to the fullest. Our first installment in this series is [Race &/ in America](https://digitalpublications.brown.edu/projects/project-collection/race-and-in-america). We interviewed Allison Levy from [Brown Univeersity Library Center for Digital Scholarship](https://library.brown.edu/create/cds/) about this impressive project. 
+This week Manifold is featuring interviews with the creators of exemplary projects that use Manifold's capabilities to the fullest. Our first installment in this series is [Race &/ in America](https://digitalpublications.brown.edu/projects/project-collection/race-and-in-america). We interviewed Alison Levy about this mpressive project. 
+
+Allison Levy is Digital Scholarship Editor for the Brown University Library’s Digital Publications Initiative, launched with the generous support of the Andrew W. Mellon Foundation. Serving in this role since 2017, Allison brings together key organizational, academic, and technological resources across the University to support new forms of faculty-driven scholarship, namely born-digital, multimodal works intended for publication by a university press. Beyond the Brown campus, she spearheads efforts at the industry level to advance the conversation around the development, evaluation, and publication of digital scholarship in the humanities. Allison_Levy@Brown.edu
 
 ## How did the project come together? Who was involved?
 
@@ -35,5 +36,3 @@ There are so many, but I’d have to say the podcast, Student Voices. The episod
 We’ve had a very strong response to the digital series, both on campus and off. In fact, we designed the series to be inclusive and accessible for all communities. When selecting library resources, for example, we made sure to strike a balance between those available to Brown users and those that are publicly available. We chose Manifold precisely because it provides enduring, barrier-free access to information, and it supports universal design principles for equitable use by all persons, including those with disabilities. Brown’s Digital Publications Initiative creates exciting new conditions for the production and sharing of knowledge, and is committed to disseminating that knowledge to the broadest possible audience for the greatest possible impact. Manifold helps make that possible!
  
 Finally, I’m delighted to announce that the Library will again partner with the Center for the Study of Race and Ethnicity in America and the Office of the Provost on the Race & in America series, bringing out five new digital volumes over the course of the 2021-22 academic year. 
-
-**Allison Levy** is Digital Scholarship Editor for the Brown University Library’s Digital Publications Initiative, launched with the generous support of the Andrew W. Mellon Foundation. Serving in this role since 2017, Allison brings together key organizational, academic, and technological resources across the University to support new forms of faculty-driven scholarship, namely born-digital, multimodal works intended for publication by a university press. Beyond the Brown campus, she spearheads efforts at the industry level to advance the conversation around the development, evaluation, and publication of digital scholarship in the humanities. Allison_Levy@Brown.edu
