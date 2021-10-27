@@ -4,9 +4,16 @@
         <title>Manifold Docs Blog</title>
         <link>https://manifoldscholar.github.io/blog</link>
         <description>Manifold Docs Blog</description>
-        <lastBuildDate>Tue, 26 Oct 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 27 Oct 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[OA Week 2021 Project Spotlight 2]]></title>
+            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/oa-week-2021-project-spotlight-2</link>
+            <guid>oa-week-2021-project-spotlight-2</guid>
+            <pubDate>Wed, 27 Oct 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[The Greater Chaco Landscape]]></description>
+        </item>
         <item>
             <title><![CDATA[OA Week 2021 Project Spotlight 1]]></title>
             <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/oa-week-2021-project-spotlight-1</link>
