@@ -115,5 +115,6 @@ export default css`
     --main-nav-width: 1230px;
 
     --blog-item-margin: ${fluidScale("80px", "60px")};
+    --blog-wrapper-top-padding: ${fluidScale("50px", "10px")};
   }
 `;
