@@ -42,4 +42,4 @@ Further, I committed to solely assigning OER texts at LaGuardia several years ag
 
 In this respect, I think publishing Harrison’s book on Manifold as an open access text would make him smile. He was, after all, an avowed socialist. I have no doubt he would be delighted to learn that an advanced platform like Manifold was publishing and distributing his work to CUNY students, but also to readers everywhere. In a small way, I see that impact as part of his legacy, not just ours. 
 
-**Justin Rogers-Coopeer** is an English professor at LaGuardia Community College, and a faculty member in the Master of Arts in Liberal Studies program at the CUNY Graduate Center. He's a scholar of nineteenth century American Studies, and a regular guest on the history-themed podcast [Nostalgia Trap](https://www.nostalgiatrap.com/).
+**Justin Rogers-Cooper** is an English professor at LaGuardia Community College, and a faculty member in the Master of Arts in Liberal Studies program at the CUNY Graduate Center. He's a scholar of nineteenth century American Studies, and a regular guest on the history-themed podcast [Nostalgia Trap](https://www.nostalgiatrap.com/).
