@@ -4,9 +4,16 @@
         <title>Manifold Docs Blog</title>
         <link>https://manifoldscholar.github.io/blog</link>
         <description>Manifold Docs Blog</description>
-        <lastBuildDate>Thu, 28 Oct 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 29 Oct 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[OA Week 2021 Project Spotlight 4]]></title>
+            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/oa-week-2021-project-spotlight-4</link>
+            <guid>oa-week-2021-project-spotlight-4</guid>
+            <pubDate>Fri, 29 Oct 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[The Mill on The Floss]]></description>
+        </item>
         <item>
             <title><![CDATA[OA Week 2021 Project Spotlight 3]]></title>
             <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/oa-week-2021-project-spotlight-3</link>
