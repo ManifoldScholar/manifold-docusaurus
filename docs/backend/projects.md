@@ -529,7 +529,7 @@ Saved queries can be selected from the list and edited or deleted. It is also po
 
 ## Exports
 
-From this view, individual Manifold Projects are exported to a preservation agency or digital repository. Before a Project can be exported, the pathway between Manifold and the receiving location first needs to be configured (see [Export Targets](../administering/configuring/export_targets)).
+From this view, individual Manifold Projects are exported to a preservation agency or digital repository. Before a Project can be exported, the pathway between Manifold and the receiving location first needs to be configured (see [Export Targets](../administering/configuring/export_targets.md)).
 
 The **New Project Export** lists all the pre-configured locations to which a Project can be exported. When one has been selected, the **Export Project** button will begin the process of packaging and transferring the Project to the repository.
 
