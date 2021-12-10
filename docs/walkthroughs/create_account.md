@@ -25,7 +25,7 @@ Accounts can be created with an email address or your existing Google, Facebook,
 <TabItem value="email">
 
 1. Select the user link button, displayed as a silhouette avatar, on the right side of the header. This will open a modal overlay with a login form.
-2. Select the link that reads **Need to sign up?** or choose beneath the **Log In** button.
+2. Select the link that reads **Need to sign up?** beneath the **Log In** button.
 3. Enter into the appropriate fields your email address, display name, and password, and click the **Create Account** button.
 
 </TabItem>
