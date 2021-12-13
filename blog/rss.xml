@@ -4,9 +4,16 @@
         <title>Manifold Docs Blog</title>
         <link>https://manifoldscholar.github.io/blog</link>
         <description>Manifold Docs Blog</description>
-        <lastBuildDate>Fri, 29 Oct 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 13 Dec 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[Log4j2 Vulnerability]]></title>
+            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/log42j</link>
+            <guid>log42j</guid>
+            <pubDate>Mon, 13 Dec 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Good afternoon, everyone!]]></description>
+        </item>
         <item>
             <title><![CDATA[OA Week 2021 Project Spotlight 4]]></title>
             <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/oa-week-2021-project-spotlight-4</link>
