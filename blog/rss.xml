@@ -4,9 +4,16 @@
         <title>Manifold Docs Blog</title>
         <link>https://manifoldscholar.github.io/blog</link>
         <description>Manifold Docs Blog</description>
-        <lastBuildDate>Mon, 13 Dec 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 16 Dec 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[Manifold Welcomes Six New Publishers]]></title>
+            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/welcome-new-publishers</link>
+            <guid>welcome-new-publishers</guid>
+            <pubDate>Thu, 16 Dec 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[The Manifold Team is delighted to announce the six publishers who will be joining the Manifold community in 2022 with grant-funded support packages, thanks to generous funding from The Andrew W. Mellon Foundation.]]></description>
+        </item>
         <item>
             <title><![CDATA[Log4j2 Vulnerability]]></title>
             <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/log42j</link>
