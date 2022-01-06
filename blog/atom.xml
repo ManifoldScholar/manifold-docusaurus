@@ -2,11 +2,18 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://manifoldscholar.github.io/blog</id>
     <title>Manifold Docs Blog</title>
-    <updated>2021-12-16T00:00:00.000Z</updated>
+    <updated>2022-01-05T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://manifoldscholar.github.io/blog"/>
     <subtitle>Manifold Docs Blog</subtitle>
     <icon>https://manifoldscholar.github.io/favicon/favicon.svg</icon>
+    <entry>
+        <title type="html"><![CDATA[Manifold Community Meetup Recap]]></title>
+        <id>community-meetup-recap</id>
+        <link href="https://manifoldscholar.github.io/manifold-docusaurus/blog/community-meetup-recap"/>
+        <updated>2022-01-05T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[One of the highlights of 2021 was that we held our first quarterly Manifold Community Meetup. Something we love about building Manifold is seeing all of the amazing projects and initiatives that Manifold makes possible across the different groups and institutions who use it. At the same time, we found that publishers using Manifold often asked us for a means through which to discover what other Manifold instances are up to and how they have solved common challenges and obstacles. And so we inaugurated Manifold Community Meetups: a quarterly virtual meetup for Manifold community members to share practices, discuss strategies, ask questions, troubleshoot difficulties, and learn from each other.]]></summary>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Manifold Welcomes Six New Publishers]]></title>
         <id>welcome-new-publishers</id>
