@@ -160,7 +160,6 @@ Interactive Resources use iFrames to bring remotely hosted content like interact
     items={[
 		{ key: "Formats", value: "URL" },
 		{ key: "Variants", value: "Poster Image, Thumbnail" },
-        { key: "Notes", value: "Interactive Resources do not render in the browser; they are download only." },
     ]}
 />
 
@@ -168,7 +167,7 @@ Interactive Resources use iFrames to bring remotely hosted content like interact
 
 Consistent with the backend views for Projects, the Resource interface is composed of three parts: a header, a sidebar, and an editing pane.
 
-##3# Header
+#### Header
 
 The header for the Resources view is the same as for all other Project-level Sidebar items, denoting the title and subtitle of the Project along with buttons to **Preview** or **Delete** it.
 
