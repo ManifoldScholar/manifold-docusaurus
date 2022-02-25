@@ -93,6 +93,7 @@ module.exports = {
           'walkthroughs/join_rg',
           'walkthroughs/add_rg',
           'walkthroughs/curate_rg',
+          'walkthroughs/collecting',
         ]
       },
       {
