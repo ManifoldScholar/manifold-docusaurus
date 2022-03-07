@@ -51,6 +51,7 @@ module.exports = {
       {
         'Manifold Backend': [
             'backend/projects',
+            'backend/journals',
             'backend/project_collections',
             'backend/texts',
             'backend/resource',
