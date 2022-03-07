@@ -4,11 +4,11 @@ title: Manifold Library
 sidebar_label: Manifold Library
 ---
 
-### What Are Library Views?
+## What Are Library Views?
 
-By default each Manifold homepage showcases Projects as an array of selectable thumbnails with basic title and author information. This gives readers the ability to browse an entire catalog of work at a glance.
+By default each Manifold homepage showcases Projects as an array of selectable thumbnails with basic title and author information. This “library view” gives readers the ability to browse an entire catalog of work at a glance.
 
-The homepage library view is configurable by those who manage the instance and can be set to display Projects in curated collections. Other library views are more fixed and display Projects in pre-configured paradigms.
+The homepage library view is configurable by those who manage the instance and can be set to display Projects in curated collections. Other library views are more fixed and display Projects in pre-configured paradigms. Curated or pre-configured, all library views have discrete landing pages, display the Manifold menu and footer, and include links to easily navigate to other library views, as well as user-specific content.
 
 :::note Projects Outside the Library
 Alternatively, library views can be disabled throughout an instance to cultivate a different experience where readers are instead directed to specific Projects from an existing web presence. It is also possible to selectively remove individual Projects from the library experience. See [Properties](../administering/configuring/properties.md#disable-library-views) to learn more about those options.
@@ -18,29 +18,69 @@ Alternatively, library views can be disabled throughout an instance to cultivate
 
 The main Manifold menu appears at the head of all frontend library views. The menu can be configured to display a custom logo and render in different color schemes (see [Theme Settings](../administering/configuring/theme_settings)).
 
-Functionally, the menu serves as a means for readers to navigate between different library views (**Home**, **Projects**, **Following**) and search for content across the entire instance. These uses are discussed in the following sections on this page.
+Functionally, the menu serves as a means for readers to navigate between different library views (**Home**, **Projects**, **Journals**, **Reading Groups**) and search for content across the entire instance. These uses are discussed in the following sections on this page.
 
-The Manifold menu is also where readers manage their profiles, notification settings, and access their Reading Group engagements. See [Your Account](../using/your_account.md) and [Reading Groups](../using/reading_groups.md) for more about those uses.
+The Manifold menu is also where readers access their profiles, notification settings, and manage their Reading Group enrollment. See [Your Account](../using/your_account.md) and [Reading Groups](../using/reading_groups.md) for more about those uses.
 
-## Home
+### Home
 
-As the default landing page for an instance, the Home page is prime real estate, and thus highly configurable. The page is made up of the Manifold menu, an optional Feature section, a library view of Projects, followed by the instance Footer. The Feature and Footer sections are beyond the scope of this page and are considered, respectively, in the [Features](../docs/backend/features.md) and [Footer](../docs/administering/configuring/properties.md#footer) documentation.
+The default landing page (or Home page) for an instance is highly configurable. The page is made up of the Manifold menu, an optional Feature section, a library view of Projects, followed by a navigation menu and the instance Footer. The Feature and Footer sections are beyond the scope of this page and are considered, respectively, in the [Features](../docs/backend/features.md) and [Footer](../docs/administering/configuring/properties.md#footer) documentation.
 
-Out of the box, the library view on the Home page displays a maximum of sixteen Projects, ordered alphabetically by title under a heading that reads “Our Projects.” When an instance exceeds sixteen total Projects, the section will conclude with a link to **See All Projects**, directing readers to the All Projects view, also accessible by selecting **Projects** from the Manifold menu.
+Out of the box, the library view on the Home page displays a maximum of sixteen Projects, ordered alphabetically by title under a heading that reads “Our Projects.” 
 
-Alternatively, those users who are maintaining an instance can employ [Project Collections](../backend/project_collections.md) to control which Projects are displayed on the homepage and how they are ordered and grouped. Thus it is possible to portion out the Manifold landing page by theme, around specific events or conferences, current events, or as a means to suggest titles to readers they may not have otherwise considered to be of interest.
+Alternatively, those users who are maintaining an instance can employ [Project Collections](../backend/project_collections.md) to control which Projects are displayed on the Home page and how they are ordered and grouped. Thus it is possible to portion out the Manifold landing page by theme, around specific events or conferences, current events, or as a means to suggest materials to readers they may not have otherwise considered to be of interest.
 
-Regardless of how the Home library view is configured, alphabetically or by Project Collections, it is followed by two buttons: **See All Projects** and **Projects You're Following** that direct readers the All Projects and Following views.
+### Projects
 
-## All Projects
+The **Projects** pages displays, as the name suggests, all of the Projects in an instance in a paginated view. Using the search field and two dropdown comboboxes beside the page heading, readers can search for specific Projects, sort the listings alphabetically by title, or filter Projects by [Subject](../administering/configuring/project_subjects.md) or [Featured Status](../backend/projects.md#featured).
 
-The **All Projects** pages displays, as the name suggests, all of the Projects in an instance in a paginated view. Using the three fields beside the page heading, readers can search for specific Projects, sort the listings alphabetically by title, or filter Projects by [Subject](../administering/configuring/project_subjects.md) or [Featured Status](../backend/projects.md#featured). Sorting Projects by these categories creates a stable URL that can be shared so others can land on the page with the same results.
+:::tip Share Your View
+Sorting Projects with using dropdowns creates a stable URL that can be shared so others can land on the page with the same results.
+:::
 
-## Following
+### Journals
 
-Readers who have created an account on an instance will find a link in the Manifold menu to the **Following** view. Every Manifold Project thumbnail includes a plus-sign badge that can be toggled on and off. When toggled on the badge will become a check mark, indicating that the Project is now being followed. Followed Projects are collected in the **Following** view as a shortcut for readers to quickly navigate to those Projects they are most interested.
+Like the Projects page, the **Journals** library view displays a paginated listing of all the Journals on the instance. Each listing includes the Journal Title, Background Image, Description, and a listing of the eight issues most recently added to the journal, followed by a link reading “See All Issues”  that takes a user to the Manifold landing page for that Journal.
 
-Included in the Following view, in a separate container, are Projects that have been denoted as [Featured](../backend/projects.md#featured). Only the four most recently published or updated Featured Projects will appear in this space, with a link to **See All Featured** available in cases where an instance has more then four total Featured Projects.
+### Reading Groups
+
+The **Reading Groups** menu link opens onto a view that lists all of the instance’s *public* Reading Groups. This providers users the means to quickly review those Groups that are openly available for them to join.
+
+The Reading Group listings can be searched and sorted. The search and dropdown combobox to perform those tasks are displayed before the Reading Group list on the right. For more on the available sorting options, see the [Reading Groups documentation](../using/reading_groups.md).
+
+#### Versus “My Reading Groups”
+
+The Reading Group link in the Manifold menu differs from the “My Reading Groups” link that appears in the user/avatar dropdown menu in one respect: the latter takes a user to a more personalized listing of just those Reading Groups that user is a member, some of which may be private.
+
+The tabs atop the Reading Group listings in either space allows a user to quickly change from one view to the other, moving from the My Reading Groups subpage to the Public Reading Groups one.
+
+## Library Navigation
+
+For users who have logged into the instance, there appear on every Library and Project landing page, just before the Manifold footer, five navigation links labelled **Projects**, **Journals**, **Project Collections**, **My Starred**, and **My Notes**.
+
+The first two links—**Projects** and **Journals**—mirror the links of the same names in the main Manifold menu and direct readers to the all Projects and Journals views described above. The behavior of the remaining links works as follows:
+
+:::note Missing Links?
+Links to **My Starred** and **My Notes** *only* appear after logging in; users who aren’t logged into the instance will see only navigation links for **Projects**, **Journals**, and **Project Collections**.
+:::
+
+### Project Collections
+
+The **Project Collections** link takes the user to a paginated view of all “visible” Project Collections, instead of just those chosen to appear on the Home page. Visit the [Project Collection documentation](../backend/project_collections.md) for more about Project Collections and their visibility settings.
+
+### My Starred
+
+Selecting **My Starred** from the navigation menu opens a view onto all the content a user has collected into their My Starred Group. The idea is for this page to function as a shortcut for users to quickly navigate to the content on the instance in which they are most interested.
+
+Starred items in this space are grouped into buckets that reflect their nature: **Projects**, **Texts**, **Text Sections**, **Resource Collections**, and **Resources**. Unlike the homepage for a Reading Group, it is not possible to reorder or add context to the materials gathered here.
+
+See the [Collecting section](../using/collecting.md) for more on how content is Starred and collected. The [Reading Group documentation](../using/reading_groups.md) will likewise offer some insight on how Starred content functions in that context.
+
+### My Notes
+
+The link to **My Notes** opens a view for a user to see all their Annotations, Comments, and Highlights across an entire Manifold instance in one place. These engagements are displayed in a paginated list and include results from all Reading Groups, public and private.
+
+Users can filter the displayed results by Text using the dropdown combobox field that appears atop the list.
 
 ## Search
 

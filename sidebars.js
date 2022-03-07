@@ -44,6 +44,7 @@ module.exports = {
             'using/your_account',
             'using/manifold_projects',
             'using/reading_manifold',
+            'using/collecting_content',
             'using/reading_groups',
         ]
       },
