@@ -8,7 +8,9 @@ sidebar_label: Manifold Projects
 
 Projects in Manifold operate as containers the way books do on a shelf—only in Manifold, they contain not only the main Text but also, potentially, draft and ancillary Texts, supplemental media Resources, as well as reader engagements with those materials.
 
-Each project has its own landing page, made up of the following Content Blocks. Some Projects may only have one block, others may use a good deal more.
+Each project has its own landing page, made up of the Content Blocks described later on this page. Some Projects may only have one block, others may use a good deal more.
+
+By default—and design—Manifold Projects are agnostic about the kinds of content they contain. Projects are meant to be modular and adaptable through the creative use of Content Blocks. For content that is serial in nature and requires more specialized structures, it is possible for backend users to transform the shape of a Project into a Journal Issue. See the [Journals section](../backend/journals.md) to learn more.
 
 :::note
 If you are a backend user, instructions on how to manage content blocks are detailed primarily in the [Layout](../backend/projects.md#layout) section, though the [General](../backend/projects.md#general) section will also be of use.
@@ -16,7 +18,7 @@ If you are a backend user, instructions on how to manage content blocks are deta
 
 ### Hero Block
 
-The Hero block is meant to orient the reader to what the Project is about and how to engage with it. Beyond providing a space for display elements such as the Project’s [title](../backend/projects.md#title-and-subtitle), [description](../backend/projects.md#description-+-images), and [attributions](../backend/projects.md#people), it can also be used to connect to related engagements in the [social media](../backend/projects.md#social-links) sphere, suggest [points of entry](../backend/projects.md#calls-to-action) to specific elements of the Project, as well as provide related downloadable materials.
+The Hero block is meant to orient the reader to what the Project is about and how to engage with it. Beyond providing a space for display elements such as the Project’s [title](../backend/projects.md#title-and-subtitle), [description](../backend/projects.md#description--images), and [attributions](../backend/projects.md#people), it can also be used to connect to related engagements in the [social media](../backend/projects.md#social-links) sphere, suggest [points of entry](../backend/projects.md#calls-to-action) to specific elements of the Project, as well as provide related downloadable materials.
 
 ### Markdown Block
 
