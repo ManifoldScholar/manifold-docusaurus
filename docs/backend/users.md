@@ -26,20 +26,19 @@ All menus, settings, and actions available in the backend can be attended by an 
 
 ### Editor
 
-Editors can access all Manifold analytics, create, modify, or delete Projects, Maker records, and an installation’s Pages, regardless of who originally created them. Editors *do not* have access to an installation’s global settings, cannot manage Features, nor can they create, modify, or delete User accounts. Editors, however, can enable other users the ability to modify specific projects through a Project’s Access sidebar.
+Editors can access all Manifold analytics, create, modify, or delete Projects, Journals, Issues, Maker records, and an installation’s Pages, regardless of who originally created them. Editors *do not* have access to an installation’s global settings, cannot manage Features, nor can they create, modify, or delete User accounts. Editors, however, can enable other users the ability to modify specific projects through a Project or Issue’s Access sidebar.
 
 ### Marketeer
 
-Marketeers can create new and modify *all* existing Projects and Maker records, as well as create, modify, or delete an installation’s Pages and Features. However, they *cannot* extend permissions to other users on a project-by-project basis, nor can they delete existing Maker records. Marketeers can access all Manifold analytics but not an instance’s global settings.
+Marketeers can create new and modify *all* existing Projects, Journal Issues, and Maker records, as well as create, modify, or delete an installation’s Pages and Features. While they can view and edit all Journals, they cannot create or delete them. Additionally, they *cannot* extend permissions to other users on a project-by-project (or issue-by-issue) basis, nor can they delete existing Maker records. Marketeers can access all Manifold analytics but not an instance’s global settings.
 
 ### Project Creator
 
-This role allows enables a user to manage their own Projects without being able to affect the instance as a whole or the publishing work of other users on the same instance. Project Creators can access the backend and modify all elements of those Projects they’ve created. Likewise they have the authority to extend permissions to other users over those projects they manage. Additionally, Project Creators can create new and modify existing Maker records; however, they cannot delete *any* Maker record, even those they created. Project Creators can view Project-level Manifold analytics but not instance-wide reports.
+This role allows enables a user to manage their own Projects, Journals, and Issues without being able to affect the instance as a whole or the publishing work of other users on the same instance. Project Creators can access the backend and modify all elements of those Projects, Journals, and Issues they’ve created. Likewise they have the authority to extend permissions to other users over those Projects and Issues they manage. Additionally, Project Creators can create new and modify existing Maker records; however, they cannot delete *any* Maker record, even those they created. Project Creators can view Project-level Manifold analytics but not instance-wide reports.
 
 ### Reader
 
-The default user role. When logged in, a Reader can highlight, annotate, comment, make use of sharing functionalities, customize email notifications, and create or join Reading Groups. Readers don’t have native access to the backend in any capacity, but they can be scoped permissions to perform certain actions in the backend. Readers can also be classified as Project authors, which distinguishes their interactions with Project Texts from other readers. See [Managing Access](../../docs/backend/projects.md#managing-access).
-
+The default user role. When logged in, a Reader can highlight, annotate, comment, make use of sharing functionalities, customize email notifications, and create or join Reading Groups. Readers don’t have native access to the backend in any capacity, but they can be scoped permissions to perform certain actions in the backend. Readers can also be classified as Project or Issue authors, which distinguishes their interactions with Texts from other readers. See [Managing Access](../../docs/backend/projects.md#managing-access).
 
 ## Managing Users
 
