@@ -164,7 +164,13 @@ Like Subjects the Tag field provides a helper, so that as you begin typing any s
 
 ### Layout
 
-Each Journal landing page is made up of a Hero block, blocks collecting volumes and issues, and a Metadata block. The controls for the Hero block are controlled here in the **Layout** sidebar. The elements of the Metadata block are controlled using the **Metadata** sidebar, described later on this page. The blocks collecting volumes and issues are programmatically added by the system as new content is added to the Journal, with the most recent volumes and issues being automatically sorted to the top of the page.
+Each Journal landing page is made up of a breadcrumb menu, Hero block, blocks collecting volumes and issues, and a Metadata block. The controls for the Hero block are controlled here in the **Layout** sidebar. The elements of the Metadata block are controlled using the **Metadata** sidebar, described later on this page. The blocks collecting volumes and issues are programmatically added by the system as new content is added to the Journal, with the most recent volumes and issues being automatically sorted to the top of the page.
+
+The breadcrumb menu, which the system creates automatically, serves both to track how far a reader has delved into the journal as well as providing a means to quickly navigate from one element to another. Fully extended, the breadcrumbs will track from an issue back to volume, back to the journal’s landing page, and then to the Journal library homepage.
+
+:::note
+The breadcrumb menu will not appear if the instance has disabled library views or if the issue is set to standalone mode.
+:::
 
 The Journal Hero block is meant to display high-level information about the Journal, capturing elements like its Title and Description, while also providing a place to document its people, practices, and visual identity.
 
@@ -269,7 +275,7 @@ This view is made up of a button to **Create a new volume** followed by a listin
 
 When you create a new volume or select an existing volume from the list to edit, a drawer from the right rolls out with two editable fields: **Number** and **Slug**. The **Number** field accepts only whole numbers. The **Slug** is optional and provides an opportunity for you to customize the address of the landing page for the Volume. If none is provided the system will generate a UUID as the Volume slug.
 
-All Volume landing pages follow the same URL pattern: domain/path/journal-slug/volumes/volume-slug. The domain represents the homepage for your entire instance; the path describes the nature of the address, in this case that it’s a Journal; the Journal slug, described above; a generic volume path; followed by the Volume slug. In the following example, the slug is `jotv001`.
+All Volume landing pages follow the same URL pattern: `domain/path/journal-slug/volumes/volume-slug`. The domain represents the homepage for your entire instance; the path describes the nature of the address, in this case that it’s a Journal; the Journal slug, described above; a generic volume path; followed by the Volume slug. In the following example, the slug is `jotv001`.
 
 ```
 https://edge.manifoldapp.org/journals/the-journal-of-thought/volumes/jotv001
@@ -283,7 +289,7 @@ Creating a volume automatically
 - updates the Journal navigational menu with a breadcrumb to the Volume, and
 - creates a Volume landing page that displays each issue contained within.
 
-Each Volume landing page has containers for each Issue it houses. Those Issue containers display a thumbnail link that take readers directly to the Issue, followed by a content preview that displays all *visible* [Contents and Texts blocks](../backend/projects.md#layout) associated with the Issue record.
+Each Volume landing page has containers for each Issue it houses. Those Issue containers display a thumbnail link that take readers directly to the Issue, followed by a content preview that displays all *visible* [Table of Contents and Texts blocks](../backend/projects.md#layout) associated with the Issue record.
 
 ## Editing Journal Issues
 
