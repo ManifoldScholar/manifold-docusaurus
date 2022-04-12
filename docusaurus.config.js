@@ -102,12 +102,13 @@ module.exports = {
             },
             {
               label: "Docs",
-              href: "/docs"
+              href: "/docs",
               target: '_self'
             },
             {
               label: "Accessibility",
-              to: "/docs/accessibility"
+              to: "/docs/accessibility",
+              target: '_self'
             }
           ]
         },
