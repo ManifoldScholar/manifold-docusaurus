@@ -67,7 +67,7 @@ module.exports = {
         },
         {
           label: "Docs",
-          to: "docs",
+          href: "/docs",
           isButton: false,
           isSelected: true,
           target: '_self'
