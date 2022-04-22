@@ -22,8 +22,8 @@ A Manifold Journal is the framework that groups and contextualizes Manifold Proj
 This framework is made up of a series of dedicated pages specifically crafted to render serial publications:
 
 - A **Journal’s homepage** displays basic information about the publication, its frequency, editorial board, copyright and submission information, and so forth, as well as providing a listing of its volumes and issues.
-- For Journals that aggregate issues into **volumes**, each volume will also has its own dedicated page, showcasing the various issues of which it is composed.
-- **Issues** are Manifold Projects that can be collected into volumes or exist independently as a consecutively numbered series. Manifold Projects can be created as Journal Issues and existing Projects can be transformed into Issues.
+- For Journals that aggregate issues into **volumes**, each volume will also have its own dedicated page, showcasing the various issues of which it is composed.
+- **Issues** are Manifold Projects that can be collected into volumes or exist independently as a consecutively numbered series. Manifold Projects can be created as Journal Issues or existing Projects can be transformed into Journal Issues.
 
 ## Interface Overview
 
@@ -61,7 +61,7 @@ The Editing Pane displays a Project’s editable settings and fields, based on t
 
 #### Title and Subtitle
 
-These two fields reflect the full name of the Journal and display prominently on this Journal’s landing page. In Library views, only the main title is shown. In the Backend, both the title and subtitle appear in associated navigation menus.
+These two fields reflect the full name of the Journal and display prominently on the Journal’s landing page. In Library views, only the main title appears with the Journal’s thumbnail. In the Backend, both the title and subtitle appear in associated navigation menus.
 
 The **Title** field cannot be left empty; however the **Subtitle** field is optional.
 
@@ -69,7 +69,7 @@ The **Title** field cannot be left empty; however the **Subtitle** field is opti
 
 A slug is the part of a URL that directs a browser to a specific webpage within the context of a larger domain. The **Slug** field here is an opportunity for you to customize the address of the landing page for the Journal you are modifying.
 
-In Manifold all Journal landing pages follow the same URL pattern: domain/path/journal-slug. The domain represents the homepage for your entire instance; the path describes the nature of the address, in this case that it’s a Journal; and then the Journal slug, which identifies a specific Journal on the instance. In the following example, the Journal slug is `the-journal-of-thought`.
+In Manifold all Journal landing pages follow the same URL pattern: `domain/path/journal-slug`. The domain represents the homepage for your entire instance; the path describes the nature of the address, in this case that it’s a Journal; and then the Journal slug, which identifies a specific Journal on the instance. In the following example, the Journal slug is `the-journal-of-thought`.
 
 ```
 https://edge.manifoldapp.org/journals/the-journal-of-thought
@@ -109,16 +109,26 @@ New Journals are set to Draft Mode by default.
 
 It is possible to have a Journal in Draft mode and an Issue nested within it that is publicly viewable. Likewise a Journal that is no longer in Draft can contain an issue that is in Draft mode. See the documentation around [how Draft status affects Journal issues](../backend/journals.md#issues) for more.
 
-#### Show on Homepage
+#### Show on Home Page
 
-<!-- COME BACK TO THIS TO TALK ABOUT HOW JOURNALS CAN BE SORTED -->
+This toggle promotes Journals that are no longer in Draft mode (see above) to the instance’s home page. Journals appear on the home page beneath all of the Project Collection listings.
 
-This toggle promotes Journals that are no longer in Draft mode (see above) to the instance’s homepage. Journals appear beneath any Project Collections on that page and can be sorted . . . 
+If multiple Journals are set to appear on the home page, they will appear according their **Home Page Priority** described below.
 
 It is not currently possible to intermingle Journals with Project Collections.
 
 :::tip Think about Your Readers
 There is no artificial limit to the number of Journals set to appear on the homepage, but the more Journals that appear, the slower the page will be to load, especially for those with older devices or low/slow connectivity.
+:::
+
+#### Home Page Priority
+
+The Home Page Priority toggle appears for Journals that are set to show on the home page. Journals will appear on the home page based on the value set here. Those with larger (or higher) values will appear above those with smaller values: 
+
+Suppose you have three journals set to appear on the home page, Journal Red, Journal Green, and Journal Blue. Journal Red has a priority  value 0, Journal Green has a value of 1, and Journal Blue is set with a value of 2. As such, they will appear on the home page with Journal Blue above Journal Green, and Journal Green above Journal Red.
+
+:::note
+This field only accepts whole numbers. 
 :::
 
 #### Social Card Image, Title, and Description
@@ -148,6 +158,8 @@ Subject classifications illuminate the scope of material on your instance broadl
 
 However, Subjects can be *assigned* to Journals in this space by any user who has the ability to edit the Journal record. Users can assign one or more Subject classifications to a Journal, and the interface supports both typeahead or dropdown selection.
 
+<!-- As for 22 April, the following is not true: no such dropdown exists as it does for Projects. -->
+
 Subjects appear on the **Journals** library page in the **Show All** dropdown as a means for readers to filter and display only those Journals that match their selection. 
 
 Subjects can also be assigned at the issue level; see the [Issue section](../backend/journals.md#issues) for more.
@@ -158,7 +170,7 @@ Subjects can be applied to both Projects and Journals alike, but when sorting co
 
 #### Tags
 
-Tags function much like Subjects, but there is no means to edit or delete tags in the system. Unlike Subjects, new Tags can be created by any user who has permission to edit a Journal and can be used to add further richness to the existing Subject classification.
+Tags function much like Subjects, in that they help readers discover and sort content in searches, but there is no means to edit or delete tags in the system. Unlike Subjects, new Tags can be created by any user who has permission to edit a Journal and can be used to add further richness to the existing Subject classification.
 
 Like Subjects the Tag field provides a helper, so that as you begin typing any similar tags that have already been created on your instance will be revealed.
 
@@ -184,9 +196,11 @@ The **Description** field supports basic Markdown syntax and allows users to add
 
 The **Background Image** is meant to provide some visual identity for the Journal. It displays in two places: (1) on the Journal library view and (2) above the textual content of the Hero block on the Journal homepage.
 
-Image files can be dropped onto the **Hero Image** field or selected using your device’s file system by clicking the **Upload a File** link.
+This Background Image will also appear on the landing page of individual Issues within the Journal, serving as the default Background Image for each Journal Issue, *unless* a distinct Background Image is loaded at the [Issue level](../backend/projects.md#hero-block) to override this one.
 
-The Hero will render *in the the library view* according to your selection under the **Hero Layout** dropdown as follows:
+Image files can be dropped onto the **Background Image** field or selected using your device’s file system by clicking the **Upload a File** link.
+
+The image will render *in the the library view* according to your selection under the **Hero Layout** dropdown as follows:
 
 - **Square Inset**. From its center the image will be cropped and rendered as a square, appearing to the left of both the Journal Title and Description.
 - **Wide Inset**. Matching the width of the library container, the image will appear between the Journal Title and Description.
@@ -221,9 +235,9 @@ The field for **Image Credits** renders attributions for the Background or Logo 
 
 #### Calls-to-Action
 
-Using the **Calls-to-Action** menu, you can add links and buttons to the Hero block that direct or provide (via download) readers with important information about the publication, e.g., a link to an external Journal website, a [Manifold Page](../backend/pages.md) describing the editorial board, subscription/submission information, calls-for-papers, etc.
+Using the **Calls-to-Action** menu, you can add links and buttons to the Hero block that direct or provide readers (via download) with important information about the publication, e.g., a link to an external Journal website, a [Manifold Page](../backend/pages.md) describing the editorial board, subscription/submission information, calls-for-papers, etc.
 
-The menu interface is arranged in two columns that indicate how your call-to-action will render: as a square button or as a simple text link that appear right of the Journal’s Title and Description.
+The menu interface is arranged in two columns that indicate how your call-to-action will render: as a rectangular button or as a simple text link that appear right of the Journal’s Title and Description.
 
 See the [Projects section](../backend/projects.md#calls-to-action) to learn more about how to engage with this interface, which functions the same in both places with one caveat: for Projects, Calls-to-Action can be set to render on the left side as well as the right. By design, Calls-to-Action *only* appear on the right for Journals.
 
@@ -247,7 +261,7 @@ Issues are specialized Manifold Projects that are contained within one Journal. 
 
 Despite the similarities, Issues are *not* collected or indexed in Project library views, nor can they be included in Project Collections. Issues *only* appear within the context of the Journal of which they are a part.
 
-The **Issues** sidebar view is the space where new Journal Issues records are created and existing Issues are listed. However, this *is not* the space where you will add content to an Issue. This interface is primarily concerned with creating the scaffolding linking a Manifold Project to a Journal, thus making it a Journal Issue. Discussion about adding content to Issues or adjusting their layout can be found below in the [Editing Journal Issues](../backend/journals.md#editing-journal-issues) section.
+The **Issues** sidebar view is the space where new Journal Issues records are created and existing Issues are listed. However, this ***is not*** the space where you will add content to an Issue. This interface is primarily concerned with creating the scaffolding that links a Manifold Project to a Journal, thus making it a Journal Issue. Discussion about adding content to Issues or adjusting their layout can be found below in the [Editing Journal Issues](../backend/journals.md#editing-journal-issues) section.
 
 The **Create a new issue** button opens a drawer from the right where you can assign an Issue **Number** and associate it with an existing **Volume** (if necessary). From this drawer you can also convert an existing Project into a Journal Issue.
 
@@ -255,13 +269,13 @@ The **Number** field accepts single numbers as well as ranges of numbers, joined
 
 For publications that group issues into volumes, the **Volumes** dropdown allows you to select an existing volume number with which to associate the new issue. Like Issue Numbers, Volume Numbers appear in Journal library views and in the Journal navigational bar as breadcrumbs. See the following section for more about creating volume records.
 
-The **Project** dropdown is an optional field that allows you to select an existing Manifold Project and convert it in an Issue of the Journal you are editing. The dropdown is of the typeahead kind and allows you to both scroll and search for an existing Project to transform it into an Issue.
+The **Project** dropdown is an optional field that allows you to select an existing Manifold Project and convert it into an Issue of the Journal you are editing. The dropdown is of the typeahead kind and allows you to both scroll and search for an existing Project to transform into an Issue.
 
 If you aren’t converting a Project into an Issue, you can leave the **Project** dropdown empty, and the **Create Journal Issue** button will create a fresh Project already in the Issue shape.
 
 When you select the **Create Journal Issue** button, you will be redirected to the Issue detail page where you can adjust any of the settings discussed in this section as well as begin to add/edit Issue content. That will be the space where you can add content to Issues or adjust their layout. See the [Editing Journal Issues](../backend/journals.md#editing-journal-issues) section below for more.
 
-Selecting an existing Issue from the list of Issues on this page will redirect you to the Issue detail page.
+Selecting an existing Issue from the list of Issues on this page will likewise redirect you to the Issue detail page.
 
 :::caution Be Sure about Transforming Existing Projects
 Once an existing Project is transformed into a Journal Issue, it is **not** possible to return it to is original, non-Issue state, nor is it possible to associate it with a different Journal.
@@ -271,7 +285,7 @@ Once an existing Project is transformed into a Journal Issue, it is **not** poss
 
 For Journals that group Issues into Volumes, the **Volumes** sidebar is where new Volume records are created. See the Issues section above for how to associate an Issue with a Volume.
 
-This view is made up of a button to **Create a new volume** followed by a listing of existing Volumes the indicates the number of Issues contained within them.
+This view is made up of a button to **Create a new volume** followed by a listing of existing Volumes, each of which carries notice of the number of Issues contained within them.
 
 When you create a new volume or select an existing volume from the list to edit, a drawer from the right rolls out with two editable fields: **Number** and **Slug**. The **Number** field accepts only whole numbers. The **Slug** is optional and provides an opportunity for you to customize the address of the landing page for the Volume. If none is provided the system will generate a UUID as the Volume slug.
 
@@ -295,6 +309,6 @@ Each Volume landing page has containers for each Issue it houses. Those Issue co
 
 Because Issues are specialized Manifold Projects, Issue content is stored and managed in adapted Project records. 
 
-To access an Issue record from the Manage Journals view, select the appropriate Journal from the list, choose the **Issues** sidebar, and then select an Issue. That will redirect you to the Issue detail page where you can add new content to the Issue and adjust its layout.
+To access an Issue record from the Journals backend menu, select the appropriate Journal from the list, choose the **Issues** sidebar, and then select an Issue. That will redirect you to the Issue detail page where you can add new content to the Issue and adjust its layout.
 
 The options and controls on the Issue details page are almost identical to those for standard Projects and thus are described in the [Projects section of the documentation](../backend/projects.md). Differences in behavior between Projects and Issues is called out in the appropriate spaces therein.
