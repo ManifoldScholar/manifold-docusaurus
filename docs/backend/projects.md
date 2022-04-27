@@ -76,7 +76,21 @@ At present there is no mechanism to export Analytics data or mask from tracking 
 
 These two fields reflect the name of your Project and display in the Hero Content Block on the Project's landing page. In Library views, only the main title is shown. In the Backend, both the title and subtitle appear in associated navigation menus.
 
+For Projects that are Journal Issues, the Title and Subtitle entered here will only appear on the Issue landing page. In other library views they will be supplanted by the Journal’s Title or Issue Number, depending on context.
+
 The **Title** field cannot be left empty; however **Subtitle** is optional.
+
+#### Issue Number, Sort Number, and Volume Number
+
+For only those Projects that are [Journal Issues](../backend/journals.md), these three fields appear in the interface so you can adjust how the Project functions within the context of the Journal of which it is a part.
+
+The **Issue Number** field accepts single numbers as well as ranges of numbers, joined by either a hyphen or en dash (e.g. 1-2 or 1–2). Issue numbers appear in Journal library views and in the Journal navigational bar as breadcrumbs. Because Manifold accepts ranges of numbers, this value is stored in the system as a string and not a number.
+
+The optional **Issue Sort Number** field tells the system how to sort the Issue against other Issues of the same Journal. For example, if you have `3–4` as the **Issue Number**, it would be useful to include `3` as your input in the **Issue Sort Number** space. If you don’t, Manifold will evaluate the string value `3–4`, looking specifically at what precedes the dash, converting it to a number, and sorting the Issue accordingly. Manifold is pretty smart, but it is not infallible. If you have a specific way you want the Issue to sort, let Manifold know.
+
+For publications that group Issues into volumes, the **Volumes** dropdown allows you to select an ***existing*** Volume number with which to associate the new issue. Like Issue Numbers, Volume Numbers appear in Journal library views and in the Journal navigational bar as breadcrumbs.
+
+New Volumes can be added to the system using the [Journals menu](../backend/journals.md#volumes).
 
 #### Publication Date
 
