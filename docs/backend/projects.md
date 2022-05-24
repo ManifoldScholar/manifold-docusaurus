@@ -439,19 +439,27 @@ Likewise, the **Categories** dropwdown also plays off how Texts are grouped in t
 
 ## Access
 
-The Access sidebar provides controls for who can modify or read specific Projects on a Manifold instance. Settings are categorized along two different trajectories: Editor Permissions and Project Entitlements. Editor Permissions are oriented around collaboration and granting backend access to particular users on a limited basis. In more technical terms these are “scoped roles,” versus the “global roles” described in the [Users section](../backend/users.md). Project Entitlements, on the other hand, limit who can view and engage with a Project on the frontend. 
+The Access sidebar provides controls for who can modify or read specific Projects on a Manifold instance. Settings are categorized along two different trajectories: Editor Permissions and Project Entitlements.
+
+Editor Permissions are oriented around collaboration and granting backend access to particular users on a limited basis. In more technical terms these are “scoped roles,” versus the “global roles” described in the [Users section](../backend/users.md).
+
+Project Entitlements, on the other hand, limit who can read and engage with a Project on the frontend. 
 
 ### Editor Permissions
 
-The **Grant editor permission** button opens a drawer from the right side of the screen with a dropdown menu and three sliders that configure Project-specific permissions for individual users. These permissions give users who would otherwise not have access to the backend or to this specific project the ability to access and edit it. After a Permission has been extended, the User’s name will be listed in the section as a means to edit or delete the permission associated with their account.
+The **Grant editor permission** button opens a drawer from the right side of the screen with a dropdown menu and three switch toggles that configure Project-specific permissions for individual users. These permissions give users the ability to view or edit specific Projects in ways they wouldn't otherwise be able to.
 
-The **Select User** dropdown lists all of the instances Users. The dropdown functions as both a search bar and drowpdown list to more easily find specific users. Whichever User is selected will be granted permissions to the project based on which of the following toggles are activated.
+The **Select User** dropdown lists all of the instances Users. The dropdown functions as both a search bar and drowpdown list to more easily find specific Users. Whichever User is selected will be granted permissions to the project based on which of the following toggles are activated.
 
 The **Can Modify Project** option grants the user the ability to edit all aspects of the Project, except extend similar permissions to other users. Users who are scoped this permission can also modify or delete Maker records associated with the Project. When this option is selected a badge reading “Project Editor” will be appended next to the user’s name.
 
-If the **Can Modify Resource Metadata** toggle is engaged, the user will have a very limited view of the Project: they will only be able to access the the Project’s **Resources** sidebar, where they can edit the metadata for existing Resources. Users with this permission will not be able to add or delete Resources from the Project. When this option is selected the user’s name will appear in the listings with a “Metadata Author” badge.
+When users with this permission log into Manifold, a button reading **Editor Mode** or **Admin Mode** will appear for them in the Manifold menu bar and they will be able to view and edit this Project or Journal issue in the backend, even if they normally would not have access to the Manifold backend.
 
-For users who have also authored Project content, the **Is a Project Author** toggle grants them the ability to view the Project from the frontend when it’s in Draft status as well as annotate Project Texts with Resources. When the User engages with Texts within the Project, the system will differentiate their annotations and highlights with a pink color and display an “Author” badge in the annotation drawer. In the backend, Users with this permission will have a similar badge associated with their Editor Permission listing.
+As with the **Can Modify Project** option, if the **Can Modify Resource Metadata** toggle is engaged, the user will be able to access and edit the Project in the Manifold backend; however they will have a *very* limited view of the Project. They will only be able to access the Project’s **Resources** sidebar, where they can edit the metadata for existing Resources. Users with this permission will not be able to add or delete Resources from the Project. When this option is selected, the user’s name will appear in the listings with a “Metadata Author” badge.
+
+For users who have also authored Project content, the **Is a Project Author** toggle grants them the ability to view and annotate the Project from the frontend when it’s in Draft status. When the User engages with Texts within the Project, the system will differentiate their annotations and highlights with a pink color and display an “Author” badge in the annotation drawer. Users who are *only* scoped this role will *not* have access to the Manifold backend.
+
+After a Permission has been extended, the User’s name will be listed in this view, providing a means to edit or delete the permission associated with their account.
 
 ### Project Entitlements
 

@@ -42,6 +42,10 @@ Sorting Projects with using dropdowns creates a stable URL that can be shared so
 
 Like the Projects page, the **Journals** library view displays a paginated listing of all the Journals on the instance. Each listing includes the Journal Title, Background Image, Description, and a listing of the eight issues most recently added to the journal, followed by a link reading “See All Issues”  that takes a user to the Manifold landing page for that Journal.
 
+:::note I Don’t See a Journals Listing
+The listing for Journals will only appear if there is a Journal in the instance *and* your user credentials allow you to access it. E.g., If you have a Reader role and the instance has a Journal in Draft Mode, the Journals listing will not appear for you.
+:::
+
 ### Reading Groups
 
 The **Reading Groups** menu link opens onto a view that lists all of the instance’s *public* Reading Groups. This providers users the means to quickly review those Groups that are openly available for them to join.
@@ -60,10 +64,6 @@ For users who have logged into the instance, there appear on every Library and P
 
 The first two links—**Projects** and **Journals**—mirror the links of the same names in the main Manifold menu and direct readers to the all Projects and Journals views described above. The behavior of the remaining links works as follows:
 
-:::note Missing Links?
-Links to **My Starred** and **My Notes** *only* appear after logging in; users who aren’t logged into the instance will see only navigation links for **Projects**, **Journals**, and **Project Collections**.
-:::
-
 ### Project Collections
 
 The **Project Collections** link takes the user to a paginated view of all “visible” Project Collections, instead of just those chosen to appear on the Home page. Visit the [Project Collection documentation](../backend/project_collections.md) for more about Project Collections and their visibility settings.
@@ -81,6 +81,10 @@ See the [Collecting section](../using/collecting.md) for more on how content is 
 The link to **My Notes** opens a view for a user to see all their Annotations, Comments, and Highlights across an entire Manifold instance in one place. These engagements are displayed in a paginated list and include results from all Reading Groups, public and private.
 
 Users can filter the displayed results by Text using the dropdown combobox field that appears atop the list.
+
+:::note Missing Links?
+Links to **My Starred** and **My Notes** *only* appear after logging in; users who aren’t logged into the instance will see only navigation links for **Projects** and **Project Collections**. A link to **Journals** will also appear for logged-in users if there is a Journal set up on the instance and their user account has credentials to view it.
+:::
 
 ## Search
 
