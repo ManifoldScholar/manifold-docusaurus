@@ -6,7 +6,7 @@ sidebar_label: Make a Project
 
 This page describes how to create a new Manifold Project.
 
-## Process
+## Directions
 
 1. [Log into Manifold](../walkthroughs/login.md).
 2. [Navigate to the Manifold backend](../walkthroughs/access_backend.md) using the **Enter Admin Mode** button.
