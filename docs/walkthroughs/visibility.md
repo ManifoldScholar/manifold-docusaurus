@@ -12,15 +12,17 @@ This page describes how to access and customize these viewing options.
 
 To configure your visibility options, open a Text in Manifold. 
 
-Visibility Options are found in the reader settings section of menu bar, visually labelled with an eye icon.
+Visibility Options are found in the reader settings section of the menu bar, visually labelled with an eye icon.
 
 :::note
-The settings you save in this section persist across an entire instance and are not tied to a specific Text or Project, though they can be accessed and adjusted from any Text.
+So long as you are signed in, the settings you save in this section persist across an entire instance and are not tied to a specific Text or Project, though they can be accessed and adjusted from any Text.
 :::
 
 ## Understanding the Interface
 
-When you select the Visibility Options a dropdown menu will appear. The menu is broken into four sections: Highlights, Annotations, Resources, and Reading Groups. Each of those sections contains one or more checkbox options to configure how Manifold will display for you:
+When you select the Visibility Options button a dropdown menu will appear. The menu is broken into four sections: Highlights, Annotations, Resources, and Reading Groups. Each of those sections contains one or more checkbox options to configure how Manifold will display for you.
+
+The interface can be interacted with using either a mouse or keyboard. For keyboard use, you can tab forward and backward to focus on checkboxes and use the space bar to select or deselect.
 
 ### Highlights and Annotations
 
