@@ -224,7 +224,7 @@ toc:
 # This is where you tell Manifold
 # what the Text is made of and how
 # it should be ordered.
-  - label: 'Chapter 1. The Eve of the War'
+  - label: 'Book 1. The Coming of the Martians'
 # A label decsribes the title of a section.
 # Be sure to enclose these with single quotes. 
     source_path: part_01.md
@@ -295,7 +295,7 @@ Let’s step back for a moment. In Manifold, a Text is something that you open t
 
 If I load one Word Document into Manifold, the result will be one Text with one Text Section. That Text Section might be one line long or a thousand paragraphs (though please don’t do that; your readers won’t thank you). Likewise, if I use a manifest to load two Word Documents, I’ll have one Text with two Text Sections.
 
-Within Manifold, you experience the boundaries of Text Sections by scrolling down the page and clicking on the **Next** button at the bottom of the page. That **Next** button denotes the end of one section and the path to start the one following.
+Within Manifold, you experience the boundaries of Text Sections by scrolling down the page and clicking on the **Next** button at the bottom. That **Next** button denotes the end of one section and the path to start the one following.
 
 So what we are doing here in the TOC section is to list out for Manifold each Text Section that the system will then synthesize into one Text.
 
@@ -303,7 +303,7 @@ Each listing is made up of two elements, a **label** and a **source_path**, both
 
 1. The **label** corresponds to the title of that section. In the *War of the Worlds* example we’ve been using here, the listing for the first chapter would have a **label** with a value of `Chapter 1. The Eve of the War`.
 
-   It’s important to note that the title itself will not automatically appear in the Manifold Reader at the top of the section. By including the title here, we have only told Manifold the name of the section as it should appear in the **Contents** dropdown within the Manifold Reader. If you want the title to appear as the first bit of text for this section, you will need to make sure it is included in the body of the document you are uploading.
+   It’s important to note that the title itself will not automatically appear in the Manifold Reader at the top of the section. By including the title here, we have only told Manifold the name of the section as it should appear in the **Contents** dropdown within the Manifold Reader (or in a Table of Contents content block on the project’s homepage). If you want the title to appear as the first bit of text for this section, you will need to make sure it is included in the body of the document you are uploading.
 
    As we did in the **meta** section above, it is best practice to enclose label values within quotation marks and convert any internal quotation marks to the curly variety:
 
@@ -312,6 +312,8 @@ Each listing is made up of two elements, a **label** and a **source_path**, both
    ```
 
 2. The **source_path** is the space where you tell Manifold where to find the file that contains the content for the section. The most common value you will include here will be the pathway to the file in your manifest folder ***or*** the URL for a Google Doc that has privacy settings that allow it to be viewed publicly.
+
+  Note that, unlike for most of the other attributes in the YAML file, you ***should not*** enclose the path to your file or the URL for your Google Doc within quotation marks.
 
   Using our *War of the Worlds* example again, the **source_path** value I would include for the first chapter would be `chapter_01.docx`. I can simply list the filename here because that chapter 1 file is in the same folder (or directory) as my manifest YAML file is. If I had tucked the chapter 1 file into a subfolder, then I would reference it here in the same way you call a media file from within a source text. For example, if I tucked the chapter 1 file in a subfolder called `texts` my value here would instead be `texts/chapter_01.docx`.
 
@@ -323,18 +325,167 @@ Each listing is made up of two elements, a **label** and a **source_path**, both
   source_path: https://docs.google.com/document/d/1bTY_5mtv0nIGUOLxvltqmwsrruqgVNgNoT2XJv1m5JQ/edit?usp=sharing
   ```
 
-  In situations where you are using *only* Google Docs to make up your manifest, 
+  In situations where you are using *only* Google Docs to make up your manifest, the only file in your manifest folder will be your manifest (YAML) file. We’ll talk more about that in the Ingesting section below.
+
+  :::tip Naming Files
+  It is best practice to name files with short descriptive phrases that do not include spaces. Avoid names like `Chapter 1. The Eve of the War.docx` in favor of something simpler and easier to sort in your file system, like `chapter_01.docx`.
+  :::
+
+### Declaring the Opening Section
+
+By default, the Manifold Reader will open the text to the first section listed in the manifest. Most of the time that makes good sense. But there are occasions when it might not. If you need to designate a specific section the Manifold Reader should open, you can include the ***optional*** `start_section: true` attribute in the `toc` section of the manifest.
+
+```yml title="Using the Start Section Attribute"
+- label: 'Book 2. The Earth Under the Martians'
+  source_path: part_02.md
+  start_section: true
+```
+
+The attribute should be placed on the line following the `source_path` of the section to which you want to open. In the example above, we are having the Manifold Reader open the text to the second part title page for *War of the Worlds* instead of the first one.
+
+This attribute can only be included once in the manifest file.
 
 ### Nesting Elements
 
-<!-- Discuss how to add ids to elements in MD/HTML as well as in Google/Word (insert bookmarks: in Word you can define an ID; in Google it will provide a link to use) and then how to reference them from the Manifest -->
+Manifold renders the overall hierarchy of a Text in two spaces: on the homepage of a Project, in **Table of Contents** content blocks, and in the **Contents** dropdown within the Manifold Reader. In those two spaces readers will be provided a visual sense, through different levels of indentation and font weights/sizes, of how sections of a text relate to one another. For readers using assistive technology, hierarchy will be correctly structured as an HTML list.
+
+There are two ways to nest content in your manifest, and you are free to employ one or both methods within the same YAML file. The first method is to nest an entire file:
+
+Using our example here, *War of the Worlds* is made up of two parts, with each part containing a number of chapters. Assuming our part title pages and chapters are all individual files, we could situate the chapters as children of the parts or, in other words, nest the chapters into their respective parts. 
+
+To do this we don’t have to do anything to the individual files. Instead we simply indicate in the `toc` section of the Manifest that the chapters are children of the parts with the `children:` attribute:
+
+```yml title="Nesting Whole Files"
+- label: 'Book 1. The Coming of the Martians'
+  source_path: part_01.md
+  start_section: true
+  children:
+    - label: 'Chapter 1. The Eve of the War'
+      source_path: chapter_01.docx
+    - label: 'Chapter 2. The Falling Star'
+      source_path: chapter_02.docx
+```
+
+In the example above we have listings for three text sections, the first part title (Book 1. The Coming of the Martians) and the first two chapters. We want Manifold to show in the hierarchy of this Text that those two chapters are contained within the first part. To achieve that, we add the `children:` attribute on its own line, following the parent element.
+
+Note that `children:` is indented so that it lines up with the lines preceding it. The `children:` attribute will normally follow the `source_path` of the parent, except in cases where the parent is the section to which Manifold is meant to open. In that case, `children:` will follow on the line after `start_section`.
+
+Now all we have to do is list out all the sections that are to be nested as children. We can do that in the same way we normally would with a `label` and `source_path`. The only difference is that these need to be indented under the children attribute. There should be one level of indentation for `- label:` and two levels of indentation for `source_path`, so that the text of both attributes line up over one another exactly, as shown above.
+
+We can use this same process again to nest sections within already nested sections. Simply place another `children` attribute beneath the next parent element and list out the `label` and `source_path` attributes. As before, the `- label` and `source_path` attributes should be indented beneath the `children` attribute, as show in the following example.
+
+
+```yml title="Nesting within already Nested Sections"
+- label: 'Book 1. The Coming of the Martians'
+  source_path: part_01.md
+  start_section: true
+  children:
+    - label: 'Chapter 1. The Eve of the War'
+      source_path: chapter_01.docx
+    - label: 'Chapter 2. The Falling Star'
+      source_path: chapter_02.docx
+      children:
+        - label: 'Chapter 3. On Horsell Common'
+          source_path: chapter_03.html
+        - label: 'Chapter 4. The Cylinder Opens'
+          source_path: chapter_04.md
+```
+
+Manifold supports six levels of hierarchy. This example displays three: the main, and then two nested levels.
+
+:::tip Monospace Fonts
+It is useful to have your text editor display content in a monospace or fixed-width font (like Courier or Courier New) so that you can more easily see how things are lining up (or not) in your manifest file.
+:::
+
+In addition to being able to nest individual files as text sections, you can also nest sections *within* an individual file. Suppose you have a chapter whose internal heading structure you want to call attention to in the Text’s hierarchy. You can include the ID for that section in the Manifest as a “hash value,” and the system will render it as part of the overall structure of the Text. The method to add an ID to a heading breaks depends on the format of the source file. For Word and Google Docs, the process involves adding a bookmark. For HTML and Markdown, you hard code the ID into your file. Let’s investigate both in detail:
+
+#### Adding IDs to Word and Google Docs
+
+In Word and Google Docs, you can use the **Insert** menu to add a **Bookmark** to a section of text, which will function as an ID for Manifold. The process to add a bookmark is almost identical for both applications: Place your cursor at the start of a heading, navigate to **Insert** in the menu, and then select **Bookmark**. In Word, the system will prompt you for a name. That name will be the ID for the section, and like filenames, it should be short, descriptive, and avoid spaces. Something like `heading_01`, `heading_02` or along those lines is suggested. Google does not allow you to name the ID, instead generating one for you automatically. More on that later in the “Applying IDs IDs to Nested Elements” section.
+
+#### Adding IDs to Markdown and HTML Files
+
+To add an ID to heading in Markdown and HTML, we can follow the standard HTML practice by enclosing an ID name within quote marks as an attribute of the heading tag:
+
+```html title="A Heading ID in HTML"
+<h2 id="heading_01">This is a Sample Heading</h2>
+```
+
+Normally in Markdown you would express a heading like the one above like this:
+
+```md title="A Standard Markdown Heading"
+## This is a Sample Heading
+```
+
+Because Markdown gets translated into HTML, however, we can simply use the same code structure we did in HTML for the Markdown file.
+
+:::tip HTML in Markdown
+While you can pepper HTML code into Markdown files, you cannot mix HTML and Markdown syntax on the same line. So if you want to include italics, say, in the example we use here, you would need to do that using `<em>` or  `<i>` tags instead of asterisks.
+:::
+
+#### Applying IDs to Nested Elements
+
+Now that we’ve added IDs to our headings in the source files, let’s now switch gears to getting those IDs into the manifest file. In the following example we have four parent files, corresponding to Word, Google, HTML, and Markdown, respectively:
+
+```yml title="Sample Parent Files"
+- label: 'A Parent Word File'
+  source_path: parent_01.docx
+- label: 'A Parent Google Document'
+  source_path: https://docs.google.com/document/d/1bTY_5mtv0nIGUOLxvltqmwsrruqgVNgNoT2XJv1m5JQ/edit
+- label: 'A Parent HTML File'
+  source_path: parent_03.html
+- label: 'A Parent Markdown File'
+  source_path: parent_04.md
+```
+
+Now want to nest beneath them a specific section that exists within those same parent files. In terms of formatting, it follows the exact same process as described above, with the use of the `children` attribute and indented `- label` and `source_path`. For all but the Google Doc, you will use the same `source_path` value as the parent, with the addition of a hash mark and the id you gave to the section after the filename.
+
+For instance, in the example below, the parent Word file is `parent_01.docx`. Let’s imagine we added a bookmark to that file and gave it a title (ID) of `heading_01`. To properly reference that here in the manifest our `source_path` value will be `parent_01.docx#heading_01`. You do likewise for the HTML and Markdown files. Instead of allowing you to name the section, Google Docs instead provides the opportunity to copy the URL for the bookmarked section, which is the value you want to copy/paste into the `source_path` here. You will notice that is also follows the same structure, separating the main filename from the section name with a hash tag.
+
+```yml title="Nesting Headings within Files"
+- label: 'A Parent Word File'
+  source_path: parent_01.docx
+  children:
+    - label: 'A Heading within the Parent File'
+      source_path: parent_file.docx#heading_01
+- label: 'A Parent Google Document'
+  source_path: https://docs.google.com/document/d/1bTY_5mtv0nIGUOLxvltqmwsrruqgVNgNoT2XJv1m5JQ/edit
+  children:
+    - label: 'A Heading within the Parent Google Document'
+      source_path: https://docs.google.com/document/d/1bTY_5mtv0nIGUOLxvltqmwsrruqgVNgNoT2XJv1m5JQ/edit#bookmark=id.g1ahy2li6f5j
+- label: 'A Parent HTML File'
+  source_path: parent_03.html
+  children:
+    - label: 'A Heading within the Parent File'
+      source_path: parent_03.html#heading_01
+- label: 'A Parent Markdown File'
+  source_path: parent_04.md
+  children:
+    - label: 'A Heading within the Parent File'
+      source_path: parent_04.md#heading_01
+```
+
+As mentioned above, you can employ both nesting strategies (nesting whole files or named sections within files) in a single manifest (YAML) file.
 
 ### Validating Your File
-<https://jsonformatter.org/yaml-validator> YAML Validator  
-<https://codebeautify.org/yaml-validator/> YAML Validator
 
-<!-- Consider adding in format-specific walkthroughs for HTML, MD, Word, and Google Docs. -->
+None one element of this manifest is particularly difficult, but in aggregate there are a lot of moving parts and a lot of opportunities to miss a space or an indent. Because the YAML format is so unforgiving, we ***strongly*** recommend you validate your YAML file before attempting to upload your manifest into Manifold. They can’t prevent every possible error, but they get those that tend to be the most obvious, overlooked, and infuriating. Two that we recommend are:
+
+- [Best YAML Validator 1](https://jsonformatter.org/yaml-validator)
+- [Best YAML Validator 2](https://codebeautify.org/yaml-validator/)
+
+For both of these you can copy/paste the contents of your YAML file into the browser window, and those systems will confirm you have a valid file or not.
+
+Curiously, both claim to be the “best” YAML validators. We will let you decide. (To be honest, we’re not even sure they are actually different.)
 
 ## Ingesting Your Manifest
 
-<!-- Creating the ZIP archive. -->
+Now that we have formatted source files, filed away our media assets in our directory of folders, and validated our manifest (YAML) file, we can now ingest everything into the system. This is the easy part: you just need to compress (or ZIP) all of these files you’ve been working with into a ZIP archive.
+
+Most folks, ourselves included, tend to keep all of their materials in a manifest folder that contains subfolders with various media. You want to select the files for compression at the folder level where you can see your manifest (YAML) file, instead of selecting the containing folder and simply turning that into a ZIP archive, which would likely lead to errors. You want the manifest (YAML) file to be in the main folder (or directory) that gets compressed.
+
+Once you have that ZIP archive you can ingest into Manifold using the **Texts** sidebar within your Manifold Project.
+
+If your manifest is made up entirely of Google Docs, then you can load just the manifest (YAML) file into Manifold. You don’t need to compress it. Manifold will accept the YAML file as is, so long as everything is formatted correctly.
+
+That’s it! Congrats. If you made it this far, you can definitely create a successful manifest ingest!
