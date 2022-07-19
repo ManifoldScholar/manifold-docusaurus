@@ -1,7 +1,7 @@
 ---
 id: reader_settings
-title: Set the Reader Appearance
-sidebar_label: Set the Reader Appearance
+title: Set Reader Appearance
+sidebar_label: Set Reader Appearance
 ---
 
 Readers can adjust how Manifold displays Texts. This page describes how to adjust the font, color scheme, and margins within the Manifold Reader.

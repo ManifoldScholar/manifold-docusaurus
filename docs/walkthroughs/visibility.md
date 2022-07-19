@@ -1,7 +1,7 @@
 ---
 id: visibility
-title: Visibility Options
-sidebar_label: Visibility Options
+title: Adjust Visibility
+sidebar_label: Adjust Visibility
 ---
 
 Manifold’s visibility options give readers the ability to configure which highlights and annotations appear with Texts in Reader views.
