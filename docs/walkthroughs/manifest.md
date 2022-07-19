@@ -1,7 +1,7 @@
 ---
 id: manifest
-title: Creating a Manifest Ingest
-sidebar_label: Manifest Ingest
+title: Create a Manifest Ingest
+sidebar_label: Create a Manifest Ingest
 ---
 
 Manifold can create a single Text from a collection of independent files and assets. This is what is known as a “Manifest Ingest.”

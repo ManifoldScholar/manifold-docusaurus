@@ -84,29 +84,29 @@ module.exports = {
         ]
       },
       {
-        'Engaging with Content': [
+        'Reading in Manifold': [
           'walkthroughs/visibility',
           'walkthroughs/reader_settings',
-          'walkthroughs/annotating',
-          'walkthroughs/commenting',
-          'walkthroughs/create_rg',
-          'walkthroughs/join_rg',
-          'walkthroughs/add_rg',
-          'walkthroughs/curate_rg',
-          'walkthroughs/collecting',
+          // 'walkthroughs/annotating',
+          // 'walkthroughs/commenting',
+          // 'walkthroughs/create_rg',
+          // 'walkthroughs/join_rg',
+          // 'walkthroughs/add_rg',
+          // 'walkthroughs/curate_rg',
+          // 'walkthroughs/collecting',
         ]
       },
       {
-        'Adding and Curating Content': [
+        'Working in Manifold': [
           'walkthroughs/making_project',
           // 'walkthroughs/adding_collaborators',
-          'walkthroughs/adding_text',
+          // 'walkthroughs/adding_text',
           'walkthroughs/manifest',
           // 'walkthroughs/adding_authors',
           // 'walkthroughs/assign_authors',
           // 'walkthroughs/curate_authors',
-          'walkthroughs/adding_resource',
-          'walkthroughs/bulkadd_resource',
+          // 'walkthroughs/adding_resource',
+          // 'walkthroughs/bulkadd_resource',
           'walkthroughs/placing_resource',
           // 'walkthroughs/add_categories',
           // 'walkthroughs/using_categories',
