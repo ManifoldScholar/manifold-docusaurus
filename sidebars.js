@@ -97,6 +97,7 @@ module.exports = {
           'walkthroughs/making_project',
           // 'walkthroughs/adding_collaborators',
           // 'walkthroughs/adding_text',
+          'walkthroughs/html_setup',
           'walkthroughs/manifest',
           // 'walkthroughs/adding_authors',
           // 'walkthroughs/assign_authors',
