@@ -393,18 +393,18 @@
         <summary type="html"><![CDATA[Before the holidays, I had the chance to chat with Manifold Co-PI Matthew K. Gold, who is Associate Professor of English and Digital Humanities and Executive Officer of the M.A. Program in Liberal Studies at the Graduate Center, CUNY. I have been lucky to work with Matt for a couple of years now, through seminars on digital humanities praxis and textual studies, on DH tool-building projects like DH Box, on the editorial collective of the Journal of Interactive Technology and Pedagogy, and with the digital fellows of the GC Digital Initiatives. His widespread commitment to textual scholarship and digital innovation, his seemingly tireless support of his students and digital experimentation, and his humility (which he may not even let me mention) never cease to amaze me. I have spent a lot of time discussing Manifold with Matt, but I was glad to get the chance to ask him more specifically about his personal motivations for developing a hybrid publishing platform.]]></summary>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Reading with Zach Davis]]></title>
-        <id>readingwithzachdavis</id>
-        <link href="https://manifoldscholar.github.io/manifold-docusaurus/blog/readingwithzachdavis"/>
-        <updated>2016-12-05T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Last week, calling Portland from the Digital Scholarship Lab at the Graduate Center, I had the pleasure of speaking with Manifold’s lead developer, Zach Davis at Cast Iron Coding. Yet again, my attempts to record the call came to naught, but I will conjure some of the conversation from my notes.]]></summary>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[This Week in Manifold: Markdown and Backend Development]]></title>
         <id>thisweekinmanifoldbackend</id>
         <link href="https://manifoldscholar.github.io/manifold-docusaurus/blog/thisweekinmanifoldbackend"/>
         <updated>2016-12-05T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Since I last posted, we've been making development progress on a few different fronts. Much of this work is still in feature branches, and has yet to be merged into the main development branch. Therefore, I'm going to skip the full list of revisions in this post, and instead offer a high level description of our recent efforts.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Reading with Zach Davis]]></title>
+        <id>readingwithzachdavis</id>
+        <link href="https://manifoldscholar.github.io/manifold-docusaurus/blog/readingwithzachdavis"/>
+        <updated>2016-12-05T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Last week, calling Portland from the Digital Scholarship Lab at the Graduate Center, I had the pleasure of speaking with Manifold’s lead developer, Zach Davis at Cast Iron Coding. Yet again, my attempts to record the call came to naught, but I will conjure some of the conversation from my notes.]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[This Week in Manifold: Team meeting, Numerous Fixes]]></title>
