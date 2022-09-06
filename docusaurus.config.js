@@ -1,12 +1,17 @@
+require("dotenv").config();
 const path = require("path");
-const fs = require('fs')
+const fs = require("fs");
 
 let data = {};
 try {
-  data.manifoldVersion = fs.readFileSync(path.resolve(__dirname, "MANIFOLD_VERSION"), 'utf8').trim();
-  data.releases = JSON.parse(fs.readFileSync(path.resolve(__dirname, "releases.json"), 'utf8'));
+  data.manifoldVersion = fs
+    .readFileSync(path.resolve(__dirname, "MANIFOLD_VERSION"), "utf8")
+    .trim();
+  data.releases = JSON.parse(
+    fs.readFileSync(path.resolve(__dirname, "releases.json"), "utf8")
+  );
 } catch (err) {
-  console.error(err)
+  console.error(err);
 }
 
 const DARK_ICON = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'%3E%3Cpath d='M9.8.7c2 1.1 3.4 3.3 3.4 5.8 0 3.7-3 6.7-6.7 6.7-2.5 0-4.7-1.4-5.8-3.4 1 .5 2.1.8 3.3.8 3.7 0 6.7-3 6.7-6.7 0-1.1-.3-2.2-.9-3.2zm-4.2.5c.2-.2.6 0 .5.3l-.4 2.1 1.8 1.1c.3.2.2.6-.1.6l-2.1.2-.5 2c0 .3-.5.4-.6.1l-.8-1.9-2.1.2c-.3 0-.5-.4-.3-.6l1.6-1.4L1.7 2c-.1-.3.2-.6.5-.4l1.8 1 1.6-1.4z' fill-rule='evenodd' clip-rule='evenodd' fill='%237ad3ff'/%3E%3C/svg%3E")`;
@@ -15,10 +20,16 @@ const LIGHT_ICON = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000
 
 const ICON_STYLE = {
   width: "16px",
-  height: "16px"
+  height: "16px",
 };
 
 const MARKETING_URL = "http://manifoldapp.org";
+
+const algolia = {
+  appId: process.env.ALGOLIA_APP_ID,
+  apiKey: process.env.ALGOLIA_API_KEY,
+  indexName: process.env.ALGOLIA_INDEX_NAME,
+};
 
 module.exports = {
   title: "Manifold Docs",
@@ -32,17 +43,18 @@ module.exports = {
     "docusaurus-plugin-sass",
     path.resolve(__dirname, "src/plugin/styled-components"),
     [
-      'docusaurus2-dotenv',
+      "docusaurus2-dotenv",
       {
-        defaults: true
-      }
-    ]
+        defaults: true,
+        systemvars: true,
+      },
+    ],
   ],
   themeConfig: {
     metaData: {
       ogImage: "img/Manifold-Marketing-Opengraph-3.png",
       ogImageAlt:
-        "People building a wooden Manifold logo. Text below the logo says 'Manifold is what we make it'"
+        "People building a wooden Manifold logo. Text below the logo says 'Manifold is what we make it'",
     },
     manifoldLogoLink: MARKETING_URL,
     mainNav: {
@@ -51,34 +63,34 @@ module.exports = {
           label: "Features",
           href: `${MARKETING_URL}/features`,
           isButton: false,
-          target: '_self'
+          target: "_self",
         },
         {
           label: "Community",
           href: `${MARKETING_URL}/community`,
           isButton: false,
-          target: '_self'
+          target: "_self",
         },
         {
           label: "Services",
           href: `${MARKETING_URL}/services`,
           isButton: false,
-          target: '_self'
+          target: "_self",
         },
         {
           label: "Docs",
           href: "/docs",
           isButton: false,
           isSelected: true,
-          target: '_self'
+          target: "_self",
         },
         {
           label: "Get Started",
           href: `${MARKETING_URL}/get-started`,
           isButton: true,
-          target: '_self'
-        }
-      ]
+          target: "_self",
+        },
+      ],
     },
     footer: {
       links: [
@@ -88,29 +100,29 @@ module.exports = {
             {
               label: "Get Started",
               href: `${MARKETING_URL}/get-started`,
-              target: '_self'
+              target: "_self",
             },
             {
               label: "Features",
               href: `${MARKETING_URL}/features`,
-              target: '_self'
+              target: "_self",
             },
             {
               label: "Services",
               href: `${MARKETING_URL}/services`,
-              target: '_self'
+              target: "_self",
             },
             {
               label: "Docs",
               href: "/docs",
-              target: '_self'
+              target: "_self",
             },
             {
               label: "Accessibility",
               to: "/docs/accessibility",
-              target: '_self'
-            }
-          ]
+              target: "_self",
+            },
+          ],
         },
         {
           title: "People",
@@ -118,23 +130,23 @@ module.exports = {
             {
               label: "Community",
               href: `${MARKETING_URL}/community`,
-              target: '_self'
+              target: "_self",
             },
             {
               label: "Blog",
-              to: "blog"
+              to: "blog",
             },
             {
               label: "About",
               href: `${MARKETING_URL}/history`,
-              target: '_self'
+              target: "_self",
             },
             {
               label: "Development",
               href: `${MARKETING_URL}/development`,
-              target: '_self'
-            }
-          ]
+              target: "_self",
+            },
+          ],
         },
         {
           title: "Contact",
@@ -142,26 +154,26 @@ module.exports = {
             {
               label: "Email",
               href: "mailto:office@castironcoding.com",
-              icon: "email"
+              icon: "email",
             },
             {
               label: "Github",
               to: "https://github.com/ManifoldScholar",
-              icon: "github"
+              icon: "github",
             },
             {
               label: "Slack",
               href: "https://slack.com/",
-              icon: "slack"
+              icon: "slack",
             },
             {
               label: "Twitter",
               href: "https://twitter.com/manifoldscholar",
-              icon: "twitter"
-            }
-          ]
-        }
-      ]
+              icon: "twitter",
+            },
+          ],
+        },
+      ],
     },
     navbar: {
       items: [
@@ -170,13 +182,13 @@ module.exports = {
           activeBasePath: "docs",
           activeBaseRegex: "docs/(full)",
           label: "Documentation",
-          position: "left"
+          position: "left",
         },
         {
           to: "docs/walkthroughs/landing",
           activeBasePath: "docs/walkthroughs",
           label: "Walkthroughs",
-          position: "left"
+          position: "left",
         },
         // {
         //   to: "docs/guides/landing",
@@ -187,9 +199,9 @@ module.exports = {
         {
           to: "blog",
           label: "Blog",
-          position: "left"
-        }
-      ]
+          position: "left",
+        },
+      ],
     },
     colorMode: {
       switchConfig: {
@@ -197,19 +209,20 @@ module.exports = {
         darkIconStyle: {
           ...ICON_STYLE,
           backgroundImage: DARK_ICON,
-          backgroundRepeat: "no-repeat"
+          backgroundRepeat: "no-repeat",
         },
         lightIcon: "\u{0020}",
         lightIconStyle: {
           ...ICON_STYLE,
           backgroundImage: LIGHT_ICON,
-          backgroundRepeat: "no-repeat"
-        }
-      }
-    }
+          backgroundRepeat: "no-repeat",
+        },
+      },
+    },
+    algolia,
   },
   customFields: {
-    data
+    data,
   },
   presets: [
     [
@@ -224,24 +237,23 @@ module.exports = {
             customTypes: {
               location: {
                 keyword: "location",
-                svg:
-                  '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"/></svg>'
-              }
-            }
-          }
+                svg: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"/></svg>',
+              },
+            },
+          },
         },
         blog: {
           blogTitle: "Blog",
           // blogDescription: "A docusaurus powered blog!",
-          showReadingTime: false
+          showReadingTime: false,
           // Please change this to your repo.
           // editUrl:
           //   "https://github.com/facebook/docusaurus/edit/master/website/blog/"
         },
         theme: {
-          customCss: require.resolve("./src/scss/styles.scss")
-        }
-      }
-    ]
-  ]
+          customCss: require.resolve("./src/scss/styles.scss"),
+        },
+      },
+    ],
+  ],
 };
