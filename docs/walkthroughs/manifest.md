@@ -401,7 +401,7 @@ In addition to being able to nest individual files as text sections, you can als
 
 #### Adding IDs to Word and Google Docs
 
-In Word and Google Docs, you can use the **Insert** menu to add a **Bookmark** to a section of text, which will function as an ID for Manifold. The process to add a bookmark is almost identical for both applications: Place your cursor at the start of a heading, navigate to **Insert** in the menu, and then select **Bookmark**. In Word, the system will prompt you for a name. That name will be the ID for the section, and like filenames, it should be short, descriptive, and avoid spaces. Something like `heading_01`, `heading_02` or along those lines is suggested. Google does not allow you to name the ID, instead generating one for you automatically. More on that later in the “Applying IDs IDs to Nested Elements” section.
+In Word and Google Docs, you can use the **Insert** menu to add a **Bookmark** to a section of text, which will function as an ID for Manifold. The process to add a bookmark is almost identical for both applications: Place your cursor at the start of a heading, navigate to **Insert** in the menu, and then select **Bookmark**. In Word, the system will prompt you for a name. That name will be the ID for the section, and like filenames, it should be short, descriptive, and avoid spaces. Something like `heading_01`, `heading_02` or along those lines is suggested. Google does not allow you to name the ID, instead generating one for you automatically. More on that later in the “Applying IDs to Nested Elements” section.
 
 #### Adding IDs to Markdown and HTML Files
 
