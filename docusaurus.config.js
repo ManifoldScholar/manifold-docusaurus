@@ -31,6 +31,11 @@ const algolia = {
   indexName: process.env.ALGOLIA_INDEX_NAME,
 };
 
+const googleAnalytics = {
+  trackingID: process.env.GOOGLE_ANALYTICS,
+  anonymizeIP: true,
+};
+
 module.exports = {
   title: "Manifold Docs",
   tagline: "The tagline of my site",
@@ -114,7 +119,7 @@ module.exports = {
             },
             {
               label: "Docs",
-              href: "/docs",
+              to: "/docs",
               target: "_self",
             },
             {
@@ -228,6 +233,7 @@ module.exports = {
     [
       "@docusaurus/preset-classic",
       {
+        googleAnalytics,
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
