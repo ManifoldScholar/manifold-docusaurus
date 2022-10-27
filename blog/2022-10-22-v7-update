@@ -1,0 +1,22 @@
+---
+slug: "v7-update"
+title: "A Belated Version 7 Update"
+---
+
+A belated update on the Version 7 release: We were so thrilled to share Manifold version 7.0 with our community in August. Our developers at Cast Iron Coding have put an incredible amount of time and care into the latest release, one of our biggest yet, which continues to build in new features and capabilities that have been requested by our users.
+
+This version of Manifold was created with significant support from The Andrew W. Mellon Foundation and the NEH’s Office of Digital Humanities, which supported the OER and teaching features. We are deeply grateful to both of these organizations.
+
+Some of the highlights of version 7 include:
+
+* **Collections** and Reading Group Improvements. Users can now gather content in collections to make it easier to find in the future. This feature will be especially helpful for instructors who can build a collection of content on a Manifold instance and categorize it for their students. New features in Reading Groups make it easier to view, archive, and clone reading groups, as well as to keep track of individual responses to texts.
+
+* **Journals** This release adds initial support for publishing a journal on Manifold. We’ve added a new top-level “Journals” model that can be managed in the Manifold backend interface. We hope to build out this feature in future releases in response to user feedback.
+
+* **Accessibility** As part of our ongoing work to make Manifold usable by as many readers as possible, this release includes a number of significant accessibility improvements. Most notably, users may now use carat browsing to navigate annotations and can make annotations without using a mouse.
+
+Manifold 7.0 also includes a client refactor (moving from monolithic Sass stylesheets to the more modular CSS-in-JS) and now ships with all client application labels stored in a json localization file, making it possible to translate Manifold’s interface into other languages. We are most grateful to [Melusina Press](https://www.melusinapress.lu/) and the [University of Luxembourg](https://wwwen.uni.lu/) for supporting this localization feature, and invite Manifold publishers to contribute translations.  
+
+You can read more about the [latest release and all the relevant documentation for this release here](https://manifoldscholar.github.io/manifold-docusaurus/docs/administering/release_notes/v7x/).
+
+We hope you have fun experimenting with version 7—and as always, please get in touch with us to share your experiences with the new release. Thanks so much for being part of our community and for all you have done to support the continuing evolution of Manifold!
