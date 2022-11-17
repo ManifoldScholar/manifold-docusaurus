@@ -4,9 +4,16 @@
         <title>Manifold Docs Blog</title>
         <link>https://manifoldscholar.github.io/blog</link>
         <description>Manifold Docs Blog</description>
-        <lastBuildDate>Wed, 05 Jan 2022 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 22 Oct 2022 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[A Belated Version 7 Update]]></title>
+            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/v7-update</link>
+            <guid>v7-update</guid>
+            <pubDate>Sat, 22 Oct 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[A belated update on the Version 7 release: We were so thrilled to share Manifold version 7.0 with our community in August. Our developers at Cast Iron Coding have put an incredible amount of time and care into the latest release, one of our biggest yet, which continues to build in new features and capabilities that have been requested by our users.]]></description>
+        </item>
         <item>
             <title><![CDATA[Manifold Community Meetup Recap]]></title>
             <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/community-meetup-recap</link>
