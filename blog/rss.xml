@@ -4,9 +4,16 @@
         <title>Manifold Docs Blog</title>
         <link>https://manifoldscholar.github.io/blog</link>
         <description>Manifold Docs Blog</description>
-        <lastBuildDate>Sat, 22 Oct 2022 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 17 Nov 2022 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[nextup]]></title>
+            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/2022/11/17/nextup</link>
+            <guid>nextup</guid>
+            <pubDate>Thu, 17 Nov 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[\#NextUP Digital Publishing as a Thing of Beauty]]></description>
+        </item>
         <item>
             <title><![CDATA[A Belated Version 7 Update]]></title>
             <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/v7-update</link>
