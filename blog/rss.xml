@@ -8,11 +8,11 @@
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <item>
-            <title><![CDATA[nextup]]></title>
-            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/2022/11/17/nextup</link>
-            <guid>nextup</guid>
+            <title><![CDATA[#NextUP: Manifold: Digital Publishing as a Thing of Beauty]]></title>
+            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/digital-publishing-beauty</link>
+            <guid>digital-publishing-beauty</guid>
             <pubDate>Thu, 17 Nov 2022 00:00:00 GMT</pubDate>
-            <description><![CDATA[\#NextUP Digital Publishing as a Thing of Beauty]]></description>
+            <description><![CDATA[This year’s #UPWeek coincides with a meeting of the Manifold Team—representatives from the three founding partners, the CUNY Graduate Center, Cast Iron Coding of Portland, OR, and the University of Minnesota Press. We’ll all be meeting halfway between Portland and NYC in Minneapolis, seeing each other in person for the first time since the pandemic began.]]></description>
         </item>
         <item>
             <title><![CDATA[A Belated Version 7 Update]]></title>
