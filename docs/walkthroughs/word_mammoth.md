@@ -36,9 +36,9 @@ Next, in order to make the most of your Word ingestions, there are several thing
 
 - apply paragraph and character styles in Word,
 - map those Word styles to HTML attributes (read: “HTML styles”) in Manifold, and
-- use CSS in Manifold to have those styled elements render in the browser they way you would like.
+- use CSS in Manifold to have those styled elements render in the browser the way you would like.
 
-If you’re reading that and thinking *Yikes!*, don’t freak out. Each of those points will be considered at length on this page, and we’ll be supplying you with a style map, Word template, and a stylesheet (that’s the CSS) here to get you started. But it is important to note some frictions you will encounter right here at the beginning.
+If you’re reading that and thinking ***Yikes!***, don’t freak out. Each of those points will be considered at length on this page, and we’ll be supplying you with a style map, Word template, and a stylesheet (that’s the CSS) here to get you started. But it is important to note some frictions you will encounter right here at the beginning.
 
 While each of those three items we just listed are all interrelated ***and necessary***, one is more frustrating than the rest. Mapping Word styles to HTML attributes is something ***only*** an instance Admin can do. So if you aren’t an Admin on your instance, you will need a friend who is. But that’s okay: it’s good to make new friends, right?
 
@@ -56,9 +56,9 @@ It’s important to note that step 3 is something ***you*** don’t need to acti
 
 ## 1. Styling Word Documents
 
-Let’s be candid, styling Word documents is where your real struggle with this process is going to happen. Most folks you are going to deal with learned how to use Word, and word processors more generally, by embracing the “what you see is what you get” (WYSIWYG) mentality and corresponding set of features, which app designers created to make it easier for everyone to use their software. But WYSIWYG is a mirage that obfuscates the truth. It gives your a false impression of what you are actually doing to the text you are adjusting, and it confuses structure with rendering. Bear with us for a moment.
+Let’s be candid, styling Word documents is where your real struggle with this process is going to happen. Most folks you are going to deal with learned how to use Word, and word processors more generally, by embracing the “what you see is what you get” (WYSIWYG) mentality and corresponding set of features, which app designers created to make it easier for everyone to use their software. But WYSIWYG is a mirage that obfuscates the truth. It gives you a false impression of what you are actually doing to the text you are adjusting, and it confuses structure with rendering. Bear with us for a moment.
 
-- Open a Word document you’re wanting to load into Manifold, making sure are in the **Print Layout** view (you can confirm this in the **View** menu).
+- Open a Word document you’re wanting to load into Manifold, making sure you are in the **Print Layout** view (you can confirm this in the **View** menu).
 - Now, from the **Home** menu in the ribbon, select the button for **Styles Pane**. It should be a little right of center. When you click that, you should see a sidebar slide out from the right of the application with a listing of different styles.
 - Look to the bottom of that sidebar. There should be two checkbox options. Click on the top one: **Show styles guides**. The styles sidebar on the right side of the screen will now include numbered blocks next to each style listing, each differently colored to help distinguish one from another. And you should likewise see colored blocks with numbers to the left of each of the paragraphs in your document.
 
@@ -72,6 +72,10 @@ When authoring new content in Word, the best practice is to use styles to descri
 
 :::info Wait, What about all my italics?! Are they jettisoned too?
 Happily, your existing use of italics and bold and super/subscript is safe. Those stylings affect “runs” of text ***within*** a paragraph and persist even when paragraph stylings do not. We’ll talk more about this below in the **[Character Styles](/docs/walkthroughs/word_mammoth.md#character-styles)** section.
+:::
+
+:::tip Our Word Template
+We promised a Word template above that you can use in your work. <a href="../../static/downloads/manifold-template.docx" title="Manifold Word Template" download="manifold-template.docx">Here it is!</a> As we begin to move into the next steps, that will be handy for you to have.
 :::
 
 ### Applying Paragraph Styles
@@ -612,7 +616,7 @@ Now, how did we arrive at that? When you map content from Word styles to HTML, b
 
 Functionally, this means that even if all you did was map Word styles to core HTML entities, then you still have the opportunity in this backend view to provide directions for how you want those core elements to appear on the screen, instead of relying on the default rendering instructions for those that are baked into Manifold. But if you added additional nuance to your mappings, say by adding classes, you can specifically target those class attributes and provide rendering instructions for them. To look at it another way, without that nuance of class attributes, you could tell Manifold how all `p` (paragraph) elements should appear. Useful, but limited. With classes, you can tell Manifold how ***this*** paragraph should look and how ***this other*** kind of paragraph should look. 
 
-Conversly, if you do have instructions for a certain class in your stylesheet, but you cannot define it in your source document or create a mapping for it (yeah, here’s looking at you, Google Docs!), then Manifold won’t be able to apply those styling instruction. In that situation, the stylesheet will only be able to be applied to core HTML elements.
+Conversely, if you do have instructions for a certain class in your stylesheet, but you cannot define it in your source document or create a mapping for it (yeah, here’s looking at you, Google Docs!), then Manifold won’t be able to apply those styling instructions. In that situation, the stylesheet will only be able to be applied to core HTML elements.
 
 Now let’s actually talk a little about how to compose styling instructions in CSS syntax. CSS is one of those topics that is both approachable and so much more nuanced than you would give it on first glance. Entire books are written on the topic, so we can only do so much here. A good place to start digging deeper will be through the [MDN’s page on CSS](https://developer.mozilla.org/en-US/docs/Web/CSS).
 
@@ -636,15 +640,15 @@ p {
 
 The things to remember are that (1) each line begins with an element or class or other selector (here we have the `p` element), (2) you need to enclose all your style declarations (`text-indent: 1em;` is one declaration) for that element in curly braces, and (3) each style property (e.g., `text-indent`) should separate its name from its value with a colon, and (4) each style value (e.g., `1em`) should conclude with a semicolon. Internal spaces are disregarded. That means that `text-indent:1em;` is interpreted no differently than `text-indent: 1em;`, the latter of which includes a space after the colon.
 
-There are a lot of different style properties. A full list can be found in this [CSS properties reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#index). Similarly, there are a [host of CSS values and units](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units) you can assign to those properties. Our suggestion is to use our template as place to get your toes wet and feel for some of the more common stylying properties and then to branch out from there.
+There are a lot of different style properties. A full list can be found in this [CSS properties reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#index). Similarly, there are a [host of CSS values and units](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units) you can assign to those properties. Our suggestion is to use our template as a place to get your toes wet and feel for some of the more common styling properties and then to branch out from there.
 
-Getting back to our example, those style instructions will be applied to every element in your text that is tagged with a `p` element. Again, this is why we assigned classes to distinguish different paragraphs from one another. Using an earlier example, we talked about mapping the Word style **First-P** to a paragraph with a class of `pf`, which results with in this coding:
+Getting back to our example, those style instructions will be applied to every element in your text that is tagged with a `p` element. Again, this is why we assigned classes to distinguish different paragraphs from one another. Using an earlier example, we talked about mapping the Word style **First-P** to a paragraph with a class of `pf`, which results in this coding:
 
 ```html
 <p class="pf">...</p>
 ```
 
-Now, that paragraph is Manifold will have all of these style instructions applied to it:
+Now, that paragraph in Manifold will have all of these style instructions applied to it:
 
 ```css
 p {
