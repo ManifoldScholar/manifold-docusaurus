@@ -24,7 +24,7 @@ Also considered is the **Styles** sidebar menu view, accessed by selecting **Tex
 
 Are you standing as the sole support person on your team or institution, working to help your colleagues get their content into Manifold? Are some of your colleagues not as comfortable with technology as you wish they were? And despite all that, are you wanting to provide your people with the means to exert a fair degree of control over how their materials look and feel in Manifold? Do the words ***template*** and ***standardized process*** kindle a little joy in your heart?
 
-If some or all of that is true, then this page is very much for you! You might be a digital services librarian or a journals production editor, you might maintain an instance of Manifold yourself or be one group of many using a Manifold instance maintained by a larger umbrella entity. You might even be an independent user who favors Word and wants to make the most of its relationship with Manifold. 
+If some or all of that is true, then this page is very much for you! You might be a digital services librarian or a journals production editor, you might maintain an instance of Manifold yourself or be one group of many using a Manifold instance maintained by a larger umbrella entity. You might even be an independent user who favors Word and wants to make the most of its relationship with Manifold.
 
 This page is long, but bear with us—the work described here, while a bit of a slog at the start, is very much intended to make your life easier, your work more efficient, and your Word ingestions both more nuanced and consistent.
 
@@ -71,16 +71,16 @@ But first, let’s recap. In Word and other WYSIWYG applications, formatting too
 When authoring new content in Word, the best practice is to use styles to describe different kinds of paragraphs, because we want to tell the computer what each paragraph is and how it functions within the text as a whole. Contrast that with using formatting tools to change how paragraphs look and then relying on a sighted human reader to understand what each paragraph is, based off its appearance.
 
 :::info Wait, What about all my italics?! Are they jettisoned too?
-Happily, your existing use of italics and bold and super/subscript is safe. Those stylings affect “runs” of text ***within*** a paragraph and persist even when paragraph stylings do not. We’ll talk more about this below in the **[Character Styles](/docs/walkthroughs/word_mammoth.md#character-styles)** section.
+Happily, your existing use of italics and bold and super/subscript is safe. Those stylings affect “runs” of text ***within*** a paragraph and persist even when paragraph stylings do not. We’ll talk more about this below in the **[Character Styles](#character-styles)** section.
 :::
 
 :::tip Our Word Template
-We promised a Word template above that you can use in your work. <a href="../../static/downloads/manifold-template.docx" title="Manifold Word Template" download="manifold-template.docx">Here it is!</a> As we begin to move into the next steps, that will be handy for you to have.
+We promised a Word template above that you can use in your work. <a href="/downloads/manifold-template.docx" title="Manifold Word Template" download="manifold-template.docx">Here it is!</a> As we begin to move into the next steps, that will be handy for you to have.
 :::
 
 ### Applying Paragraph Styles
 
-Okay, so, still have your Styles sidebar open in Word? Good! Here’s how to apply one of those styles to a paragraph. Put your cursor in a paragraph you want to style—it doesn’t matter where in the paragraph, at the start, end, or in the middle. Now, in the Styles pane, select the style you want that paragraph to be associated with. Done. That’s it! 
+Okay, so, still have your Styles sidebar open in Word? Good! Here’s how to apply one of those styles to a paragraph. Put your cursor in a paragraph you want to style—it doesn’t matter where in the paragraph, at the start, end, or in the middle. Now, in the Styles pane, select the style you want that paragraph to be associated with. Done. That’s it!
 
 If you are still in **Print** layout, with the **Show styles guides** box checked at the bottom of the Styles sidebar, you should see two things: (1) the name of the style you selected will show under the **Current Style** header in the Styles sidebar. To the right of the style name there will be pilcrow icon (¶), indicating the style you chose was a paragraph (and not character) style. And, (2), in the document’s left margin, a box with the color and number of the style you selected will appear beside the paragraph you styled.
 
@@ -117,13 +117,13 @@ When you use Word styles, you are classifying a certain part of the text. You ar
 So let’s say your document is only one paragraph, styled as **Normal**. When you transform the document to HTML (remembering back to the start of this walkthrough that HTML is the language of Manifold), either as part of an export from Word or by ingesting it into Manifold, that paragraph will be encoded into HTML with `<p>` tags, like this:
 
 ```html
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing 
-elit, sed do eiusmod tempor incididunt ut labore et dolore 
-magna aliqua. Ut enim ad minim veniam, quis nostrud 
-exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-consequat. Duis aute irure dolor in reprehenderit in voluptate 
-velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
-sint occaecat cupidatat non proident, sunt in culpa qui officia 
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing
+elit, sed do eiusmod tempor incididunt ut labore et dolore
+magna aliqua. Ut enim ad minim veniam, quis nostrud
+exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate
+velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+sint occaecat cupidatat non proident, sunt in culpa qui officia
 deserunt mollit anim id est laborum.</p>
 ```
 
@@ -136,10 +136,10 @@ Those `<p>` tags that surround the paragraph are how default body paragraphs are
 Now let’s take a look at what happens when we use a different paragraph style. The example we just considered utilized one of Word’s built-in styles. But there will be occasions when Word may not have a ready-made solution for our situation, and we need to use a custom paragraph style. A simple possibility might be for an author biography, which is usually not a standard body paragraph, but one that is set apart from the main flow of text. We’ll cover how to create a custom style below in the [Customizing Styles section](../docs/../walkthroughs/word_mammoth.md#customizing-styles), but for the moment, let’s assume we have successfully created a style in Word named **Bio** that we intend to use for author biographies. When bringing the Word document with a paragraph styled **Bio** into Manifold, it will be coded in HTML like this:
 
 ```html
-<p class="bio">Lorem Ipsum dolor sit amet, adipiscing 
-elit, sed do eiusmod tempor incididunt ut labore et dolore 
-magna aliqua. Ut enim ad minim veniam, quis nostrud 
-exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+<p class="bio">Lorem Ipsum dolor sit amet, adipiscing
+elit, sed do eiusmod tempor incididunt ut labore et dolore
+magna aliqua. Ut enim ad minim veniam, quis nostrud
+exercitation ullamco laboris nisi ut aliquip ex ea commodo
 consequat.</p>
 ```
 
@@ -350,7 +350,7 @@ All of the character styles we have discussed here are noted in the following ta
 
 We’ve stressed throughout this walkthrough that how things look in Word (a) doesn’t really matter and (b) won’t translate out of Word as you are hoping. However, we also appreciate that you and the author are the ones who actually need to work in the document itself. So while the specific appearance of elements within the Word document doesn’t affect their later representation in Manifold, it can be useful to adjust how they render in Word so as to make the work in the document more efficient or pleasing.
 
-Thankfully, for both you and us, Microsoft has a page dedicated to [customizing styles](https://support.microsoft.com/en-us/office/customize-or-create-new-styles-d38d6e47-f6fc-48eb-a607-1eb120dec563) on their Office site. 
+Thankfully, for both you and us, Microsoft has a page dedicated to [customizing styles](https://support.microsoft.com/en-us/office/customize-or-create-new-styles-d38d6e47-f6fc-48eb-a607-1eb120dec563) on their Office site.
 
 Those instructions will allow you to change how a particular style renders in Word—and only Word. Consider this, you’re using the italics formatting button for runs of text that you want to verbally emphasize. In Word they are showing up in italic text. The **cite** style, which you are using for titles of works is also showing in italics. But maybe you want to be able to more quickly distinguish between them, so you want titles be in both italic and red text. You can do that by editing the **cite** style from the Style Pane. Or you make it so that headings are centered or bigger or smaller than how they are right now in the template. When you make those changes it will affect every instance of that style, so you only have to make the adjustment once. It’s a handy and efficient option to dial in your Word workspace.
 
@@ -410,7 +410,7 @@ And your first question is likely and rightly, What the hell is a ***Mammoth*** 
 
 This is the place where you will tell Manifold how to map Word styles to HTML styles (or, rather attributes). If you don’t, then all the hard work you’ve done styling your document will go unfulfilled.
 
-When you first come to this space in the Manifold backend, you are presented with a heading, a simple direction to check out some instructions, and an empty code editor with one line number. Inviting, right? 
+When you first come to this space in the Manifold backend, you are presented with a heading, a simple direction to check out some instructions, and an empty code editor with one line number. Inviting, right?
 
 The link in question, to [Mammoth’s instructions for mapping styles](https://www.npmjs.com/package/mammoth#writing-style-maps), is amazingly handy. But I didn’t think that the first time I saw it. It is written in a way that isn’t exactly approachable for folks not already in the know. So we are going to try to demystify that here. We are’t going to cover every possible situation, but the following should give you the tools to leverage Mammoth’s documentation to meet your needs.
 
@@ -614,7 +614,7 @@ If the global stylesheet you enter on your instance doesn’t have instructions 
 
 Now, how did we arrive at that? When you map content from Word styles to HTML, by default you are creating mappings to HTML elements (p, ol, h1, figure, blockquote, e.g.). All of those elements already have styling instructions for them baked into the system. So in this hypothetical situation, where you have loaded a text that has a heading with a class attribute called `ah` but your stylesheet doesn’t have instructions for that attribute, then Manifold will simply use the instructions for the core element (`h2` here) instead, because it has nothing to match the `ah` class attribute against.
 
-Functionally, this means that even if all you did was map Word styles to core HTML entities, then you still have the opportunity in this backend view to provide directions for how you want those core elements to appear on the screen, instead of relying on the default rendering instructions for those that are baked into Manifold. But if you added additional nuance to your mappings, say by adding classes, you can specifically target those class attributes and provide rendering instructions for them. To look at it another way, without that nuance of class attributes, you could tell Manifold how all `p` (paragraph) elements should appear. Useful, but limited. With classes, you can tell Manifold how ***this*** paragraph should look and how ***this other*** kind of paragraph should look. 
+Functionally, this means that even if all you did was map Word styles to core HTML entities, then you still have the opportunity in this backend view to provide directions for how you want those core elements to appear on the screen, instead of relying on the default rendering instructions for those that are baked into Manifold. But if you added additional nuance to your mappings, say by adding classes, you can specifically target those class attributes and provide rendering instructions for them. To look at it another way, without that nuance of class attributes, you could tell Manifold how all `p` (paragraph) elements should appear. Useful, but limited. With classes, you can tell Manifold how ***this*** paragraph should look and how ***this other*** kind of paragraph should look.
 
 Conversely, if you do have instructions for a certain class in your stylesheet, but you cannot define it in your source document or create a mapping for it (yeah, here’s looking at you, Google Docs!), then Manifold won’t be able to apply those styling instructions. In that situation, the stylesheet will only be able to be applied to core HTML elements.
 
@@ -659,7 +659,7 @@ p {
   line-height: 1.575
 }
 ```
-It will ***also*** have the following class attributes applied to it. Note how the attribute name begins with a period. Core HTML elements are just named as is; classes begin with a period in CSS. 
+It will ***also*** have the following class attributes applied to it. Note how the attribute name begins with a period. Core HTML elements are just named as is; classes begin with a period in CSS.
 
 ```css
 .pf {
@@ -683,7 +683,7 @@ h4 + p {
 }
 ```
 
-We have two things going on here that we haven’t seen before. First we have multiple selectors being listed (`h1 + p`, `h2 + p`, etc.), and each of those selectors is combinatory in nature, with each selector having a heading and paragraph element that are separated by a plus sign. So how does this work? 
+We have two things going on here that we haven’t seen before. First we have multiple selectors being listed (`h1 + p`, `h2 + p`, etc.), and each of those selectors is combinatory in nature, with each selector having a heading and paragraph element that are separated by a plus sign. So how does this work?
 
 First, we can include multiple selectors, separated by commas, before the style declaration block. In situations where you know you want to style multiple elements in the same way, you can do it in one go.
 
