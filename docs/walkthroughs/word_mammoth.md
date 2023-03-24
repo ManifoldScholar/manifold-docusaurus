@@ -76,7 +76,7 @@ Happily, your existing use of italics and bold and super/subscript is safe. Thos
 :::
 
 :::tip Our Word Template
-We promised a Word template above that you can use in your work. <a href={manifoldWordTemplate} title="Manifold Word Template" download="manifold-template.docx">Here it is!</a> As we begin to move into the next steps, that will be handy for you to have.
+We promised a Word template above that you can use in your work. <a href={manifoldWordTemplate} title="Manifold Word Template">Here it is!</a> As we begin to move into the next steps, that will be handy for you to have.
 :::
 
 ### Applying Paragraph Styles
