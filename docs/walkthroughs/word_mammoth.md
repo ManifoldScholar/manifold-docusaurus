@@ -3,6 +3,7 @@ id: word_mammoth
 title: Ingesting Word Documents
 sidebar_label: Ingesting Word Documents
 ---
+import manifoldWordTemplate from "@site/static/downloads/manifold-template.docx"
 
 Manifold is able to create a Text from a number of a different source formats. Generally speaking, nothing special is required for that transaction to take place: you select a file in one of those accepted formats (EPUB, HTML, Markdown, DOCX, Google Doc), ingest it into Manifold, and the system creates a Text from it.
 
@@ -75,7 +76,7 @@ Happily, your existing use of italics and bold and super/subscript is safe. Thos
 :::
 
 :::tip Our Word Template
-We promised a Word template above that you can use in your work. <a href="/downloads/manifold-template.docx" title="Manifold Word Template" download="manifold-template.docx">Here it is!</a> As we begin to move into the next steps, that will be handy for you to have.
+We promised a Word template above that you can use in your work. <a href={manifoldWordTemplate} title="Manifold Word Template" download="manifold-template.docx">Here it is!</a> As we begin to move into the next steps, that will be handy for you to have.
 :::
 
 ### Applying Paragraph Styles
