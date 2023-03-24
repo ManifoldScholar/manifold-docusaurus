@@ -26,7 +26,7 @@ Thus the need for Manifest Ingests. They provide a way for users to present to t
 Every Manifest Ingest involves
 
 - two or more files saved in formats acceptable for Manifold ingest (HTML, Markdown, Word DOCX, or Google Docs), and
-- the *manifest* itself (saved as a YAML file), which instructs Manifold how to combine the files into one structured Text.
+- the *manifest* itself (saved as a YAML file, with a `.yml` file extension), which instructs Manifold how to combine the files into one structured Text.
 
 Manifest Ingests also often include (but do not require) media files, like images or audio and video meant to be embedded into the fabric of the Text itself, or an associated stylesheet (CSS).
 

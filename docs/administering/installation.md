@@ -136,7 +136,7 @@ Once you’ve created an admin user, click on the avatar icon in the top right c
 ### Docker Install
 
 Starting with version 4.0, we publish Docker images alongside our OS packages.
-These images are published under the [manifoldscholar](https://hub.docker.com/u/manifoldscholar)
+These images are published under the [manifoldscholarship](https://hub.docker.com/u/manifoldscholarship)
 organization on hub.docker.com. The Manifold team is happy to accept pull
 requests and are open to suggestions as to how we can improve our Docker support.
 
