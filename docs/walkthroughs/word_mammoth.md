@@ -71,8 +71,8 @@ But first, let’s recap. In Word and other WYSIWYG applications, formatting too
 When authoring new content in Word, the best practice is to use styles to describe different kinds of paragraphs, because we want to tell the computer what each paragraph is and how it functions within the text as a whole. Contrast that with using formatting tools to change how paragraphs look and then relying on a sighted human reader to understand what each paragraph is, based off its appearance.
 
 :::info Wait, What about all my italics?! Are they jettisoned too?
-Happily, your existing use of italics and bold and super/subscript is safe. Those stylings affect “runs” of text ***within*** a paragraph and persist even when paragraph stylings do not. We’ll talk more about this below in the **[Character Styles](/docs/walkthroughs/word_mammoth.md#character-styles)** section.
-:::
+Happily, your existing use of italics and bold and super/subscript is safe. Those stylings affect “runs” of text ***within*** a paragraph and persist even when paragraph stylings do not. We’ll talk more about this below in the [Character Styles](../docs/../walkthroughs/word_mammoth.md#applying-character-styles-or-runs) section.
+::: 
 
 :::tip Our Word Template
 We promised a Word template above that you can use in your work. <a href="../../static/downloads/manifold-template.docx" title="Manifold Word Template" download="manifold-template.docx">Here it is!</a> As we begin to move into the next steps, that will be handy for you to have.
