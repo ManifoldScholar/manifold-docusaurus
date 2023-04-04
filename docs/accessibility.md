@@ -23,7 +23,21 @@ On this page, you can learn more about how the Manifold team works to meet these
 - **Standards Compliance**. We aim to have the Manifold platform meet the latest [WCAG 2 AA Standards](https://www.w3.org/WAI/WCAG2AA-Conformance) (currently WCAG 2.1 AA).
 - **Education**. We work with [Manifold publishers](https://manifoldapp.org/community) to encourage them to create accessible source materials so that publications on Manifold will be accessible.
 
-## Keyboard Compatibility
+## Accessible Annotation
+
+Unfortunately we are currently unable to support annotation with NVDA and JAWS, the two most common screen readers. This has to do with how these pieces of software are designed. NVDA and JAWS have two different modes: a “browse” (“read”) mode for reading the contents of a webpage, and a “focus” (“forms”) mode for interacting with page content like buttons and forms.
+
+Much like with caret browsing, browse mode utilizes the arrow keys to allow a user to control their cursor position in the document. However, there is a fundamental difference between caret browsing, which is a browser feature, and browse mode, which is an NVDA/JAWS feature. In caret browsing, the user is interacting directly with the [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction "Introduction to the Document Object Model"). In browse mode, the screen reader extracts page content from the DOM into an invisible text layer known as the “virtual buffer.” In this mode, all keystrokes are intercepted by the screen reader. The browser, and Manifold, know nothing about them. Manifold community members have reported that while in browse mode, both NVDA and JAWS read out the user’s keyboard text selection, but that the text itself is not visibly selected and Manifold’s annotation menu doesn’t open as it does when selected by a mouse. We’ve tested this in NVDA and can confirm this behavior—even after our most recent work, forthcoming version 8.0, that persists a user’s place in a text after using the keyboard to access the annotation pop-up or drawer. While unfortunate, this is neither surprising nor expected, since this is how browse mode is designed.
+
+Focus mode, meanwhile, is basically the usual keyboard experience for navigating webpages. Keystrokes in this mode are sent directly to the application controlled by the screen reader, which in this case is the browser and Manifold. In focus mode, with caret browsing enabled in the browser, users can annotate with their keyboard, but the screen reader does not announce what text a user has actually selected for annotation. This, again, is to be expected. These screen readers only announce selection in the virtual buffer. So while it is technically possible to annotate in focus mode, functionally speaking, screen-reader users who have low or no vision will not be able to easily annotate a text, since they won’t know what text they have selected without first having to change between focus and browse modes.
+
+Our friends at Hypothes.is have a really helpful issue in their [GitHub repository](https://github.com/hypothesis/product-backlog/issues/1148) that provides further background on this challenge and demonstrates how it is not something that can be solved by Manifold or any other tool for annotating on the web.
+
+On the bright side, the issue in the Hypothes.is repository links to recent work in Microsoft’s accessibility API and in NVDA to couple text selection between the DOM and virtual buffer. It appears that this work is just waiting on a browser to implement it. When that happens, using NVDA for annotation in Manifold should just work.
+
+Finally, there is VoiceOver. Unlike NVDA and JAWS, VoiceOver does not use a virtual buffer. While it is designed to work best with Safari, which does not support caret browsing, testing with VoiceOver on Chrome and Firefox did produce the accessible annotation experience we are looking for: the interface is fully navigable with a keyboard, and selections-in-progress are highlighted and announced. While this is constrained by operating system and browser, we can at least provide some level of screen reader support.
+
+## Keyboard Navigation
 
 In library views and within the Manifold reader, the application can be navigated and interacted with using the expected keyboard controls. Where appropriate, Manifold will deliver context-specific instruction to users when they focus on elements so they know how to perform an action in that space.
 
