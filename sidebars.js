@@ -43,6 +43,7 @@ module.exports = {
         'Using Manifold': [
             'using/manifold_library',
             'using/your_account',
+            'using/privacy_settings',
             'using/manifold_projects',
             'using/reading_manifold',
             'using/collecting_content',
