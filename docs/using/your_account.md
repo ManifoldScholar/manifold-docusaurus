@@ -12,6 +12,20 @@ Creating an account is done by clicking the user icon in the top right corner of
 
 You sign in to a Manifold instance by clicking on the user icon in the top right corner of the screen. The system will prompt you for your account’s email and password. Once you are signed in, user profile settings, such as nickname, user profile image, first name, last name, email, and password, can be accessed and changed from by clicking user icon in the top right corner and selecting "Edit Profile" from the dropdown menu. From this screen you can also modify your notification settings.
 
+## Edit Profile
+
+Once you have created a Manifold account, you have the opportunity to edit your profile by selecting the user icon on the far right of the menu bar and choosing **Edit Profile** from the dropdown. Doing so will open a modal window showing your current account information and the means to update it with the following fields: 
+
+- **Nickname**. Your user nickname is not displayed anywhere in Manifold. It will not be associated with your annotations or comments nor in reading groups of which you are a part. Instead, this is the name by which Manifold will refer to you in any notification emails it directs to your inbox.
+- **Profile Image**. The field for your profile image allows you to drag and drop or select from your file system an image in GIF, JPEG, JPG, or PNG format. Your profile image displays in the user icon location in the menu as well as beside your name in the annotation drawer, in the notes dropdown in the Manifold reader, and in reading group listings. If you opt not to include have a profile image associated with your account, only your first and last names will display in the listed areas.
+- **First** and **Last Name**. Both first and last name fields are required by Manifold. Your first and last names display with your annotations and comments in the annotation drawer, in the notes dropdown in the Manifold reader, and in reading group listings.
+- **Email**. This is the email address to which Manifold will direct any updates or notifications to you. For those users who are not using OAuth (Google, Facebook, Twitter) to sign in, this email will also serve as your means for logging into Manifold.
+- **Password** and **Confirm Password**. These two fields provide the means to enter and confirm a new password.
+
+Any adjustments made on this screen will only be committed to the system after selecting the **Save Changes** button. Once selected any adjustments that have been made will take effect immediately.
+
+From this view you can also gain access to your Notification and Privacy Settings using the buttons at the bottom of the screen. Both of those views are also available from the user dropdown.
+
 ## Notification Preferences
 
 Using the Notifications settings, Manifold readers can have the system send either a daily or weekly email that summarizes any new Texts, Resources, or Resource Collections that have been added to Projects they are following. Daily notifications will be dispatched every day at 6:00 a.m. and weekly notifications every Sunday at 6:00 a.m (per the time the server is set to).
@@ -31,3 +45,9 @@ When enabled, notifications will be triggered by the following events:
 * Private annotation converted to public annotation
 
 Administrators, alone, also have the option to be notified of flagged comments in realtime.
+
+## Account Deletion
+
+As of version 8.0, users have the ability to delete their Manifold account from the Privacy Settings screen. To access this view, select **Privacy** from the user icon dropdown in the main menu. This will open a modal with two sections: Cookies and Account Data. If you select the **Delete My Account** button beneath the Account Data heading, your account, including all of your entitlements, annotations and comments, and reading group memberships will be destroyed. No personally identifiable information of yours would remain in our system.
+
+However, any projects, texts, resources, journals, or collections you created would persist and be available for site administrators to edit or assign to other users to manage.
