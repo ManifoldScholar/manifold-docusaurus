@@ -32,11 +32,11 @@ Text entered in this field is meant to serve as a shortened version of the **Pag
 
 ### Purpose
 
-Manifold differentiates Pages into three categories that describe its purpose: **Supplemental Content**, **Privacy Policy**, or **Terms and Conditions**. The system has specific uses for Pages that serve as the instance’s **Privacy Policy** and **Terms and Conditions**, and so only one Page per instance can be assigned those purposes, respectively, from this dropdown.
+Manifold differentiates Pages into three categories that describe its purpose: **Supplemental Content**, **Privacy Policy**, or **Terms and Conditions**.
 
-A link to the instance’s **Terms and Conditions** Page is be included in the account creation form, with language indicating that by creating an account on the instance, new users are agreeing to the terms therein laid out. **Privacy Policy** Pages are earmarked for a similar purpose, oriented around the work we are currently doing to ensure the system is in compliance with the European Unions General Data Protection Regulation (GDPR).
+Links to an instance’s **Privacy Policy** and **Terms and Conditions** are included in the account creation form. On that form, Manifold requires new users to activate a checkbox to confirm that by creating an account on the instance, they are agreeing to that instance’s Privacy Policy and Terms and Conditions. Because these pages have such a specific and targeted use, only one page per instance can be defined with this dropdown as being either the Privacy Policy or the Terms and Conditions.
 
-All other Pages (e.g., preservation or accessibility statements) are considered by Manifold to be **Supplemental Content**. There is no limit to the number of Pages that are added as such.
+All other Pages (e.g., preservation or accessibility statements) are considered by Manifold to be **Supplemental Content**. There is no limit to the number of pages that are added as such.
 
 ### External Page?
 
