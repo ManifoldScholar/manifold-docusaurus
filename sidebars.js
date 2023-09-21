@@ -62,6 +62,7 @@ module.exports = {
             'backend/makers',
             'backend/features',
             'backend/pages',
+            'backend/entitlements',
             'backend/analytics',
             'backend/metadata',
         ]
