@@ -247,11 +247,31 @@ If your Journal has a presence on **Twitter**, **Facebook**, or **Instagram**, l
 
 Additionally, you can promote a hashtag that you would like your readers to use on Twitter as a means to better capture the conversation around your publication in that sphere. When a **Hashtag** is provided it will appear beneath any social icons; when selected readers will be directed to a Twitter page displaying Tweets using the tag. The field does not require the hash sign (#); the system will automatically append one.
 
+### Access
+
+A Journal’s **Access** sidebar allows you to grant entitlements to specific users or to specific reading groups so that they can view all of the journal’s restricted-access issues. Each individual journal issue has its own **Access** sidebar; however from within an individual issue you can only grant readers access to that one specific issue. This **Access** sidebar on the main Journal detail view gives you the means to grant readers access to the entire run of a journal, including both currently existing issues as well as those that are added after the entitlement is granted.
+
+This view presents a unique ID for the journal, a search bar, a button to create new entitlements, and a list of existing entitlements.
+
+The Journal ID is formatted as a path beginning with `gid://entitlements/Journal` and terminating with a long, system-generated UUID string. This value will appear immediately before the search bar and can be used to create bulk CSV entitlements, described in the [Entitlements section](../backend/entitlements.md).
+
+A search bar follows the Journal ID and can be used to find and sort through existing entitlements. Here the system is expecting the name of a user or reading group. Searches for specific email addresses will not return any results. When Manifold returns results for a search, they will displace the list of all existing entitlements with only those results that match the search parameters. To begin a new search or reset the search results, select the **Reset** button on the right side of the search bar.
+
+The **Grant entitlement** button, which appears below the search bar, opens up a panel from the right where new entitlements are created: An entitlement will be provided to the User or Reading Group selected from the the **Who is the Entitlement For** dropdown. By default an entitlement does not have an expiration date. If one is desired, a date can be saved to the **Expiration** field in year-month-day (YYYY/MM/DD) format. The field also accepts human-readable strings (e.g., “in three days,” “in two months,” “in one year”). Entitlements for Reading Groups remain in effect for the individual members of the group for the duration of the entitlement and so long as they remain a part of the group.
+
+Existing entitlements cannot be modified, only deleted. However, Users and Reading Groups can have multiple entitlements. If an entitlement record doesn’t align with current expectations, a new entitlement can be granted with new terms.
+
+To delete an existing entitlement, search for it using the search bar or page through the list of existing entitlements in this view. Each listing includes a trashcan icon that functions as a delete button for an entitlement.
+
+:::note Securing an Entitlement
+Transactions that warrant an entitlement occur outside of the system: a student signs up for a class, a teacher invites the student to a Reading Group that has an entitlement to a specific Journal; a reader purchases access to a Journal via a publisher’s website, the publisher manually grants that reader’s account access to that Journal.
+:::
+
 ### Metadata
 
 The **Metadata** panel provides a means to input metadata that applies to the Journal as whole and which will render at the bottom of the Journal homepage. Metadata associated with individual Issues and Articles is controlled at those respective levels. See the [Issues section](../backend/journals.md#issues) for more.
 
-All of the Metadata fields support Markdown formatting with the exception of **DOI**. 
+All of the Metadata fields support Markdown formatting with the exception of **DOI**.
 
 For detailed definitions of each metadata field, see the [Metadata reference section](../backend/metadata.md).
 
