@@ -4,6 +4,8 @@ title: Texts
 sidebar_label: Texts
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 import Spec from "@theme/Spec";
 const defaultImageFormats = "GIF, JPEG, JPG, PNG";
 
@@ -109,7 +111,7 @@ The **Create a new category** button opens a drawer from the right where you can
 
 To edit a Text, click on the title or the pencil icon from within the list of the project’s Texts. Each Text loaded to Manifold has its own configurable settings. When you select a Text from the Editing Pane, the view will transform, providing new options in the header (see [Interface Overview](../backend/texts.md#header)).
 
-Managing a Text involves viewing and changing its properties through the following editing panes: **Analytics**, **Properties**, **People**, **Metadata**, **Styles**, and **Reingest**. Even when pre-populated by the system, all of the fields in these panes can be modified.
+Managing a Text involves viewing and changing its properties through the following editing panes: **Analytics**, **Properties**, **People**, **Assets**, **Metadata**, **Styles**, and **Reingest**. Even when pre-populated by the system, all of the fields in these panes can be modified.
 
 ### Analytics
 
@@ -299,6 +301,184 @@ When the system cannot recognize authorship from the source file, *already exist
 :::note Other Authorial Roles
 The current Author/Contributor dynamic is based off the EPUB specification. At present, you cannot assign more nuanced roles for Makers (e.g., Editors, Translators, Introducers, etc.).
 :::
+
+### Assets
+
+In order for Manifold to be able to ingest EPUBs, HTML, Markdown, Word, and Google Documents into its Reader, the system needs to be able to accept a wide array of assets that go into the construction of those files. These **assets** are the files that make up a Manifold text—an EPUB, HTML file, or Word document, an image, audio, or video file that appear inline with the body content—or files that provide instruction or contribute to the logic or rendering of a text, like a YAML or CSS file.
+
+Beginning with version 8, Manifold allows you to see a manifest of all those constituent assets that were ingested with a text by way of this **Assets** sidebar. Here you can also manually add new assets into the system and access their paths so they can be easily referenced throughout the instance. This functionality is intended to help users load and easily source the content needed to create and edit texts in Manifold.
+
+Pertinent information about each of the asset types is provided at the end of this section in a tabbed list. For specific examples of how to embed an asset in a text or make it available elsewhere in the system, see the Edit Text Sections page.
+
+This view is made up of a search bar, a button to create new assets, and a paginated list displaying those assets that were ingested with the text or have been manually added to it.
+
+#### Searching Assets
+
+Situated below the header, the search bar allows you to search for assets associated with this specific text. The system will *not* return results for assets that were loaded to other texts, even if those texts are part of the same Manifold project.
+
+When a search yields results, those results will appear below the search bar in the main body of this view, displacing the full list of the text’s assets.
+
+The search bar includes two buttons: one to **Reset** the search bar and results and the other, labeled **Options**, exposes a dropdown so users can sort through the list of results by name or according to the date and time they were added to the system.
+
+#### Adding and Editing Assets
+
+Below the search bar there is one button titled **Add New Asset**. When that button is selected, a drawer will slide open from the right with a field to provide a name to the asset and a box into which you can either drop the asset file that you want to upload, or from which you can use the **Upload A File** link to select the file you want to upload using your operating system’s file menu. Both of these fields are required in order to successfully create the new asset. See the tabbed list below for a list of all the acceptable file types the system will accept in this space.
+
+Once an asset is saved to the system it will appear in the main body of this view, listed among any other existing assets. Each listing includes the name and path of the asset, a button to copy the asset’s URL (or “path”) to your system’s clipboard, and buttons to delete and edit the asset.
+
+If an asset it deleted it will be entirely removed from the system and will no longer be able to be displayed in spaces in the text or instance where it is referenced.
+
+Selecting the pencil icon to edit an asset will open a drawer from the right and present basic information about the asset. The drawer includes four fields: **Asset Name**, **Asset ID**, **Asset URL**, and a space to replace the existing asset file with a new one under the heading **Upload Asset File**. Of these only **Asset Name** and the **Upload Asset File** can be edited.
+
+The **Asset Name** value is how the asset is labeled in list view. This field is required when creating a new asset. For assets that are added to the system when a text is ingested the system will automatically create a random UUID to stand in for the name. That name is not tied to the asset’s path, and thus it can be changed without concern for breaking established references to the asset.
+
+The **Asset ID**, however, is tied to the path for the asset and thus cannot be edited. It displays here purely for reference purpose. Likewise, the **Asset URL** (or path) is another field that cannot be adjusted. However there is a button beside the URL value, labeled **Copy URL**, that will copy the asset’s path to the clipboard. This mirrors the functionality available from the list view, where the same button also appears.
+
+Below the asset’s URL is a box where you can replace the existing asset file with a different one, either by dragging and dropping the file into the space or by selecting one through your file system.
+
+For details on how to properly use the information presented in this view and reference an asset in a text or other component of the instance, see the Edit Text Sections page.
+
+<Tabs
+  groupId="assets"
+  defaultValue="images"
+  values={[
+    {label: 'Images', value: 'images'},
+    {label: 'Video', value: 'video'},
+    {label: 'Audio', value: 'audio'},
+    {label: 'Document', value: 'document'},
+    {label: 'Spreadsheet', value: 'spreadsheet'},
+    {label: 'Presentation', value: 'presentation'},
+    {label: 'Packaging', value: 'packaging'},
+  ]}>
+
+<TabItem value="images">
+
+All of the image types accepted in the **Asset** field can be displayed in the browser in the body of a text:
+
+- .gif
+- .jpeg
+- .jpg
+- .png
+- .svg
+
+</TabItem>
+
+<TabItem value="video">
+
+Of the following, only video files in the **MP4** and **WEBM** formats are playable in the browser. The other formats below can be hosted in the system and made available for direct download to a reader’s device. For more technical information about these media types, the [mdn web docs](https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Containers "Technical details about media container formats") offers a good primer.
+
+- .avi
+- .flv
+- .mov
+- .mp4
+- .webm
+- .wmv
+
+</TabItem>
+
+<TabItem value="audio">
+
+Only audio files in the **FLAC**, **MP3**, and **WAV** formats are playable in the browser. The other formats below can be hosted in the system and made available for direct download to a reader’s device. For more technical information about these media types, the [mdn web docs](https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Containers "Technical details about media container formats") offers a good primer.
+
+- .flac
+- .mid
+- .mp3
+- .oga
+- .ogg
+- .pls
+- .wav
+- .wma
+
+</TabItem>
+
+<TabItem value="document">
+
+Documents can be hosted for various purposes: as a means to deliver a downloadable file to readers that may not be able to be displayed in the Manifold reader or to allow other backend editors on an instance the means to source a particular text section into their own project. Of the following, Manifold can display **DOCX**, **EPUB**, **HTM**, **HTML**, **MD** in its reader. Groups of **DOCX**, **HTM**, **HTML**, and **MD** files packaged, along with a **CSS**, in a **ZIP** archive can also be displayed in the reader when accompanied by a **YAML** or **YML** file. This is known as a “Manifest Ingest.” See our [walkthrough documentation](../walkthroughs/manifest.md "Create a Manifest Ingest") for more about creating and using Manifest ingests.
+
+:::caution What about TEX and LATEX files?
+Files prepared in the **TEX** or **LATEX** formats are technically acceptable to Manifold; however they do not function or display properly in the system. Such files can be hosted and made available for download, but they will not render as expected in Manifold’s reader.
+:::
+
+- .css
+- .doc
+- .docb
+- .docm
+- .docx
+- .dotm
+- .dotx
+- .epub
+- .htm
+- .html
+- .latex
+- .md
+- .ods
+- .odt
+- .ots
+- .ott
+- .pdf
+- .rtf
+- .tex
+- .txt
+- .xhtml
+- .xml
+- .yaml
+- .yml
+- .zip
+
+</TabItem>
+
+<TabItem value="spreadsheet">
+
+Manifold cannot display spreadsheet files its reader; however the following types can be hosted and made available for direct download.
+
+- .csv
+- .xla
+- .xlm
+- .xls
+- .xlsb
+- .xlsm
+- .xlsx
+- .xlt
+- .xltm
+- .xltx
+- .xlw
+
+</TabItem>
+
+<TabItem value="presentation">
+
+Manifold cannot display presentation files its reader; however the following types can be hosted and made available for direct download.
+
+- .odp
+- .otp
+- .potm
+- .potx
+- .ppam
+- .ppsm
+- .ppsx
+- .ppt
+- .pptm
+- .pptx
+- .sldm
+- .sldx
+
+</TabItem>
+
+<TabItem value="packaging">
+
+The following file types are most often seen packaged in existing EPUBs and thus are accepted into Manifold. However, the system will not natively display any of these: Manifold will not execute hosted Javascript in its reader nor will it display custom fonts. That said, if there is a need to make such files as these available to readers, they can be made hosted in the instance and made available for download.
+
+- .dmg
+- .js
+- .ncx
+- .odf
+- .smil
+- .ttf
+- .woff
+
+</TabItem>
+
+</Tabs>
 
 ### Metadata
 
