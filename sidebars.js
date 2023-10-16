@@ -56,6 +56,7 @@ module.exports = {
             'backend/journals',
             'backend/project_collections',
             'backend/texts',
+            'backend/manifold_editor',
             'backend/resource',
             'backend/resource_collections',
             'backend/users',

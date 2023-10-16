@@ -19,8 +19,6 @@ Texts refer to content that is displayed in the Manifold Reader. Each Text belon
 
 Within the Manifold Reader, Texts serve as a base, onto which Resource annotations and reader engagements can be layered.
 
-Manifold *is not* an authoring platform. Thus, Texts are meant to be prepared outside the system and then added to Projects for display and engagement in the Manifold Reader.
-
 ## Managing Project Texts
 
 Because Texts belong to Projects, they are managed from the parent Project’s “Texts” pane in the backend. Within this view, you can add Texts to the Project, create Text categories, assign Texts to those categories, change the order of Texts, edit Texts, and delete Texts.
@@ -55,13 +53,13 @@ The Sidebar’s **Text** menu opens a view where new Texts and Categories can be
 
 #### Editing Pane
 
-To the right of the sidebar, the Editing Pane displays two buttons to add new Texts and Categories to the Project. These are labeled **+ Add a new text** and **+ Create a new category**, respectively. Below those, the system lists all the Texts and Categories that have already been added to the Project.
+To the right of the sidebar, the Editing Pane displays three buttons labeled **Ingest New Text**, **Create New Text**, and **Create New category**, respectively, that allow you to load a text from your device to the system, create an entirely new text within the system, or create category containers to group and associate texts with one another. Below those, the system lists all the Texts and Categories that have already been added to the Project.
 
 Categories appear as containers into which Texts can be moved. Each Category has a header ribbon that displays its name and buttons to (1) delete, (2) edit, or (3) reorder the category, designated by the trashcan, pencil, and handlebar icons.
 
 All Projects include the **Uncategorized** Category that cannot be renamed, removed, or reordered.
 
-Newly loaded Texts appear in the **Uncategorized** container by default and render as a horizontal block that includes a thumbnail, title, date stamp, and, the same (1) delete, (2) edit, and (3) reorder buttons that Categories display:
+Newly ingested or created Texts appear in the **Uncategorized** container by default and render as a horizontal block that includes a thumbnail, title, date stamp, and, the same (1) delete, (2) edit, and (3) reorder buttons that Categories display:
 
 1. Designated by a trashcan icon, the **Delete** button removes the associated content from the system, either the Category container or the individual Text. Deleting a Category will not delete Texts nested within it; instead they will be transitioned to the **Uncategorized** container.
 
@@ -69,9 +67,9 @@ Newly loaded Texts appear in the **Uncategorized** container by default and rend
 
 3. The horizontal drag bars are used to **Reorder** Categories or Texts. When moving Categories, the Texts nested within them will maintain their existing order. Texts can be reordered within Categories or moved from one Category to another. A single Text cannot appear in more than one Category. The drag bars respond to clicking and dragging with your mouse or by pressing the space bar on your keyboard and then using the up or down arrow keys.
 
-### Adding Texts
+### Ingesting New Texts
 
-When you add a Text to Manifold, the application runs a series of transformations (e.g., converting documents to HTML, adding text nodes, managing styles) that make possible the various features and functionalities on the frontend.
+When you add a Text to Manifold from an already existing source file (e.g., an EPUB or a Word or Google document), the application runs a series of transformations (e.g., converting the document to HTML, adding text nodes, managing styles) that make possible the various features and functionalities on the frontend.
 
 You can add Texts to Projects in one of the following formats:
 
@@ -81,13 +79,13 @@ You can add Texts to Projects in one of the following formats:
 - Microsoft Word Documents of the **DOCX** variety
 - **Google Docs**
 
-The system also accepts “Manifest Ingests,” which are an array of acceptable files that have been packaged into a ZIP archive, often with media files and associated stylesheets. Manifold processes these files into the Reader as a single Text with multiple Text sections.
+The system also accepts “Manifest Ingests,” which are an array of acceptable files that have been packaged into a ZIP archive, often with media files and associated stylesheets. Manifold processes these files into the Reader as a single Text with multiple Text sections. See the [Create a Manifest Ingest walkthrough](../walkthroughs/manifest.md) in our documentation for more.
 
 Files in formats other than those named above (e.g., PDF, XML, TEI, TEX) cannot be processed into the Manifold Reader.
 
-#### How to Add a Text
+#### How to Ingest a Text
 
-The **Add a new text** button opens a drawer from the right where Texts can be added to the system in two ways: by directly loading a file from your system using **Upload a File** or by referring to one that is remotely hosted with the **URL** option.
+The **Ingest New text** button opens a drawer from the right where Texts can be added to the system in two ways: by directly loading a file from your system using **Upload a File** or by referring to one that is remotely hosted with the **URL** option.
 
 This URL field expects a complete URL that directs Manifold to a specific file or archive that Manifold can Ingest.
 
@@ -98,6 +96,22 @@ The **Start Ingestion** button kicks off the actual process of converting and br
 The Log sits below these buttons and documents the ingest process, line by line.
 
 The **Restart Ingestion** option is used by Manifold developers when tweaking code around how Texts are added.
+
+### Creating New Texts
+
+Beginning with Manifold version 8, the system allows users to create new texts entirely within the system. This functionality will be of particular use to those who would prefer an alternative to the existing [Manifest Ingest/YAML process](../walkthroughs/manifest.md) and instead build their text within the system—either by authoring those text sections in Manifold’s rich-text or code editor, or by creating text sections from existing source files, like Word and Google documents.
+
+When the **Create New Text** button is selected the system will slide a drawer open from the right of the screen with three editable fields: **Text Title**, **Cover**, and **Enter section name**.
+
+The value you save to the **Text Title** field will serve as the title for the text you are creating. That title will appear as such in the list of Texts in this view, in the Manifold Reader’s menu bar, in analytics views, and in any content or reading group blocks that reference the text. This is the only required field in this drawer; the following two are optional, and all three can be adjusted later.
+
+The **Cover** image serves as a thumbnail for the Text and can be configured to appear in the **Texts** Content Block on the Project landing page, in lieu of the default thumbnail depicting loose pages. The image saved here will be used as the cover for the text when the **Enable EPUB** option is selected from the header menu or when a project is exported for preservation purposes.
+
+Image files can be dropped onto the **Cover** field or selected using your device’s file system by clicking the **Upload a File** link.
+
+Manifold texts are made up of one or more sections. An ingested EPUB, for example, is one text with multiple sections, with each of the interior XHTML files within that EPUB standing as a section. A [Manifest Ingest](../walkthroughs/manifest.md), is likewise a single text made up of the various sections, sourced from an array of files, described in the YAML file. The final field in this drawer, labeled **Enter section name**, provides a means to begin scaffolding empty, placeholder sections that can later be authored in the system or created through an ingestion process. After a name value is entered in the field, the **Create** button beside it can be selected to save that new section to the text. The name of the newly saved section will appear below the field in a list with any other section names that you add in this space. Section names in that list include options to delete or reorder them, using either a mouse or keyboard input. Like other list elements in the Manifold backend, when the drag bars are highlighted with the tab key, the space bar will select them, and the up and down arrows can be used to reorder the section within the list. 
+
+When the **Save New Text** button is selected, the new text will appear in the list of Texts in the main window. If sections were created, those will appear within that new text record’s **Sections** sidebar list. See details about the **Sections** sidebar options below.
 
 ### Text Categories
 
@@ -111,7 +125,7 @@ The **Create a new category** button opens a drawer from the right where you can
 
 To edit a Text, click on the title or the pencil icon from within the list of the project’s Texts. Each Text loaded to Manifold has its own configurable settings. When you select a Text from the Editing Pane, the view will transform, providing new options in the header (see [Interface Overview](../backend/texts.md#header)).
 
-Managing a Text involves viewing and changing its properties through the following editing panes: **Analytics**, **Properties**, **People**, **Assets**, **Metadata**, **Styles**, and **Reingest**. Even when pre-populated by the system, all of the fields in these panes can be modified.
+Managing a Text involves viewing and changing its properties through the following editing panes: **Analytics**, **Properties**, **People**, **Sections**, **Table of Contents**, **Assets**, **Metadata**, **Styles**, and **Reingest**. Even when pre-populated by the system, all of the fields in these panes can be modified.
 
 ### Analytics
 
@@ -242,7 +256,7 @@ Manifold will automatically sweep EPUBs at ingest for their cover file when they
 
 When Manifold creates an EPUB of a Text, for download or export, it will use the image file stored in this field as the cover for the Manifold-generated EPUB.
 
-Manifold does *not* supply this image with the	metadata it shares about the Text with other systems, crawlers, or social media platforms; it sends instead the Project’s **Background Image**.
+Manifold does *not* supply this image with the metadata it shares about the Text with other systems, crawlers, or social media platforms; it sends instead the Project’s **Background Image**.
 
 <Spec
     title="Cover Specs"
@@ -302,6 +316,133 @@ When the system cannot recognize authorship from the source file, *already exist
 The current Author/Contributor dynamic is based off the EPUB specification. At present, you cannot assign more nuanced roles for Makers (e.g., Editors, Translators, Introducers, etc.).
 :::
 
+### Sections
+
+The **Sections** sidebar within a text record allows users to see the makeup of existing texts and edit those sections directly in the system, using Manifold’s rich-text or code editor. Users can also add new sections to a text from this view through the ingestion of a source file or by creating and authoring the section entirely in Manifold using its editor.
+
+The layout of this view includes two buttons, labeled **Ingest New Section** and **Add New Section**, above a list of existing sections within the text. For texts that were originally ingested from a source file (like an EPUB or Manifest Ingest or Word document), the text sections that make up that source file are automatically displayed in the list view here. For newly created texts, if texts sections were added during that process, they too will appear here as named listings with no body content. If a user creates a new text without any sections, the list view here will be empty until a new section is either ingested or added.
+
+#### Adding Sections to the Text
+
+When the **Ingeset New Section** button is selected, the system slides a drawer over from the right where the user can either drag/drop a file from their device, or use their operating system’s file system to select one to ingest. Alternatively there is also a field labeled **URL** where the direct path of a remotely hosted file can be referenced for ingest. This process is for users who have already existing content they want to make a part of this text.
+
+As such, this interface mirrors, exactly, the interface options for ingesting an entire text, described above, in terms of file expectations and process, with two exceptions:
+
+First, instead of creating a whole text, when a file is ingested in this space it will function as one section of a larger text. While it is possible to have a text with only one section, the expectation would be that a user add that single-section text to the system from the project’s **Texts** sidebar, one level us, using the **Ingest New Text** button.
+
+Second, it is not possible to ingest an EPUB or a Manifest Ingest as a single section of a text. EPUBs and Manifest Ingests are whole texts unto themselves and cannot be made to serve as a section of a larger whole. Thus only HTML, Markdown, Word files, and Google Documents are accepted by the system in this space.
+
+Alternatively, it is also possible to add (or create) a new text section without ingesting a source document. This process is for those users who want to author or copy/paste text into Manifold’s code and rich-text editor to author a text section.
+
+When the **Add New Section** button is selected, a drawer will slide open from the right of the window with one text field and three button options: **Section Name**, **Save and Open in Editor**, **Save**, and **Cancel**. **Section Name** is a required field, and the value entered here will appear as the name of the text-section in this backend list view of the text’s sections, in backend analytics views for the text, and in the Manifold reader’s menu bar and bottom navigation links. A text’s name can be adjusted at any time. See the following paragraphs in this section to learn more about that process.
+
+Once a name has been entered for a the section, you can select on of the three remaining options:  **Save and Open in Editor**, **Save**, or **Cancel**.
+
+If **Save and Open in Editor** is selected, the view will transform into Manifold’s editor where the section can be authored using the WYSIWYG or code editor. See the [Manifold Editor section](../backend/manifold_editor.md) for more on authoring content directly in Manifold.
+
+Alternatively, when **Save** is selected the drawer will close and return you to **Sections** view with the name of the newly created section now appearing in the list.
+
+Selecting **Cancel** will abort the creation of a new section and return focus to the main **Sections** view.
+
+#### Adjusting Text Sections
+
+The list of of text sections in this view is one that is meant to be engaged with and where you can make adjustments that effect the text’s overall appearance in the reader. Each list entry shows the section’s name and also provides options to (1) make the section the point in the text the Manifold Reader will open to when the text is accessed from the frontend, (2) delete the text section, (3) edit the text of the section, (4) configure the section’s system properties, (5) reingest the section, or (6) reorder the section among other existing sections. We consider each option more fully now in turn:
+
+1. The first option available in each section list entry is a button, denoted by a play-button icon, to make that particular section the place where the Manifold Reader will open to when the text is accessed. When selected, a badge labeled **Start** will appear in the listing.
+
+  Only one section can be serve as a text’s starting section. If no section is manually selected, Manifold will rely on the source file to determine which section the Reader should open to.
+
+  For EPUBs, that section is described in the `toc.xhtml` file in the landmark space beneath the **Guide** section. The entry with the `epub:type="bodymatter"` attribute will be the section the EPUB will want to open. Older EPUB2s will open to the section that has the `type="text"` attribute in the **Guide** section of the `content.opf` file. For Manifest Ingests, Manifold will default to the section that includes the `start_section: true` attribute. For other source files that were ingested, Manifold will rely on the order in which they appear here.
+
+  When no section is manually designated as the Start, the Manifold Reader will open to the first section in the list here in this view.
+
+2. The delete button is a straight-forward option to delete that specific section from the text. If selected a confirmation prompt will appear to confirm the section should be deleted. Once done, the deleted section cannot be recovered.
+3. Denoted by a pencil icon, the edit button opens the text in the Manifold Editor, where the section’s name and content can be edited directly in the system using Manifold’s built-in rich-text and code editor. For more on that functionality, see the [Manifold Editor section](../backend/manifold_editor.md) of this documentation. It is important to note that changes to a section’s name here will adjust the section’s name throughout the Manifold backend. On the frontend, any changes to a sections’s name here will appear in the Reader’s title bar and in navigation links at the bottom of the Reader. However, changing a section name from this space will ***not*** automatically adjust how the name appears in the **Contents** dropdown or in a Table of Contents content block on a project’s landing page. See the following section about the **Table of Contents** sidebar for more on that.
+4. Pictured as an analog control panel equalizer, the Settings button opens a drawer from the right with two options, one to configure the section’s slug for sharing and the other to hide the section from navigation.
+
+  The **Slug** field is meant to be used to create a shareable URL for a text section. The value entered in this field will **not** appear in the browser’s URL bar. By default, text sections in Manifold are assigned unique identifiers (UUIDs) when they are created. That UUID is what the system will display in the URL bar by default. But Manifold can also locate a text section by the slug entered here. Text section paths follow this pattern: 
+  
+  ```
+  {instance-domain}/read/{project-slug}/{section-slug}
+  ```
+
+  As a more concrete example, suppose you are working on our Edge instance of Manifold (edge.manifoldapp.org) in a project whose slug is `running-advice`. And for a text section you give it a slug value here of `run-faster`. The path to that text section that you could share would then be
+
+  ```
+  edge.manifoldapp.org/read/running-advice/run-faster
+  ```
+  
+  However, that path that resolves in the browser would appear more like this:
+
+  ```
+  edge.manifoldapp.org/read/running-advice/section/{UUID}
+  ```
+
+  When creating slugs, it is best to avoid spaces and special characters to ensure they resolve properly.
+  
+  The second option in this drawer a toggle labeled **Hide in reader navigation?** This option is for those text sections that are not yet ready to be displayed as part of the text—a section that is being authored or still in progress, for instance. When enabled, the navigation at the bottom of the Manifold Reader will not display links to this section. Listings of text sections in the Manifold Reader’s **Contents** dropdown functional independently of this toggle, and thus this toggle has no control over that particular space. To ensure your section is hidden from that **Contents** dropdown, see the following section about the **Table of Contents** sidebar.
+
+1. The fifth option in a text section’s listing, described visually with a button of an upload icon, opens a drawer from the right where the section can be reingested from its source file. This replicates the behavior described above when using the **Ingest New Section** button. However, the idea here is to update a section that was originally ingested from an HTML, Markdown, Word file, or Google Document with any changes that were made to the source file. While it is possible to make those adjustments now directly in Manifold using the [Manifold Editor](../backend/manifold_editor.md), this option may better meet the needs of certain workflows. As with the earlier Ingest view, this drawer has an input box where a local file can be drag and dropped or selected using the operating system’s file system. Or, following that space there is a field labeled **URL** where the direct path of a remotely hosted file can be sourced to replace the current section in the system. Best practice is to only reingest a text section using the same kind of file that was used during the original ingest process. For example, if a Word document was used as the source of the original ingestion, it is better to use a modified version of that Word file than, say, a Google Document copy of that file.
+2. The last option in a text section list entry is one to reorder it among the list of other text sections, using the button displaying two parallel grab bars. Those grab bars can be manipulated with a mouse by selecting them and then moving the entry up or down through the list. Alteratively entries can be reordered by tabbing to the option with the tab key, selecting it with the space bar, and then using the up or down arrows to adjust where the text section appears in the list. The order of the sections as they appear here will be the order for how the sections appear in the Manifold Reader and how the Reader announces the next and previous sections in the navigation space at the end of each section. This functionality mirrors how the order of text sections is defined in the spine section of the `content.opf` file in an EPUB file. Or, for a Manifest Ingest, how text sections are ordered according to how they appear beneath the `toc` list element.
+
+:::caution Important Takeaways for the Sections Sidebar
+- Changing the name of a text section in this view adjusts its name in the Reader’s title bar and in navigation links at the bottom of the Reader but ***not*** necessarily in the Reader’s **Contents** dropdown or in a **Table of Contents** content block.
+- The order of the text section entries in the Sections sidebar is the order in which those sections will be announced by the navigation links at the bottom of the Manifold Reader.
+- ***Everything*** having to do with the order and name of text sections in the **Contents** dropdown that appears in the menu bar of the Manifold Reader is controlled independently by settings found in a text’s **Table of Contents** sidebar view, discussed in the following section.
+:::
+
+### Table of Contents
+
+The Table of Contents sidebar is concerned with only one thing: how and in what order the sections of a text display in the Manifold Reader’s **Contents** dropdown and in a **Table of Contents** content block that references the text on the project’s landing page.
+
+While the **Sections** sidebar lists all the sections of a text, this view allows you to add nuance, nesting those text sections or adding sub-entries that point to content within an existing text section that warrant special attention. 
+
+Changes made in this view will *not* affect the order in which the sections appear in the Manifold Reader, and removing sections from this view will not delete them from the system. This paradigm mirrors that found in EPUBs, where the order and content of a section is not directly coupled with its table of contents. If the order of sections in the **Sections** sidebar is akin to the spine section of an EPUB’s `content.opf` file, the options in this view are akin to an EPUB’s `toc.xhtml` or `toc.ncx` file, which defines how the sections appear in an EPUB reader’s navigational views.
+
+This view includes two buttons and a list of a text’s constituent sections. The system doesn’t automatically generate a Table of Contents list for texts originally created in Manifold. For texts created originally in Manifold, the list in this view will be empty initially.
+
+Alternatively, for texts that are ingested from a source file, the system will display here a list of text sections in the order they appear in the spine section of the source’s contents file. For EPUBs, that will come from the `toc.xhtml` or `toc.ncx` file. For Manifest Ingests, the `toc` section of the YAML file describes the sections and their order within the text.
+
+While EPUBs and Manifest already have their own internal contents lists, this space will make it easier to refine how the structure of those documents renders in the Contents dropdown or Table of Contents content block.
+
+For single-file ingests, like a Word or Google document, those texts only comprise one text section, and that one section will automatically be listed in this view.
+
+#### Add TOC Entry
+
+The first option available in this view is a button titled **Add TOC Entry**. Its purpose is to add a list entry for an existing text section or an entry that will point to a specific point within an existing text section—a heading or a image, for example. When selected a drawer opens from the right with three fields. The first, **TOC Entry Name**, is the name this section will appear as here in this backend view, in the Reader’s **Contents** dropdown, and in a **Table of Contents** content block on the project landing page.
+
+Next, under the Section Link heading, there is a dropdown menu labeled **Select a Text Section**. This dropdown tells Manifold where the new contents list entry that is being created should point. This table of contents is a strictly functional one, meaning every table of contents listing must to point to a text section or an element within a text section. This dropdown will provide a list of all existing sections for this text to choose from.
+
+The last field in this view, labeled **Anchor Link** is an optional text field that accepts an `id` value. IDs are HTML global attributes that are used to identify a specific element within a document. To learn more, see the [Mozilla Web Documentation for HTML id elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/id). Here in this view, an `id` is the means by which a Table of Contents list entry can point to a specific location within a text section instead of the very beginning of the section. That location (or “anchor”) might be a heading, an image, an extract, etc.
+
+If you are unsure of the anchor id you want to reference or if you need to add one, navigate to the corresponding text section using the **Sections** sidebar and open the [Manifold Editor](../backend/manifold_editor.md). Using Manifold’s code editing view, you can discover any existing ids or add news ones as needed, which can then be referenced here as anchors in this **Table of Contents** sidebar view. The **Anchor Link** field expects only an id value; that value should *not* be prefaced with a hash tag (\#).
+
+#### Auto Generate TOC
+
+The second option available in this view is a button labeled **Auto Generate TOC**. Because the table of contents list in this view will automatically be populated by the spine section of an EPUB or Manifest Ingest, this option is primarily aimed at uses cases where a text is being created within Manifold. In such instances, the system leaves this Table of Contents list view empty by default. Selecting this button will build a list of text sections according to the content and order or text sections as they currently appear in the **Sections** sidebar. Once the table of contents is built here, it can be modified to better portray the organizational hierarchy of the text.
+
+While selecting this option refers back to the list of text sections in the **Sections** view, the connection between these two spaces is not live: additions or reordering of text sections in the **Sections** sidebar do not automatically update the Table of Contents list in this view. The only direct connection between the two views is when a text section is deleted from the **Sections** sidebar—when that happens any corresponding list items associated with that deleted section will disappear from this view as well. The reverse is *not* true: if a listing is deleted from this Table of Contents list, it will still remain in the system and continue show in the **Sections** sidebar.
+
+When **Auto Generate TOC** is selected, the user will first be prompted to confirm their decision to have the system auto-populate this Table of Contents list. In situations where there is already a list of sections displaying in this view, having the system Auto Generate a TOC will overwrite the existing list in favor of the newly generated one.
+
+#### Table of Contents List
+
+This list of text sections in this view represents how the text sections will be named and ordered in the text’s navigational table of contents that renders in the Contents dropdown in the Manifold Reader and in any associated Table of Contents content blocks that are set to appear on the project’s landing page. Each list item here has three available options, each following one another after the name of the list item: (1) delete the entry, (2) edit the entry, and (3) reorder the entry within the list.
+
+1. Immediately following the name of the text section in the list item there is a trashcan button that will delete that section from appearing in the table of contents. Deleting an entry here does not delete the corresponding section from the text; it simple removes a listing for it in the Contents dropdown and in a Table of Contents content block. Within the Manifold Reader, a section deleted from this view will still appear according to where it is ordered in the list of text sections in the **Sections** sidebar. Likewise, the navigational links for next and previous sections that appear at the bottom of the Manifold Reader will announce the section according to the name and order of the section as it appears in the **Sections** sidebar. Because this space does not actually remove actual content there is no warming prompt when the delete button is selected; the section is simply removed. However, it can easily be added back in using the **Add TOC Entry** option described earlier in this section.
+2. Described visually with a pencil button, the edit option for Table of Contents entries opens the same drawer from the right as when the **Add TOC Entry** button is selected. The only difference is that now all the applicable fields are filled in. When this option is selected, the entries name, association with a corresponding text section, and anchor link can be adjusted. As a quick reminder, changing the name of the TOC entry here only adjusts the name of the entry in the Contents dropdown and in Table of Contents content blocks. To change the name of the section as it appears in the Manifold analytics views in the backend, in the Reader’s title bar, and in the Reader’s bottom navigational links, use the **Edit** option for the text section in the **Sections** sidebar.
+3. The last option, available by selecting the button showing two parallel lines representing grab bars, makes it possible to reorder the section with in the list. Items can be moved before or after other entries as well as nested under entries to indicate a hierarchy.
+  
+  Using the mouse, select the grab bars and then move the entry up or down in the list to the desired location. To nest an entry, while you have the text section you want to move selected, hover over the entry it should be nested under. The parent element will show with a green outline. When you release your selection, the entry you positioned will now appear indented in the list beneath the parent entry. Entries can be nested up to ten levels. To reorder entries using a keyboard, tab to the grab bars and then select the entry with the space bar. Using the up and down arrows you can move the entry above or below other entries or, to nest the entry, you can move it directly onto another entry. When you release your selection, it will now appear indented beneath the parent section you dropped it onto.
+
+:::caution Important Takeaways for the Table of Contents Sidebar
+- It is not possible to add descriptive or contextual elements (like bylines) to a Table of Contents that don’t direct a reader to a specific portion of the text. In other words, *every* Table of Contents list item must point at a specific text section or an anchor within a text section.
+- The order of entries here in the Table of Contents sidebar is how the entries will display in the Contents dropdown. It does not affect how the entries are announced in the navigational links at the bottom of the Manifold Reader. Thus it is possible to create a confusing experience for readers if the order of entries in the **Sections** sidebar differs from the order of entries here.
+- If you delete an entry from this Table of Contents list, it still appears in the navigational links at the bottom of the Manifold Reader. Deleting an entry here only removes it from the Reader’s Contents dropdown and from any Table of Contents content blocks that reference the text.
+- However, deleting a section from the **Sections** sidebar automatically removes it from the list displayed here in the **Table of Contents** sidebar.
+- This **Table of Contents** view only controls what appears in the Contents dropdown in the reader and the order in which they appear.
+:::
+
 ### Assets
 
 In order for Manifold to be able to ingest EPUBs, HTML, Markdown, Word, and Google Documents into its Reader, the system needs to be able to accept a wide array of assets that go into the construction of those files. These **assets** are the files that make up a Manifold text—an EPUB, HTML file, or Word document, an image, audio, or video file that appear inline with the body content—or files that provide instruction or contribute to the logic or rendering of a text, like a YAML or CSS file.
@@ -336,7 +477,7 @@ The **Asset ID**, however, is tied to the path for the asset and thus cannot be 
 
 Below the asset’s URL is a box where you can replace the existing asset file with a different one, either by dragging and dropping the file into the space or by selecting one through your file system.
 
-For details on how to properly use the information presented in this view and reference an asset in a text or other component of the instance, see the Edit Text Sections page.
+For details on how to properly use the information presented in this view and reference an asset in a text or other component of the instance, see the [Manifold Editor section](../backend/manifold_editor.md) section.
 
 <Tabs
   groupId="assets"
