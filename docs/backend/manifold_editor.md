@@ -4,56 +4,65 @@ title: Manifold Editor
 sidebar_label: Manifold Editor
 ---
 
-TK. Document Manifold code and rich-text editors
-
-All inline style attributes are now ignored
-To Confirm: Adjustments here will be reflected in any epub that is exported from Manifold.
-
-<!-- Status: In Progress
-
-## MathML
-
-- Avoid `style` attributes in Math tags, e.g.: `<math style="">`
-- For inline math, include `display="inline"` attribute; the default value is `block`.
-
-### MathML Tags Supported in Manifold
-
-[MathML-Core elements supported in Manifold](https://w3c.github.io/mathml-core/docs/explainer.html#the-elements-of-mathml-core)
-
-- the `math` element itself
-- 3 elements called `semantics`, `annotation` and `annotation-xml` which simply provide other annotations or potential semantics in existing content but are generally not rendered.
-- 6 token elements—“Token elements in presentation markup are broadly intended to represent the smallest units of mathematical notation which carry meaning. Tokens are roughly analogous to words in text. However, because of the precise, symbolic nature of mathematical notation, the various categories and properties of token elements figure prominently in MathML markup. By contrast, in textual data, individual words rarely need to be marked up or styled specially.” The token elements are (`mtext`, `mi` (identifier), `mn` (number), `mo` (operators in a broad sense), `mspace`, `ms` (string literal—for things like computer algebra systems)
-- Layout/Relationship elements `mrow` (for grouping sub-expressions), `mfrac` (for fractions and fraction-like objects such as binomial coefficients and Legendre symbols), `msqrt` and `mroot` for radicals
-- `mstyle` (legacy compat, deprecated—just maps to css)
-- `merror` (legacy compat—displays its contents as an ”error message”. The intent of this element is to provide a standard way for programs that generate MathML from other input to report syntax errors in their input.)
-- `maction` (legacy compat, deprecated—just use JavaScript/CSS instead).
-- `mpadded`—a row-like grouping container for modifying its position and bounds. (legacy compat, attributes map to CSS, although attributes are more natural for mathematical layout)
-- `mphantom`—a co-evolutionary/legacy compat, row-like container that just adds a UA style that maps to visibility: hidden;
-- 3 elements about subscripts and superscripts `msub`, `msup` and `msubsup`
-- 3 elements about underscripts and overscripts `munder`, `mover` and `munderover`
-- 3 elements about prescripts and tensor indexes (`mmultiscripts`, `none`, `mprescripts`)
-- 3 elements about tabular math such as matricies and determinants (`mtable`, `mtr` and `mtd`)
-
-
-## Text Editing 
-
-`void` attribute in the RTE to force a preview of any element.
-RTE makes guesses about how invisibles function.
-
-Add the following to the authoring section, maybe?
-
-[Mozilla’s web documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video "Embedding Video Elements in HTML") offers good examples for how to properly embed video elements in your code.
-
-:::caution
-Currently you can only add videos to texts using Manifold’s code editor; the rich-text editor in Manifold does not yet support video insertion.
+:::location
+The Manifold Editor is accessed from the **Sections** sidebar found in the detail view of an individual text. From a project detail page in the backend, select **Texts** from the sidebar, then choose one of the texts listed in that view. Once a text has been selected, the sidebar will now include a listing for **Sections**. From there, select the edit button, denoted by a pencil icon beside the name of one of the text sections listed. That will open a modal window housing the Manifold Editor where adjustments to that selected section can take place.
 :::
 
-https://edge.manifoldapp.org/api/proxy/ingestion_sources/e60eab59-b513-47d1-b492-ba8379628d2f
+Beginning with version 8, Manifold allows you to edit text sections directly in the system using the Manifold Editor (based on the [Slate framework](https://docs.slatejs.org/)). With the Editor, instead of having to return to the original source files (like an EPUB or Word Document) you ingested, making changes to those files, and then re-ingesting them, you now have the opportunity to simply make adjustments to existing content right in the Manifold backend. Additionally, text sections can be authored entirely within the system. Manifold is dynamic enough to also allow texts to be created from a mix of sources: you can create a text with sections that are authored entirely in Manifold, coupled with parts that are ingested from existing source files.
 
-https://edge.manifoldapp.org/api/proxy/ingestion_sources/e60eab59-b513-47d1-b492-ba8379628d2f.{extension}
+:::note EPUB and Exports
+Whatever edits or alterations you make to a text in the Manifold backend are incorporated in the EPUB the system creates during the [export process](../backend/projects.md#exports) or when a text has [**Enable EPUB**](../backend/texts.md) toggled on in the text’s menu bar.
+:::
 
+## Interface Overview
 
-{asset-url}
-/api/proxy/ingestion_sources/e60eab59-b513-47d1-b492-ba8379628d2f
+The Manifold Editor is a modal window that includes one field, two sets of paired buttons to adjust viewing options, a text-editing pane, and four buttons to save or close out of your work. They are arranged in the following order from top to bottom:
 
- -->
+- The **Close** button appears in the upper right of the screen and can be used to exit the Editor. If changes have been made to the text section, the system will first present a warning, asking the user to confirm they wish to proceed without first saving changes. The **Close** button alone does not save any changes. If a user closes the Editor without first saving their changes, those changes will be lost.
+- The **Section Name** field is the name of the text section that displays in list and analytics views in the backend, as well as in the Reader’s title bar and in navigation links at the bottom of the Reader on the frontend. Changing the name of a text section here does ***not*** change its name in the Reader’s **Contents** dropdown or in a **Table of Contents** content block. See the [Table of Contents section](../backend/texts.md#table-of-contents) for more about changing the name of a text section in those spaces.
+- Labeled **HTML Editor** and **Rich Text Editor**, these paired buttons switch the editor view between its two modes. By default the editor loads as a Rich Text Editor. In that configuration, the content of the text section displays with a WYSIWYG toolbar and the content in the editor renders according to any associated stylesheets listed in the Text’s [Styles sidebar](../backend/texts.md#styles). Alternatively, the **HTML Editor** button changes the editor view away from a rich-text experience to a plain-text code editor that reveals the section’s underlying HTML, which is the truest and most complete view of the content. In certain circumstances, content can only be edited in the HTML Editor. When this occurs a message will display in the Rich Text Editor encouraging you to switch to HTML mode to edit the content in question. Changes in one mode do not need to be saved before toggling to the other mode to view them; however, we strongly recommend saving often.
+- By default the Editor displays in a dark theme to match the general aspect of the Manifold backend. The paired buttons labeled **Dark** and **Light** serve as a way for you to switch the editor between the default dark them and a light theme that shows dark text against a light background.
+- The text-editing pane takes up the largest portion of the screen and is where you will perform the work or authoring or adjusting the content of a text section. The text-editing pane adjusts to account for which mode the user has selected (HTML Editor or Rich Text Editor) and is made up of the following components:
+  - The Editor’s **Menubar** appears at the top of the editing pane in both the HTML and Rich Text editing modes. In Rich Text mode, the Menubar provides a number of style and formatting options that will be familiar to users of Microsoft Word and Google Docs. These options work by wrapping the text to which they are applied in HTML tags or by creating preformatted blocks of HTML content that can be previewed and adjusted in this space.
+  
+    The Menubar in the HTML Editor mode is significantly less involved, showing only two options (Undo and Redo) and a Styles button that reveals an aggregate view of all the styles (formatted as CSS) that are associated with the text section. Styles cannot be adjusted from this view. This option is meant only to provide context. To add to or edit the styles associated with a text or a specific text sections, go to the [Styles sidebar](../backend/texts.md#styles).
+  
+  - The **Breadcrumbs Bar** is only available in the Rich Text view. The Breadcrumbs Bar appears immediately below the Menubar and displays a breadcrumb view of the styles associated with the content currently focused on in the editing pane. The elements listed in the Breadcrumbs Bar are selectable and allow you the means to adjust their placement in the document’s hierarchy. The bar also includes a button on the right that displays as an eye icon. When selected, all of the HTML elements in the editing pane are shown with their names and outlined with a dotted border, allowing you to better visualize the document structure and likewise adjust the placement of elements in the document hierarchy.
+  - The **Editing Pane** displays the content of the text section in an editable window, where new text can be added and existing content adjusted. In Rich Text mode, the pane displays the content according to the stylesheets associated with the text, previewing how the content will look in the Manifold reader. The preview, however, is just that. Certain elements may look slightly different in the Manifold reader when the text section is saved. This is because the Editor does not preview or display inline styles—those being inline rendering instructions imparted via a `style` attribute in the HTML, for example,
+    
+    ```html
+    <p style="text-align:center">...</p>
+    <ol style="list-style-type: none;">...</ol>
+    ```
+
+    When the editor is in HTML mode, the Editing Pane displays all the section content in plain text. Whether the section was ingested from a source file (EPUB, Word or Google Document, e.g.) or authored in Manifold, it is stored in Manifold as HTML. That HTML is what is displayed and accessible for editing in this configuration. Likewise, adjustments made in the Rich Text mode appear here, translated into HTML. Because HTML is more feature rich than what is possible in the Rich Text view, you can add additional nuance to their content in this space, wether that be adding `id`s to elements or using different sorts of structures, like a definition list.
+
+- The last elements in this view are three buttons: **Save**, **Save and Close**, and **Cancel**. The Save button saves your work and keeps the Editor open. Save and Close also saves your work but then closes the Editor, returning you to the **Sections** sidebar view, and **Cancel** clears any edits you made to the text section and then likewise closes the editor (after a prompt confirming your choice), returning you to the **Sections** sidebar view.
+
+## Manifold Editor Fundamentals
+
+Because the Manifold Editor is meant to handle content that can engage with most of the full range of HTML, there is some complexity with its workings that are not found in many other rich-text editors. Most of the time in a rich-text editor, like the ones found in Wordpress or Google Docs, different types of content stack on each other as blocks. Your text is either a body paragraph or a blockquote or a list, etc., and you can’t nest them in complex ways. When you change from one kind of formatting to another, it’s a simple toggle.
+
+We’ve retained that kind of toggle functionality for the most common major block-level elements: paragraphs and headings. Indeed, it isn’t valid HTML to nest those—a `p` element can’t live within an `h2`, say—so they must function as toggles. But for other HTML elements, we require a nested structure, which allows us to do things like put an ordered list within a block quote. And that means having multiple controls (read: some additional complexity). In order to construct any arbitrary element nesting, we need to be able to wrap, unwrap, and altogether remove elements from just about anywhere in the document hierarchy.
+
+This nesting is essential to understanding how things in the Editor work, and, while nuanced, it can be distilled briefly: the options in the Editor’s menubar wrap content in an HTML tag. That tag is exposed in the gray Breadcrumbs Bar (just under the menubar), which shows the element’s placement in the document hierarchy, much like a breadcrumb map. When a tag is selected from that Breadcrumbs Bar, the text to which it applies gets outlined in the main editing pane with a dotted border. That border includes an input box that shows the selected element’s name, id, and class, along with two buttons: one depicting an up arrow and the other a trashcan. The up arrow moves the selected element up one level in the hierarchy. The trashcan (or delete button) removes that element from the hierarchy, without deleting the associated text content when possible. In cases where deleting the element orphans the text rather than dropping it in a parent container, the text is removed as well.
+
+On first read through this likely feels overwhelming. The following paragraphs in this section will provide additional context and expound on these concepts with practical examples to help dispel any confusion. Much of what you will see and work with in the Editor is going to seem familiar, and the functionality will likewise be very similar to how other rich text editors work. The things that are less familiar are those that allow you to create richer, more involved publications than you will be able to on most other systems. That functionality comes at the cost of a slightly more robust learning curve, but we believe it is very much worth the trade off.
+
+:::danger The Manifold Editor does NOT autosave your work!
+Before we move on, there is one point that we cannot stress enough: the Manifold Editor does not have an autosave function. If you close your browser or navigate away from the Editor without first saving your work, that work **will** be lost. There are no settings to toggle on for Manifold to save your work in progress. That functionality is simply not there. If your work is lost, it’s lost for good. Save often, and work carefully!
+:::
+
+## Rich Text Editor Mode
+
+In Rich Text mode the Manifold Editor presents as a WYSIWYG editor, with a menubar displaying formatting options and a text box where you can author or edit existing text. Different from some other applications, the text displays in the Manifold Editor according to the rendering instructions defined by the stylesheets (CSS) that are saved to the text—and associated with the specific text section—in the [Styles sidebar](../backend/texts.md#styles).
+
+If the text was ingested from a source file (EPUB, Manifest Ingest, Word Document, etc.), whatever stylesheet that was part of that source file was brought into the system as part of the ingest process and is now also being used to tell the Editor how to display content on the screen. Additionally, any [Global Ingestion Style](../administering/configuring/ingestion_settings.md) instructions saved in Manifold’s **Settings** menu are also being applied.
+
+For texts that are freshly created in Manifold, only the Global Ingestion Styles are applied. In situations where a Manifold instance has no style rules defined in the Global Ingestion Styles space, Manifold will render content in the Editor using its own internal stylesheet, modeled after the generic stylesheets that ship with all browsers. These style rules will be functional but perfunctory.
+
+Another difference to note from some other applications—block-level elements that are not referenced on the Menu Bar will only appear in the Editor display as previews. To edit the content of such elements, you will need to switch over to HTML Mode. One example of this would be a [description list](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl "MDN Web Document detail page for the description list element") (`<dl>`). Tables would be another: the Manifold Editor can preview tables, but the work of creating and editing them can only happen in HTML mode.
+
+You will also notice some options that are available in other editors that are not obvious here—things like paragraph alignment or superscript and subscript. The Manifold Editor is meant to work with content ranging from the simplest to the most complex, so it’s not that right-aligning a paragraph or superscripting characters aren’t possible here, it’s just that the means to achieve those results is done differently.
+
+The Breadcrumb bar is also something that is likely new and different to this editor from others with which you may be familiar. This bar allows you to easily gage where an element exists within a documents structural hierarchy and adjust its placement therein. It also allows you to change or assign HTML classes to specific elements so that they can be targeted by CSS rules. At first glance, that may seem pat, but in practice these are elegant means to create rich and nuanced texts.

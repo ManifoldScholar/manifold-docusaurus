@@ -386,7 +386,7 @@ The list of of text sections in this view is one that is meant to be engaged wit
 2. The last option in a text section list entry is one to reorder it among the list of other text sections, using the button displaying two parallel grab bars. Those grab bars can be manipulated with a mouse by selecting them and then moving the entry up or down through the list. Alteratively entries can be reordered by tabbing to the option with the tab key, selecting it with the space bar, and then using the up or down arrows to adjust where the text section appears in the list. The order of the sections as they appear here will be the order for how the sections appear in the Manifold Reader and how the Reader announces the next and previous sections in the navigation space at the end of each section. This functionality mirrors how the order of text sections is defined in the spine section of the `content.opf` file in an EPUB file. Or, for a Manifest Ingest, how text sections are ordered according to how they appear beneath the `toc` list element.
 
 :::caution Important Takeaways for the Sections Sidebar
-- Changing the name of a text section in this view adjusts its name in the Reader’s title bar and in navigation links at the bottom of the Reader but ***not*** necessarily in the Reader’s **Contents** dropdown or in a **Table of Contents** content block.
+- Changing the name of a text section in this view adjusts its name in the Reader’s title bar and in navigation links at the bottom of the Reader but ***not*** in the Reader’s **Contents** dropdown or in a **Table of Contents** content block.
 - The order of the text section entries in the Sections sidebar is the order in which those sections will be announced by the navigation links at the bottom of the Manifold Reader.
 - ***Everything*** having to do with the order and name of text sections in the **Contents** dropdown that appears in the menu bar of the Manifold Reader is controlled independently by settings found in a text’s **Table of Contents** sidebar view, discussed in the following section.
 :::
@@ -537,7 +537,7 @@ Only audio files in the **FLAC**, **MP3**, and **WAV** formats are playable in t
 Documents can be hosted for various purposes: as a means to deliver a downloadable file to readers that may not be able to be displayed in the Manifold reader or to allow other backend editors on an instance the means to source a particular text section into their own project. Of the following, Manifold can display **DOCX**, **EPUB**, **HTM**, **HTML**, **MD** in its reader. Groups of **DOCX**, **HTM**, **HTML**, and **MD** files packaged, along with a **CSS**, in a **ZIP** archive can also be displayed in the reader when accompanied by a **YAML** or **YML** file. This is known as a “Manifest Ingest.” See our [walkthrough documentation](../walkthroughs/manifest.md "Create a Manifest Ingest") for more about creating and using Manifest ingests.
 
 :::caution What about TEX and LATEX files?
-Files prepared in the **TEX** or **LATEX** formats are technically acceptable to Manifold; however they do not function or display properly in the system. Such files can be hosted and made available for download, but they will not render as expected in Manifold’s reader.
+Files prepared in the **TEX** or **LATEX** formats are technically acceptable to Manifold; however they do not function or display properly in the system. Such files can be hosted and made available for download, but they will not render in Manifold’s reader.
 :::
 
 - .css
