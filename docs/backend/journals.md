@@ -101,6 +101,10 @@ You can replace the default thumbnail with an image of your own by selecting “
     ]}
 />
 
+#### Thumbnail Alt Text
+
+When a custom thumbnail is added to a journal, the Thumbnail Alt Text field appears. Here you can associate a brief plain-text description of the thumbnail that will be announced to readers using Assistive Technology. Benetech’s DIAGRAM Center site, “[How to Describe Images](https://poet.diagramcenter.org/how.html)” is a good reference for learning how to craft alt text. We generally recommend that alt text not exceed 150 characters (including spaces).
+
 #### Draft Mode
 
 This toggle is for use when first staging a new Journal on an instance, before it is ready to be made available for a broad readership. When toggled on, Draft Journals are only visible (in both the front and backends) to users logged in with credentials to edit them; they appear in the backend with a badge denoting their Draft status.
@@ -228,6 +232,11 @@ The **Logo** displays directly over the Background Image on the Journal homepage
         { key: "Format", value: defaultImageFormats },
     ]}
 />
+
+
+:::info Adding Alt Text to Your Images
+When a Background Image or Logo is added to this drawer, fields labeled Background Image Alt Text or Logo Alt Text appear. With these fields you can associate a brief plain-text description of the background or logo that will be announced to readers using Assistive Technology. Benetech’s DIAGRAM Center site, “[How to Describe Images](https://poet.diagramcenter.org/how.html)” is a good reference for learning how to craft alt text. We generally recommend that alt text not exceed 150 characters (including spaces).
+:::
 
 A **Background Color** can be made to appear under a transparent Background Image or Logo, or in place of a Background Image.
 

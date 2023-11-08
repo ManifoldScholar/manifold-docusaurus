@@ -268,6 +268,10 @@ Manifold does *not* supply this image with the metadata it shares about the Text
     ]}
 />
 
+#### Cover Image Alt Text
+
+This field allows you to associate a brief plain-text description of the cover that will be announced to readers using Assistive Technology. Benetech’s DIAGRAM Center site, “[How to Describe Images](https://poet.diagramcenter.org/how.html)” is a good reference for learning how to craft alt text. We generally recommend that alt text not exceed 150 characters (including spaces).
+
 #### Published?
 
 This toggle affects the appearance of a Text in a **Texts** Content Block on the Project landing page and in the Reader. When this setting is engaged, Manifold will append a “Published” badge to its listing in a **Texts** Block. In the Reader, the system will remove the yellow ribbon that displays how the Text’s Category.
