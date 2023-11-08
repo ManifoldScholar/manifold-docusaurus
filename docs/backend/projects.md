@@ -368,13 +368,18 @@ The **Visibility** field in the Download configuration drawer allows you to dete
 
 #### Social Links
 
-Social media profiles affiliated with the Project are defined in the **Social Links** submenu, which opens from the right as a drawer. Facebook, Twitter, and Instagram profiles assigned here render in the lower left of the Hero as clickable icons. When a **Hashtag** is provided, it will appear beneath any social icons and on click direct readers to a Twitter page displaying Tweets using the tag. The field does not require the hash sign (#); the system will automatically append one.
+Social media profiles affiliated with the Project are defined in the **Social Links** submenu, which opens from the right as a drawer. Facebook, Twitter/X, and Instagram profiles assigned here render in the lower left of the Hero as clickable icons. When a **Hashtag** is provided, it will appear beneath any social icons and on click direct readers to a Twitter/X page displaying Tweets using the tag. The field does not require the hash sign (#); the system will automatically append one.
 
-The different social networks require their handles to be formatted as they appear on their own networks: Twitter IDs are not case sensitive and agnostic about whether or not there’s an ampersand. Facebook IDs are case sensitive and should be listed without an ampersand. Instagram usernames are not case sensitive but should *not* include an ampersand.
+The different social networks require their handles to be formatted as they appear on their own networks: Twitter/X IDs are not case sensitive and agnostic about whether or not there’s an ampersand. Facebook IDs are case sensitive and should be listed without an ampersand. Instagram usernames are not case sensitive but should *not* include an ampersand.
 
 :::note
 Adding a hashtag to the **Social Links** submenu ***does not*** configure the Project to pull Tweets using that hashtag into the Recent Activity block. Those configurations live in the [Social Integrations](../backend/projects.md#social-integrations) menu.
 :::
+
+:::caution Twitter/X Support Discontinued
+Twitter/X functionality is deprecated in Manifold version 8 and will be removed entirely in version 9. Previously, you could configure the Project to pull Tweets using a hashtag or other match against the Twitter API into the Recent Activity block using the settings in the [Social Integrations](../backend/projects.md#social-integrations) menu. However, that is no longer possible.
+:::
+
 
 ### Markdown Block
 
@@ -388,7 +393,7 @@ The Metadata Block displays information about the Project on the landing page am
 
 ### Recent Activity Block
 
-The Recent Activity block displays the six most recent activity records for a Project. Activities show as tiles indicating when Tweets, Texts, or Resources were added to the Project. When a tile is selected it will change the view, opening to the specific Tweet, Text, or Resource chosen. If a Project contains more than six activity records, the block will display a button that links to the full, paginated list of activity in a view of its own.
+The Recent Activity block displays the six most recent activity records for a Project. Activities show as tiles indicating when Texts, or Resources were added to the Project. When a tile is selected it will change the view, opening to the specific Text or Resource chosen. If a Project contains more than six activity records, the block will display a button that links to the full, paginated list of activity in a view of its own.
 
 Use the [**Activity** menu](../backend/projects.md#activity) to manage the records that display in this block.
 
@@ -526,7 +531,7 @@ The **Activity** menu displays Project events that render as tiles in the Recent
 Events can be individually removed from a Project by selecting an event’s delete button, shown as a red trashcan icon in the lower right of a tile.
 
 :::note Bringing Tweets into a Project
-See the [Social Integrations section](../backend/projects.md#scoial-integrations) for notes on how to configure Manifold to fetch Tweets for display in the Activity blade.
+Twitter/X functionality is deprecated in Manifold version 8 and will be removed entirely in version 9. It is no longer possible to bring Tweets into the Recent Activity content block.
 :::
 
 ## Metadata
@@ -548,6 +553,10 @@ The **Add a new Twitter Query** button opens a drawer from the right where a new
 The **Active** toggle tells Manifold if it should fetch tweets for the Query. Results from inactive queries will be ignored.
 
 Saved queries can be selected from the list and edited or deleted. It is also possible to manually force the system to fetch results for saved queries immediately with the **Fetch Tweets** button beside the green arrows circling one another.
+
+:::caution Twitter/X Support Discontinued
+Twitter/X functionality is deprecated in Manifold version 8 and will be removed entirely in version 9. It is no longer possible to bring Tweets into the Recent Activity content block.
+:::
 
 ## Exports
 

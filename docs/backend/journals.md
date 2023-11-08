@@ -243,9 +243,9 @@ See the [Projects section](../backend/projects.md#calls-to-action) to learn more
 
 #### Social Links
 
-If your Journal has a presence on **Twitter**, **Facebook**, or **Instagram**, links to those profiles can be added as clickable thumbnails in the lower left of the Hero block using the fields here. The input of each field should correspond with the format and case of your profile’s handle as it appears on the respective social media platform.
+If your Journal has a presence on **Twitter / X**, **Facebook**, or **Instagram**, links to those profiles can be added as clickable thumbnails in the lower left of the Hero block using the fields here. The input of each field should correspond with the format and case of your profile’s handle as it appears on the respective social media platform.
 
-Additionally, you can promote a hashtag that you would like your readers to use on Twitter as a means to better capture the conversation around your publication in that sphere. When a **Hashtag** is provided it will appear beneath any social icons; when selected readers will be directed to a Twitter page displaying Tweets using the tag. The field does not require the hash sign (#); the system will automatically append one.
+Additionally, you can promote a hashtag that you would like your readers to use on Twitter/X as a means to better capture the conversation around your publication in that sphere. When a **Hashtag** is provided it will appear beneath any social icons; when selected readers will be directed to a Twitter/X page displaying Tweets using the tag. The field does not require the hash sign (#); the system will automatically append one.
 
 ### Access
 
