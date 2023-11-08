@@ -17,7 +17,7 @@ You can use the Menu dropdown to return to the Project homepage, the full librar
 The top Contents button will drop down the Text’s table of contents for review, if one has been created for the Text. Selecting the Contents button again will close the menu, allowing readers to review the contents without losing their place in the Text.
 
 :::info
-The Contents menu is populated from the`toc.ncx` or `tox.xhtml` files in an EPUB (versions 2 and 3, respectively). For all other formats (Google Doc, HTML, Markdown, and Word) that are ingested using the manifest strategy, the dropdown will be structured according to the associated YAML file. Texts that are ingested individually using the document strategy will not have an associated contents list.
+The Contents menu is populated from the`toc.ncx` or `tox.xhtml` files in an EPUB (versions 2 and 3, respectively). For all other formats (Google Doc, HTML, Markdown, and Word) that are ingested using the manifest strategy, the dropdown will be structured according to the associated YAML file. Texts that are ingested individually using the document strategy will rely on the internal heading structure of the document to populate the Contents dropdown. For backend users, this dropdown can be modified using the [Table of Contents sidebar](../backend/texts.md#table-of-contents) in a text’s detail record.
 :::
 
 ## Reader Settings

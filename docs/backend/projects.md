@@ -137,6 +137,10 @@ The Project Thumbnail, whether a system default or Custom one, will appear in th
     ]}
 />
 
+#### Thumbnail Alt Text
+
+When a custom thumbnail is added to a project, the Thumbnail Alt Text field appears. Here you can associate a brief plain-text description of the thumbnail that will be announced to readers using Assistive Technology. Benetech’s DIAGRAM Center site, “[How to Describe Images](https://poet.diagramcenter.org/how.html)” is a good reference for learning how to craft alt text. We generally recommend that alt text not exceed 150 characters (including spaces).
+
 #### Subjects
 
 Subject classifications illuminate the scope of material on your instance broadly and functionally provide a means for you to label and sort Projects. Subjects are actionable in two places in the application: On the frontend, Subjects appear on the **All Projects** library page in the **Show All** dropdown as a means for readers to filter and display only those Projects that match their selection. In the backend, Subjects can function as search criteria for “Smart” [Project Collections](../backend/project_collections.md).
@@ -274,6 +278,10 @@ The **Cover Image** appears over the right side of the Hero block and can be use
 
 The field for **Image Credits** renders attributions for the Background or Cover images beneath the Cover image. This field accepts basic Markdown syntax.
 
+:::info Adding Alt Text to Your Images
+When a Background or Cover Image is added to this drawer, fields labeled Background Image Alt Text or Cover Image Alt Text appear. With these fields you can associate a brief plain-text description of the background or cover image that will be announced to readers using Assistive Technology. Benetech’s DIAGRAM Center site, “[How to Describe Images](https://poet.diagramcenter.org/how.html)” is a good reference for learning how to craft alt text. We generally recommend that alt text not exceed 150 characters (including spaces).
+:::
+
 #### Calls-to-Action
 
 Using the **Calls-to-Action** menu, you can add links and buttons to the Hero block that direct and encourage readers to perform certain actions within or outside of the system.
@@ -371,10 +379,6 @@ The **Visibility** field in the Download configuration drawer allows you to dete
 Social media profiles affiliated with the Project are defined in the **Social Links** submenu, which opens from the right as a drawer. Facebook, Twitter/X, and Instagram profiles assigned here render in the lower left of the Hero as clickable icons. When a **Hashtag** is provided, it will appear beneath any social icons and on click direct readers to a Twitter/X page displaying Tweets using the tag. The field does not require the hash sign (#); the system will automatically append one.
 
 The different social networks require their handles to be formatted as they appear on their own networks: Twitter/X IDs are not case sensitive and agnostic about whether or not there’s an ampersand. Facebook IDs are case sensitive and should be listed without an ampersand. Instagram usernames are not case sensitive but should *not* include an ampersand.
-
-:::note
-Adding a hashtag to the **Social Links** submenu ***does not*** configure the Project to pull Tweets using that hashtag into the Recent Activity block. Those configurations live in the [Social Integrations](../backend/projects.md#social-integrations) menu.
-:::
 
 :::caution Twitter/X Support Discontinued
 Twitter/X functionality is deprecated in Manifold version 8 and will be removed entirely in version 9. Previously, you could configure the Project to pull Tweets using a hashtag or other match against the Twitter API into the Recent Activity block using the settings in the [Social Integrations](../backend/projects.md#social-integrations) menu. However, that is no longer possible.
