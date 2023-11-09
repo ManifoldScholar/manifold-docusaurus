@@ -68,7 +68,7 @@ For texts that are freshly created in Manifold, only the Global Ingestion Styles
 
 Another difference to note from some other applications—block-level elements that are not referenced on the Menubar will only appear in the Editor display as previews. To edit the content of such elements, you will need to switch over to HTML mode. One example of this would be a [description list](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl "MDN Web Document detail page for the description list element") (`<dl>`). Tables would be another: the Manifold Editor can preview tables, but the work of creating and editing them can only happen in HTML mode. See the Tables section below in the HTML Mode section below for more.
 
-You will also notice some options that are available in other editors that are not obvious here—things like paragraph alignment or superscript and subscript. The Manifold Editor is meant to work with content ranging from the simplest to the most complex, so it’s not that right-aligning a paragraph or superscripting characters aren’t possible here, it’s just that the means to achieve those results is done differently.
+You will also notice some options that are available in other editors that are not obvious here—things like paragraph alignment or superscript and subscript or adding linked notes. The Manifold Editor is meant to work with content ranging from the simplest to the most complex, so it’s not that right-aligning a paragraph or superscripting characters or having note markers point to an endnotes section aren’t possible here, it’s just that the means to achieve those results is done differently. Namely, they are done in the HTML mode of the Editor. See the HTML Editor Mode section of this page later below for strategies and sample code patterns you can use to achieve some of the functionality we have been discussing here.
 
 The Breadcrumb bar is also something that is likely new and different to this editor from others with which you may be familiar. This bar allows you to easily gage where an element exists within a documents structural hierarchy and adjust its placement therein. It also allows you to change or assign HTML classes to specific elements so that they can be targeted by CSS rules. At first glance, that may seem pat, but in practice these are elegant means to create rich and nuanced texts.
 
@@ -482,7 +482,20 @@ In HTML, hyperlinks correspond to the Anchor element. See the MDN Web Documentat
 <a href="URL">Text</a>
 ```
 
-Using the Link option in the Editor, you can also create links to any [**Assets**](../backend/texts.md#assets) that are loaded in the system. To do so, copy the Asset’s URL and paste in here in the **URL** field. Each Asset URL in the system is going to be of this format:
+Using the Link option in the Editor, you can create links to other text sections that are part of the same text (e.g., a link from a passage of text in chapter 1 to something in chapter 2). To do so, enter into the **URL** field here the [slug of the text section](../backend/texts.md#sections) to which you want to direct readers. If there are elements in the target text section that include their own HTML `id`, you can have the link point reader’s directly to that element by including the `id` after section’s slug. For example, in this example the target text-section’s slug is `chapter003` and there is a heading you want to take readers to that has an `id` value of `b-heading-001`. To link to that using this option you would fill in the **URL** field with this:
+
+
+```html title="Sample URL Input Linking to Another Section/Element"
+chapter003#b-heading-001
+```
+
+You can determine if a specific element has an `id` by toggling the Editor to HTML mode. An `id` will follow an elements opening tag as an attribute like this:
+
+```html title="Sample ELement ID Placement"
+<h2 class="bhead" id="b-heading-001">
+```
+
+With the **Link** option you can also create links to any [**Assets**](../backend/texts.md#assets) that are loaded in the system. To do so, copy the Asset’s URL and paste in here in the **URL** field. Each Asset URL in the system is going to be of this format:
 
 ```html title="Manifold Asset URL"
 /api/proxy/ingestion_sources/{asset-id}
@@ -1035,6 +1048,107 @@ If you find stacks of content rendered in preview disagreeable, you can add a `v
 ```
 
 Without that `void` attribute, the Rich Text Editor would show three preview blocks, one for definition list item. When added, that `void` forces the entire block enclosed in `<div>` tags to appear in preview. There is no change in functionality; there is merely a cosmetic option.
+
+### Super- and Subscript
+
+While there are no buttons to make a run of in-line text render as either super- or subscript in the Editor’s Rich Text mode, you can manually add `<sup>` and `<sub>` tags around the text you want to appear as such. While not specifically called out on the Menubar, these effects does render in the Rich Text Editor.
+
+```html title-"Sample Super and Subscript Tagging"
+<p>I was a teenage vampire in the 18<sup>th century...</p>
+<p>Water is H<sub>2</sub>O!</p>
+```
+
+Altneratively, in Rich Text mode, you could use the **Span** option and then with the Tag Bar associate a class with the text that has a CSS rule for super- or subscripting. Doing so would produce the following structure in HTML
+
+```html
+Water is H<span class="subscript">2</span>O!</p>
+```
+
+If you had a stylesheet associated with the text with a rule like the following, the 
+
+```css
+.subscript {
+  vertical-align:sub;
+}
+```
+
+See the Mozilla documentation for the [Superscript Element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup) or [Subscript Element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sub) for more.
+
+### Linked Notes
+
+In most cases it will make more sense to ingest a text with already linked notes than trying to compose content in the Editor with those structures. Instead it will be far more efficient to ingest a text from a Word document or EPUB that has linked notes and then use the Editor’s HTML mode to augment them as needed. That said, the following provides some guidance and structures you can use and adapt if you find yourself wanting to add new linked notes to a text section.
+
+Programs like Word and Google Docs obfuscate how linked content works, so much of this may feel unfamiliar. But the fundamentals are pretty basic. You have a note marker that lives in the body of your text. Most often they are numbers and render in superscript. To have that function as a link, we need to encode it as an [Anchor element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) that targets the note content itself, either at the end of the text section or in an entirely different text section, like an EPUB that has an Endnotes chapter at the end. That anchor element also has to include its own unique `id`, so that you can link back from the note to its marker’s place in the text. There are different ways of doing this, but here is a simple example:
+
+```html title="Simple Note Marker Encoding"
+<a id="en1r" role="doc-noteref" class="noteref" href="#en1">1</a>
+```
+
+The `role` and `class` attributes here are optional. The former is present for accessibility purposes so assistive technology can properly portray the content, and the `class` attribute provides a means to target note references with a CSS rule to adjust how they render.
+
+The crucial attributes here are the `id` and the `href`. The `id` is this note markers unique identifier that we can use later to return to this spot from the notes section itself. We recommend simple and short `id`s that can be easily understood. This one can be read as *Endnote 1 Return*. The `href` attribute tells the browser where to navigate the reader to when they select the note marker. The note marker in this example is pointing to a note in the same text section that has an `id` of `en1`, or *Endnote 1*. That marker would correspond with a structure like this at the end of the section:
+
+```html title="Note Encoding at End of a Text Section"
+<section>
+  <h2 id="ahnotes01" class="ah">Notes</h2>
+      <p class="endnote" id="en1">
+        <a role="doc-backlink" class="ennum" href="#en1r" title="Return to note reference 1">1</a>. Body of the note, including discursive and citation information.
+      </p>
+      <p class="en" class="endnote" id="en2">
+         <!--... Additional notes ...-->
+      </p>
+</section>
+```
+
+In this example let’s focus our attention first on the content after the opening `<p>` tags. The `<p>` containers here are each wrapped around the body of the note. But they begin with a few attributes. The `class="endnote"` attribute is optional but allows you to target the note paragraph with a CSS rule so you can adjust how it appears in the reader: no indent, some indent, different margins, etc. The `id` is crucial That is what the note marker up above was coded to direct the reader to when they initially selected it in the body content. Without that, that note marker link wouldn’t be able to find this spot.
+
+And then we see that the note content itself is prefaced by an anchor element enclosed around a number, which matches the number of the marker from above. The `role`, `class`, and `title` elements are optional here, but they are all good practice. The `class` element allows you target this paragraph with a CSS rule. The `role` and `title` provide assistive technology with important information about the nature of the content. However, for the note to function as expected, we need the `href` attribute. That value reads as `#en1r`. That tells us first that the note marker itself lives in the same text section, otherwise there would be a value before the hash mark, and second it cites the `id` from the note marker back up in the body of the text section. When selected, the note number here returns the reader back to where the note marker appeared in the body text.
+
+You can see then the circular nature of these linked elements. The `href` in the note marker points to the `id` of the note, and the `href` of the note points to the `id` of the note marker.
+
+If you don’t want the notes proper to live in the same section where their markers live, you will need to first create a text section to contain them, and then you’ll need to adjust the `href` values here accordingly to include [the slugs of the respective text sections](../backend/texts.md#sections). For the sake of simplicity let’s say we have note markers in a text with a slug value of `ch001` and notes living in a section with a slug value of `endnotes`. With that setup, we would adjust the code from above like this:
+
+```html title="Note Marker Targeting a Note in a Different Section"
+<a id="en1r" role="doc-noteref" class="noteref" href="endnotes#en1">1</a>
+```
+
+```html title="Note Encoding in Its Own Text Section"
+<section>
+  <h2 id="ahnotes01" class="ah">Notes</h2>
+      <p class="endnote" id="en1">
+        <a role="doc-backlink" class="ennum" href="ch001#en1r" title="Return to note reference 1">1</a>. Body of the note, including discursive and citation information.
+      </p>
+      <p class="en" class="endnote" id="en2">
+         <!--... Additional notes ...-->
+      </p>
+</section>
+```
+
+That’s a very basic rundown of linking notes. More often notes are constructed as lists, which better serve assistive technology. An example of those patterns could look like this:
+
+```html title="Note Encoding within an Ordered List"
+<section>
+  <h2 id="ahnotes01" class="ah">Notes</h2>
+  <ol role="list" class="notes" style="list-style-type:none">
+    <li role="listitem" class="endnote" id="en1">
+      <p class="en">
+        <a role="doc-backlink" class="ennum" href="ch001#en1r" title="Return to note reference 1">1</a>. Body of the note, including discursive and citation information.
+      </p>
+    </li>
+    <li>
+        <p class="en">
+           <!--... Additional notes ...-->
+        </p>
+    </li>
+  </ol>
+</section>
+```
+
+For more on such patterns, see [Daisy’s Knowledge Base](https://kb.daisy.org/publishing/docs/html/notes.html).
+
+:::info Avoid Using the Link Function to Link Notes
+Reading this, it might be tempting to try linking notes using the Link option in the Editor’s Rich Text mode. Doing so will likely prove pretty cumbersome as you still need to add `id`s to the various elements for that to work.
+:::
 
 ### Tables
 
