@@ -11,11 +11,15 @@ import TabItem from '@theme/TabItem';
   groupId="os"
   defaultValue="ubuntu18"
   values={[
+    {label: "Ubuntu 22", value: "ubuntu22"},
     {label: "Ubuntu 20", value: "ubuntu20"},
     {label: "Ubuntu 18", value: "ubuntu18"},
     {label: "CentOS 8", value: "centos8"},
     {label: "CentOS 7", value: "centos7"},
   ]}>
+  <TabItem value="ubuntu22">
+    <Downloads os="ubuntu22" />
+  </TabItem>
   <TabItem value="ubuntu20">
     <Downloads os="ubuntu20" />
   </TabItem>
