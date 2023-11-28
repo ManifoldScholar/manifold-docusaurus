@@ -31,7 +31,7 @@ Manifold is a new piece of software, and we're working hard to refine and improv
 Select the strategy that makes sense for your organization to see the corresponding instructions.
 
 :::info
-The current stable Manifold version is <strong><Data command="highestStableVersionFor" argument="ubuntu18" /></strong>. <Data command="prereleaseStatement" argument="ubuntu18" />All releases can be downloaded from the [downloads page](/docs/administering/reference/downloads).
+The current stable Manifold version is <strong><Data command="highestStableVersionFor" argument="ubuntu22" /></strong>. <Data command="prereleaseStatement" argument="ubuntu22" />All releases can be downloaded from the [downloads page](/docs/administering/reference/downloads).
 :::
 
 ### Package Install
@@ -48,20 +48,27 @@ Shell into the server as root and download the most recent package.
   groupId="install-type"
   defaultValue="ubuntu18"
   values={[
-    {label: "Ubuntu18", value: "ubuntu18"},
-    {label: "Ubuntu16", value: "ubuntu16"},
+    {label: "Ubuntu22", value: "ubuntu22"},
+    {label: "Ubuntu20", value: "ubuntu20"},
+    {label: "CentOS 8", value: "centos8"},
     {label: "CentOS 7", value: "centos7"},
   ]}>
-  <TabItem value="ubuntu18">
+  <TabItem value="ubuntu22">
     <CodeBlock className="shell">{(`
 cd ~
-curl -O ${getData("installUrlFor", "ubuntu18")}
+curl -O ${getData("installUrlFor", "ubuntu22")}
     `).trim()}</CodeBlock>
   </TabItem>
-  <TabItem value="ubuntu16">
+  <TabItem value="ubuntu20">
     <CodeBlock className="shell">{(`
 cd ~
-curl -O ${getData("installUrlFor", "ubuntu16")}
+curl -O ${getData("installUrlFor", "ubuntu20")}
+    `).trim()}</CodeBlock>
+  </TabItem>
+  <TabItem value="centos8">
+    <CodeBlock className="shell">{(`
+cd ~
+curl -O ${getData("installUrlFor", "centos8")}
     `).trim()}</CodeBlock>
   </TabItem>
   <TabItem value="centos7">
@@ -78,20 +85,27 @@ curl -O ${getData("installUrlFor", "centos7")}
   groupId="install-type"
   defaultValue="ubuntu18"
   values={[
-    {label: "Ubuntu18", value: "ubuntu18"},
-    {label: "Ubuntu16", value: "ubuntu16"},
+    {label: "Ubuntu22", value: "ubuntu22"},
+    {label: "Ubuntu20", value: "ubuntu20"},
+    {label: "CentOS 8", value: "centos8"},
     {label: "CentOS 7", value: "centos7"},
   ]}>
-  <TabItem value="ubuntu18">
+  <TabItem value="ubuntu22">
     <CodeBlock className="shell">{(`
 cd ~
-dpkg -i ${getData("basenameFor", "ubuntu18")}
+dpkg -i ${getData("basenameFor", "ubuntu22")}
     `).trim()}</CodeBlock>
   </TabItem>
-  <TabItem value="ubuntu16">
+  <TabItem value="ubuntu20">
     <CodeBlock className="shell">{(`
 cd ~
-dpkg -i ${getData("basenameFor", "ubuntu18")}
+dpkg -i ${getData("basenameFor", "ubuntu20")}
+    `).trim()}</CodeBlock>
+  </TabItem>
+  <TabItem value="centos8">
+    <CodeBlock className="shell">{(`
+cd ~
+rpm -ivh ${getData("basenameFor", "centos8")}
     `).trim()}</CodeBlock>
   </TabItem>
   <TabItem value="centos7">

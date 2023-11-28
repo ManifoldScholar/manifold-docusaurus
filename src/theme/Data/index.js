@@ -24,6 +24,7 @@ function calculateHighestVersionFor(os) {
 function calculateHighestStableVersionFor(os) {
   if (!os) return null;
   const releases = data.releases[os];
+console.log(releases);
   if (!releases) return null;
   const releaseVersions = Object.keys(releases);
   const stableReleaseVersions = releaseVersions.filter((version) => !version.includes("-alpha") && !version.includes("-beta") && !version.includes("-rc") )
