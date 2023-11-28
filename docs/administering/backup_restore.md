@@ -163,6 +163,11 @@ DB_NAME=manifold_production
 BACKUP_FILES_ROOT=/var/opt/manifold/api
 TOKEN=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)
 
+if [ ! -f "$RESTORE_ARCHIVE_PATH" ]; then
+    echo "$RESTORE_ARCHIVE_PATH does not exist."
+    exit 1
+fi
+
 echo "Creating the restore staging directory at $RESTORE_DIR..."
 su - manifold -c "mkdir -p $RESTORE_DIR"
 
