@@ -599,6 +599,18 @@
       "platform_version": "7",
       "arch": "x86_64",
       "url": "https://storage.googleapis.com/manifold-dist/centos7/manifold-8.0.1-1.el7.x86_64.rpm"
+    },
+    "8.0.2": {
+      "build_version": "8.0.2",
+      "build_git_revision": "eef141d443c3ad963493675bdce2eed0bc4a888e",
+      "basename": "manifold-8.0.2-1.el7.x86_64.rpm",
+      "sha1": "36419e3d5879a086f8266efee39b4b613512c294",
+      "sha256": "b1916d02fa1b0973ac1ec113b13f5a9420d1043bd74cd87549dd73297e693c50",
+      "sha512": "d3bb114315bb5f1f5869375e19a978ef64b71d9a2901864b53b94b8f24bfd8f7614614b014f314217c2b5e217f25eedd90c7c193bc8babb24bc6c2c3d031e0fa",
+      "platform": "el",
+      "platform_version": "7",
+      "arch": "x86_64",
+      "url": "https://storage.googleapis.com/manifold-dist/centos7/manifold-8.0.2-1.el7.x86_64.rpm"
     }
   },
   "centos8": {
@@ -757,6 +769,18 @@
       "platform_version": "8",
       "arch": "x86_64",
       "url": "https://storage.googleapis.com/manifold-dist/centos8/manifold-8.0.1-1.el8.x86_64.rpm"
+    },
+    "8.0.2": {
+      "build_version": "8.0.2",
+      "build_git_revision": "eef141d443c3ad963493675bdce2eed0bc4a888e",
+      "basename": "manifold-8.0.2-1.el8.x86_64.rpm",
+      "sha1": "6d4e09b59351ab918398b20943f7d28ee4c8c66b",
+      "sha256": "0b9b3866552978f6a77c077f22cd5aeb74c10e77cdb18003bb136da9deef075a",
+      "sha512": "0d9839e37f2695187b03dc99541a73989fd30154874b4615ce8374d0d630ef106b752afa2fc67d6881590bcd38f26b4a0d62622eca365ba279078bbd14030939",
+      "platform": "el",
+      "platform_version": "8",
+      "arch": "x86_64",
+      "url": "https://storage.googleapis.com/manifold-dist/centos8/manifold-8.0.2-1.el8.x86_64.rpm"
     }
   },
   "ubuntu16": {
@@ -2023,6 +2047,18 @@
       "platform_version": "20.04",
       "arch": "x86_64",
       "url": "https://storage.googleapis.com/manifold-dist/ubuntu20/manifold_8.0.1-1_amd64.deb"
+    },
+    "8.0.2": {
+      "build_version": "8.0.2",
+      "build_git_revision": "eef141d443c3ad963493675bdce2eed0bc4a888e",
+      "basename": "manifold_8.0.2-1_amd64.deb",
+      "sha1": "c53e5255595a2b4a319b2c3ae58cbada75c3d06f",
+      "sha256": "4db8e41aa5108806e151902648388f180a7c33beee45c8cdd86a44c1586d6ce2",
+      "sha512": "efdf01955df2773f05ab1b20351038854168ef62244530e97882280f28a2e116d5c7cd9d513f6bdcf8f77bec763c7c7c4ef4e48ad2f4d3d65ca6da72bbf8d431",
+      "platform": "ubuntu",
+      "platform_version": "20.04",
+      "arch": "x86_64",
+      "url": "https://storage.googleapis.com/manifold-dist/ubuntu20/manifold_8.0.2-1_amd64.deb"
     }
   },
   "ubuntu22": {
@@ -2085,6 +2121,18 @@
       "platform_version": "22.04",
       "arch": "x86_64",
       "url": "https://storage.googleapis.com/manifold-dist/ubuntu22/manifold_8.0.1-1_amd64.deb"
+    },
+    "8.0.2": {
+      "build_version": "8.0.2",
+      "build_git_revision": "eef141d443c3ad963493675bdce2eed0bc4a888e",
+      "basename": "manifold_8.0.2-1_amd64.deb",
+      "sha1": "3f52c0f7954ff59f7e9795d6e1b8fb121892291b",
+      "sha256": "86fafae25d13969f8cee735aaca042ec22692668469c15393bad69de702d074b",
+      "sha512": "cf684c01021298d3fc19ff79cceb6441d251da3350b4c5294bdcc32a7ad7cc2ff501342c0a03cd40499f2164b26157569ca1481c4d3f573592ef31a77c03fd63",
+      "platform": "ubuntu",
+      "platform_version": "22.04",
+      "arch": "x86_64",
+      "url": "https://storage.googleapis.com/manifold-dist/ubuntu22/manifold_8.0.2-1_amd64.deb"
     }
   }
 }
