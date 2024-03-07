@@ -6,7 +6,17 @@ sidebar_label: Your Account
 
 ## Signing Up
 
-Creating an account is done by clicking the user icon in the top right corner of the screen and selecting the *"Need to sign up?"* link, and you can then enter your name, email, and a password. Alternatively, you can create an account using your existing Facebook, Twitter, or Google credentials if the instance has enabled those connections.
+Creating an account is done by clicking the user icon in the top right corner of the screen and selecting the *Need to sign up?* link, and you can then enter your name, email, and a password. Alternatively, you can create an account using your existing Facebook, Twitter, or Google credentials if the instance has enabled those connections.
+
+## Account Verification
+
+After you’ve first created an account on a Manifold instance, you will receive an email from the system asking you to confirm your email address by clicking on a link in that message.
+
+If you no longer have the email from the system—or if you are an *existing user* who needs to verify for the first time—you can have a new verification email sent. To do so, navigate to the user icon on the far right on the main menu at the top of the screen and select **Edit Profile** from the dropdown. That will open your account’s profile page. At the top of the profile page select the button labeled **Resend Verification Email**. Manifold will then dispatch a new verification link to the email address associated with your account.
+
+:::tip Don’t Sleep on Verifying Your Account!
+You ***need*** to confirm your email address before the system will allow you leave public annotations or comments or create public reading groups. This is true for new users as well as existing users. Until you verify your email you will only be able to make private annotations or create and engage in private reading groups.
+:::
 
 ## Signing In
 

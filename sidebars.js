@@ -19,6 +19,7 @@ module.exports = {
             'administering/backup_restore',
             'administering/troubleshooting',
             'administering/securing_manifold',
+            'administering/spam',
           {
             'Configuring Settings': [
               'administering/configuring/managing_settings',
