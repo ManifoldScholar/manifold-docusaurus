@@ -359,6 +359,10 @@ This field, specific to **Interactive** Resources, provides the system with the 
 https://sketchfab.com/models/c1c94e1f69df45eeae4a0a1d0d27e85b/embed
 ```
 
+#### Allow Fullscreen? and Allow Camera?
+
+These two toggles are only available to **Interactive** Resources. The first, **Allow Fullscreen**, makes it possible for readers to expand the content to the full size of the viewport. The second toggle, **Allow Camera**, gives the resource permission to make use of the user’s system camera.
+
 ### Variants
 
 This sidebar menu only appears for **Image**, **Video**, **Audio**, and **Interactive** Resources. All of the fields in this section anticipate an upload that can be dropped onto the field or selected using your device’s file system by clicking the **Upload a File** link.

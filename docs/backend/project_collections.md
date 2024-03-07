@@ -84,9 +84,11 @@ https://{domain-name}/projects/project-collection/{collection-slug}
 
 If left blank, Manifold will adapt the Collection’s title to suit as the slug.
 
-### Description
+### Description and Short Description
 
-The description is rendered below the Collection title in library views and can be styled with Markdown syntax.
+These two fields provide an opportunity to associate descriptive copy with the Collection. When both are used, text associated with the **Description** field *only* appears on the collection’s homepage, and thus is meant to serve as the full, robust description of the collection. The **Short Description**, alternatively, only appears in library views and is meant to draw a reader in with only a few brief lines. If only one field is supplied with copy, that text will appear in both library views and on the Collection homepage.
+
+Copy associated with the **Description** or **Short Description** renders below the Collection title. Both of these fields accept Markdown syntax.
 
 ### Hero Image and Layout
 
