@@ -134,24 +134,52 @@ If left blank, Manifold will return a `404 Page Not Found` error to readers tryi
 
 Manifold was built, in part, to foster scholarly discussion and interaction. By default, readers can leave public annotations on any Text in an instance. And from those annotations, comment threads can grow as other readers react and respond. If that dynamic is not desirable or appropriate for your instance, you can engage this slider and prevent readers from being able to leave annotations and comments that are generally viewable.
 
-Engaging this setting does not prevent all annotations entirely: readers will still be able to (1) leave private annotations for their own personal use and (2) annotate Texts in the context of Reading Groups, which will be viewable *only* to other members of that group. In both cases, readers will *not* be able to transform those private annotations into public ones.
+Engaging this setting does not prevent all annotations entirely: readers will still be able to (1) leave private annotations for their own personal use and (2) access, join, and annotate Texts in the context of Reading Groups, which will be viewable *only* to other members of that group. In both cases, readers will *not* be able to transform those private annotations into public ones.
 
-So long as this setting is engaged, public Reading Groups will function as if they were private ones.
+So long as this setting is engaged, public Reading Groups will function as if they were private ones. However, users will still be able to access, from the [My Reading Groups View](../../using/reading_groups.md), a listing of previously public Reading Groups and join them.
 
-If you wish to further limit the annotation functionality across your instance, you can also disable Reading Groups (described below). When publishers disable both public annotation and Reading Groups, users will only be able to leave private annotations they alone can see.
+If you wish to further limit the annotation functionality across your instance, you can also either disable all Reading Groups across your instance or you can disable just those Reading Groups that are publicly viewable (the sections below describe more about both of those options). When publishers disable both public annotation and Reading Groups, users will only be able to leave private annotations they alone can see.
 
 :::note
 Disabling public annotations and comments here will affect every Project and Journal Issue in your instance. If you want to instead prevent annotations and comments only for specific Projects (or Issues), you can do so the [settings section](../../backend/projects.md) for that specific record.
 :::
 
-### Disable Reading Groups
+### Disable All Reading Groups
 
 By default, any reader who has an account on your instance can create or join a Reading Group. Reading Groups are a mechanism to band together a discrete collection of readers and the annotations, highlights, and comments they choose to associate with a group. If Reading Groups aren’t desirable or don’t fit with how you’re presenting your instance, you have the options to disable them globally.
 
-With Reading Groups disabled, Readers will no longer be able to create new or join existing Reading Groups. And existing Reading Group annotations, created before this setting was enabled, will no longer be visible to anyone—*including the readers who left those annotations*. When Reading Groups are disabled, the language in various spaces of the interface will change slightly, substituting the word *Group* for *Visibility*.
+When you choose to **Disable All Reading Groups**, users will not be able to create new reading groups, nor will they be able to join or access existing reading groups in any context. Annotations associated with Reading Groups created prior to this setting being toggled on will no longer be accessible to anyone—*including the users who left those annotations*.
 
-If you only want to prevent your readers from leaving public annotations and comments on your instance, then we suggest simply disabling public annotations, described above. That alone will make all Reading Groups function as if they were private Reading Groups, with group activity only accessible to group members.
+Toggling this setting on does not destroy existing Reading Groups or any associated annotations. When this setting is toggled off, those would again become accessible to those who had permission to access them.
+
+When Reading Groups are disabled, the language in various spaces of the interface will change slightly, substituting the word *Group* for *Visibility*.
+
+If you only want to prevent your readers from leaving public annotations and comments on your instance, then we suggest simply disabling public annotations, described above. That alone will make all Reading Groups function as if they were private Reading Groups, with group activity only accessible to group members. Likewise, you can also choose to only disable Public Reading Groups, discussed in more detail in the following section, which prevents new public Reading Groups from being created.
 
 :::note
 Because it is possible for readers to potentially access and engage with materials across your entire instance, Reading Groups do not have direct relationships with specific Projects or Journal Issues. Thus it is not possible to selectively disable Reading Group functionality on a Project-by-Project basis.
+:::
+
+### Disable Public Reading Groups
+
+The title for this option is *slightly* misleading. When the **Disable Public Reading Groups** option is engaged, public Reading Groups will still be available to users who were members of them prior to this toggle being engaged. Any annotations or comments made in the context of those established Reading Groups will likewise be viewable by anyone accessing the site.
+
+However, when this setting is engaged, it will not be possible to create *new* public Reading Groups, nor will it be possible to join pre-existing public reading groups without being invited to do so with an invitation code or URL.
+
+This setting is a means to retain the social aspect of the system while also guarding against SEO spammers and other bad actors from taking advantage of your instance and polluting it with ads or otherwise.
+
+### Disable Spam Detection
+
+This option provides a means to prevent [Akismet](https://akismet.com) from filtering potential spam content on your instance. For instances that are hosted by Manifold Digital Services, where Akismet filtering happens by default, or for self-hosted instances that have configured their instance to filter content through Akismet, this toggle provides a means to temporarily suspend spam checking. When toggled off, any existing Akismet spam filtering will resume.
+
+See the [Mitigating Spam section](../../administering/spam.md) for more about Akismet.
+
+### Akismet API Key
+
+This field expects an API key provided to you by [Akismet](https://akismet.com). If your instance is hosted by Manifold Digital Services, the key value is already present and your site is already filtering content for spam by default.
+
+If you are self-hosting Manifold, and you want to pass content—specifically, all comments, public reading group titles, and public annotations—through Akismet to check for spam, you will need to sign up for an [Akismet plan](https://akismet.com/pricing/). Once you have done so, Akismet will send you an API key via email that you can save here. After you have done so, your instance will begin filtering for spam. For more on securing an API key, see the [Akismet help site](https://akismet.com/support/getting-started/api-key/).
+
+:::note API Limits
+It is important to note that the amount of content that Akismet will filter depends on the Akismet plan you select for your instance and how may API calls per month are allowed through that plan. If your instance makes more calls than the plan you selected from Akismet allows for, filtering will begin to fail silently and spam may appear on your site.
 :::

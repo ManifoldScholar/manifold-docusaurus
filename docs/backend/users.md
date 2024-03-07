@@ -44,8 +44,32 @@ The default user role. When logged in, a Reader can highlight, annotate, comment
 
 **Users** are managed in the backend under the **Records** menu. The search bar accepts typed input to search for specific users and the user list can be paginated through for general browsing. The search bar includes two buttons: **Reset** and **Option.** Clicking **Reset** clears the existing search criteria and **Options** reveals the means to **Filter Results** by the roles described in the previous sections or to **Order Results** alphabetically by last or first name.
 
-The **Add a new user** button opens a drawer from the right that allows Administrators to add a new user to the system, prompting for email address, a user role (Reader is the default), and a first and last name. Manifold will automatically generate a unique password that you can modify. You must complete all fields to create a new account. When the account is created a badge appears at the top of the shelf reading "New user record created." The system automatically dispatches an email welcoming the new user to Manifold along with their login credentials.
+The **Add a new user** button opens a drawer from the right that allows Administrators to add a new user to the system, prompting for email address, a user role (Reader is the default), and a first and last name. Manifold will automatically generate a unique password that you can modify. You must complete all fields to create a new account. When the account is created a badge appears at the top of the shelf reading “New user record created.” The system automatically dispatches an email welcoming the new user to Manifold along with their login credentials.
 
-When you select a User from the list, a shelf opens with options for editing the credentials. The administrator will also have options to **Reset Password**, **Unsubscribe**, or **Delete** the user. **Reset Password** allows the administrator to automatically send the user a new password or set one manually.
+When you select a User from the list, a shelf opens with options for editing their credentials. An administrator will also have the the following button options that they can use to perform actions on the account:
 
-When you delete a User, you receive a warning you must approve, and then a brief banner alert confirming the action.
+<dl>
+  <dt>Admin Verify</dt>
+  <dd>Using this option, Admins can manually verify a user account so that they can engage publicly with annotations and reading groups, even if the user has not verified their email address or they don’t fit into the user-trust model, described in the <a href="../administering/spam">Mitigating Spam section</a>. This option will be particularly useful for when an instance upgrades to v8.1 or later. At that point users who were used to engaging publicly will not be able to do so until they verify their email. This option allows Admins the ability to help alleviate any tensions that may arise from that. When this option is selected the text of the button will change to read <b>Revoke Admin Verification</b>. If selected, the user will no longer be able to engage publicly on the system until they verify their email or satisfy the system’s trust model.</dd>
+  <dt>Unsubscribe</dt>
+  <dd>The <b>Unsubscribe</b> button adjusts all of the user’s notification settings so that they do not receive any email notifications from the system. Users can change their <a href="../walkthroughs/notifications">Notification settings</a> again if they want to start getting messages again in the future.</dd>
+  <dt>Reset Password</dt>
+  <dd>This option resets the user’s existing password. When selected, the system opens a modal with three options: <b>Generate New Password</b>, <b>Set New Password</b>, or <b>Cancel</b>. When <b>Generate New Password</b> is selected, Manifold automatically sends a new, system-generated password directly to the user via email. Conversely, <b>Set New Password</b>, allows the admin to manually input a new password that they can convey to the user outside of the system, via their own email or preferred messaging system.</dd>
+  <dt>Delete</dt>
+  <dd>Deleting a user removes the user account from the system along with all of their annotations, comments, and reading group memberships. Any reading groups the user created will persist without a moderator until assigned a new one by an admin. When this option is selected, you will receive a warning you must approve, and then a brief banner alert confirming the action.</dd>
+</dl>
+
+The user detail panel also provides a user’s trust badges within an rectangle immediately above the **Email** field. When a user is able to engage publicly on the system the box will be green; when they cannot it will be red. In total there are five different badges:
+
+<dl>
+  <dt>Admin verified</dt>
+  <dd>This indicates that the user’s account has been verified by an Admin and is thus able to create public annotations and reading groups.</dd>
+  <dt>Email not confirmed</dt>
+  <dd>This badge will appear until the user verifies their email address. Alone, this does not mean the user cannot engage publicly. The user may be verified by an admin or fall within the trust model.</dd>
+  <dt>Email confirmed (date)</dt>
+  <dd>Once a user confirms their email address this badge will appear followed by the date they verified their email.</dd>
+  <dt>Trusted Account</dt>
+  <dd>An account is considered trusted by the system if the user has an Admin, Editor, Project Creator, or Marketeer role—or if the user has been granted the ability to edit a project in the backend using a project’s Access sidebar options.</dd>
+  <dt>Public engagement disabled</dt>
+  <dd>When a user has not confirmed their email, satisfied the Manifold trust model, or been verified by an Admin, they will not be able to leave public annotations or create public reading groups. When this is the case, this badge will be associated with their account.</dd>
+</dl>
