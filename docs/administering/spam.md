@@ -63,3 +63,58 @@ It is not currently possibly to make use of other spam-filtering services.
 It is important to note that the amount of content that Akismet will filter depends on the Akismet plan you select for your instance and how may API calls per month are allowed through that plan. If your instance makes more calls than the plan you selected from Akismet allows for, filtering will begin to fail silently and spam may appear on your site.
 :::
 
+## Finding and Deleting Spam
+
+It's possible to query records in the database and bulk delete them, which can simplify cleaning up spam. The following instructions offer some starting point for finding and destroying spam using the console.
+
+:::caution
+With great power comes great responsibility. Using the console it is possible to permanently delete records in Manifold or otherwise corrupt stored data. Make sure you have a recent backup before performing console commands and proceed with care. Everything below this warning could potentially destroy data in your instance and cause problems.
+:::
+
+The Manifold API is a Rails Application, and like all rails applications can be interacted with via the console. If Manifold was installed from source, you can shell into the server and navigate to the api directory in the Manifold root. From there you can access a Rails console with `bundle exec rails console`. If Manifold was installed from one of our packages, you can access the rails console with `manifold-api console`.
+
+Once you're in the console, you can execute Ruby code that interacts with the models contained in the API application, which are generally mapped to rows in the database. If you need to clean up data, it should be done through the console rather than by executing SQL queries against the database. If you attempt to clean up data by querying the database directly, you run a greater risk of ending up with inconsistent data because no application validation and callback logic is executed when interacting with the database directly.
+
+Once you're in the console, begin by attempting to select the records that you think are spam and assigning them to a variable. For example, on many instances we have seen spam attacks create public reading groups. Using the console, we can select all public reading groups created between two dates:
+
+```ruby
+groups_to_delete = ReadingGroup.where("privacy = 'public' AND created_at >= '2024-02-19' AND created_at <= '2024-02-20'");
+```
+
+Now that you have the groups you're targeting assigned to a variable, you can count them and make sure that you're targeting the expected number of records:
+```ruby
+groups_to_delete.count
+
+=> 2
+```
+
+Or you can pluck specific columns from the results and review them as a sanity check:
+```ruby
+groups_to_delete.pluck(:name)
+
+=> ["Self-Isolationists", "ENG 2100, Section ABC"]
+```
+
+You can also find out what columns exist on a given model by calling the `column_names` class method on the model.
+```ruby
+ReadingGroup.column_names
+
+=> ["id", "name", "privacy", "invitation_code", "notify_on_join", "creator_id", "created_at", "updated_at", "reading_group_kind_id", "course"]
+```
+
+You can also use full text search on fields to find the groups. In this example, the percentage signs are wildcards.
+```ruby
+groups_to_delete = ReadingGroup.by_keyword("viagra");
+```
+
+Model names in the API are fairly predictable. Users are `User` and Annotations are `Annotation`, for example. For more on querying models, see Rails Documentation on [Active Record Querying](https://guides.rubyonrails.org/active_record_querying.html).
+
+Once you've selected the records that you think are spam, and you've triple checked to make sure you're not going to accidentally delete valid models, you can use the `destroy_all` method to *permanently destroy* these models. It's important that you call `destroy` for a single model and `destroy_all` for a set of models when you want to destroy data because these methods ensure that callbacks are executed. If you are destroying large numbers of records, it will take some time and you will see output scroll across the screen, which is normal.
+
+Here's an example showing how you would select all public reading groups created between Feb 19 and Feb 20, 2024 and then permanently destroy those records:
+```ruby
+groups_to_delete = ReadingGroup.where("privacy = 'public' AND created_at >= '2024-02-19' AND created_at <= '2024-02-20'");
+groups_to_delete.destroy_all
+```
+
+Again, be sure to back up your data before doing this and proceed with caution!
