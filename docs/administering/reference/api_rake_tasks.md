@@ -40,6 +40,18 @@ rake manifold:thumbnails:regenerate:user
 rake manifold:upgrade
 rake manifold:user:create
 rake manifold:user:create:admin
+rake rate_limiting:all:disable # Disable rate-limiters globally
+rake rate_limiting:all:enable # Enable all rate-limiters, clearing any specific category disable states
+rake rate_limiting:comment_creation:disable # Disable rate-limiting for comment creation
+rake rate_limiting:comment_creation:enable # Enable rate-limiting for comment creation
+rake rate_limiting:public_annotation_creation:disable # Disable rate-limiting for public annotation creation
+rake rate_limiting:public_annotation_creation:enable # Enable rate-limiting for public annotation creation
+rake rate_limiting:public_reading_group_creation:disable # Disable rate-limiting for public reading group creation
+rake rate_limiting:public_reading_group_creation:enable # Enable rate-limiting for public reading group creation
+rake rate_limiting:registration:disable # Disable rate-limiting for registration
+rake rate_limiting:registration:enable # Enable rate-limiting for registration
+rake rate_limiting:reset # Reset the cache and all counters for rate limiting
+rake rate_limiting:status # Print the status of rate-limiting settings
 ```
 
 These tasks are mainly used for debugging purposes and maintenance tasks. However, they can also be helpful for automating some tasks on a Manifold instance.
