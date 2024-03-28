@@ -28,7 +28,7 @@ const NavList = ({ className, isMobile, routes }) => {
         </li>
       ))}
       <li className={`${className}__item`}>
-        <Text size="nav">v 8.1.0</Text>
+        <Text size="nav">v 8.1.1</Text>
       </li>
     </ul>
   );
