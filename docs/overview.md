@@ -19,6 +19,6 @@ There are a couple different ways to get help with Manifold.
 
 1. For technical questions, we encourage you to use Github Discussions on our repository. Questions answered in Slack tend to get lost, and if you ask your question on Github, the answer will be available to other users in the future.
 
-## Report an Issue or Request a Feature
+## Report an Issue or Request a Featur
 
 We aren't just making Manifold for us. We're making it for you too. If you find a bug or aren't seeing functionality you need, [we want to know](https://github.com/ManifoldScholar/manifold/issues/new)!
