@@ -46,7 +46,7 @@ Shell into the server as root and download the most recent package.
 
 <Tabs
   groupId="install-type"
-  defaultValue="ubuntu18"
+  defaultValue="ubuntu22"
   values={[
     {label: "Ubuntu22", value: "ubuntu22"},
     {label: "Ubuntu20", value: "ubuntu20"},
@@ -83,7 +83,7 @@ curl -O ${getData("installUrlFor", "centos7")}
 
 <Tabs
   groupId="install-type"
-  defaultValue="ubuntu18"
+  defaultValue="ubuntu22"
   values={[
     {label: "Ubuntu22", value: "ubuntu22"},
     {label: "Ubuntu20", value: "ubuntu20"},

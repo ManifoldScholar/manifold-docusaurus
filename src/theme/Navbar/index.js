@@ -1,14 +1,12 @@
 import React from "react";
 import OriginalNavBar from "@theme-original/Navbar";
 import { useThemeConfig } from "@docusaurus/theme-common";
-import useThemeContext from "@theme/hooks/useThemeContext";
 import Nav from "../../components/global/Nav";
 import HtmlHead from "../HtmlHead";
-import styles from "./styles.module.scss";
+import styles from "./Navbar.module.css";
 
 function NavBar(props) {
   const { mainNav, ...otherProps } = useThemeConfig();
-  const { isDarkTheme } = useThemeContext();
   const { links } = mainNav;
 
   // NavBar is in beta, so we wrap it instead of overwriting it
@@ -18,7 +16,6 @@ function NavBar(props) {
       <Nav
         wrapperClassName={styles.navWrapper}
         routes={links}
-        isDarkTheme={isDarkTheme}
       />
       <OriginalNavBar {...props} />
     </>

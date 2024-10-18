@@ -5,7 +5,7 @@ sidebar_label: Resources
 ---
 
 import Spec from "@theme/Spec";
-const defaultImageFormats = "GIF, JPEG, JPG, PNG";
+export const defaultImageFormats = "GIF, JPEG, JPG, PNG";
 
 :::location
 Resources are specific to and contained within Manifold Projects. Resources are added and managed in the backend through a Project’s **Resource** sidebar.

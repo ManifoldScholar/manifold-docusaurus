@@ -5,7 +5,7 @@ sidebar_label: Resource Collections
 ---
 
 import Spec from "@theme/Spec";
-const defaultImageFormats = "GIF, JPEG, JPG, PNG";
+export const defaultImageFormats = "GIF, JPEG, JPG, PNG";
 
 :::location
 Users logged in as **Admin**, **Editor**, **Marketeer**, **Project Creator**, or a **Reader** with [Editor Permissions](../backend/projects.md#editor-permissions) can create new and modify existing Resource Collections by selecting a Project Thumbnail in the backend and choosing **Resource Collections** from its sidebar.

@@ -7,7 +7,7 @@ sidebar_label: Texts
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import Spec from "@theme/Spec";
-const defaultImageFormats = "GIF, JPEG, JPG, PNG";
+export const defaultImageFormats = "GIF, JPEG, JPG, PNG";
 
 :::location
 To edit a Text, select its parent project in the backend and choose **Texts** from the sidebar. Texts can be edited by any user who can edit the parent Project.

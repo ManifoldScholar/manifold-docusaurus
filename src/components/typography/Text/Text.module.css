@@ -1,0 +1,9 @@
+.text {
+  color: var(--_text-color);
+  font-size: var(--_text-font-size);
+  font-weight: var(--_text-font-weight);
+
+  &--underline {
+    @mixin aUnderline;
+  }
+}

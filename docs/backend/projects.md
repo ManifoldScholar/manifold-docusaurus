@@ -6,7 +6,7 @@ sidebar_label: Projects
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import Spec from "@theme/Spec";
-const defaultImageFormats = "GIF, JPEG, JPG, PNG";
+export const defaultImageFormats = "GIF, JPEG, JPG, PNG";
 
 :::location
 The Project detail views discussed in this section are accessed by selecting a Project from a list or library view while in the Manifold Backend.
