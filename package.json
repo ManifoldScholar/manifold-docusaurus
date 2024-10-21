@@ -2,6 +2,10 @@
   "name": "manifold-docusaurus",
   "version": "0.0.0",
   "private": true,
+  "engines": {
+    "node": "21.x"
+  },
+  "packageManager": "yarn@4.5.0",
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
@@ -47,9 +51,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "engines": {
-    "node": ">=21.0"
-  },
-  "packageManager": "yarn@4.5.0"
+  }
 }

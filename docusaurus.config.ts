@@ -37,6 +37,7 @@ const config: Config = {
   favicon: "favicon/favicon.svg",
   organizationName: "ManifoldScholar",
   projectName: "manifold-docusaurus",
+  trailingSlash: false,
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   plugins: [
