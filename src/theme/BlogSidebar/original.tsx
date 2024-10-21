@@ -8,7 +8,9 @@ import React from "react";
 import clsx from "clsx";
 import Link from "@docusaurus/Link";
 import styles from "./styles.module.css";
-export default function BlogSidebar({ sidebar }: any) {
+import type {Props} from '@theme/BlogSidebar';
+
+export default function BlogSidebar({ sidebar }: Props) {
   if (sidebar.items.length === 0) {
     return null;
   }

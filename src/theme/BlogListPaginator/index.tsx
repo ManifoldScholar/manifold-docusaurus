@@ -6,8 +6,9 @@
  */
 import React from "react";
 import PaginationLink from "../PaginationLink";
+import type {Props} from '@theme/BlogListPaginator';
 
-function BlogListPaginator(props: any) {
+function BlogListPaginator(props: Props) {
   const { metadata } = props;
   const {
     previousPage,

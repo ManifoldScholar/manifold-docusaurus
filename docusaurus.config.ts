@@ -213,10 +213,11 @@ const config: Config = {
       ],
     },
     ...(algolia.appId ? { algolia } : {}),
-    prism: {
-      theme: prismThemes.github,
-      darkTheme: prismThemes.dracula,
-    },
+    // https://docusaurus.io/docs/markdown-features/code-blocks#theming
+    // prism: {
+    //   theme: prismThemes.github,
+    //   darkTheme: prismThemes.dracula,
+    // },
   } satisfies Preset.ThemeConfig,
   customFields: {
     data,

@@ -18,6 +18,7 @@
   --ifm-color-location: #affadd;
   --ifm-color-note: var(--neutral10);
   --ifm-alert-border-left-width: 1px;
+  --ifm-code-background: rgb(246, 247, 248);
 
   border: var(--ifm-alert-border-left-width) solid;
   margin-bottom: var(--padding-sm);
@@ -30,6 +31,12 @@
     --ifm-color-warning: #ffbd61;
     --ifm-color-danger: #ffb3b3;
     --ifm-color-location: var(--green);
+    --ifm-code-background: rgb(51, 52, 55);
+    --ifm-code-color: rgb(245, 246, 247);
+  }
+
+  code {
+    color: var(--ifm-code-color);
   }
 
   [class^="admonitionIcon"] {

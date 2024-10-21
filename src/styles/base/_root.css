@@ -130,11 +130,14 @@
   --ifm-color-content-inverse: var(--neutral05);
   --ifm-color-content-secondary: var(--neutral75);
   --ifm-font-family-base: sofia-pro, system-ui, sans-serif;
-  --ifm-code-font-size: 95%;
   --ifm-h1-font-size: 2.125rem;
   --ifm-line-height-base: 1.5;
   --ifm-link-color: var(--ifm-color-primary-darker);
   --ifm-heading-font-weight: var(--font-weight-medium);
+  
+  /* Code blocks */
+  --ifm-code-font-size: 95%;
+  --ifm-code-padding-horizontal: 0.3rem;
 
   /* Tabs */
   --ifm-tabs-color-active: var(--ifm-color-content);

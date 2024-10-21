@@ -6,8 +6,9 @@
  */
 import React from "react";
 import PaginationLink from "../PaginationLink";
+import type {Props} from '@theme/BlogPostPaginator';
 
-function BlogPostPaginator(props: any) {
+function BlogPostPaginator(props: Props) {
   const { nextItem, prevItem } = props;
 
   return (
