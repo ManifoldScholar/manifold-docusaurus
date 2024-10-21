@@ -6,6 +6,8 @@ title: "Fall 2021 Accessibility Sprint!"
 
 At Manifold, we treat accessibility as a top-tier concern. Our developers at [Cast Iron Coding](https://castironcoding.com/) are accessibility experts who design and develop the application with accessible functionality foremost in mind. In addition to the extensive testing they do in-house using screen-readers and browser add-ons, we’ve had the benefit of collaborating with the University of Washington’s [library](https://www.lib.washington.edu/), [press](https://uwapress.uw.edu/), and [accessibility office](https://www.washington.edu/doit/accessible-technology-services-0) over the past three years. The Washington team has performed an ongoing audit of Manifold over that time, and our two groups meet regularly to discuss new ideas and strategies for making the application even more performant for readers and content creators using assistive technologies. 
 
+<!--truncate-->
+
 Born out of this collaboration, we have recently been engaged in an accessibility sprint that has involved the following:
 
 1. We reworked the user notification preferences interface for better screen reader UX. Dana’s [extended commit message](https://github.com/ManifoldScholar/manifold/pull/3079/commits/0aad0424cd0235f7fe6346775f9d3b02339258cf) on this issue is indicative the care and expertise we bring to accessibility concerns.
