@@ -17,7 +17,7 @@ jobs:
           node-version-file: "package.json"
           cache: "yarn"
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: yarn install --immutable
       - name: Test Build
         env:
           ALGOLIA_API_KEY: ${{ secrets.ALGOLIA_API_KEY }}
@@ -57,6 +57,6 @@ jobs:
         run: |
           git config --global user.email "actions@gihub.com"
           git config --global user.name "gh-actions"
-          yarn install --frozen-lockfile
+          yarn install --immutable
           yarn build
           npx docusaurus deploy
