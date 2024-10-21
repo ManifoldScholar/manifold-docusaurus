@@ -387,7 +387,7 @@ Okay, at this point you have a Word file that is ready to go. If you have a Glob
 
 ## 2. Loading Texts
 
-In the coming months, we plan on writing a walkthrough specific to loading texts. In the meantime, our standard documentation for [**Adding Texts**]../../backend/texts.md#adding-texts) to a project will hopefully suffice.
+In the coming months, we plan on writing a walkthrough specific to loading texts. In the meantime, our standard documentation for [**Adding Texts**]../../backend/texts.md#creating-new-texts) to a project will hopefully suffice.
 
 The main takeaways, beyond the actual process described there, are that you need to have access to the Manifold backend and the proper credentials to edit the project to which you want to load the text. After that, it’s really not much more than finding the right screen and selecting the Word file you’ve now worked so hard on, to load.
 
