@@ -7,8 +7,6 @@ The Manifold Team is delighted to announce the six publishers who will be joinin
 
 This international group takes Manifold in bold new directions, and includes two renowned art museums; an association for cultural studies and digital collection research; a digital magazine that unites the best of the university with the openness of the internet; a scholarly journal of film, media and digital culture; and a network of open education advocates.
 
-<!--truncate-->
-
 Please join us in welcoming them to the Manifold community:
 
 - [Apparatus Journal](https://www.apparatusjournal.net/index.php/apparatus)

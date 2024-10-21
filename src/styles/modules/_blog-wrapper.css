@@ -4,10 +4,14 @@
     padding-top: var(--blog-wrapper-top-padding);
 
     > .container{
-      max-inline-size: 100vw;
+      /* max-inline-size: 100vw; */
 
       > .row {
         justify-content: center;
+
+        &:has(main + div) {
+          justify-content: end;
+        }
       }
     }
   }
