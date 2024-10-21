@@ -1,0 +1,68 @@
+:root {
+  --ifm-alert-padding-vertical: 18px;
+  --ifm-alert-padding-horizontal: 22px;
+  --ifm-alert-color: var(--ifm-color-content);
+
+  --ifm-color-info: var(--light-blue);
+  --ifm-color-success: var(--light-green);
+  --ifm-color-warning: #ffddab;
+  --ifm-color-danger: var(--light-salmon);
+  --ifm-color-important: var(--light-teal);
+}
+
+.theme-admonition {
+  --ifm-alert-color: var(--ifm-color-content);
+  --ra-admonition-icon-color: var(--ifm-alert-color);
+  /* Set different colors for admonitions */
+  --ifm-color-tip: var(--light-yellow);
+  --ifm-color-location: #affadd;
+  --ifm-color-note: var(--neutral10);
+  --ifm-alert-border-left-width: 1px;
+
+  border: var(--ifm-alert-border-left-width) solid;
+  margin-bottom: var(--padding-sm);
+
+  html[data-theme="dark"] & {
+    background-color: transparent;
+    --ifm-color-note: var(--neutral40);
+    --ifm-color-tip: #f5f57f;
+    --ifm-color-info: #96dcff;
+    --ifm-color-warning: #ffbd61;
+    --ifm-color-danger: #ffb3b3;
+    --ifm-color-location: var(--green);
+  }
+
+  [class^="admonitionIcon"] {
+    display: inline-block;
+    margin-right: 12px;
+    height: 20px;
+    width: 20px;
+  
+    > svg {
+      /* overwrite their SVG */
+      display: none;
+    }
+  }
+
+  [class^="admonitionHeading"]:not(:last-child) {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing-uppercase);
+    line-height: var(--line-height-uppercase);
+    font-size: var(--font-size-uppercase);
+    margin-bottom: 12px;
+  }
+}
+
+@mixin setAdmonition location, location;
+@mixin setAdmonition note, note;
+@mixin setAdmonition info, info;
+@mixin setAdmonition important, important;
+@mixin setAdmonition tip, tip;
+@mixin setAdmonition caution, warning;
+@mixin setAdmonition danger, danger;
+
+.theme-admonition-content {
+  margin-bottom: 5px;
+}

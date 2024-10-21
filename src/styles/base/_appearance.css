@@ -1,0 +1,13 @@
+svg {
+  fill: currentColor;
+}
+
+*:focus-visible {
+  outline-color: var(--ifm-color-primary);
+}
+
+button,
+input {
+  font-family: inherit;
+  font-size: inherit;
+}

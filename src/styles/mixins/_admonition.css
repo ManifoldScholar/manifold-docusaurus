@@ -1,0 +1,33 @@
+@define-mixin setAdmonition $name, $color {
+  .theme-admonition-$(name) {
+    --ra-admonition-background-color: var(--ifm-color-$(color)) !important;
+    --ra-admonition-border-color: var(--ifm-color-$(color)) !important;
+    --ra-admonition-color: currentColor;
+
+    background-color: var(--ra-admonition-background-color);
+    border-color: var(--ra-admonition-border-color);
+
+    html[data-theme="dark"] & {
+      --ra-admonition-color: var(--ifm-color-$(color));
+      --ra-admonition-icon-color: var(--ifm-color-$(color));
+      color: var(--ra-admonition-color);
+    }
+
+    [class^="admonitionIcon"] {
+      /* Use mask to change color of data svg */
+      mask: var(--icon-$(name));
+      mask-size: contain;
+      mask-repeat: no-repeat;
+      mask-position: center;
+      background-color: var(--ra-admonition-color);
+    }
+  }
+}
+
+@define-mixin maskIcon $icon, $color {
+  mask: var(--icon-$(icon));
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  background-color: var($(color), currentColor);
+}

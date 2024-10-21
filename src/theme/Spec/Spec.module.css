@@ -1,0 +1,119 @@
+:root {
+  --table-title-background: #f7f7f7;
+  --table-cell-padding: 15px 24px 20px;
+  --table-border-color: var(--neutral45);
+  --table-border-radius: var(--border-radius-sm);
+  --ifm-table-stripe-background: var(--table-title-background);
+}
+
+html[data-theme="dark"] {
+  --table-title-background: var(--dark-gray);
+  --table-border-color: #979797;
+}
+
+.specContainer {
+  margin-bottom: var(--padding-sm);
+  border: 1px solid var(--table-border-color);
+  border-radius: var(--table-border-radius);
+  overflow: hidden;
+
+  /* Reset tables */
+  table {
+    display: table;
+    width: 100%;
+    border: none;
+    border-collapse: collapse;
+    margin: 0;
+  }
+
+  tr {
+    border: none;
+  }
+
+  thead th,
+  th,
+  td {
+    background-color: inherit;
+    border: none;
+    text-align: left;
+    white-space: pre-wrap;
+    padding: var(--table-cell-padding);
+    vertical-align: top;
+  }
+}
+
+.specTitleWrapper {
+  border-top-left-radius: var(--table-border-radius);
+  border-top-right-radius: var(--table-border-radius);
+  background: var(--table-title-background);
+  padding: var(--table-cell-padding);
+  text-align: left;
+  border-bottom: 1px solid var(--table-border-color);
+}
+
+.specTitle {
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-uppercase);
+  line-height: var(--line-height-uppercase);
+  font-size: var(--font-size-uppercase);
+  font-weight: var(--ifm-heading-font-weight);
+}
+
+.specSubtitle {
+  text-transform: none;
+  display: block;
+  font-style: italic;
+}
+
+.specContent {
+  thead th {
+    background-color: var(--table-title-background);
+  }
+
+  tr {
+    border-bottom: 1px solid var(--table-border-color);
+  }
+
+  tbody tr:last-child {
+    border-bottom: none;
+  }
+
+  p {
+    padding: var(--table-cell-padding);
+    margin-bottom: 0;
+
+    &:not(:last-child) {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.specTable {
+  overflow-x: auto;
+
+  table {
+    tr {
+      border: none;
+
+      &:not(:first-child) th,
+      &:not(:first-child) td {
+        padding-top: 0;
+      }
+
+      &:nth-child(2n) {
+        background-color: inherit;
+      }
+    }
+
+    th {
+      font-weight: var(--ifm-heading-font-weight);
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    td {
+      width: 100%;
+      padding-left: 0;
+    }
+  }
+}

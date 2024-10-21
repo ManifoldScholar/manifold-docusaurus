@@ -8,9 +8,9 @@ Beginning with version 8.0, Manifold is compliant with the expectations of the E
 
 When first navigating to an instance, a banner will display across the bottom of the page, prompting users to choose which, if any, tracking cookies they want to allow. Two options are provided: **Accept All** and **Settings**.
 
-If **Accept All** is chosen, Manifold will set tokens locally in the user’s browser as a means to report anonymized [internal analytics information](../docs/backend/analytics.md) about what pages users access and how much time they spend on those pages. There is no personally identifiable information stored in relation to this usage data. For those users who have credentials to access the Manifold backend, the aggregated usage data is displayed in the various Analytics views therein.
+If **Accept All** is chosen, Manifold will set tokens locally in the user’s browser as a means to report anonymized [internal analytics information]../backend/analytics.md) about what pages users access and how much time they spend on those pages. There is no personally identifiable information stored in relation to this usage data. For those users who have credentials to access the Manifold backend, the aggregated usage data is displayed in the various Analytics views therein.
 
-The **Accept All** option also allows instances that have [configured Google Analytics](../docs/administering/configuring/integration_settings.md) to run on the site the ability for Google to record the user’s anonymized interactions with the instance. Site administrators can access analytics that Google records in the [Google Analytics property](https://analytics.google.com/analytics/web/#/) they set up for integration with the instance.
+The **Accept All** option also allows instances that have [configured Google Analytics]../administering/configuring/integration_settings.md) to run on the site the ability for Google to record the user’s anonymized interactions with the instance. Site administrators can access analytics that Google records in the [Google Analytics property](https://analytics.google.com/analytics/web/#/) they set up for integration with the instance.
 
 If **Settings** is selected, the ribbon transforms into a more detailed view that allows a user to explicitly select, via check box, the option for either Internal or Google Analytics, for those instances that have integrated with Google Analytics. Once satisfied with their selection, users can click the **Accept** button to proceed to the instance. Alternatively, users can opt to ignore the check boxes and instead select the **Decline All** button, which will allow them to enter the site without having any information about their activity reported back to either Manifold or Google.
 
@@ -23,7 +23,7 @@ That said, when you create a highlight, annotate a text, or add a comment, Manif
 :::
 
 :::tip Options for Admin Users
-Users with Administrator accounts can adjust the language displayed to users in the views described here. The fields to adjust them can be found at the bottom of the [Theme Settings](../docs/administering/configuring/theme_settings.md) section of the Manifold backend under the **Content** heading.
+Users with Administrator accounts can adjust the language displayed to users in the views described here. The fields to adjust them can be found at the bottom of the [Theme Settings]../administering/configuring/theme_settings.md) section of the Manifold backend under the **Content** heading.
 
 The aim would not be to change the facts of how the system works but instead to adjust the tone of the messaging to match to your instance’s voice, as well as to provide you the opportunity to adjust the amount of context you may want to provide.
 :::

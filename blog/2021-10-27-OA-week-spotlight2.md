@@ -7,6 +7,8 @@ title: "OA Week 2021 Project Spotlight 2"
 
 As part of [Open Access Week](http://www.openaccessweek.org/), Manifold is featuring interviews with the creators of exemplary projects that use Manifold's capabilities to the fullest. Our second installment in this series is [The Greater Chaco Landscape](http://read.upcolorado.com/projects/the-greater-chaco-landscape). We interviewed Darrin Pratt, director of the University Press of Colorado, about this amazing project. 
 
+<!--truncate-->
+
 ## How did the project come together? Who was involved?
 
 The Greater Chaco Landscape originated with a seminar held at Crow Canyon Archaeological Center in August 2017. This seminar brought together academics and Native scholars from the tribal communities who have a vested interest in Chaco Canyon to address "potential conflicts between energy development and Chacoan archaeology across the San Juan Basin.” Individual seminar presentations, which provided the underpinnings for the volume’s written chapters, were filmed, and after the initial seminar, Durango filmmaker Larry Ruiz recorded additional footage—at Chaco Canyon itself—of Acoma (Haaku), Diné (Navajo), Hopi, and A:shiwi (Zuni) tribal elders and scholars talking about the significance of Chaco to their people. The seminar, filmmaking, and book production were funded by the National Park Service and organized by Steve Lekson (University of Colorado Boulder), Ruth Van Dyke (University of Binghamton) and Carrie Heitman (University of Nebraska). Ruth Van Dyke and Carrie Heitman served as the volume editors for both the online and print editions of the book.

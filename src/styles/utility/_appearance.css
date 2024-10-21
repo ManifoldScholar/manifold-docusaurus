@@ -1,0 +1,127 @@
+/* Appearance
+--------------------
+
+Appearance classes contain primarily texture parameters: background-color, transparency, borders, etc.
+Appearance classes can define a CSS variable for all children, such as --secondary-color
+These should be limited to appearance-related properties only. */
+
+
+.a-bg-white {
+  @mixin aBgColor white;
+}
+
+.a-bg-neutral10 {
+  @mixin aBgColor neutral10;
+}
+
+.a-bg-neutral05 {
+  @mixin aBgColor neutral05;
+}
+
+.a-bg-neutral92 {
+  @mixin aBgColor neutral92;
+}
+
+.a-bg-dark-gray {
+  @mixin aBgColor dark-gray;
+}
+
+.a-bg-black {
+  @mixin aBgColor black;
+}
+
+.a-bg-blue {
+  @mixin aBgColor blue;
+}
+
+.a-bg-green {
+  @mixin aBgColor green;
+}
+
+.a-bg-orange {
+  @mixin aBgColor orange;
+}
+
+.a-bg-purple {
+  @mixin aBgColor purple;
+}
+
+.a-bg-salmon {
+  @mixin aBgColor salmon;
+}
+
+.a-bg-teal {
+  @mixin aBgColor teal;
+}
+
+.a-bg-yellow {
+  @mixin aBgColor yellow;
+}
+
+.a-bg-light-blue {
+  @mixin aBgColor blue;
+}
+
+.a-bg-light-green {
+  @mixin aBgColor green;
+}
+
+.a-bg-light-orange {
+  @mixin aBgColor orange;
+}
+
+.a-bg-light-purple {
+  @mixin aBgColor purple;
+}
+
+.a-bg-light-salmon {
+  @mixin aBgColor salmon;
+}
+
+.a-bg-light-teal {
+  @mixin aBgColor teal;
+}
+
+.a-bg-light-yellow {
+  @mixin aBgColor yellow;
+}
+
+.a-bg-blue50 {
+  @mixin aBgColor bg-blue50;
+}
+
+.a-bg-green50 {
+  @mixin aBgColor green50;
+}
+
+.a-bg-orange50 {
+  @mixin aBgColor orange50;
+}
+
+.a-bg-purple50 {
+  @mixin aBgColor purple50;
+}
+
+.a-bg-salmon50 {
+  @mixin aBgColor salmon50;
+}
+
+.a-bg-teal50 {
+  @mixin aBgColor teal50;
+}
+
+.a-bg-yellow50 {
+  @mixin aBgColor yellow50;
+}
+
+[class*="a-bg-"] {
+  background-color: var(--background-color);
+}
+
+.a-color-secondary {
+  color: var(--color-secondary);
+}
+
+.a-hidden {
+  @mixin aHidden;
+}

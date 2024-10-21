@@ -7,7 +7,7 @@ sidebar_label: Journals
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import Spec from "@theme/Spec";
-const defaultImageFormats = "GIF, JPEG, JPG, PNG";
+export const defaultImageFormats = "GIF, JPEG, JPG, PNG";
 
 :::location
 The Journals detail views discussed in this section are accessed from the Manifold backend by selecting **Journals** from the main menu.

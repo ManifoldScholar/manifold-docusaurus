@@ -24,7 +24,7 @@ The Manifold menu is also where readers access their profiles, notification sett
 
 ### Home
 
-The default landing page (or Home page) for an instance is highly configurable. The page is made up of the Manifold menu, an optional Feature section, a library view of Projects, followed by a navigation menu and the instance Footer. The Feature and Footer sections are beyond the scope of this page and are considered, respectively, in the [Features](../docs/backend/features.md) and [Footer](../docs/administering/configuring/properties.md#footer) documentation.
+The default landing page (or Home page) for an instance is highly configurable. The page is made up of the Manifold menu, an optional Feature section, a library view of Projects, followed by a navigation menu and the instance Footer. The Feature and Footer sections are beyond the scope of this page and are considered, respectively, in the [Features]../backend/features.md) and [Footer]../administering/configuring/properties.md#footer) documentation.
 
 Out of the box, the library view on the Home page displays a maximum of sixteen Projects, ordered alphabetically by title under a heading that reads “Our Projects.” 
 

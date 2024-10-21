@@ -6,12 +6,12 @@ sidebar_label: Projects
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import Spec from "@theme/Spec";
-const defaultImageFormats = "GIF, JPEG, JPG, PNG";
+export const defaultImageFormats = "GIF, JPEG, JPG, PNG";
 
 :::location
 The Project detail views discussed in this section are accessed by selecting a Project from a list or library view while in the Manifold Backend.
 
-Users with **Admin**, **Editor**, or **Marketeer** roles can edit any Project in an instance. **Project Creators** can edit only Projects they’ve created. Users with the default **Reader** role don’t have access to the backend by default but can be given permission to specific Projects on a one-off basis (see [Users](../backend/users.md) and [Managing Access](../backend/projects.md#managing-access)).
+Users with **Admin**, **Editor**, or **Marketeer** roles can edit any Project in an instance. **Project Creators** can edit only Projects they’ve created. Users with the default **Reader** role don’t have access to the backend by default but can be given permission to specific Projects on a one-off basis (see [Users](../backend/users.md) and [Managing Access](../backend/projects.md#access)).
 :::
 
 ## What is a Project?
