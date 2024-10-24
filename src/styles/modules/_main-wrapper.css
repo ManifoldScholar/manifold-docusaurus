@@ -4,7 +4,8 @@
 
   > div {
     background-color: var(--ifm-background-color);
-    max-width: calc(
+    inline-size: 100%;
+    max-inline-size: calc(
       var(--l-container-max) + (var(--ifm-spacing-horizontal) * 2)
     );
     margin: 0 auto;
