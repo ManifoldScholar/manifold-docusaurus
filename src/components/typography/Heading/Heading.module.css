@@ -1,0 +1,21 @@
+.heading {
+  --underline-color: var(--color-secondary);
+  color: var(--_heading-color);
+  font-weight: var(--_heading-font-weight);
+  font-size: var(--_heading-font-size);
+
+  > span {
+    color: var(--_heading-span-color);
+  }
+
+  &--underline {
+    @mixin aUnderline;
+  }
+
+  &--uppercase {
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing-uppercase-narrow);
+    line-height: var(--line-height-uppercase);
+    font-size: var(--font-size-uppercase);
+  }
+}

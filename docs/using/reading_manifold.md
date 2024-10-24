@@ -65,7 +65,7 @@ Selecting Twitter opens a pop-up window where you can compose a new Tweet. If yo
 Included with your Tweet will be a card with a description of the Project with a thumbnail based off the Project’s hero image.
 
 :::note
-For the Twitter option to appear, the publisher needs to configure their instance to integrate with Twitter, as described in the [Integration Settings](../administering/configuring/integration_settings.md#twitter-oauth) section.
+For the Twitter option to appear, the publisher needs to configure their instance to integrate with Twitter, as described in the [Integration Settings](../administering/configuring/integration_settings.md#facebook-and-twitter) section.
 :::
 
 #### Facebook
@@ -73,7 +73,7 @@ For the Twitter option to appear, the publisher needs to configure their instanc
 Selecting Facebook opens a pop-up window where you can compose a new Facebook post. If you are already logged in to your Facebook account, it will automatically populate your post with a card describing the project alongside a thumbnail based off the Project’s hero image.
 
 :::note
-For the Facebook option to appear, the publisher needs to configure their instance to integrate with Facebook, as described in the [Integration Settings](../administering/configuring/integration_settings.md#facebook-oauth) section.
+For the Facebook option to appear, the publisher needs to configure their instance to integrate with Facebook, as described in the [Integration Settings](../administering/configuring/integration_settings.md#facebook-and-twitter) section.
 :::
 
 ### Resources

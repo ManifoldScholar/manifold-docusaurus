@@ -1,0 +1,21 @@
+.link {
+  display: inline-flex;
+  align-items: center;
+  line-height: 2rem;
+  transition: background-color 0.2s ease-in;
+  font-size: var(--_link-font-size);
+  @mixin aBackgroundUnderline;
+
+  @mixin reducedMotion {
+    transition: none;
+  }
+
+  &:hover,
+  &[data-selected="true"] {
+    background-size: 100% 2px;
+  }
+
+  > * + * {
+    margin-left: 10px;
+  }
+}

@@ -58,7 +58,7 @@ Most likely you have your HTML file saved in a folder with all your other relate
 
 #### 3. Multiple Files with or without Assets
 
-Is your situation one where you have multiple HTML files that you want to load into Manifold at once, each file a piece (chapter, essay, etc.) of a single whole? If so, then what you have before you is a “Manifest” ingest, described in detail in the **[Create a Manifest Ingest](../docs/../walkthroughs/manifest.md)** walkthrough. 
+Is your situation one where you have multiple HTML files that you want to load into Manifold at once, each file a piece (chapter, essay, etc.) of a single whole? If so, then what you have before you is a “Manifest” ingest, described in detail in the **[Create a Manifest Ingest]../../walkthroughs/manifest.md)** walkthrough. 
 
 If, however, you have multiple HTML files that are related but not meant to stand as a single, cohesive Text, then one of the two options described in the sections above are your solution. Presently there is no means to bulk load separate Texts into Manifold in one go.
 
@@ -233,7 +233,7 @@ Note that many of these attributes shown here, like width and height and title, 
 
 Manifold was built to support a wide array of users, from publishing professionals to those who are publishing to fulfill the needs of their non-publishing profession. Because of that, Manifold tries to provide some boundaries for content that is being brought into the system at the time of ingest to ensure it presents as prettily as possible for your readers.
 
-More specifically, Manifold ignores certain style selectors (detailed toward the end of the [Styles section](../backend/texts.md#styles) of the Project page) that may be present in your CSS. If that is the case, you aren’t entirely out of luck. For the following selectors, you can [add a stylesheet to your text](../docs/../backend/texts.md#styles) that targets those selectors and which Manifold will accept.
+More specifically, Manifold ignores certain style selectors (detailed toward the end of the [Styles section](../backend/texts.md#styles) of the Project page) that may be present in your CSS. If that is the case, you aren’t entirely out of luck. For the following selectors, you can [add a stylesheet to your text]../../backend/texts.md#styles) that targets those selectors and which Manifold will accept.
 
 - `line-height`
 - `font-size`
