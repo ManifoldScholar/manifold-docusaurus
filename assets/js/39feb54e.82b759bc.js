@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmanifold_docusaurus=self.webpackChunkmanifold_docusaurus||[]).push([[3218],{46719:a=>{a.exports=JSON.parse('{"metadata":{"permalink":"/manifold-docusaurus/blog/page/7","page":7,"postsPerPage":10,"totalPages":7,"totalCount":69,"previousPage":"/manifold-docusaurus/blog/page/6","blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
