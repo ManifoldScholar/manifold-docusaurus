@@ -14,7 +14,7 @@ Only users logged in with **Admin** credentials can access this view.
 
 **Users** refer to those who are actively engaging with content on a Manifold instance—reading, annotating, following projects, managing an instance, creating new projects, or managing existing ones. User accounts are made when someone first signs up to an instance or when an existing Administrator creates an account on their behalf.
 
-User accounts are “global roles.” The permissions these roles bestow, as described here,  function across an entire Manifold instance. It is also possible to extend similar permissions at the individual project level via “scoped roles” described in the [Managing Access](../../docs/backend/projects.md#managing-access) section.
+User accounts are “global roles.” The permissions these roles bestow, as described here,  function across an entire Manifold instance. It is also possible to extend similar permissions at the individual project level via “scoped roles” described in the [Managing Access](../../docs/backend/projects.md#access) section.
 
 ## User Roles
 
@@ -38,7 +38,7 @@ This role allows enables a user to manage their own Projects, Journals, and Issu
 
 ### Reader
 
-The default user role. When logged in, a Reader can highlight, annotate, comment, make use of sharing functionalities, customize email notifications, and create or join Reading Groups. Readers don’t have native access to the backend in any capacity, but they can be scoped permissions to perform certain actions in the backend. Readers can also be classified as Project or Issue authors, which distinguishes their interactions with Texts from other readers. See [Managing Access](../../docs/backend/projects.md#managing-access).
+The default user role. When logged in, a Reader can highlight, annotate, comment, make use of sharing functionalities, customize email notifications, and create or join Reading Groups. Readers don’t have native access to the backend in any capacity, but they can be scoped permissions to perform certain actions in the backend. Readers can also be classified as Project or Issue authors, which distinguishes their interactions with Texts from other readers. See [Managing Access](../../docs/backend/projects.md#access).
 
 ## Managing Users
 
