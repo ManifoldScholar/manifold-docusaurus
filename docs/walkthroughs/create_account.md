@@ -50,4 +50,4 @@ If there are no options to log in with your Google, Facebook, or Twitter credent
 
 ## Next Steps
 
-Now that you have an account you may want to configure your [Notification Settings]../walkthroughs/notifications.md), [Annotate a Text]../walkthroughs/annotating.md), or [Join a Reading Group]../walkthroughs/join_rg.md).
+Now that you have an account you may want to configure your [Notification Settings](../docs/walkthroughs/notifications.md), [Annotate a Text](../docs/walkthroughs/annotating.md), or [Join a Reading Group](../docs/walkthroughs/join_rg.md).

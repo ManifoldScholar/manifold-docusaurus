@@ -1,0 +1,41 @@
+:root {
+  /* ifm overrides */
+  --ifm-background-color: var(--white);
+  --ifm-color-primary: var(--green);
+  --ifm-color-primary-dark: #17996e;
+  --ifm-color-primary-darker: #077a57;
+  --ifm-color-primary-darkest: #005e40;
+  --ifm-color-primary-light: rgb(70, 203, 174);
+  --ifm-color-primary-lighter: rgb(102, 212, 189);
+  --ifm-color-primary-lightest: rgb(146, 224, 208);
+
+  --ifm-color-secondary: var(--neutral10);
+
+  /* ifm containers */
+  --ifm-container-width: calc(
+    (var(--l-container-max) - var(--doc-sidebar-width)) +
+      (var(--ifm-spacing-horizontal) * 2)
+  );
+  --ifm-spacing-horizontal: 36px;
+  --doc-sidebar-width: 270px;
+
+  /* ifm typography */
+  --ifm-color-content: var(--neutral90);
+  --ifm-color-content-inverse: var(--neutral05);
+  --ifm-color-content-secondary: var(--neutral75);
+  --ifm-font-family-base: sofia-pro, system-ui, sans-serif;
+  --ifm-code-font-size: 95%;
+  --ifm-h1-font-size: 2.125rem;
+  --ifm-line-height-base: 1.5;
+  --ifm-link-color: var(--ifm-color-primary-darker);
+  --ifm-heading-font-weight: var(--font-weight-medium);
+}
+
+html[data-theme="dark"] {
+  --ifm-background-color: var(--black);
+  --ifm-color-secondary: var(--neutral40);
+
+  --ifm-color-content: var(--neutral05);
+  --ifm-color-content-inverse: var(--neutral90);
+  --ifm-color-content-secondary: var(--neutral30);
+}

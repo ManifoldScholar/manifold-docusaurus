@@ -5,7 +5,7 @@ sidebar_label: Theme Settings
 ---
 
 import Spec from "@theme/Spec";
-export const defaultImageFormats = "GIF, JPEG, JPG, PNG";
+const defaultImageFormats = "GIF, JPEG, JPG, PNG";
 
 :::location
 The fields discussed in this section can be accessed from the Manifold backend by selecting **Settings** from the main menu and then **Theme** in the submenu.

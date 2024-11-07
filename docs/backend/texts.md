@@ -7,7 +7,7 @@ sidebar_label: Texts
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import Spec from "@theme/Spec";
-export const defaultImageFormats = "GIF, JPEG, JPG, PNG";
+const defaultImageFormats = "GIF, JPEG, JPG, PNG";
 
 :::location
 To edit a Text, select its parent project in the backend and choose **Texts** from the sidebar. Texts can be edited by any user who can edit the parent Project.
@@ -115,7 +115,7 @@ When the **Save New Text** button is selected, the new text will appear in the l
 
 ### Text Categories
 
-Text Categories are a grouping mechanism for Texts. Categories can be configured to display in a variety of ways or used as filters in Texts Content Blocks on Project landing pages (see [Layout](../backend/projects.md#texts-block)).
+Text Categories are a grouping mechanism for Texts. Categories can be configured to display in a variety of ways or used as filters in Texts Content Blocks on Project landing pages (see [Layout](../backend/projects.md#texts)).
 
 Within the Manifold Reader, Category titles appear in a yellow ribbon at the bottom of the page for member Texts. Category ribbons do not appear for uncategorized Texts or Texts with the **Published?** field toggled on (see [Editing a Text](../backend/texts.md#published)).
 
@@ -284,7 +284,7 @@ It is *not possible* to remove or adjust the word *Next* from that heading.
 
 #### Ignore Access Restrictions?
 
-Restricted Access Projects require entitlements to view any of their content that doesn’t immediately render on the Project landing page (see [Managing Access](../backend/projects.md#access)).
+Restricted Access Projects require entitlements to view any of their content that doesn’t immediately render on the Project landing page (see [Managing Access](../backend/projects.md#managing-access)).
 
 Enabling this toggle overrides that requirement so readers (with or without an entitlement) can access the Text when it appears on the Project landing page, in a Call-to-Action in the **Hero** or in a **Texts** or **Table of Contents** Content Block.
 
@@ -627,7 +627,7 @@ The following file types are most often seen packaged in existing EPUBs and thus
 
 ### Metadata
 
-This view groups into different categories the available metadata fields that describe a Manifold Text. Values displayed here appear in the Manifold Reader in the **About this Text** section, accessible from the **Contents** dropdown, and are also included in the BagIt archive when a Project is exported (see [Exporting and Preserving](../backend/projects.md#exports)).
+This view groups into different categories the available metadata fields that describe a Manifold Text. Values displayed here appear in the Manifold Reader in the **About this Text** section, accessible from the **Contents** dropdown, and are also included in the BagIt archive when a Project is exported (see [Exporting and Preserving](../backend/projects.md#exporting-and-preserving)).
 
 Metadata can be entered here manually; however, when a Text is ingested, Manifold will search the source files for information it can use to populate the **Rights** and **Language** fields.
 
@@ -702,7 +702,7 @@ Both Ingested and User Created sheets can be edited, but if a Text is Reingested
 
 The Reingest process is a means to update a Text with new additions or edits without losing any existing author engagements or Resource placements that are part of the Text currently in the system. However, this is not versioning control; when a Text is Reingested, the existing Text is supplanted by the new and is no longer available in the system.
 
-Since there is no authoring component in the Manifold interface, edits to already ingested Texts need to be made to the source files that were originally ingested. The updated source files can then be loaded to the system from this view, which mimics the interface for adding a new Text (see [Adding Texts](../backend/texts.md#creating-new-texts)).
+Since there is no authoring component in the Manifold interface, edits to already ingested Texts need to be made to the source files that were originally ingested. The updated source files can then be loaded to the system from this view, which mimics the interface for adding a new Text (see [Adding Texts](../backend/texts.md#adding-texts)).
 
 When a Text is Reingested, all the annotations, highlights, and Resource placements that have been made will persist, unless such drastic changes were performed that the system can no longer identify their original anchors. In this unlikely case, annotations and highlights will be orphaned and no longer accessible. More likely, small edits will force the system to guess where annotations and Resources were originally placed with results not always being exact. The Reingest process is among the most technically complex in the system and is routinely tinkered with to better dial in the expected results.
 

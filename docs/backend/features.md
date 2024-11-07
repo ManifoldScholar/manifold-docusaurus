@@ -3,12 +3,9 @@ id: features
 title: Features
 sidebar_label: Features
 ---
-
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import Spec from "@theme/Spec";
-
-# Features
 
 :::location
 The Features detail views discussed in this section are accessed by selecting Records from the main menu and then Features in the submenu while in the Manifold backend.

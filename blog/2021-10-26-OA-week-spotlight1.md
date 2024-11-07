@@ -6,8 +6,6 @@ title: "OA Week 2021 Project Spotlight 1"
 
 As part of [Open Access Week](http://www.openaccessweek.org/), Manifold is featuring interviews with the creators of exemplary projects that use Manifold's capabilities to the fullest. Our first installment in this series is [Race &/ in America](https://digitalpublications.brown.edu/projects/project-collection/race-and-in-america). We interviewed Allison Levy from [Brown University Library Center for Digital Scholarship](https://library.brown.edu/create/cds/) about this impressive project. 
 
-<!--truncate-->
-
 ## How did the project come together? Who was involved?
 
 Over the 2020-21 academic year, the Center for the Study of Race and Ethnicity in America at Brown University, in partnership with the Office of the Provost, undertook a systematic investigation of the foundational and enduring contemporary effects of anti-Black racism via a pioneering panel discussion series featuring Brown faculty on the role that racism plays in American public health, democracy, punishment, and more.
