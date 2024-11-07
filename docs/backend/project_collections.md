@@ -5,7 +5,7 @@ sidebar_label: Project Collections
 ---
 
 import Spec from "@theme/Spec";
-const defaultImageFormats = "GIF, JPEG, JPG, PNG";
+export const defaultImageFormats = "GIF, JPEG, JPG, PNG";
 
 :::location
 Users logged in with **Admin**, **Editor**, or **Marketeer** accounts can create new and modify existing Project Collections in the Manifold backend.

@@ -4,7 +4,7 @@ title: Log into Manifold
 sidebar_label: Log into Manifold
 ---
 
-This page details the process of logging into an instance of Manifold with an *existing* Manifold account. If you don’t already have an account, check out [the previous section](./walkthroughs/create_account.md) for notes on how to create one.
+This page details the process of logging into an instance of Manifold with an *existing* Manifold account. If you don’t already have an account, check out [the previous section](./create_account.md) for notes on how to create one.
 
 :::important
 Manifold is “distributed” software. This means that Manifold accounts are not global. If you intend to engage with different Manifold installations, you’ll first need to establish yourself on each instance, even if you’re logging in with a social media profile.

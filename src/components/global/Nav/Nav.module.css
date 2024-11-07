@@ -1,0 +1,45 @@
+.nav {
+  padding: var(--main-nav-padding-x) var(--main-nav-padding-y);
+  @mixin aBgColor neutral10;
+
+  [data-theme="dark"] & {
+    @mixin aBgColor neutral92;
+  }
+}
+
+.nav__inner {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: var(--main-nav-width);
+  margin: 0 auto;
+}
+
+.nav__mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--background-color);
+  transition: max-height 0.5s cubic-bezier(0.33, 1, 0.68, 1);
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  z-index: 1000;
+  
+  @mixin reducedMotion {
+    transition: opacity 0.25s cubic-bezier(0.33, 1, 0.68, 1);
+  }
+
+  @mixin respond 80, min {
+    display: none;
+  }
+
+  &[data-open="true"] {
+    max-height: 100vh;
+    padding: var(--menu-padding-x) var(--menu-padding-y);
+    opacity: 1;
+  }
+}

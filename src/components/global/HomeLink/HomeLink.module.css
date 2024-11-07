@@ -1,0 +1,22 @@
+.link {
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  transition: color ease 0.2s;
+  font-weight: var(--font-weight-semi-bold);
+  font-size: 1.125rem;
+  
+  &:hover,
+  &:hover .logo {
+    text-decoration: none;
+    color: var(--_home-hover-color);
+  }
+}
+
+.logo {
+  margin-right: 16px;
+  transition: color ease 0.2s;
+  width: 38px;
+  height: 38px;
+  color: var(--_home-color);
+}

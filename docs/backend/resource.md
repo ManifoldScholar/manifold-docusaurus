@@ -5,12 +5,12 @@ sidebar_label: Resources
 ---
 
 import Spec from "@theme/Spec";
-const defaultImageFormats = "GIF, JPEG, JPG, PNG";
+export const defaultImageFormats = "GIF, JPEG, JPG, PNG";
 
 :::location
 Resources are specific to and contained within Manifold Projects. Resources are added and managed in the backend through a Project’s **Resource** sidebar.
 
-Users with **Admin**, **Editor**, or **Marketeer** roles can manage Resources for any Project in an Instance. **Project Creators** can only add and edit Resources for those Projects they have created. Users with the default **Reader** role don’t have access to the backend by default but can be given permission to modify specific Projects and their Resources on a one-off basis (see [Users](../backend/users.md) and [Managing Access](../backend/projects.md#managing-access)).
+Users with **Admin**, **Editor**, or **Marketeer** roles can manage Resources for any Project in an Instance. **Project Creators** can only add and edit Resources for those Projects they have created. Users with the default **Reader** role don’t have access to the backend by default but can be given permission to modify specific Projects and their Resources on a one-off basis (see [Users](../backend/users.md) and [Managing Access](../backend/projects.md#access)).
 :::
 
 ## What Are Resources?
@@ -29,7 +29,7 @@ https://{domain-name}/projects/{project-slug}/resources
 https://{domain-name}/projects/{project-slug}/resource/{resource-slug}
 ```
 
-Resources are tied to individual Projects and can be added to a Project one at a time or in bulk. When a Project is exported, Manifold includes all of a Project’s Resources that it hosts in the export package (see [Exporting and Preserving](../backend/projects.md#exporting-and-preserving)).
+Resources are tied to individual Projects and can be added to a Project one at a time or in bulk. When a Project is exported, Manifold includes all of a Project’s Resources that it hosts in the export package (see [Exporting and Preserving](../backend/projects.md#exports)).
 
 Currently Manifold supports ten different Resource kinds:
 
@@ -199,7 +199,7 @@ Users cannot proceed beyond this step until a Kind, Title, and File/URL have bee
 
 Below the search bar, the **Bulk add resources** button brings up a new interface, categorized into a series of steps, where Resources can be added to a Project in bulk or where you can update in bulk those Resources that are already in the Project.
 
-Integration with Google Services is *required* for the bulk add process to work; files intended for upload are fetched from a *publicly viewable* Google Drive folder (see [Integrations](../administering/configuring/integration_settings#google-services)). No other repository integrations are presently supported (e.g., OneDrive, Box, Dropbox).
+Integration with Google Services is *required* for the bulk add process to work; files intended for upload are fetched from a *publicly viewable* Google Drive folder (see [Integrations](../administering/configuring/integration_settings#google-services-integration)). No other repository integrations are presently supported (e.g., OneDrive, Box, Dropbox).
 
 #### Step 1: Upload
 
@@ -251,7 +251,7 @@ The **Back to Resources** button returns to the view to the main Resources view.
 
 ## Settings and Fields
 
-Each Resource loaded to Manifold has its own discrete settings that are configurable and which can be accessed when you select a Resource from the Editing Pane. Doing so transforms the view, alters the functionality in the header (see [Interface](../backend/resource.md#interface)), and makes available a Resource-specific sidebar with the following options.
+Each Resource loaded to Manifold has its own discrete settings that are configurable and which can be accessed when you select a Resource from the Editing Pane. Doing so transforms the view, alters the functionality in the header (see [Interface](../backend/resource.md#interface-overview)), and makes available a Resource-specific sidebar with the following options.
 
 ### Properties
 
@@ -428,7 +428,7 @@ items={[
 
 ### Metadata
 
-This view groups into different categories the available metadata fields that describe a Manifold Resource. Values displayed here appear in the modal overlay for Resources placed as annotations in the Reader, on the Resource detail page, and they are also included in the BagIt archive when a Project is exported (see [Exporting and Preserving](../backend/projects.md#exporting-and-preserving)).
+This view groups into different categories the available metadata fields that describe a Manifold Resource. Values displayed here appear in the modal overlay for Resources placed as annotations in the Reader, on the Resource detail page, and they are also included in the BagIt archive when a Project is exported (see [Exporting and Preserving](../backend/projects.md#exports)).
 
 All of the fields on this page support Markdown formatting with the exception of **DOI**.
 

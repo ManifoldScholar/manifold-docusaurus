@@ -1,0 +1,30 @@
+.blog-wrapper {
+  .main-wrapper {
+    --menu-background-color: var(--ifm-background-color);
+    padding-top: var(--blog-wrapper-top-padding);
+
+    > .container{
+      max-inline-size: var(--ifm-container-width-xl);
+
+      > .row {
+        justify-content: center;
+
+        &:has(main + div) {
+          justify-content: end;
+          padding-inline-end: var(--ifm-spacing-horizontal);
+        }
+
+        .col + .col {
+          padding-inline-start: 0;
+        }
+      }
+    }
+  }
+
+  .pagination-nav {
+    border-top: 0;
+    max-width: var(--l-container-sm);
+    margin: 0 auto;
+    padding-top: 0;
+  }
+}
