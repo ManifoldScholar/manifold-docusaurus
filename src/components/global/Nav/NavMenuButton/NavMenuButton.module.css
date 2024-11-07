@@ -1,0 +1,20 @@
+.button {
+  width: 35px;
+  height: 35px;
+  /* resets for Docusaurus */
+  border: none;
+  background: transparent;
+  color: inherit;
+  display: none;
+
+  &[data-open="true"] {
+    position: absolute;
+    top: var(--menu-padding-x);
+    right: var(--menu-padding-y);
+  }
+
+  @mixin respond 80 {
+    display: block;
+    margin-left: auto;
+  }
+}

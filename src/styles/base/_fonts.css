@@ -1,0 +1,21 @@
+/*  @font-face declarations
+--------------------------
+Do your @font-face embedding here, in the privacy of your own partial
+`embedFont` must be used once per combination of weight and style 
+*/
+
+@font-face {
+  font-family: "MaisonMono";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/MaisonMono-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "MaisonMono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/MaisonMono-Regular.woff2") format("woff2");
+}
