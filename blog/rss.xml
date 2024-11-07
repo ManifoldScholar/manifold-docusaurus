@@ -2,493 +2,151 @@
 <rss version="2.0">
     <channel>
         <title>Manifold Docs Blog</title>
-        <link>https://manifoldscholar.github.io/blog</link>
+        <link>https://manifoldscholar.github.io/manifold-docusaurus/blog</link>
         <description>Manifold Docs Blog</description>
         <lastBuildDate>Thu, 17 Nov 2022 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
         <item>
             <title><![CDATA[#NextUP: Manifold: Digital Publishing as a Thing of Beauty]]></title>
             <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/digital-publishing-beauty</link>
-            <guid>digital-publishing-beauty</guid>
+            <guid>https://manifoldscholar.github.io/manifold-docusaurus/blog/digital-publishing-beauty</guid>
             <pubDate>Thu, 17 Nov 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[This year’s #UPWeek coincides with a meeting of the Manifold Team—representatives from the three founding partners, the CUNY Graduate Center, Cast Iron Coding of Portland, OR, and the University of Minnesota Press. We’ll all be meeting halfway between Portland and NYC in Minneapolis, seeing each other in person for the first time since the pandemic began.]]></description>
         </item>
         <item>
             <title><![CDATA[A Belated Version 7 Update]]></title>
             <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/v7-update</link>
-            <guid>v7-update</guid>
+            <guid>https://manifoldscholar.github.io/manifold-docusaurus/blog/v7-update</guid>
             <pubDate>Sat, 22 Oct 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[A belated update on the Version 7 release: We were so thrilled to share Manifold version 7.0 with our community in August. Our developers at Cast Iron Coding have put an incredible amount of time and care into the latest release, one of our biggest yet, which continues to build in new features and capabilities that have been requested by our users.]]></description>
         </item>
         <item>
             <title><![CDATA[Manifold Community Meetup Recap]]></title>
             <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/community-meetup-recap</link>
-            <guid>community-meetup-recap</guid>
+            <guid>https://manifoldscholar.github.io/manifold-docusaurus/blog/community-meetup-recap</guid>
             <pubDate>Wed, 05 Jan 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[One of the highlights of 2021 was that we held our first quarterly Manifold Community Meetup. Something we love about building Manifold is seeing all of the amazing projects and initiatives that Manifold makes possible across the different groups and institutions who use it. At the same time, we found that publishers using Manifold often asked us for a means through which to discover what other Manifold instances are up to and how they have solved common challenges and obstacles. And so we inaugurated Manifold Community Meetups: a quarterly virtual meetup for Manifold community members to share practices, discuss strategies, ask questions, troubleshoot difficulties, and learn from each other.]]></description>
         </item>
         <item>
             <title><![CDATA[Manifold Welcomes Six New Publishers]]></title>
             <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/welcome-new-publishers</link>
-            <guid>welcome-new-publishers</guid>
+            <guid>https://manifoldscholar.github.io/manifold-docusaurus/blog/welcome-new-publishers</guid>
             <pubDate>Thu, 16 Dec 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[The Manifold Team is delighted to announce the six publishers who will be joining the Manifold community in 2022 with grant-funded support packages, thanks to generous funding from The Andrew W. Mellon Foundation.]]></description>
         </item>
         <item>
             <title><![CDATA[Log4j2 Vulnerability]]></title>
             <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/log42j</link>
-            <guid>log42j</guid>
+            <guid>https://manifoldscholar.github.io/manifold-docusaurus/blog/log42j</guid>
             <pubDate>Mon, 13 Dec 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Good afternoon, everyone!]]></description>
         </item>
         <item>
             <title><![CDATA[OA Week 2021 Project Spotlight 4]]></title>
             <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/oa-week-2021-project-spotlight-4</link>
-            <guid>oa-week-2021-project-spotlight-4</guid>
+            <guid>https://manifoldscholar.github.io/manifold-docusaurus/blog/oa-week-2021-project-spotlight-4</guid>
             <pubDate>Fri, 29 Oct 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[The Mill on The Floss]]></description>
         </item>
         <item>
             <title><![CDATA[OA Week 2021 Project Spotlight 3]]></title>
             <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/oa-week-2021-project-spotlight-3</link>
-            <guid>oa-week-2021-project-spotlight-3</guid>
+            <guid>https://manifoldscholar.github.io/manifold-docusaurus/blog/oa-week-2021-project-spotlight-3</guid>
             <pubDate>Thu, 28 Oct 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[The Negro and The Nation]]></description>
         </item>
         <item>
             <title><![CDATA[OA Week 2021 Project Spotlight 2]]></title>
             <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/oa-week-2021-project-spotlight-2</link>
-            <guid>oa-week-2021-project-spotlight-2</guid>
+            <guid>https://manifoldscholar.github.io/manifold-docusaurus/blog/oa-week-2021-project-spotlight-2</guid>
             <pubDate>Wed, 27 Oct 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[The Greater Chaco Landscape]]></description>
         </item>
         <item>
             <title><![CDATA[OA Week 2021 Project Spotlight 1]]></title>
             <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/oa-week-2021-project-spotlight-1</link>
-            <guid>oa-week-2021-project-spotlight-1</guid>
+            <guid>https://manifoldscholar.github.io/manifold-docusaurus/blog/oa-week-2021-project-spotlight-1</guid>
             <pubDate>Tue, 26 Oct 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[As part of Open Access Week, Manifold is featuring interviews with the creators of exemplary projects that use Manifold's capabilities to the fullest. Our first installment in this series is Race &/ in America. We interviewed Allison Levy from Brown University Library Center for Digital Scholarship about this impressive project.]]></description>
         </item>
         <item>
             <title><![CDATA[Fall 2021 Accessibility Sprint!]]></title>
             <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/fall21-accessibility-sprint</link>
-            <guid>fall21-accessibility-sprint</guid>
+            <guid>https://manifoldscholar.github.io/manifold-docusaurus/blog/fall21-accessibility-sprint</guid>
             <pubDate>Thu, 14 Oct 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[At Manifold, we treat accessibility as a top-tier concern. Our developers at Cast Iron Coding are accessibility experts who design and develop the application with accessible functionality foremost in mind. In addition to the extensive testing they do in-house using screen-readers and browser add-ons, we’ve had the benefit of collaborating with the University of Washington’s library, press, and accessibility office over the past three years. The Washington team has performed an ongoing audit of Manifold over that time, and our two groups meet regularly to discuss new ideas and strategies for making the application even more performant for readers and content creators using assistive technologies.]]></description>
         </item>
         <item>
             <title><![CDATA[Manifold v6.0 is available now!]]></title>
             <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/manifold-v6</link>
-            <guid>manifold-v6</guid>
+            <guid>https://manifoldscholar.github.io/manifold-docusaurus/blog/manifold-v6</guid>
             <pubDate>Wed, 08 Sep 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[The latest version includes a new analytics feature, improved Word ingestion, global stylesheets, and more.]]></description>
         </item>
         <item>
             <title><![CDATA[Manifold Moves Toward Sustainability, Promotes Learning and Equity with Two Major Grants]]></title>
             <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/manifoldnextsteps</link>
-            <guid>manifoldnextsteps</guid>
+            <guid>https://manifoldscholar.github.io/manifold-docusaurus/blog/manifoldnextsteps</guid>
             <pubDate>Wed, 28 Oct 2020 00:00:00 GMT</pubDate>
             <description><![CDATA[The digital publication platform Manifold Scholarship will enter a new phase of its development, supported by two major grants, one from The Andrew W. Mellon Foundation and one from the National Endowment for the Humanities, allowing Manifold to solidify its structure for future sustainability and to expand its work as a leading provider of digital Open Educational Resources (OERs). Manifold, a collaboration between the GC Digital Scholarship Lab at the CUNY Graduate Center, Cast Iron Coding, and the University of Minnesota Press, is an open-source platform that enables publishers to create media-rich, interactive digital publications and extend the educational benefits and access of this scholarship to more communities. “Manifold is an innovative platform that exemplifies the University’s vision of integrated research and teaching,” says Chris Cramer, Vice President for Research at the University of Minnesota.]]></description>
         </item>
         <item>
             <title><![CDATA[Access Granted: Manifold 5.0 Is Here!]]></title>
             <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/accessgranted</link>
-            <guid>accessgranted</guid>
+            <guid>https://manifoldscholar.github.io/manifold-docusaurus/blog/accessgranted</guid>
             <pubDate>Thu, 28 May 2020 00:00:00 GMT</pubDate>
             <description><![CDATA[We are delighted to announce the release of Manifold version 5.0, which is available for download here! The centerpiece of this release, a new Access Controls feature, will allow users to limit access to selected projects on a Manifold installation.]]></description>
         </item>
         <item>
             <title><![CDATA[Happy holidays from Manifold!]]></title>
             <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/happyholidaysfrommanifold</link>
-            <guid>happyholidaysfrommanifold</guid>
+            <guid>https://manifoldscholar.github.io/manifold-docusaurus/blog/happyholidaysfrommanifold</guid>
             <pubDate>Fri, 20 Dec 2019 00:00:00 GMT</pubDate>
             <description><![CDATA[Here's to 2019! The Manifold Team sends good wishes to all as we head into the shortest day of the year and turn toward 2020. I've asked each team member to share a good memory from the year, a Manifold gift (be it moment with someone in the community, a favorite feature, a resolution). We're happy to be working together and with all of you.]]></description>
         </item>
         <item>
             <title><![CDATA[Manifold Digital Services Spotlight: Affordable Learning Georgia]]></title>
             <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/manifolddigitalservicesspotlightaffordablelearninggeorgia</link>
-            <guid>manifolddigitalservicesspotlightaffordablelearninggeorgia</guid>
+            <guid>https://manifoldscholar.github.io/manifold-docusaurus/blog/manifolddigitalservicesspotlightaffordablelearninggeorgia</guid>
             <pubDate>Thu, 21 Nov 2019 00:00:00 GMT</pubDate>
             <description><![CDATA[In the last training of the season, Terence met with Jeff Gallant, Program Manager of Affordable Learning Georgia; Joy Woodson, Assistant Director for Marketing Communications; and Lucy Harrison, Assistant Vice Chancellor for Library Services and Executive Director of GALILEO.]]></description>
         </item>
         <item>
             <title><![CDATA[Manifold Digital Services Spotlight: University of Georgia Press]]></title>
             <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/manifolddigitalservicesspotlightuniversityofgeorgiapress</link>
-            <guid>manifolddigitalservicesspotlightuniversityofgeorgiapress</guid>
+            <guid>https://manifoldscholar.github.io/manifold-docusaurus/blog/manifolddigitalservicesspotlightuniversityofgeorgiapress</guid>
             <pubDate>Mon, 18 Nov 2019 00:00:00 GMT</pubDate>
             <description><![CDATA[Last week, Manifold Digital Projects Editor Terence was at the University of Georgia Press—the oldest and largest publisher in Georgia—exploring new digital initiatives and publishing models with Director Lisa Bayer and Executive Editor of Scholarly and Digital Publishing Mick Gusinde-Duffy.]]></description>
         </item>
         <item>
             <title><![CDATA[Manifold Digital Services Spotlight: Black Women and Religious Cultures]]></title>
             <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/manifolddigitalservicesspotlightblackwomenandreligiouscultures</link>
-            <guid>manifolddigitalservicesspotlightblackwomenandreligiouscultures</guid>
+            <guid>https://manifoldscholar.github.io/manifold-docusaurus/blog/manifolddigitalservicesspotlightblackwomenandreligiouscultures</guid>
             <pubDate>Fri, 25 Oct 2019 00:00:00 GMT</pubDate>
             <description><![CDATA[This week we find Manifold Digital Projects Editor Terence in Atlanta meeting with Dr. Rosetta E. Ross. Dr. Ross, along with members of Spelman College's Department of Philosophy and Religious Studies and the Daughters of the African Atlantic community, is creating a new journal entitled Black Women and Religious Cultures. The journal seeks to examine the roles of religions, positively and negatively, in the lives of Black women, transnationally. In addition to publishing meeting proceedings from the Consultation of African and African Diasporan Women in Religion and Theology, the journal will include articles from participants in their growing community, facilitating an exchange of knowledge.]]></description>
         </item>
         <item>
             <title><![CDATA[Manifold Digital Services Spotlight: Arte Publico Press]]></title>
             <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/manifolddigitalservicesspotlightartepublicopress</link>
-            <guid>manifolddigitalservicesspotlightartepublicopress</guid>
+            <guid>https://manifoldscholar.github.io/manifold-docusaurus/blog/manifolddigitalservicesspotlightartepublicopress</guid>
             <pubDate>Wed, 23 Oct 2019 00:00:00 GMT</pubDate>
             <description><![CDATA[In this post, we find our digital projects editor, Terence, traveling to Houston, Texas, to meet with the Arte Público Press digital team: Executive Editor Gabriela Baeza Ventura, Carolina Villarroel of the Recovering the US Hispanic Literary Heritage Project, and Digital Programs Manager Lorena Gauthereau. The conversation revolved primarily around their recovery mission, the presses digital initiatives, as well as intro publications aimed at younger members of the Latino community. And, of course, all the amazing cuisine that Houston has to offer.]]></description>
         </item>
         <item>
             <title><![CDATA[Manifold Digital Services Spotlight: Lapham's Quarterly]]></title>
             <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/manifolddigitalservicesspotlightlaphamsquarterly</link>
-            <guid>manifolddigitalservicesspotlightlaphamsquarterly</guid>
+            <guid>https://manifoldscholar.github.io/manifold-docusaurus/blog/manifolddigitalservicesspotlightlaphamsquarterly</guid>
             <pubDate>Fri, 11 Oct 2019 00:00:00 GMT</pubDate>
             <description><![CDATA[This week brought Terence from one Manifold hub to another, New York City, to meet with Elizabeth Della Zazzera, Digital Producer, and Jaime Fuller, Web Editor, at Lapham’s Quarterly.]]></description>
         </item>
         <item>
             <title><![CDATA[Manifold Digital Services Spotlight: Intermezzo]]></title>
             <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/manifolddigitalservicesspotlightintermezzo</link>
-            <guid>manifolddigitalservicesspotlightintermezzo</guid>
+            <guid>https://manifoldscholar.github.io/manifold-docusaurus/blog/manifolddigitalservicesspotlightintermezzo</guid>
             <pubDate>Tue, 08 Oct 2019 00:00:00 GMT</pubDate>
             <description><![CDATA[In this post, we find our digital projects editor, Terence, traveling to the University of Kentucky to meet with Intermezzo editors Jeff Rice, Eric Detweiler, and Sergio C. Figueiredo. The conversation revolved around integrating Manifold with their series, which encourages writers to experiment with form, style, content, and approach to break down the barrier between the scholarly and the creative.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Manifold Version 4.0 Overview]]></title>
-            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/manifoldversion40overview</link>
-            <guid>manifoldversion40overview</guid>
-            <pubDate>Thu, 26 Sep 2019 00:00:00 GMT</pubDate>
-            <description><![CDATA[The Manifold team is delighted to announce the release of Manifold version 4.0. The hallmark features for this release are the addition of reading groups, which allow readers to annotate texts publicly, privately, or anonymously, and standalone mode, which allows creators to set up projects that appear without the library. We've also made notable strides in improving Manifold's accessibility and are now publishing docker images to Docker Hub.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Manifold Digital Services Spotlight: MESH at Michigan State University]]></title>
-            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/manifolddigitalservicesspotlightmeshatmichiganstateuniversity</link>
-            <guid>manifolddigitalservicesspotlightmeshatmichiganstateuniversity</guid>
-            <pubDate>Fri, 20 Sep 2019 00:00:00 GMT</pubDate>
-            <description><![CDATA[This week we find our trusty digital projects editor on the road in East Lansing with Kathleen Fitzpatrick, Scott Schopieray, Kelly Sattler, and members of MESH at Michigan State University.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Manifold Digital Services Spotlight: Fembot Collective]]></title>
-            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/manifolddigitalservicesspotlightfembotcollective</link>
-            <guid>manifolddigitalservicesspotlightfembotcollective</guid>
-            <pubDate>Tue, 17 Sep 2019 00:00:00 GMT</pubDate>
-            <description><![CDATA[This week we find our digital projects editor with the managing members of the Fembot Collective, led by Radhika Gajjala at Bowling Green State University in Bowling Green, Ohio.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Manifold Digital Services Spotlight: Gallaudet University Press]]></title>
-            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/manifolddigitalservicesspotlightgallaudetuniversitypress</link>
-            <guid>manifolddigitalservicesspotlightgallaudetuniversitypress</guid>
-            <pubDate>Thu, 12 Sep 2019 00:00:00 GMT</pubDate>
-            <description><![CDATA[In this installment of Travels with Terence, we find our resident digital projects editor still in Washington, DC, turning his attention from George Washington University eastward to the Gallaudet University Press. The Gallaudet University Press, whose advocacy for the deaf community aligns with Manifold’s commitment to supporting scholarship across forms and modes of communication, was prepped and ready for Terence’s visit: Deirdre Mullervy, GUP’s managing editor, had already loaded four projects of their projects into the system prior to his arrival (and secured some of the yummiest banana bread around)!]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Manifold Digital Services Spotlight: George Washington University]]></title>
-            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/manifolddigitalservicesspotlightgeorgewashingtonuniversity</link>
-            <guid>manifolddigitalservicesspotlightgeorgewashingtonuniversity</guid>
-            <pubDate>Mon, 09 Sep 2019 00:00:00 GMT</pubDate>
-            <description><![CDATA[Welcome to a new season of the Travels with Terence series! We pick up following our digital projects editor as he tours the country, conducting in-person training for the Manifold pilot program.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Manifold Digital Services Pilot 2019–20]]></title>
-            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/manifolddigitalservicespilot201920</link>
-            <guid>manifolddigitalservicespilot201920</guid>
-            <pubDate>Thu, 06 Jun 2019 00:00:00 GMT</pubDate>
-            <description><![CDATA[MINNEAPOLIS, MN (June 6, 2019)—The Manifold team is pleased to announce the selection of the following ten organizations to participate in the second year of the Manifold Digital Services pilot program:]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Manifold Version 3.0 Overview]]></title>
-            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/manifoldversion30overview</link>
-            <guid>manifoldversion30overview</guid>
-            <pubDate>Wed, 10 Apr 2019 00:00:00 GMT</pubDate>
-            <description><![CDATA[The Manifold team is delighted to announce the release of Manifold version 3.0. The hallmark feature for this release is the addition of project content blocks, which provides editors the ability to customize the content that appears on project landing pages.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Manifold Digital Services Pilot Spotlight: Concordia University Press]]></title>
-            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/manifolddigitalservicespilotspotlightconcordiauniversitypress</link>
-            <guid>manifolddigitalservicespilotspotlightconcordiauniversitypress</guid>
-            <pubDate>Tue, 02 Apr 2019 00:00:00 GMT</pubDate>
-            <description><![CDATA[This is part 11 of the Travels with Terence series, following our digital projects editor on his pilot press in-person training program.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Manifold Digital Services Spotlight: University of Washington Press]]></title>
-            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/manifolddigitalservicesspotlightuniversityofwashingtonpress</link>
-            <guid>manifolddigitalservicesspotlightuniversityofwashingtonpress</guid>
-            <pubDate>Thu, 28 Mar 2019 00:00:00 GMT</pubDate>
-            <description><![CDATA[This is part 10 of the Travels with Terence series, following our digital projects editor on his pilot press in-person training program. Last week Terence was in Seattle, Washington, meeting with groups from the University of Washington Press and Libraries. Due to Washington’s interest in Manifold as a tool for Open Educational Resources (OER), and more generally for classroom use, Terence was joined by Krystyna Michael, Open Educational Technologist at the Graduate Center, CUNY.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Manifold Digital Services Spotlight: Reanimate Publishing]]></title>
-            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/manifolddigitalservicesspotlightreanimatepublishing</link>
-            <guid>manifolddigitalservicesspotlightreanimatepublishing</guid>
-            <pubDate>Fri, 08 Mar 2019 00:00:00 GMT</pubDate>
-            <description><![CDATA[This is part 9 of the Travels with Terence series, following our digital projects editor on his pilot press in-person training program. This March brought Terence to Salem, Massachusetts, to meet with Reanimate Publishing. Reanimate is co-directed by Roopika Risam, Assistant Professor of English and Faculty Fellow for Digital Library Initiatives, Salem State University and Carol Stabile, Associate Dean of Strategic Initiatives and Professor of Women and Gender Studies, University of Oregon.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Manifold Digital Services Spotlight: Liverpool University Press]]></title>
-            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/manifolddigitalservicesspotlightliverpooluniversitypress</link>
-            <guid>manifolddigitalservicesspotlightliverpooluniversitypress</guid>
-            <pubDate>Wed, 20 Feb 2019 00:00:00 GMT</pubDate>
-            <description><![CDATA[This is part 8 of the Travels with Terence series, following our digital projects editor on his pilot press in-person training program. In one of his first dispatches from Liverpool, Terence noted to the team back home:]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Manifold Digital Services Spotlight: The University of the West Indies Press]]></title>
-            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/manifolddigitalservicesspotlighttheuniversityofwestindiespress</link>
-            <guid>manifolddigitalservicesspotlighttheuniversityofwestindiespress</guid>
-            <pubDate>Thu, 07 Feb 2019 00:00:00 GMT</pubDate>
-            <description><![CDATA[This is part 7 of the Travels with Terence series, following our digital projects editor on his pilot press in-person training program. Last week Terence was ensconced at home in Minneapolis at the heart of the polar vortex, learning first hand what a wind chill of fifty below felt like. This week he fled journeyed to Kingston, Jamaica to meet with the good folks from the University of the West Indies Press, where the Manifold program is being led by the press's management team: Joseph B. Powell, General Manager; Nadine Buckland, Finance Manager; and Donna Muirhead, Marketing and Sales Manager.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Manifold Digital Services Spotlight: Emory Center for Digital Scholarship]]></title>
-            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/manifolddigitalservicesspotlightemorycenterfordigitalscholarship</link>
-            <guid>manifolddigitalservicesspotlightemorycenterfordigitalscholarship</guid>
-            <pubDate>Wed, 30 Jan 2019 00:00:00 GMT</pubDate>
-            <description><![CDATA[This is part 6 of the Travels with Terence series, following our digital projects editor on his pilot press in-person training program. Last week Terence set off on his first trip of 2019, journeying to Atlanta to meet with faculty and staff across Emory University. Unlike other pilot programs, Manifold at Emory isn’t centered around a university press or library. Instead the initiative is being spearheaded by Sarah McKee of the Bill and Carol Fox Center for Humanistic Inquiry and Wayne Morse, Allen Tullos, and Yang Li of the Emory Center for Digital Scholarship, for use by students and faculty with local projects and programming and as a means to introduce the community at large to new modes of publication that publishers with whom local scholars may already be working can take advantage.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Manifold in Portland: The Grateful Fed]]></title>
-            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/manifoldinportlandthegratefulfed</link>
-            <guid>manifoldinportlandthegratefulfed</guid>
-            <pubDate>Mon, 17 Dec 2018 00:00:00 GMT</pubDate>
-            <description><![CDATA[This month the combined team had our face-to-face at the Cast Iron Coding offices in Portland, Oregon, where our hosts managed to feed us both Portland culture and delicious food and get through an agenda packed with tricky topics and complicated concerns.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Manifold Digital Services Spotlight: University of Cincinnati Press]]></title>
-            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/manifolddigitalservicesspotlightuniversityofcincinnatipress</link>
-            <guid>manifolddigitalservicesspotlightuniversityofcincinnatipress</guid>
-            <pubDate>Fri, 14 Dec 2018 00:00:00 GMT</pubDate>
-            <description><![CDATA[This is part 5 of the Travels with Terence series, following our digital projects editor on his pilot press in-person training program. At the University of Cincinnati Press, Manifold is in the capable hands of Elizabeth Scarpelli, Press Director. Terence headed to Cincinnati almost immediately on the heels of the team’s Portland face-to-face (recap blog post to follow), so he was well primed to address their hopes and challenges.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Manifold Digital Services Spotlight: Temple University Press]]></title>
-            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/manifolddigitalservicesspotlighttempleuniversitypress</link>
-            <guid>manifolddigitalservicesspotlighttempleuniversitypress</guid>
-            <pubDate>Thu, 06 Dec 2018 00:00:00 GMT</pubDate>
-            <description><![CDATA[This is part 4 of the Travels with Terence series, following our digital projects editor on his pilot press in-person training program. This week brought Terence to Temple University Press in Philadelphia! Given his American Ninja Warrior tendencies, he’d planned to run the “Rocky stairs” at the art museum, but after a recent injury, he opted to spend that time resting and recuperating over a lovely Indian dinner.The Manifold pilot at Temple is being spearheaded by Mary Rose Muccie, Director, Temple University Press and Scholarly Communications Officer, Temple University Libraries, and Annie Johnson, Library Publishing and Scholarly Communications Specialist, Temple University Libraries. Terence had the chance to meet with both and remarked:]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Manifold Digital Services Spotlight: Indiana University Press]]></title>
-            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/manifolddigitalservicesspotlightindianauniversitypress</link>
-            <guid>manifolddigitalservicesspotlightindianauniversitypress</guid>
-            <pubDate>Fri, 16 Nov 2018 00:00:00 GMT</pubDate>
-            <description><![CDATA[This is part 3 of the Travels with Terence series, following our digital projects editor on his pilot press in-person training program.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Manifold on DigitalOcean]]></title>
-            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/manifoldondigitalocean</link>
-            <guid>manifoldondigitalocean</guid>
-            <pubDate>Wed, 07 Nov 2018 00:00:00 GMT</pubDate>
-            <description><![CDATA[Dear Manifold community!]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Manifold Digital Services Spotlight: Athabasca University Press]]></title>
-            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/manifolddigitalservicesspotlightathabascauniversitypress</link>
-            <guid>manifolddigitalservicesspotlightathabascauniversitypress</guid>
-            <pubDate>Fri, 26 Oct 2018 00:00:00 GMT</pubDate>
-            <description><![CDATA[Travels with Terence, Part 2]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Introducing Project Collections]]></title>
-            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/introducingprojectcollections</link>
-            <guid>introducingprojectcollections</guid>
-            <pubDate>Wed, 10 Oct 2018 00:00:00 GMT</pubDate>
-            <description><![CDATA[Manifold makes it easy to get your collections online. The more projects we loaded to our Manifold instances, the more we realized that the ordering of the projects, handled arbitrarily by an algorithm, wasn't allowing us to present our materials as we would like. Despite the ease afforded by the automatic population of titles, we wanted to be able to respond to current events, showcase new releases, share titles relevant to scholarly conferences, group titles by series, and generally control what appears on the site’s homepage.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Travels with Terence]]></title>
-            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/travelswithterence</link>
-            <guid>travelswithterence</guid>
-            <pubDate>Thu, 27 Sep 2018 00:00:00 GMT</pubDate>
-            <description><![CDATA[Terence Smyre, University of Minnesota Press’s Digital Projects Editor, is about to hit the road for Manifold Scholarship Digital Services Pilot Trainings. That’s a lot of titles to say that he’s about to work with the ten publishers (announced this summer) just starting off with Manifold. Terence came to Manifold and Minnesota after many years and many roles at the University of Nebraska Press, and he is ready to help integrate Manifold production into each publisher’s workflow.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Manifold Version 2.0 Overview]]></title>
-            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/manifoldversion20overview</link>
-            <guid>manifoldversion20overview</guid>
-            <pubDate>Thu, 13 Sep 2018 00:00:00 GMT</pubDate>
-            <description><![CDATA[The Manifold team is delighted to announce the release of version 2.0 of the Manifold platform. This release adds new accessibility features, makes multiple improvements to the reading experience of Manifold, and expands the number of types of document formats that can be ingested by the platform. For details, please see below or watch this video overview:]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Ten publishers to begin using Manifold platform to publish scholarly work]]></title>
-            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/tenpublisherstobeginusingmanifold</link>
-            <guid>tenpublisherstobeginusingmanifold</guid>
-            <pubDate>Thu, 30 Aug 2018 00:00:00 GMT</pubDate>
-            <description><![CDATA[MINNEAPOLIS, MN (August 30, 2018)—The Manifold team has selected the following ten groups to receive free installation and training on the Manifold platform to help them meet their digital publishing goals:]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Preserving Manifold Editions: Topics of Consideration]]></title>
-            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/preservingmanifoldeditionstopicsofconsideration</link>
-            <guid>preservingmanifoldeditionstopicsofconsideration</guid>
-            <pubDate>Mon, 27 Aug 2018 00:00:00 GMT</pubDate>
-            <description><![CDATA[Digital preservation is a cornerstone issue for the Manifold team to address during our second phase. In creating a platform for publishers to collect and disseminate singular works that contribute to the scholarly record, it is imperative that we provide a means to preserve those works against the rigors of time and technological obsolescence. Publishers, authors, and the communities they serve need to be confident the materials they are publishing on Manifold will not only be discoverable, but also reliably accessible and useable for future engagement.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Manifold Meeting in Minnesota: Rhubarb, Accessibility and Preservation, and American Ninja Warrior]]></title>
-            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/manifoldmeetinginminnesota</link>
-            <guid>manifoldmeetinginminnesota</guid>
-            <pubDate>Fri, 17 Aug 2018 00:00:00 GMT</pubDate>
-            <description><![CDATA[July 11th through 13th, the Manifold team convened in sunny if stormy Minneapolis for three days of meetings to assess progress, make decisions about the Manifold Digital Services Pilot, plan steps toward the version 2.0 release, and, of course, try out the downtown food truck scene.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Web Accessibility Roadmap for Manifold]]></title>
-            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/webaccessibilityroadmapformanifold</link>
-            <guid>webaccessibilityroadmapformanifold</guid>
-            <pubDate>Wed, 08 Aug 2018 00:00:00 GMT</pubDate>
-            <description><![CDATA[Introduction]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Announcing the Release of Manifold 1.0]]></title>
-            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/announcingmanifold10</link>
-            <guid>announcingmanifold10</guid>
-            <pubDate>Mon, 30 Apr 2018 00:00:00 GMT</pubDate>
-            <description><![CDATA[For those who didn't catch the press release in other media last month, it's worth saying again!]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Announcing Manifold Scholarship Phase Two]]></title>
-            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/announcingmanifoldscholarshipphasetwo</link>
-            <guid>announcingmanifoldscholarshipphasetwo</guid>
-            <pubDate>Tue, 17 Apr 2018 00:00:00 GMT</pubDate>
-            <description><![CDATA[The University of Minnesota Press with CUNY’s GC Digital Scholarship Lab and Cast Iron Coding to launch MANIFOLD SCHOLARSHIP PHASE TWO with a $789,000 grant from The Andrew W. Mellon Foundation. The Second phase will focus on expanding installations of the platform and developing new features.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[How To Code in Python: Using Manifold to Deliver an Open Educational Resource]]></title>
-            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/howtocodeinpythonusingmanifoldtodeliveranopeneducationalresource</link>
-            <guid>howtocodeinpythonusingmanifoldtodeliveranopeneducationalresource</guid>
-            <pubDate>Thu, 08 Mar 2018 00:00:00 GMT</pubDate>
-            <description><![CDATA[Recently, my eBook on Python programming, How To Code in Python 3, was made available as a Manifold publication. I would like to offer my perspective to the Manifold community to give some background on the work and how I believe the Manifold platform provides additional layers of value to the text through providing a place for learning and idea exchange in both university communities and broader publics.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Manifold v0.4.0]]></title>
-            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/manifoldv040</link>
-            <guid>manifoldv040</guid>
-            <pubDate>Tue, 30 Jan 2018 00:00:00 GMT</pubDate>
-            <description><![CDATA[I'm excited to announce that we're releasing v0.4.0 of Manifold today! This release ships with over 40 bug fixes, a few important security fixes, and a number of new features including backend UX updates, a new "your notes" interface in the reader that allows users to quickly jump to their highlights and annotations, and more editorial control over projects. The full list of enhancements is as follows:]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Manifold v0.3.0]]></title>
-            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/manifoldv030</link>
-            <guid>manifoldv030</guid>
-            <pubDate>Fri, 13 Oct 2017 00:00:00 GMT</pubDate>
-            <description><![CDATA[Today, Friday the 13th, is your lucky day! I'm excited to announce that we have wrapped up development on version 0.3.0 of Manifold Scholarship. This version has been four months in the making, and includes a number of new features and bug fixes. As we move toward a stable 1.0.0 release, our focus has been on improving Manifold's performance and stability, and to that end we've managed to pack 85 documented bug fixes into this version.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Manifold v0.2.0 Released]]></title>
-            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/manifoldv020released</link>
-            <guid>manifoldv020released</guid>
-            <pubDate>Tue, 20 Jun 2017 00:00:00 GMT</pubDate>
-            <description><![CDATA[On behalf of the entire Manifold team, I'm super excited to announce the release of Manifold v0.2.0! The release is up on Github now, and we'll be rolling it out to our staging site later today. This release contains a number of new features and bugfixes, listed below. For the full list of revisions and pull requests, please consult the changelog.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Manifold v0.1.3 released to staging.manifoldapp.org]]></title>
-            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/manifoldv013releasedtostagingmanifoldapporg</link>
-            <guid>manifoldv013releasedtostagingmanifoldapporg</guid>
-            <pubDate>Thu, 13 Apr 2017 00:00:00 GMT</pubDate>
-            <description><![CDATA[Version 0.1.3 of Manifold introduces support for logins using Facebook, Twitter, and Google OAuth services. This version also incorporates a refactored approach to managing application settings, which can now be set via the backend, or managed by way of the dotenv file, which tends to be a more appropriate solution for automated provisioning and deployment.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Manifold v0.1.1 Released]]></title>
-            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/manifoldv011released</link>
-            <guid>manifoldv011released</guid>
-            <pubDate>Fri, 07 Apr 2017 00:00:00 GMT</pubDate>
-            <description><![CDATA[Version 0.1.1 of Manifold is a bugfix release. It has been pushed to the Manifold staging instance. This release includes the following fixes and improvements.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Manifold Beta Now Available]]></title>
-            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/manifoldbetanowavailable</link>
-            <guid>manifoldbetanowavailable</guid>
-            <pubDate>Tue, 04 Apr 2017 00:00:00 GMT</pubDate>
-            <description><![CDATA[The Manifold team is delighted to launch a public beta of its new publishing platform for interactive scholarly monographs//staging.manifoldapp.org/.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Manifold Preview!]]></title>
-            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/manifoldpreview</link>
-            <guid>manifoldpreview</guid>
-            <pubDate>Fri, 31 Mar 2017 00:00:00 GMT</pubDate>
-            <description><![CDATA[Manifold is excited to announce the public launch of our in-progress demo next Tuesday, April 4th! In advance of that launch, we're happy to offer a brief preview of some of the features of this intuitive, collaborative publishing platform for scholars, made possible by a generous grant from the Andrew W. Mellon Foundation. Manifold provides an online, mobile-ready interface for reading and responding to texts. The demo version will be populated by University of Minnesota Press books and projects, but any press or other organization can install the open-source platform and upload their own texts for interactive reading and annotation. For technical details about the build, check out posts by our lead developer, Zach Davis of Cast Iron Coding.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Reading with Matthew K. Gold]]></title>
-            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/readingwithmatthewkgold</link>
-            <guid>readingwithmatthewkgold</guid>
-            <pubDate>Mon, 09 Jan 2017 00:00:00 GMT</pubDate>
-            <description><![CDATA[Before the holidays, I had the chance to chat with Manifold Co-PI Matthew K. Gold, who is Associate Professor of English and Digital Humanities and Executive Officer of the M.A. Program in Liberal Studies at the Graduate Center, CUNY. I have been lucky to work with Matt for a couple of years now, through seminars on digital humanities praxis and textual studies, on DH tool-building projects like DH Box, on the editorial collective of the Journal of Interactive Technology and Pedagogy, and with the digital fellows of the GC Digital Initiatives. His widespread commitment to textual scholarship and digital innovation, his seemingly tireless support of his students and digital experimentation, and his humility (which he may not even let me mention) never cease to amaze me. I have spent a lot of time discussing Manifold with Matt, but I was glad to get the chance to ask him more specifically about his personal motivations for developing a hybrid publishing platform.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Reading with Zach Davis]]></title>
-            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/readingwithzachdavis</link>
-            <guid>readingwithzachdavis</guid>
-            <pubDate>Mon, 05 Dec 2016 00:00:00 GMT</pubDate>
-            <description><![CDATA[Last week, calling Portland from the Digital Scholarship Lab at the Graduate Center, I had the pleasure of speaking with Manifold’s lead developer, Zach Davis at Cast Iron Coding. Yet again, my attempts to record the call came to naught, but I will conjure some of the conversation from my notes.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[This Week in Manifold: Markdown and Backend Development]]></title>
-            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/thisweekinmanifoldbackend</link>
-            <guid>thisweekinmanifoldbackend</guid>
-            <pubDate>Mon, 05 Dec 2016 00:00:00 GMT</pubDate>
-            <description><![CDATA[Since I last posted, we've been making development progress on a few different fronts. Much of this work is still in feature branches, and has yet to be merged into the main development branch. Therefore, I'm going to skip the full list of revisions in this post, and instead offer a high level description of our recent efforts.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[This Week in Manifold: Team meeting, Numerous Fixes]]></title>
-            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/thisweekinmanifoldteammeetingnumerousfixes</link>
-            <guid>thisweekinmanifoldteammeetingnumerousfixes</guid>
-            <pubDate>Fri, 18 Nov 2016 00:00:00 GMT</pubDate>
-            <description><![CDATA[This has been an exciting week for Manifold. The UMNP team—Terence, Dan, Susan, and Doug—and Matt all came out to Portland for one of our regular meetings. We met at the Cast Iron Coding office in the old Washington High School building and spent two days talking through issues, thinking about Manifold use cases, sorted through thorny metadata and DOI concerns, and generally reviewed how far we've come, where we're at, and what's left to do. I always find these meetings inspiring and invigorating, and am reminded of what a strong team we have in place for this project.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Reading with Susan Doerr]]></title>
-            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/readingwithsusandoerr</link>
-            <guid>readingwithsusandoerr</guid>
-            <pubDate>Tue, 15 Nov 2016 00:00:00 GMT</pubDate>
-            <description><![CDATA[While the seismic ruptures of the election have unsettled the ground beneath us, it feels necessary to continue working on projects that look beyond the next four years, that address the possibility of connecting people through ideas and through constructive debate. Last week, in the midst of national turmoil, I had the pleasure of interviewing Susan Doerr, University of Minnesota Press Assistant Director, Digital Publishing and Operations. During our phone call, I asked Susan a number of questions about her thoughts on reading and the Manifold platform.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[This Week in Manifold: DevOps, Infrastructure, and Social Activity]]></title>
-            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/thisweekinmanifolddevopsinfrastructureandsocialactivity</link>
-            <guid>thisweekinmanifolddevopsinfrastructureandsocialactivity</guid>
-            <pubDate>Fri, 04 Nov 2016 00:00:00 GMT</pubDate>
-            <description><![CDATA[Thanks for joining me for another installation of "This Week in Manifold."]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Joining Manifold]]></title>
-            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/joiningmanifold</link>
-            <guid>joiningmanifold</guid>
-            <pubDate>Mon, 31 Oct 2016 00:00:00 GMT</pubDate>
-            <description><![CDATA[Happy Halloween!]]></description>
-        </item>
-        <item>
-            <title><![CDATA[This Week in Manifold: Project Detail Improvements]]></title>
-            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/thisweekinmanifoldprojectdetailimprovements</link>
-            <guid>thisweekinmanifoldprojectdetailimprovements</guid>
-            <pubDate>Mon, 24 Oct 2016 00:00:00 GMT</pubDate>
-            <description><![CDATA[Welcome to a new regular feature on the Building Manifold blog: "This Week in Manifold." As we move toward a beta version of Manifold (scheduled for March, 2017), I'll be releasing a Manifold build to our staging server every Friday afternoon. Each release will be accompanied by a blog post explaining what the development team accomplished in the sprint leading up to the release. This post comes a few days late. When the Internet broke last week, our ability to release builds from Github was impacted, which delayed things a bit. I expect we'll be back on schedule this week, with our next build going out on Friday, October 28.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Starting Points with the Manifold Digital Projects Editor]]></title>
-            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/startingpointswiththemanifolddigitalprojectseditor</link>
-            <guid>startingpointswiththemanifolddigitalprojectseditor</guid>
-            <pubDate>Wed, 01 Jun 2016 00:00:00 GMT</pubDate>
-            <description><![CDATA[As Jason indicated in this space earlier, Manifold is not simply an endeavor to create a better publishing platform; it is an answer to the challenge of rethinking and reframing the concept of scholarly publishing. In broad strokes, scholarly publishing is very much still a print-centric enterprise. Despite the vast libraries of electronic publications available, the systems, mindsets, and expectations of the greater university press culture—including those of authors and the academy—are engineered specifically for print.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Thoughts from Editors and Authors on What Makes a Good Manifold Project]]></title>
-            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/thoughtsfromeditorsandauthorsonwhatmakesagoodmanifoldproject</link>
-            <guid>thoughtsfromeditorsandauthorsonwhatmakesagoodmanifoldproject</guid>
-            <pubDate>Mon, 25 Jan 2016 00:00:00 GMT</pubDate>
-            <description><![CDATA[As Manifold Scholarship progresses through its first rounds of wireframes, editors at the University of Minnesota Press are already discussing the platform with authors and considering book projects. Manifold will have an impact on the full span of a project, from the early stages of researching and collecting data for a book, to the drafting of a proposal, to peer review and press evaluation, and across the iterative stages of a manuscript’s organic development leading to the peer reviewed, published edition. Just as Manifold is designed to transform the nature of scholarly publishing, we are also asking scholars, from their earliest articulations, to think elastically about the ways in which Manifold can expand their project beyond the static, physical book.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[A Technical Introduction to Manifold]]></title>
-            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/atechnicalintroductiontomanifold</link>
-            <guid>atechnicalintroductiontomanifold</guid>
-            <pubDate>Thu, 03 Dec 2015 00:00:00 GMT</pubDate>
-            <description><![CDATA[Hello Manifoldians!]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Opening Access: The Reinvention of the Academic Book]]></title>
-            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/openingaccessthereinventionoftheacademicbook</link>
-            <guid>openingaccessthereinventionoftheacademicbook</guid>
-            <pubDate>Thu, 12 Nov 2015 00:00:00 GMT</pubDate>
-            <description><![CDATA[On Tuesday, November 10, I was very happy to participate in an online conversation convened by the Association of American University Presses (AAUP) on the topic of "Opening Access: The Reinvention of the Academic Book." During the session, which was moderated by Jennifer Howard of the Chronicle of Higher Education, I discussed the Manifold Scholarship project and issues related to digital monographs with my fellow panelists Frances Pinter (Manchester University Press/Knowledge Unlatched), Peter Suber (Harvard University Berkman Center for Internet & Society), and Augusta Rohrbach (author of Thinking Outside the Book). An archived video of the session is below, along with descriptive information about the event. I'm grateful to the AAUP for this opportunity to discuss the project!]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Building Manifold]]></title>
-            <link>https://manifoldscholar.github.io/manifold-docusaurus/blog/buildingmanifold</link>
-            <guid>buildingmanifold</guid>
-            <pubDate>Thu, 22 Oct 2015 00:00:00 GMT</pubDate>
-            <description><![CDATA[Welcome to Building Manifold, a blog that will document the process of creating Manifold Scholarship , a project at theUniversity of Minnesota Press in partnership with the GC Digital Scholarship Lab at the Graduate Center, CUNY and Cast Iron Coding. Manifold Scholarship is funded through a generous grant from the Andrew W. Mellon Foundation as part of a series of 2015 grants made to university presses.]]></description>
         </item>
     </channel>
 </rss>
