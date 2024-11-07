@@ -3,6 +3,12 @@
   width: 100%;
 }
 
+.docItemWrapper {
+  > div > :global(.col) + :global(.col) {
+    padding-inline-start: 0;
+  }
+}
+
 @media (min-width: 997px) {
   .docMainContainer {
     flex-grow: 1;

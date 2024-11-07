@@ -4,13 +4,18 @@
     padding-top: var(--blog-wrapper-top-padding);
 
     > .container{
-      /* max-inline-size: 100vw; */
+      max-inline-size: var(--ifm-container-width-xl);
 
       > .row {
         justify-content: center;
 
         &:has(main + div) {
           justify-content: end;
+          padding-inline-end: var(--ifm-spacing-horizontal);
+        }
+
+        .col + .col {
+          padding-inline-start: 0;
         }
       }
     }

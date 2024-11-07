@@ -8,23 +8,23 @@
       display: none;
     }
   }
+}
 
-  &--is-mobile {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+.list--is-mobile {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 
-    @mixin respond 80, min {
-      display: none;
-    }
+  @mixin respond 80, min {
+    display: none;
   }
+}
 
-  &--is-mobile &__item {
-    margin-bottom: 26px;
-  }
+.list--is-mobile .list__item {
+  margin-bottom: 26px;
+}
 
-  &__item {
-    margin-left: var(--menu-spacing);
-  }
+.list__item {
+  margin-left: var(--menu-spacing);
 }

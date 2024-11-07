@@ -15,7 +15,7 @@ export default function HomeLink({ hoverColor, color }: Props) {
       "--_home-color": `var(--${color || "green"})`,
       "--_home-hover-color": `var(--${hoverColor || "text-color"})`
     } as React.CSSProperties}>
-      <Logo size={38} className={styles.link__logo} />
+      <Logo size={38} className={styles.logo} />
       <span>Manifold</span>
     </a>
   );

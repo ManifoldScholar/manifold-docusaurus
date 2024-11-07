@@ -29,7 +29,7 @@ export default function Text({children, monospaced, color, weight, size, underli
   const Tag = as;
 
   const tagProps = {
-    ... as === "time" ? {datetime: dateTime}:{}
+    ... as === "time" ? {dateTime}:{}
   };
 
   return <Tag className={className} style={style} {...tagProps}>{children} </Tag>;
