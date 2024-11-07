@@ -1,1 +1,0 @@
-(self.webpackChunkmanifold_docusaurus=self.webpackChunkmanifold_docusaurus||[]).push([[6945],{6945:function(u,s,a){"use strict";a.r(s)}}]);

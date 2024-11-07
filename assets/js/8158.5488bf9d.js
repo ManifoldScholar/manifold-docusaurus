@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmanifold_docusaurus=self.webpackChunkmanifold_docusaurus||[]).push([[8158],{48158:(a,u,s)=>{s.r(u),s.d(u,{DocSearchModal:()=>c.a1});var c=s(55600)}}]);
