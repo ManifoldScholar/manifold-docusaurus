@@ -7,8 +7,6 @@ title: "OA Week 2021 Project Spotlight 3"
 
 As part of [Open Access Week](http://www.openaccessweek.org/), Manifold is featuring interviews with the creators of exemplary projects that use Manifold's capabilities to the fullest. Our third installment in this series is [The Negro and The Nation](https://cuny.manifoldapp.org/projects/hubert-harrison-the-negro-and-the-nation). We interviewed Justin Rogers-Cooper, a Professor at CUNY LaGuardia and the Graduate Center, about this collaborative project. 
 
-<!--truncate-->
-
 ## How did the project come together? Who was involved?
 
 This project is partly a story about the network effects of the CUNY Graduate Center, where I got my PhD in English and was later appointed as a faculty member in the Master of Liberal Studies (MALS) program. 

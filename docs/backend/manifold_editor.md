@@ -7,7 +7,7 @@ sidebar_label: Manifold Editor
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import Spec from "@theme/Spec";
-export const defaultImageFormats = "GIF, JPEG, JPG, PNG";
+const defaultImageFormats = "GIF, JPEG, JPG, PNG";
 
 :::location
 The Manifold Editor is accessed from the **Sections** sidebar found in the detail view of an individual text. From a project detail page in the backend, select **Texts** from the sidebar, then choose one of the texts listed in that view. Once a text has been selected, the sidebar will now include a listing for **Sections**. From there, select the edit button, denoted by a pencil icon beside the name of one of the text sections listed. That will open a modal window housing the Manifold Editor where adjustments to that selected section can take place.
@@ -330,19 +330,19 @@ There is no Markdown syntax for Underline.
     <tr>
         <td>Bold</td>
         <td><code>&lt;strong&gt;...&lt;/strong&gt;</code></td>
-        <td><code>`**`</code>[text]<code>`**`</code></td>
+        <td><code>**</code>[text]<code>**</code></td>
         <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong">Strong Element</a></td>
     </tr>
     <tr>
         <td>Italic</td>
         <td><code>&lt;em&gt;...&lt;/em&gt;</code></td>
-        <td><code>`*`</code>[text]<code>`*`</code></td>
+        <td><code>*</code>[text]<code>*</code></td>
         <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em">Emphasis Element</a></td>
     </tr>
     <tr>
         <td>Strikethrough</td>
         <td><code>&lt;s&gt;...&lt;/s&gt;</code></td>
-        <td><code>`~`</code>[text]<code>`~`</code></td>
+        <td><code>~</code>[text]<code>~</code></td>
         <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/s">Strikethrough</a></td>
     </tr>
     <tr>
@@ -811,15 +811,15 @@ There is no Markdown syntax for Underline, Insert Link, Insert Image, or Insert 
     </tr>
     <tr>
         <td>Bold</td>
-        <td><code>`**`</code>[text]<code>`**`</code></td>
+        <td><code>**</code>[text]<code>**</code></td>
     </tr>
     <tr>
         <td>Italic</td>
-        <td><code>`*`</code>[text]<code>`*`</code></td>
+        <td><code>*</code>[text]<code>*</code></td>
     </tr>
     <tr>
         <td>Strikethrough</td>
-        <td><code>`~`</code>[text]<code>`~`</code></td>
+        <td><code>~</code>[text]<code>~</code></td>
     </tr>
     <tr>
         <td>Inline Code</td>

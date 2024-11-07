@@ -1,0 +1,11 @@
+.blog-wrapper {
+  --menu-background-color: var(--ifm-background-color);
+  padding-top: var(--blog-wrapper-top-padding);
+
+  .pagination-nav {
+    border-top: 0;
+    max-width: var(--l-container-sm);
+    margin: 0 auto;
+    padding-top: 0;
+  }
+}

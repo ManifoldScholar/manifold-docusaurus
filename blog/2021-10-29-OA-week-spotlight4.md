@@ -7,8 +7,6 @@ title: "OA Week 2021 Project Spotlight 4"
 
 As part of [Open Access Week](http://www.openaccessweek.org/), Manifold is featuring interviews with the creators of exemplary projects that use Manifold's capabilities to the fullest. Our fourth installment in this series is an "Anthropocene Edition" of [The Mill on The Floss](https://uw.manifoldapp.org/projects/the-mill-on-the-floss). We interviewed its creators, Megan Butler, Francesca Colonnese, and Mara Minion, about this exciting project. 
 
-<!--truncate-->
-
 ## How did the project come together? Who was involved?
 
 Our Manifold project around George Eliot’s The Mill on the Floss grew out of a suggestion from our professor, Jesse Oak Taylor, for an alternative to the classic quarter-end seminar paper. The project allowed us to flip the script: instead of incorporating the novel into our essays, we incorporated our research into the novel. This also gave us a useful perspective on what is involved in creating a scholarly edition of a text. What and how much should we include? How do we frame our edition as an ecocritical intervention into the novel? How can we bring to the novel a new understanding of the role of nature, including how that fits with modern concerns about the Anthropocene?

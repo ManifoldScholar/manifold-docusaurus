@@ -14,8 +14,6 @@ const MONTHS = [
 ];
 
 export default function formatDateOnly(date) {
-  if (!date) return "";
-  
   const match = date.substring(0, 10).split("-");
   const year = match[0];
   const month = MONTHS[parseInt(match[1], 10) - 1];

@@ -5,7 +5,7 @@ sidebar_label: Resource Collections
 ---
 
 import Spec from "@theme/Spec";
-export const defaultImageFormats = "GIF, JPEG, JPG, PNG";
+const defaultImageFormats = "GIF, JPEG, JPG, PNG";
 
 :::location
 Users logged in as **Admin**, **Editor**, **Marketeer**, **Project Creator**, or a **Reader** with [Editor Permissions](../backend/projects.md#editor-permissions) can create new and modify existing Resource Collections by selecting a Project Thumbnail in the backend and choosing **Resource Collections** from its sidebar.
@@ -51,7 +51,7 @@ The [Settings and Fields](../backend/resource_collections.md#settings-and-fields
 
 ## Settings and Fields
 
-Each Resource Collection has its own discrete settings that are configurable and which can be accessed when you select a Collection from the Editing Pane. Doing so transforms the view, alters the functionality in the header (see [Interface](../backend/resource_collections.md#interface-overview)), and makes available a Resource-specific sidebar with the following options.
+Each Resource Collection has its own discrete settings that are configurable and which can be accessed when you select a Collection from the Editing Pane. Doing so transforms the view, alters the functionality in the header (see [Interface](../backend/resource_collections.md#interface)), and makes available a Resource-specific sidebar with the following options.
 
 ### Properties
 

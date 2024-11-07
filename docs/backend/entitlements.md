@@ -60,7 +60,7 @@ If a project is still in Draft, having an entitlement alone will not allow a use
 
 When the **Add Entitlement** button is selected a drawer will slide open from the right of the screen exposing three fields and three dropdowns separated into two different categories.
 
-Beneath the **User Details** category, you can enter the email address, first name, and last name of the person for whom you want to create the entitlement. The email address entered here will be the one the intended user will use to activate their pending account and log into the system. Once they have established their account, they will have the option to change their email address by [editing their profile]../using/your_account.md).
+Beneath the **User Details** category, you can enter the email address, first name, and last name of the person for whom you want to create the entitlement. The email address entered here will be the one the intended user will use to activate their pending account and log into the system. Once they have established their account, they will have the option to change their email address by [editing their profile](../docs/using/your_account.md).
 
 The **Entitlement Details** section that follows is where you will specify which restricted-access project, journal, or journal issue you want to make available through the entitlement, using the three available dropdown menus.
 
