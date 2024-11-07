@@ -1728,7 +1728,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@docusaurus/plugin-content-docs@npm:3.5.2, @docusaurus/plugin-content-docs@npm:^3.5.2":
+"@docusaurus/plugin-content-docs@npm:3.5.2":
   version: 3.5.2
   resolution: "@docusaurus/plugin-content-docs@npm:3.5.2"
   dependencies:
@@ -1979,7 +1979,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@docusaurus/tsconfig@npm:^3.5.2":
+"@docusaurus/tsconfig@npm:3.5.2":
   version: 3.5.2
   resolution: "@docusaurus/tsconfig@npm:3.5.2"
   checksum: 10c0/1cde5cfadfc94605ba9a1ec8484bc58700bcff99944fa20c6f6d93599126914dc33f15c3464ee3279cf6becafcea86909d1d25a20f8f97e95c8ddf6b1122eac8
@@ -7132,20 +7132,20 @@ __metadata:
     "@castiron/style-mixins": "npm:^2.0.0"
     "@docusaurus/core": "npm:3.5.2"
     "@docusaurus/module-type-aliases": "npm:3.5.2"
-    "@docusaurus/plugin-content-docs": "npm:^3.5.2"
+    "@docusaurus/plugin-content-docs": "npm:3.5.2"
     "@docusaurus/preset-classic": "npm:3.5.2"
-    "@docusaurus/tsconfig": "npm:^3.5.2"
+    "@docusaurus/tsconfig": "npm:3.5.2"
     "@docusaurus/types": "npm:3.5.2"
     "@mdx-js/react": "npm:^3.0.0"
     clsx: "npm:^2.0.0"
     dotenv: "npm:^16.4.5"
-    postcss: "npm:^8.4.47"
-    postcss-import: "npm:^16.1.0"
-    postcss-mixins: "npm:^11.0.3"
-    postcss-nested: "npm:^6.2.0"
+    postcss: "npm:8.4.47"
+    postcss-import: "npm:16.1.0"
+    postcss-mixins: "npm:11.0.3"
+    postcss-nested: "npm:6.2.0"
     prism-react-renderer: "npm:^2.3.0"
-    react: "npm:^18.0.0"
-    react-dom: "npm:^18.0.0"
+    react: "npm:18.3.1"
+    react-dom: "npm:18.3.1"
     typescript: "npm:~5.5.2"
   languageName: unknown
   linkType: soft
@@ -8880,7 +8880,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-import@npm:^16.1.0":
+"postcss-import@npm:16.1.0":
   version: 16.1.0
   resolution: "postcss-import@npm:16.1.0"
   dependencies:
@@ -9004,7 +9004,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-mixins@npm:^11.0.3":
+"postcss-mixins@npm:11.0.3":
   version: 11.0.3
   resolution: "postcss-mixins@npm:11.0.3"
   dependencies:
@@ -9062,7 +9062,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-nested@npm:^6.2.0":
+"postcss-nested@npm:6.2.0":
   version: 6.2.0
   resolution: "postcss-nested@npm:6.2.0"
   dependencies:
@@ -9286,7 +9286,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.4.21, postcss@npm:^8.4.24, postcss@npm:^8.4.26, postcss@npm:^8.4.33, postcss@npm:^8.4.38, postcss@npm:^8.4.47":
+"postcss@npm:8.4.47, postcss@npm:^8.4.21, postcss@npm:^8.4.24, postcss@npm:^8.4.26, postcss@npm:^8.4.33, postcss@npm:^8.4.38":
   version: 8.4.47
   resolution: "postcss@npm:8.4.47"
   dependencies:
@@ -9531,7 +9531,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:^18.0.0":
+"react-dom@npm:18.3.1":
   version: 18.3.1
   resolution: "react-dom@npm:18.3.1"
   dependencies:
@@ -9673,7 +9673,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:^18.0.0":
+"react@npm:18.3.1":
   version: 18.3.1
   resolution: "react@npm:18.3.1"
   dependencies:

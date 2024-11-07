@@ -21,23 +21,23 @@
   "dependencies": {
     "@castiron/style-mixins": "^2.0.0",
     "@docusaurus/core": "3.5.2",
-    "@docusaurus/plugin-content-docs": "^3.5.2",
+    "@docusaurus/plugin-content-docs": "3.5.2",
     "@docusaurus/preset-classic": "3.5.2",
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.0.0",
     "dotenv": "^16.4.5",
     "prism-react-renderer": "^2.3.0",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.5.2",
-    "@docusaurus/tsconfig": "^3.5.2",
+    "@docusaurus/tsconfig": "3.5.2",
     "@docusaurus/types": "3.5.2",
-    "postcss": "^8.4.47",
-    "postcss-import": "^16.1.0",
-    "postcss-mixins": "^11.0.3",
-    "postcss-nested": "^6.2.0",
+    "postcss": "8.4.47",
+    "postcss-import": "16.1.0",
+    "postcss-mixins": "11.0.3",
+    "postcss-nested": "6.2.0",
     "typescript": "~5.5.2"
   },
   "browserslist": {
