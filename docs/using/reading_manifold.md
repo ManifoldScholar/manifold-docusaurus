@@ -94,7 +94,7 @@ If you are logged into Manifold, when you Highlight text with your cursor a pop-
 
 By default each reader’s account is associated with two Reading Groups: My Public Annotations and My Private Annotations. Interactions associated with the My Public Annotations group are public to everyone viewing the Text, regardless of whether they have created an account on the instance or not. Interactions associated with My Private Annotations are only viewable to the reader who makes them.
 
-To change the group you are committing your Annotation or Highlight to, select the `Current Group` listing at the bottom of the pop-up. This will show you all the groups with which you are a member. By selecting a new group or by selecting the `Back` button you will return to the original pop-up menu, where you can choose to annotate or highlight the passage you selected.
+To change the group you are committing your Annotation or Highlight to, select the **Current Group** listing at the bottom of the pop-up. This will show you all the groups with which you are a member. By selecting a new group or by selecting the **Back** button you will return to the original pop-up menu, where you can choose to annotate or highlight the passage you selected.
 
 If you select **Annotate**, a sliding drawer will open from the right where you can compose an Annotation that will be associated with the passage in question.
 
@@ -107,6 +107,21 @@ Commenting is a related but distinct functionality from Annotating. Unlike Annot
 Readers can comment on any user’s Annotations left to their **My Public Annotations** group as well as any Annotations left to Reading Groups of which they are a member. The one exception—Comments are disabled in **Anonymous** groups. See the Group Privacy section for more.
 
 Comments can also be applied to Project Resources. See the Resource section to learn more about how Comments function in the Resource space.
+
+
+### Reporting Annotations and Comments
+
+<!-- TK 
+
+Email message: 
+
+> The following annotation in [Text Name] has been flagged 1 time.
+> 
+> Just an annotation.
+> With the latest flag, the user included this comment:
+>
+> Testing the flagging system.
+-->
 
 ## Search
 

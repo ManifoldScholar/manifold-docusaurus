@@ -1,7 +1,7 @@
 ---
 id: spam
-title: Mitigating Spam
-sidebar_label: Mitigating Spam
+title: Baseline Guardrails
+sidebar_label: Baseline Guardrails
 ---
 
 Manifold employs three tactics to guard against bad actors taking advantage of the social components of the system: (1) email verification, coupled with a model of user trust; (2) rate limits levied against user engagements, and (3) integration with the spam-detection service, [Akismet](https://akismet.com/).
@@ -65,10 +65,12 @@ It is important to note that the amount of content that Akismet will filter depe
 
 ## Finding and Deleting Spam
 
-It's possible to query records in the database and bulk delete them, which can simplify cleaning up spam. The following instructions offer some starting point for finding and destroying spam using the console.
+It's possible to query records in the database and bulk delete them, which can simplify cleaning up spam. The following instructions offer some starting point for finding and destroying spam *using the console*.
 
 :::caution
-With great power comes great responsibility. Using the console it is possible to permanently delete records in Manifold or otherwise corrupt stored data. Make sure you have a recent backup before performing console commands and proceed with care. Everything below this warning could potentially destroy data in your instance and cause problems.
+With great power comes great responsibility. When using the console, it is possible to permanently delete records in Manifold or otherwise corrupt stored data. Make sure you have a recent backup before performing console commands and proceed with care. Everything below this warning could potentially destroy data in your instance and cause problems.
+
+For users who are not comfortable using the console, there are opportunities to find and remove spam using views in the backend interface, described in the [Reading Groups Management section](../administering/readingGroups_be.md) as well as in the [Managing Annotations and Comments section](../administering/annoComments_be.md).
 :::
 
 The Manifold API is a Rails Application, and like all rails applications can be interacted with via the console. If Manifold was installed from source, you can shell into the server and navigate to the api directory in the Manifold root. From there you can access a Rails console with `bundle exec rails console`. If Manifold was installed from one of our packages, you can access the rails console with `manifold-api console`.
