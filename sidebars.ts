@@ -31,7 +31,13 @@ const sidebars: SidebarsConfig = {
           'administering/backup_restore',
           'administering/troubleshooting',
           'administering/securing_manifold',
-          'administering/spam',
+          { 'Mitigating Spam': [
+            'administering/spam',
+            'administering/readingGroups_be',
+            'administering/annoComments_be',
+            'administering/bulkActions',
+            ]
+          },
         {
           'Configuring Settings': [
             'administering/configuring/managing_settings',
@@ -67,8 +73,8 @@ const sidebars: SidebarsConfig = {
     {
       'Manifold Backend': [
           'backend/projects',
-          'backend/journals',
           'backend/project_collections',
+          'backend/journals',
           'backend/texts',
           'backend/manifold_editor',
           'backend/resource',
