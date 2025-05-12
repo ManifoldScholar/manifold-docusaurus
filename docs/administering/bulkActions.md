@@ -29,7 +29,7 @@ Bulk Actions work in conjunction with the search bar associated with lists displ
 :::note What is Flagged Content?
 Users can flag annotations or comments in the frontend annotation drawer for review by an instance administrator.
 
-To learn more about how Flagging works in Manifold in the [Reporting Annotations and Comments section](../using/reading_manifold.md#reporting-annotations-and-comments).
+To learn more about how Flagging works in Manifold in the [Reporting Inappropriate Content section](../using/reading_manifold.md#reporting-inappropriate-content).
 :::
 
 ## Performing Bulk Actions

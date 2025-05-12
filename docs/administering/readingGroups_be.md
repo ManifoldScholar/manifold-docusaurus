@@ -30,7 +30,7 @@ As an example, with this interface you can search for Reading Groups you expect 
 These features work in conjunction with the platform’s email verification, models of trust, and rate limiting systems described in the [Mitigating Spam section](../administering/spam.md).
 
 :::note More on Flagging and Terms and Conditions
-Learn more about how Flagging works in Manifold in the [Reporting Annotations and Comments section](../using/reading_manifold.md#reporting-annotations-and-comments).
+Learn more about how to flag inappropriate content in the [Reporting Inappropriate Content section](../using/reading_manifold.md#reporting-inappropriate-content).
 
 The [Pages section](../backend/pages.md) of this documentation describes how to set Terms and Conditions for your instance. Note that we do not supply a Terms and Conditions template for general use.
 :::
@@ -124,7 +124,7 @@ Users who saved annotations to a group that they have since been removed from wi
 That said, users who have been removed from a group will no longer have access to any comments—that is, responses to annotations or other comments—they left within the confines of that group. Those comments will only be available to current members of the group.
 
 :::note Manually Removing Annotations and Comments
-Annotations and comments can be removed by administrators in the frontend interface using the **Delete** button associated with the content, from either the Reader’s annotation drawer or in a [Reading Group’s **Notes + Comments** tab](../using/reading_groups.md#creator-moderator-and-administrator-view).
+Annotations and comments can be removed by administrators in the frontend interface in the Reader’s annotation drawer using the **Delete** button associated with the content, from the See All view in the [Reader’s Notes dropdown menu](../using/reading_manifold.md#notes), and in a [Reading Group’s **Notes + Comments** tab](../using/reading_groups.md#creator-moderator-and-administrator-view).
 
 In the backend, annotations can be removed using the **Annotations sidebar** in a Reading Group’s detail view (considered below) or from the **Annotations** submenu, living within the **Records** menu view. Comments can likewise be removed from the backend, using the **Comments** submenu within the **Records** menu view. The **Annotations** and **Comments** submenu options are fully considered in the [Managing Annotations and Comments section](../administering/annoComments_be.md).
 :::
@@ -142,36 +142,20 @@ The **Reset** button clears the search bar and resets the listings to the defaul
 :::note What’s This Flagging of Which You Speak?
 Flagging is the means by which users can call attention to specific annotations or comments for review by an instance administrator.
 
-To learn more about how Flagging works in Manifold in the [Reporting Annotations and Comments section](../using/reading_manifold.md#reporting-annotations-and-comments).
+To learn more about how Flagging works in Manifold see the [Reporting Inappropriate Content section](../using/reading_manifold.md#reporting-inappropriate-content).
 :::
 
 Each annotation listed below the search bar comprises the date the annotation was made, the privacy setting associated with the annotation/group, notice of if and how many flags are associated with the annotation, the name of the user who left the annotation, the name of the text to which the annotation was saved, a snippet of the annotation, and a button (in the form of a trashcan icon) to delete the annotation.
 
 There are three dynamic elements to each listing: the name of the user who left the annotation, the annotation snippet, and the delete button. All three elements can be selected with either your mouse or by tabbing to them and activating them with the space bar on your keyboard.
 
-#### Annotation Detail View
+#### User Details
 
 Selecting the name of the user who saved the Annotation directs you to that person’s User Record, where information about their Manifold account, Reading Group affiliations, and Annotation history can be reviewed. See the [Users section](../backend/users.md) for more about the views and options afforded in these records.
 
-When you select a listing’s annotation snippet, a drawer opens from the right of the screen, titled **Annotation Detail**. The drawer contains two default buttons below the title—**View** and **Delete**—and a contextual one labeled **Resolve All Flags**, which only appears when the annotation you selected has been flagged by a user. These buttons are the only dynamic elements in the drawer. The remaining content is purely for informative purposes and is divided into three sections labeled **Flags**, **Content**, and **Metadata**.
+#### Annotation Detail View
 
-Beginning with the buttons, let’s consider each of these elements in turn:
-
-- The **View** button moves the user to the frontend, to the place in the text where the annotation was made, with the annotation drawer open the particular annotation in question.
-- The **Delete** button provides a means for an administrator to delete the individual annotation in question.
-- The **Resolve All Flags** button resolves—or removes—all of the flags associated with the annotation. This is the option an administrator would select when they feel the annotation can remain as is.
-
-The following static elements in this view only provide contextual information. No action happens in this space.
-
-<ul>
-  <li>
-    <p>The <strong>Flags</strong> heading will appear only if the annotation has been flagged by a user in the frontend. A list of those flags appears beneath the heading, each one made up of the date the annotation was flagged, the username of the person who flagged the annotation, and (potentially) the reason why the user flagged the annotation for review.</p>
-    <p>In situations where the annotation was previously flagged and those flags were resolved, a record will remain in this space indicating how many flags have been resolved over time.</p>
-    <p>See the <a href="../using/reading_manifold.md#reporting-annotations-and-comments">Reporting Annotations and Comments section</a> for more on how users can flag content for administrative review.</p>
-  </li>
-  <li>The <strong>Content</strong> heading introduces a text box that contains the raw text of the annotation itself.</li>
-  <li>The <strong>Metadata</strong> section includes four fields that provide the date the annotation was made, the text to which the annotation was saved, the name of the Reading Group to which it is associated, and the username and account role associated with the person who created the annotation.</li>
-</ul>
+When you select a listing’s annotation snippet, the view will shift away from the **Reading Groups** menu space to the Annotation Detail view, which is part of the **Records** menu. See the [Managing Annotations and Comments section](../administering/annoComments_be.md) for more about the options available in this view.
 
 #### Deleting Annotations Singly
 
