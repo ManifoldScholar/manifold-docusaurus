@@ -35,6 +35,7 @@ const sidebars: SidebarsConfig = {
             'administering/spam',
             'administering/readingGroups_be',
             'administering/annoComments_be',
+            'administering/resolvingFlags',
             'administering/bulkActions',
             ]
           },

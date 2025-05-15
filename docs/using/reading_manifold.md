@@ -201,8 +201,9 @@ Highlighting is user specific, meaning Highlights can only be seen by those who 
 Users can flag Annotations or Comments they feel are inappropriate or generally out of bounds and warrant review by an instance administrator. The vehicle for flagging Annotations and Comments is the **Report** button, which displays as an option below the text of the annotation or comment in the following views:
 
 - in the Annotation drawer within the Manifold Reader (described throughout this section),
-- in the See All view, accessible from the [Reader’s Notes dropdown menu](../using/reading_manifold.md#notes), and
-- in a Reading Group’s [Notes and Comments tab](../using/reading_groups.md#creator-moderator-and-administrator-view).
+- in the See All view, accessible from the [Reader’s Notes dropdown menu](../using/reading_manifold.md#notes),
+- in a Reading Group’s [Notes and Comments tab](../using/reading_groups.md#creator-moderator-and-administrator-view), and
+- in a [Resource’s frontend landing page](../using/manifold_projects.md#resources).
 
 When you select the **Report** button, a modal will with a text box and two buttons will open. The text box, labeled **Message**, is optional. For those so inclined, however, they can use this input to briefly describe for administrators why they flagged the Annotation or Comment. Following the text box there are two buttons: **Report** and **Cancel**.
 
@@ -213,3 +214,7 @@ Annotations and Comments can be flagged multiple times, and the number of times 
 Additionally, in the backend, flags appear to administrators with the usernames of those who reported the content and the time when the report was made.
 
 If the **Cancel** button is selected in the modal, the users is returned back to the annotation view they were previously viewing.
+
+:::note Resolving Flags
+Administrators can resolve flags in both front- and backend views. See the [Managing Annotations and Comments section](../administering/annoComments_be.md#resolving-flags) for more.
+:::
