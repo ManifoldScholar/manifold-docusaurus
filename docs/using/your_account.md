@@ -54,7 +54,7 @@ When enabled, notifications will be triggered by the following events:
 * Public annotation updated with new text
 * Private annotation converted to public annotation
 
-Administrators, alone, also have the option to be notified of flagged comments in realtime.
+Administrators, alone, also have the option to be notified of flagged comments in realtime. See the [Reporting Inappropriate Content section](../using/reading_manifold.md#reporting-inappropriate-content) for more on how users can flag content for administrative review.
 
 ## Account Deletion
 

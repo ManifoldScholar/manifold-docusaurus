@@ -27,10 +27,10 @@ The opportunities to manage Reading Groups described in this section provide a m
 
 As an example, with this interface you can search for Reading Groups you expect to be spam, and from those search results, you can then select which you wish to remove. You can likewise drill down into a view listing all of a Group’s annotations and filter those annotations by date, flag, or user to remove inappropriate content, either individually or in bulk.
 
-These features work in conjunction with the platform’s email verification, models of trust, and rate limiting systems described in the [Mitigating Spam section](../administering/spam.md).
+These features work in conjunction with the platform’s email verification, models of trust, and rate limiting systems described in the [Spam Baseline Guardrails section](../administering/spam.md).
 
 :::note More on Flagging and Terms and Conditions
-Learn more about how to flag inappropriate content in the [Reporting Inappropriate Content section](../using/reading_manifold.md#reporting-inappropriate-content).
+Learn more about how to flag annotations and comments content in the [Reporting Inappropriate Content section](../using/reading_manifold.md#reporting-inappropriate-content).
 
 The [Pages section](../backend/pages.md) of this documentation describes how to set Terms and Conditions for your instance. Note that we do not supply a Terms and Conditions template for general use.
 :::
@@ -47,8 +47,12 @@ There are two buttons within the search bar: **Reset** and **Options**.
 
 The **Reset** button clears the search bar and resets the listings to the default view that shows all of the instance’s Reading Groups. The **Options** button unveils three dropdowns to filter and sort the results of a search. Search results can be filtered by (1) privacy setting, (2) by flag status, and (3) by creation date or alphabetically.
 
-:::info More Specific Searches
+An example use case then would be to sort the list of Reading Groups to show only Public Reading Groups that contain flagged annotations—and to then use the search bar to refine that further based off a keyword query.
+
+:::info More and Less Specific Searches
 It *is* possible to search for specific user names or passages of text contained in annotations that were made in the context of a Reading Group—just not from this view. For searches of this kind, see the [Reading Group Annotations](../administering/readingGroups_be.md#reading-group-annotations) section below.
+
+You can use the search filters to refine the list of Reading Groups without including a keyword search. When you make selections from the filter dropdowns, the list will automatically update to match the criteria you have selected.
 :::
 
 ## Reading Group List
@@ -59,7 +63,7 @@ The Reading Group list below the search bar defaults to a paginated view of all 
 
 Below, each Reading Group entry includes its name, the group’s privacy setting—public, private, or anonymous—the number of members and annotations associated with the group, a date denoting when the group was created, and a button that allows an administrator to delete that particular group.
 
-When you use the search bar, any results from that search will displace the default listings.
+When you use the search bar, any results from that search will displace the default listings in favor of results that match the criteria from the search bar.
 
 ## Deleting Reading Groups
 
@@ -124,7 +128,7 @@ Users who saved annotations to a group that they have since been removed from wi
 That said, users who have been removed from a group will no longer have access to any comments—that is, responses to annotations or other comments—they left within the confines of that group. Those comments will only be available to current members of the group.
 
 :::note Manually Removing Annotations and Comments
-Annotations and comments can be removed by administrators in the frontend interface in the Reader’s annotation drawer using the **Delete** button associated with the content, from the See All view in the [Reader’s Notes dropdown menu](../using/reading_manifold.md#notes), and in a [Reading Group’s **Notes + Comments** tab](../using/reading_groups.md#creator-moderator-and-administrator-view).
+Annotations and comments can be removed by administrators in the frontend interface in the Reader’s annotation drawer using the **Delete** button associated with the content, from the See All view in the [Reader’s Notes dropdown menu](../using/reading_manifold.md#notes), in a [Reading Group’s **Notes + Comments** tab](../using/reading_groups.md#creator-moderator-and-administrator-view), and on a [Resource’s landing page](../using/manifold_projects.md#resources).
 
 In the backend, annotations can be removed using the **Annotations sidebar** in a Reading Group’s detail view (considered below) or from the **Annotations** submenu, living within the **Records** menu view. Comments can likewise be removed from the backend, using the **Comments** submenu within the **Records** menu view. The **Annotations** and **Comments** submenu options are fully considered in the [Managing Annotations and Comments section](../administering/annoComments_be.md).
 :::
@@ -137,7 +141,7 @@ The search bar in this space accepts keyword searches and returns results for us
 
 There are two buttons with the search bar: **Reset** and **Options**.
 
-The **Reset** button clears the search bar and resets the listings to the default view that shows all of the Group’s annotations. The **Options** button unveils two dropdowns to filter and order the results of a search. Search results can be filtered by flag status and ordered by creation date or by username. This allows administrators to quickly filter annotations for possible concerns, review them, and then, if warranted, take action to remove them.
+The **Reset** button clears the search bar and resets the listings to the default view that shows all of the Group’s annotations. The **Options** button unveils two dropdowns to filter and order the results of a search. Search results can be filtered by flag status and ordered by creation date or by username. This allows administrators to quickly filter annotations for possible concerns, review them, and then, if warranted, take action to remove them. You can refine the list of annotations using only the filtering dropdowns. The list will update to match the criteria you select even if you don’t include a keyword search.
 
 :::note What’s This Flagging of Which You Speak?
 Flagging is the means by which users can call attention to specific annotations or comments for review by an instance administrator.

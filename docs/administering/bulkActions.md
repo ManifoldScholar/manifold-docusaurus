@@ -56,6 +56,6 @@ It is not possible to manually select items across pages; you can only manually 
 
 When you select **Bulk Delete**, either as part of the process to remove all of the entries in the list, or for a more tailored subset you’ve specifically chosen, the system will present a modal warning indicating the number of items you have selection for deletion and ask for confirmation to proceed.
 
-:::note Deleted Content Permanence
+:::warning Deleted Content Permanence
 When you opt to delete a Reading Group, Annotation, Comment or User, either individually or in bulk, the system will surface a warning in a modal pop-up asking you to confirm the deletion. As the prompt states, once the element has been deleted, there is no means to recover it. What is gone is gone.
 :::
