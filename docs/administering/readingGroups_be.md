@@ -119,6 +119,10 @@ The **Members** sidebar in the Reading Group detail view provides a paginated li
 
 Administrators can select the member removal button with their mouse or by tabbing to it with their keyboard and selecting it with the space bar. When selected, the system will open a modal, asking you to confirm your choice to remove the group member.
 
+:::note Removing Members from the User Menu
+It is also possible to remove Reading Group members from the [Users Detail View](../backend/users.md#user-detail-view). The dynamic is somewhat different in that space, in that you are keying in on a specific user, and seeing all the Reading Groups they are associated with, and can then selectively remove them from specific groups. Whereas in this space you are investigating a particular group and removing one or more members from that group.
+:::
+
 If you opt to remove a group member, know that you are only severing their relationship with that particular group. Their user account will otherwise be unaffected, and the user will still be able to annotate and comment in other contexts as well as join other reading groups or create new ones of their own.
 
 Likewise, annotations and comments are not affected by removing a group member. Annotations or comments left by a user who is removed from the group will continue to persist in the group unless those annotations or comments are specifically removed.
