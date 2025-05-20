@@ -213,7 +213,7 @@ docker-compose down
 
 Access the Rails (Manifold API Backend) console
 ```
-docker exec -it  manifold-docker-compose_api_rails_1 rails console
+docker exec -it  manifold-docker-compose-api_rails-1 rails console
 ```
 
 Replace `console` in the above command with other Manifold rake commands. These
@@ -222,7 +222,7 @@ are [documented here](/docs/administering/reference/api_rake_tasks)
 
 Create an admin user
 ```
-docker exec -it manifold-docker-compose_api_rails_1 \
+docker exec -it manifold-docker-compose-api_rails-1 \
 rails manifold:user:create:admin['email@example.com','test123!','First','Last']
 ```
 
