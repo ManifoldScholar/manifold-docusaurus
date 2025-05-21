@@ -62,18 +62,6 @@ The copyright symbol (©) will precede text entered in this field by default. If
 In the Reader, Manifold displays the copyright information of specific Texts instead of the general copyright notice.
 :::
 
-### Social Sharing Message
-
-Links to individual Resources and Resource Collections can be shared by readers directly to their personal Twitter or Facebook timelines.
-
-Manifold will pre-populate those posts with the text entered here. If left blank, the system defaults to “Shared from Manifold Scholarship.”
-
-In all cases the message will be followed the URL of the content being shared.
-
-### Twitter Account and Facebook Page ID
-
-These fields provide you the means to include links to your existing social media profiles in the Manifold Footer. The **Twitter Account** field is expecting your Twitter username, with or without an ampersand. The **Facebook Page ID** corresponds to the name that appears in the URL of your Facebook homepage. When left blank, the Twitter or Facebook links will be absent from the footer.
-
 ### Contact Email
 
 Manifold has a built-in contact form that readers can use to provide feedback directly to you through the application.

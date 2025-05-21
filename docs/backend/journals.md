@@ -190,7 +190,7 @@ The breadcrumb menu will not appear if the instance has disabled library views o
 
 The Journal Hero block is meant to display high-level information about the Journal, capturing elements like its Title and Description, while also providing a place to document its people, practices, and visual identity.
 
-Options to adjust the appearance of the Journal’s Hero block are contained within the block’s **Description + Images**, **Calls-to-Action**, and **Social Links** submenus.
+Options to adjust the appearance of the Journal’s Hero block are contained within the block’s **Description + Images** and **Calls-to-Action** submenus.
 
 #### Description + Images
 
@@ -249,12 +249,6 @@ Using the **Calls-to-Action** menu, you can add links and buttons to the Hero bl
 The menu interface is arranged in two columns that indicate how your call-to-action will render: as a rectangular button or as a simple text link that appear right of the Journal’s Title and Description.
 
 See the [Projects section](../backend/projects.md#calls-to-action) to learn more about how to engage with this interface, which functions the same in both places with one caveat: for Projects, Calls-to-Action can be set to render on the left side as well as the right. By design, Calls-to-Action *only* appear on the right for Journals.
-
-#### Social Links
-
-If your Journal has a presence on **Twitter / X**, **Facebook**, or **Instagram**, links to those profiles can be added as clickable thumbnails in the lower left of the Hero block using the fields here. The input of each field should correspond with the format and case of your profile’s handle as it appears on the respective social media platform.
-
-Additionally, you can promote a hashtag that you would like your readers to use on Twitter/X as a means to better capture the conversation around your publication in that sphere. When a **Hashtag** is provided it will appear beneath any social icons; when selected readers will be directed to a Twitter/X page displaying Tweets using the tag. The field does not require the hash sign (#); the system will automatically append one.
 
 ### Access
 
