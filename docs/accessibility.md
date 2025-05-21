@@ -72,4 +72,4 @@ Manifold is distributed software that is used by many different publishers and g
 
 If you need accessibility-related help with a Manifold publication, please contact us at [contact@manifoldapp.org](mailto:contact@manifoldapp.org).
 
-If you would like to report an issue with the Manifold platform, please [email us](mailto:contact@manifoldapp.org) or submit an [issue](https://github.com/ManifoldScholar/manifold/issues) or start a [discussion](https://github.com/ManifoldScholar/manifold/discussions) in our GitHub repository. We are also widely available on [Twitter](https://twitter.com/ManifoldScholar) and [Slack](https://manifold-slackin.herokuapp.com/) for help.
+If you would like to report an issue with the Manifold platform, please [email us](mailto:contact@manifoldapp.org) or submit an [issue](https://github.com/ManifoldScholar/manifold/issues) or start a [discussion](https://github.com/ManifoldScholar/manifold/discussions) in our GitHub repository.
