@@ -6,7 +6,7 @@ sidebar_label: Your Account
 
 ## Signing Up
 
-Creating an account is done by clicking the user icon in the top right corner of the screen and selecting the *Need to sign up?* link, and you can then enter your name, email, and a password. Alternatively, you can create an account using your existing Facebook, Twitter, or Google credentials if the instance has enabled those connections.
+Creating an account is done by clicking the user icon in the top right corner of the screen and selecting the *Need to sign up?* link, and you can then enter your name, email, and a password.
 
 ## Account Verification
 
@@ -29,7 +29,7 @@ Once you have created a Manifold account, you have the opportunity to edit your 
 - **Nickname**. Your user nickname is not displayed anywhere in Manifold. It will not be associated with your annotations or comments nor in reading groups of which you are a part. Instead, this is the name by which Manifold will refer to you in any notification emails it directs to your inbox.
 - **Profile Image**. The field for your profile image allows you to drag and drop or select from your file system an image in GIF, JPEG, JPG, or PNG format. Your profile image displays in the user icon location in the menu as well as beside your name in the annotation drawer, in the notes dropdown in the Manifold reader, and in reading group listings. If you opt not to include have a profile image associated with your account, only your first and last names will display in the listed areas.
 - **First** and **Last Name**. Both first and last name fields are required by Manifold. Your first and last names display with your annotations and comments in the annotation drawer, in the notes dropdown in the Manifold reader, and in reading group listings.
-- **Email**. This is the email address to which Manifold will direct any updates or notifications to you. For those users who are not using OAuth (Google, Facebook, Twitter) to sign in, this email will also serve as your means for logging into Manifold.
+- **Email**. This is the email address you will use to log into Manifold and where Manifold will send you updates or notifications.
 - **Password** and **Confirm Password**. These two fields provide the means to enter and confirm a new password.
 
 Any adjustments made on this screen will only be committed to the system after selecting the **Save Changes** button. Once selected any adjustments that have been made will take effect immediately.

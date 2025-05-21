@@ -243,7 +243,7 @@ Most Content Blocks include a few decision points about what, or how, to render 
 
 ### Hero Block
 
-The Hero block announces to readers what the Project is about and who is behind it. It can be as basic or as involved as the material requires. Controls to adjust the appearance of the Hero block are contained within the block’s **Description + Images**, **Calls-to-Action**, and **Social Links** submenus.
+The Hero block announces to readers what the Project is about and who is behind it. It can be as basic or as involved as the material requires. Controls to adjust the appearance of the Hero block are contained within the block’s **Description + Images** and **Calls-to-Action** submenus.
 
 Listings from the [**People** sidebar](../backend/projects.md#people) appear in the Hero as well to describe a Project’s authorship. Only Authors will appear with an associated avatar image, and then only in cases when there are fewer than three Author listings, so as not to clutter the available space. Contributors will be named but will never display with an avatar.
 
@@ -373,16 +373,6 @@ The **Visibility** field in the Download configuration drawer allows you to dete
 </TabItem>
 
 </Tabs>
-
-#### Social Links
-
-Social media profiles affiliated with the Project are defined in the **Social Links** submenu, which opens from the right as a drawer. Facebook, Twitter/X, and Instagram profiles assigned here render in the lower left of the Hero as clickable icons. When a **Hashtag** is provided, it will appear beneath any social icons and on click direct readers to a Twitter/X page displaying Tweets using the tag. The field does not require the hash sign (#); the system will automatically append one.
-
-The different social networks require their handles to be formatted as they appear on their own networks: Twitter/X IDs are not case sensitive and agnostic about whether or not there’s an ampersand. Facebook IDs are case sensitive and should be listed without an ampersand. Instagram usernames are not case sensitive but should *not* include an ampersand.
-
-:::caution Twitter/X Support Discontinued
-Twitter/X functionality is deprecated in Manifold version 8 and will be removed entirely in version 9. Previously, you could configure the Project to pull Tweets using a hashtag or other match against the Twitter API into the Recent Activity block using the settings in the [Social Integrations](../backend/projects.md#social-integrations) menu. However, that is no longer possible.
-:::
 
 ### Markdown Block
 
@@ -541,13 +531,9 @@ Like Projects, Text and Resources represent fundamental concepts of Manifold and
 
 ## Activity
 
-The **Activity** menu displays Project events that render as tiles in the Recent Activity block. Events are created when new Texts and Resources are added, when Texts are annotated or commented upon, and when Manifold pulls Tweets into the Project. From this view, you can search for events and filter results by the kinds of activity (e.g., Text Added, Project Created).
+The **Activity** menu displays Project events that render as tiles in the Recent Activity block. Events are created when a new Project is created and when new Texts and Resources are added to it. From this view, you can search for events and filter results by the kinds of activity (e.g., Text Added, Project Created).
 
 Events can be individually removed from a Project by selecting an event’s delete button, shown as a red trashcan icon in the lower right of a tile.
-
-:::note Bringing Tweets into a Project
-Twitter/X functionality is deprecated in Manifold version 8 and will be removed entirely in version 9. It is no longer possible to bring Tweets into the Recent Activity content block.
-:::
 
 ## Metadata
 
@@ -558,20 +544,6 @@ Project Metadata entered in this view will is included in the BagIt archive when
 All of the Metadata fields support formatting with the exception of **DOI**. 
 
 For detailed definitions of each metadata field, see the [Metadata reference section](../backend/metadata.md).
-
-## Social Integrations
-
-From this view, a Project’s Activity Block can be configured to display Tweets matching certain criteria. Every hour Manifold will fetch up to sixty Tweets for each such active Twitter Query within a Project. Each saved query is listed with its status and the number of results it has returned.
-
-The **Add a new Twitter Query** button opens a drawer from the right where a new query is defined. The **Query** itself should conform to [Twitter’s search operators](https://developer.twitter.com/en/docs/tweets/search/guides/standard-operators). Matching Results are then returned by either the “most recent” and “most popular”, as selected in the **Fetch Tweets By** dropdown.
-
-The **Active** toggle tells Manifold if it should fetch tweets for the Query. Results from inactive queries will be ignored.
-
-Saved queries can be selected from the list and edited or deleted. It is also possible to manually force the system to fetch results for saved queries immediately with the **Fetch Tweets** button beside the green arrows circling one another.
-
-:::caution Twitter/X Support Discontinued
-Twitter/X functionality is deprecated in Manifold version 8 and will be removed entirely in version 9. It is no longer possible to bring Tweets into the Recent Activity content block.
-:::
 
 ## Exports
 

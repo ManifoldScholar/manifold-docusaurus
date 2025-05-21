@@ -34,11 +34,7 @@ The [Metadata](../backend/metadata.md) section serves as a good introductory pri
 
 ## Activity
 
-The Activity block displays on tiles the last six activity records for the Project. Activity records announce when new Texts and Resources are added to the Project. If a Project contains more than six activity records, users will be shown a button that links to the full, paginated list of activity on a separate screen.
-
-:::caution Twitter/X Support Discontinued
-Twitter/X functionality is deprecated in Manifold version 8 and will be removed entirely in version 9. It is no longer possible to bring Tweets into the Recent Activity content block.
-:::
+The Activity block displays as tiles the last six activity records for the Project. Activity records announce when new Texts and Resources are added to the Project. If a Project contains more than six activity records, users will be shown a button that links to the full, paginated list of activity on a separate screen.
 
 ## Resources
 

@@ -141,7 +141,7 @@ Alternatively, you can **Choose a Range Preset** that adjusts the reports to pre
 
 #### Reports
 
-Following the date constraint options, the system displays six usage reports, some with multiple data points, reflecting user activity across the instance during the defined time span.
+Following the date constraint options, the system displays six usage reports, some with multiple data points, reflecting user activity across the instance during the defined time span. Some of these metrics rely on the pop-up menu in the Manifold reader. See the [Engaging with Texts section](../using/reading_manifold.md#engaging-with-texts) for more context of those features.
 
 1. Rendered as a line chart, the **Visitors** report shows the number of unique visitors accessing the Text during the set time span. Visits are tied to a user’s browser. A user with multiple tabs open to the Text in the same browser will be counted only once. But if the same user accesses the Text from two different browsers, they will be recorded as two different visitors.
 
@@ -149,7 +149,7 @@ Following the date constraint options, the system displays six usage reports, so
 
 3. Values shown in the **Highlights** report corresponds to the total number of passages in the Text that have been highlighted during the selected time period. The system aggregates all of the highlights made to the Text in the value it reports, regardless of privacy setting or affiliation with Reading Groups.
 
-4. The **Shares** report displays the current total for the number of times visitors have used the Manifold Share feature in the Reader’s pop-up menu to share the Text section to Twitter or Facebook. The number displayed in the report is *not* affected by time constraints.
+4. The **Shares** report displays the aggregate number of times visitors have used the Manifold Share feature in the Reader’s pop-up menu to share a passage from the Text via an external application or URL. To be clear, Manifold does not track if those links are used; it only tracks when they are generated. The number displayed in the report is *not* affected by time constraints.
 
 5. Each time a visitor uses the Reader’s Share feature to create an citation for the Text section, a record is created. The figure in the **Citations** report represents the total number of citation records currently associated with the Text section. It is *not* affected by time constraints.
 

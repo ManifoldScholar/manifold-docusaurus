@@ -14,9 +14,7 @@ Manifold is “distributed” software. This means that Manifold accounts are no
 
 Select the user link button, displayed as a silhouette avatar, on the right side of the header. This will open a modal overlay where you can login with your existing account credentials.
 
-If your account is associated with your email address, enter your email and password in the respective fields and select the **Log In** button.
-
-Or select the **Log In** button identified with the social media service with which you established your Manifold account. That will open a pop-up window where you can input your Facebook, Google, or Twitter username and password.
+Enter your email and password in the respective fields and select the **Log In** button.
 
 After you’ve entered your credentials you will be logged in and redirected to the instance’s landing page.
 

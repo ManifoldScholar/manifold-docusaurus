@@ -17,13 +17,13 @@ If **Settings** is selected, the ribbon transforms into a more detailed view tha
 Users do not need to have a Manifold account to have their selection saved. Anonymous consent is stored in the user’s browser locally in a cookie. However, users *will* need to either clear their browser’s cookies or create an account if they wish to adjust their selection. Users with accounts can access these privacy settings by selecting the user avatar on the right side of the site’s menu bar and then selecting **Privacy** from the dropdown. 
 
 :::info A Word about Personally Identifiable Information (PII)
-Manifold collects name and email information for all users. Manifold also collect passwords, which are fully encrypted, for all users—except for those users who authenticate using a third party OAuth provider (Google, Facebook, Twitter). No other personal information is collected.
+Manifold collects name and email information for all users. Manifold also collect passwords, which are fully encrypted, for all users. No other personal information is collected.
 
 That said, when you create a highlight, annotate a text, or add a comment, Manifold stores it in its database. Manifold also keeps track of content that you’ve starred and stores basic information about each reading group, the content that has been collected in the group, and the group’s members.
 :::
 
 :::tip Options for Admin Users
-Users with Administrator accounts can adjust the language displayed to users in the views described here. The fields to adjust them can be found at the bottom of the [Theme Settings]../administering/configuring/theme_settings.md) section of the Manifold backend under the **Content** heading.
+Users with Administrator accounts can adjust the language displayed to users in the views described here. The fields to adjust them can be found at the bottom of the [Theme Settings](../administering/configuring/theme_settings.md) section of the Manifold backend under the **Content** heading.
 
 The aim would not be to change the facts of how the system works but instead to adjust the tone of the messaging to match to your instance’s voice, as well as to provide you the opportunity to adjust the amount of context you may want to provide.
 :::
