@@ -384,7 +384,6 @@ The different social networks require their handles to be formatted as they appe
 Twitter/X functionality is deprecated in Manifold version 8 and will be removed entirely in version 9. Previously, you could configure the Project to pull Tweets using a hashtag or other match against the Twitter API into the Recent Activity block using the settings in the [Social Integrations](../backend/projects.md#social-integrations) menu. However, that is no longer possible.
 :::
 
-
 ### Markdown Block
 
 The Markdown Block is so named because it accepts Markdown-formatted input. As such, it is also quite versatile. Remotely hosted images, audio, and video can be referenced and rendered in the Block using standard HTML embed codes. Likewise, different attributes can be defined with inline, internal, or external stylesheets. 
@@ -403,9 +402,21 @@ Use the [**Activity** menu](../backend/projects.md#activity) to manage the recor
 
 ### Resources Block
 
-The Resources Block displays, as clickable tiles, the ten most recently updated Project Resources, accompanied by a link to the Project’s Resource library. The block’s title can be modified using the **Title** field, and a description can be added in the **Description** field that will appear beneath the title on the landing page. If the **Show All Collections** switch is enabled, this block will also list each of the Project’s Resource Collections, along with a link to view all of the Resource Collections in a view of their own. When toggled off, users can use the **Show Specific Collections** dropdown to show only certain Collections. Collections can be manually reordered from this view using the horizontal grab bars to the right of the Collection’s name.
+The Resources Block displays, as clickable tiles, individual resources or resource collections associated with the project. This block is highly customizable, with options to configure the block’s title, description, as well as which and in what order resources display for readers.
 
-Use the [**Resource**](../backend/resource.md) and [**Resource Collections** menus](../backend/resource_collections.md) to manage individual Resources and Resource Collections, respectively.
+The block’s title can be modified using the **Title** field, and a description that will display beneath the title on the project landing page can be added using the **Description** field. The **Description** field accepts Markdown formatting, so it is possible to include italics, bold, and links in this space.
+
+When the **Show All Collections** toggle is enabled, this block will list each of the Project’s Resource Collections on the project landing page, along with a link to view all of the Resource Collections in a view of their own. When toggled off, users can use the **Show Specific Collections** dropdown to select specific Collections for display. Collections can be manually reordered from this view using the horizontal grab bars to the right of the Collection’s name.
+
+The **Show Resources in Addition to Collections** toggle allows you to select individual resources to display beneath any collections you have set to appear on the project landing page. By default this toggle is in the off position. When activated, the system will provide a dropdown labeled **Show These Resources** that allows you to select up to ten resources that will show on the project landing page. As you select resources, they will appear in a list below the dropdown. You can remove items in that list using the **Remove Selection** button, which displays as crossed lines, or reorder the resources in the list using the horizontal grab bars.
+
+All of the options in this view can be adjusted with only a keyboard, tabbing to the element and activating it with the space bar. The horizontal grab bars, when selected with the keyboard, will display a new dropdown giving you options to move the element up or down within the list.
+
+:::note How do I get Resources to appear in this view?
+It is not possible to add resources to a project from this view. This is merely how you adjust how resources that are already loaded into the system display in the Resources block on the project landing page.
+
+Use the [**Resource**](../backend/resource.md) and [**Resource Collections** menus](../backend/resource_collections.md) to add and manage individual Resources and Resource Collections, respectively. Once you have done so, they will be available for selection in this view.
+:::
 
 ### Contents Block
 
@@ -434,7 +445,7 @@ When the **Show Author Names?** toggle is engaged, the block will include the na
 
 The **Show Subtitles** toggle tells the system to include each Text’s subtitle beside their main title in the block.
 
-When the block is configured to **Show Dates**, the system displays the date when a Text was added to the Project or last updated on the system. That date is not an editable field and is not to be confused with a Text's publication date.
+When the block is configured to **Show Dates**, the system displays the publication date associated with the Text..
 
 In the Text block, uncategorized Texts are treated differently from those that are categorized. When **Show Uncategorized Texts** is toggled on, uncategorized Texts will appear beneath a header reading “Uncategorized,” regardless of whether you have the “Show Category Labels” toggle active.
 
@@ -456,7 +467,7 @@ Project Entitlements, on the other hand, limit who can read and engage with a Pr
 
 ### Editor Permissions
 
-The **Grant editor permission** button opens a drawer from the right side of the screen with a dropdown menu and three switch toggles that configure Project-specific permissions for individual users. These permissions give users the ability to view or edit specific Projects in ways they wouldn't otherwise be able to.
+The **Grant editor permission** button opens a drawer from the right side of the screen with a dropdown menu and three switch toggles that configure Project-specific permissions for individual users. These “scoped” permissions give users the ability to view or edit specific Projects in ways they wouldn't otherwise be able to with their existing [user role](../backend/users.md#user-roles).
 
 The **Select User** dropdown lists all of the instances Users. The dropdown functions as both a search bar and drowpdown list to more easily find specific Users. Whichever User is selected will be granted permissions to the project based on which of the following toggles are activated.
 
@@ -464,7 +475,7 @@ The **Can Modify Project** option grants the user the ability to edit all aspect
 
 When users with this permission log into Manifold, a button reading **Editor Mode** or **Admin Mode** will appear for them in the Manifold menu bar and they will be able to view and edit this Project or Journal issue in the backend, even if they normally would not have access to the Manifold backend.
 
-As with the **Can Modify Project** option, if the **Can Modify Resource Metadata** toggle is engaged, the user will be able to access and edit the Project in the Manifold backend; however they will have a *very* limited view of the Project. They will only be able to access the Project’s **Resources** sidebar, where they can edit the metadata for existing Resources. Users with this permission will not be able to add or delete Resources from the Project. When this option is selected, the user’s name will appear in the listings with a “Metadata Author” badge.
+As with the **Can Modify Project** option, if the **Can Modify Resource Metadata** toggle is engaged, the user will be able to access and edit the Project in the Manifold backend; however they will have a more limited view of the Project. They will only be able to access the Project’s **Texts**, **Resources**, and **Resource Collections** sidebars. Users with this permission will be able to ingest or create new texts in the system, modify existing texts, as well as add new resources, adjust existing ones, and collect them into new or existing resource collections. When this option is selected, the user’s name will appear in the listings with a “Project Collaborator” badge.
 
 For users who have also authored Project content, the **Is a Project Author** toggle grants them the ability to view and annotate the Project from the frontend when it’s in Draft status. When the User engages with Texts within the Project, the system will differentiate their annotations and highlights with a pink color and display an “Author” badge in the annotation drawer. Users who are *only* scoped this role will *not* have access to the Manifold backend.
 
