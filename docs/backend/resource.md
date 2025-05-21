@@ -260,13 +260,28 @@ Unless otherwise noted, the following attributes are common to all Resource kind
 #### Kind
 
 The values in this dropdown correspond to the ten different Manifold Resource types and instruct the system how to understand the Resource. If this field is changed for an existing Resource, the system will retain values for attributes shared between the two kinds.
-Title
+
+#### Title
 
 This is the display name of the Resource. It appears under the Resource thumbnail in the left margin of the Reader when the Resource is placed as a Text annotation, in the Resource modal window in the Reader, in the Resource library and detail page, and in the **Resources** Content Block and Resource Collection views.
 
 The value in this field is also baked into the metadata that Manifold shares with other systems, crawlers, and social media platforms.
 
-This field accepts Markdown formatting, though other systems the Resource is shared with may not.
+This field accepts Markdown formatting, though that formatting may not be respected by outside sites or ap
+
+#### Featured
+
+This toggle affects how resources are ordered on a project’s Resources landing page, the **All Project Resources** list view, available at this path:
+
+    ```html
+    https://{domain-name}/projects/{project-slug}/resources/
+    ```
+
+In that gridded list view, resources default to displaying in the order they were added to the system, newest to oldest. However, resources that have this **Featured** toggle activated, will be moved to the start of the list.
+
+More than one resource in a project can have this toggle activated. In those situations, the system will display the **Featured** resources first, newest to oldest, followed by the remaining resources, again, newest to oldest.
+
+Using this toggle does not prevent frontend readers from using the dropdown sorting options on the **All Projects Resources** page to reorder the resources in a way that makes sense for them.
 
 #### Sort Title
 
