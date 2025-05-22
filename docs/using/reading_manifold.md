@@ -35,13 +35,21 @@ Backend users can modify the makeup and order of this dropdown using the [Table 
 
 ### Notes
 
-The Notes menu, designated by a notepad icon in the top menu, displays a list of all the Annotations you have saved to a Text, along with the Reading Group with which they are associated and the number of Comments they have garnered. These listings only show a snippet of your full Annotation. When you select individual Annotation entries from the Notes list, you will be taken directly to the section of text where you saved that particular Annotation with the Annotation drawer open and focused on the Annotation.
+The Notes menu, designated by a notepad icon in the top menu, displays a list of all the Annotations you have saved to a Text. The list can also be configured to display *all* the annotations that have been saved to a text by any Reading Group of which you are a member. In that configuration, you will see *both* your annotations and those of other Group members in the list.
+
+These listings only show Annotation snippets. When you select individual Annotation entries from the Notes list, you will be taken directly to the section of text where you saved that particular Annotation with the Annotation drawer open and focused on the Annotation.
 
 You can filter this list by Reading Group using the dropdown so labeled. The **Reading Groups** dropdown contains two default listings along with listings for any other Reading Groups of which you are a member.
 
-The two default options are **My Notes** and **My Notes on Prior Versions**. Both options display all of your Annotations across all the Reading Groups in which you are a member. The difference between the two is that the **My Notes** options displays your Annotations that you’ve saved to the current, live version of the text. When **My Notes on Prior Versions** is selected, you will see any Annotations you saved to earlier iterations of the text that have since been replaced. When you select the name of any other Reading Group of which you are a part, you will only see the Annotations you saved to that group for the current, live version of the text.
+The two default options are **My Notes** and **My Notes on Prior Versions**. Both options display all of your Annotations across all the Reading Groups in which you are a member, along with the Reading Group with which they are associated and the number of Comments they have garnered. The difference between the two is that the **My Notes** options displays your Annotations that you’ve saved to the current, live version of the text. When **My Notes on Prior Versions** is selected, you will see any Annotations you saved to earlier iterations of the text that have since been replaced.
 
-The Notes menu also includes a button labeled **See All**. When selected, the listings showing in the menu will open in a new modal displaying the entirety of your Annotations, instead of the brief snippets provided in the default menu view. This modal view also includes a dropdown to filter by text section, so you can narrow your results to a specific portion of the text.
+When you select the name of any other Reading Group from the dropdown, the list shows all the annotations you *and* other members of that Group have saved to the text. Each listing includes a tag indicating the username for the person who left the Annotation and the number of Comments responding to it.
+
+The Notes menu also includes a button labeled **See All**. This button works in conjunction with your current Reading Group selection. When selected, the listings currently showing in the menu will open in a new modal displaying the full text of every Annotation, instead of the brief snippets provided in the default menu view.
+
+Thus, if you had **My Notes** or **My Notes on Prior Versions** showing when you selected **See All**, the modal will display all of your annotations across the text with a dropdown labeled **All Sections**, so you can narrow what Annotations are displayed to a specific portion of the text. If you had any other Reading Group displaying when you open the **See All** view, the modal will display all of the Annotations from that group that have been saved to the text, with filters that allow you to narrow the results to All Active Group members, specific members, or by text section.
+
+Whether you are viewing only your Annotations or those of a Reading Group, the **See All** view also includes a search bar that returns results for words and phrases appearing in those Annotations that match the current filter settings. The search bar only accepts keyword searches and does not recognize search operators as such. 
 
 :::note What about Comments?
 Reader Comments are not collected in this dropdown, whether they are responses to another reader’s Annotation or to a Comment thread grown around a Resource.
