@@ -252,7 +252,25 @@ See the [Projects section](../backend/projects.md#calls-to-action) to learn more
 
 ### Access
 
-A Journal’s **Access** sidebar allows you to grant entitlements to specific users or to specific reading groups so that they can view all of the journal’s restricted-access issues. Each individual journal issue has its own **Access** sidebar; however from within an individual issue you can only grant readers access to that one specific issue. This **Access** sidebar on the main Journal detail view gives you the means to grant readers access to the entire run of a journal, including both currently existing issues as well as those that are added after the entitlement is granted.
+A Journal’s **Access** sidebar allows you to do two things: (1) add other users to the journal as collaborators who can assist in the work of establishing, maintaining, and growing the journal on the platform, as well as (2) grant entitlements to specific users or to specific reading groups so that they can view all of the journal’s restricted-access issues. These functions are grouped respectively under the headings **Journal Editors** and **Journal Entitlements**.
+
+#### Journal Editors
+
+This space provides a means to empower other users to join you in the work of creating and maintaining the journal on the platform.
+
+There is only one dynamic element in this space, a dropdown labeled **Select User**, which makes available every User in the system for selection, regardless of their User role. This dropdown is of the type-ahead variety, meaning you can scroll for a username or begin typing a name to filter the results that display.
+
+When you select a User from the list, they will be listed beneath the dropdown and given permission to access the Manifold backend and adjust any of the settings in this Journal detail view—as well as all of the settings available to every individual issue associated with the journal, even if they normally would not have access to the Manifold backend. This means users with this permission can both create and delete new issues, in addition to adjusting existing ones. It also means they can adjust the overall journal framework on the site.
+
+That said, there is one limit to how far this permission extends: users who are granted this permission here cannot grant the same permission to other users.
+
+It is also important to note that this is a “scoped” permission and does not affect the selected user’s [global role](../backend/users.md#user-roles).
+
+When users with this permission log into Manifold, a button reading **Enter Editor Mode** or **Enter Admin Mode** will appear for them in the Manifold menu bar and from there they will have access to this journal and its issues, even if they are in Draft Mode.
+
+#### Journal Entitlements
+
+Each individual journal issue has its own **Access** sidebar; however from within an individual issue you can only grant readers access to that one specific issue. The entitlement options in the **Access** sidebar here in the main Journal detail view gives you the means to grant readers access to the entire run of a journal, including both currently existing issues as well as those that are added after the entitlement is granted.
 
 This view presents a unique ID for the journal, a search bar, a button to create new entitlements, and a list of existing entitlements.
 
