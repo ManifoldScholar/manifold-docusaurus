@@ -42,7 +42,7 @@ The **Public Reading Groups** page provides readers with a list of groups that a
 
 The **My Reading Groups** tab displays the total number of private and anonymous groups of which you are a member and a list of these groups that includes: name of the group and type, number of members, group activity (number of annotations, highlights, and comments), and actions (depending on your role in the group this could be a single **Archive** button for group members, or if you are a Creator, Moderator, or Administrator of an instance, you will see an additional **Edit** button).
 
-- **Archive** button. This removes a Reading Group from My Reading Groups. An archived group can be reactivated at any time. Use the **Active/Archived** dropdown menu to view archived groups and then use the **Activate** button to return the group to My Reading Groups.
+- **Archive** button. This removes a Reading Group from your My Reading Groups view. To be clear, selecting this option is user specific and will not affect how and where the Reading Group or annotations associated with it display for other users. An archived group can be reactivated at any time. Use the **Active/Archived** dropdown menu to view archived groups and then use the **Activate** button to return the group to My Reading Groups.
 - **Edit** button. Opens a drawer to the right that allows you to edit the group settings (see [Create a Reading group](../using/reading_groups#create-a-reading-group)).
 
 :::info Don't See the My Reading Groups Tab?
