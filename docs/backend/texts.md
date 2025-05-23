@@ -354,43 +354,46 @@ The list of of text sections in this view is one that is meant to be engaged wit
 
 1. The first option available in each section list entry is a button, denoted by a play-button icon, to make that particular section the place where the Manifold Reader will open to when the text is accessed. When selected, a badge labeled **Start** will appear in the listing.
 
-  Only one section can be serve as a text’s starting section. If no section is manually selected, Manifold will rely on the source file to determine which section the Reader should open to.
+     Only one section can be serve as a text’s starting section. If no section is manually selected, Manifold will rely on the source file to determine which section the Reader should open to.
 
-  For EPUBs, that section is described in the `toc.xhtml` file in the landmark space beneath the **Guide** section. The entry with the `epub:type="bodymatter"` attribute will be the section the EPUB will want to open. Older EPUB2s will open to the section that has the `type="text"` attribute in the **Guide** section of the `content.opf` file. For Manifest Ingests, Manifold will default to the section that includes the `start_section: true` attribute. For other source files that were ingested, Manifold will rely on the order in which they appear here.
+     For EPUBs, that section is described in the `toc.xhtml` file in the landmark space beneath the **Guide** section. The entry with the `epub:type="bodymatter"` attribute will be the section the EPUB will want to open. Older EPUB2s will open to the section that has the `type="text"` attribute in the **Guide** section of the `content.opf` file. For Manifest Ingests, Manifold will default to the section that includes the `start_section: true` attribute. For other source files that were ingested, Manifold will rely on the order in which they appear here.
 
-  When no section is manually designated as the Start, the Manifold Reader will open to the first section in the list here in this view.
+     When no section is manually designated as the Start, the Manifold Reader will open to the first section in the list here in this view.
 
 2. The delete button is a straight-forward option to delete that specific section from the text. If selected a confirmation prompt will appear to confirm the section should be deleted. Once done, the deleted section cannot be recovered.
 3. Denoted by a pencil icon, the edit button opens the text in the Manifold Editor, where the section’s name and content can be edited directly in the system using Manifold’s built-in rich-text and code editor. For more on that functionality, see the [Manifold Editor section](../backend/manifold_editor.md) of this documentation. It is important to note that changes to a section’s name here will adjust the section’s name throughout the Manifold backend. On the frontend, any changes to a sections’s name here will appear in the Reader’s title bar and in navigation links at the bottom of the Reader. However, changing a section name from this space will ***not*** automatically adjust how the name appears in the **Contents** dropdown or in a Table of Contents content block on a project’s landing page. See the following section about the **Table of Contents** sidebar for more on that.
-4. Pictured as an analog control panel equalizer, the Settings button opens a drawer from the right with two options, one to configure the section’s slug for sharing and the other to hide the section from navigation.
+4. Pictured as an analog control panel equalizer, the Settings button opens a drawer from the right with three options, to configure the section’s slug for sharing, to add a citation override that will appear in the Reader’s [pop-up Cite tool](../using/reading_manifold.md#sharing-and-citing-texts), and the last to hide the section from navigation.
 
-  The **Slug** field is meant to be used to create a shareable URL for a text section. The value entered in this field will **not** appear in the browser’s URL bar. By default, text sections in Manifold are assigned unique identifiers (UUIDs) when they are created. That UUID is what the system will display in the URL bar by default. But Manifold can also locate a text section by the slug entered here. Text section paths follow this pattern: 
-  
-  ```
-  {instance-domain}/read/{project-slug}/{section-slug}
-  ```
+     The **Slug** field is meant to be used to create a shareable URL for a text section. The value entered in this field will **not** appear in the browser’s URL bar. By default, text sections in Manifold are assigned unique identifiers (UUIDs) when they are created. That UUID is what the system will display in the URL bar by default. But Manifold can also locate a text section by the slug entered here. Text section paths follow this pattern: 
+     
+     ```
+     {instance-domain}/read/{project-slug}/{section-slug}
+     ```
+     
+     As a more concrete example, suppose you are working on our Edge instance of Manifold (edge.manifoldapp.org) in a project whose slug is `running-advice`. And for a text section you give it a slug value here of `run-faster`. The path to that text section that you could share would then be
+     
+     ```
+     edge.manifoldapp.org/read/running-advice/run-faster
+     ```
+     
+     However, that path that resolves in the browser would appear more like this:
+     
+     ```
+     edge.manifoldapp.org/read/running-advice/section/{UUID}
+     ```
+     
+     When creating slugs, it is best to avoid spaces and special characters to ensure they resolve properly.
+     
+     The textbox field labeled **Citation Override**, overrides the programmatically generated bibliographic citation the system generates in the [Reader’s pop-up Cite tool](../using/reading_manifold.md#sharing-and-citing-texts). This gives project editors the ability to provide a suggested citation for each section of a text so that readers and researchers can properly reference it in their own work. This field accepts Markdown formatting, so you can include italics and links (for DOIs, etc.) as needed.
+     
+     The toggle labeled **Hide in reader navigation?** is an option for those text sections that are not yet ready to be displayed as part of the text—a section that is being authored or still in progress, for instance. When enabled, the navigation at the bottom of the Manifold Reader will not display links to this section. Listings of text sections in the Manifold Reader’s **Contents** dropdown functional independently of this toggle, and thus this toggle has no control over that particular space. To ensure your section is hidden from that **Contents** dropdown, see the following section about the **Table of Contents** sidebar.
 
-  As a more concrete example, suppose you are working on our Edge instance of Manifold (edge.manifoldapp.org) in a project whose slug is `running-advice`. And for a text section you give it a slug value here of `run-faster`. The path to that text section that you could share would then be
-
-  ```
-  edge.manifoldapp.org/read/running-advice/run-faster
-  ```
-  
-  However, that path that resolves in the browser would appear more like this:
-
-  ```
-  edge.manifoldapp.org/read/running-advice/section/{UUID}
-  ```
-
-  When creating slugs, it is best to avoid spaces and special characters to ensure they resolve properly.
-  
-  The second option in this drawer a toggle labeled **Hide in reader navigation?** This option is for those text sections that are not yet ready to be displayed as part of the text—a section that is being authored or still in progress, for instance. When enabled, the navigation at the bottom of the Manifold Reader will not display links to this section. Listings of text sections in the Manifold Reader’s **Contents** dropdown functional independently of this toggle, and thus this toggle has no control over that particular space. To ensure your section is hidden from that **Contents** dropdown, see the following section about the **Table of Contents** sidebar.
-
-1. The fifth option in a text section’s listing, described visually with a button of an upload icon, opens a drawer from the right where the section can be reingested from its source file. This replicates the behavior described above when using the **Ingest New Section** button. However, the idea here is to update a section that was originally ingested from an HTML, Markdown, Word file, or Google Document with any changes that were made to the source file. While it is possible to make those adjustments now directly in Manifold using the [Manifold Editor](../backend/manifold_editor.md), this option may better meet the needs of certain workflows. As with the earlier Ingest view, this drawer has an input box where a local file can be drag and dropped or selected using the operating system’s file system. Or, following that space there is a field labeled **URL** where the direct path of a remotely hosted file can be sourced to replace the current section in the system. Best practice is to only reingest a text section using the same kind of file that was used during the original ingest process. For example, if a Word document was used as the source of the original ingestion, it is better to use a modified version of that Word file than, say, a Google Document copy of that file.
-2. The last option in a text section list entry is one to reorder it among the list of other text sections, using the button displaying two parallel grab bars. Those grab bars can be manipulated with a mouse by selecting them and then moving the entry up or down through the list. Alteratively entries can be reordered by tabbing to the option with the tab key, selecting it with the space bar, and then using the up or down arrows to adjust where the text section appears in the list. The order of the sections as they appear here will be the order for how the sections appear in the Manifold Reader and how the Reader announces the next and previous sections in the navigation space at the end of each section. This functionality mirrors how the order of text sections is defined in the spine section of the `content.opf` file in an EPUB file. Or, for a Manifest Ingest, how text sections are ordered according to how they appear beneath the `toc` list element.
+5. The fifth option in a text section’s listing, described visually with a button of an upload icon, opens a drawer from the right where the section can be reingested from its source file. This replicates the behavior described above when using the **Ingest New Section** button. However, the idea here is to update a section that was originally ingested from an HTML, Markdown, Word file, or Google Document with any changes that were made to the source file. While it is possible to make those adjustments now directly in Manifold using the [Manifold Editor](../backend/manifold_editor.md), this option may better meet the needs of certain workflows. As with the earlier Ingest view, this drawer has an input box where a local file can be drag and dropped or selected using the operating system’s file system. Or, following that space there is a field labeled **URL** where the direct path of a remotely hosted file can be sourced to replace the current section in the system. Best practice is to only reingest a text section using the same kind of file that was used during the original ingest process. For example, if a Word document was used as the source of the original ingestion, it is better to use a modified version of that Word file than, say, a Google Document copy of that file.
+6. The last option in a text section list entry is one to reorder it among the list of other text sections, using the button displaying two parallel grab bars. Those grab bars can be manipulated with a mouse by selecting them and then moving the entry up or down through the list. Alteratively entries can be reordered by tabbing to the option with the tab key, selecting it with the space bar, and then using the up or down arrows to adjust where the text section appears in the list. The order of the sections as they appear here will be the order for how the sections appear in the Manifold Reader and how the Reader announces the next and previous sections in the navigation space at the end of each section. This functionality mirrors how the order of text sections is defined in the spine section of the `content.opf` file in an EPUB file. Or, for a Manifest Ingest, how text sections are ordered according to how they appear beneath the `toc` list element.
 
 :::caution Important Takeaways for the Sections Sidebar
 - Changing the name of a text section in this view adjusts its name in the Reader’s title bar and in navigation links at the bottom of the Reader but ***not*** in the Reader’s **Contents** dropdown or in a **Table of Contents** content block.
+- This is the space where you can specify a chapter- or text-level bibliographic citation used by the Reader’s Cite tool.
 - The order of the text section entries in the Sections sidebar is the order in which those sections will be announced by the navigation links at the bottom of the Manifold Reader.
 - ***Everything*** having to do with the order and name of text sections in the **Contents** dropdown that appears in the menu bar of the Manifold Reader is controlled independently by settings found in a text’s **Table of Contents** sidebar view, discussed in the following section.
 :::
@@ -629,7 +632,9 @@ The following file types are most often seen packaged in existing EPUBs and thus
 
 This view groups into different categories the available metadata fields that describe a Manifold Text. Values displayed here appear in the Manifold Reader in the **About this Text** section, accessible from the **Contents** dropdown, and are also included in the BagIt archive when a Project is exported (see [Exporting and Preserving](../backend/projects.md#exports)).
 
-Metadata can be entered here manually; however, when a Text is ingested, Manifold will search the source files for information it can use to populate the **Rights** and **Language** fields.
+The first two fields, **Citation Override** and **Rights** are outliers. They appear in *two* spaces: in the **About this Text** modal with the other metadata in this view, as well as in the footer of the Manifold Reader, when it is open to this Text. In the footer, the citation information will appear before the copyright line.
+
+Metadata can be entered in this view manually; however, when a Text is ingested, Manifold will search the source files for information it can use to populate the **Rights** and **Language** fields.
 
 <Spec title="Rights and Language Source">
 
@@ -648,6 +653,7 @@ The **Unique Identifier** is the only field Manifold will automatically populate
 ```html
 <dc:identifier id="pub-id">{string-value}</dc:identifier>
 ```
+
 All of the fields on this page support Markdown formatting with the exception of **DOI** and **Original Publication Date**.
 
 The [Metadata section](../backend/metadata.md) provides definitions for each metadata element shown in this view.

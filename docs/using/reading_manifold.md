@@ -133,7 +133,7 @@ This option is dependent on how much metadata has been included in the backend b
 :::info Needed Citation Metadata
 For the **Cite** option to appear, the project editor must include in the Text’s metadata the [Title](../backend/metadata.md), [Author](../backend/metadata.md), [Publisher](../backend/metadata.md), and [Publication Date](../backend/metadata.md). If any one of those fields is left blank—or if there is no editor-suggested citation present—readers will not see **Cite** as an option when trying to **Share** a Text. It is also important to note that the more metadata the editor provides, the better the citation will be.
 
-Backend users, to see which metadata fields are available for Texts, see the [Metadata](../backend/metadata.md) section, and to enter/adjust metadata for a Text, see [Texts](../backend/texts.md#metadata).
+Backend users, see the [Adjusting Text Sections documentation](../backend/texts.md#adjusting-text-sections) to learn how to add chapter-level citation information that will be displayed by Manifold’s Cite option. To learn which metadata fields are generally available for Texts, see the [Metadata](../backend/metadata.md) section, and to enter/adjust metadata for a Text, see the [Texts](../backend/texts.md#metadata) page.
 :::
 
 The **External App** option leverages your operating system’s sharing widget to furnish a list of email, messaging, or note-taking apps for you to choose from. After you’ve selected the app you wish to use, Manifold will paste to that app a URL that links to the specific passage of text you’ve selected.
