@@ -290,7 +290,13 @@ Transactions that warrant an entitlement occur outside of the system: a student 
 
 ### Metadata
 
-The **Metadata** panel provides a means to input metadata that applies to the Journal as whole and which will render at the bottom of the Journal homepage. Metadata associated with individual Issues and Articles is controlled at those respective levels. See the [Issues section](../backend/journals.md#issues) for more.
+The **Metadata** panel provides a means to input metadata that applies to the Journal as whole and which renders at the bottom of the Journal homepage:
+
+```html
+{instance-domain}/journals/{journal-slug}
+```
+
+Metadata associated with individual Issues and Articles is controlled at those respective levels. See the [Issues section](../backend/journals.md#issues) for more.
 
 All of the Metadata fields support Markdown formatting with the exception of **DOI**.
 

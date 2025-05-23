@@ -537,13 +537,15 @@ Events can be individually removed from a Project by selecting an event’s dele
 
 ## Metadata
 
-The **Metadata** panel provides a means to input metadata that applies to the Project as whole and which will render in the Metadata content block. Metadata associated with individual Texts or Resources is controlled in those respective sections: [Texts](../backend/texts.md), [Resources](../backend/resource.md).
+The **Metadata** sidebar provides an array of metadata fields, based on [DublinCore](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/), which apply to the Project as whole and display in the [Metadata content block](../backend/projects.md#metadata-block).
 
-Project Metadata entered in this view will is included in the BagIt archive when a Project is exported (see [Exports](../backend/projects.md#exports)).
-
-All of the Metadata fields support formatting with the exception of **DOI**. 
+*All* of the metadata fields in this view support Markdown formatting with the exception of the **DOI** field.
 
 For detailed definitions of each metadata field, see the [Metadata reference section](../backend/metadata.md).
+
+Project Metadata entered in this view is included in the BagIt archive when a Project is exported. See the [Exports](../backend/projects.md#exports) section for more about how to export content for digital preservation.
+
+Metadata can also be associated with individual Texts or Resources. See the [Texts](../backend/texts.md#metadata) and [Resources](../backend/resource.md#metadata) sections to better understand how metadata works for those elements.
 
 ## Exports
 

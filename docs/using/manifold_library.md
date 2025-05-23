@@ -32,7 +32,7 @@ Alternatively, those users who are maintaining an instance can employ [Project C
 
 ### Projects
 
-The **Projects** pages displays, as the name suggests, all of the Projects in an instance in a paginated view. Using the search field and two dropdown comboboxes beside the page heading, readers can search for specific Projects, sort the listings alphabetically by title, or filter Projects by [Subject](../administering/configuring/project_subjects.md) or [Featured Status](../backend/projects.md#featured).
+The **Projects** pages displays, as the name suggests, all of the Projects in an instance in a paginated view. Using the search field and two dropdown filters beside the page heading, readers can search for specific Projects, sort the listings alphabetically by title, date, or limit Projects by [Subject](../administering/configuring/project_subjects.md) or [Featured Status](../backend/projects.md#featured).
 
 :::tip Share Your View
 Sorting Projects with using dropdowns creates a stable URL that can be shared so others can land on the page with the same results.
@@ -95,5 +95,5 @@ Users can search for specific phrases enclosed in quotation marks to look for ex
 Quoting a phrase will still apply stemming, thus Manifold takes into account misspellings, ignores cases, etc. When negations are employed, they follow the NOR paradigm instead of NAND. If a search includes `-apples -bananas`, Manifold will exclude results that mention apples or bananas instead of excluding results that only include both apples and bananas.
 
 :::tip Search Not Working?
-Are you searching for something you know is in the system but you’re not getting any results? That’s likely because Projects in Draft status are *not* indexed by Manifold’s search engine, Elasticsearch. Once the Project is toggled out of Draft, the system will index its content and make it available to search (see [Project Properties](../backend/projects.md#draft-mode)).
+Are you searching for something you know is in the system but you’re not getting any results? That’s likely because Projects in Draft status are *not* indexed by Manifold for search. Once the Project is toggled out of Draft, the system will index its content and make it available to be returned in search results (see [Project Properties](../backend/projects.md#draft-mode)).
 :::
