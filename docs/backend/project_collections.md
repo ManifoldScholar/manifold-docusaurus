@@ -34,15 +34,15 @@ The Project Collection view is composed of two parts: the sidebar and an editing
 
 The sidebar displays a list of all existing Project Collections on the instance and a button to create new ones.
 
-Each entry on the sidebar list includes the title of the collection, the number of projects contained within the collection, a visibility button, and drag bars.
+Each entry on the sidebar list includes the title of the collection, the number of projects contained within the collection, a visibility button, and a reordering button.
 
-The title, visibility button, and drag bars are all selectable from this list by mouse or keyboard, using the tab key and space bar.
+The title, visibility button, and reordering button are all selectable from this list by mouse or keyboard, using the tab key and space bar.
 
 Selecting the title of a collection will open its contents and settings in the editing pane in the main body of this page.
 
 Activating the eye icon will hide the collection from *all* frontend views. When hidden, the eye icon will be shown with a diagonal slash across it. This button *does not* affect whether or not a Collection appears on the homepage—that is configured separately in the Collection’s settings.
 
-Appearing as two parallel, horizontal lines, you can use these “drag bars” to adjust the display order of the Collections (for both the home and Collections pages), either by clicking and dragging an entry with your mouse or by pressing the space bar and then either the up or down arrow keys on your keyboard.
+Appearing as two parallel, horizontal lines, you can use reordering button to adjust the display order of the Collections (for both the home and Collections pages), either by clicking and dragging an entry with your mouse or by pressing the space bar and then either the up or down arrow keys on your keyboard to choose to move the element up or down in the list.
 
 Beneath the list of Collections is the **Create New Collection** button that opens a drawer from the right of the screen will a number of fields you can use to define the parameters of your new Project Collection.
 
@@ -182,7 +182,3 @@ This toggle limits the Collection to accepting just those Projects that have bee
 These two dropdowns surface existing Subjects and Tags to limit which projects are accepted into the Collection. You can nominate multiple Subjects or Tags as filters.
 
 Existing filters appear below the respective dropdown and can be removed as Collection criteria from that space with your mouse or keyboard.
-
-
-
-

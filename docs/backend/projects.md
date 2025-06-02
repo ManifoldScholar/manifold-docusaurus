@@ -233,7 +233,7 @@ For those Projects that evolve, new blocks can be added and existing ones can be
 
 The delete and hide buttons appear in two spaces: in the Layout view and in a block’s details drawer. The delete button appears as a trashcan; the hide button an icon of an open eye. When hidden, the eye icon will appear with a slash through it. To un-hide a block, click on the crossed-out eye icon.
 
-You can edit a block’s content by selecting the pencil icon to the right of the block's hide button, which will open a drawer from the right with all the blocks details. To rearrange where the block appears on the Project homepage, select the grab bars beside the pencil icon with your mouse or keyboard and move it up and down. On a keyboard this is done by pressing the space bar followed up the arrow keys.
+You can edit a block’s content by selecting the pencil icon to the right of the block's hide button, which will open a drawer from the right with all the blocks details. To rearrange where the block appears on the Project homepage, select the reordering button, which appears as two horizontal lines, beside the pencil icon with your mouse or keyboard and move it up and down. On a keyboard this is done by focusing on the reordering button with the tab key and selecting it with the space bar, followed up the arrow keys to choose to an option to move it up or down in the list.
 
 All content blocks are contextual relative to whether or not a Project is configured for restricted access (see [Access](../backend/projects.md#access)). Using the **Access** dropdown in a blocks details pane, when and for whom this block will appear can be configured. If the default setting, **Always Visible**, is selected, the block will be visible on the Project landing page for all who arrive there, whether they have accounts on the instance or not. When **Visible Only When Authorized** is chosen, only those who (1) have accounts on the instance, (2) are logged in, and (3) have secured the necessary entitlements to access the Project will see the Content Block. Conversely, if **Visible Only When Unauthorized** is selected, the block will display only for those users who don’t have specific entitlements to the Project or aren’t logged in to their accounts.
 
@@ -288,7 +288,7 @@ Using the **Calls-to-Action** menu, you can add links and buttons to the Hero bl
 
 The menu interface is arranged into four columns that indicate how your call-to-action will render: as a square button or as a simple text link, whether it will show beneath the Project’s description on the left or under the Cover image on the right.
 
-Atop each column is a button that will create a call-to-action in the fashion described by the button text. Existing calls-to-action can be transformed from one kind to another: by selecting the horizontal grab bars with your mouse or keyboard (via the space bar) calls-to-actions can be rearranged within their existing column or moved to another one.
+Atop each column is a button that will create a call-to-action in the fashion described by the button text. Existing calls-to-action can be transformed from one kind to another: by selecting the horizontal reordering bars with your mouse or keyboard (via the tab key and space bar) calls-to-actions can be rearranged within their existing column or moved to another one.
 
 Calls-to-action are contextual relative to whether or not a Project is configured for restricted access. **Start Reading** and **Table of Contents** calls-to-action will always appear in the Hero, though only those users with the appropriate credentials will be able to follow them to their intended target. **Link** and **Download** calls-to-action have visibility settings that allow you to configure whether or not they always appear or appear for specific users based on their access entitlements.
 
@@ -519,7 +519,7 @@ The **Delete** button, depicted with an **×**, only removes the association bet
 
 Shown as a pencil icon, the **Edit** button changes the view, taking you to the **Manage Makers** page with the edit drawer open to the entry you selected. There you can adjust the Maker’s professional title; first, middle, or last name; and suffix. Users with Reader roles who have been granted Editor Permissions to a Project are not able to edit Maker Records.
 
-The horizontal drag bars can be used to **Reorder** Maker records within the same category. It is not possible to recategorize an entry from **Author** to **Contributor** or vice versa. The drag bars respond to clicking and dragging with your mouse or by pressing the space bar on your keyboard and then using the up or down arrow keys.
+The horizontal reordering bars can be used to **Reorder** Maker records within the same category. It is not possible to recategorize an entry from **Author** to **Contributor** or vice versa. The reordering bars respond to clicking and dragging with your mouse or by focusing on them with your tab key and pressing the space bar on your keyboard. When selected a menu appears that gives you options to move the corresponding element up or down in the list.
 
 :::note Other Authorial Roles
 The current Author/Contributor dynamic is based off the EPUB specification. At present, you cannot assign more nuanced roles for Makers (e.g., Editors, Translators, Introducers, etc.).
