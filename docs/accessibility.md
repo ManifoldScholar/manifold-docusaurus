@@ -56,7 +56,9 @@ In library views and within the Manifold reader, the application can be navigate
 
 ### Backend Navigation
 
-- Drag and drop elements can be selected using the space bar and reordered using the arrow keys.
+- Drag and drop elements appear throughout the backend and in frontend Reading Group views as list items with a reordering button. The reordering button displays as an icon showing two horizontal grab bars.
+
+  To move an element, focus on the reordering button with your tab key and select it with your space bar. When the reordering button is selected, a menu with two options appears, giving you the choice to move the element up one position or down one position in the list. These up and down options can be selected using your arrow keys and the space bar.
 
 ### Resource Navigation
 

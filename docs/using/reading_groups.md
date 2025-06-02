@@ -16,7 +16,7 @@ Reading Groups are a way to build curated collections of content, such as a cour
 
 ### Reading Group Roles
 
-A Reader can play one of three different roles in a Reading Group: Creator, Member, or Moderator. Readers who create a group are considered the group’s Creator. Those who join a group are group Members. The group's Creator can change the role of any group Member to Moderator—a group can have more than one moderator—who will then have the same abilities as the Creator to edit the group and its members.
+A Reader can play one of three different roles in a Reading Group: Creator, Member, or Moderator. Readers who create a group are considered the group’s Creator. Those who join a group are group Members. The group’s Creator can change the role of any group Member to Moderator—a group can have more than one moderator—who will then have the same abilities as the Creator to edit the group and its members.
 
 :::important Important
 If an Administrator of an instance joins a group (public, private, or anonymous), they have the same ability as Creators and Moderators to edit the group and its members. Additionally, Administrators on an instance have the ability to edit any *public* Reading Group, even if they are not a member of that group.
@@ -45,7 +45,7 @@ The **My Reading Groups** tab displays the total number of private and anonymous
 - **Archive** button. This removes a Reading Group from your My Reading Groups view. To be clear, selecting this option is user specific and will not affect how and where the Reading Group or annotations associated with it display for other users. An archived group can be reactivated at any time. Use the **Active/Archived** dropdown menu to view archived groups and then use the **Activate** button to return the group to My Reading Groups.
 - **Edit** button. Opens a drawer to the right that allows you to edit the group settings (see [Create a Reading group](../using/reading_groups#create-a-reading-group)).
 
-:::info Don't See the My Reading Groups Tab?
+:::info Don’t See the My Reading Groups Tab?
 You need to have an account on the Manifold instance and be **logged in**, in order to see the **My Reading Groups** tab.
 :::
 
@@ -79,7 +79,7 @@ Creators, Moderators, and Administrators of a group see three section blocks whe
 
 - **Home**. This tab displays the landing page for the Reading group with the above mentioned editable section blocks.
 - **Notes + Comments**. This tab displays a list of all Notes (annotations, comments, and highlights) created by the group. This view is similar to the public view of a Note with the addition of an **All Members** dropdown menu. The **All Members** dropdown list shows all members of the group and may be used to see the Notes of a specific member. Both dropdown menus may be used together to create a custom view of Note entries. Selecting **Reset Filters**, located below the **All Members** box, will return the user to the full list of Notes.
-- **Members**. This tab displays a detailed list of all group members including: Member Name, Role, Activity, Note Style (annotation style: dashed, dotted, solid, wavy), and Actions. Selecting a Member Name will open a view of all the member's annotations and comments. Selecting the **Edit** button will open a drawer to the right where you can delete or edit a group member's details, noted above, with the addition of adding a label to describe a specific member and will be displayed next to the their name in the membership list. The **Remove** button will remove a member from the group, you will be prompted to confirm this action. Removing a member from the group will not delete their annotations from the group.
+- **Members**. This tab displays a detailed list of all group members including: Member Name, Role, Activity, Note Style (annotation style: dashed, dotted, solid, wavy), and Actions. Selecting a Member Name will open a view of all the member’s annotations and comments. Selecting the **Edit** button will open a drawer to the right where you can delete or edit a group member’s details, noted above, with the addition of adding a label to describe a specific member and will be displayed next to the their name in the membership list. The **Remove** button will remove a member from the group, you will be prompted to confirm this action. Removing a member from the group will not delete their annotations from the group.
 
 #### Manage Group Block
 
@@ -103,7 +103,7 @@ Groups have three privacy options—public, private, and anonymous—that functi
 
 - **Public**. Annotations, highlights, and comments made in Public groups are viewable to everyone—even to readers who have not signed up for an account on the Manifold instance in question—but only group members are able to leave annotations and highlights under the auspices of the group. Annotations made in public groups can be used by instructors to guide classroom conversation across sections, as a means to enhance/transform texts into scholarly editions, to organize engagement around public happenings occurring on campus or at a particular institution.
 - **Private**. Annotations, highlights, and comments made in Private groups are only visible to other members of the group. Private groups can be employed in the classroom setting as a means to facilitate discussion among specific students in a safe environment, without concern of unaffiliated members interrupting the flow and dynamic of that space.
-- **Anonymous**. Like Private groups, only fellow group members can see those annotations, highlights, and comments that have been committed to the group. Additionally the identities of group members are masked from one another—save the group's Creator, Moderator(s), and instance Administrators who are also group members—allowing for texts to be peer-reviewed in the system.
+- **Anonymous**. Like Private groups, only fellow group members can see those annotations, highlights, and comments that have been committed to the group. Additionally the identities of group members are masked from one another—save the group’s Creator, Moderator(s), and instance Administrators who are also group members—allowing for texts to be peer-reviewed in the system.
 
 :::note
 Comment threads are disabled in Anonymous groups. However, readers annotating anonymously can still engage in cross-communication by adding an annotation of their own to the passage in question by way of the **Annotation** button, located below the quoted annotated passage.
@@ -117,7 +117,7 @@ The Invitation Code can be shared with those intended to be part of the group—
 
 Clicking the **Regenerate** button on the right will create a new Invitation Code for the group, rendering the previous code inactive, though users who joined the Reading Group previously with an old code will still be members of the group.
 
-Clicking the **Copy** button will copy the invitation code to your computer's clipboard where you will be to paste it into other applications.
+Clicking the **Copy** button will copy the invitation code to your computer’s clipboard where you will be to paste it into other applications.
 
 :::note
 Any manual alterations made to the Invitation Code on the **Edit Reading Group** page will be reflected in the corresponding Invitation URL, described below.
@@ -133,7 +133,7 @@ The phrase that follows `join=` in the Invitation URL is the group’s Invitatio
 
 Users who are not logged in or do not have an account on the instance will receive an error message when they click the link, indicating they do not have permission to access the group. Once they log in or create their account the page will resolve to the Reading Group confirmation prompt.
 
-Clicking the **Copy** button will copy the invitation code to your computer's clipboard where you will be to paste it into other applications.
+Clicking the **Copy** button will copy the invitation code to your computer’s clipboard where you will be to paste it into other applications.
 
 :::important Important
 Security around the Reading Group invitation system is presently *soft*. If a group moderator selects an Invitation Code already in use they will be alerted that the code is already taken—a tell that provides them the means to join a group to which they were not invited. To ensure other moderators do not intrude on your Reading Group, we suggest employing an Invitation Code not easily guessed by others and enabling Notifications.
@@ -149,21 +149,25 @@ When the **Notifications** field is checked, Manifold will alert the group Creat
 
 ## Edit Reading Group
 
-A group Creator or Moderator(s) can use the **Edit** button from the **My Reading Groups** page or the **Edit Settings** button on the Reading Group's home page (will open a drawer from the right of the screen) to reconfigure any of the group options that were set when it was created, from adjusting the Reading Group's name to changing Notification settings and deleting a Reading Group.
+A group Creator or Moderator(s) can use the **Edit** button from the **My Reading Groups** page or the **Edit Settings** button on the Reading Group’s home page (will open a drawer from the right of the screen) to reconfigure any of the group options that were set when it was created, from adjusting the Reading Group’s name to changing Notification settings and deleting a Reading Group.
 
 When deleting a public Reading Group, all annotations, highlights, and comments a user made within the auspices of a public Reading Group will remain in their **My Public Annotations** group. Annotations and highlights made in private or anonymous groups will persist for each individual reader in their **My Private Annotations** group.
 
 ## Edit a Reading Group Home Page
 
-A Reading Group Creator, Moderator, or an Administrator of an instance who is also a group member, may edit a Reading Group home page. Selecting the name of the group from the list of groups on the **My Reading Groups** page and toggling the slider **on** from the **Manage Group** block (see [Manage Group block](../using/reading_groups#manage-group-block)) will bring you to the **Edit Home Page** screen. Toggling the slider **off** will return you to the Reading Group's home page.
+A Reading Group Creator, Moderator, or an Administrator of an instance who is also a group member, may edit a Reading Group home page. Selecting the name of the group from the list of groups on the **My Reading Groups** page and toggling the slider **on** from the **Manage Group** block (see [Manage Group block](../using/reading_groups#manage-group-block)) will bring you to the **Edit Home Page** screen. Toggling the slider **off** will return you to the Reading Group’s home page.
 
 ### Search + Add Content
 
-Selecting the **Add Content** button opens a window that allows you to search for content on your Manifold instance by keyword and type. You have the option to narrow your search results by checking or unchecking the boxes:**Everything**, **Projects**, **Resources**, **Texts**, and **Full Texts**. From your search results list, add content to your group by selecting the **star Add icon** to the right of the item title. You will be presented with a list of all Reading Groups with which you are a member, select the Reading Group name where you would like the item to be added. Selecting **Close** will return you to the Add Content window where you will see the selected item now has a highlighted star, indicating that the item has been added to this Reading Group. By default all content added to a Reading Group is placed in a content block titled **Uncategorized**. To add a new category to your group, see [Create a New Category](../using/reading_groups#create-a-new-category) When you are finished, selecting the **Close** button will return you to the Edit Home Page screen.
+Selecting the **Add Content** button opens a window that allows you to search for content on your Manifold instance by keyword and type. You have the option to narrow your search results by checking or unchecking the boxes: **Everything**, **Projects**, **Resources**, **Texts**, and **Full Texts**. From your search results list, add content to your group by selecting the **star Add icon** to the right of the item title. You will be presented with a list of all Reading Groups with which you are a member, select the Reading Group name where you would like the item to be added. Selecting **Close** will return you to the Add Content window where you will see the selected item now has a highlighted star, indicating that the item has been added to this Reading Group.
+
+By default all content added to a Reading Group is placed in a content block titled **Uncategorized**.
+
+To add a new category to your group, see [Create a New Category](../using/reading_groups#create-a-new-category) When you are finished, selecting the **Close** button will return you to the Edit Home Page screen.
 
 Alternatively, you may add content to any Reading Group with which you are a Creator or Moderator, from multiple locations on your Manifold instance. Anywhere you see a **star icon**—next to a thumbnail image in the Manifold library, next to the title of a Project, Text, Resource Collection, or Resource on a Project home page, or next to an entry in the dropdown table of contents in the Manifold Reader—clicking on the star will open a window with a list of all Reading Group to which you have permission to add content, select the Reading Group name to add the item and **Close** to return to the previous page.
 
-If you have not created a Reading Group, clicking on an item's **star icon** will add it to your **My Starred** list. Navigate to this list by clicking on your profile icon and selecting **My Starred** from the dropdown list.
+If you have not created a Reading Group, clicking on an item’s **star icon** will add it to your **My Starred** list. Navigate to this list by clicking on your profile icon and selecting **My Starred** from the dropdown list.
 
 :::note Important
 You must be logged in to your Manifold account to add content to a Reading Group.
@@ -171,9 +175,35 @@ You must be logged in to your Manifold account to add content to a Reading Group
 
 ### Create a New Category
 
-Added content can be curated into custom category blocks by entering a category name in the field and selecting the **Add** button. Each added category will become its own content block on your Reading Group home page and contains subcategory sections for: Projects, Journal Issues, Texts, Text Sections, Resource Collections, and Resources. Category content blocks can be modified by selecting the **trashcan icon** to delete, the **pencil icon** to edit category name and description, and the **double bars** to drag the block to a new position on the page.
+Added content can be curated into custom category blocks by entering a name in the **Create a new category** textbox and selecting the **Add** button beside it. Each added category will become its own content block on your Reading Group home page and contains subcategory sections for: Projects, Journal Issues, Texts, Text Sections, Resource Collections, and Resources.
 
-Items within each of these subcategories can be deleted from the Reading Group (it will only be deleted from the group not the Manifold instance) by selecting **Remove** or moved to the *same subcategory section* in another category content block by selecting the **double bars** and dragging it to that category, i.e. Projects to Projects, Texts to Texts.
+Category content block headings include three button options to either delete or modify the category block:
+
+- The **Delete Button**, which appears as a trashcan icon, will display a confirmation modal when selected. If you confirm deletion the block will be removed and any content contained in that block will return to the **Uncategorized** block.
+- The pencil icon represents the **Edit Category** button and allows you to edit the category name and description.
+- Finally the **Reorder Button**, depicted as two horizontal bars, can be used to drag the block to a new position on the page using your mouse. Alternatively you can focus on it with your tab key and select it with your space bar. When selected a menu will display options to move the category up or down in the list of existing categories.
+
+Content added to Reading Groups can be removed from the Group by selecting **Remove** button associated with their listing. Doing so will only remove that content from the Group; it will not delete it from the Manifold instance.
+
+Likewise, added content can be moved to the *same subcategory section* in another category content block by selecting the **Reorder Button**, which shows as two horizontal bars, and moving it to another category block in the same subcategory, i.e., Projects to Projects, Texts to Texts, and so on.
+
+### Add a Markdown Block
+
+Markdown blocks are free-text blocks that accept Markdown syntax and allow you to provide direction, context, or expectations to Reading Group members about content collected into the Group or how to engage with it as a group.
+
+Markdown blocks differ from Category content blocks in that they do not contain project content from the Manifold instance.
+
+Markdown blocks can be added to a Reading Group landing page and ordered alongside other Markdown and Category content blocks. To do so, select the **Add Markdown Block** button beside the the **Create a new category** textbox. As soon as you do, a new, empty block will appear in the block list below the button.
+
+Each listing has the same three button options that Category content blocks have, described in the [Create a New Category section](../using/reading_groups.md#create-a-new-category) above. You will use the **Edit Button** to add content to the block.
+
+When the **Edit Button** is selected, a modal text box will appear that accepts Markdown syntax, allowing you to make use of headings, lists, and character styles like italic and bold and hyperlinks. 
+
+Unlike Category content blocks, Markdown blocks do not require a title. When no title is supplied, the system will display truncated body text when the block is minimized.
+
+:::note Markdown Blocks in Projects
+Reading Group Markdown blocks are a parallel structure to the [Markdown blocks](../backend/projects.md#markdown-block) that can be added to Project landing pages.
+:::
 
 ## Join a Reading Group
 
@@ -184,12 +214,12 @@ Readers who have been provided an Invitation Code can join a group by selecting 
 Alternatively, if the group Creator has encoded the Invitation URL on a course webpage or in an email, readers need only click the link to be taken to the instance and join the Reading Group.
 
 :::note Invitation Not Working?
-See the [Invitation URL](../using/reading_groups#invitation-url) section for concerns that may arise for readers that click on an Invitation link and are not presently logged in or don't have accounts on the instance.
+See the [Invitation URL](../using/reading_groups#invitation-url) section for concerns that may arise for readers that click on an Invitation link and are not presently logged in or don’t have accounts on the instance.
 :::
 
 ## Remove a Reading Group Member
 
-Reading Group Creators and Moderators can selectively remove individual members from their groups. When a group member is removed they will not receive any notice of their removal; they will simply not have the option to commit their annotations, highlights, or comments to the group. Removing members from the group, is done by clicking the **Remove** button beside the member's name. Once clicked, you will be prompted to confirm the removal.
+Reading Group Creators and Moderators can selectively remove individual members from their groups. When a group member is removed they will not receive any notice of their removal; they will simply not have the option to commit their annotations, highlights, or comments to the group. Removing members from the group, is done by clicking the **Remove** button beside the member’s name. Once clicked, you will be prompted to confirm the removal.
 
 :::note
 Any annotations, highlights, and comments a reader commits to the group prior to their removal will still be accessible to remaining group members.
