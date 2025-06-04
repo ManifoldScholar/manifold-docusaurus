@@ -144,24 +144,17 @@ Icon files can be dropped onto the **Custom Icon** field or selected using your 
     ]}
 />
 
-### Social Card Image, Title, and Description
+### Open Graph
 
-When sharing the URL for a Collection’s homepage, Manifold includes Open Graph metadata that social media platforms display in posts as ”cards”. Cards are made up of an Image, Title, and Description.
+The Open Graph fields in this space correspond to when you share a Project Collection’s URL over social media.
 
-Images should be prepared in an 8:5 ratio. When the **Social Card Image** field is left blank, Manifold will supply the Collection Hero image in its place, or, if there is no Collection Hero, the instance’s [Header Logo](../administering/configuring/theme_settings.md). Image files can be dropped onto the field or selected from your device’s file system using the **Upload a File** link.
+For a full discussion of what Open Graph is, what these three fields mean, and how they work in the context of Manifold, see the [Open Graph Content](../backend/openGraph.md) section.
 
-By default Manifold will forward the Collection Title as the **Social Card Title** unless a custom value is supplied. Likewise, Manifold will supply text from the collection’s Description to third party systems when **Social Card Description** field is left blank. If the Collection also has no description, the system will use the [**Default Page Description**](../administering/configuring/properties.md).
+When the **Open Graph Image** field is left blank here, Manifold will supply the Collection Hero image in its place, or, if there is no Collection Hero, the instance’s [Header Logo](../administering/configuring/theme_settings.md). 
 
-Markdown formatting ***is not*** honored in Open Graph metadata. Coding syntax will render as plain text in social media cards.
+Likewise, Manifold will forward the Collection Title as the **Open Graph Title** unless a custom value is supplied.
 
-<Spec
-   title="Social Card Image Specs"
-   items={[
-       { key: "Width", value: "640 px" },
-       { key: "Height", value: "400 px" },
-       { key: "Format", value: defaultImageFormats },
-   ]}
-/>
+Finally, Manifold will supply text from the collection’s Description to third party systems when the **Open Graph Description** field is left blank. If the Collection also has no description, the system will use the instance’s [**Default Page Description**](../administering/configuring/properties.md).
 
 ## Settings Specific to Smart Collections
 

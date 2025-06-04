@@ -116,7 +116,7 @@ When you create a new Project, the system automatically populates this field wit
 We recommend that you settle on a Slug before toggling your Project out of Draft mode to avoid potential 404 errors resulting from broken links.
 :::
 
-#### Project Thumbnail
+#### Thumbnail
 
 The Project Thumbnail is the image associated with a Project. It appears to readers in Library views on the Manifold frontend above the Project title and layered under the Follow button.
 
@@ -156,6 +156,18 @@ Tags function much like Subjects, but there are no means to edit or delete tags 
 Unlike Subjects, Tags can be created by any user who has permission to modify a Project and can be used to add further richness to the existing subject classification. Like Subjects, the Tag field provides a helper so that as you begin typing any similar tags that have already been created on your instance will be revealed.
 
 To see how Tags can be used to curate Smart Collections, visit the [Project Collections](../backend/project_collections.md) section.
+
+#### Open Graph
+
+The Open Graph fields in this space correspond to when you share a project or journal issue’s URL over social media.
+
+For a full discussion of what Open Graph is, what these three fields mean, and how they work in the context of Manifold, see the [Open Graph Content](../backend/openGraph.md) section.
+
+Manifold will forward the project or journal issue’s title alongside the instance’s name as the **Open Graph Title** unless a custom value is supplied.
+
+Likewise, Manifold will supply the **Description** associated with the project or journal issue if the **Open Graph Description** field is left blank. In situations where neither of those description fields have copy, the system will *not* provide third party systems with descriptive information about the project or journal issue. However, a Title and Image would still be supplied in keeping with the scheme outlined here.
+
+Finally, Manifold supplies the project or journal issue’s Cover Image when no specific **Open Graph Image** is provided. If the project doesn’t have a Cover Image, then the instance’s [Header Logo](../administering/configuring/theme_settings.md) will be offered to third party systems.
 
 #### Draft Mode
 

@@ -282,6 +282,18 @@ Manifold includes navigation controls at the bottom of each Text section in the 
 
 It is *not possible* to remove or adjust the word *Next* from that heading.
 
+#### Open Graph
+
+The Open Graph fields in this space correspond to when you share the URL for a project text or journal article over social media. To be clear, this applies to any text-section URL shared over social media, in cases where a text is made up of multiple sections.
+
+For a full discussion of what Open Graph is, what these three fields mean, and how they work in the context of Manifold, see the [Open Graph Content](../backend/openGraph.md) section.
+
+Manifold will forward the text or journal article’s title alongside the instance’s name as the **Open Graph Title** unless a custom value is supplied.
+
+Likewise, Manifold will supply the text’s or article’s **Description** when the **Open Graph Description** field is left blank. If both are blank, Manifold will *not* provide third party systems with descriptive information about the text or article.
+
+Finally, Manifold supplies the text’s or article’s Cover Image when no specific **Open Graph Image** is provided. If the project doesn’t have a Cover Image, then no image will be offered to third party systems.
+
 #### Ignore Access Restrictions?
 
 Restricted Access Projects require entitlements to view any of their content that doesn’t immediately render on the Project landing page (see [Managing Access](../backend/projects.md#access)).

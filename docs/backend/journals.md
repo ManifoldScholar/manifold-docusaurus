@@ -132,29 +132,20 @@ The Home Page Priority toggle appears for Journals that are set to show on the h
 Suppose you have three journals set to appear on the home page, Journal Red, Journal Green, and Journal Blue. Journal Red has a priority  value 0, Journal Green has a value of 1, and Journal Blue is set with a value of 2. As such, they will appear on the home page with Journal Blue above Journal Green, and Journal Green above Journal Red.
 
 :::note
-This field only accepts whole numbers. 
+This field only accepts whole numbers.
 :::
 
-#### Social Card Image, Title, and Description
+#### Open Graph
 
-When sharing the URL for a Journal’s homepage, Manifold includes Open Graph metadata that social media platforms display in posts as “cards”. Cards are made up of a **Title**, **Description**, and **Image**.
+The Open Graph fields in this space correspond to when you share a Journal’s Homepage URL over social media.
 
-Plain text that reflects the name and nature of the Journal should be input into the **Title** and **Description** fields.
+For a full discussion of what Open Graph is, what these three fields mean, and how they work in the context of Manifold, see the [Open Graph Content](../backend/openGraph.md) section.
 
-Markdown and HTML formatting ***are not*** honored in Open Graph metadata, and it best to keep the **Social Card Title** under 60 characters and aim for a **Description** between 140–160 characters.
+Manifold will forward the Journal’s title alongside the instance’s name as the **Open Graph Title** unless a custom value is supplied.
 
-An Image in keeping with the visual identity of the Journal can be dropped onto the **Social Card Description** field or selected from your device’s file system using the **Upload a File** link. Images should be prepared in an 8:5 ratio.
+Likewise, Manifold will supply text from the instance’s [**Default Page Description**](../administering/configuring/properties.md) when the **Open Graph Description** field is left blank.
 
-Manifold will not source Open Graph metadata from elsewhere in the system to take the place of blank fields here.
-
-<Spec
-   title="Social Card Image Specs"
-   items={[
-       { key: "Width", value: "640 px" },
-       { key: "Height", value: "400 px" },
-       { key: "Format", value: defaultImageFormats },
-   ]}
-/>
+Finally, Manifold supplies the image saved as the journal logo when no specific **Open Graph Image** is provided. If the journal has no logo, then the instance’s [Header Logo](../administering/configuring/theme_settings.md) will be offered to third party systems.
 
 #### Subjects
 

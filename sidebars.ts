@@ -87,6 +87,7 @@ const sidebars: SidebarsConfig = {
           'backend/entitlements',
           'backend/analytics',
           'backend/metadata',
+          'backend/openGraph',
       ]
     },
     {
