@@ -358,6 +358,22 @@ This field *is not* expecting a full URL, only a component of it. For YouTube, t
 
 This dropdown, which is offered only to **Video** Resources, has two values, Youtube and Vimeo, and orients Manifold to properly secure the identified video from the correct source.
 
+#### Transcript
+
+This **Transcript** field allows you to associate a transcript with Audio and Video resources to ensure you are in compliance with accessibility best practices. You can drag and drop your transcript file into this field or use the **Upload a File** button to select the transcript using your device’s file system.
+
+Currently this field is not restrictive about file type, meaning you can load any file into this space. However, it is important to remember that if you load a file in a proprietary format (`.docx` or `.pages`, say), some users may not be able to access it. Saving your file in plain or rich-text formats (`.txt`, or `.rtf`) will prove more broadly useful. Better yet would be to prepare the file as HTML, allowing it to be used by any browser and easily accessible to assistive technology.
+
+To learn more about when transcripts are needed and how best to go about preparing the, see the[ World Wide Web Consortium’s Transcripts documentation](https://www.w3.org/WAI/media/av/transcripts/).
+
+Transcripts are made available to frontend readers on the landing page for the Resource via a button labeled **Transcript** that appears to the right of the media. When the button is selected the transcript file can be downloaded to the reader’s local device. Transcripts do not display natively in Manifold.
+
+:::important What about Timed or Closed Captions?
+It is also possible to associate Captions and Subtitles tracks with Video (and soon Audio) resources in Manifold. See the [Tracks section](../backend/resource.md#tracks) below to learn more.
+
+Timed tracks differ from transcripts in that they play in time with the media, where transcripts are time-independent. 
+:::
+
 #### Link URL
 
 In place of the standard **File** upload field for Resources that get brought into the system, **URL** Resources instead require a target URL, which should be provided in full, e.g., `https://www.nasa.gov/`, *not* `nasa.gov`. The **Link** Resource is the only kind with this attribute.
@@ -449,10 +465,84 @@ All of the fields on this page support Markdown formatting with the exception of
 
 The [Metadata section](../backend/metadata.md) provides definitions for each metadata element shown in this view.
 
+### Tracks
 
+The **Tracks** sidebar menu allows you to add text tracks to Video (and soon Audio) Resources to ensure they are in compliance with web accessibility guidelines. Text tracks are formatted as WebVTT files (with a `.vtt` extension) and provide descriptive and navigational information to users playing media so they can better understand and engage with the content.
 
+Tracks are most commonly associated with closed captions or subtitles that are layered over media content, though they can be used for additional functionality as well.
 
+To add a track to your Video resource, select the **Add a New Track** button. That will open a drawer from the right where you will be presented with four fields that will describe and make your track available to the media player: **Kind**, **Label**, **Language**, and **Track Content**.
 
+It is possible to add multiple tracks to the same resource. Once a track has been added to a Resource, it will be listed in this view below the **Add New Track** button.
 
+Tracks are available to users in the media player when they select the **More Media Controls** button that appears above the scrub bar as three stacked dots. That will open a menu where users can toggle Captions on and then select either a Captions or Subtitles track to play with the media.
 
+:::note Limitations and Upcoming Work
+It is not possible to associate tracks with Video resources that are brought in via YouTube or Vimeo. To add tracks to remotely hosted videos, you will need to do so on the originating platform.
 
+The **Tracks** sidebar menu was introduced in version 9 and currently only appears for **Video** Resources. However it will be available to **Audio** Resources in an upcoming minor release.
+:::
+
+:::important Tracks versus Transcripts?
+This section deals specifically with tracks, which are timed to and render with the source media. Transcripts, however, are time-independent and allow readers to digest any audio, verbal, or non-verbal elements from media at the reader’s own pace. To learn more about adding Transcripts to your Audio and Video Resources, see the [Transcript section](../backend/resource.md#transcript) above.
+:::
+
+#### Kind
+
+There are five kinds of text tracks defined in the [HTML specification](https://html.spec.whatwg.org/multipage/media.html#text-track-kind "HTML Text Track Specification"). The **Kind** field lists four of those options in a dropdown, and currently Manifold only supports the first two, **Captions** and **Subtitles**. When you go to add a track you will want to select one of those two.
+
+That said, definitions for all five track kinds are provided here to give you a greater sense of how these tracks function.
+
+- **Captions** tracks are a timed transcriptions of the *entire audio component* of the media element and can also include non-verbal or musical information. Captions are layered over the media display during playback.
+- **Subtitles** tracks are used when *translating* spoken words or visuals in a video *from a foreign language* into the language of the target audience. Like Captions, they are layered over the media display during playback.
+- **Chapters** tracks are used by the media player to partition playback into discrete, titled segments on the “scrub bar” (otherwise known as the progress bar or time slider) that can be used for navigation. Chapters may also render as a button list option in the media player so users can select a specific chapter to navigate to.
+- **Metadata** tracks do not display their contents to users; instead they provide time-coded metadata that can be used with scripts to perform a time-appropriate action, along the lines of how Chapter tracks are used by the player to provide different means of navigation.
+- **Descriptions** tracks, while technically part of the HTML specification, are not currently supported by any browser, and as such they do not appear as an option in Manifold. In the future they may provide a means to offer a textual description of the media’s visual content.
+
+In terms of playback, **Captions** and **Subtitles** render identically. It is not currently possible to initialize both a **Captions** and **Subtitles** track at the same time.
+
+It is beyond the scope of this documentation to describe how to prepare tracks files. However, the World Wide Web Consortium maintains a page on [Making Audio and Video Media Accessible](https://www.w3.org/WAI/media/av/captions/) that will be a useful resource in understanding and preparing tracks for your media.
+
+:::note Track Support Roadmap
+Currently Manifold only displays **Captions** and **Subtitles** tracks. In future releases we expect Manifold will support **Chapter** tracks and, potentially, **Metadata** tracks.
+
+We have no plans to support **Description** tracks until they are broadly supported by all the major evergreen browsers.
+:::
+
+#### Label
+
+The **Label** field is a textbox where you can assign a simple title to the track. Labels should only be a few words long and use plain language. Labels are often displayed by the media player as an option readers can select. For instance, Captions track labels could be “Korean,” “Spanish,” “English,” and so on to indicate the language of the track.
+
+#### Language
+
+The Language field expects a language tag abbreviation that describes the language of the track you are uploading. The Internet Assigned Numbers Authority (IANA) maintains this [registry of all available language tags](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry) in a rather lengthy text document.
+
+To find a language tag in that list, use the search function in your browser and search for the name of the language you are looking for. Languages will be associated with a **Description**. Above that **Description** there will be a line-item for **Subtag**. The abbreviation following that **Subtag** label is what you need to input into Manifold.
+
+For example, if you searched for *French*, the result in that registry would bring up the following:
+
+```txt
+Type: language
+Subtag: fr
+Description: French
+Added: 2005-10-16
+Suppress-Script: Latn
+```
+
+You would want to put `fr` into the **Language** field in Manifold.
+
+:::note Tag List Confusion?
+The BCP 47 language tags mentioned in the user tip in Manifold correspond to (and in fact are sourced from) the tags in IANA registry linked to above. You can confidently use the language tags you find in the IANA registry.
+:::
+
+#### Track Content
+
+The **Track Content** field is the space where you can drag and drop your WebVTT file or use the **Upload a File** button to select it from your system’s file directory.
+
+This field *only* accepts files with WebVTT files with a `.vtt` extension.
+
+#### Track Listings
+
+Each saved track appears as a list element in this view, made up of the track’s Label, flags indicating the Kind of track it is and the Language associated with it, the name of the track file that was uploaded to create it, and a Delete button in the form of a trashcan icon.
+
+Of these only the track Label and the Delete button are actionable. When you select the track Label, a drawer will open from the right of the screen where you can edit any of the four fields originally used to create the track. The Delete button will open a modal asking you confirm you want to remove the track. Once confirmed the track will be removed from the system and no longer available in the media player interface.
