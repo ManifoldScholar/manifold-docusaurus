@@ -175,7 +175,9 @@ You must be logged in to your Manifold account to add content to a Reading Group
 
 ### Create a New Category
 
-Added content can be curated into custom category blocks by entering a name in the **Create a new category** textbox and selecting the **Add** button beside it. Each added category will become its own content block on your Reading Group home page and contains subcategory sections for: Projects, Journal Issues, Texts, Text Sections, Resource Collections, and Resources.
+Added content can be curated into custom Category blocks. Each Category block you add will display on your Reading Group home page and contain subcategory sections for: Projects, Journal Issues, Texts, Text Sections, Resource Collections, and Resources. However, only those categories that contain added content will appear for readers. Empty category containers will not display.
+
+To create a Category block, select the **Category** button beneath the **Add a New Block** heading. That will open a modal where you can title the block and provide a brief description that will display below the title. The **Title** field is required; a description is optional. Descriptions will not display until the **Edit Home Page** toggle is turned off.
 
 Category content block headings include three button options to either delete or modify the category block:
 
@@ -189,11 +191,11 @@ Likewise, added content can be moved to the *same subcategory section* in anothe
 
 ### Add a Markdown Block
 
-Markdown blocks are free-text blocks that accept Markdown syntax and allow you to provide direction, context, or expectations to Reading Group members about content collected into the Group or how to engage with it as a group.
+Markdown blocks are free-text blocks that accept Markdown syntax and allow you to provide direction, context, or expectations to Reading Group members about content collected into the Group or how you expect the group to engage with that content.
 
 Markdown blocks differ from Category content blocks in that they do not contain project content from the Manifold instance.
 
-Markdown blocks can be added to a Reading Group landing page and ordered alongside other Markdown and Category content blocks. To do so, select the **Add Markdown Block** button beside the the **Create a new category** textbox. As soon as you do, a new, empty block will appear in the block list below the button.
+Markdown blocks can be added to a Reading Group landing page and ordered alongside other Markdown and Category content blocks. To do so, select the **Markdown** button beside the the **Category** button beneath the **Add A New Block** heading. This will open a modal where you can provide an optional title and then, in the textbox labeled **Block Content**, the actual content you want to save to the block.
 
 Each listing has the same three button options that Category content blocks have, described in the [Create a New Category section](../using/reading_groups.md#create-a-new-category) above. You will use the **Edit Button** to add content to the block.
 
