@@ -54,7 +54,7 @@ Alternatively, the **Choose a Range Preset** field offers four button options th
 
 #### Reports
 
-Following the date constraint options, the system displays five usage reports, some with multiple data points, reflecting user activity with the Project during the defined time span.
+Following the date constraint options, the system displays six usage reports, some with multiple data points, reflecting user activity with the Project during the defined time span.
 
 1. Rendered in a line chart, the **Visitors** report shows the number of unique visitors accessing any page on the instance during the set time span. Visits are tied to a user’s browser. A user with multiple tabs open to the site in the same browser will be counted only once. But if the same user accesses an instance from two different browsers, they will be recorded as two different visitors.
 
@@ -62,9 +62,15 @@ Following the date constraint options, the system displays five usage reports, s
 
 3. The value shown in the **Highlights** report corresponds to the total number of passages that have been highlighted during the selected time period. The system aggregates highlights from all of the Project’s Texts during that span, regardless of privacy setting or affiliation with Reading Groups.
 
-4. Each time a user follows a Project, the system creates a record of it. When a user un-follows a Project, that record is destroyed. The value shown in the **New Followers** report is the total number of follower records that were newly created for the Project and still existing during the date range selected.
+4. **Downloads** tracks the number of times users have activated any [Download calls-to-action](../backend/projects.md#calls-to-action) buttons in the Project’s Hero Block. If there are more than one Download calls-to-action buttons, this figure will aggregate the number of times each has been used into one figure here.
 
-5. The **All Followers** report returns the total number of currently existing follower records associated with the Project. The figure here is ***not*** affected by time constraints.
+    :::info Download Records
+    The Download analytic was introduced in June, 2025. Download data before that time was not tracked and thus is not reported in this space. Only Downloads made after that data will appear in this report.
+    :::
+
+5. Each time a user stars a Project, the system creates a record of it. When a user un-stars a Project, that record is destroyed. The value shown in the **New Stars** report is the total number of star records that were newly created for the Project and still existing during the date range selected.
+
+6. The **All Stars** report returns the total number of currently existing star records associated with the Project. The figure here is ***not*** affected by time constraints.
 
 :::note Exporting Analytics
 At present there is no mechanism to export Analytics data or mask from tracking the activity of specific users.
