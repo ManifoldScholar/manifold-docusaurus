@@ -151,7 +151,7 @@ Following the date constraint options, the system displays six usage reports, so
 
 4. The **Shares** report displays the aggregate number of times visitors have used the Manifold Share feature in the Reader’s pop-up menu to share a passage from the Text via an external application or URL. To be clear, Manifold does not track if those links are used; it only tracks when they are generated. The number displayed in the report is *not* affected by time constraints.
 
-5. Each time a visitor uses the Reader’s Share feature to create an citation for the Text section, a record is created. The figure in the **Citations** report represents the total number of citation records currently associated with the Text section. It is *not* affected by time constraints.
+5. Each time a visitor uses the Reader’s Share feature to access a citation for the Text, a record is created. The figure in the **Citations** report represents the total number of citation records currently associated with the Text, across all of its sections when there is more than one. This figure is *not* affected by time constraints.
 
 6. Displayed as a list, the **Text Section Views** report aggregates the total number of times a specific section within a Text has been viewed during the set timespan. Each time a visitor opens a Text section, the system gives their browser a token associated with the the section. The system calculates the values it displays here by adding together the total number of tokens associated with the section from all the visitors who have accessed it. Data in this report are accurate to within a few moments, and section titles in the list open the Manifold Reader to the selected section.
 

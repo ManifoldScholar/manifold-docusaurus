@@ -76,15 +76,25 @@ When a visitor engages with the instance, the system records an event and associ
 
 The figure in this report then is calculated by comparing visits in the set time period that have an associated engagement event against the total number of visits in that span.
 
-#### Followed
+#### Starred
 
-This report looks at the number of users in the system who are following projects and provides here a rounded average for the number of projects those users are following.
+The report provides a rounded average for the number of projects users on the instance have added to their **My Starred** collection. Only users who have added projects to their **My Starred** collection are considered.
+
+To learn more about the process of Starring projects, see the [Collecting Content section](../using/collecting.md).
 
 #### Site Statistics
 
-The data in the **Site Statistics** report are *not* constrained by the set date values. Instead, this section reports the sum total for each listed category: **Projects**, **Texts**, **Resources**, **Users**, **Annotations**, and **Comments**.
+The data in the **Site Statistics** report are *not* constrained by the set date values. Instead, this section reports the sum total for each listed category: **Projects**, **Texts**, **Resources**, **Users**, **Annotations**, **Comments**, **Downloads**, and **Shares**.
 
-Of particular note, the total number of Users corresponds to the number of User listings under the Records menu (see [Users](../backend/users.md)), and the Annotations count *does not* include the number Resource Annotations that have been placed in the Reader.
+Of particular note, the total number of **Users** corresponds to the number of User listings under the Records menu (see [Users](../backend/users.md)), and the **Annotations** count *does not* include the number Resource Annotations that have been placed in the Reader.
+
+**Downloads** in this view refers to the total number of times users have activated [Download call-to-action](../backend/projects.md#calls-to-action) buttons across the entire instance. Download calls-to-action appear in a Project’s Hero Block, when a project editor makes a file available for users to download in that space. Some projects may have no Download calls-to-action while other projects may have multiple. The figure in this report is not project specific and documents the total number of times any Download call-to-action has been selected by a user.
+
+:::info Download Records
+The Download analytic was introduced in June, 2025. Download data before that time was not tracked and thus is not reported in this space. Only Downloads made after that data will appear in this report.
+:::
+
+Likewise, **Shares** tallies the total number of times users select the [Manifold Reader’s Share option](../using/reading_manifold.md#sharing-and-citing-texts) to either share a link to a text via an External App or via a URL.
 
 Because the system caches some information for performance reasons, the values that appear in this report are accurate to within a day.
 
