@@ -449,7 +449,7 @@ The Text Block displays Project Texts as individual entries in a list. The block
 
 The title of the block as a whole can be customized using the **Title** field. Text entered in the **Description** field, likewise, refers to the block generally and sits below the block’s title on the Project homepage.
 
-When the **Show Author Names?** toggle is engaged, the block will include the names of those listed as authors from each Text’s [People menu](../backend/texts.md#people). There is no means to also include those listed as contributors.
+When the **Show Author Names?** toggle is engaged, the block will include the names of the first six Makers (top to bottom) with an author role from each Text’s [People menu](../backend/texts.md#people). There is no means to also include those Makers who have different roles in this block.
 
 The **Show Subtitles** toggle tells the system to include each Text’s subtitle beside their main title in the block.
 
@@ -529,18 +529,28 @@ Transactions that warrant an entitlement occur outside of the system: a student 
 
 ## People
 
-The **People** sidebar lists the Maker Records associated with the Project as a whole versus individual Texts within the Project (see [Makers](../backend/makers.md)). Records saved here are displayed in the Hero block beneath the Project’s title. 
+The Project’s **People** sidebar lists the [Maker Records](../backend/makers.md) associated with the Project or Journal Issue as a whole, versus those who contributed to individual Texts within the Project. Each Text within a Project also has it’s own People sidebar, which is described in the [Texts section](../backend/texts.md#people).
 
-This view is broken into two categories: **Authors** and **Contributors**, where author listings suggest primary author- or stewardship of the Project and contributor listings denote secondary attributions. Individual listings begin with an profile image, the Maker’s name, and then options to delete, edit, or reorder the entry:
+Records listed here display on the Project’s landing page, in the Hero block beneath the title. In the Hero block, both the name of the Maker and their roles show in the order they appear in this view (top to bottom).
 
-The **Delete** button, depicted with an **×**, only removes the association between the Maker Record and the Project; the Maker record itself is not altered or removed from the system by deleting its association with the Project.
+That said, Manifold does not automatically populate listings in this view, even if you’ve added a Text to your project from which Manifold could recognize names meant to be its authors or contributors. Manifold does not assume that the author or contributor of an individual Text need also be listed as an author or contributor to the overall Project.
 
-Shown as a pencil icon, the **Edit** button changes the view, taking you to the **Manage Makers** page with the edit drawer open to the entry you selected. There you can adjust the Maker’s professional title; first, middle, or last name; and suffix. Users with Reader roles who have been granted Editor Permissions to a Project are not able to edit Maker Records.
+To add a Maker Record to a Project, select the **Add Contributor** button beneath the **Manage Contributors** heading. When you do so, a drawer will slide open from the right with two type-ahead dropdowns and an empty list.
 
-The horizontal reordering bars can be used to **Reorder** Maker records within the same category. It is not possible to recategorize an entry from **Author** to **Contributor** or vice versa. The reordering bars respond to clicking and dragging with your mouse or by focusing on them with your tab key and pressing the space bar on your keyboard. When selected a menu appears that gives you options to move the corresponding element up or down in the list.
+The first dropdown, labeled **Maker**, makes available all the Maker records in the system for selection. If you cannot find the Maker you are looking for, you will need to add it to the system from the [Makers interface](../backend/makers.md). The second dropdown, **Roles**, allows you to select one or more roles that should be associated with the Maker you’ve chosen. Perhaps the same person contributed an introduction and an afterword. Or someone was both compiler and artist. When you select a Role from the second dropdown it appears as a list item below in the order they were selected. Roles cannot be reordered through this interface, however you can remove roles by selecting the **Remove Selection** button next to the role that appears in the shape of an X. Once you click the **Save** button, the Maker record will be listed in the primary viewing pane.
 
-:::note Other Authorial Roles
-The current Author/Contributor dynamic is based off the EPUB specification. At present, you cannot assign more nuanced roles for Makers (e.g., Editors, Translators, Introducers, etc.).
+:::info Author Roles in Library Views
+The first three listings (from top to bottom) that have an author role will appear below the Project or Journal issue thumbnail in library views. If there are more than three Makers in this space with an author role, they will be noted in library views with “et al.”
+:::
+
+Each Maker record listing includes the name of the Maker, all their associated roles, and buttons to **Edit**, **Delete**, or **Reorder** the listings:
+
+- The **Edit** button, which appears toward the right side of the listing as a pencil icon, opens a drawer from the right where you can add and remove roles that are associated with the Maker.
+- The **Delete** button, depicted as a trashcan icon, removes the Maker record’s association with the Project. When you delete a Maker record from a Project, the Maker record itself is not altered or removed from the system. Instead the record is simply no longer associated with the Project.
+- The **Reorder button**, shown as a pair of horizontal bars, can be used to **Reorder** Maker records. The reordering bars respond to clicking and dragging with your mouse or by focusing on them with your tab key and pressing the space bar on your keyboard. When selected with the space bar, a menu appears that gives you options to move the corresponding element up or down in the list. The order of Makers in this view (top to bottom) is the order in which they will appear in a Project or Journal Issue’s Hero block.
+
+:::note Roles Aren’t Sticky
+It is important to note that roles assigned here are project specific. If you assign an editor role to a Maker in this space, that role is only applied in the context of the project at hand and is not tied to the source Maker record. Thus a person can be an editor of one project and an artist on another.
 :::
 
 ## Texts, Resources, and Resource Collections

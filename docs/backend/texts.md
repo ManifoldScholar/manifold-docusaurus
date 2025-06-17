@@ -302,34 +302,28 @@ Enabling this toggle overrides that requirement so readers (with or without an e
 
 ### People
 
-The **People** sidebar in this view lists the Maker Records associated with a individual Text (see [Makers](../backend/makers.md)). The listings are broken into two categories: **Authors** and **Contributors**, where author listings suggest primary authorship and contributor listings denote secondary attributions. Individual listings begin with an profile image, the Maker’s name, and then options to (1) delete, (2) edit, or (3) reorder the entry:
+The **People** sidebar in this view lists the [Maker Records](../backend/makers.md) associated with a individual Text. Manifold automatically populates listings into this space when the Text’s source file provides authorship information in its metadata, as described in the following table.
 
-1. The **Delete** button, depicted with an **×** button, only removes the association between the Maker Record and a specific Text; the Maker record itself is not altered or removed from the system by deleting its association with a Text.
+<Spec title="Sourcing Maker Records from Texts">
 
-2. Shown as a pencil icon, the **Edit** button changes the view, taking you to the **Manage Makers** page with the edit drawer open to the entry you selected. There you can adjust the Maker’s professional title; first, middle, or last name; and suffix. Users with Reader roles who have been granted Editor Permissions to a Project are not able to edit Maker Records.
-
-3. The horizontal drag bars represent the **Reordering Button** can be used to reorder Maker records within the same category. It is not possible to recategorize an entry from **Author** to **Contributor** or vice versa. The **Reordering Button** responds to clicking and dragging with your mouse or by focusing on it with the tab key and using the space bar on your keyboard to select it. When selected, a menu appears giving you optinos to move the record up or down within the list.
-
-Manifold automatically populates the **People** pane when the Text’s source file provides authorship information in its metadata
-
-<Spec title="Author and Contributor Source">
-
-| Source                         | Location Notes                                                                                                                                                                                                                                   |
-|--------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| EPUB                           | In the `content.opf` file, Manifold will look for `<dc:creator id="creator1">John Watson</dc:creator>` and `<dc:contributor id="creator2">Ivy Winters</dc:contributor>` attributes to add listings as `Authors` and `Contributors` respectively. |
-| HTML                           | For individual HTML Text ingests, the author attributions appear between the `<head>` tags, formatted as: `<meta name="dc.creator" content="Rowan Ono">` and `<meta name="dc.contributor" content="Louise Dash">`.                               |
-| Markdown                       | When loading individual Markdown files, authorship is defined as: `creator: Indrid Cold` and `contributor: Ida Davis` in the document’s header.                                                                                                  |
-| MS Word (DOCX) and Google Docs | There is no current way to define authorship in Google or Word documents.                                                                                                                                                                        |
-| Manifest Ingests               | In the `meta` section of the YAML file, authorship is nested under the `creators` or `contributors` headings as : `- name: Ivy Winters`                                                                                                          |
+| Source                         | Location Notes                                                                                                                                                                                                                                                                                               |
+|--------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| EPUB                           | In the `content.opf` file, Manifold will look for `<dc:creator id="creator1">John Watson</dc:creator>` and `<dc:contributor id="creator2">Ivy Winters</dc:contributor>` attributes to add listings with `Author` and `Contributor` roles respectively.                                                       |
+| HTML                           | For individual HTML Text ingests, the author attributions appear between the `<head>` tags, formatted as: `<meta name="dc.creator" content="Rowan Ono">` and `<meta name="dc.contributor" content="Louise Dash">`.                                                                                           |
+| Markdown                       | When loading individual Markdown files, authorship is defined as: `creator: Indrid Cold` and `contributor: Ida Davis` in the document’s header.                                                                                                                                                              |
+| MS Word (DOCX) and Google Docs | There is no current way to define authorship in Google or Word documents.                                                                                                                                                                                                                                    |
+| Manifest Ingests               | In the `meta` section of the [YAML file](../walkthroughs/manifest.md#the-manifest-yaml-file), authorship is nested under the `creators` or `contributors` headings as : `- name: Ivy Winters`                                                                                                                |
 
 </Spec>
 
-When the system cannot recognize authorship from the source file, *already existing* Maker Records can be manually associated with a Text by typing names in the **Authors** or **Contributors** dropdown fields. New Maker Records cannot be created from this view.
+When the system cannot recognize authorship from the source file, *already existing* Maker Records can be manually associated with a Text by selecting the **Add Contribuor** button.
 
-**Author** listings can be configured to appear in **Texts** Content Blocks and will appear in auto-generated bibliographic cites the system creates. Those listed as **Contributors** do not appear in either of those spaces.
+See the [Project’s People sidebar section](../backend/projects.md#people) for more about how to associate contributors with a text; the interfaces and logic are identical. The key differences are that in this space, Maker records are being associated with a specific text and not an entire Project or Journal Issue.
 
-:::note Other Authorial Roles
-The current Author/Contributor dynamic is based off the EPUB specification. At present, you cannot assign more nuanced roles for Makers (e.g., Editors, Translators, Introducers, etc.).
+As such, Maker Records listed here do *not* appear beneath Project Thumbnails in library views or in Project Hero blocks. Instead, they can be configured to appear in [**Texts** Content Blocks](../backend/projects.md#texts-block) and will appear in auto-generated bibliographic cites the system creates. See the [Sharing and Citing Texts section](../using/reading_manifold.md#sharing-and-citing-texts) for more about Manifold’s citation feature.
+
+:::note Creating Maker Records
+New Maker Records cannot be created from this view. If an ingested Text does not create the records you want or expect, you will need to use the [Makers interface](../backend/makers.md) to create a new record.
 :::
 
 ### Sections
