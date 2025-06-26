@@ -688,6 +688,19 @@ When a new Text is ingested, Manifold will create a stylesheet record here that 
 - It is not currently possible to bake a new font into the system using an `@font-face` rule.
 - The system generally excludes these attributes: `position`, `font-family`, `overflow`, `overflow-x`, `overflow-y`, `z-index`, `max-width`, `line-height`, and `letter-spacing`.
 - Font sizes cannot be defined using point or pixel values.
+  :::info Manifold Font Variable
+  You can add the following CSS variable to a stylesheet to adjust the root font-size for content in the Manifold Reader: `--font-size-adjustment`
+
+  The value you assign to the variable works as a multiplier against the root font-size and can be set to values between 0.5 and 1.5.
+
+  ```
+  .manifold-text-section {
+  --font-size-adjustment: .5;
+  }
+  ```
+
+  The base font size for body text in Manifold is 22px. Thus if you added the above CSS rule, you would multiply that base font-size by .5, resulting in body text displaying at 11px.
+  :::
 - Font weights cannot be set using numeric keyword values (e.g., `font-weight: 400;`)
 - When using a heading selector (e.g., `h1, h2`), Manifold does not allow a size, weight, line-height, margin, or padding to be set.
 - Paragraph blocks will not retain styles associated with `font-weight`, `size`, `font-size`, or `line-height`.
