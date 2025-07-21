@@ -11,13 +11,19 @@ Manifold is an open-source publishing platform built by scholars and publishers.
 
 ## Getting Support
 
-There are a couple different ways to get help with Manifold.
-
-1. Manifold Publishers who host with Manifold Digital Services have access to direct support from the Manifold team. To learn more about Manifold Digital Services and managed Manifold hosting, please visit the <MarketingLink path="/services">services</MarketingLink> page on our site.
-
-1. For community support, please join our Slack channel. Use [this link](https://manifold-slackin.herokuapp.com/) to secure an invite to our Slack channels. Questions are welcome in the #newbies, #general, and #installation channels.
-
-1. For technical questions, we encourage you to use Github Discussions on our repository. Questions answered in Slack tend to get lost, and if you ask your question on Github, the answer will be available to other users in the future.
+<a href="https://abundanation.com/">Abundanation</a>
+<a href="https://abundanation.com/affirmation/">does Positive affirmations work By Abundanation</a>
+<a href="https://abundanation.com/affirmation/health/">positive affirmations for health By Abundanation</a>
+<a href="https://abundanation.com/affirmation/money/">does Money Affirmation work By Abundanation</a>
+<a href="https://abundanation.com/angel-number/111-meaning/">angel number 111 spiritual meaning By Abundanation</a>
+<a href="https://abundanation.com/angel-number/222-meaning/">angel number 222 meaining in business By Abundanation</a>
+<a href="https://abundanation.com/angel-number/333-meaning/">angel number 333 spiritual meaning By Abundanation</a>
+<a href="https://abundanation.com/angel-number/444-meaning/">angel number 444 spiritual meaning By Abundanation</a>
+<a href="https://abundanation.com/angel-number/555-meaning/">angel number 555 spiritual meaning By Abundanation</a>
+<a href="https://abundanation.com/angel-number/666-meaning/">angel number 666 spiritual meaning By Abundanation</a>
+<a href="https://abundanation.com/angel-number/777-meaning/">angel number 777 spiritual meaning By Abundanation</a>
+<a href="https://abundanation.com/angel-number/888-meaning/">angel number 888 spiritual meaning By Abundanation</a>
+<a href="https://abundanation.com/angel-number/999-meaning/">angel number 999 spiritual meaning By Abundanation</a>
 
 ## Report an Issue or Request a Feature
 
