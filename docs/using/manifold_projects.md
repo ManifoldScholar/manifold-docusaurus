@@ -38,25 +38,29 @@ The Activity block displays as tiles the last six activity records for the Proje
 
 ## Resources
 
-The Resources block renders a teaser of the ten most recently updated Resources on a Project, accompanied by a link to the Resource Library for that Project as well as the total number of Resources on the Project. This block can also list each of the Project’s Resource Collections.
+The Resources block renders thumbnails for up to ten Resources, accompanied by a link to access the full Resource library for that Project. This block can also be configured to display some or all the Project’s Resource Collections.
 
-When a reader selects an individual Resource, they will be taken to the Resource page, where all the contextual and metadata information is provided alongside the Resource.
+When a reader selects an individual Resource, they will be taken to the Resource’s detail page. A Resource detail page displays the Resource alongside its caption, description, and other pertinent metadata. When possible, the Resource is rendered in the browser in this space. Each Resource detail page includes an option to share the Resource using your device’s sharing menu. And Project Creators can likewise make Resources available for download when they have the necessary permissions from the rights holders to do so.
 
-A Resource Page is where a Resource is displayed in full: descriptive and accessibility information are provided alongside associated metadata; if possible, the content is rendered or made available in a player; and options to download and share the Resource are provided if the Project Creator has the necessary permission to do so. Resources, like Texts, are also available for discussion on the platform. Here on the Resource Page, a reader can comment and discuss the Resource publicly (comments to Resources cannot be made private).
+Resources, like Texts, are also available for discussion on the platform. On the Resource detail page, beneath the **Comments** heading, a reader can leave their remarks about the Resource publicly—comments to Resources cannot be made in private.
+
+Further, beneath the **Annotations** heading, the system will display a list of each place the Resource in question has been attached to a particular section of text associated with the Project. This provides Readers a pathway to enter a text from a specific Resource or to navigate between sections of one or various texts, by moving from a placed Resource to its detail page and then out to another space where it has been placed.
 
 :::note
-For backend users interested in learning how to prepare Resources for Manifold, the [Resource](../backend/resource.md) and [Resource Collections](../backend/resource_collections.md) sections will be useful.
+For backend users interested in learning how to prepare Resources for Manifold and understand which will display natively in the browser, the [Resource](../backend/resource.md) and [Resource Collections](../backend/resource_collections.md) sections will be useful.
 :::
 
 ## Resource Collections
 
 Resource Collections are groupings of Resources that can be used to orient a reader around certain themes or as a means to place a series of Resources onto a Text with one insertion.
 
+Resource Collections each have their own landing page, where any description for the collection is shown alongside carousel and library views of Resources in the collection. Resources in the collection can be sorted by name or creation date, by kind (Image, Audio, etc.) and by tag. Resources and their captions will display in the carousel on this page, when possible (or else be supplanted by a default cover image), with a link to investigate the individual Resource on its own detail page.
+
+Like individual Resources, beneath the **Annotations** heading, readers can see a list of where the Resource Collection (as a whole) has been placed in a text associated with the Project.
+
 :::note
 For details on how to place a Resource or Resource Collection in a Text, see the [Reading Manifold](../using/reading_manifold.md#resources) section.
 :::
-
-Resource Collections appear and take display precedence in the Resources blade of a Project’s landing page, where you are able to access and engage with their individual contents.
 
 ## Texts
 
