@@ -54,9 +54,15 @@ The Reading Group listings can be searched and sorted. The search and dropdown c
 
 #### Versus “My Reading Groups”
 
-The Reading Group link in the Manifold menu differs from the “My Reading Groups” link that appears in the user/avatar dropdown menu in one respect: the latter takes a user to a more personalized listing of just those Reading Groups that user is a member, some of which may be private.
+The **Reading Groups** link in the Manifold menu differs from the **My Reading Groups** link that appears in both the user (or avatar) dropdown menu and the library navigation (discussed below) in one respect: the latter takes a user to a more personalized listing of just those Reading Groups that user is a member, some of which may be private.
 
 The tabs atop the Reading Group listings in either space allows a user to quickly change from one view to the other, moving from the My Reading Groups subpage to the Public Reading Groups one.
+
+:::note They Both Look the Same to Me!
+If you are seeing the same view when you select either the **Reading Groups** or **My Reading Groups** options, then the instance you are viewing does not have Public Reading Groups enabled.
+
+In this state, both of these links will resolve to a Reading Group landing page that only lists those Reading Groups of which you are a member.
+:::
 
 ## Library Navigation
 
@@ -70,7 +76,7 @@ The **Project Collections** link takes the user to a paginated view of all “vi
 
 ### My Starred
 
-Selecting **My Starred** from the navigation menu opens a view onto all the content a user has collected into their My Starred Group. The idea is for this page to function as a shortcut for users to quickly navigate to the content on the instance in which they are most interested.
+Selecting **My Starred** from the navigation menu (or from the user dropdown in the main menu) opens a view onto all the content a user has collected into their My Starred Group. The idea is for this page to function as a shortcut for users to quickly navigate to the content on the instance in which they are most interested.
 
 Starred items in this space are grouped into buckets that reflect their nature: **Projects**, **Texts**, **Text Sections**, **Resource Collections**, and **Resources**. Unlike the homepage for a Reading Group, it is not possible to reorder or add context to the materials gathered here.
 
@@ -78,9 +84,11 @@ See the [Collecting section](../using/collecting.md) for more on how content is 
 
 ### My Notes
 
-The link to **My Notes** opens a view for a user to see all their Annotations, Comments, and Highlights across an entire Manifold instance in one place. These engagements are displayed in a paginated list and include results from all Reading Groups, public and private.
+The link to **My Notes** opens a view for a user to see all their Annotations and Highlights across an entire Manifold instance in one place. This view can also be accessed by selecting the **My Notes + Comments** option from the user dropdown in the main menu bar. These engagements are displayed in a paginated list and include results from all Reading Groups, both public and private.
 
-Users can filter the displayed results by Text using the dropdown combobox field that appears atop the list.
+Users can filter the displayed results by Text, Reading Group, or by Kind (public or private annotation or just highlights) using the dropdown fields that appear atop the lists. Those filters can also be used in tandem, thus a user can select a particular Text and further refine the filter by a specific group or kind.
+
+It is worth noting that this view only displays your own annotations and highlights and note those of any other users.
 
 :::note Missing Links?
 Links to **My Starred** and **My Notes** *only* appear after logging in; users who aren’t logged into the instance will see only navigation links for **Projects** and **Project Collections**. A link to **Journals** will also appear for logged-in users if there is a Journal set up on the instance and their user account has credentials to view it.
