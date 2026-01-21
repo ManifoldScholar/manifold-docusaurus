@@ -55,6 +55,8 @@ source $profile
 
 ### Install rbenv and Ruby
 
+**If you utilize ASDF skip this step and follow [Install dependencies with ASDF](#install-dependencies-with-asdf) to install ruby and nodejs**
+
 Rbenv is a tool for managing the available Ruby versions on your computer. If you prefer .rvm or another mechanism for managing ruby versions, by all means use it, as long as you can get the correct version of Ruby installed.
 
 As of January 2020, Manifold runs on Ruby 2.6.3. The version changes relatively frequently, as new versions of Ruby are released. We store the current [required ruby version](https://github.com/ManifoldScholar/manifold/blob/master/.ruby-version) in a `.ruby-version` file in the project root. Manifold should work with version 2.6 or higher.
@@ -80,6 +82,7 @@ rbenv install 2.6.3
 
 
 ### Install nodenv, Node, and yarn
+**If you utilize ASDF skip this step and follow [Install dependencies with ASDF](#install-dependencies-with-asdf) to install ruby and nodejs**
 
 We prefer nodenv for running different versions of Node. If you have a preferred means of installing node, go for it.
 
@@ -182,6 +185,34 @@ Second, clone the [Manifold source code](https://github.com/manifoldScholar/mani
 git clone https://github.com/ManifoldScholar/manifold.git manifold
 cd ~/src/manifold
 ```
+
+### Install dependencies with ASDF
+**If you have installed Ruby with rbenv skip this step**
+if you have not already installed ASDF follow the [asdf installation intructions](https://asdf-vm.com/guide/getting-started.html)
+
+Create a .tool-versions file at `~/src/manifold/.tool-versions` with the following contents
+```
+ruby 2.7.4
+python 3.8.16
+nodejs 16.15.0
+yarn 1.22.19
+```
+Utilize asdf to install the dependicies in the .tool-versions file
+```
+cd ~/src/manifold
+asdf install
+```
+
+you may need to install plugins for asdf
+```
+asdf plugin add nodejs
+asdf plugin add python
+asdf plugin add ruby
+asdf plugin add yarn
+```
+
+You may additionally need to run `asdf global python 3.8.16` if node installation fails and rerun `asdf install`
+
 
 ## Step 3: Install API dependencies and setup the database.
 
