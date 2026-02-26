@@ -1,3 +1,4 @@
+![ff-depigmenting-treatment](https://github.com/ManifoldScholar/manifold-docusaurus/assets/162092993/0b583e34-9087-425b-b8c3-3859ebc5997c)
 ---
 id: accessibility
 title: Accessibility
