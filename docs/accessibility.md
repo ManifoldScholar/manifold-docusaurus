@@ -8,7 +8,13 @@ sidebar_label: Accessibility
 
 We’ve made accessibility a first-class, non-negotiable design philosophy. For us, accessibility is an ongoing practice rather than an endpoint, and we are committed to ensuring everyone using Manifold can access, engage with, and create content in meaningful and exciting ways. There are a lot of reasons why we made Manifold, and joy is an integral element in all of them. So when we talk about accessibility, we aren’t talking about simply “checking the accessibility box” for some imaginary person in a darkened back room. We earnestly want to create a platform where all readers—sighted, print-disabled, or otherwise—can have engaging and enjoyable experiences.
 
-On this page, you can learn more about how the Manifold team works to meet these goals. We discuss accessibility strategies and compatibility in the following sections. If something here isn’t as clear as you’d like or you have additional questions, we’ve also provided our contact information. Please don’t hesitate to use it.
+On this page, you can learn more about how the Manifold team works to meet these goals and access our accessibilty VPAT documents. We discuss accessibility strategies and compatibility in the following sections. If something here isn’t as clear as you’d like or you have additional questions, we’ve also provided our contact information. Please don’t hesitate to use it.
+
+## VPAT
+
+This Voluntary Product Accessibility Template (VPAT) report evalutes the Manifold intance homepage, project page, and reading interfaces for comformance with WCAG 2.2 at the A and AA levels, for Section 508 Standards, and for Accessibility requirements for ICT products and services.
+
+[Download the Manifold VPAT](/downloads/Manifold%202026%20Manual%20Audit%20Accessibility%20Conformance%20Report.pdf).
 
 ## Strategies
 
