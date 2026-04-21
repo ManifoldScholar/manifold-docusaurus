@@ -31,7 +31,6 @@ const sidebars: SidebarsConfig = {
           'administering/storage',
           'administering/backup_restore',
           'administering/troubleshooting',
-          'administering/securing_manifold',
           { 'Mitigating Spam': [
             'administering/spam',
             'administering/readingGroups_be',
