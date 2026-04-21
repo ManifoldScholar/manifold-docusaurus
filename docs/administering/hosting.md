@@ -8,9 +8,9 @@ import MarketingLink from "@theme/MarketingLink";
 
 ## Minimum Requirements
 
-1. Manifold should be installed on a virtual or physical server with at least 2 CPUs and 6 GB of RAM (8GB preferred). Manifold was not designed to work in a shared hosting environment.
-1. To install from our packages, you will need to have root access to the server and the ability to shell into the server.
-1. Your server should have a fully qualified domain name (FQDN) and be accessible on the internet.
+1. Manifold should be installed on a virtual or physical server with at least 2 vCPUs, 4 GB of RAM (8 GB recommended), and 40 GB of SSD storage. Manifold was not designed to work in a shared hosting environment.
+1. Starting with Manifold v9, Manifold is deployed using Docker containers. You will need SSH access to the server (as root or a user with Docker permissions) and Docker installed on your local machine. See our [deploy template repository](https://github.com/ManifoldScholar/manifold-deploy-example) for detailed setup instructions.
+1. Your server should have a fully qualified domain name (FQDN) and be accessible on the internet with ports 80 and 443 open.
 
 ## Hosting with Manifold Digital Services (MDS)
 
