@@ -3,39 +3,125 @@ id: troubleshooting
 title: Troubleshooting
 sidebar_label: Troubleshooting
 ---
-import Spec from "@theme/Spec";
+
+:::info
+These instructions are for Manifold v9 and later. If you are running Manifold v8 or earlier, see the
+[legacy troubleshooting instructions](/docs/administering/troubleshooting_v8).
+:::
 
 ## Logging
 
-When Manifold isn't working the way it should, the best place to begin troubleshooting is by looking at Manifold's logs.
+When Manifold isn't working the way it should, the best place to begin troubleshooting is by looking at container logs.
+In a v9 deployment, each service runs in its own Docker container, and you can tail logs using the deploy CLI or Kamal
+directly.
 
-<Spec
- title="Log Locations"
- subtitle="For package installations"
- items={[
-  { key: "API", value: "/var/log/manifold/api/production.log" },
-  { key: "API app server (Puma)", value: "/var/log/manifold/puma/current" },
-  { key: "Cable", value: "/var/log/manifold/cable/current" },
-  { key: "Client", value: "/var/log/manifold/client/current" },
-  { key: "Clockwork", value: "/var/log/manifold/clockwork/current" },
-  { key: "Elasticsearch", value: "/var/log/manifold/elasticsearch/current" },
-  { key: "Nginx access log", value: "/var/log/manifold/nginx/access.log" },
-  { key: "Nginx error log", value: "/var/log/manifold/nginx/error.log" },
-  { key: "Postgresql", value: "/var/log/manifold/postgresql/current" },
-  { key: "Redis", value: "/var/log/manifold/redis/current" },
-  { key: "Sidekiq", value: "/var/log/manifold/sidekiq/current" }
- ]}
-/>
+### Tailing Container Logs
 
-See the [troubleshooting services](/docs/administering/managing_services#troubleshooting-services) section in our documentation for more information on managing and checking services. If Manifold isn't working correctly, check and make sure all services are running. If a service isn't starting, check the corresponding log file to figure out why the service won't run correctly.
+Use the deploy CLI to tail logs for a specific service:
 
-If you're encountering an application error, start by figuring out if it's a client error or an API error. If you're seeing a 500 error from the API, it could indicate a misconfiguration or a bug. Check the end of the API log to better understand what's causing the error. Errors in the client application will show up in the client log, or in your console in developer tools. If you see errors in these places, please report them to us on Slack. If there's a bug in Manifold, we want to know about it!
+```shell
+bin/deploy logs -d production api
+bin/deploy logs -d production client
+bin/deploy logs -d production worker
+```
+
+Or use Kamal's built-in aliases:
+
+```shell
+kamal logs-api -d production
+kamal logs-client -d production
+kamal logs-worker -d production
+```
+
+To view database logs (local database only):
+
+```shell
+kamal accessory logs db -d production
+```
+
+### Diagnosing Errors
+
+If you're encountering an application error, start by figuring out if it's a client error or an API error. If you're
+seeing a 500 error from the API, it could indicate a misconfiguration or a bug. Check the API logs to better understand
+what's causing the error. Errors in the client application will show up in the client logs, or in your browser's
+developer tools console. If you see errors in these places, please report them to us on Slack. If there's a bug in
+Manifold, we want to know about it!
+
+### Checking Container Status
+
+If a service isn't responding, verify that all containers are running:
+
+```shell
+bin/deploy status -d production
+```
+
+For more detail on specific containers:
+
+```shell
+kamal app details -d production
+kamal accessory details client -d production
+```
 
 ## Background Jobs
 
-Manifold runs a number of tasks in the background, including but not limited to image processing, email delivery, collection membership calculations, epub generation, and project packaging. It relies on a piece of open source software called Sidekiq to manage these job queues. If you are logged in to your manifold instance as an admin user, you may view the Sidekiq job queue at http://your-domain/api/sidekiq. If background jobs are failing, you will see a high count of failed or retried jobs on the dashboard. Look at the retry queue for clues about why jobs are failing.
+Manifold runs a number of tasks in the background, including but not limited to image processing, email delivery,
+collection membership calculations, epub generation, and project packaging. Starting with v9, Manifold uses
+[GoodJob](https://github.com/bensheldon/good_job) to manage these job queues. GoodJob stores jobs directly in the
+PostgreSQL database, which eliminates the need for a separate Redis service.
+
+GoodJob includes a built-in web dashboard for monitoring job queues. If you are logged in to your Manifold instance as
+an admin user, you can access it at `https://your-domain/api/good_job`. The dashboard shows running, queued, failed,
+and completed jobs, and is a good first stop when investigating background job issues.
+
+The worker container processes background jobs. If jobs appear to be stuck or failing, check the worker logs:
+
+```shell
+bin/deploy logs -d production worker
+```
+
+## Common Issues
+
+**`/api` requests return 502 or 404** — the API container may not be running or healthy. Check its status and logs:
+
+```shell
+kamal app details -d production
+bin/deploy logs -d production api
+```
+
+**SSL certificate not issued** — ensure your domain's DNS A record points to the server IP and that ports 80 and 443
+are open. Let's Encrypt needs to reach the server to issue certificates.
+
+**Client can't reach the API** — all containers must be on the `kamal` Docker network. Verify with:
+
+```shell
+bin/deploy remote -d production "docker network inspect kamal"
+```
+
+**Database connection refused** — for a local database, the container may not be ready yet. Check its status and logs:
+
+```shell
+kamal accessory details db -d production
+kamal accessory logs db -d production
+```
+
+For an external database, verify the host, port, credentials, and that the managed cluster allows connections from your
+server's IP.
+
+**Assets return 404** — with local storage, ensure the uploads volume is mounted. With MinIO, check that the storage
+accessory is running. With external S3, verify your `S3_ENDPOINT`, `UPLOAD_BUCKET`, and `S3_REGION` values in your
+destination configuration file.
 
 ## Memory Consumption
 
-Like many Ruby applications, the Manifold API consumes and can hold onto available memory. With Manifold v6, we've fixed a number of memory issues and upgrades Ruby to v2.7, which has improved garbage collection. That said, you might experience issues if your instance doesn't have adequate memory resources to support Manifold's various underlying services. If Manifold is non-responsive or unstable, monitory the available memory and consider increasing the resources devoted to Manifold.
+Like many Ruby applications, the Manifold API can consume and hold onto available memory. If Manifold is non-responsive
+or unstable, monitor the available memory on your server and consider increasing the resources devoted to Manifold. You
+can check resource usage with:
 
+```shell
+bin/deploy remote -d production "docker stats --no-stream"
+```
+
+## More Information
+
+For additional troubleshooting guidance, see the
+[README in the deploy template repository](https://github.com/ManifoldScholar/manifold-deploy-example).
