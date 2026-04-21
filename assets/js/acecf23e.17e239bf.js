@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkmanifold_docusaurus=globalThis.webpackChunkmanifold_docusaurus||[]).push([[1903],{1912(s){s.exports=JSON.parse('{"blogBasePath":"/manifold-docusaurus/blog","blogTitle":"Blog","authorsListPath":"/manifold-docusaurus/blog/authors"}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkmanifold_docusaurus=globalThis.webpackChunkmanifold_docusaurus||[]).push([[4583],{17903(u,s,a){a.r(s),a.d(s,{default:()=>n});var o=a(56347),c=a(41306),d=a(74848);const n=function(){return(0,d.jsx)(o.rd,{to:(0,c.Ay)("/docs")})}}}]);
