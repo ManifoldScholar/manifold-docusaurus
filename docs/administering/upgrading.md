@@ -4,52 +4,52 @@ title: Upgrading
 sidebar_label: Upgrading
 ---
 
+:::info
+These instructions are for Manifold v9 and later. If you are upgrading a Manifold v8 or earlier installation, see the [legacy upgrade instructions](/docs/administering/upgrading_v8).
+:::
+
 ## Overview
 
-There are a number of steps involved in updating Manifold from one version to another, and the steps vary depending on how you installed Manifold. Be sure to consult the appropriate section below based on your installation type.
+Starting with v9, Manifold is deployed using Docker containers orchestrated by
+[Kamal 2](https://kamal-deploy.org/). Upgrades are handled by updating the Manifold source code in the deploy template
+repository and redeploying. Database migrations and system upgrade tasks run automatically when the API container
+starts, so no separate migration step is needed.
 
-### Database Migrations
+## Routine Upgrades
 
-New versions of Manifold will often include changes to the structure of the PostgreSQL database. These changes are called "migrations," and we leverage the Rails migration subsystem for managing these changes. Manifold's API (a Rails application) is the only component that is able to access the database directly, and it is responsible for running migrations. See below for specific instructions on how to view the current migration state and run migrations in your environment.
+To update to a newer version of Manifold, pull the latest source and redeploy:
 
-### System Upgrades
-
-There are some data transformations that cannot be performed as database migrations. These transformations are handled in the API by the `SystemUpgrade` service, which is exposed via a Rake task in the API application.
-
-## Upgrade Instructions
-
-Follow the upgrade instructions that correspond to the type of Manifold installation you have.
-
-:::caution
-* Before upgrading, be sure to backup your installation by following our [backup instructions](/manifold-docusaurus/docs/administering/backup_restore).
-* Please also consult the [release notes](/manifold-docusaurus/docs/administering/release_notes/v6x) for the version you're installing, in case there are manual upgrade steps that must be taken.
-* When a new version of Manifold is published, we test the upgrade process from the previous version. We cannot guarantee that upgrading across multiple major versions will work correctly, so always upgrade to the next major version.
-:::
-
-### For a Package install
-
-To upgrade to a newer Manifold Omnibus package, begin by downloading and installing the package to your server. To do this, follow steps #1 and #2 of the  [package install instructions](/manifold-docusaurus/docs/administering/installation#package-install) for your operating system.
-
-:::tip
-To determine what version is installed, run this command on the host:
-```
-cat /opt/manifold/embedded/src/MANIFOLD_VERSION ; echo
-```
-:::
-
-After you've installed the package, you should stop all services and reconfigure. Stop all Manifold services with `manifold-ctl stop`. Then run `manifold-ctl reconfigure` to ensure that all configuration is current. Once that’s complete, you can restart the services with `manifold-ctl start`.
-
-```
-/usr/bin/manifold-ctl stop
-/usr/bin/manifold-ctl reconfigure
-/usr/bin/manifold-ctl start
+```shell
+cd manifold
+git pull origin main
+cd ..
+git add manifold
+git commit -m "Update Manifold to $(git -C manifold rev-parse --short HEAD)"
+kamal deploy -d production
 ```
 
-Once this process is complete, visit the fully qualified domain name in your browser. Depending on the hosting environment, restarting Manifold can take a minute or two, so please be patient.
+To pin to a specific release tag:
 
-### For a Docker install
+```shell
+cd manifold
+git fetch --tags
+git checkout v9.0.0
+cd ..
+git add manifold
+git commit -m "Pin Manifold to v9.0.0"
+kamal deploy -d production
+```
 
-:::note
-This section is still a work in progress. Check back soon for step-by-step instruction on managing upgrades in a Docker environment.
-:::
+Kamal performs a zero-downtime deploy of the API and worker containers. The post-deploy hook automatically restarts the
+client so it picks up the latest image.
 
+## Upgrading from v8 to v9
+
+If you are migrating from a v8 (or earlier) package-based installation to v9, please see the
+[Upgrading from v8 to v9](/docs/administering/release_notes/v9x#upgrading-from-v8-to-v9) section in the v9 release
+notes.
+
+## More Information
+
+For complete documentation on deployments, backups, troubleshooting, and other operational tasks, see the
+[README in the deploy template repository](https://github.com/ManifoldScholar/manifold-deploy-example).
