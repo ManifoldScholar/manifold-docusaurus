@@ -4,96 +4,98 @@ title: Storage
 sidebar_label: Storage
 ---
 
-## Types of Storage
+:::info
+These instructions are for Manifold v9 and later. If you are running Manifold v8 or earlier, see the [legacy storage instructions](/docs/administering/storage_v8).
+:::
 
-Manifold is careful to separate code, configuration, and user content to simplify upgrades, deployment, and a decoupled hosting environments. When we talk about storage, we're primarily concerned about identifying the places where Manifold stores user content that needs to persist between upgrades.
+## Overview
 
-Manifold stores four primary kinds of content: 1) database content, 2) file attachments, 3) cached content, and 4) indexed content.
+Manifold stores two kinds of persistent data: the PostgreSQL database and uploaded file attachments (images, texts,
+resources, etc.). The database is covered on the [backup and restore](/docs/administering/backup_restore) page. This
+page focuses on file storage.
 
-### Database Content
+Manifold uses [Shrine](https://github.com/shrinerb/shrine) for handling file attachments. Shrine organizes files into
+three storage areas:
 
-Most content that is entered into Manifold is stored in the database. Each Manifold instance is backed by a PostgreSQL database. Manifold fully manages the state of its database. When you upgrade to a new version of Manifold, any new database migrations are run as part of that upgrade process and those migrations are responsible for updating the state of the database. Interfacing directly with a PostgreSQL database is outside of the scope of this documentation.
+- **Primary** — long-term storage where attachments live once a record is saved
+- **Cache** — temporary storage for files uploaded directly, before they are promoted to primary
+- **Tus** — temporary storage used by the TUS upload server for resumable uploads
+
+When you run `bin/deploy configure` in the
+[deploy template repository](https://github.com/ManifoldScholar/manifold-deploy-example), the wizard prompts you to
+choose a storage backend. There are three options: local filesystem, MinIO, or an external S3-compatible service.
+
+## Local Filesystem
+
+This is the default and simplest option. Uploaded files are stored in a Docker volume on the server. The API serves
+files directly via `RAILS_SERVE_STATIC_FILES`, and the client proxies `/system` requests to the API. No additional
+containers or services are required.
+
+Local storage is a good choice for smaller instances or when you want to keep the deployment as simple as possible. The
+tradeoff is that your files live on a single server, so you'll want to make sure you have a backup strategy in place.
+
+## MinIO (Self-Hosted S3-Compatible Storage)
+
+[MinIO](https://min.io/) is an S3-compatible object storage server that runs as an additional Docker container alongside
+your Manifold services. This option gives you the durability and flexibility of object storage without depending on an
+external cloud provider.
+
+When you select MinIO during configuration, the wizard generates a MinIO accessory container and configures Manifold to
+store files in it. kamal-proxy routes asset requests to the MinIO container, so uploaded files are served without going
+through the API. The relevant environment variables are set automatically:
+
+| Variable | Purpose |
+|---|---|
+| `MANIFOLD_SETTINGS_STORAGE_PRIMARY` | Set to `s3` |
+| `S3_ENDPOINT` | Internal MinIO URL on the Docker network |
+| `S3_FORCE_PATH_STYLE` | Set to `true` (required for MinIO) |
+| `S3_REGION` | Defaults to `us-east-1` |
+| `UPLOAD_BUCKET` | The MinIO bucket name |
+| `S3_ACCESS_KEY_ID` | Derived from `MINIO_ROOT_USER` |
+| `S3_SECRET_ACCESS_KEY` | Derived from `MINIO_ROOT_PASSWORD` |
+
+## External S3-Compatible Storage
+
+If you prefer to use a managed object storage service — such as AWS S3, DigitalOcean Spaces, or Cloudflare R2 —
+select the `s3` option during configuration. No additional containers are deployed. The wizard will prompt you for
+your endpoint, region, bucket name, and access credentials.
+
+The following environment variables are configured:
+
+| Variable | Purpose |
+|---|---|
+| `MANIFOLD_SETTINGS_STORAGE_PRIMARY` | Set to `s3` |
+| `S3_ENDPOINT` | Your provider's S3 endpoint URL |
+| `S3_FORCE_PATH_STYLE` | `true` for most providers, `false` for AWS S3 |
+| `S3_REGION` | Your bucket's region |
+| `UPLOAD_BUCKET` | Your bucket name |
+| `S3_ACCESS_KEY_ID` | Your access key |
+| `S3_SECRET_ACCESS_KEY` | Your secret key |
+
+With external S3, assets are served directly from your provider's endpoint, so there's no additional proxying through
+Manifold.
 
 :::caution
-There are very few reasons, besides backup, to directly access Manifold's database. Doing so can easily lead to data in an unstable state. Instead, read and write Manifold data using its REST API, it's command line interface, or the API's Rails console.
+Make sure your S3 credentials have `s3:GetObject` and `s3:PutObject` permissions on the bucket. If assets return 404
+errors after deploying, double-check your `S3_ENDPOINT`, `UPLOAD_BUCKET`, and `S3_REGION` values in your destination
+configuration file.
 :::
 
-#### Database Access with a Package Install
+## Changing Storage Backends
 
-If Manifold was installed using our package installers, we expose a convenience wrapper at /usr/bin/manifold-psql. The default database name is `manifold_production`. Use the following command to access the PostgreSQL database via the command line client:
+Manifold supports a mirror storage backend through Shrine's mirroring plugin. This makes it possible to migrate files
+from one storage backend to another without downtime. The process works as follows:
 
-```shell
-root@host:/$ manifold-psql manifold_production
-psql (9.6.18)
-Type "help" for help.
+1. Configure the new storage backend as the mirror by setting the `MANIFOLD_SETTINGS_STORAGE_MIRROR` environment
+   variable to the desired backend type (e.g. `s3`) along with the corresponding credentials and bucket configuration.
+   Redeploy so Manifold picks up the new settings.
+2. From this point forward, any new uploads will be written to both the primary and mirror backends automatically.
+3. To migrate existing files, open a Rails console and run `Storage::Migrate.migrate_store_to_mirror`. This iterates
+   through all models with attachments and copies their files (including derivatives) to the mirror backend.
+4. Once the migration is complete, swap the backends: set `MANIFOLD_SETTINGS_STORAGE_PRIMARY` to the new backend and
+   remove the mirror configuration. Redeploy to finalize the switch.
 
-manifold_production=# \dt
-                      List of relations
- Schema |              Name               | Type  |  Owner
---------+---------------------------------+-------+----------
- public | action_callouts                 | table | manifold
- public | annotations                     | table | manifold
- public | ar_internal_metadata            | table | manifold
- public | cached_external_source_links    | table | manifold
- public | cached_external_sources         | table | manifold
- public | categories                      | table | manifold
- public | collaborators                   | table | manifold
- public | collection_projects             | table | manifold
- public | collection_resources            | table | manifold
- [truncated]
- ```
+## More Information
 
-### File Attachments
-
-Any field in the Manifold frontend or backend that accepts a file attachment will save that attachment in a file storage backend. Starting with Manifold v6, it is possible to store attachments in the local filesystem, AWS S3, or Google Cloud Storage. It's also possible, of course, to configure a server to mount a remote volume via NFS or a similar service, although doing that is not part of our documentation's scope.
-
-Manifold relies on [Shrine](https://github.com/shrinerb/shrine) for handling file attachments. Starting with V6, Manifold includes three required Shrine storage backends and one optional storage backend. The `tus` storage is required, and is used by the TUS server to store uploaded files before they are promoted to permanent persistence. The `cache` storage is where files that are uploaded directly are stored prior to being promoted. Finally, the `primary` storage is long-term storage where attachments are stored once the record is valid and saved. The last storage is the `mirror` storage. It is optional and can be used to mirror files that are persisted in the primary storage. By default, the required storages map to the following paths:
-
-- Primary: api/public/system
-- Tus: api/data
-- Cache: api/public/system/cache
-
-#### Using Local Filesystem
-
-In an installation from source, Manifold will store files in `api/data` and `api/public/system`. These paths are relative to the root of the Manifold source. If Manifold was installed from one of our packages, it is installed into `/opt/manifold`, and the root directory for Manifold's source code is `/opt/manifold/embedded/src`. If you look, you'll see that with our package install, we symlink these two directories to directories in `/var/opt/manifold`.
-
-```shell
-/opt/manifold/embedded/src/api/data -> /var/opt/manifold/api/data
-/opt/manifold/embedded/src/api/public/system -> /var/opt/manifold/api/uploads
-```
-
-The `data` directory is used by our TUS upload server to store files as they're being uploaded before they are promoted to long-term storage. Generally speaking, this `data` directory can be treated as temporary storage. Once a record is saved and the attachment is persisted, it is moved into `public/system`.
-
-:::note
-To backup user content when Manifold has been installed from a package, you should only need to generate a database dump and an archive of /var/opt/manifold/api/uploads.
-:::
-
-If you install Manifold from source, you should be sure to symlink these directories to a location that's easily backed up and can persist between upgrades. When we deploy Manifold from source, which we often do using Capistrano, we typically symlink `api/data` and `api/public/system` to shared storage.
-
-## Using Google Cloud Storage (GCS)
-
-:::info
-Storing uploads in cloud storage backends is only possible in Manifold v6 and subsequent versions.
-:::
-
-While Manifold will store files in the file system by default, it is not possible to configure Manifold to store files in a cloud storage backend. To store files in GCS, you must configure Manifold using environment variables. We recommend creating three distinct buckets, one for each storage described above (primary, tus, and cache). See [setting environment variables](./reference/environment_variables#package-install) for information on how to specify environment variables in a package install.
-
-For Manifold to use GCS successfully, you will need to create a google cloud service account and assign it a "storage admin" role in IAM. When you create the account, you will be given a .json key file. You can reference that keyfile in an environment variable or upload it in Manifold's backend settings interface to correctly configure the instance's Google services credentials.
-
-When you make the storage buckets, be sure to grant read access to `allUsers` on the primary bucket. The cache bucket and the tus bucket do not need allUser read access. We recommend setting a lifecycle policy on the cache bucket that deletes files after 7 days. Finally, set the following environment variables:
-
-```
-MANIFOLD_SETTING_CONFIG_GOOGLE_SERVICE="/abs/path/to/service/account/credentials.json"
-MANIFOLD_SETTINGS_STORAGE_PRIMARY=GCS
-MANIFOLD_SETTINGS_STORAGE_PRIMARY_BUCKET="manifold-primary"
-MANIFOLD_SETTINGS_STORAGE_CACHE_BUCKET="manifold--cache"
-MANIFOLD_SETTINGS_STORAGE_TUS_BUCKET="manifold-tus"
-```
-
-Replace the bucket names with the names you chose for your bucket. Be sure to restart Manifold for these changes to take effect. If everything works as expected, you should see files added to your buckets when you add an attachment (for example, by setting the avatar for a project) in the backend.
-
-## Using AWS
-
-:::note
-This section is still a work in progress. Check back soon for instructions on configuring AWS S3 storage for Manifold.
-:::
+For full details on storage configuration, including all available environment variables and troubleshooting tips, see
+the [README in the deploy template repository](https://github.com/ManifoldScholar/manifold-deploy-example).
