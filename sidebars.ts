@@ -20,7 +20,8 @@ const sidebars: SidebarsConfig = {
           'administering/installation',
           'administering/upgrading',
           { 'Release Notes': [
-              { type: 'link', href: '/manifold-docusaurus/docs/administering/release_notes/v8x', label: "Latest" },
+              { type: 'link', href: '/manifold-docusaurus/docs/administering/release_notes/v9x', label: "Latest" },
+              'administering/release_notes/v9x',
               'administering/release_notes/v8x',
               'administering/release_notes/v7x',
               'administering/release_notes/v6x',
