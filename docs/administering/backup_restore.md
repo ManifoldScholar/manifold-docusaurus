@@ -3,41 +3,30 @@ id: backup_restore
 title: Backup and Restore
 sidebar_label: Backup and Restore
 ---
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
-The steps involved with backing up your instance and restoring from backup will vary depending on how you installed Manifold and what operating system you installed it on. The content on this page is meant to get you started. It is not exhaustive, nor have the scripts below been thoroughly tested in different environments.
-
-:::caution
-Manifold is open-source software, and you are ultimately responsible for your data. Proceed with caution and make sure you understand what the following scripts do before you run them.
-:::
-
-## Backup Manifold
-
-Manifold stores user data in two places: (1) the PostgreSQL database and (2) the file system.
-
-:::note
-It is also possible for Manifold to store files in cloud storage (AWS or GCS); however, backing up cloud storage buckets is outside the scope of these instructions.
-:::
-
-Backing up a Manifold instance involves backing up files and creating a database dump. The specific commands required to backup a Manifold installation depend on how Manifold was installed. Select your installation type from the options below to see sample commands you can use for backing up your instance.
-
-Each of the backup scripts below will create a tar archive that contains a `dump.sql` file and an `uploads` directory. These outputs can be used as inputs for the restore scripts that are described further below.
 
 :::info
-If you downloaded one of our operating system packages for Centos or Ubuntu, follow the “Package Install” instructions. The “Source Install” instructions assumes that services are managed by systemd in an Ubuntu environment.
+These instructions are for Manifold v9 and later. For complete backup and restore scripts for v8 and earlier package
+and source installs, see the [legacy backup and restore instructions](/docs/administering/backup_restore_v8).
 :::
 
-<Tabs
-  groupId="install-type"
-  defaultValue="package"
-  values={[
-    {label: 'Package Install', value: 'package'},
-    {label: 'Source Install', value: 'source'}
-  ]}>
-  <TabItem value="package">
+## Overview
 
-Use this Bash script as a starting point for automating your instance backups. This script will need to be run as root.
+Manifold stores user data in two places: the PostgreSQL database and file storage (either the local filesystem, MinIO,
+or an external S3-compatible service). A complete backup includes both the database and uploaded files.
+
+:::caution
+Manifold is open-source software, and you are ultimately responsible for your data. We strongly recommend setting up a
+regular backup schedule and verifying your backups periodically.
+:::
+
+## Backing Up a v8 Instance
+
+If you are preparing to migrate from v8 to v9, you'll need to create a backup of your v8 instance first. The backup
+must be a tar archive containing a `dump.sql` file and an `uploads` directory at the root. This is the standard layout
+produced by the v8 backup scripts.
+
+If you installed Manifold from one of our OS packages, use the following script as a starting point. It must be run as
+root.
 
 ```bash
 #!/bin/bash
@@ -76,220 +65,90 @@ su - manifold -c "rm -rf $BACKUP_STAGING"
 echo "Backup has been created at $BACKUP_FILE"
 ```
 
-  </TabItem>
-  <TabItem value="source">
+Once you have the tar archive, you can import it into a v9 instance using the `bin/deploy import` command described
+below. For source install backup scripts, see the
+[legacy backup and restore instructions](/docs/administering/backup_restore_v8).
 
-Use this Bash script as a starting point for automating your instance backups. This example assumes that your instance is installed at `/home/manifold/deploy/current` and that the files are owned by a `manifold` user.
+## Backing Up a v9 Instance
 
-```bash
-#!/bin/bash
+### Database
 
-# These should be set in the application user's environment.
-#RAILS_DB_NAME=
-#RAILS_DB_PASS=
-#RAILS_DB_USER=
+How you back up your database depends on whether you're using a local PostgreSQL container or an external managed
+database.
 
-USER_DIR=/home/manifold
-BACKUP_DIR=$USER_DIR/backups/`date +"%m-%d-%y"`
-BACKUP_STAGING=$BACKUP_DIR/staged
-BACKUP_FILE=$BACKUP_DIR/manifold-backup-`date +"%m-%d-%y-%s"`.tar
-BACKUP_DB_HOST=localhost
-BACKUP_DB_PORT=5432
-BACKUP_FILES_ROOT=/home/manifold/deploy/shared/api/public/
-PG_URL="postgres://$RAILS_DB_USER:$RAILS_DB_PASS@$BACKUP_DB_HOST:$BACKUP_DB_PORT/$RAILS_DB_NAME"
+**Local database** — dump the database directly from the container:
 
-# Create the staging directory (and parents) as the manifold user.
-echo "Creating the staging directory at $BACKUP_STAGING..."
-mkdir -p $BACKUP_STAGING
-
-# Dump the database to the staging directory
-echo "Creating a database dump..."
-pg_dump $PG_URL > $BACKUP_STAGING/dump.sql
-
-# Backup the uploads directory
-echo "Creating a tar archive..."
-cd $BACKUP_FILES_ROOT
-tar -cf $BACKUP_FILE --transform=s/system/uploads/ system/
-
-# Add the SQL dump to the tar archive
-echo "Adding the dump to the archive..."
-cd $BACKUP_STAGING
-tar -rf $BACKUP_FILE dump.sql
-cd $BACKUP_DIR
-
-# Clean up the staging directory.
-echo "Cleaning the staging dir..."
-rm -rf $BACKUP_STAGING
-
-# Output backup path
-echo "Backup has been created at $BACKUP_FILE"
+```shell
+ssh root@your-server \
+  "docker exec manifold-production-db pg_dump -U manifold manifold_production" > backup.sql
 ```
 
-  </TabItem>
-</Tabs>
+Replace `production` with your destination name if different.
 
+**External database** — use your provider's backup tooling (e.g. automated snapshots on AWS RDS or DigitalOcean
+Managed PostgreSQL), or run `pg_dump` against your managed host directly.
 
-## Restore a Backup
+### Uploaded Files
 
-The following scripts take a single input, which is the path to a tar archive. That archive should include a database dump called `dump.sql` and a directory called `uploads` that includes attachment data. The backup scripts above will produce an archive that conforms to this specification.
+How you back up uploaded files depends on your storage backend.
 
-Assuming you call the restore script `manifold-restore.sh` and you were in a directory with a backup generated by the backup script above, you would restore with this command:
+**Local storage** — files are stored in a Docker volume on the server. You can archive them with:
 
-```bash
-./manifold-restore.sh manifold-backup-11-17-20-1605640139.tar
+```shell
+ssh root@your-server \
+  "docker run --rm -v production-uploads:/data alpine tar cf - -C /data ." > uploads.tar
 ```
 
-<Tabs
-  groupId="install-type"
-  defaultValue="package"
-  values={[
-    {label: 'Package Install', value: 'package'},
-    {label: 'Source Install', value: 'source'},
-  ]}>
-  <TabItem value="package">
+**MinIO storage** — files are stored in the MinIO accessory container's data directory on the server. You can archive
+the data directory directly or use your preferred S3-compatible tool to sync the bucket to a local directory.
 
-This script will need to be run as root.
+**External S3 storage** — use your provider's backup tools to copy your bucket contents to a safe location.
 
-```bash
-#!/bin/bash
+## Restoring a v9 Instance
 
-RESTORE_DIR=/var/opt/manifold/backups/restore-staging
-RESTORE_ARCHIVE_PATH=$1
-RESTORE_ARCHIVE_FILE=$(basename $RESTORE_ARCHIVE_PATH)
-DB_HOST=/var/opt/manifold/postgresql
-DB_PORT=3034
-DB_USER=manifold
-DB_NAME=manifold_production
-BACKUP_FILES_ROOT=/var/opt/manifold/api
-TOKEN=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)
+### Importing a v8 Backup
 
-if [ ! -f "$RESTORE_ARCHIVE_PATH" ]; then
-    echo "$RESTORE_ARCHIVE_PATH does not exist."
-    exit 1
-fi
+The deploy CLI includes an import command that handles the entire migration from a v8 backup archive into a configured
+v9 destination:
 
-echo "Creating the restore staging directory at $RESTORE_DIR..."
-su - manifold -c "mkdir -p $RESTORE_DIR"
-
-echo "Extracting the restore archive..."
-cp $RESTORE_ARCHIVE_PATH $RESTORE_DIR/
-cd $RESTORE_DIR
-tar -xf $RESTORE_ARCHIVE_FILE
-
-echo "Checking for an existing directory at $BACKUP_FILES_ROOT/uploads..."
-if [ -d $BACKUP_FILES_ROOT/uploads ]
-then
-    echo "$BACKUP_FILES_ROOT/uploads exists..."
-    echo "Moving $BACKUP_FILES_ROOT/uploads to $BACKUP_FILES_ROOT/upload-bak-$TOKEN"
-    mv $BACKUP_FILES_ROOT/uploads $BACKUP_FILES_ROOT/uploads-bak-$TOKEN
-fi
-
-echo "Restoring uploads dir..."
-mv uploads $BACKUP_FILES_ROOT/
-
-echo "Backup existing DB to ~/manifold_production_dump-$TOKEN.sql"
-su - manifold -c "/opt/manifold/embedded/bin/pg_dump \
-  --user=$DB_USER \
-  --port=$DB_PORT \
-  --host=$DB_HOST manifold_production > ~/manifold_production_dump-$TOKEN.sql"
-
-echo "Stopping manifold services..."
-manifold-ctl stop
-
-echo "Starting postgresql..."
-manifold-ctl start postgresql
-
-echo "Dropping existing database..."
-DISABLE_DATABASE_ENVIRONMENT_CHECK=1 manifold-api db:drop
-
-echo "Create new database..."
-manifold-api db:create
-
-echo "Importing database dump..."
-manifold-psql $DB_NAME < dump.sql
-
-echo "Starting services..."
-manifold-ctl start
-
-echo "Cleaning up the restore staging directory..."
-su - manifold -c "rm -rf $RESTORE_DIR"
-
-echo "Restore complete."
-echo "You should reindex the content on your instance with this command:"
-echo "  manifold-api manifold:search:reindex"
+```shell
+bin/deploy import -d production ./manifold-backup-YYYY-MM-DD.tar
 ```
 
-  </TabItem>
-  <TabItem value="source">
+The tar archive must contain `dump.sql` and an `uploads/` directory at the root (the standard v8 backup layout). The
+import command will upload and extract the archive on the server, stop the application containers, drop and recreate the
+databases, load the SQL dump, replace uploaded files in whatever storage backend you've configured, and then restart the
+application. On startup, Rails automatically runs pending migrations and upgrade tasks to bring the data up to date with
+the v9 codebase.
 
-```bash
-#!/bin/bash
+:::caution
+This replaces all database and file data for the destination. You will be prompted to confirm before anything
+destructive runs.
+:::
 
-# These should be set in the application user's environment.
-#RAILS_DB_NAME=
-#RAILS_DB_PASS=
-#RAILS_DB_USER=
+### Restoring a v9 Database Backup
 
-USER_DIR=/home/manifold
-CURRENT_DIR=$USER_DIR/deploy/current
-RESTORE_DIR=$USER_DIR/backups/restore-staging
-RESTORE_ARCHIVE_PATH=$1
-RESTORE_ARCHIVE_FILE=$(basename $RESTORE_ARCHIVE_PATH)
-BACKUP_DB_HOST=localhost
-BACKUP_DB_PORT=5432
-BACKUP_FILES_ROOT=/home/manifold/deploy/shared/api/public
-PG_URL="postgres://$RAILS_DB_USER:$RAILS_DB_PASS@$BACKUP_DB_HOST:$BACKUP_DB_PORT/$RAILS_DB_NAME"
-TOKEN=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)
+To restore a database dump into a running v9 instance with a local database:
 
-echo "Creating the restore staging directory at $RESTORE_DIR..."
-mkdir -p $RESTORE_DIR
-
-echo "Extracting the restore archive..."
-cp $RESTORE_ARCHIVE_PATH $RESTORE_DIR/
-cd $RESTORE_DIR
-tar -xf $RESTORE_ARCHIVE_FILE
-
-echo "Checking for an existing directory at $BACKUP_FILES_ROOT/system..."
-if [ -d $BACKUP_FILES_ROOT/system ]
-then
-    echo "$BACKUP_FILES_ROOT/system exists..."
-    echo "Moving $BACKUP_FILES_ROOT/system to $BACKUP_FILES_ROOT/system-bak-$TOKEN"
-    mv $BACKUP_FILES_ROOT/system $BACKUP_FILES_ROOT/system-bak-$TOKEN
-fi
-
-echo "Restoring uploads dir to $BACKUP_FILES_ROOT/system..."
-mv uploads $BACKUP_FILES_ROOT/system
-
-echo "Backup existing DB to ~/manifold_production_dump-$TOKEN.sql"
-pg_dump $PG_URL > ~/manifold_production_dump-$TOKEN.sql
-
-echo "Stopping manifold services..."
-sudo systemctl stop manifold
-
-echo "Dropping existing database..."
-cd $CURRENT_DIR/api
-DISABLE_DATABASE_ENVIRONMENT_CHECK=1 rails db:drop
-
-echo "Create new database..."
-cd $CURRENT_DIR/api
-rails db:create
-
-echo "Importing database dump..."
-cd $RESTORE_DIR
-psql $PG_URL < dump.sql
-
-echo "Starting services..."
-sudo systemctl start manifold
-
-echo "Cleaning up the restore staging directory..."
-rm -rf $RESTORE_DIR
-
-echo "Restore complete."
-echo "You should reindex the content on your instance with these commands:"
-echo "  cd $CURRENT_DIR/api"
-echo "  rails manifold:search:reindex"
+```shell
+ssh root@your-server "docker exec -i manifold-production-db psql -U manifold manifold_production" < backup.sql
 ```
 
+For an external database, use `psql` or your provider's restore tooling to load the dump.
 
-  </TabItem>
-</Tabs>
+### Restoring Uploaded Files
+
+To restore uploaded files to a local storage volume:
+
+```shell
+cat uploads.tar | ssh root@your-server \
+  "docker run --rm -i -v production-uploads:/data alpine tar xf - -C /data"
+```
+
+For MinIO or external S3, use your preferred S3-compatible tool or your provider's restore tooling to sync the files
+back to the appropriate bucket.
+
+## More Information
+
+For complete documentation on the import command and other operational tasks, see the
+[README in the deploy template repository](https://github.com/ManifoldScholar/manifold-deploy-example).
