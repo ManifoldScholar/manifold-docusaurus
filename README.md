@@ -26,6 +26,16 @@ This command starts a local development server and open up a browser window. Mos
 
 If your local enviroment does not start as expected and your Terminal reports that it cannot find a module, rerun the installation command from the top directory of your documentation repository: `$ yarn install`.
 
+### Docker
+
+As an alternative to installing Node and Yarn locally, you can run the development server in Docker. Install [Docker Desktop](https://www.docker.com/products/docker-desktop/) and make sure it is running, then start the site from the root of the repository:
+
+```
+$ docker compose up -d
+```
+
+The site will be available at [http://localhost:3000](http://localhost:3000). The project directory is bind-mounted into the container, so most changes are reflected live without restarting. Node dependencies are installed automatically on startup and kept in a named volume. The container will also appear in the Docker Desktop app under Containers, where it can be stopped, restarted, or have its logs inspected.
+
 ### Build
 
 ```

@@ -1,0 +1,17 @@
+services:
+  docs:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      # Bind-mount the project for live editing; keep node_modules in a
+      # named volume so the container's Linux install is not shadowed by
+      # the host's macOS one.
+      - .:/app
+      - node_modules:/app/node_modules
+    # Re-run install on startup so the node_modules volume stays in sync
+    # when package.json changes; it is a no-op when already up to date.
+    command: sh -c "yarn install && yarn start --host 0.0.0.0"
+
+volumes:
+  node_modules:
