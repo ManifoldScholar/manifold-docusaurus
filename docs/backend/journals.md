@@ -21,9 +21,48 @@ A Manifold Journal is the framework that groups and contextualizes Manifold Proj
 
 This framework is made up of a series of dedicated pages specifically crafted to render serial publications:
 
-- A **Journal’s homepage** displays basic information about the publication, its frequency, editorial board, copyright and submission information, and so forth, as well as providing a listing of its volumes and issues.
+- A **Journal’s homepage** provides a place to display basic information about the publication, its frequency, editorial board, copyright and submission information, and so forth, as well as providing a listing of its volumes and issues.
+
+  The path for each journal follows this scheme, discussed in the [(Journal) Slug section](../backend/journals.md#journal-slug) below:
+
+  ``` bash title="Journal Homepage"
+  https://{domain-name}/journals/{journal-slug}
+  ```
+
 - For Journals that aggregate issues into **volumes**, each volume will also have its own dedicated page, showcasing the various issues of which it is composed.
+
+  The path for each journal volume follows this scheme, discussed further in the [Volumes section](../backend/journals.md#volumes) below:
+
+  ``` bash title="Journal Volume"
+  https://{domain-name}/journals/{journal-slug}/volumes/{volume-slug}
+  ```
 - **Issues** are Manifold Projects that can be collected into volumes or exist independently as a consecutively numbered series. Manifold Projects can be created as Journal Issues or existing Projects can be transformed into Journal Issues.
+
+  The path for each issue is as follows. See the [Editing Journal Issue section](../backend/journals.md#editing-journal-issues) below for more information:
+
+  ``` bash title="Journal Issue"
+  https://{domain-name}/projects/{issue-slug}
+  ```
+
+  As noted throughout this section, journal issues are a specialized version of a Manifold Project and thus their path is more akin to a project than the Journals frameworks erected to display them. So in this case, a journal issue slug can be thought of as being parallel to a project slug.
+
+  Individual Journal issues are also collected in two other views—the All Journal Issues view and an individual Journal’s All Issues View, which can be found along the following paths:
+
+  ``` bash title="All Journal Issues"
+  https://{domain-name}/journals/issues
+  ```
+
+    ``` bash title="All Journal Issues for an individual Journal"
+  https://{domain-name}/journals/{journal-slug}/issues
+  ```
+
+- The **All Journals library view** displays every journal on the instance in a paginated grid view below a search bar and two dropdowns to filter the listings by title, creation or modification date, and subject. The search bar returns results for journal title and subtitles, while the **Sort By** dropdown allows users to sort those results by title and date. The **Subject** dropdown can filter results further by narrowing results down to only those that are associated with the subject selected. The search and filters work independently as well as in tandem.
+
+  The path for this view is
+
+  ``` bash title="All Journals library view"
+  https://{domain-name}/journals
+  ```
 
 ## Interface Overview
 
@@ -65,7 +104,7 @@ These two fields reflect the full name of the Journal and display prominently on
 
 The **Title** field cannot be left empty; however the **Subtitle** field is optional.
 
-#### Slug
+#### (Journal) Slug
 
 A slug is the part of a URL that directs a browser to a specific webpage within the context of a larger domain. The **Slug** field here is an opportunity for you to customize the address of the landing page for the Journal you are modifying.
 
@@ -84,9 +123,7 @@ We recommend that you settle on a Slug before toggling your Journal out of Draft
 
 #### Thumbnail
 
-The Journal Thumbnail is only displayed in search results at present. In later versions of Manifold, this image will also display in Library views alongside other Journals and Projects.
-
-The default thumbnail depicts a pair of glasses, a comment block, and a pencil. For new Journals, or for Journals that don't have a custom thumbnail, the default thumbnail appears beneath the **Current** heading.
+The Journal Thumbnail displays in the All Journals library view. The default thumbnail depicts a pair of glasses, a comment block, and a pencil. For new Journals, or for Journals that don't have a custom thumbnail, the default thumbnail appears beneath the **Current** heading.
 
 You can adjust the color scheme for the default thumbnail by selecting one of the six preset color swatches shown in the grid's center, labeled **Default**.
 
@@ -153,8 +190,6 @@ Subject classifications illuminate the scope of material on your instance broadl
 
 However, Subjects can be *assigned* to Journals in this space by any user who has the ability to edit the Journal record. Users can assign one or more Subject classifications to a Journal, and the interface supports both typeahead or dropdown selection.
 
-<!-- As for 22 April, the following is not true: no such dropdown exists as it does for Projects. -->
-
 Subjects appear on the **Journals** library page in the **Show All** dropdown as a means for readers to filter and display only those Journals that match their selection. 
 
 Subjects can also be assigned at the issue level; see the [Issue section](../backend/journals.md#issues) for more.
@@ -189,7 +224,7 @@ This menu opens up as a drawer from the right of the screen where you can adjust
 
 The **Description** field supports basic Markdown syntax and allows users to add or edit the description of the Journal that appears on the left side of the Hero block, below the Title. If any descriptive text was included when the Journal was first created, it will automatically populate this field.
 
-The **Background Image** is meant to provide some visual identity for the Journal. It displays in two places: (1) on the Journal library view and (2) above the textual content of the Hero block on the Journal homepage.
+The **Background Image** is meant to provide some visual identity for the Journal, displaying above the textual content of the Hero block on the Journal homepage.
 
 This Background Image will also appear on the landing page of individual Issues within the Journal, serving as the default Background Image for each Journal Issue, *unless* a distinct Background Image is loaded at the [Issue level](../backend/projects.md#hero-block) to override this one.
 
@@ -214,7 +249,9 @@ For the Journal homepage, the **Background Image** will always appear as a Full 
     ]}
 />
 
-The **Logo** displays directly over the Background Image on the Journal homepage, centered both horizontally and vertically.
+The **Logo** displays directly over the Background Image on the Journal homepage—centered both horizontally and vertically—and replaces the thumbnail in the All Journals library view available on the following path:
+
+
 
 <Spec
     title="Logo Specs"
@@ -325,7 +362,7 @@ For Journals that group Issues into Volumes, the **Volumes** sidebar is where ne
 
 This view is made up of a button to **Create a new volume** followed by a listing of existing Volumes, each of which carries notice of the number of Issues contained within them.
 
-When you create a new volume or select an existing volume from the list to edit, a drawer from the right rolls out with two editable fields: **Number** and **Slug**. The **Number** field accepts only whole numbers. The **Slug** is optional and provides an opportunity for you to customize the address of the landing page for the Volume. If none is provided the system will generate a UUID as the Volume slug.
+When you create a new volume or select an existing volume from the list to edit, a drawer from the right rolls out with two editable fields: **Number** and **Slug**. The **Number** field accepts only whole numbers. The (Volume) **Slug** is optional and provides an opportunity for you to customize the address of the landing page for the Volume. If none is provided the system will generate a UUID as the Volume slug.
 
 All Volume landing pages follow the same URL pattern: `domain/path/journal-slug/volumes/volume-slug`. The domain represents the homepage for your entire instance; the path describes the nature of the address, in this case that it’s a Journal; the Journal slug, described above; a generic volume path; followed by the Volume slug. In the following example, the slug is `jotv001`.
 

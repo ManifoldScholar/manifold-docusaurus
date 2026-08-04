@@ -157,7 +157,7 @@ When deleting a public Reading Group, all annotations, highlights, and comments 
 
 A Reading Group Creator, Moderator, or an Administrator of an instance who is also a group member, may edit a Reading Group home page. Selecting the name of the group from the list of groups on the **My Reading Groups** page and toggling the slider **on** from the **Manage Group** block (see [Manage Group block](../using/reading_groups#manage-group-block)) will bring you to the **Edit Home Page** screen. Toggling the slider **off** will return you to the Reading Group’s home page.
 
-### Search + Add Content
+### Search and Add Content
 
 Selecting the **Add Content** button opens a window that allows you to search for content on your Manifold instance by keyword and type. You have the option to narrow your search results by checking or unchecking the boxes: **Everything**, **Projects**, **Resources**, **Texts**, and **Full Texts**. From your search results list, add content to your group by selecting the **star Add icon** to the right of the item title. You will be presented with a list of all Reading Groups with which you are a member, select the Reading Group name where you would like the item to be added. Selecting **Close** will return you to the Add Content window where you will see the selected item now has a highlighted star, indicating that the item has been added to this Reading Group.
 
@@ -168,6 +168,8 @@ To add a new category to your group, see [Create a New Category](../using/readin
 Alternatively, you may add content to any Reading Group with which you are a Creator or Moderator, from multiple locations on your Manifold instance. Anywhere you see a **star icon**—next to a thumbnail image in the Manifold library, next to the title of a Project, Text, Resource Collection, or Resource on a Project home page, or next to an entry in the dropdown table of contents in the Manifold Reader—clicking on the star will open a window with a list of all Reading Group to which you have permission to add content, select the Reading Group name to add the item and **Close** to return to the previous page.
 
 If you have not created a Reading Group, clicking on an item’s **star icon** will add it to your **My Starred** list. Navigate to this list by clicking on your profile icon and selecting **My Starred** from the dropdown list.
+
+For more about addnig content into a Reading Group, see the [Collecting Content](../using/collecting.md) section.
 
 :::note Important
 You must be logged in to your Manifold account to add content to a Reading Group.

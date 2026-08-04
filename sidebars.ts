@@ -112,13 +112,6 @@ const sidebars: SidebarsConfig = {
         'Reading in Manifold': [
           'walkthroughs/visibility',
           'walkthroughs/reader_settings',
-          // 'walkthroughs/annotating',
-          // 'walkthroughs/commenting',
-          // 'walkthroughs/create_rg',
-          // 'walkthroughs/join_rg',
-          // 'walkthroughs/add_rg',
-          // 'walkthroughs/curate_rg',
-          // 'walkthroughs/collecting',
         ]
       },
       {
@@ -128,17 +121,6 @@ const sidebars: SidebarsConfig = {
           'walkthroughs/word_mammoth',
           'walkthroughs/html_setup',
           'walkthroughs/manifest',
-          // 'walkthroughs/adding_collaborators',
-          // 'walkthroughs/adding_text',
-          // 'walkthroughs/adding_authors',
-          // 'walkthroughs/assign_authors',
-          // 'walkthroughs/curate_authors',
-          // 'walkthroughs/adding_resource',
-          // 'walkthroughs/bulkadd_resource',
-          // 'walkthroughs/add_categories',
-          // 'walkthroughs/using_categories',
-          // 'walkthroughs/ordering_contentblocks',
-          // 'walkthroughs/customizing_hero',
         ]
       }
   ],

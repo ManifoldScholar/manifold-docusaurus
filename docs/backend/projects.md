@@ -18,6 +18,26 @@ Users with **Admin**, **Editor**, or **Marketeer** roles can edit any Project in
 
 Each Manifold instance comprises a library of Projects. Those Projects are the principal grouping mechanism in Manifold. They provide a framework to serve scholarly content in a singular reading experience that is thoughtfully curated and intentionally cohesive. Projects are made up of modular Content Blocks that contain Texts and Resources, as well as descriptive media and metadata. Projects can be simple or complex and range from static to iterative expressions.
 
+Projects display as thumbnails in a paginated grid on an instance’s homepage, the All Projects view, as well as in Project Collection views by way of the following paths:
+
+  ``` bash title="Homepage"
+  https://{domain-name}
+  ```
+
+    ``` bash title="All Projects View"
+  https://{domain-name}/projects
+  ```
+
+    ``` bash title="All Project Collections"
+  https://{domain-name}/project-collectinos
+  ```
+
+    ``` bash title="Individual Project Collection Page"
+  https://{domain-name}/project-collectinos/{collection-slug}
+  ```
+
+Projects (as well as portions of Projects) can also be collected and curated within [Reading Groups](../using/reading_groups.md#search-and-add-content).
+
 ## Interface Overview
 
 Within this view, you can create, preview, or delete Projects; add to them Texts and Resources; determine how and for whom they will render; and export them for safe keeping at your institutional repository or preservation agency of your choice.

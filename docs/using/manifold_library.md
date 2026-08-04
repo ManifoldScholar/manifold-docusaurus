@@ -32,7 +32,7 @@ Alternatively, those users who are maintaining an instance can employ [Project C
 
 ### Projects
 
-The **Projects** pages displays, as the name suggests, all of the Projects in an instance in a paginated view. Using the search field and two dropdown filters beside the page heading, readers can search for specific Projects, sort the listings alphabetically by title, date, or limit Projects by [Subject](../administering/configuring/project_subjects.md) or [Featured Status](../backend/projects.md#featured).
+The **Projects** pages displays, as the name suggests, all of the Projects in an instance in a paginated view, depicted by their thumbnails. Using the search field and two dropdown filters beside the page heading, readers can search for specific Projects, sort the listings alphabetically by title, date, or limit Projects by [Subject](../administering/configuring/project_subjects.md) or [Featured Status](../backend/projects.md#featured).
 
 :::tip Share Your View
 Sorting Projects with using dropdowns creates a stable URL that can be shared so others can land on the page with the same results.
@@ -40,7 +40,7 @@ Sorting Projects with using dropdowns creates a stable URL that can be shared so
 
 ### Journals
 
-Like the Projects page, the **Journals** library view displays a paginated listing of all the Journals on the instance. Each listing includes the Journal Title, Background Image, Description, and a listing of the eight issues most recently added to the journal, followed by a link reading “See All Issues”  that takes a user to the Manifold landing page for that Journal.
+Like the Projects page, the **Journals** library view represents every journal on the instance with its thumbnail or logo in a paginated grid view below a search bar and two dropdowns to filter the listings by title, creation or modification date, and subject. See the [Journals section](../backend/journals.md) for more on how these features work individually and in tandem with one another.
 
 :::note I Don’t See a Journals Listing
 The listing for Journals will only appear if there is a Journal in the instance *and* your user credentials allow you to access it. E.g., If you have a Reader role and the instance has a Journal in Draft Mode, the Journals listing will not appear for you.
@@ -66,9 +66,9 @@ In this state, both of these links will resolve to a Reading Group landing page 
 
 ## Library Navigation
 
-For users who have logged into the instance, there appear on every Library and Project landing page, just before the Manifold footer, five navigation links labelled **Projects**, **Journals**, **Project Collections**, **My Starred**, and **My Notes**.
+For users who have logged into the instance, there appear on every Library and Project landing page, just before the Manifold footer, five navigation links labelled **Projects**, **Journals**, **Project Collections**, **My Starred**, and **My Notes**. From the **Journals** view, the navigation links alter slightly, providing a new options for **Journal Issues**.
 
-The first two links—**Projects** and **Journals**—mirror the links of the same names in the main Manifold menu and direct readers to the all Projects and Journals views described above. The behavior of the remaining links works as follows:
+The first two links—**Projects** and **Journals**—mirror the links of the same names in the main Manifold menu and direct readers to the all Projects and Journals views described above. The **Journal Issues** view, available as a navigation option only from the **Journanls** view, allows readers to see every issue of every journal in one, paginated viewe. The behavior of the remaining links works as follows:
 
 ### Project Collections
 

@@ -16,15 +16,19 @@ To access the views described in this section select **Projects** from the main 
 
 ## What are Project Collections?
 
-Project Collections group Projects with one another on an instance’s homepage in a named container that might also include collection-specific imagery and descriptions. When Project Collections are used, they override the default “Our Projects” library view from the Manifold homepage. Each Project Collection has its own landing page and, as a whole, Collections appear on a page alongside all of the instance’s Project Collections. These are located on the following paths, respectively:
+Project Collections group Projects with one another on an instance’s homepage in a named container that can also include collection-specific imagery and descriptive copy. When Project Collections are used, they override the default “Our Projects” library view on the Manifold homepage. Each Project Collection has its own landing page and Collections also appear in a library view containing all of the instance’s Project Collections. These are located on the following paths, respectively:
 
 ``` bash title="1. Individual Project Collection Page"
-https://{domain-name}/projects/project-collection/{collection-slug}
+https://{domain-name}/project-collection/{collection-slug}
 ```
 
 ```bash title="2. All Project Collections"
-https://{domain-name}/projects/project-collections
+https://{domain-name}/project-collections
 ```
+
+On a Collection’s homepage, the collection’s icon or hero image displays adjacent to its title and description, followed by a search bar and a dropdown filter, and then a grid of paginated project thumbnails. The search bar returns results on both titles in the collection as well as on authors and contributors. The Subject filter, aggregates all the subjects that have been associated with the projects contained in the collection, allowing users the ability to narrow the collection down to those projects pertaining to a specific subject. The search and Subject filter work in tandem with one another, so a reader can search for a title as well as apply the filter to return a very specific range of results.
+
+In the All Project Collections library view, each collection is represented by a thumbnail, its title, and the number of projects contained in the collection. This view was updated with version 10. Previously, the list of All Project Collections showed as horizontal containers with the title, description, and a subset of projects within the collections appearing as thumbnails.
 
 ## Interface Overview
 
@@ -94,11 +98,13 @@ Copy associated with the **Description** or **Short Description** renders below 
 
 The Collection Hero is an image that provides a visual identity to Collections in library views. Image files can be dropped onto the **Hero Image** field or selected using your device’s file system by clicking the **Upload a File** link.
 
-The Hero will render according to your selection under **Hero Layout** as follows:
+On the Collection’s homepage, the Hero will render according to your selection under **Hero Layout** as follows:
 
 - **Square Inset**. Rendered as a square, the Hero will appear to the left of both the Collection Title and Description.
 - **Wide Inset**. Matching the width of the library container, the Hero will appear between the Collection Title and Description.
 - **Full Bleed**. The width of the hero will adapt to match the size of browser or viewport.
+
+In the view listing all of an instance’s Project Collection’s the Hero image will displace the Collection Icon and display as either a square or rectangular thumbnail consistent with the option selected in the **Hero Layout** field.
 
 <Spec
     title="Collection Hero Specs"
@@ -123,7 +129,7 @@ There is no artificial limit to the number of Collections that can appear on the
 
 ### Collection Icon
 
-Manifold includes seven system icons you can choose from to associate with the Collection’s title in library views: a stack of books laying flat, a lamp, a “New” badge, three books standing with spines out, a globe, a pointing finger, and a mug.
+Manifold includes seven system icons you can choose from to associate with the Collection’s title in library views: a stack of books laying flat, a lamp, a “New” badge, three books standing with spines out, a globe, a pointing finger, and a mug. Collection icons appear beside the Collection’s title on the Manifold homepage and on the Collection’s detail view. In the All Project Collections view, icons appear as part of the thumbnail associated with the Collection when a Hero Image has not been supplied.
 
 The Collection Icon is optional and can be selected (or deselected) using your mouse or keyboard.
 
