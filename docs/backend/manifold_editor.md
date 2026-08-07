@@ -68,7 +68,7 @@ For texts that are freshly created in Manifold, only the Global Ingestion Styles
 
 Another difference to note from some other applications—block-level elements that are not referenced on the Menubar will only appear in the Editor display as previews. To edit the content of such elements, you will need to switch over to HTML mode. One example of this would be a [description list](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl "MDN Web Document detail page for the description list element") (`<dl>`). Tables would be another: the Manifold Editor can preview tables, but the work of creating and editing them can only happen in HTML mode. See the Tables section below in the HTML Mode section below for more.
 
-You will also notice some options that are available in other editors that are not obvious here—things like paragraph alignment or superscript and subscript or adding linked notes. The Manifold Editor is meant to work with content ranging from the simplest to the most complex, so it’s not that right-aligning a paragraph or superscripting characters or having note markers point to an endnotes section aren’t possible here, it’s just that the means to achieve those results is done differently. Namely, they are done in the HTML mode of the Editor. See the HTML Editor Mode section of this page later below for strategies and sample code patterns you can use to achieve some of the functionality we have been discussing here.
+You will also notice some options that are available in other editors that are not obvious here—things like superscript and subscript or adding linked notes. The Manifold Editor is meant to work with content ranging from the simplest to the most complex, so it’s not that superscripting characters or having note markers point to an endnotes section aren’t possible here, it’s just that the means to achieve those results is done differently. Namely, they are done in the HTML mode of the Editor. See the HTML Editor Mode section of this page later below for strategies and sample code patterns you can use to achieve some of the functionality we have been discussing here.
 
 The Breadcrumb bar is also something that is likely new and different to this editor from others with which you may be familiar. This bar allows you to easily gage where an element exists within a documents structural hierarchy and adjust its placement therein. It also allows you to change or assign HTML classes to specific elements so that they can be targeted by CSS rules. At first glance, that may seem pat, but in practice these are elegant means to create rich and nuanced texts.
 
@@ -106,7 +106,6 @@ You can implement these operation using the following keyboard shortcuts:
 </TabItem>
 
 <TabItem value="windows">
-
 
 | Operation | Shortcut        |
 | :-------- | :-------------- |
@@ -360,6 +359,27 @@ There is no Markdown syntax for Underline.
 
 </Spec>
 
+#### Alignment
+
+With the alignment options here, depicted in the menu as a vertical line with four horizontal lines beside it here, you can adjust how block-level text and image elements are aligned in the Reader: left-aligned, centered, right-aligned, and justified.
+
+There are no shortcuts for the four alignment options, though each can be accessed by tabbing to menubar with your keyboard, using the left or right arrows to focus on the alignment option, and then using the down arrow to cycle through the four options.
+
+These alignment options are made possible by way of utility classes and cascade layers. As such, your alignment selections will take priority over competing alignment instructions in a custom stylesheet.
+
+The four alignment utility classes map as follows to CSS:
+
+<Spec title="Alignment Utility Classes">
+
+| Alignment | CSS Target              |
+| :-------- | ----------------------- |
+| Left      | `.manifold-rte-left`    |
+| Center    | `.manifold-rte-center`  |
+| Right     | `.manifold-rte-right`   |
+| Justify   | `.manifold-rte-justify` |
+
+</Spec>
+
 #### Numbered and Bulleted Lists
 
 You can create or transition existing content into lists using the Menubar. Toward the right of the bar there are two buttons, one showing horizontal lines paired with the numbers `1` and `2`, the other showing horizontal lines paired with two circular bullet characters. Respectively these represent the buttons used to created a **Numbered** or **Bulleted** list.
@@ -515,9 +535,19 @@ If the Asset can display in the browser it will; otherwise the browser will open
 
 #### Image
 
-The **Image** button displays in the Menubar as an icon with the sun shining over a mountain range, and is the means by which you can add an ***already-hosted image*** into the body of the text section as a block element. Selecting the Image button with either your mouse or keyboard or when you use one of the keyboard shortcuts noted below opens the Insert Image modal. That modal includes two fields that you can use to insert an image: **Image URL** and **Alt Text**.
+The **Image** button displays in the Menubar as an icon with the sun shining over a mountain range, and is the means by which you can add an ***already-hosted image*** into the body of the text section as a block element.
 
-The first field, **Image URL**, expects a URL that leads directly to an image file. That may be the image’s Manifold Asset URL or it can be a URL to an outside site or platform where the image is hosted. It is *not* possible to load an image file directly into this space. If the image file you want to add to your text section does not already live online, you will first need to add it as a [Manifold Asset](../backend/texts.md#assets) and then reference it here. If you are referencing a Manifold Asset, you will paste into this field the Asset’s URL, which you can secure from the Asset sidebar view. The URL is a string formatted like the following, with the `asset-id` at the end of the line being a hexadecimal value:
+It is *not* possible to load an image file directly into this space. If the image file you want to add to your text section does not already live online, you will first need to add it as a [Manifold Asset](../backend/texts.md#assets) and then reference it here.
+
+:::note Assets versus Resources
+It it worth noting that Assets are materials that make up a Text. They can be XTHML files as well as images. In this context we can limit ourselves to thinking of Assets specifically as image Assets. However, they are not to be confused with Resources, which are additional materials added into Manifold separate from any Text. The options presented here are specific to Assets. Currently there is no means to select and embed Project Resources into a Text. See the [Assets section](../backend/texts.md#assets) to better understand what they are and how they function.
+:::
+
+Selecting the Image button with either your mouse or keyboard or when you use one of the keyboard shortcuts noted below opens the Insert Image modal. That modal includes one button labeled **Browse** and two fields that you can use to insert an image: **Image URL** and **Alt Text**.
+
+The **Browse** button transforms the modal into a paginated list of all the image assets associated with the Text in question. In most cases, unless you or someone else has added an asset to the text, that means the images available here are those that were part of the Text at the time it was ingested into Manifold. Once an image is chosen and the **Add** button is selected, the modal will return to its initial configuration, now with the **Image URL** field populated with the path for the selected Asset.
+
+The **Image URL** field expects a URL that leads directly to an image file. That may be the image’s Manifold Asset URL or it can be a URL to an outside site or platform where the image is hosted. When you use the **Browse** button described above, it acts a shortcut to this process, whereby you visually select an image and the system appends its Manifold Asset URL into this field. While handy, it is also limited, in that you can only browse through Assets that are part of the Text at hand. But this field can accept any Manifold Asset URLs from the same Manifold instance, regardless of the Text to which it belongs. If you are referencing a Manifold Asset, you will paste into this field the Asset’s URL, which you can secure from the Text’s Asset sidebar view. The URL is a string formatted like the following, with the `asset-id` at the end of the line being a hexadecimal value:
 
 ```html title="Manifold Asset URL"
 /api/proxy/ingestion_sources/{asset-id}
@@ -542,6 +572,8 @@ However, for images that already live online, there are no such limits. So other
 
 The second field in the modal, **Alt Text**, allows you to input a brief plain-text description of the image that will be announced to readers using Assistive Technology. Benetech’s DIAGRAM Center site, “[How to Describe Images](https://poet.diagramcenter.org/how.html)” is a good reference for learning how to craft alt text. In cases where Manifold cannot render the target image, the system will instead only display the value saved in the **Alt Text** field.
 
+When you select the **Add** button at the bottom of the modal, the image will be placed in the text where your cursor was when you selected the option to add an image.
+
 When viewing images in the Editor’s Code mode, the structure of the code will correspond to the [Embedded Image element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img):
 
 ```html title="HTML Output for Images"
@@ -560,6 +592,8 @@ If you are wanting to make your image accord with best practices for Accessibili
 ```
 
 To accomplish this in the Rich Text Editor, first insert a new line using the `Return` or `Enter` key. Now, select the Image button from the Menubar and complete the **Image URL** and **Alt Text** fields. Once you have inserted the image, you will return to the Editor view and the image should be outlined in a green border. If not, select it with your mouth or keyboard. Once the image is selected, navigate to the Menubar **Container** dropdown and select **Figure**. That will enclose the image inside `<figure>` tags. Now insert another new line in the Editor and input the caption. When you have finished, with your cursor still in the caption, select **Figcaption** from the **Container** dropdown. That will enclose your caption in `<figcaption>` tags that are nested within the larger `<figure>` structure. See the Mozilla Web Docs to learn more about the [Figure element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure).
+
+Images are able to be aligned left, center, right, or justified, using the **Alignment** option that also appears in the rich text editor’s formatting menubar.
 
 <Spec title="Insert Image Shortcuts">
 
