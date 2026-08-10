@@ -44,6 +44,7 @@ const sidebars: SidebarsConfig = {
             'administering/configuring/managing_settings',
             'administering/configuring/properties',
             'administering/configuring/theme_settings',
+            'administering/configuring/content_settings',
             'administering/configuring/integration_settings',
             'administering/configuring/ingestion_settings',
             'administering/configuring/project_subjects',

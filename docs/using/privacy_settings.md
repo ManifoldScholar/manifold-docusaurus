@@ -23,7 +23,7 @@ That said, when you create a highlight, annotate a text, or add a comment, Manif
 :::
 
 :::tip Options for Admin Users
-Users with Administrator accounts can adjust the language displayed to users in the views described here. The fields to adjust them can be found at the bottom of the [Theme Settings](../administering/configuring/theme_settings.md) section of the Manifold backend under the **Content** heading.
+Users with Administrator accounts can adjust the language displayed to users in the views described here. The two fields to adjust are labeled **Cookiese Banner Header** and **Cookies Banner Body**, which can be found at the bottom of the [Content Settings](../administering/configuring/content_settings.md) section of the Manifold backend under the **Data Use** heading.
 
 The aim would not be to change the facts of how the system works but instead to adjust the tone of the messaging to match to your instance’s voice, as well as to provide you the opportunity to adjust the amount of context you may want to provide.
 :::
