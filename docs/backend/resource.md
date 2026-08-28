@@ -15,23 +15,29 @@ Users with **Admin**, **Editor**, or **Marketeer** roles can manage Resources fo
 
 ## What Are Resources?
 
-Resources are media that support and contextualize a Project’s Texts or function as objects of inquiry, discussion, or exploration unto themselves. Resources can annotate a Project’s Texts in the Reader; display in the `Resources` Content Block on the Project landing page, where they can also be curated into Resource Collections; are collected into a library view within the project; and are individually allotted their own detail page:
+Resources are media that support and contextualize a Project’s Texts or function as objects of inquiry, discussion, or exploration unto themselves. Resources can annotate a Project’s Texts in the Reader, either as inline or block elements; display in the **Resources** Content Block on the Project landing page, where they can also be curated into Resource Collections; are collected into a library view within the project; and are individually allotted their own detail page:
 
-```shell title="Resource Collection Page"
-https://{domain-name}/projects/{project-slug}/resource-collection/{collection-slug}
+```shell title="Individual Resource Detail View"
+https://{domain-name}/projects/{project-slug}/resource/{resource-slug}
 ```
 
-```shell title="Resource Library Page"
+```shell title="Project Resource Library Homepage"
 https://{domain-name}/projects/{project-slug}/resources
 ```
 
-```shell title="Resource Detail Page"
-https://{domain-name}/projects/{project-slug}/resource/{resource-slug}
+```shell title="Project Resource Collection Library Homepage"
+https://{domain-name}/projects/{project-slug}/resource-collections/
+```
+
+```shell title="Project Resource Collection Homepage"
+https://{domain-name}/projects/{project-slug}/resource-collection/{collection-slug}
 ```
 
 Resources are tied to individual Projects and can be added to a Project one at a time or in bulk. When a Project is exported, Manifold includes all of a Project’s Resources that it hosts in the export package (see [Exporting and Preserving](../backend/projects.md#exports)).
 
-Currently Manifold supports ten different Resource kinds:
+Currently Manifold supports ten different Resource kinds.
+
+### Resource Kinds
 
 #### Image
 
@@ -167,17 +173,17 @@ Interactive Resources use iFrames to bring remotely hosted content like interact
 
 Consistent with the backend views for Projects, the Resource interface is composed of three parts: a header, a sidebar, and an editing pane.
 
-#### Header
+### Header
 
 The header for the Resources view is the same as for all other Project-level Sidebar items, denoting the title and subtitle of the Project along with buttons to **Preview** or **Delete** it.
 
 When individual Resource records are accessed, the header adjusts to the context, changing the functionality of those buttons: **Preview** opens the to the Resource’s detail page, instead of the Project homepage, and **Delete** removes the specific Resource from the system, versus deleting the entire Project.
 
-#### Sidebar
+### Sidebar
 
 The Sidebar’s **Resource** menu opens a view where new Resources can be added individually or in bulk and existing Resources can be searched through and filtered in a paginated list. When an individual Resource record is selected, the Sidebar will display new options specific to that Resource, described fully in [Settings and Fields](../backend/resource.md#settings-and-fields) below.
 
-#### Editing Pane
+### Editing Pane
 
 To the right of the sidebar, the Editing Page displays a search bar with filtering options to sort through and find one ore more existing Resources that match a set of criteria, below which are options to add new Resources individually or in bulk to the Project, followed by a paginated list of all the Project’s Resources, which can be selected and modified individually.
 
@@ -193,7 +199,7 @@ The **Add a new resource** button changes the view, bringing up the New Resource
 
 The **Kind** field displays as a grid of thumbnails, each thumbnail corresponding to one of the ten different Manifold Resource kinds. The kind of Resource chosen affects which fields follow below. Generally, the system expects a user to choose a Resource kind, provide it a name in the **Title** field, and then use the **File** field to load the Resource file—or, for remotely hosted Resources like **URL** or **Interactive**, supply a URL.
 
-Users cannot proceed beyond this step until a Kind, Title, and File/URL have been provided. Once they have, the system will redirect the user to the Resource Detail Page described in the [Settings and Fields](../backend/resource.md#settings-and-fields) section below.
+Users cannot proceed beyond this step until a Kind, Title, and File/URL have been provided. Once they have, the system will redirect the user to the Resource’s editing view described in the [Settings and Fields](../backend/resource.md#settings-and-fields) section below.
 
 ## Bulk Adding/Updating Resources
 
@@ -201,7 +207,7 @@ Below the search bar, the **Bulk add resources** button brings up a new interfac
 
 Integration with Google Services is *required* for the bulk add process to work; files intended for upload are fetched from a *publicly viewable* Google Drive folder (see [Integrations](../administering/configuring/integration_settings#google-services-integration)). No other repository integrations are presently supported (e.g., OneDrive, Box, Dropbox).
 
-#### Step 1: Upload
+### Step 1: Upload
 
 This step provides Manifold with the metadata file it uses to populate the fields for each new Resource it is creating—or to update metadata for existing Resources.
 
@@ -211,7 +217,7 @@ Manifold accepts comma separated files with either TXT or CSV extensions, which 
 
 In either case, uploading a file or referencing a Google Sheet, Manifold expects the data to include column heads corresponding to metadata fields, with each row describing the information about the individual Resources, as in [this template](https://docs.google.com/spreadsheets/d/1wIhuLf09DsbUQ96Cmd8snM0Nq-dYwKp7kYaO6cFyffk/edit#gid=1184586745).
 
-#### Step 2: Describe Data
+### Step 2: Describe Data
 
 The next two fields, categorized as Step 2, instruct Manifold how to understand the supplied metadata file.
 
@@ -223,7 +229,7 @@ The second field, **Enter the Storage Identifier**, tells Manifold which Google 
 https://drive.google.com/drive/folders/{storage-identifier}
 ```
 
-#### Step 3: Map Columns to Resource Attributes
+### Step 3: Map Columns to Resource Attributes
 
 The third step appears in its own view, with two containers, labeled **Spreadsheet Columns** and **Available Attributes** sitting below a button named **Automatically Map Attributes**.
 
@@ -235,7 +241,7 @@ The **Automatically Map Attributes** will attempt to automatically match the att
 
 This interface does not support keyboard controls at this time.
 
-#### Step 4: Import Resources
+### Step 4: Import Resources
 
 The last step of the bulk upload process confirms what is being imported. The view includes a scrollable list of all the Resources Manifold is bringing into the project. Each row in this view corresponds to a row from the supplied metadata sheet. Manifold will indicate in each listing if it is creating a new Resource or updating an existing one with the material provided.
 
@@ -253,13 +259,15 @@ The **Back to Resources** button returns to the view to the main Resources view.
 
 Each Resource loaded to Manifold has its own discrete settings that are configurable and which can be accessed when you select a Resource from the Editing Pane. Doing so transforms the view, alters the functionality in the header (see [Interface](../backend/resource.md#interface-overview)), and makes available a Resource-specific sidebar with the following options.
 
-### Properties
+### Properties Sidebar
 
 Unless otherwise noted, the following attributes are common to all Resource kinds:
 
-#### Kind
+<!-- BEGIN HERE LOOKING AT THE AUDIO KIND AND ITS SIDEBAR OPTIONS. -->
 
-The values in this dropdown correspond to the ten different Manifold Resource types and instruct the system how to understand the Resource. If this field is changed for an existing Resource, the system will retain values for attributes shared between the two kinds.
+#### Resource Kind
+
+This group of ten thumbnails corresponds to each of the ten possible Manifold Resource kinds and instruct the system how to understand the Resource. If this field is changed for an existing Resource, the system will retain values for attributes shared between the two kinds.
 
 #### Title
 
@@ -267,31 +275,11 @@ This is the display name of the Resource. It appears under the Resource thumbnai
 
 The value in this field is also baked into the metadata that Manifold shares with other systems, crawlers, and social media platforms.
 
-This field accepts Markdown formatting, though that formatting may not be respected by outside sites or ap
-
-#### Featured
-
-This toggle affects how resources are ordered on a project’s Resources landing page, the **All Project Resources** list view, available at this path:
-
-    ```html
-    https://{domain-name}/projects/{project-slug}/resources/
-    ```
-
-In that gridded list view, resources default to displaying in the order they were added to the system, newest to oldest. However, resources that have this **Featured** toggle activated, will be moved to the start of the list.
-
-More than one resource in a project can have this toggle activated. In those situations, the system will display the **Featured** resources first, newest to oldest, followed by the remaining resources, again, newest to oldest.
-
-Using this toggle does not prevent frontend readers from using the dropdown sorting options on the **All Projects Resources** page to reorder the resources in a way that makes sense for them.
+This field accepts Markdown formatting, though that formatting may not be respected by outside sites.
 
 #### Sort Title
 
 Manifold sorts Resources alphabetically in lists and library views based on the value saved here. When left blank the system will instead use the value from the **Title** field.
-
-#### Fingerprint
-
-A Resource’s fingerprint is its own unique ID in the system. If a fingerprint value is not defined for a Resource when brought into the system, Manifold will assign a random UUID to it in this space.
-
-Values entered here should be unique not just to the Project but to *the entire Manifold instance*.
 
 #### Slug
 
@@ -302,14 +290,6 @@ A Resource slug appears as the final component of the the URL for its detail pag
 	```
 
 If left blank, the system will automatically create a slug for each new Resource based on its title.
-
-#### Tags
-
-Tags function as filters on the Resource library and detail pages, relating different Resources by theme or framework.
-
-This field is a typeahead dropdown field pre-populated with existing tags that have already been associated with other Resources in the instance. New tags can be added to the system by typing them into this field. Once entered, tags appear in the container below the dropdown with an **×** button beside their name, which removes them from the Resource.
-
-Tags associated with Texts are distinct in the system from those associated with Resources.
 
 #### Description
 
@@ -323,25 +303,21 @@ Copy from this Markdown-enabled field appears with the Resource in frontend view
 
 The following two fields apply only to **Image**, **Video**, **Audio**, **File**, **PDF**, **Document**, **Spreadsheet**, and **Presentation** Resources. However, these will not show for **Video** Resources that are sourcing content from YouTube or Vimeo.
 
-#### Allow Download?
+#### Fingerprint
 
-Manifold does not make the Resource file loaded in the system available for download on the frontend unless this slider is toggled on. When on, a **Download** button displays on the Resource’s detail page.
+A Resource’s fingerprint is its own unique ID in the system. If a fingerprint value is not defined for a Resource when brought into the system, Manifold will assign a random UUID to it in this space.
 
-The slider defaults to the on position when a new Resource is created.
-
-#### File
-
-This field displays the existing Resource file that was uploaded to the system. New files to replace the existing one can be dropped onto this field or selected using your device’s file system by clicking the **Upload a File** link.
+Values entered here should be unique not just to the Project but to *the entire Manifold instance*.
 
 #### Is This an Externally Linked Video?
 
-This toggle, which applies only to **Video** Resources, tells Manifold whether the video is being uploaded to the system or if it is to be sourced from YouTube or Vimeo.
+This toggle, which applies only to Video Resources, tells Manifold whether the video is being uploaded to the system or if it is to be sourced from YouTube or Vimeo.
 
-When toggled on, Manifold will fetch the video from the third party using the information from the following two fields that replace the standard **File** upload field.
+When toggled on, Manifold will fetch the video from the third party using the information from the following two fields that replace the standard **File** upload field. If left in the off position, Manifold will expect the user to supply a video file.
 
 #### Video ID
 
-The value in this field, which is offered only to **Video** Resources, identifies which specific video file Manifold should target on YouTube or Vimeo to bring in as a Resource.
+The value in this field, which is offered only to Video Resources that are externally linked, identifies which specific video file Manifold should target on YouTube or Vimeo to bring in as a Resource.
 
 This field *is not* expecting a full URL, only a component of it. For YouTube, the ID follows after `?v=`; and for Vimeo, it follows after `vimeo.com/`.
 
@@ -356,7 +332,35 @@ This field *is not* expecting a full URL, only a component of it. For YouTube, t
 
 #### External Video Type
 
-This dropdown, which is offered only to **Video** Resources, has two values, Youtube and Vimeo, and orients Manifold to properly secure the identified video from the correct source.
+This dropdown, which is offered only to Video Resources tha are externally linked, has two values, Youtube and Vimeo, and orients Manifold to properly secure the identified video from the correct source.
+
+#### Link URL
+
+In place of the standard **File** upload field for Resources that get brought into the system, URL Resources instead require a target URL, which should be provided in full, e.g., `https://www.nasa.gov/`, *not* `nasa.gov`. The Link Resource is the only kind with this attribute.
+
+#### IFrame URL
+
+This field, specific to Interactive Resources, provides the system with the specific path to the remotely hosted content that Manifold will create a Resource around. Input should be the complete source URL, e.g.:
+
+```
+https://sketchfab.com/models/c1c94e1f69df45eeae4a0a1d0d27e85b/embed
+```
+
+#### Minimum Width and Height
+
+These two fields, available only to Interactive Resources, provide Manifold with the preferred display ratio for the remotely sourced content. Input should be numerical and understood to be in units of pixels. Both fields are optional.
+
+#### Allow Fullscreen? and Allow Camera?
+
+These two toggles are only available to Interactive Resources. The first, **Allow Fullscreen**, makes it possible for readers to expand the content to the full size of the viewport. The second toggle, **Allow Camera**, gives the resource permission to make use of the user’s system camera.
+
+#### File
+
+This field displays the existing Resource file that was uploaded to the system. New files to replace the existing one can be dropped onto this field or selected using your device’s file system by clicking the **Upload a File** link.
+
+#### Image Alt Text
+
+This field *only* appears for Image Resources, and provides an opportunity to associate alt text with the Resource. Benetech’s DIAGRAM Center site, “[How to Describe Images](https://poet.diagramcenter.org/how.html)” is a good reference for learning how to craft alt text. Alt text will be provided to users reading with assistive technology, and in cases where Manifold cannot render the target image, the system will instead only display the value saved in this field.
 
 #### Transcript
 
@@ -374,33 +378,60 @@ It is also possible to associate Captions and Subtitles tracks with Video (and s
 Timed tracks differ from transcripts in that they play in time with the media, where transcripts are time-independent. 
 :::
 
-#### Link URL
+#### Allow Download?
 
-In place of the standard **File** upload field for Resources that get brought into the system, **URL** Resources instead require a target URL, which should be provided in full, e.g., `https://www.nasa.gov/`, *not* `nasa.gov`. The **Link** Resource is the only kind with this attribute.
+Manifold does not make the Resource file loaded in the system available for download on the frontend unless this slider is toggled on. When on, a **Download** button displays on both the Resource’s preview modal and detail page.
 
-#### Minimum Width and Height
+The slider defaults to the on position when a new Resource is created.
 
-These two fields, available only to **Interactive** Resources, provide Manifold with the preferred display ratio for the remotely sourced content. Input should be numerical and understood to be in units of pixels. Both fields are optional.
+#### Featured Image
 
-#### IFrame URL
+This field appears for all Resource kinds, save for the Image Resource, which uses the image itself as the Featured Image. The image saved here will appear as the thumbnail associated with the Resource in list views. It will also appear in the left margin or footer when the Resource placed in the text as an inline element. When the Resource is placed as a block element in a text, and when it appears in Resource preview modal and detail page, the Featured Image will display in a larger 16:9 aspect ratio and should be at least 890 wide by 500 pixels tall.
 
-This field, specific to **Interactive** Resources, provides the system with the specific path to the remotely hosted content that Manifold will create a Resource around. Input should be the complete source URL, e.g.:
+When a Featured Image is not provide, the system will use the Resource file itself to automatically generate a Featured Image or include a system default when it cannot.
 
-```
-https://sketchfab.com/models/c1c94e1f69df45eeae4a0a1d0d27e85b/embed
-```
+<Spec
+title="Featured Image Attributes"
+items={[
+    { key: "Width", value: "890 px" },
+    { key: "Height", value: "500 px" },
+    { key: "Format", value: defaultImageFormats },
+]}
+/>
 
-#### Allow Fullscreen? and Allow Camera?
+#### Featured Image Alt Text
 
-These two toggles are only available to **Interactive** Resources. The first, **Allow Fullscreen**, makes it possible for readers to expand the content to the full size of the viewport. The second toggle, **Allow Camera**, gives the resource permission to make use of the user’s system camera.
+This field only appears if a Featured Image is supplied and provides an opportunity to associate alt text with that Featured Image. Benetech’s DIAGRAM Center site, “[How to Describe Images](https://poet.diagramcenter.org/how.html)” is a good reference for learning how to craft alt text. Alt text will be provided to users reading with assistive technology, and in cases where Manifold cannot render the Featured Image, the system will instead only display the value saved in this field.
 
-### Variants
+#### Tags
 
-This sidebar menu only appears for **Image**, **Video**, **Audio**, and **Interactive** Resources. All of the fields in this section anticipate an upload that can be dropped onto the field or selected using your device’s file system by clicking the **Upload a File** link.
+Tags function as filters on the Resource library and detail pages, relating different Resources by theme or framework.
+
+This field is a typeahead dropdown field pre-populated with existing tags that have already been associated with other Resources in the instance. New tags can be added to the system by typing them into this field. Once entered, tags appear in the container below the dropdown with an **×** button beside their name, which removes them from the Resource.
+
+Tags associated with Texts are distinct in the system from those associated with Resources.
+
+#### Featured
+
+This toggle affects how resources are ordered on a project’s Resources landing page, the **All Project Resources** list view, available at this path:
+
+    ```html
+    https://{domain-name}/projects/{project-slug}/resources/
+    ```
+
+In that gridded list view, resources default to displaying in the order they were added to the system, newest to oldest. However, resources that have this **Featured** toggle activated, will be moved to the start of the list.
+
+More than one resource in a project can have this toggle activated. In those situations, the system will display the **Featured** resources first, newest to oldest, followed by the remaining resources, again, newest to oldest.
+
+Using this toggle does not prevent frontend readers from using the dropdown sorting options on the **All Projects Resources** page to reorder the resources in a way that makes sense for them.
+
+### Variants Sidebar
+
+This sidebar menu only appears for Image, Video, Audio, and Interactive Resources. All of the fields in this section anticipate an upload that can be dropped onto the field or selected using your device’s file system by clicking the **Upload a File** link.
 
 #### High Resolution Image
 
-Specific to the **Image** Resource, files loaded to this field are expected to be a higher-resolution alternative/equivalent to the primary Image Resource.
+Specific to the Image Resource, files loaded to this field are expected to be a higher-resolution alternative/equivalent to the primary Image Resource.
 
 Manifold does not display the High Resolution Image in the application; instead, the hi-res file supplants the display version when provided as a download (see **Allow Download?** in [Properties](../backend/resource.md#properties)).
 
@@ -413,9 +444,23 @@ Manifold does not display the High Resolution Image in the application; instead,
   ]}
 />
 
+#### Variants 1 and 2
+
+Because browser and system support for media files differ, Manifold accepts in these spaces alternate equivalents of the primary Video or Audio Resource.
+
+For file types playable in the browser, if Manifold determines that the primary Resource file is not supported, it will look for a variant file that may be supplied instead.
+
+<Spec
+title="Variant Attributes"
+items={[
+    { key: "Video Variants", value: "MP4, WEBM, FLV, MOV, AVI" },
+    { key: "Audio Variants", value: "MP3, FLAC, WAV, OFF, OGA" },
+]}
+/>
+
 #### Poster Image
 
-Manifold automatically generates a landscape preview for Resources in a number of views in the frontend: in the modal when a Resource annotates a text in the Reader, on the Resource’s detail page, and on Resource Collection pages.
+Manifold automatically generates a landscape preview for Resources that appears in a carousel on the Resource Collection page.
 
 Files loaded here replace the system-generated preview in those spaces.
 
@@ -428,46 +473,17 @@ Files loaded here replace the system-generated preview in those spaces.
   ]}
 />
 
-#### Thumbnail Image
+### Metadata Sidebar
 
-Resources appear with thumbnail images in the Reader, when placed as an annotation, and in Collection and Library pages. Manifold also shares thumbnails with other systems, crawlers, and social media platforms.
-
-The system will use the Resource file itself to automatically generate that thumbnail or include a system default when it cannot. Files loaded here replace the system-created thumbnails wherever they appear and when shared with other systems.
-
-<Spec
-title="Thumbnail Image Attributes"
-items={[
-    { key: "Width", value: "80 px" },
-    { key: "Height", value: "50 px" },
-    { key: "Format", value: defaultImageFormats },
-]}
-/>
-
-#### Variants 1 and 2
-
-Because browser and system support for media files differ, Manifold accepts in these spaces alternate equivalents of the primary **Video** or **Audio** Resource.
-
-For file types playable in the browser, if Manifold determines that the primary Resource file is not supported, it will look for a variant file that may be played instead.
-
-<Spec
-title="Variant Attributes"
-items={[
-    { key: "Video Variants", value: "MP4, WEBM, FLV, MOV, AVI" },
-    { key: "Audio Variants", value: "MP3, FLAC, WAV, OFF, OGA" },
-]}
-/>
-
-### Metadata
-
-This view groups into different categories the available metadata fields that describe a Manifold Resource. Values displayed here appear in the modal overlay for Resources placed as annotations in the Reader, on the Resource detail page, and they are also included in the BagIt archive when a Project is exported (see [Exporting and Preserving](../backend/projects.md#exports)).
+This view groups into different categories the available metadata fields that describe a Manifold Resource. Values saved here appear on the Resource detail page, and they are also included in the BagIt archive when a Project is exported (see [Exporting and Preserving](../backend/projects.md#exports)).
 
 All of the fields on this page support Markdown formatting with the exception of **DOI**.
 
 The [Metadata section](../backend/metadata.md) provides definitions for each metadata element shown in this view.
 
-### Tracks
+### Tracks Sidebar
 
-The **Tracks** sidebar menu allows you to add text tracks to Video (and soon Audio) Resources to ensure they are in compliance with web accessibility guidelines. Text tracks are formatted as WebVTT files (with a `.vtt` extension) and provide descriptive and navigational information to users playing media so they can better understand and engage with the content.
+The **Tracks** sidebar menu allows you to add text tracks to Video and Audio Resources to ensure they are in compliance with web accessibility guidelines. Text tracks are formatted as WebVTT files (with a `.vtt` extension) and provide descriptive and navigational information to users playing media so they can better understand and engage with the content.
 
 Tracks are most commonly associated with closed captions or subtitles that are layered over media content, though they can be used for additional functionality as well.
 
@@ -479,8 +495,6 @@ Tracks are available to users in the media player when they select the **More Me
 
 :::note Limitations and Upcoming Work
 It is not possible to associate tracks with Video resources that are brought in via YouTube or Vimeo. To add tracks to remotely hosted videos, you will need to do so on the originating platform.
-
-The **Tracks** sidebar menu was introduced in version 9 and currently only appears for **Video** Resources. However it will be available to **Audio** Resources in an upcoming minor release.
 :::
 
 :::important Tracks versus Transcripts?

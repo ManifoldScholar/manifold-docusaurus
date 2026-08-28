@@ -119,46 +119,13 @@ After you log into your Manifold account, you will have opportunities to interac
 To select text in the Manifold Reader with your keyboard you first need to enable Caret Browsing. In most browsers the **F7** key enables/disables Caret Browsing.
 :::
 
-Once you select the text you wish to engage with, a pop-up menu will appear below your selection with three (potentially four) options: **Share**, **Annotation**, **Resource**, and **Highlight**. The **Resource** option will only appear for those who have the ability to edit the Project in the backend. Each of these options are detailed in the following sections.
-
-
-### Sharing and Citing Texts
-
-Selecting **Share** from the pop-up menu presents three new options in the menu: **Cite**, **External App**, and **Copy URL**.
-
-When you select **Cite**, Manifold prepares a reference for the Text you are viewing in accordance with APA, MLA, or Chicago styles that you can use in your own writing. Selecting the **Copy** button will save the citation to your device’s memory so you can paste it into whichever app you are using for that purpose.
-
-This option is dependent on how much metadata has been included in the backend by whomever is managing the project. If certain metadata is missing from a Text, the Cite option will not appear. Alternatively, project editors have the ability to manually override the auto-generated citation in favor of something bespoke. In such cases, only the editor-suggested citation will appear in this space.
-
-:::info Needed Citation Metadata
-For the **Cite** option to appear, the project editor must include in the Text’s metadata the [Title](../backend/metadata.md), [Author](../backend/metadata.md), [Publisher](../backend/metadata.md), and [Publication Date](../backend/metadata.md). If any one of those fields is left blank—or if there is no editor-suggested citation present—readers will not see **Cite** as an option when trying to **Share** a Text. It is also important to note that the more metadata the editor provides, the better the citation will be.
-
-Backend users, see the [Adjusting Text Sections documentation](../backend/texts.md#adjusting-text-sections) to learn how to add chapter-level citation information that will be displayed by Manifold’s Cite option. To learn which metadata fields are generally available for Texts, see the [Metadata](../backend/metadata.md) section, and to enter/adjust metadata for a Text, see the [Texts](../backend/texts.md#metadata) page.
-:::
-
-The **External App** option leverages your operating system’s sharing widget to furnish a list of email, messaging, or note-taking apps for you to choose from. After you’ve selected the app you wish to use, Manifold will paste to that app a URL that links to the specific passage of text you’ve selected.
-
-The last option, **Copy URL**, is very similar to the previous one, **External App**. Instead of opening a sharing widget, however, the system simply copies the URL of the selected passage to your device’s clipboard, allowing you to manually paste it into whichever app you would like.
-
-:::note Sharing Link Functionality
-Where supported, the share link associated with the **External App** and **Copy URL** options will focus the browser view on the passage you selected and likewise highlight the passage in question. If your browser does not support this feature, the link will simply direct you to that section of the text generally.
-:::
-
-### Placing Resources
-
-If you are logged in with an account that has backend access *and* permissions to adjust the Project in question, when you highlight a passage of text in the Reader, the second option available in the pop-up menu that appears is **Resource**. This function allows you to associate any Resources (or Resource Collections) that have already been loaded into the Project’s Resource library with specific passages of text. This does not embed a media Resource into the text so much as layer the Resource onto the text.
-
-When you click **Resource**, a drawer will open from the right allowing you to select from any Resource file that has already been uploaded to that Project. When you select your Resource (or Resource Collection) a gray cube will be placed at the end of your cursor selection and a thumbnail of the Resource will appear in the left margin. When you hover over either they will turn a shade of green, and when selected a modal will overlay the text previewing the Resource or allowing you to interact with it, if it is of a kind playable in the browser.
-
-:::tip How do I add a Resource to a Project?
-For details on how to load Resources into a Project, see the [Resource](../backend/resource.md) section. Your account will need to be able to access the Manifold backend in order perform this operation. Users with the default Reader account do not have backend access by default. See the [User Roles](../backend/users.md) and [Editor Permissions](../backend/projects.md#editor-permissions) sections for more.
-:::
+Once you select the text you wish to engage with, a pop-up menu will appear below your selection with three (potentially four) options: **Annotate**, **Highlight**,  **Resource**, and **Share**. The **Resource** option will only appear for those who have the ability to edit the Project in the backend. Each of these options are detailed in the following sections.
 
 ### Annotations and Comments
 
 Annotations are a means for readers to engage with Texts on Manifold. Annotations can be private and serve as one’s own marginalia, left publicly to foster conversation among other readers, or they can be associated with [Reading Groups](../using/reading_groups.md).
 
-**Annotate** is the third option in the pop-up that appears when you select a passage of text in the Reader. When you select this option, a drawer will open from the right displaying the passage you selected along with a space where you can compose an Annotation, which when saved will then be associated with that passage.
+**Annotate** is the first option in the pop-up that appears when you select a passage of text in the Reader. When you select this option, a drawer will open from the right displaying the passage you selected along with a space where you can compose an Annotation, which when saved will then be associated with that passage.
 
 Each Annotation you make will be also be associated with a particular Reading Group. All Manifold accounts include default membership in two Reading Groups: **My Public Annotations** and **My Private Annotations**. Annotations associated with the **My Public Annotations** group are publicly available to all users who have verified their email address or who have been verified by an instance administrator. Annotations associated with **My Private Annotations** are only viewable to the reader who makes them.
 
@@ -198,11 +165,83 @@ Annotations and Comments are displayed and can only be composed in plain text. C
 
 ### Highlighting
 
-The **Highlight** option is the final option in the Reader pop-up menu. When selected it will add blue highlighting to the passage of text you selected.
+The **Highlight** option is the second option in the Reader pop-up menu. When selected it will add blue highlighting to the passage of text you selected.
 
 If you select the highlighted passage again the pop-up menu will have the **Highlight** option selected with a note reminding you that you highlighted the passage. If you de-select **Highlight** in the pop-up menu, the highlight will be removed from the text.
 
 Highlighting is user specific, meaning Highlights can only be seen by those who made them and users will not see highlights left by anyone else. Unlike Annotations, Highlights are *not* collected in the Notes menu dropdown, nor are they associated with any Reading Group, **My Public Annotations**, **My Private Annotations**, or otherwise.
+
+### Placing Resources
+
+The ability to place Resources is restricted to those who have backend access *and* permissions to adjust the Project in question—as well as those who are [scoped an Author role](../backend/projects.md#editor-permissions) on the Project.
+
+If you have the necessary permission to do so, when you select a passage of text in the Reader, the third option to appear in the pop-up menu will be listed as **Resource**. This option allows you to associate Resources (or Resource Collections) with specific passages of text. It will also allow you to save an individual Resource to the Project in question. Placing a Resource in this way does not *embed* it into the source Text or alter the source Text in any way; instead, it *layers* the Resource onto the Text.
+
+When you select **Resource** from the pop-up menu, you will be confronted with a two-part modal:
+
+1. Choose a Display Style
+
+    The first modal screen asks how you want the Resource to render in the Text, as an **Inline** or **Block** element. The **Inline** option is the default. When Inline is selected, the Resource will be placed at the end of the string of text you selected in the Reader, showing as a gray cube-shaped button. This gray cube pairs with a corresponding thumbnail in either the left margin or the footer, depending on the size of the reader’s screen. Once placed, both the button and thumbnail open the Resource as a modal overlaying the text.
+
+    Alternatively, the **Block** option will present a large preview of the Resource within the flow of the source Text, just following the text the was selected in the Reader. It is important to note that this option is only possible if your selection concludes at the end of a block-level item, like a paragraph, versus selecting a brief phrase living within a paragraph.
+
+    After you’ve made a selection between Inline or Block you can proceed to the next modal screen by selecting the **Next** button.
+
+2. Select a Resource
+
+    Once you’ve determined how you want your Resource to display in the Reader, the next modal screen, sliding out as a drawer from the right, will present you with an opportunity to select which specific Resource or Resource Collection you want to appear in the text. Remember, the system will only surface Resources (or Resource Collections) that are currently associated with the Project at hand. Fortunately, this modal also allows you to create and place a new Resource directly without first having to do so in Manifold’s backend–that is, *if* you have the permissions to do so. If you have permission to edit the Project in the backend, you will likewise have permission to create a new Resource from this space as well. If you have only been scoped an Author role on the Project, you will be able to place a Resource, but you won’t be able to save a new one to the Project.
+
+    Under the **Resource Type** heading, there are three tabs listed: **Resources**, **Collections**, and **Create New**. With either of the first two tabs selected, the modal presents the Project’s Resources or Resource Collections in a searchable, paginated list view. The search bar in this view returns results corresponding to the Resource or Collection’s title. Beside the search bar there is a **Sort By** dropdown that allows you to reorder the list of Resources or Collections alphabetically by name or by creation date. The search and sort options work in tandem, such that you can sort a list that was narrowed by search parameters. If the list exceeds five results, it will paginate and can be navigated at the bottom of the screen using the horizontal list of numbers, which correspond to each page of results and that can be directly selected. You can also move through pages of available Resources or Collections using the previous and next buttons.
+
+    When you select a Resource or Collection from the list, its name will appear underlined in a new color (dependent on the color scheme of the instance), and the thumbnail icon associated it will likewise appear with a border in the same color. When you click the **Save** button at the bottom of the modal, the placement modal will disappear and the selected Resource or Collection will now be placed in the text.
+
+    The functionality in the **Create New** tab mirrors the backend interface for creating new Resources. When this option is selected, you will be presented with three default fields, **Title**, **Description**, and **Kind**. There will also be a range of four possible contextual fields, dependent on which Resource type is selected in the **Kind** field: **Is this an externally linked video?**, **URL**, **Resource**, and **Featured Image**.
+
+    Of the three default fields, only the **Description** field is optional. For the contextual ones, the only optional field is **Featured Image**. All the remaining fields are required to create and place a Resource, though their values can each be modified later through the backend interface. To learn more about what each of these fields expects for input and what additional options are possible for loaded Resources, see the [Resource](../backend/resource.md#settings-and-fields) section. Likewise, the [Engaging with Resources section](../using/reading_manifold.md#engaging-with-resources) below speaks to how Resources display in Manifold’s frontend and of the various opportunities to engage with them.
+
+:::note Navigating the Modal
+Options in the Resource placement modal can be selected by mouse or by keyboard. You can use your keyboard to tab through options and then use the space bar to make a selection. Dropdown options can be navigated via your keyboard’s up and down arrow keys.
+:::
+
+### Sharing and Citing Texts
+
+Selecting the final option from the pop-up menu, **Share**, presents three new options in the menu: **Cite**, **External App**, and **Copy URL**.
+
+When you select **Cite**, Manifold prepares a reference for the Text you are viewing in accordance with APA, MLA, or Chicago styles that you can use in your own writing. Selecting the **Copy** button will save the citation to your device’s memory so you can paste it into whichever app you are using for that purpose.
+
+This option is dependent on how much metadata has been included in the backend by whomever is managing the project. If certain metadata is missing from a Text, the Cite option will not appear. Alternatively, project editors have the ability to manually override the auto-generated citation in favor of something bespoke. In such cases, only the editor-suggested citation will appear in this space.
+
+:::info Needed Citation Metadata
+For the **Cite** option to appear, the project editor must include in the Text’s metadata the [Title](../backend/metadata.md), [Author](../backend/metadata.md), [Publisher](../backend/metadata.md), and [Publication Date](../backend/metadata.md). If any one of those fields is left blank—or if there is no editor-suggested citation present—readers will not see **Cite** as an option when trying to **Share** a Text. It is also important to note that the more metadata the editor provides, the better the citation will be.
+
+Backend users, see the [Adjusting Text Sections documentation](../backend/texts.md#adjusting-text-sections) to learn how to add chapter-level citation information that will be displayed by Manifold’s Cite option. To learn which metadata fields are generally available for Texts, see the [Metadata](../backend/metadata.md) section, and to enter/adjust metadata for a Text, see the [Texts](../backend/texts.md#metadata) page.
+:::
+
+The **External App** option leverages your operating system’s sharing widget to furnish a list of email, messaging, or note-taking apps for you to choose from. After you’ve selected the app you wish to use, Manifold will paste to that app a URL that links to the specific passage of text you’ve selected.
+
+The last option, **Copy URL**, is very similar to the previous one, **External App**. Instead of opening a sharing widget, however, the system simply copies the URL of the selected passage to your device’s clipboard, allowing you to manually paste it into whichever app you would like.
+
+:::note Sharing Link Functionality
+Where supported, the share link associated with the **External App** and **Copy URL** options will focus the browser view on the passage you selected and likewise highlight the passage in question. If your browser does not support this feature, the link will simply direct you to that section of the text generally.
+:::
+
+## Engaging with Resources
+
+When an inline Resource is selected in the Manifold Reader—either by clicking the gray cube button or the thumbnail associated with it—it appears in a modal overlaying the source Text. That modal mirrors the function and appearance of Resources set to render as block elements. Specifically, the reader is presented with a preview of the Resource, corresponding to the [**Featured Image**](../backend/resource.md#featured-image) associated with the Resource. For dynamic media, such as with Audio, Video and Interactive resources, the system will display controls to engage directly with content within the modal window itself.
+
+The Resource preview displays the Resource’s Title and Kind above the preview. Immediately beside the Title there is also a star-shaped button the rolls our to read **Add**, which allows reader to [collect the Resource](../using/collecting.md) into one of their Reading Groups. Below the preview the Resource’s caption will appear, under which  there are three potential button options for readers to select: **More Info**, **Download**, and **Share**. The **More Info** button takes readers to the Resource’s detail view (described below). If the Resource has been made available for download by whomever is managing the Project, the **Download** button will appear next and provide the means for a reader to save the Resource to their local device. The **Share** button, which opens the the sharing menu associated with the Reader’s device and operating system, allows readers to share the Resource through their network.
+
+For users who have the permissions to edit the Project, two more options will be available below the preview: **Edit** and **Remove**. The **Edit** button takes the user to the backend view of the Resource, where it’s properties and metadata can be adjusted. The **Remove** button removes that specific placement of the Resource in the source Text. The **Remove** button *does not* delete the Resource from the project, nor will it remove it from any other instances in the Text where it may have been placed.
+
+---
+
+It is worth noting that outside of Texts, Resources can appear in a number of other places throughout a Project. They can be configured by a Project editor to render in a Resource content block on a Project’s landing page, either as individual thumbnails or in collections. When an individual Resource thumbnail is selected from the Resource content block, the reader is directed to the detail view for that Resource. Likewise, if a collection is selected, the reader will be directed to that Collection’s homepage. Because a Project editor can be selective about which Resources or Collections display in that content block, there are also links below each offering, providing readers the opportunities to see a listing of all of a Project’s Resources and Collections.
+
+The page showing all of a Project’s Resources renders as a paginated list, with each listing described by its title, a badge indicating what kind of Resource it is, along with a created date timestamp and a thumbnail, corresponding to [Featured Image](../backend/resource.md#featured-image) associated with the Resource in the backend. If the Project editor has not included a Featured Image for a Resource, the system will either try to abstract one from the Resource itself or simply supply a default icon. In this view only the Resource titles are selectable, taking readers to the Resource’s detail view. But the list can be limited using the search bar and three dropdowns, labeled **Sort By**, **Kind**, and **Tag**, that top the list. The search bar returns results associated with Resource titles, and the three dropdowns work either independently or in conjunction with the search bar, allowing readers to reorder the list alphabetically, by when Resources were added to the project, and to filter results to specific kinds of Resources or by any Tags that have been associated with them.
+
+A Project’s list of all the Resource Collections associated with it appears as a series of cover images, each banded at the bottom with the Collection title. When one is selected, the Reader will be directed homepage for that particular question. It appears exactly like the view showing the list of all of a Project’s Resources, with three distinctions: The reader is presented with a carousel that previews all the Resources in the collection. This preview pane can be paged through using the arrow keys on your keyboard or with the arrows provided in the interface. The preview here parallels the Resource preview that appears in the Manifold Reader and which is described above. Then beneath the **Resources** heading, the reader is presented with a list of *just those* Resources that are a part of the Collection in question, with the same functionality and appearance as for the view showing all of a Project’s Resources. Last, following the list under the heading that reads **Annotations**, there is a list of text passages that have been annotated with Resources from the Collection. When selected, the reader will be taken to that specific passage to see how the Resource engages with the source Text directly.
+
+An individual Resource’s detail view previews the Resource, again mirroring its appearance when placed in a Text. Following that preview there is a space for Readers (who are logged in) to comment on the Resource, followed by a list of passages where that Resources has been placed in the Text. Those listing take Readers to the passage in question, so they can investigate the interaction between the Resource and source Text. In the right sidebar there is a list of all the metadata that is associated with the Resource.
 
 ## Reporting Inappropriate Content
 
