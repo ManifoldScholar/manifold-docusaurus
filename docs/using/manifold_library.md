@@ -102,6 +102,24 @@ Users can search for specific phrases enclosed in quotation marks to look for ex
 
 Quoting a phrase will still apply stemming, thus Manifold takes into account misspellings, ignores cases, etc. When negations are employed, they follow the NOR paradigm instead of NAND. If a search includes `-apples -bananas`, Manifold will exclude results that mention apples or bananas instead of excluding results that only include both apples and bananas.
 
+Manifold searches use URL parameters, such that granular information about a search is built into the search URL. This makes it possible to share search results simply by sharing the search URL.
+
+URL facets appear at the end of the search URL, following the question mark, the word *facets*, and the equal sign: `?facets=`. Facets correspond to the filters used to tailer your search, represented by the list of seven checkboxes under the search bar:
+
+- Everything
+- Projects
+- Journals
+- Resources
+- Texts
+- Annotations
+- Full Texts
+
+Those filters can work singly or in tandem. In the example below a search was made for *Dracula* with the checkboxes for **Projects** and **Texts** selected, meaning the system is returning results for titles of *public* projects and full text searches of every *public* text on the site.
+
+```html
+https://{domain-name}/search?facets=Project%2CText&keyword=dracula
+```
+
 :::tip Search Not Working?
 Are you searching for something you know is in the system but you’re not getting any results? That’s likely because Projects in Draft status are *not* indexed by Manifold for search. Once the Project is toggled out of Draft, the system will index its content and make it available to be returned in search results (see [Project Properties](../backend/projects.md#draft-mode)).
 :::
