@@ -101,9 +101,11 @@ Beginning with version 9, highlights do not display by default in the Manifold r
 
 ### Appearance Menu
 
-The appearance menu, denoted by the icon showing a capital and lowercase letter `A`, provides formatting options to adjust how the text appears in the reader. You may choose the typeface or adjust the text size under the Font heading by selecting either `Serif` or `Sans-serif` or by using the respective increase or decrease size buttons, appearing as plus or minus signs beside the name of the selected typeface.
+The appearance menu, denoted by the icon showing a capital and lowercase letter **A**, provides formatting options to adjust how the text appears in the reader. You may choose the typeface or adjust the text size under the Font heading by selecting either **Serif** or **Sans-serif** or by using the respective increase or decrease size buttons, appearing as plus or minus signs beside the name of the selected typeface.
 
-Under the color scheme heading you can choose either light or dark mode for the reader. In dark mode, the reader swaps the color of the text and background, so that the background is dark and text is white, with the colors of highlights and Annotations adjusting to account of needed contrast.
+Under the Color Scheme heading you can choose either light or dark mode for the reader. In dark mode, the reader swaps the color of the text and background, so that the background is dark and text is white, with the colors of highlights and Annotations adjusting to account for needed contrast.
+
+The Annotation Contrast section provides two options—Low and High—that adjusts the contrast around annotations and highlights. This setting works in conjunction with the Color Scheme options. Low contrast is the Manifold default, with annotated words and passages appearing with underlining and highlighted passages shaded in light blue or gray, for the Light and Dark color scheme, respectively. When the High contrast option is selected, annotated passages appear with a full border in a thick weight around the word or passage, and highlights render in either teal or bright blue, according to the color scheme.
 
 In the Margins sections of the menu you can increase or decrease the size of the margins beside the text using the appropriate button.
 
