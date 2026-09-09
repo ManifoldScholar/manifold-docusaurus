@@ -22,10 +22,11 @@ Manifold Metadata fields are informed by the Dublin Core Metadata Initiative. Ma
 
 - **Creator**. Person or party responsible for making the entity.
 - **Credit**. Attribution language supplied by the entity’s rights owner or manager.
+- **License**. License statement associated with the work, with predefined options ranging from traditional to Creative Commons licenses to a Public Domain statement.
 - **Restrictions**. Notice about limits placed on the use of the entity by rights owner or manager.
+- **Rights**. Information about the rights held in and over the entity, often including publication history and funding acknowledgments.
 - **Rights Holder**. The name of the person or party who owns or managers the entity’s rights.
 - **Rights Territory**. Statement from the rights holder or manger outlining the geographic scope of the entity’s publication.
-- **Rights**. Information about the rights held in and over the entity, often including publication history and funding acknowledgments.
 
 ## Identity
 
