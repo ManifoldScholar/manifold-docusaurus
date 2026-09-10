@@ -215,7 +215,7 @@ Manifold accepts comma separated files with either TXT or CSV extensions, which 
 
 *Alternatively*, Manifold can source the metadata from Google Sheet that is ***publicly viewable*** when the URL to that sheet is included in the **Google Sheets URL** field.
 
-In either case, uploading a file or referencing a Google Sheet, Manifold expects the data to include column heads corresponding to metadata fields, with each row describing the information about the individual Resources, as in [this template](https://docs.google.com/spreadsheets/d/1wIhuLf09DsbUQ96Cmd8snM0Nq-dYwKp7kYaO6cFyffk/edit#gid=1184586745).
+In either case, uploading a file or referencing a Google Sheet, Manifold expects the data to include column heads corresponding to metadata fields, with each row describing the information about the individual Resources, as in [this template](https://docs.google.com/spreadsheets/d/1QeDF4FxmVI-T2PL-LCivJImkCRLLIzdR-83dg6knvxk/edit?usp=sharing).
 
 ### Step 2: Describe Data
 
