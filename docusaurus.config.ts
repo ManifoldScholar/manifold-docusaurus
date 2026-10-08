@@ -6,16 +6,12 @@ import * as path from 'path';
 import * as dotenv from "dotenv";
 dotenv.config({ path: __dirname+'/.env' });
 
-// TODO: Define releases type
-let data: {manifoldVersion?: string; releases?: unknown} = {};
+let manifoldVersion: string | undefined;
 
 try {
-  data.manifoldVersion = fs
+  manifoldVersion = fs
     .readFileSync(path.resolve(__dirname, "MANIFOLD_VERSION"), "utf8")
     .trim();
-  data.releases = JSON.parse(
-    fs.readFileSync(path.resolve(__dirname, "releases.json"), "utf8")
-  );
 } catch (err) {
   console.error(err);
 }
@@ -224,7 +220,7 @@ const config: Config = {
     // },
   } satisfies Preset.ThemeConfig,
   customFields: {
-    data,
+    manifoldVersion,
   },
   presets: [
     [

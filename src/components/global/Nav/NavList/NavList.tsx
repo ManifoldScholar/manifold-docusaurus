@@ -3,6 +3,9 @@ import { Button, ButtonLink } from "../../../atomic";
 import { UnderlinedLink, Text } from "../../../typography";
 import styles from "./NavList.module.css";
 import clsx from "clsx";
+import siteConfig from "@generated/docusaurus.config";
+
+const manifoldVersion = siteConfig.customFields?.manifoldVersion as string | undefined;
 
 type Props = {
   isMobile?: boolean;
@@ -30,7 +33,7 @@ const NavList = ({ isMobile, routes }: Props) => {
         </li>
       ))}
       <li className={styles.list__item}>
-        <Text size="nav">v 8.1.1</Text>
+        {manifoldVersion && <Text size="nav">{manifoldVersion}</Text>}
       </li>
     </ul>
   );
