@@ -5,7 +5,7 @@ sidebar_label: Installation
 ---
 
 :::info
-These instructions are for Manifold v9 and later. If you are installing Manifold v8 or earlier, see the [legacy installation instructions](/docs/administering/installation_v8).
+These instructions are for Manifold v9 and later. We do not recommend installing earlier versions.
 :::
 
 ## Overview

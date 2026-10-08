@@ -55,7 +55,6 @@ const sidebars: SidebarsConfig = {
           'Reference': [
             'administering/reference/environment_variables',
             'administering/reference/api_rake_tasks',
-            'administering/reference/downloads',
           ]
         },
       ]
