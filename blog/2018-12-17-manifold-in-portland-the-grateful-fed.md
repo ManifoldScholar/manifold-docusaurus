@@ -99,4 +99,4 @@ In a last important update—we decided we really needed a proper hashtag. So pl
   <figcaption>Naturally, Jojo had to break out the watercolors during the meeting</figcaption>
 </figure>
 
-Thanks for reading! Feel free to reach out on the community [Slack channel](https://manifold-slackin.herokuapp.com/), tweet us at [@manifoldscholar](https://twitter.com/ManifoldScholar), and follow along on [Github](https://github.com/ManifoldScholar/manifold) for more details and to request features.
+Thanks for reading! Feel free to reach out on the community [Slack channel](https://join.slack.com/t/manifold-community/shared_invite/zt-3u7lmti9w-AsT2O4XCoraN~3xvZ7PG7Q), tweet us at [@manifoldscholar](https://twitter.com/ManifoldScholar), and follow along on [Github](https://github.com/ManifoldScholar/manifold) for more details and to request features.

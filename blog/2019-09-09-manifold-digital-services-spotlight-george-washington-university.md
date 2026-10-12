@@ -43,7 +43,7 @@ The George Washington University Publishing Master of Professional Studies Progr
 - **Culinary highlights:** For lunch on the second day, John and Terence found their way to Founding Farmers, where Terence had his first opportunity to try an Impossible Burger—guilt free _and_ yummy. Pairing it with fresh greens was unexpectedly delightful.
 - **On the Run:** DC has a fantastic running community. Terence was excited to tap into that energy and get in a few runs around all the government buildings and monuments. And because he’s a huge nerd, Terence couldn’t _not_ think of the X-Files as he ran past the J. Edgar Hoover Building.
 
-Thanks for reading! Feel free to reach out on the community [Slack channel](https://manifold-slackin.herokuapp.com/), tweet us at [@manifoldscholar](https://twitter.com/ManifoldScholar), and follow along on [Github](https://github.com/ManifoldScholar/manifold) for more details and to request features.
+Thanks for reading! Feel free to reach out on the community [Slack channel](https://join.slack.com/t/manifold-community/shared_invite/zt-3u7lmti9w-AsT2O4XCoraN~3xvZ7PG7Q), tweet us at [@manifoldscholar](https://twitter.com/ManifoldScholar), and follow along on [Github](https://github.com/ManifoldScholar/manifold) for more details and to request features.
 
 
 

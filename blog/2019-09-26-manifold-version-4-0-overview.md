@@ -15,7 +15,7 @@ The Manifold team is delighted to announce the release of Manifold version 4.0. 
 
 With the arrival of v4.0, any user on a Manifold instance can [create a reading group to collaboratively annotate texts](https://manifoldapp.org/docs/reading/annotating#reading-groups). Reading groups can be private, public, or anonymous. Readers can join groups using a unique code or URL. From within the Manifold reader, group members can specify which reading groups an annotation belongs to. Annotations within groups can be filtered by author or text, and group moderators can manage group membership. &nbsp;Want to assign a reading to a class and provide a private environment for students to engage with one another? Have a first draft you want feedback on? Want to create a unique scholarly edition? Reading Groups are for you!
 
-We have more plans around reading groups, and are currently looking at ways to expand this feature so that cohorts of readers can collect and curate non-textual content on a Manifold instance. Keep an eye on [Slack](https://manifold-slackin.herokuapp.com/) and [Github](https://github.com/ManifoldScholar/manifold) for more details!
+We have more plans around reading groups, and are currently looking at ways to expand this feature so that cohorts of readers can collect and curate non-textual content on a Manifold instance. Keep an eye on [Slack](https://join.slack.com/t/manifold-community/shared_invite/zt-3u7lmti9w-AsT2O4XCoraN~3xvZ7PG7Q) and [Github](https://github.com/ManifoldScholar/manifold) for more details!
 
 ### Standalone Projects
 

@@ -11,7 +11,7 @@ and source installs, see the [legacy backup and restore instructions](/docs/admi
 
 ## Overview
 
-Manifold stores user data in two places: the PostgreSQL database and file storage (either the local filesystem, MinIO,
+Manifold stores user data in two places: the PostgreSQL database and file storage (either the local filesystem, SeaweedFS,
 or an external S3-compatible service). A complete backup includes both the database and uploaded files.
 
 :::caution
@@ -99,7 +99,7 @@ ssh root@your-server \
   "docker run --rm -v production-uploads:/data alpine tar cf - -C /data ." > uploads.tar
 ```
 
-**MinIO storage** — files are stored in the MinIO accessory container's data directory on the server. You can archive
+**SeaweedFS storage** — files are stored in the SeaweedFS accessory container's data directory on the server. You can archive
 the data directory directly or use your preferred S3-compatible tool to sync the bucket to a local directory.
 
 **External S3 storage** — use your provider's backup tools to copy your bucket contents to a safe location.
@@ -145,7 +145,7 @@ cat uploads.tar | ssh root@your-server \
   "docker run --rm -i -v production-uploads:/data alpine tar xf - -C /data"
 ```
 
-For MinIO or external S3, use your preferred S3-compatible tool or your provider's restore tooling to sync the files
+For SeaweedFS or external S3, use your preferred S3-compatible tool or your provider's restore tooling to sync the files
 back to the appropriate bucket.
 
 ## More Information

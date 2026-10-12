@@ -19,7 +19,7 @@ Manifold v9 runs as a set of Docker containers orchestrated by [Kamal 2](https:/
 | `manifold-worker` | Background job processor (GoodJob) |
 | `manifold-client` | Client / SSR frontend |
 | `manifold-db` | PostgreSQL database (if using a local database) |
-| `manifold-storage` | MinIO S3-compatible object store (if using MinIO storage) |
+| `manifold-storage` | SeaweedFS S3-compatible object store (if using SeaweedFS storage) |
 
 All containers are connected over a shared Docker network. kamal-proxy sits in front of the application containers,
 terminates TLS, and routes requests by path: `/api/*` requests go to the API, and all other requests go to the client.

@@ -57,7 +57,7 @@ I’ve done that a lot of times—and even just doing that, I’ve found, is a b
 
 **Which leads me to the question about smaller presses--for the presses that don’t have EPUB production built into their system, how much do you anticipate in terms of teaching?**
 
-It’ll be a lot of prep work and dialoguing. Talking to all the pilot programs before I go out for my in-person training to see what their workflows look like and getting some sample files. I’m looking to craft a roadmap and a process that a publisher can easily use and replicate as a sort of touchstone that they can later spring from into more complex or creative uses of the platform. And hopefully during the training, we can work through the bulk of the big questions in person. After that I expect there will still be a host of fringe questions that we can take care of in a venue like this [a web call] or in our&nbsp;[Slack channel](https://manifold-slackin.herokuapp.com/). It’s really cool to have the #Pilot channel on Slack so that people who have similar sorts of approaches or levels of experience are able to interact directly with one another and get good practical feedback.
+It’ll be a lot of prep work and dialoguing. Talking to all the pilot programs before I go out for my in-person training to see what their workflows look like and getting some sample files. I’m looking to craft a roadmap and a process that a publisher can easily use and replicate as a sort of touchstone that they can later spring from into more complex or creative uses of the platform. And hopefully during the training, we can work through the bulk of the big questions in person. After that I expect there will still be a host of fringe questions that we can take care of in a venue like this [a web call] or in our&nbsp;[Slack channel](https://join.slack.com/t/manifold-community/shared_invite/zt-3u7lmti9w-AsT2O4XCoraN~3xvZ7PG7Q). It’s really cool to have the #Pilot channel on Slack so that people who have similar sorts of approaches or levels of experience are able to interact directly with one another and get good practical feedback.
 
 **Very cool! We advocate conversation and community.**
 
@@ -118,5 +118,5 @@ I’m sure I’m going to have one or two of those. I know I’ve got a physics 
 
 \*\*\*
 
-Thanks for reading! Feel free to reach out on the community [_Slack channel_](https://manifold-slackin.herokuapp.com/) or tweet us at [_@manifoldscholar_](https://twitter.com/ManifoldScholar).
+Thanks for reading! Feel free to reach out on the community [_Slack channel_](https://join.slack.com/t/manifold-community/shared_invite/zt-3u7lmti9w-AsT2O4XCoraN~3xvZ7PG7Q) or tweet us at [_@manifoldscholar_](https://twitter.com/ManifoldScholar).
 

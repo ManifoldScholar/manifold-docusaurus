@@ -20,4 +20,4 @@ For a more detailed rundown of this feature, and the other enhancements in versi
 <iframe src="https://player.vimeo.com/video/423616600" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 <p><a href="https://vimeo.com/423616600">New Features in Manifold v5</a> from <a href="https://vimeo.com/user25947133">Zach Davis</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
-We look forward to hearing about how you will use Access Controls on your Manifold installation, and answering your questions on [Slack](https://manifold-slackin.herokuapp.com/) and [Github](https://github.com/ManifoldScholar/manifold).
+We look forward to hearing about how you will use Access Controls on your Manifold installation, and answering your questions on [Slack](https://join.slack.com/t/manifold-community/shared_invite/zt-3u7lmti9w-AsT2O4XCoraN~3xvZ7PG7Q) and [Github](https://github.com/ManifoldScholar/manifold).

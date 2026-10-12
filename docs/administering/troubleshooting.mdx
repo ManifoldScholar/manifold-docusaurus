@@ -44,7 +44,8 @@ kamal accessory logs db -d production
 If you're encountering an application error, start by figuring out if it's a client error or an API error. If you're
 seeing a 500 error from the API, it could indicate a misconfiguration or a bug. Check the API logs to better understand
 what's causing the error. Errors in the client application will show up in the client logs, or in your browser's
-developer tools console. If you see errors in these places, please report them to us on Slack. If there's a bug in
+developer tools console. If you see errors in these places, please report them to us [on Slack]
+(https://join.slack.com/t/manifold-community/shared_invite/zt-3u7lmti9w-AsT2O4XCoraN~3xvZ7PG7Q). If there's a bug in
 Manifold, we want to know about it!
 
 ### Checking Container Status
@@ -107,7 +108,7 @@ kamal accessory logs db -d production
 For an external database, verify the host, port, credentials, and that the managed cluster allows connections from your
 server's IP.
 
-**Assets return 404** — with local storage, ensure the uploads volume is mounted. With MinIO, check that the storage
+**Assets return 404** — with local storage, ensure the uploads volume is mounted. With SeaweedFS, check that the storage
 accessory is running. With external S3, verify your `S3_ENDPOINT`, `UPLOAD_BUCKET`, and `S3_REGION` values in your
 destination configuration file.
 
