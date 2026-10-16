@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Manifold Docs" href="/manifold-docusaurus/opensearch.xml"><link rel="stylesheet" href="/manifold-docusaurus/assets/css/styles.cbdeb3c3.css">
-<script src="/manifold-docusaurus/assets/js/runtime~main.54b2b03c.js" defer="defer"></script>
+<script src="/manifold-docusaurus/assets/js/runtime~main.6fe4955b.js" defer="defer"></script>
 <script src="/manifold-docusaurus/assets/js/main.4ab38a64.js" defer="defer"></script>
 </head>
 <body>
@@ -34,7 +34,8 @@ directly.</p>
 <p>If you&#x27;re encountering an application error, start by figuring out if it&#x27;s a client error or an API error. If you&#x27;re
 seeing a 500 error from the API, it could indicate a misconfiguration or a bug. Check the API logs to better understand
 what&#x27;s causing the error. Errors in the client application will show up in the client logs, or in your browser&#x27;s
-developer tools console. If you see errors in these places, please report them to us on Slack. If there&#x27;s a bug in
+developer tools console. If you see errors in these places, please report them to us [on Slack]
+(<a href="https://join.slack.com/t/manifold-community/shared_invite/zt-3u7lmti9w-AsT2O4XCoraN~3xvZ7PG7Q" target="_blank" rel="noopener noreferrer" class="">https://join.slack.com/t/manifold-community/shared_invite/zt-3u7lmti9w-AsT2O4XCoraN~3xvZ7PG7Q</a>). If there&#x27;s a bug in
 Manifold, we want to know about it!</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="checking-container-status">Checking Container Status<a href="#checking-container-status" class="hash-link" aria-label="Direct link to Checking Container Status" title="Direct link to Checking Container Status" translate="no">​</a></h3>
 <p>If a service isn&#x27;t responding, verify that all containers are running:</p>
@@ -62,7 +63,7 @@ are open. Let&#x27;s Encrypt needs to reach the server to issue certificates.</p
 <div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#bfc7d5"><span class="token plain">kamal accessory details db -d production</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">kamal accessory logs db -d production</span><br></div></code></pre></div></div>
 <p>For an external database, verify the host, port, credentials, and that the managed cluster allows connections from your
 server&#x27;s IP.</p>
-<p><strong>Assets return 404</strong> — with local storage, ensure the uploads volume is mounted. With MinIO, check that the storage
+<p><strong>Assets return 404</strong> — with local storage, ensure the uploads volume is mounted. With SeaweedFS, check that the storage
 accessory is running. With external S3, verify your <code>S3_ENDPOINT</code>, <code>UPLOAD_BUCKET</code>, and <code>S3_REGION</code> values in your
 destination configuration file.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="memory-consumption">Memory Consumption<a href="#memory-consumption" class="hash-link" aria-label="Direct link to Memory Consumption" title="Direct link to Memory Consumption" translate="no">​</a></h2>

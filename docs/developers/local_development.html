@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Manifold Docs" href="/manifold-docusaurus/opensearch.xml"><link rel="stylesheet" href="/manifold-docusaurus/assets/css/styles.cbdeb3c3.css">
-<script src="/manifold-docusaurus/assets/js/runtime~main.54b2b03c.js" defer="defer"></script>
+<script src="/manifold-docusaurus/assets/js/runtime~main.6fe4955b.js" defer="defer"></script>
 <script src="/manifold-docusaurus/assets/js/main.4ab38a64.js" defer="defer"></script>
 </head>
 <body>
@@ -21,7 +21,7 @@
 <a class="" href="/manifold-docusaurus/docs/developers/local_development_legacy">legacy local development instructions</a>.</p></div></div>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="overview">Overview<a href="#overview" class="hash-link" aria-label="Direct link to Overview" title="Direct link to Overview" translate="no">​</a></h2>
 <p>Manifold uses Docker Compose for local development. All services — the API, client, background worker, PostgreSQL, and
-MinIO (S3-compatible storage) — run in containers, so the only prerequisite on your machine is Docker.</p>
+SeaweedFS (S3-compatible storage) — run in containers, so the only prerequisite on your machine is Docker.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getting-started">Getting Started<a href="#getting-started" class="hash-link" aria-label="Direct link to Getting Started" title="Direct link to Getting Started" translate="no">​</a></h2>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-clone-the-repository">1. Clone the Repository<a href="#1-clone-the-repository" class="hash-link" aria-label="Direct link to 1. Clone the Repository" title="Direct link to 1. Clone the Repository" translate="no">​</a></h3>
 <div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#bfc7d5"><span class="token plain">git clone https://github.com/ManifoldScholar/manifold.git</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">cd manifold</span><br></div></code></pre></div></div>
@@ -30,7 +30,7 @@ MinIO (S3-compatible storage) — run in containers, so the only prerequisite on
 <p>The first time you run this, Docker will build the API and client images, install dependencies, create the database,
 run migrations, and seed initial data. This takes a few minutes. Subsequent starts are much faster.</p>
 <p>Once everything is running, the following services are available:</p>
-<table><thead><tr><th>Service</th><th>URL</th></tr></thead><tbody><tr><td>Client (frontend)</td><td><a href="http://localhost:13100" target="_blank" rel="noopener noreferrer" class="">http://localhost:13100</a></td></tr><tr><td>API</td><td><a href="http://localhost:13110" target="_blank" rel="noopener noreferrer" class="">http://localhost:13110</a></td></tr><tr><td>GoodJob dashboard</td><td><a href="http://localhost:13110/api/good_job" target="_blank" rel="noopener noreferrer" class="">http://localhost:13110/api/good_job</a></td></tr><tr><td>MinIO console</td><td><a href="http://localhost:13116" target="_blank" rel="noopener noreferrer" class="">http://localhost:13116</a></td></tr></tbody></table>
+<table><thead><tr><th>Service</th><th>URL</th></tr></thead><tbody><tr><td>Client (frontend)</td><td><a href="http://localhost:13100" target="_blank" rel="noopener noreferrer" class="">http://localhost:13100</a></td></tr><tr><td>API</td><td><a href="http://localhost:13110" target="_blank" rel="noopener noreferrer" class="">http://localhost:13110</a></td></tr><tr><td>GoodJob dashboard</td><td><a href="http://localhost:13110/api/good_job" target="_blank" rel="noopener noreferrer" class="">http://localhost:13110/api/good_job</a></td></tr></tbody></table>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-create-an-admin-user">3. Create an Admin User<a href="#3-create-an-admin-user" class="hash-link" aria-label="Direct link to 3. Create an Admin User" title="Direct link to 3. Create an Admin User" translate="no">​</a></h3>
 <div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#bfc7d5"><span class="token plain">./api/bin/run bin/rake &quot;manifold:user:create:admin[email@example.com,First,Last]&quot;</span><br></div></code></pre></div></div>
 <p>You&#x27;ll be prompted for a password. Once created, visit <a href="http://localhost:13100" target="_blank" rel="noopener noreferrer" class="">http://localhost:13100</a> and log in.</p>

@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Manifold Docs" href="/manifold-docusaurus/opensearch.xml"><link rel="stylesheet" href="/manifold-docusaurus/assets/css/styles.cbdeb3c3.css">
-<script src="/manifold-docusaurus/assets/js/runtime~main.54b2b03c.js" defer="defer"></script>
+<script src="/manifold-docusaurus/assets/js/runtime~main.6fe4955b.js" defer="defer"></script>
 <script src="/manifold-docusaurus/assets/js/main.4ab38a64.js" defer="defer"></script>
 </head>
 <body>
@@ -21,7 +21,7 @@
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="service-overview">Service Overview<a href="#service-overview" class="hash-link" aria-label="Direct link to Service Overview" title="Direct link to Service Overview" translate="no">​</a></h2>
 <p>Manifold v9 runs as a set of Docker containers orchestrated by <a href="https://kamal-deploy.org/" target="_blank" rel="noopener noreferrer" class="">Kamal 2</a>. Each destination
 (e.g. <code>production</code>) runs the following containers:</p>
-<table><thead><tr><th>Container</th><th>Role</th></tr></thead><tbody><tr><td><code>manifold-web</code></td><td>Rails API server</td></tr><tr><td><code>manifold-worker</code></td><td>Background job processor (GoodJob)</td></tr><tr><td><code>manifold-client</code></td><td>Client / SSR frontend</td></tr><tr><td><code>manifold-db</code></td><td>PostgreSQL database (if using a local database)</td></tr><tr><td><code>manifold-storage</code></td><td>MinIO S3-compatible object store (if using MinIO storage)</td></tr></tbody></table>
+<table><thead><tr><th>Container</th><th>Role</th></tr></thead><tbody><tr><td><code>manifold-web</code></td><td>Rails API server</td></tr><tr><td><code>manifold-worker</code></td><td>Background job processor (GoodJob)</td></tr><tr><td><code>manifold-client</code></td><td>Client / SSR frontend</td></tr><tr><td><code>manifold-db</code></td><td>PostgreSQL database (if using a local database)</td></tr><tr><td><code>manifold-storage</code></td><td>SeaweedFS S3-compatible object store (if using SeaweedFS storage)</td></tr></tbody></table>
 <p>All containers are connected over a shared Docker network. kamal-proxy sits in front of the application containers,
 terminates TLS, and routes requests by path: <code>/api/*</code> requests go to the API, and all other requests go to the client.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="checking-status">Checking Status<a href="#checking-status" class="hash-link" aria-label="Direct link to Checking Status" title="Direct link to Checking Status" translate="no">​</a></h2>
