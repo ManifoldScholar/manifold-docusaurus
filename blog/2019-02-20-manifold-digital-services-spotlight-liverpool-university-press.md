@@ -58,5 +58,5 @@ Beyond his meetings at the press, Terence also had the opportunity to be part of
   <figcaption></figcaption>
 </figure>
 
-Thanks for reading! Feel free to reach out on the community [Slack channel](https://manifold-slackin.herokuapp.com/), tweet us at [@manifoldscholar](https://twitter.com/ManifoldScholar), and follow along with development on [Github](https://github.com/ManifoldScholar/manifold).
+Thanks for reading! Feel free to reach out on the community [Slack channel](https://join.slack.com/t/manifold-community/shared_invite/zt-3u7lmti9w-AsT2O4XCoraN~3xvZ7PG7Q), tweet us at [@manifoldscholar](https://twitter.com/ManifoldScholar), and follow along with development on [Github](https://github.com/ManifoldScholar/manifold).
 

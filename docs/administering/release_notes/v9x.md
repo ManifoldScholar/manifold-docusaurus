@@ -142,7 +142,7 @@ Let's Encrypt certificates automatically.
 One thing worth noting is that v9 gives you more flexibility in how you host Manifold's supporting services. The
 database can run as a local PostgreSQL container managed by Kamal, or you can connect to an external managed database
 service like AWS RDS or DigitalOcean Managed PostgreSQL. Similarly, uploaded files can live on the server's local
-filesystem, in a self-hosted MinIO container, or in an external S3-compatible service. The configuration wizard handles
+filesystem, in a self-hosted SeaweedFS container, or in an external S3-compatible service. The configuration wizard handles
 all of these options, so you can choose the setup that best fits your budget and infrastructure.
 
 For detailed, step-by-step instructions, please see the
@@ -154,7 +154,7 @@ This is a new deployment approach for Manifold, and we expect there may be bumps
 through the migration. Our team is actively monitoring
 [issues on the deploy template repository](https://github.com/ManifoldScholar/manifold-deploy-example/issues) as well
 as messages in the `#installation` channel on the
-[Manifold community Slack](https://manifold-slackin.herokuapp.com/), so please don't hesitate to reach out if you run
+[Manifold community Slack](https://join.slack.com/t/manifold-community/shared_invite/zt-3u7lmti9w-AsT2O4XCoraN~3xvZ7PG7Q), so please don't hesitate to reach out if you run
 into problems. We're also available to assist groups directly with the upgrade process, for a fee, provided we can be
 granted SSH access to both the existing v8 host and the target v9 server. If you're interested in that option, reach out
 to us on Slack and we'll work out the details.

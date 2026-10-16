@@ -12,7 +12,7 @@ These instructions are for Manifold v9 and later. If you are working with Manifo
 ## Overview
 
 Manifold uses Docker Compose for local development. All services — the API, client, background worker, PostgreSQL, and
-MinIO (S3-compatible storage) — run in containers, so the only prerequisite on your machine is Docker.
+SeaweedFS (S3-compatible storage) — run in containers, so the only prerequisite on your machine is Docker.
 
 ## Getting Started
 
@@ -39,7 +39,6 @@ Once everything is running, the following services are available:
 | Client (frontend) | http://localhost:13100 |
 | API | http://localhost:13110 |
 | GoodJob dashboard | http://localhost:13110/api/good_job |
-| MinIO console | http://localhost:13116 |
 
 ### 3. Create an Admin User
 

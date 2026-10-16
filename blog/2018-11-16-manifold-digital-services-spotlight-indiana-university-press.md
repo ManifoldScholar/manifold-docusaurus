@@ -73,5 +73,5 @@ In addition to a robust journals program, Indiana University Press publishes ove
 - Doughnuts Eaten: 0! (But there's a rumor an entire bucket of fries was consumed . . .)
 - Times Terence Got Lost in the Hotel: 1
 
-Thanks for reading! Feel free to reach out on the community [Slack channel](https://manifold-slackin.herokuapp.com/), tweet us at [@manifoldscholar](https://twitter.com/ManifoldScholar), and follow along on [Github](https://github.com/ManifoldScholar/manifold) for more details and to request features. &nbsp;
+Thanks for reading! Feel free to reach out on the community [Slack channel](https://join.slack.com/t/manifold-community/shared_invite/zt-3u7lmti9w-AsT2O4XCoraN~3xvZ7PG7Q), tweet us at [@manifoldscholar](https://twitter.com/ManifoldScholar), and follow along on [Github](https://github.com/ManifoldScholar/manifold) for more details and to request features. &nbsp;
 

@@ -71,4 +71,4 @@ Travels with Terence Recap: Miles Travelled: 3,044 (~4899 km)
 
 We're looking forward to seeing where Terence’s travels take him next!
 
-Thanks for reading! Feel free to reach out on the community [Slack channel](https://manifold-slackin.herokuapp.com/) or tweet us at [@manifoldscholar](https://twitter.com/ManifoldScholar) and follow along on [Github](https://github.com/ManifoldScholar/manifold/projects/7) for more details and to request features.
+Thanks for reading! Feel free to reach out on the community [Slack channel](https://join.slack.com/t/manifold-community/shared_invite/zt-3u7lmti9w-AsT2O4XCoraN~3xvZ7PG7Q) or tweet us at [@manifoldscholar](https://twitter.com/ManifoldScholar) and follow along on [Github](https://github.com/ManifoldScholar/manifold/projects/7) for more details and to request features.

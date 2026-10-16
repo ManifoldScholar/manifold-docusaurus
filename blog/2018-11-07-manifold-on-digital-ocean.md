@@ -13,4 +13,4 @@ We are always working to make it easier to use Manifold at all levels. To this e
 
 Check out our new post, "[How To Install and Set Up Manifold Scholar](https://www.digitalocean.com/community/tutorials/how-to-install-and-set-up-manifold-scholar)," on their website! Follow the streamlined tutorial to get Manifold up and running on your own Digital Ocean Droplet.
 
-As ever, we invite your questions, your stories, your involvement. Follow along on [Github](https://github.com/ManifoldScholar/manifold/projects/7) for more details and to request features. Feel free to reach out on the community [Slack channel](https://manifold-slackin.herokuapp.com/) or tweet us at [@manifoldscholar.](https://twitter.com/ManifoldScholar)
+As ever, we invite your questions, your stories, your involvement. Follow along on [Github](https://github.com/ManifoldScholar/manifold/projects/7) for more details and to request features. Feel free to reach out on the community [Slack channel](https://join.slack.com/t/manifold-community/shared_invite/zt-3u7lmti9w-AsT2O4XCoraN~3xvZ7PG7Q) or tweet us at [@manifoldscholar.](https://twitter.com/ManifoldScholar)

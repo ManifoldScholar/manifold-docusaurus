@@ -58,4 +58,4 @@ The University of Cincinnati Press advocates public scholarship and “endeavors
 - Ice Cream Outings: 1
 - Times Markdown came up in conversation: Impossible to count
 
-Thanks for reading! Feel free to reach out on the community [Slack channel](https://manifold-slackin.herokuapp.com/), tweet us at [@manifoldscholar](https://twitter.com/ManifoldScholar), and follow along on [Github](https://github.com/ManifoldScholar/manifold) for more details and to request features.
+Thanks for reading! Feel free to reach out on the community [Slack channel](https://join.slack.com/t/manifold-community/shared_invite/zt-3u7lmti9w-AsT2O4XCoraN~3xvZ7PG7Q), tweet us at [@manifoldscholar](https://twitter.com/ManifoldScholar), and follow along on [Github](https://github.com/ManifoldScholar/manifold) for more details and to request features.

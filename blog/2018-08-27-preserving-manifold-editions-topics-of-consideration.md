@@ -47,7 +47,7 @@ As we navigate these questions, we're also going to need to appreciate nuanced l
 
  For publishers who have never before extended themselves into this arena, it can seem overwhelming at first. Our experience thus far though has made it clear to us that the preservation of digital scholarship is equally as important as publishing it. We are committed to crafting the means for you to do so confidently and in ways that leverage your existing processes and relationships.
  
- If you have input on this matter you'd like us to consider or are actively working on issues of digital preservation and have a perspective you'd like to share, we invite you to do so in the comments below or on our [Slack channel](https://manifold-slackin.herokuapp.com/).
+ If you have input on this matter you'd like us to consider or are actively working on issues of digital preservation and have a perspective you'd like to share, we invite you to do so in the comments below or on our [Slack channel](https://join.slack.com/t/manifold-community/shared_invite/zt-3u7lmti9w-AsT2O4XCoraN~3xvZ7PG7Q).
 
  —Terence Smyre, Manifold Digital Projects Editor
 

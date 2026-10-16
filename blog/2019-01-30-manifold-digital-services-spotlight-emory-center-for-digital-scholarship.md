@@ -43,4 +43,4 @@ And that’s a thread which persisted through training. As we discussed his trip
 - **Miles traveled**: 924
 - **Meal of note**: Authentic Southern meatloaf wrapped in bacon followed by some kind of magic pistachio dessert. Fantastic!
 
-Thanks for reading! Feel free to reach out on the community [Slack channel](https://manifold-slackin.herokuapp.com/), tweet us at [@manifoldscholar](https://twitter.com/ManifoldScholar), and follow along on [Github](https://github.com/ManifoldScholar/manifold) for more details and to request features.
+Thanks for reading! Feel free to reach out on the community [Slack channel](https://join.slack.com/t/manifold-community/shared_invite/zt-3u7lmti9w-AsT2O4XCoraN~3xvZ7PG7Q), tweet us at [@manifoldscholar](https://twitter.com/ManifoldScholar), and follow along on [Github](https://github.com/ManifoldScholar/manifold) for more details and to request features.

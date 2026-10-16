@@ -51,5 +51,5 @@ Follow the University of Washington Press on [Facebook](https://www.facebook.com
 
 - **Miles Travelled:** 2,780
 - **New offshoot series:** Trekking with Krystyna
-- **Dining Notes:** More fish and chips!!! &nbsp; Thanks for reading! Feel free to reach out on the community [Slack channel](https://manifold-slackin.herokuapp.com/), tweet us at [@manifoldscholar](https://twitter.com/ManifoldScholar), and follow along with development on [Github](https://github.com/ManifoldScholar/manifold).
+- **Dining Notes:** More fish and chips!!! &nbsp; Thanks for reading! Feel free to reach out on the community [Slack channel](https://join.slack.com/t/manifold-community/shared_invite/zt-3u7lmti9w-AsT2O4XCoraN~3xvZ7PG7Q), tweet us at [@manifoldscholar](https://twitter.com/ManifoldScholar), and follow along with development on [Github](https://github.com/ManifoldScholar/manifold).
 

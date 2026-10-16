@@ -23,7 +23,7 @@ three storage areas:
 
 When you run `bin/deploy configure` in the
 [deploy template repository](https://github.com/ManifoldScholar/manifold-deploy-example), the wizard prompts you to
-choose a storage backend. There are three options: local filesystem, MinIO, or an external S3-compatible service.
+choose a storage backend. There are three options: local filesystem, SeaweedFS, or an external S3-compatible service.
 
 ## Local Filesystem
 
@@ -34,23 +34,23 @@ containers or services are required.
 Local storage is a good choice for smaller instances or when you want to keep the deployment as simple as possible. The
 tradeoff is that your files live on a single server, so you'll want to make sure you have a backup strategy in place.
 
-## MinIO (Self-Hosted S3-Compatible Storage)
+## SeaweedFS (Self-Hosted S3-Compatible Storage)
 
-[MinIO](https://min.io/) is an S3-compatible object storage server that runs as an additional Docker container alongside
+[SeaweedFS](https://seaweedfs.com/) is an S3-compatible object storage server that runs as an additional Docker container alongside
 your Manifold services. This option gives you the durability and flexibility of object storage without depending on an
 external cloud provider.
 
-When you select MinIO during configuration, the wizard generates a MinIO accessory container and configures Manifold to
-store files in it. kamal-proxy routes asset requests to the MinIO container, so uploaded files are served without going
+When you select SeaweedFS during configuration, the wizard generates a SeaweedFS accessory container and configures Manifold to
+store files in it. kamal-proxy routes asset requests to the SeaweedFS container, so uploaded files are served without going
 through the API. The relevant environment variables are set automatically:
 
 | Variable | Purpose |
 |---|---|
 | `MANIFOLD_SETTINGS_STORAGE_PRIMARY` | Set to `s3` |
-| `S3_ENDPOINT` | Internal MinIO URL on the Docker network |
-| `S3_FORCE_PATH_STYLE` | Set to `true` (required for MinIO) |
+| `S3_ENDPOINT` | Internal SeaweedFS URL on the Docker network |
+| `S3_FORCE_PATH_STYLE` | Set to `true` (required for SeaweedFS) |
 | `S3_REGION` | Defaults to `us-east-1` |
-| `UPLOAD_BUCKET` | The MinIO bucket name |
+| `UPLOAD_BUCKET` | The SeaweedFS bucket name |
 | `S3_ACCESS_KEY_ID` | Derived from `MINIO_ROOT_USER` |
 | `S3_SECRET_ACCESS_KEY` | Derived from `MINIO_ROOT_PASSWORD` |
 
