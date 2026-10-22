@@ -59,8 +59,7 @@ Docker Compose starts the following containers:
 | `web` | Rails API server (Puma) |
 | `worker` | Background job processor (GoodJob) |
 | `client` | Node.js client with Webpack dev server and SSR |
-| `minio` | S3-compatible object storage |
-| `minio-client` | Initializes the MinIO storage bucket, then exits |
+| `seaweedfs` | S3-compatible object storage |
 | `spec` | Idle container for running the test suite |
 
 ## Common Tasks
