@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Manifold Docs" href="/manifold-docusaurus/opensearch.xml"><link rel="stylesheet" href="/manifold-docusaurus/assets/css/styles.cbdeb3c3.css">
-<script src="/manifold-docusaurus/assets/js/runtime~main.7b912e77.js" defer="defer"></script>
+<script src="/manifold-docusaurus/assets/js/runtime~main.bba573c2.js" defer="defer"></script>
 <script src="/manifold-docusaurus/assets/js/main.fb90c085.js" defer="defer"></script>
 </head>
 <body>
@@ -36,7 +36,7 @@ run migrations, and seed initial data. This takes a few minutes. Subsequent star
 <p>You&#x27;ll be prompted for a password. Once created, visit <a href="http://localhost:13100" target="_blank" rel="noopener noreferrer" class="">http://localhost:13100</a> and log in.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="services">Services<a href="#services" class="hash-link" aria-label="Direct link to Services" title="Direct link to Services" translate="no">​</a></h2>
 <p>Docker Compose starts the following containers:</p>
-<table><thead><tr><th>Container</th><th>Role</th></tr></thead><tbody><tr><td><code>postgres</code></td><td>PostgreSQL database</td></tr><tr><td><code>migrations</code></td><td>Runs database setup on startup, then exits</td></tr><tr><td><code>web</code></td><td>Rails API server (Puma)</td></tr><tr><td><code>worker</code></td><td>Background job processor (GoodJob)</td></tr><tr><td><code>client</code></td><td>Node.js client with Webpack dev server and SSR</td></tr><tr><td><code>minio</code></td><td>S3-compatible object storage</td></tr><tr><td><code>minio-client</code></td><td>Initializes the MinIO storage bucket, then exits</td></tr><tr><td><code>spec</code></td><td>Idle container for running the test suite</td></tr></tbody></table>
+<table><thead><tr><th>Container</th><th>Role</th></tr></thead><tbody><tr><td><code>postgres</code></td><td>PostgreSQL database</td></tr><tr><td><code>migrations</code></td><td>Runs database setup on startup, then exits</td></tr><tr><td><code>web</code></td><td>Rails API server (Puma)</td></tr><tr><td><code>worker</code></td><td>Background job processor (GoodJob)</td></tr><tr><td><code>client</code></td><td>Node.js client with Webpack dev server and SSR</td></tr><tr><td><code>seaweedfs</code></td><td>S3-compatible object storage</td></tr><tr><td><code>spec</code></td><td>Idle container for running the test suite</td></tr></tbody></table>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="common-tasks">Common Tasks<a href="#common-tasks" class="hash-link" aria-label="Direct link to Common Tasks" title="Direct link to Common Tasks" translate="no">​</a></h2>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="accessing-a-rails-console">Accessing a Rails Console<a href="#accessing-a-rails-console" class="hash-link" aria-label="Direct link to Accessing a Rails Console" title="Direct link to Accessing a Rails Console" translate="no">​</a></h3>
 <div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#bfc7d5"><span class="token plain">./api/bin/run bundle exec rails c</span><br></div></code></pre></div></div>
