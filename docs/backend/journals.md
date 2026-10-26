@@ -150,6 +150,23 @@ New Journals are set to Draft Mode by default.
 
 It is possible to have a Journal in Draft mode and an Issue nested within it that is publicly viewable. Likewise a Journal that is no longer in Draft can contain an issue that is in Draft mode. See the documentation around [how Draft status affects Journal issues](../backend/journals.md#issues) for more.
 
+#### Exclude from OAI-PMH
+
+When this toggle is activated, this Journal *and all of its corresponding issues* will not be included in any of the instance’s OAI-PMH sets. This toggle is an opt-out proposition. By default all the metadata for a Journal and its issues is included in an instance’s OAI-PMH feed. It is possible to exclude individual Journal issues from the feed at the issue level. See the [Journal Issue settings](../backend/projects.md#exclude-from-oai-pmh) for more.
+
+See the [OAI-PMH Feed section](../administering/oai-pmh.md) for more information about sets and what metadata is distributed with them.
+
+#### Exclude from the Manifold Directory
+
+This toggle, while similar to the one above, is more targeted. When activated, this toggle prevents the Journal and all of its corresponding issues from being included in Manifold’s Directory feed, which is aggregated alongside content from other Manifold instances at [https://manifoldapp.org/directory](https://manifoldapp.org/directory).
+
+If you engage the toggle above (Exclude from OAI-PMH), there is no reason to also engage this one. The former setting includes the Directory feed in its scope. However, if you want to prevent a specific Journal (and all of its issues) from appearing in the directory, while still having it in the other OAI-PMH feed sets, this toggle is how you achieve that.
+
+This setting is an opt-out proposition. By default, a Journal’s metadata is included in the Directory set.
+
+Learn more about the [Directory set](../administering/oai-pmh.md#directory) on our OAI-PMH feed page.
+
+
 #### Show on Home Page
 
 This toggle promotes Journals that are no longer in Draft mode (see above) to the instance’s home page. Journals appear on the home page beneath all of the Project Collection listings.

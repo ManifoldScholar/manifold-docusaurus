@@ -47,3 +47,17 @@ Manifold ships with its own [built-in analytics reporting tool](../../backend/an
 To enable this functionality, you will first need to complete the Google Services Integration described above. Once that is complete, [set up a Universal Authorization property](https://support.google.com/analytics/answer/10269537). The Tracking ID that results from that process should be saved to the **Google Analytics Tracking ID** field in Manifold, complete with the the `UA-` prefix.
 
 These settings can also be [managed from environment variables](/docs/administering/configuring/managing_settings#from-the-environment).
+
+## OAI-PMH
+
+The first two fields in this section—**Repository Name** and **Admin Email**—are used by feed harvesters and other discovery systems to understand the identity of your instance’s OAI-PMH feed. The values saved in these spaces will be included in the metadata living in the `identify` endpoint of a Manifold OAI-PMH feed:
+
+```html
+https://{domain}/api/oai?verb=Identify
+```
+
+It is important that you adjust these to values to represent your instance specifically.
+
+The last field in this section, the **Enable Directory Feed** toggle, has implications for your entire instance. It’s default position is in an active state. In this active state, Project, Journals, and Journal issues from the instance are made available for aggregation in the [Manifold directory](../oai-pmh.md#directory). It is important to note that individual Projects, Journals, and Journal issues can be opted out of the Directory, as described in the [Excluding Content section](../oai-pmh.md#excluding-content). When this setting is toggled off, no content from the instance will be made available to the Manifold Directory. Localized settings do not override this global setting.
+
+See the [OAI-PMH section](../oai-pmh.md) for more about the structure of the feed and the metadata that is include in it.

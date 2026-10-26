@@ -52,6 +52,7 @@ const sidebars: SidebarsConfig = {
             'administering/configuring/export_targets',
           ]
         },
+          'administering/oai-pmh',
         {
           'Reference': [
             'administering/reference/environment_variables',

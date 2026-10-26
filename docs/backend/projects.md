@@ -203,6 +203,22 @@ When a Project is in Draft Mode, users who have permissions to view the Project 
 
 Determining when drafts are made public falls to the discretion of publishers.
 
+#### Exclude from OAI-PMH
+
+When this toggle is activated, this Project (or Journal Issue) and its associated metadata will not be included in any of the instance’s OAI-PMH sets. This toggle is an opt-out proposition. By default all Project metadata is included in an instance’s OAI-PMH feed.
+
+See the [OAI-PMH Feed section](../administering/oai-pmh.md) for more information about sets and what metadata is distributed with them.
+
+#### Exclude from the Manifold Directory
+
+This toggle, while similar to the one above, is more targeted. When activated, this toggle prevents the Project and associated metadata from being included in Manifold’s Directory feed, which is aggregated alongside content from other Manifold instances at [https://manifoldapp.org/directory](https://manifoldapp.org/directory).
+
+If you engage the toggle above (Exclude from OAI-PMH), there is no reason to also engage this one. The former setting includes the Directory feed in its scope. However, if you want to prevent a specific Project (or Journal Issue) from appearing in the directory, while still having it in the other OAI-PMH feed sets, this toggle is how you achieve that.
+
+This setting is an opt-out proposition. By default, a Project’s metadata is included in the Directory set.
+
+Learn more about the [Directory set](../administering/oai-pmh.md#directory) on our OAI-PMH feed page.
+
 #### Featured
 
 Featured Projects are included in the [Following](../using/manifold_library.md#following) view as a means to showcase new Projects to readers who may not otherwise see them.  Only four Projects display in this section at a time. If more than four Projects are toggled to be featured, only the four most recent will show. By default, new Projects are *not* set to be featured.

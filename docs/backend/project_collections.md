@@ -94,6 +94,29 @@ These two fields provide an opportunity to associate descriptive copy with the C
 
 Copy associated with the **Description** or **Short Description** renders below the Collection title. Both of these fields accept Markdown syntax.
 
+### Collection Icon
+
+Manifold includes seven system icons you can choose from to associate with the Collection’s title in library views: a stack of books laying flat, a lamp, a “New” badge, three books standing with spines out, a globe, a pointing finger, and a mug. Collection icons appear beside the Collection’s title on the Manifold homepage and on the Collection’s detail view. In the All Project Collections view, icons appear as part of the thumbnail associated with the Collection when a Hero Image has not been supplied.
+
+The Collection Icon is optional and can be selected (or deselected) using your mouse or keyboard.
+
+The Collection Icon is overridden by the Custom Icon when present.
+
+### Custom Icon
+
+Functionally the same as the Collection Icon, a Custom Icon gives you the option to upload your own icon image file instead of using a system one.
+
+Icon files can be dropped onto the **Custom Icon** field or selected using your device’s file system by clicking the **Upload a File** link.
+
+<Spec
+    title="Custom Icon Specs"
+    items={[
+        { key: "Width", value: "60 px" },
+        { key: "Height", value: "60 px" },
+        { key: "Format", value: defaultImageFormats },
+    ]}
+/>
+
 ### Hero Image and Layout
 
 The Collection Hero is an image that provides a visual identity to Collections in library views. Image files can be dropped onto the **Hero Image** field or selected using your device’s file system by clicking the **Upload a File** link.
@@ -127,28 +150,21 @@ This toggle promotes Collections that are visible (see above) to the instance’
 
 There is no artificial limit to the number of Collections that can appear on the homepage, but the more Collections that appear, the slower the page will be to load.
 
-### Collection Icon
+### Homepage Visibility Start and End
 
-Manifold includes seven system icons you can choose from to associate with the Collection’s title in library views: a stack of books laying flat, a lamp, a “New” badge, three books standing with spines out, a globe, a pointing finger, and a mug. Collection icons appear beside the Collection’s title on the Manifold homepage and on the Collection’s detail view. In the All Project Collections view, icons appear as part of the thumbnail associated with the Collection when a Hero Image has not been supplied.
+When the **Show on Homepage** toggle is turned on, two additional (and optional) fields will appear. These two fields are calendar selectors that allow you either input a date in the month-day-year format or select a specific date through the calendar interface. When a start and end date are supplied, the collection will only appear on the homepage during that span.
 
-The Collection Icon is optional and can be selected (or deselected) using your mouse or keyboard.
+### Projects Shown
 
-The Collection Icon is overridden by the Custom Icon when present.
+This field expects a number ranging from zero through forty. The number input here will be the number of projects shown in the collection in the homepage block. If possible, we recommend using a multiple of four to ensure an even stacking of projects in the block.
 
-### Custom Icon
+### Exclude from OAI-PMH
 
-Functionally the same as the Collection Icon, a Custom Icon gives you the option to upload your own icon image file instead of using a system one.
+When this toggle is activated, the Project Collection in question and its associated metadata will not be included as a set in the instance’s OAI-PMH feed. This toggle is an opt-out proposition. By default every Project Collection is included in an instance’s OAI-PMH feed.
 
-Icon files can be dropped onto the **Custom Icon** field or selected using your device’s file system by clicking the **Upload a File** link.
+Toggling this setting on does not affect whether individual Projects within the Collection are included in the OAI-PMH feed. Unless they are likewise opted out, Projects are included in other sets in the feed by default, regardless of their inclusion in a Project Collection. This setting only prevents a set from being included in the feed that describes the Collection and groups the metadata for the Projects that are included within it.
 
-<Spec
-    title="Custom Icon Specs"
-    items={[
-        { key: "Width", value: "60 px" },
-        { key: "Height", value: "60 px" },
-        { key: "Format", value: defaultImageFormats },
-    ]}
-/>
+See the [OAI-PMH Feed section](../administering/oai-pmh.md) for more information about sets and what metadata is distributed with them.
 
 ### Open Graph
 
