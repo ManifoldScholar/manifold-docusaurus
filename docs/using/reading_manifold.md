@@ -151,6 +151,15 @@ Selecting **Report** initiates the process by which you flag an Annotation or Co
 
 For users who saved an Annotation or Comment, there will be two additional options: **Edit** and **Delete**. The Edit option allows the Annotation or Comment author the means to adjust the text they originally saved, and the **Delete** button provides them the option to remove that content from the system. These two additional options are also available to instance administrators for every Annotation and Comment.
 
+:::info Remember to Verify Your Email Address
+
+When you first create a new Manifold account you will receive an email asking you to confirm your email address. It is possible, however, that your account may predate that confirmation requirement. Or your account may have been set up by someone other than yourself. Regardless, if you haven’t verified your email, you won’t be able to annotate or comment. Happily, Manifold will remind you of that when the annotation drawer opens, presenting you with the following message:
+
+> It looks like your account is unverified. You won’t be able to comment on annotations or make public annotations, including in public reading groups, until you verify your email. You can resend the verification instructions from your profile page.
+
+If your account is unverified, select the user settings avatar on the right side of the main menu and from there choose **Edit Profile**. At the top of that page there will be a button to resend your email verification. Once you have clicked the link in that email you will be able to annotate and comment as expected.
+:::
+
 #### Comments
 
 Commenting is a related but distinct functionality from Annotating. Unlike Annotations, Comments refer to responses to Annotations. Comments can themselves be replied to, creating a nested-Comment thread, with each level visually indented from the one prior. Comment threads can nest up to four levels. After the fourth level, responses to Comments aren’t visually distinct, but replies are always possible, regardless of how deep a conversation may go.
