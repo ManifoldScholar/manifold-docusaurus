@@ -24,13 +24,14 @@ Manifold converts metadata for Projects, Journals, Journal Issues, and Project C
 
 Projects, Journals, and Journal issues in Draft mode are never included in the feed. When live content is toggled back to Draft mode, it is likewise removed from the feed. Similarly, content that is deleted from an instance is removed from the feed and its deletion time is recorded in the OAI record.
 
-Records are grouped into sets labeled **Projects**, **Project Collections**, **Journals**, and **Directory**, each described in the following sections. You can access a list of all of an instance’s sets using this endpoint:
+Broadly, records are grouped into sets labeled **Projects**, **Project Collections**, **Issues**, **Journals**, and **Directory**. Each set with the various nuances are described in the following sections. You can access a list of all of an instance’s sets using this endpoint:
 
-```
+```html title="All OAI-PMH Sets"
 https://{domain}/api/oai?verb=ListSets
 ```
 
-You can expect to see in those results one set containing all of an instance’s Projects, an individual set for each Journal, an individual set for each Project Collection, and a set for the Manifold directory.
+You can expect to see in those results one set containing all of an instance’s Projects, a set listing each Journal, a set listing every Journal Issue (across all the Journals titles on the instance), individual sets that group Journal Issues with their parent title, a set listing each Project Collection, individual sets grouping Projects 
+with those the Project Collections they are associated, and a set for the Manifold directory.
 
 :::info What Metadata Goes into the Feed?
 For details about the specific metadata Manifold supplies to its OAI-PMH feed, see the [Metadata section below](../administering/oai-pmh.md#metadata). The [Excluding Content section](../administering/oai-pmh.md#excluding-content), also below, will likewise be of interest, as it describes how Manifold admins and editors can selectively exclude content from the feed.
@@ -40,16 +41,24 @@ For details about the specific metadata Manifold supplies to its OAI-PMH feed, s
 
 The Projects set contains every Project on an instance that hasn’t been configured to be excluded from the OAI-PMH feed and is available at this endpoint:
 
-```html
+```html title="All Projects Endpoint Structure"
 https://{domain}/api/oai?verb=ListRecords&metadataPrefix=oai_dc&set=projects
 ```
 
 ### Project Collections
 
-For each Project Collection on an instance there is a corresponding set that is available at an endpoint structured like this:
+Each instance emits a list of all its Projects Collections in one set, available at an endpoint structured like this:
 
-```html
-https://{domain}/api/oai?verb=ListRecords&metadataPrefix=oai_dc&set=projectCollection:{collectionName}
+```html title="Project Collections Endpoint Structure"
+https://{domain}/api/oai?verb=ListRecords&metadataPrefix=oai_dc&set=projectCollections
+```
+
+This set *does not include* records for the individual Projects associated with those collections. It simply emits the record of each Project Collection.
+
+However, there are individual sets the correspond to each Project Collection, *which do include* records for the Projects associated with them. These sets are available at endpoints structured in this manner:
+
+```html title="Projects Associated with Named Collection"
+https://{domain}/api/oai?verb=ListRecords&metadataPrefix=oai_dc&set=projects:{projectCollectionName}
 ```
 
 Collection names are concatenated into camel case values by Manifold, which you can confirm using the endpoint listing all the sets on an instance, noted above.
@@ -58,18 +67,35 @@ Whenever a project is added or removed from a Project Collection, it is likewise
 
 Project Collections can be selectively exempted from the feed. Unlike Projects and Journals, Project Collections *cannot* be included in the [Directory set](../administering/oai-pmh.md#directory), noted below.
 
+### Issues
+
+The Issues set aggregates the records of all the Journal Issues across all the the Journal titles on an instance that haven’t been configured to be excluded from the OAI-PMH feed. This set is available at an endpoint structured as follows:
+
+```html title="All Journal Issues Endpoint Structure"
+https://{domain}/api/oai?verb=ListRecords&metadataPrefix=oai_dc&set=issues
+```
+
+Note that this set does not group Issues according to the Journal title to which they belong, though there are sets available that do. See the [Journals section](../administering/oai-pmh.md#journals) following to learn more about them.
+
 ### Journals
 
-Like Projects Collections, each Journal on an instance has a corresponding set that is available at an endpoint structured like this:
+As it does with Projects Collections, the system returns a list of all Journals living on the instance at an endpoint formatted as follows:
 
-```html
-`https://{domain}/api/oai?verb=ListRecords&metadataPrefix=oai_dc&set=journal:{journalName}
+```html title="Journals Endpoint Structure"
+https://{domain}/api/oai?verb=ListRecords&metadataPrefix=oai_dc&set=journals
+```
+
+The Journals set *does not include* records for the individual issues associated with each title. It only returns the record for each Journal on the system.
+
+Instead, there are individual sets corresponding to each Journal, *which do include* records for the Issues associated with them. These sets are available at endpoints structured in this manner:
+
+```html title="Issues Associated with Named Journal Endpoint Structure"
+https://{domain}/api/oai?verb=ListRecords&metadataPrefix=oai_dc&set=issues:{journalName} 
 ```
 
 Journal names are concatenated into camel case values by Manifold, which you can confirm using the endpoint listing all the sets on an instance, noted above.
 
-The Journal set includes metadata about the journal and also aggregates all the metadata for each of its issues. Journals, as well as individual issues, can be exempted from the feed.
-
+Journals, as well as individual issues, can be exempted from the feed.
 
 ### Directory
 
@@ -90,7 +116,11 @@ Manifold’s OAI-PMH feed supports support the `getRecord`, `identify`, `listIde
 - `?verb=Identify` describes the repository. Admins can adjust the name and email associated with an instance, embedded in the feed metadata, that harvesters use as part of discovery. See the [OAI-PMH integration settings](../administering/configuring/integration_settings.md#oai-pmh) for more. 
 - `?verb=ListSets` lists all the available sets on an instance.
 - `?verb=ListRecords&metadataPrefix=oai_dc&set=projects` returns all Project records.
+- `?verb=ListRecords&metadataPrefix=oai_dc&set=projectCollections` returns all Project Collection records.
+- `?verb=ListRecords&metadataPrefix=oai_dc&set=projects:{projectCollectionName}` returns Project records that are part of the named Collection.
+- `?verb=ListRecords&metadataPrefix=oai_dc&set=issues` returns all Journal Issue records.
 - `?verb=ListRecords&metadataPrefix=oai_dc&set=journals` returns all Journal records.
+- `?verb=ListRecords&metadataPrefix=oai_dc&set=issues:{journalName}` returns Journal issue records that are part of the named Journal.
 - `?verb=ListRecords&metadataPrefix=oai_dc&from=2026-09-01` returns only records changed since that date.
 
 Note that the `listRecords` verb supports filtering by `from` and `until` parameters.
