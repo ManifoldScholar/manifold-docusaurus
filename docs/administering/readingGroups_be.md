@@ -115,7 +115,7 @@ This view is purely informative. No actions can occur in this space.
 
 ### Reading Group Membership
 
-The **Members** sidebar in the Reading Group detail view provides a paginated list of all Group members. Each listing includes the member’s name; their role in the group—moderator or member—the number of annotations and comments they have associated with the group; and a button, appearing as an encircled minus sign, that allows you to remove that member from the group.
+The **Members** sidebar in the Reading Group detail view provides a paginated list of all Group members. Each listing includes the member’s name; their role in the group—creator, moderator, or member—the number of annotations and comments they have associated with the group; and a button, appearing as an encircled minus sign, that allows you to remove that member from the group. Members who have archived the group will also appear in this list with a corresponding label beside their role.
 
 Administrators can select the member removal button with their mouse or by tabbing to it with their keyboard and selecting it with the space bar. When selected, the system will open a modal, asking you to confirm your choice to remove the group member.
 

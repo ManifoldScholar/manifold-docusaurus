@@ -105,6 +105,6 @@ This view provides a means to search or manually paginate through a listing of *
 
 The search bar accepts keyword searches only and no search operators. Search results display beneath in the list. Within the search bar are two buttons: **Reset** and **Options**. The **Reset** button clears the search bar and resets all of the filters. The **Options** button brings up two search filters and a sorting field to order the results.
 
-The search filters, **Select a tag** and **Select a type**, are dropdown fields that surface lists of tags or Resource types (e.g., Image, Video) that are associated with existing Resources in the Project. Only one listing from each dropdown filter can be selected at a time. These filters can be used in conjunction with a keyword search or without, thereby filtering all Project Resources by tag and/or type.
+The search filters, **Tag** and **Kind**, are dropdown fields that surface lists of tags or Resource types (e.g., Image, Video) that are associated with existing Resources in the Project. Only one listing from each dropdown filter can be selected at a time. These filters can be used in conjunction with a keyword search or without, thereby filtering all Project Resources by tag and/or type.
 
-The **Order Results** dropdown has options to sort matching results alphabetically by title or by the order in which Resources were added to the Project.
+The **Sort By** dropdown has options to sort matching results alphabetically by title or by the order in which Resources were added to the Project.

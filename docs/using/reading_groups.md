@@ -36,22 +36,33 @@ Within this view, readers without accounts or those not logged in to their accou
 
 ### Public Reading Groups
 
-The **Public Reading Groups** page provides readers with a list of groups that are openly available to view and join. The list includes: name of the group, (if you are logged in to your account) your role or a **Join** button, number of members, and group activity (number of annotations, highlights, and comments). The total number of public reading groups is noted above the list.
+The **Public Reading Groups** page provides readers with a table of groups that are openly available to view and join.
+
+Table listings are broken into four columns: **Name**, **Role**, **Members**, and **Activity**:
+
+- The **Name** column corresponds to the name given to the Group by its Creator.
+- The **Role** column indicates either your existing role in the Group (Creator, Moderator, or Member). If you are not currently a part of a Group, this column will instead provide a button option allowing you to **Join** the group.
+- The **Members** column provides a tally of the current number of group members (including the creator and moderators).
+- The **Activity** columns lists the number of annotations, highlights, and comments that have been made in the context of the group. The numbers in the this column appear beside icons representing the activity: a pencil for annotation, a highlighter for highlights, and a speech bubble for comments.
 
 ### My Reading Groups
 
-The **My Reading Groups** tab displays the total number of private and anonymous groups of which you are a member and a list of these groups that includes: name of the group and type, number of members, group activity (number of annotations, highlights, and comments), and actions (depending on your role in the group this could be a single **Archive** button for group members, or if you are a Creator, Moderator, or Administrator of an instance, you will see an additional **Edit** button).
+The **My Reading Groups** tab displays in a table the private and anonymous groups of which you are a member. The table includes information about each group in four columns labeled **Name**, **Members**, **Activity**, and **Actions**:
 
-- **Archive** button. This removes a Reading Group from your My Reading Groups view. To be clear, selecting this option is user specific and will not affect how and where the Reading Group or annotations associated with it display for other users. An archived group can be reactivated at any time. Use the **Active/Archived** dropdown menu to view archived groups and then use the **Activate** button to return the group to My Reading Groups.
-- **Edit** button. Opens a drawer to the right that allows you to edit the group settings (see [Create a Reading group](../using/reading_groups#create-a-reading-group)).
+  - The **Name** column provides the name of each group with a label beside it indicating whether that group is private or anonymous.
+  - The **Members** column note the number of current users who are members of each group.
+  - The **Activity** column includes three numeric readouts corresponding to the number of annotations, highlight, and comments, that have been made in the context of the group. Each of those numbers appear beside an icon representing the activity: a pencil for annotation, a highlighter for highlights, and a speech bubble for comments.
+  - The **Actions** column provides button options for group members to [**Archive**](../using/reading_groups.md#archive-a-reading-group) or [**Leave**](../using/reading_groups.md#leave-a-reading-group) the group. Users who created or moderate the group, as well those with admin credentials, will have a third option allowing them to [**Edit**](../using/reading_groups#create-a-reading-group) the group settings that were configured when it was first created.
 
 :::info Don’t See the My Reading Groups Tab?
 You need to have an account on the Manifold instance and be **logged in**, in order to see the **My Reading Groups** tab.
 :::
 
-Reading Group lists can be searched and sorted. The search and dropdown combobox used to perform those tasks are displayed to the right, above the Reading Group list. The Search box allows users to look for a specific Reading Group within the list. The Sort dropdown menu allows users to sort the list by selecting one of the predefined options: A-Z, Z-A, Newest Groups First, Oldest Groups First, Earliest Course Start Date, Latest Course Start Date, Earliest Course End Date, and Latest Course End Date.
+Reading Group tables can be searched and sorted. The search and dropdowns used to perform those tasks are displayed to the right, above the Reading Group table. The **Search** box allows users to look for a specific Reading Group within the table.
 
-Private and anonymous groups, viewed in the My Reading Groups tab, have an additional dropdown combobox to select whether to display **Active** or **Archived** groups.
+The **Sort** dropdown menu allows users to sort the table by selecting one of the predefined options: A-Z, Z-A, Newest Groups First, Oldest Groups First, Earliest Course Start Date, Latest Course Start Date, Earliest Course End Date, and Latest Course End Date.
+
+Private and anonymous groups, viewed in the My Reading Groups tab, have an additional dropdown, labeled **Status**, allowing you to select whether to display **Active** or **Archived** groups.
 
 ## View a Reading Group
 
@@ -220,6 +231,28 @@ Alternatively, if the group Creator has encoded the Invitation URL on a course w
 :::note Invitation Not Working?
 See the [Invitation URL](../using/reading_groups#invitation-url) section for concerns that may arise for readers that click on an Invitation link and are not presently logged in or don’t have accounts on the instance.
 :::
+
+## Archive a Reading Group
+
+The option to archive a Reading Group of which you are a member appears in two places: in the Actions column of the My Reading Groups view and in the Reading Groups detail view, just below the Group’s name. When you archive a Reading Group, it removes that Group from your My Reading Groups view.
+
+Selecting this option is *user specific*: your archiving a Reading Group will not affect its availability to other Group members. That said, when you archive a Reading Group, any annotations you made in the context of the group will no longer be available to other Group members.
+
+When you select the **Archive** option, the system will present the following caution before asking you to confirm your choice:
+
+> The group will move to your archived groups and its annotations will be hidden for you in the reader. Annotations you made in this group will be hidden from other members. You can reactivate your membership at any time.
+
+An archived group can be reactivated at any time from the My Readings Groups view. Use the **Status** dropdown to view archived groups and then use the **Activate** button to return the group to My Reading Groups.
+
+## Leave a Reading Group
+
+There are two places in the system where you can opt to leave a Reading Group: in the Actions column of the My Reading Groups view and in the Reading Groups detail view, just below the Group’s name.
+
+When you leave a Reading Group, it removes that Group from your My Reading Groups view. If you wish to later rejoin the group, you will need to appeal to the Group’s Creator or Moderators to regain access.
+
+It is important to note that when you leave a Reading Group, any annotations you left in the context of the Group will persist both for yourself and for other Group members. However, if you edit an annotation that you left in the context of a Group you have left, it will transform into a private annotation and only be available to you. The system will caution you about that with the following message when you select the **Leave** option.
+
+> Annotations you made in the group will stay visible to its members, but if you later edit one, it will be removed from the group and become private.
 
 ## Remove a Reading Group Member
 
